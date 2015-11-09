@@ -1,0 +1,3923 @@
+*  File     : Triac_ST.LIB 
+*  Revision : 3            
+*  Date     : 4/May/00       
+*
+**********************************************************************
+* Information included is believed to be accurate and reliable.      *
+* However, STMicroelectronics assumes no responsibility              *
+* for the consequences of use of such information nor for any        *
+* infringement of patents or other rights of third parties which may *
+* result from its use. No license is granted by implication or       *
+* otherwise under any  patent rights of STMicroelectronics.    	     *
+* Specification mentionned in this publication are subject to        *
+* change without notice. This publication superseedes and replaces   *
+* all information previously supplied. STMicroelectronics products   *
+* are not authorized for use as critical components in life support  *
+* or systems without express written approval of STMicroelectronics. *
+*                                                                    *
+*         (c) 2000 STMicroelectronics. All rights reserved.          *
+*                                                                    *
+*                STMicroelectronics GROUP OF COMPANIES               *
+*   Australia - Brazil - Canada - China - France - Germany - Italy   *
+*        Japan - Korea - Malaysia - Malta - Mexico - Morocco         *
+*     The Netherlands - Singapore - Spain - Sweden - Switzerland     *
+*            Taiwan - Thailand - United Kingdom - U.S.A.             *
+**********************************************************************
+*
+*
+***********************************************************************
+* 				Triacs PSpice Models                  *
+***********************************************************************
+* Note :
+*
+*	This triac model simulates:
+*	-Igt (the same for all quadrants) MAX of the specification
+*       -Il  (the same for all quadrants) Typ of the specification
+*       -Ih  (the same for both polarity) Typ of the specification
+*       -VDRM
+*       -VRRM
+*       -(di/dt)c and (dV/dt)c parameters are simulated only if those
+*        constraints exceed very higly the specified limits.
+*       -Power dissipation is realistic and correspond to a typical
+*        triac
+*
+*       All these parameters are constant, and don't vary neither 
+*       with temperature nor other parameters.
+*    
+*       The "STANDARD" parameter switch between 
+*       4 quadrants triacs (STANDARD = 1) and
+*       3 quadrants triacs (STANDARD = 0.
+*       The "STANDARD" parameter maintains or suppress the triggering
+*       possibility of the triac in the fourth quadrant, and has
+*       absolutely NO EFFECT on other parameters.
+*
+*
+*$
+.subckt Triac_ST A K G PARAMS:
++ Vdrm=400v     
++ Igt=20ma
++ Ih=6ma        
++ Rt=0.01
++ Standard=1
+*
+* Vdrm : Repetitive forward off-state voltage
+* Ih   : Holding current 
+* Igt  : Gate trigger current 
+* Rt   : Dynamic on-state resistance
+* Standard : Differenciation between Snubberless and Standard Triacs
+* (Standard=0 => Snubberless Triacs, Standard=1 => Standard Triacs)
+*
+*****************
+* Power circuit *
+*****************
+*
+****************
+*Switch circuit*
+****************
+* Q1 & Q2 Conduction
+S_S3         A Plip1 positive 0 Smain
+*RS_S3        positive 0 1G
+D_DAK1         Plip1 Plip2 Dak 
+R_Rlip         Plip1 Plip2  1k
+V_Viak         Plip2 K DC 0 AC 0 
+*
+* Q3 & Q4 Conduction
+S_S4         A Plin1 negative 0 Smain
+*RS_S4        negative 0 1G
+D_DKA1         Plin2 Plin1 Dak 
+R_Rlin         Plin1 Plin2  1k 
+V_Vika         K Plin2 DC 0 AC 0  
+**************
+*Gate circuit*
+**************
+R_Rgk         G K  10G  
+D_DGKi         Pg2 G Dgk 
+D_DGKd         G Pg2 Dgk 
+V_Vig         Pg2 K DC 0 AC 0 
+R_Rlig         G Pg2  1k  
+*******************
+*Interface circuit*
+*******************
+* positive pilot
+R_Rp         Controlp positive  2.2  
+C_Cp         0 positive  1u 
+E_IF15OR3         Controlp 0 VALUE {IF(  ( (V(CMDIG)>0.5) | (V(CMDILIH)>0.5) |
++ (V(CMDVdrm)>0.5) ),400,0 )}
+* 
+* negative pilot
+R_Rn         Controln negative  2.2   
+C_Cn         0 negative  1u  
+E_IF14OR3         Controln 0 VALUE {IF(  ( (V(CMDIG)>0.5) | (V(CMDILIHN)>0.5) | 
++ (V(CMDVdrm)>0.5) ),400,0 )}
+*
+* 
+******************
+* Pilots circuit *
+******************
+******************
+* Pilot Gate     *
+******************
+E_IF1IG         inIG 0 VALUE {IF(  ( ABS(I(V_Vig)) ) > Igt ,1,0 )}
+E_MULT2MULT         CMDIG 0 VALUE {V(Q4)*V(inIG)}
+E_IF2Quadrant4         Q4 0 VALUE 
++ {IF(((I(V_Vig)>Igt)&((V(A)-V(K))<0)&(Standard==0)),0,1)}
+*
+******************
+* Pilot IHIL     *
+******************
+*
+E_IF10IL         inIL 0 VALUE {IF( ((I(V_Viak))>2.5*Igt),1,0 )}
+E_IF5IH         inIH 0 VALUE {IF( ((I(V_Viak))>(Ih/3)),1,0 )} 
+*
+* Flip_flop IHIL
+E_IF6DIHIL         SDIHIL 0 VALUE {IF(
++ (V(inIL)*V(inIH)+V(inIH)*(1-V(inIL))*(V(CMDILIH)) )>0.5,1,0)}
+C_CIHIL         CMDILIH 0  1n  
+R_RIHIL         SDIHIL CMDILIH  1K  
+R_RIHIL2         CMDILIH 0  100Meg  
+******************
+* Pilot IHILN    *
+******************
+*
+E_IF11ILn         inILn 0 VALUE {IF( ((I(V_Vika))>2.5*Igt),1,0 )}
+E_IF3IHn         inIHn 0 VALUE {IF( ((I(V_Vika))>(Ih/3)),1,0 )} 
+* Flip_flop IHILn
+E_IF4DIHILN         SDIHILN 0 VALUE {IF(
++ (V(inILn)*V(inIHn)+V(inIHn)*(1-V(inILn))*(V(CMDILIHN)) )>0.5,1,0)}
+C_CIHILn         CMDILIHN 0  1n  
+R_RIHILn         SDIHILN CMDILIHN  1K  
+R_RIHILn2         CMDILIHN 0  100Meg  
+******************
+* Pilot VDRM     *
+******************
+E_IF8Vdrm         inVdrm 0 VALUE {IF( (ABS(V(A)-V(K))>(Vdrm*1.3)),1,0 )}
+E_IF9IHVDRM         inIhVdrm 0 VALUE {IF( (I(V_Viak)>(Vdrm*1.3)/1.2meg)|
++  (I(V_Vika)>(Vdrm*1.3)/1.2meg),1,0)}
+* Flip_flop VDRM
+E_IF7DVDRM         SDVDRM 0 VALUE {IF(
++ (V(inVdrm)+(1-V(inVdrm))*V(inIhVdrm)*V(CMDVdrm) )>0.5,1,0)}
+C_CVdrm         CMDVdrm 0  1n  
+R_RVdrm         SDVDRM CMDVdrm  100  
+R_RVdrm2        CMDVdrm 0  100Meg  
+****************
+* Switch Model *
+****************
+.MODEL Smain VSWITCH Roff=1.2meg Ron={Rt} Voff=0 Von=100
+****************
+* Diodes Model *
+****************
+.MODEL  Dak D( Is=3E-12 Cjo=5pf) 
+.MODEL  Dgk D( Is=1E-16 Cjo=50pf Rs=5) 
+.ends 
+*
+*********************************************************************
+* 				TRIACs PSpice Library               *
+*********************************************************************
+*********************************************************************
+* 				Standard TRIACs			    *
+*********************************************************************
+*
+*$
+
+.subckt Z0103D A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=5ma
++ Ih=7ma        
++ Rt=0.42
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt Z0103M A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=5ma
++ Ih=7ma        
++ Rt=0.42
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt Z0103S A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=5ma
++ Ih=7ma        
++ Rt=0.42
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt Z0103N A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=5ma
++ Ih=7ma        
++ Rt=0.42
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt Z0107D A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=7ma
++ Ih=10ma        
++ Rt=0.42
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt Z0107M A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=7ma
++ Ih=10ma        
++ Rt=0.42
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt Z0107S A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=7ma
++ Ih=10ma        
++ Rt=0.42
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt Z0107N A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=7ma
++ Ih=10ma        
++ Rt=0.42
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt Z0109D A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=10ma
++ Ih=10ma        
++ Rt=0.42
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt Z0109M A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=10ma
++ Ih=10ma        
++ Rt=0.42
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt Z0109S A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=10ma
++ Ih=10ma        
++ Rt=0.42
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt Z0109N A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=10ma
++ Ih=10ma        
++ Rt=0.42
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt Z0110D A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=25ma
++ Ih=25ma        
++ Rt=0.42
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt Z0110M A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=25ma
++ Ih=25ma        
++ Rt=0.42
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt Z0110S A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=25ma
++ Ih=25ma        
++ Rt=0.42
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt Z0110N A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=25ma
++ Ih=25ma        
++ Rt=0.42
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt Z0402D A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=3ma
++ Ih=3ma        
++ Rt=0.18
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt Z0402M A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=3ma
++ Ih=3ma        
++ Rt=0.18
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt Z0402N A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=3ma
++ Ih=3ma        
++ Rt=0.18
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt Z0405D A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=5ma
++ Ih=5ma        
++ Rt=0.18
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt Z0405M A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=5ma
++ Ih=5ma        
++ Rt=0.18
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt Z0405N A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=5ma
++ Ih=5ma        
++ Rt=0.18
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt Z0409D A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=10ma
++ Ih=10ma        
++ Rt=0.18
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt Z0409M A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=10ma
++ Ih=10ma        
++ Rt=0.18
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt Z0409N A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=10ma
++ Ih=10ma        
++ Rt=0.18
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt Z0410D A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=25ma
++ Ih=25ma        
++ Rt=0.18
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt Z0410M A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=25ma
++ Ih=25ma        
++ Rt=0.18
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt Z0410N A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=25ma
++ Ih=25ma        
++ Rt=0.18
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA06-400C A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=50ma
++ Ih=25ma        
++ Rt=0.065
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA06-600C A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=50ma
++ Ih=25ma        
++ Rt=0.065
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA06-700C A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=50ma
++ Ih=25ma        
++ Rt=0.065
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA06-800C A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=50ma
++ Ih=25ma        
++ Rt=0.065
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB06-400C A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=50ma
++ Ih=25ma        
++ Rt=0.065
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB06-600C A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=50ma
++ Ih=25ma        
++ Rt=0.065
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB06-700C A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=50ma
++ Ih=25ma        
++ Rt=0.065
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB06-800C A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=50ma
++ Ih=25ma        
++ Rt=0.065
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA06-400B A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.065
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA06-600B A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.065
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA06-700B A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.065
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA06-800B A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.065
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB06-400B A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.065
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB06-600B A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.065
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB06-700B A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.065
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB06-800B A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.065
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA08-400C A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=50ma
++ Ih=25ma        
++ Rt=0.065
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA08-600C A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=50ma
++ Ih=25ma        
++ Rt=0.065
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA08-700C A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=50ma
++ Ih=25ma        
++ Rt=0.065
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA08-800C A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=50ma
++ Ih=25ma        
++ Rt=0.065
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB08-400C A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=50ma
++ Ih=25ma        
++ Rt=0.065
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB08-600C A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=50ma
++ Ih=25ma        
++ Rt=0.065
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB08-700C A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=50ma
++ Ih=25ma        
++ Rt=0.065
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB08-800C A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=50ma
++ Ih=25ma        
++ Rt=0.065
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA08-400B A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.065
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA08-600B A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.065
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA08-700B A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.065
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA08-800B A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.065
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB08-400B A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.065
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB08-600B A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.065
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB08-700B A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.065
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB08-800B A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.065
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+
+.subckt BTA10-400C A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=50ma
++ Ih=25ma        
++ Rt=0.04
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA10-600C A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=50ma
++ Ih=25ma        
++ Rt=0.04
++ Standard=1* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA10-700C A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=50ma
++ Ih=25ma        
++ Rt=0.04
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA10-800C A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=50ma
++ Ih=25ma        
++ Rt=0.04
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB10-400C A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=50ma
++ Ih=25ma        
++ Rt=0.04
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB10-600C A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=50ma
++ Ih=25ma        
++ Rt=0.04
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB10-700C A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=50ma
++ Ih=25ma        
++ Rt=0.04
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB10-800C A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=50ma
++ Ih=25ma        
++ Rt=0.04
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA10-400B A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.04
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA10-600B A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.04
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA10-700B A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.04
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA10-800B A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.04
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB10-400B A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.04
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB10-600B A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.04
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB10-700B A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.04
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB10-800B A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.04
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA12-400C A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=50ma
++ Ih=25ma        
++ Rt=0.034
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA12-600C A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=50ma
++ Ih=25ma        
++ Rt=0.034
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA12-700C A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=50ma
++ Ih=25ma        
++ Rt=0.034
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA12-800C A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=50ma
++ Ih=25ma        
++ Rt=0.034
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB12-400C A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=50ma
++ Ih=25ma        
++ Rt=0.034
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB12-600C A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=50ma
++ Ih=25ma        
++ Rt=0.034
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB12-700C A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=50ma
++ Ih=25ma        
++ Rt=0.034
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB12-800C A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=50ma
++ Ih=25ma        
++ Rt=0.034
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA12-400B A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.034
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA12-600B A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.034
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA12-700B A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.034
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA12-800B A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.034
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB12-400B A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.034
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB12-600B A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.034
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB12-700B A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.034
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB12-800B A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.034
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA16-400B A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.025
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA16-600B A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.025
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA16-700B A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.025
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA16-800B A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.025
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB16-400B A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.025
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB16-600B A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.025
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB16-700B A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.025
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB16-800B A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.025
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB24-400B A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.019
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB24-600B A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.019
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB24-700B A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.019
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB24-800B A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=100ma
++ Ih=50ma        
++ Rt=0.019
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA25-400B A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=100ma
++ Ih=80ma        
++ Rt=0.014
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA25-600B A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=100ma
++ Ih=80ma        
++ Rt=0.014
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA25-700B A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=100ma
++ Ih=80ma        
++ Rt=0.014
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA25-800B A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=100ma
++ Ih=80ma        
++ Rt=0.014
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA26-400B A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=100ma
++ Ih=80ma        
++ Rt=0.015
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA26-600B A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=100ma
++ Ih=80ma        
++ Rt=0.015
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA26-700B A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=100ma
++ Ih=80ma        
++ Rt=0.015
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA26-800B A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=100ma
++ Ih=80ma        
++ Rt=0.015
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB26-400B A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=100ma
++ Ih=80ma        
++ Rt=0.015
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB26-600B A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=100ma
++ Ih=80ma        
++ Rt=0.015
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB26-700B A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=100ma
++ Ih=80ma        
++ Rt=0.015
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB26-800B A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=100ma
++ Ih=80ma        
++ Rt=0.015
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA40-400B A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=100ma
++ Ih=80ma        
++ Rt=0.012
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA40-600B A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=100ma
++ Ih=80ma        
++ Rt=0.012
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA40-700B A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=100ma
++ Ih=80ma        
++ Rt=0.012
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA40-800B A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=100ma
++ Ih=80ma        
++ Rt=0.012
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA41-400B A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=100ma
++ Ih=80ma        
++ Rt=0.01
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA41-600B A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=100ma
++ Ih=80ma        
++ Rt=0.01
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA41-700B A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=100ma
++ Ih=80ma        
++ Rt=0.01
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA41-800B A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=100ma
++ Ih=80ma        
++ Rt=0.01
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB41-400B A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=100ma
++ Ih=80ma        
++ Rt=0.01
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB41-600B A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=100ma
++ Ih=80ma        
++ Rt=0.01
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB41-700B A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=100ma
++ Ih=80ma        
++ Rt=0.01
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB41-800B A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=100ma
++ Ih=80ma        
++ Rt=0.01
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt Z00607DA A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=7ma
++ Ih=5ma        
++ Rt=0.42
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt Z00607MA A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=7ma
++ Ih=5ma        
++ Rt=0.42
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T2550H-600T        A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=50ma
++ Ih=75ma        
++ Rt=0.019
++ Standard=1
+* 1999 / ST / Rev 0
+.ends
+*
+*********************************************************************
+* 		Snubberless & Logic Level  Triac_STs 		    *    
+*********************************************************************
+*
+*$
+
+.subckt BTA12-400SW A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=10ma
++ Ih=25ma        
++ Rt=0.04
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA12-600SW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=10ma
++ Ih=25ma        
++ Rt=0.04
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA12-700SW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=10ma
++ Ih=25ma        
++ Rt=0.04
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB12-400SW A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=10ma
++ Ih=25ma        
++ Rt=0.04
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB12-600SW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=10ma
++ Ih=25ma        
++ Rt=0.04
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB12-700SW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=10ma
++ Ih=25ma        
++ Rt=0.04
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA12-400CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.042
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA12-600CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.042
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA12-700CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.042
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA12-800CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.042
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB12-400CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.042
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB12-600CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.042
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB12-700CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.042
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB12-800CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.042
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA12-400BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.042
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA12-600BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.042
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA12-700BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.042
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA12-800BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.042
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB12-400BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.042
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB12-600BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.042
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB12-700BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.042
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB12-800BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.042
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T1220-400W A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=20ma
++ Ih=35ma        
++ Rt=0.031
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T1220-600W A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=20ma
++ Ih=35ma        
++ Rt=0.031
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T1220-700W A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=20ma
++ Ih=35ma        
++ Rt=0.031
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T1230-400W A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=30ma
++ Ih=50ma        
++ Rt=0.031
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T1230-600W A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=30ma
++ Ih=50ma        
++ Rt=0.031
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T1230-700W A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=30ma
++ Ih=50ma        
++ Rt=0.031
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA16-400CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.03
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA16-600CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.03
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA16-700CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.03
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA16-800CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.03
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB16-400CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.03
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB16-600CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.03
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB16-700CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.03
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB16-800CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.03
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA16-400BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.03
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA16-600BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.03
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA16-700BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.03
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA16-800BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.03
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB16-400BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.03
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB16-600BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.03
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB16-700BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.03
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB16-800BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.03
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T1620-400W A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=20ma
++ Ih=35ma        
++ Rt=0.062
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T1620-600W A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=20ma
++ Ih=35ma        
++ Rt=0.062
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T1620-700W A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=20ma
++ Ih=35ma        
++ Rt=0.062
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T1630-400W A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=30ma
++ Ih=50ma        
++ Rt=0.062
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T1630-600W A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=30ma
++ Ih=50ma        
++ Rt=0.062
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T1630-700W A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=30ma
++ Ih=50ma        
++ Rt=0.062
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA20-400CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=35ma
++ Ih=50ma        
++ Rt=0.02
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA20-600CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=35ma
++ Ih=50ma        
++ Rt=0.02
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA20-700CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=35ma
++ Ih=50ma        
++ Rt=0.02
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA20-800CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=35ma
++ Ih=50ma        
++ Rt=0.02
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB20-400CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=35ma
++ Ih=50ma        
++ Rt=0.02
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB20-600CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=35ma
++ Ih=50ma        
++ Rt=0.02
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB20-700CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=35ma
++ Ih=50ma        
++ Rt=0.02
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB20-800CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=35ma
++ Ih=50ma        
++ Rt=0.02
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA20-400BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=50ma
++ Ih=75ma        
++ Rt=0.02
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA20-600BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=50ma
++ Ih=75ma        
++ Rt=0.02
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA20-700BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=50ma
++ Ih=75ma        
++ Rt=0.02
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA20-800BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=50ma
++ Ih=75ma        
++ Rt=0.02
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB20-400BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=50ma
++ Ih=75ma        
++ Rt=0.02
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB20-600BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=50ma
++ Ih=75ma        
++ Rt=0.02
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB20-700BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=50ma
++ Ih=75ma        
++ Rt=0.02
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB20-800BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=50ma
++ Ih=75ma        
++ Rt=0.02
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA24-600CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=35ma
++ Ih=50ma        
++ Rt=0.016
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA24-700CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=35ma
++ Ih=50ma        
++ Rt=0.016
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA24-800CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=35ma
++ Ih=50ma        
++ Rt=0.016
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB24-600CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=35ma
++ Ih=50ma        
++ Rt=0.016
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB24-700CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=35ma
++ Ih=50ma        
++ Rt=0.016
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB24-800CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=35ma
++ Ih=50ma        
++ Rt=0.016
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA24-600BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=50ma
++ Ih=75ma        
++ Rt=0.016
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA24-700BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=50ma
++ Ih=75ma        
++ Rt=0.016
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA24-800BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=50ma
++ Ih=75ma        
++ Rt=0.016
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB24-600BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=50ma
++ Ih=75ma        
++ Rt=0.016
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB24-700BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=50ma
++ Ih=75ma        
++ Rt=0.016
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB24-800BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=50ma
++ Ih=75ma        
++ Rt=0.016
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA26-400CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=35ma
++ Ih=50ma        
++ Rt=0.016
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA26-600CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=35ma
++ Ih=50ma        
++ Rt=0.016
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA26-700CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=35ma
++ Ih=50ma        
++ Rt=0.016
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA26-800CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=35ma
++ Ih=50ma        
++ Rt=0.016
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA26-400BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=50ma
++ Ih=75ma        
++ Rt=0.016
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA26-600BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=50ma
++ Ih=75ma        
++ Rt=0.016
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA26-700BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=50ma
++ Ih=75ma        
++ Rt=0.016
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA26-800BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=50ma
++ Ih=75ma        
++ Rt=0.016
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA16-600SW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=10ma
++ Ih=15ma        
++ Rt=0.025
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA16-700SW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=10ma
++ Ih=15ma        
++ Rt=0.025
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB16-600SW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=10ma
++ Ih=15ma        
++ Rt=0.025
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB16-700SW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=10ma
++ Ih=15ma        
++ Rt=0.025
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T405-400 A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=5ma
++ Ih=10ma        
++ Rt=0.14
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T405-600 A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=5ma
++ Ih=10ma        
++ Rt=0.14
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T410-400 A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=10ma
++ Ih=15ma        
++ Rt=0.14
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T410-600 A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=10ma
++ Ih=15ma        
++ Rt=0.14
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T410-700 A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=10ma
++ Ih=15ma        
++ Rt=0.14
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T410-800 A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=10ma
++ Ih=15ma        
++ Rt=0.14
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T435-400 A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.14
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T435-600 A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.14
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T435-700 A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.14
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T435-800 A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.14
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA06-400TW A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=5ma
++ Ih=15ma        
++ Rt=0.054
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA06-600TW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=5ma
++ Ih=15ma        
++ Rt=0.054
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA06-700TW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=5ma
++ Ih=15ma        
++ Rt=0.054
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB06-400TW A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=5ma
++ Ih=15ma        
++ Rt=0.054
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB06-600TW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=5ma
++ Ih=15ma        
++ Rt=0.054
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB06-700TW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=5ma
++ Ih=15ma        
++ Rt=0.054
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA06-400SW A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=10ma
++ Ih=25ma        
++ Rt=0.054
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA06-600SW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=10ma
++ Ih=25ma        
++ Rt=0.054
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA06-700SW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=10ma
++ Ih=25ma        
++ Rt=0.054
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB06-400SW A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=10ma
++ Ih=25ma        
++ Rt=0.054
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB06-600SW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=10ma
++ Ih=25ma        
++ Rt=0.054
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB06-700SW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=10ma
++ Ih=25ma        
++ Rt=0.054
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA06-400CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.056
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA06-600CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.056
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA06-700CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.056
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA06-800CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.056
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB06-400CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.056
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB06-600CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.056
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB06-700CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.056
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB06-800CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.056
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA06-400BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.056
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA06-600BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.056
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA06-700BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.056
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA06-800BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.056
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB06-400BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.056
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB06-600BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.056
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB06-700BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.056
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB06-800BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.056
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T620-400W A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=20ma
++ Ih=35ma        
++ Rt=0.062
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T620-600W A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=20ma
++ Ih=35ma        
++ Rt=0.062
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T620-700W A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=20ma
++ Ih=35ma        
++ Rt=0.062
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T630-400W A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=30ma
++ Ih=50ma        
++ Rt=0.062
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T630-600W A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=30ma
++ Ih=50ma        
++ Rt=0.062
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T630-700W A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=30ma
++ Ih=50ma        
++ Rt=0.062
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA08-400TW A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=5ma
++ Ih=15ma        
++ Rt=0.054
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA08-600TW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=5ma
++ Ih=15ma        
++ Rt=0.054
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA08-700TW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=5ma
++ Ih=15ma        
++ Rt=0.054
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB08-400TW A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=5ma
++ Ih=15ma        
++ Rt=0.054
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB08-600TW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=5ma
++ Ih=15ma        
++ Rt=0.054
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB08-700TW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=5ma
++ Ih=15ma        
++ Rt=0.054
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA08-400SW A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=10ma
++ Ih=25ma        
++ Rt=0.054
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA08-600SW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=10ma
++ Ih=25ma        
++ Rt=0.054
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA08-700SW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=10ma
++ Ih=25ma        
++ Rt=0.054
++ Standard=0
+ * 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB08-400SW A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=10ma
++ Ih=25ma        
++ Rt=0.054
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB08-600SW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=10ma
++ Ih=25ma        
++ Rt=0.054
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB08-700SW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=10ma
++ Ih=25ma        
++ Rt=0.054
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+
+.subckt BTA08-400CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.056
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA08-600CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.056
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA08-700CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.056
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA08-800CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.056
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB08-400CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.056
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB08-600CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.056
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB08-700CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.056
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB08-800CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.056
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA08-400BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.056
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA08-600BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.056
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA08-700BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.056
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA08-800BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.056
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB08-400BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.056
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB08-600BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.056
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB08-700BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.056
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB08-800BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.056
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T820-400W A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=20ma
++ Ih=35ma        
++ Rt=0.048
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T820-600W A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=20ma
++ Ih=35ma        
++ Rt=0.048
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T820-700W A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=20ma
++ Ih=35ma        
++ Rt=0.048
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T830-400W A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=30ma
++ Ih=50ma        
++ Rt=0.048
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T830-600W A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=30ma
++ Ih=50ma        
++ Rt=0.048
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T830-700W A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=30ma
++ Ih=50ma        
++ Rt=0.048
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA10-400CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.042
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA10-600CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.042
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA10-700CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.042
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA10-800CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.042
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB10-400CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.042
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB10-600CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.042
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB10-700CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.042
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB10-800CW A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=35ma
++ Ih=35ma        
++ Rt=0.042
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA10-400BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.042
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA10-600BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.042
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA10-700BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.042
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTA10-800BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.042
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB10-400BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.042
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB10-600BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.042
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB10-700BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.042
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt BTB10-800BW A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=50ma
++ Ih=50ma        
++ Rt=0.042
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T1020-400W A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=20ma
++ Ih=35ma        
++ Rt=0.038
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+.subckt T1020-600W A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=20ma
++ Ih=35ma        
++ Rt=0.038
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T1020-700W A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=20ma
++ Ih=35ma        
++ Rt=0.038
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T1020-800W A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=20ma
++ Ih=35ma        
++ Rt=0.038
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T1030-400W A K G
+X1 A K G Triac_ST params:
++ Vdrm=400v     
++ Igt=30ma
++ Ih=50ma        
++ Rt=0.038
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T1030-600W A K G
+X1 A K G Triac_ST params:
++ Vdrm=600v     
++ Igt=30ma
++ Ih=50ma        
++ Rt=0.038
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T1030-700W A K G
+X1 A K G Triac_ST params:
++ Vdrm=700v     
++ Igt=30ma
++ Ih=50ma        
++ Rt=0.038
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+
+.subckt T1030-800W A K G
+X1 A K G Triac_ST params:
++ Vdrm=800v     
++ Igt=30ma
++ Ih=50ma        
++ Rt=0.038
++ Standard=0
+* 1999 / ST / Rev 0
+.ends
+*$
+***********************************************************************
+* 				Thyristor PSpice Models               *
+***********************************************************************
+* Note :
+*
+*	This thyristor model simulates:
+*	-Igt MAX of the specification
+*       -Il  Typ of the specification
+*       -Ih  Typ of the specification
+*       -VDRM
+*       -VRRM
+*       -Power dissipation is realistic and correspond to a typical
+*        triac
+*
+*       All these parameters are constant, and don't vary neither 
+*       with temperature nor other parameters.
+*    
+*
+*
+*$
+.subckt SCR_ST A K G PARAMS:
++ Vdrm=400v     
++ Igt=20ma
++ Ih=6ma        
++ Rt=0.01
+*
+* Vdrm : Repetitive forward off-state voltage
+* Ih   : Holding current 
+* Igt  : Gate trigger current 
+* Rt   : Dynamic on-state resistance
+*
+*****************
+* Power circuit *
+*****************
+*
+****************
+*Switch circuit*
+****************
+* Q1 & Q2 Conduction
+S_S3         A Plip1 positive 0 Smain
+*RS_S3        positive 0 1G
+D_DAK1         Plip1 Plip2 Dak 
+R_Rlip         Plip1 Plip2  1k
+V_Viak         Plip2 K DC 0 AC 0 
+*
+**************
+*Gate circuit*
+**************
+R_Rgk         G K  10G  
+D_DGKd         G Pg2 Dgk 
+V_Vig         Pg2 K DC 0 AC 0 
+R_Rlig         G Pg2  1k  
+*******************
+*Interface circuit*
+*******************
+* positive pilot
+R_Rp         Controlp positive  2.2  
+C_Cp         0 positive  1u 
+E_IF15OR3         Controlp 0 VALUE {IF(  ( (V(CMDIG)>0.5) | (V(CMDILIH)>0.5) |
++ (V(CMDVdrm)>0.5) ),400,0 )}
+* 
+******************
+* Pilots circuit *
+******************
+******************
+* Pilot Gate     *
+******************
+E_IF1IG         CMDIG 0 VALUE {IF(  ( I(V_Vig) ) > Igt ,1,0 )}
+*
+******************
+* Pilot IHIL     *
+******************
+*
+E_IF10IL         inIL 0 VALUE {IF( ((I(V_Viak))>2.5*Igt),1,0 )}
+E_IF5IH         inIH 0 VALUE {IF( ((I(V_Viak))>(Ih/3)),1,0 )} 
+*
+* Flip_flop IHIL
+E_IF6DIHIL         SDIHIL 0 VALUE {IF(
++ (V(inIL)*V(inIH)+V(inIH)*(1-V(inIL))*(V(CMDILIH)) )>0.5,1,0)}
+C_CIHIL         CMDILIH 0  1n  
+R_RIHIL         SDIHIL CMDILIH  1K  
+R_RIHIL2         CMDILIH 0  100Meg  
+******************
+* Pilot VDRM     *
+******************
+E_IF8Vdrm         inVdrm 0 VALUE {IF( (ABS(V(A)-V(K))>(Vdrm*1.3)),1,0 )}
+E_IF9IHVDRM         inIhVdrm 0 VALUE {IF( I(V_Viak)>(Vdrm*1.3)/1.2meg
++ ,1,0)}
+* Flip_flop VDRM
+E_IF7DVDRM         SDVDRM 0 VALUE {IF(
++ (V(inVdrm)+(1-V(inVdrm))*V(inIhVdrm)*V(CMDVdrm) )>0.5,1,0)}
+C_CVdrm         CMDVdrm 0  1n  
+R_RVdrm         SDVDRM CMDVdrm  100  
+R_RVdrm2        CMDVdrm 0  100Meg  
+****************
+* Switch Model *
+****************
+.MODEL Smain VSWITCH Roff=1.2meg Ron={Rt} Voff=0 Von=100
+****************
+* Diodes Model *
+****************
+.MODEL  Dak D( Is=3E-12 Cjo=5pf) 
+.MODEL  Dgk D( Is=1E-16 Cjo=50pf Rs=5 Bv=12V Ibv=100uA) 
+.ends 
+*
+*********************************************************************
+* 				SCR PSpice Library                  *
+*********************************************************************
+*********************************************************************
+* 				Standard SCRs			    *
+*********************************************************************
+*
+*$
+
+.subckt TXN1012 A K G
+X1 A K G SCR_ST params:
++ Vdrm=1000v     
++ Igt=15ma
++ Ih=30ma        
++ Rt=0.036
+* 1999 / ST / Rev 0
+.ends
+*$
+.subckt X0202N A K G
+X1 A K G SCR_ST params:
++ Vdrm=800v     
++ Igt=200ua
++ Ih=5ma        
++ Rt=0.15
+* 1999 / ST / Rev 0
+.ends
+*$
+***********************************************************************
+* 				DIAC PSpice Models                    *
+***********************************************************************
+.SUBCKT DIAC DIAC_IN DIAC_OUT PARAMS:
++Tr=0.342
++Delta_V=19V
++Ibo=15uA
+*
+*Tr:      Rise time (in µs)
+*Delta_V: Dynamic breakover voltage
+*Ibo:     Breakover current
+C_C1         N02098 DIAC_OUT  1u IC=0 
+V_IDIAC1         DIAC_IN N01041 DC 0Vdc AC 0Vac 
+R_R1         N02098 TRG  1.462*{Tr}  
+D_D1         N06161 N01041 DZ19V 
+E_ABM1         TRG DIAC_OUT VALUE { IF(ABS(I(V_IDIAC1))>{Ibo},1,0)}
+D_D2         N06161 N01060 DZ19V 
+D_D3         N10655 N01060 DZ14V 
+D_D4         N10655 DIAC_OUT DZ14V 
+S_S1         N01041 N01060 N02098 DIAC_OUT _S1
+RS_S1        N02098 DIAC_OUT 1G
+C_C2         DIAC_IN DIAC_OUT  10p
+****************
+* Switch Model *
+****************
+.MODEL        _S1 VSWITCH Roff=1e7 Ron=2.2 Voff=0.1V Von=0.99V
+****************
+* Diodes Model *
+****************
+.model DZ14V  	D(Is=3.142f Rs=0.1 Ikf=0 N=1 Xti=3 Eg=1.11 M=.3282
++		Vj=.75 Fc=.5 Isr=1.973n Nr=2 Bv=13.6 Ibv=.14467 Nbv=1.093
++		Ibvl=.1m Nbvl=1.2722 Tbv1=001433.3u)
+*		Vz = 14 @ 17mA, Zz = 32 @ 1mA, Zz = 8.25 @ 5mA, Zz = 5.75 @ 20mA
+.model DZ19V D(Is=6.994f Rs=5.612 Ikf=0 N=1 Eg=1.11 M=.2906
++	     Vj=.75 Fc=.5 Isr=2.088n Nr=2 Bv={Delta_V} Ibv=.17098 Nbv=1.2072
++	     Ibvl=2.002m Nbvl=1.1457 Tbv1=888.89u)
+*	Vz = 18 @ 14mA, Zz = 37 @ 1mA, Zz = 11 @ 5mA, Zz = 7.9 @ 20mA
+.ends   
+*
+*********************************************************************
+* 				Standard DIACs			    *
+*********************************************************************
+*
+*$
+
+.subckt DB3TG DIAC_IN DIAC_OUT
+X1 DIAC_IN DIAC_OUT DIAC params:
++Tr=0.342
++Delta_V=19V
++Ibo=15uA
+* 2000 / ST / Rev 0
+.ends
+*$
