@@ -26,7 +26,7 @@
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
@@ -37,7 +37,7 @@
 <layer number="27" name="tValues" color="10" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -86,7 +86,7 @@
 <layer number="110" name="110" color="7" fill="1" visible="no" active="no"/>
 <layer number="111" name="111" color="7" fill="1" visible="no" active="no"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="no" active="no"/>
-<layer number="113" name="dimension2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="dimension2" color="7" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="7" fill="1" visible="no" active="no"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="no"/>
@@ -2176,13 +2176,11 @@
 <wire x1="12.192" y1="82.169" x2="17.4625" y2="87.4395" width="2.54" layer="30"/>
 <wire x1="17.4625" y1="87.4395" x2="43.688" y2="87.4395" width="2.54" layer="30"/>
 <wire x1="43.688" y1="87.4395" x2="49.657" y2="81.4705" width="2.54" layer="30"/>
-<wire x1="49.657" y1="81.4705" x2="49.657" y2="67.5005" width="2.54" layer="30"/>
-<wire x1="49.657" y1="67.5005" x2="52.451" y2="64.7065" width="2.54" layer="30"/>
-<wire x1="52.451" y1="64.7065" x2="54.6735" y2="64.7065" width="2.54" layer="30"/>
+<wire x1="49.657" y1="81.4705" x2="49.657" y2="65.4685" width="2.54" layer="30"/>
 <wire x1="29.7815" y1="95.758" x2="32.766" y2="92.7735" width="2.54" layer="30"/>
 <wire x1="32.766" y1="92.7735" x2="45.339" y2="92.7735" width="2.54" layer="30"/>
 <wire x1="45.339" y1="92.7735" x2="55.499" y2="82.6135" width="2.54" layer="30"/>
-<wire x1="55.499" y1="82.6135" x2="55.499" y2="70.2945" width="2.54" layer="30"/>
+<wire x1="55.499" y1="82.6135" x2="55.499" y2="68.5165" width="2.54" layer="30"/>
 <wire x1="43.307" y1="77.724" x2="49.911" y2="77.724" width="0.1524" layer="39"/>
 <wire x1="49.911" y1="77.724" x2="49.911" y2="68.58" width="0.1524" layer="39"/>
 <wire x1="49.911" y1="68.58" x2="43.307" y2="68.58" width="0.1524" layer="39"/>
@@ -2338,6 +2336,8 @@
 <text x="57.7604875" y="76.935" size="1.016" layer="125" ratio="10" rot="R270">ZD2</text>
 <text x="32.766" y="87.249" size="1.016" layer="125" ratio="10">ZD3</text>
 <text x="63.5" y="1.0795" size="1.778" layer="51" rot="R90">Licensed under the TAPR Open Hardware License (www.tapr.org/OHL)</text>
+<wire x1="55.0545" y1="62.357" x2="52.7685" y2="62.357" width="2.54" layer="30"/>
+<wire x1="52.7685" y1="62.357" x2="49.657" y2="65.4685" width="2.54" layer="30"/>
 </plain>
 <libraries>
 <library name="rcl">
