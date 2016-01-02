@@ -14,5 +14,5 @@ This PCB panel include all modules required for digitaly controlled dual channel
  - Mosfet pre-regulator **r3B3**
  - Mosfet post-regulator **r4B44**
 
-Gerber files are generated in a way that could to be directly ordered from [printed.cz](http://printed.cz/) or many other PCB manufacturers.
+Gerber files are generated in a way that could be directly ordered from [printed.cz](http://printed.cz/) or many other PCB manufacturers.
 

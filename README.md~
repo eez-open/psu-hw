@@ -30,8 +30,6 @@ This is repository for the hardware part of the DIY fully programmable dual chan
 - Possibility to house at least dual channel version in affordable metallic enclosure (e.g. Hi-fi 2000/Modushop.biz Economica EP1153220 L 320 x P 200)
 - Comprehensive software support that include [SCPI](http://www.envox.hr/eez/bench-power-supply/psu-scpi-reference-manual/psu-scpi-introduction.html)  remote control, GUI configuration and monitoring and even multi-platform (Windows, Linux, OS X) software simulator of the firmware functionality 
 
-![Programmable dual channel PSU block diagram](EEZ PSU block diagram v4.png)
-
 **********************
 
 For more information visit http://www.envox.hr/eez/bench-power-supply/psu-introduction.html
