@@ -12722,7 +12722,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <wire x1="454.66" y1="35.56" x2="454.66" y2="-12.7" width="0.1524" layer="97" style="shortdash"/>
 <text x="382.905" y="-66.675" size="2.54" layer="94" font="vector">CV/CC linear post-regulator</text>
 <text x="382.905" y="-70.485" size="2.54" layer="94" font="vector">Output enable and "down-programmer"</text>
-<text x="226.06" y="-86.36" size="1.4224" layer="108">Note 1.1: Q4 and Q5 mounted on the external heatsink (check BOM for suggested models)</text>
+<text x="226.06" y="-86.36" size="1.4224" layer="108">Note 1.1: Q1 and Q2 mounted on the external heatsink (check BOM for suggested models)</text>
 <wire x1="464.82" y1="-12.7" x2="464.82" y2="-58.42" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="330.2" y1="-58.42" x2="464.82" y2="-58.42" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="330.2" y1="-2.54" x2="330.2" y2="-12.7" width="0.1524" layer="97" style="shortdash"/>
@@ -12801,7 +12801,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <text x="293.37" y="-64.135" size="1.4224" layer="101" rot="R180">POUT+ 17</text>
 <text x="300.99" y="-65.405" size="1.4224" layer="101">18 Power mosfet bias (in)</text>
 <text x="422.91" y="45.72" size="1.27" layer="108">See note 1.2</text>
-<text x="226.06" y="-91.44" size="1.4224" layer="108">Note 1.3: If Sense inputs is not used replace R8 and R31 with zero-ohm 0805 resistor</text>
+<text x="226.06" y="-91.44" size="1.4224" layer="108">Note 1.3: If Sense inputs is not used replace R9 and R32 with zero-ohm 0805 resistor</text>
 <text x="227.965" y="-76.835" size="1.6764" layer="108">0-30V</text>
 <text x="227.965" y="-79.375" size="1.6764" layer="108">0-40V</text>
 <text x="227.965" y="-81.915" size="1.6764" layer="108">0-50V</text>
