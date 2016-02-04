@@ -12951,7 +12951,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="124.46" y1="-97.79" x2="124.46" y2="-160.02" width="0.1524" layer="97" style="shortdash"/>
 <text x="127" y="-99.06" size="1.778" layer="97" rot="MR180">V/F converter for temperature sensor (optional)</text>
 <wire x1="124.46" y1="-97.79" x2="262.255" y2="-97.79" width="0.1524" layer="97" style="shortdash"/>
-<text x="10.16" y="-170.18" size="1.27" layer="108">Note 2.1: replace with 33K (to decrease frequency) if sync with LM5574 on pre-regulator board is used</text>
 <text x="13.97" y="-78.74" size="1.27" layer="108">See note 2.1</text>
 <text x="66.04" y="-59.69" size="1.27" layer="96">or DFLS1100-7</text>
 <rectangle x1="78.105" y1="-63.5" x2="89.535" y2="-50.165" layer="97"/>
@@ -12964,6 +12963,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <text x="2.54" y="-180.34" size="1.778" layer="94">Licensed under the TAPR Open Hardware License (www.tapr.org/OHL)</text>
 <text x="2.54" y="-185.42" size="1.778" layer="94">Repository: https://github.com/eez-open</text>
 <text x="2.54" y="-182.88" size="1.778" layer="94">More info at http://www.envox.hr/eez</text>
+<text x="10.16" y="-170.18" size="1.27" layer="108">Note 2.1: replace with 33K or 36K (to decrease frequency) to become slave in multiple devices sync configuration</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>

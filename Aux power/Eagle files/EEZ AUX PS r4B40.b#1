@@ -3105,7 +3105,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="23.368" y="81.788" size="1.016" layer="25" ratio="10"/>
 <attribute name="VALUE" x="25.908" y="80.9625" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="L2" library="EEZ_Lib1" package="MSS1278" value="100uH (MSS1260-104K)" x="15.748" y="87.757" smashed="yes">
+<element name="L2" library="EEZ_Lib1" package="MSS1278" value="100uH (MSS1210-104K)" x="15.748" y="87.757" smashed="yes">
 <attribute name="NAME" x="12.5405" y="95.0485" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="11.929" y="76.6135" size="1.27" layer="27" rot="R90"/>
 </element>

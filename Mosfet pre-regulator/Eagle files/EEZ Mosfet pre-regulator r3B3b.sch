@@ -13440,7 +13440,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="124.46" y1="90.17" x2="124.46" y2="27.94" width="0.1524" layer="97" style="shortdash"/>
 <text x="127" y="88.9" size="1.778" layer="97" rot="MR180">V/F converter for temperature sensor (optional)</text>
 <wire x1="124.46" y1="90.17" x2="262.255" y2="90.17" width="0.1524" layer="97" style="shortdash"/>
-<text x="10.16" y="17.78" size="1.27" layer="108">Note 2.1: replace with 33K (to decrease frequency) if sync with LM5574 on pre-regulator board is used</text>
+<text x="10.16" y="17.78" size="1.27" layer="108">Note 2.1: replace with 33K or 36K (to decrease frequency) to become slave in multiple devices sync configuration</text>
 <text x="13.97" y="109.22" size="1.27" layer="108">See note 2.1</text>
 <text x="66.04" y="128.27" size="1.27" layer="96">or DFLS1100-7</text>
 <rectangle x1="78.105" y1="124.46" x2="89.535" y2="137.795" layer="97"/>
