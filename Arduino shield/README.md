@@ -3,12 +3,12 @@ This product is made available under the terms of the TAPR Open Hardware License
 **Revision history:**
 
 * 2016-03-27: **r1B13**
-    Fixed remote sense wiring
-    Output protection redesigned (TVS moved, SAR and MOVs removed)
-    Smaller footprint
-    Remote sense 4 mm banana binding posts replaced with compact "push-in" connectors
-    Digital trigger input (with buffer and level shifter) added
-    THT LEDs replaced with SMD counterparts (lightpipes are now required)
+    - Fixed remote sense wiring
+    - Output protection redesigned (TVS moved, SAR and MOVs removed)
+    - Smaller footprint
+    - Remote sense 4 mm banana binding posts replaced with compact "push-in" connectors
+    - Digital trigger input (with buffer and level shifter) added
+    - THT LEDs replaced with SMD counterparts (lightpipes are now required)
 * 2015-12-07: **r1B12b** - first public release
 
 **********************
