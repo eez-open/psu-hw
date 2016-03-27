@@ -1,4 +1,4 @@
-![EEZ SCPI dual channel bench power supply](EEZ_PSU_prototype)
+![EEZ SCPI dual channel bench power supply](EEZ_PSU_prototype.jpg)
 
 This is repository for the hardware part of the DIY fully programmable dual channel bench power supply. The power supply is designed with taking into consideration the following features and requirements:
 
