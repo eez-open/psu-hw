@@ -1,10 +1,12 @@
+![EEZ SCPI dual channel bench power supply](EEZ_PSU_prototype)
+
 This is repository for the hardware part of the DIY fully programmable dual channel bench power supply. The power supply is designed with taking into consideration the following features and requirements:
 
 - Modular design that allows combining modules with various performance and capability and creation of multiple output solution (min. two channels)
-- Voltage regulation (CV), 10mV resolution
-- Current regulation (CC), 10mA initial resolution (possibly increased to 1mA)
-    Various voltage single range operation (i.e. 0-30V, 0-40V or 0-50V per channel)
-- Various current single range operation (i.e. 0-3A or 0-5A per channel)
+- Voltage regulation (CV), 10 mV resolution
+- Current regulation (CC), 10 mA initial resolution (possibly increased to 1 mA)
+    Various voltage single range operation (i.e. 0-30 V, 0-40 V or 0-50 V per channel)
+- Various current single range operation (i.e. 0-3 A, 0-4 A or 0-5 A per channel)
 - Minimal overshoot when new voltage or current level is programmed or in marginal cases such as power on/off
 - Min. 15-bit data acquisition resolution
 - Various protection mechanisms: over-voltage (OVP), over-current (OCP), over-power (OPP) and over-temperature (OTP)

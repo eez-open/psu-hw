@@ -1,0 +1,163 @@
+[CAM Processor Job]
+Description[en]="<b>Generates Extended Gerber Format</b><p>\nThis CAM job consists of five sections that generate data for a two layer board.<p><p>\nYou will get five gerber files that contain data for:<br>\ncomponent side *.cmp<br>\nsolder side  *.sol<br>\nsilkscreen component side  *.plc<br>\nsolder stop component side  *.stc<br>\nsolder stop solder sid  *.sts<br>"
+Section=Sec_1
+Section=Sec_2
+Section=Sec_3
+Section=Sec_4
+Section=Sec_5
+Section=Sec_6
+Section=Sec_7
+
+[Sec_1]
+Name[C]="Solder side"
+Name[en]="Bottom Copper Layer"
+Name[hr]="Top Copper Layer"
+Prompt[C]=""
+Prompt[en]=""
+Prompt[hr]=""
+Device="GERBER_RS274X"
+Wheel=".whl"
+Rack=""
+Scale=1
+Output=".toplayer.ger"
+Flags="0 0 0 1 0 1 1"
+Emulate="0"
+Offset="0.0mil 0.0mil"
+Sheet=1
+Tolerance="0 0 0 0 0 0"
+Pen="0.0mil 0"
+Page="12000.0mil 8000.0mil"
+Layers=" 1 17 18"
+Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1 1 1 3 3 1 2 6 8 8 5 8 8 8 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 4 2 4 3 6 6 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0"
+
+[Sec_2]
+Name[C]="Solder side"
+Name[en]="Bottom Copper Layer"
+Name[hr]="Bottom Copper Layer"
+Prompt[C]=""
+Prompt[en]=""
+Prompt[hr]=""
+Device="GERBER_RS274X"
+Wheel=".whl"
+Rack=""
+Scale=1
+Output=".bottomlayer.ger"
+Flags="0 0 0 1 0 1 1"
+Emulate="0"
+Offset="0.0mil 0.0mil"
+Sheet=1
+Tolerance="0 0 0 0 0 0"
+Pen="0.0mil 0"
+Page="12000.0mil 8000.0mil"
+Layers=" 16 17 18"
+Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1 1 1 3 3 1 2 6 8 8 5 8 8 8 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 4 2 4 3 6 6 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0"
+
+[Sec_3]
+Name[C]="Silk screen CMP"
+Name[en]="Top Silkscreen "
+Name[hr]="Top Silkscreen "
+Prompt[C]=""
+Prompt[en]=""
+Prompt[hr]=""
+Device="GERBER_RS274X"
+Wheel=".whl"
+Rack=""
+Scale=1
+Output=".topsilkscreen.ger"
+Flags="0 0 0 1 0 1 1"
+Emulate="0"
+Offset="0.0mil 0.0mil"
+Sheet=1
+Tolerance="0 0 0 0 0 0"
+Pen="0.0mil 0"
+Page="12000.0mil 8000.0mil"
+Layers=" 20 21 39 125"
+Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1 1 1 3 3 1 2 6 8 8 5 8 8 8 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 4 2 4 3 6 6 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0"
+
+[Sec_4]
+Name[C]="Solder stop mask SOL"
+Name[en]="Bottom Solder Mask"
+Name[hr]="Top Solder Mask"
+Prompt[C]=""
+Prompt[en]=""
+Prompt[hr]=""
+Device="GERBER_RS274X"
+Wheel=".whl"
+Rack=""
+Scale=1
+Output=".topsoldermask.ger"
+Flags="0 0 0 1 0 1 1"
+Emulate="0"
+Offset="0.0mil 0.0mil"
+Sheet=1
+Tolerance="0 0 0 0 0 0"
+Pen="0.0mil 0"
+Page="12000.0mil 8000.0mil"
+Layers=" 29"
+Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1 1 1 3 3 1 2 6 8 8 5 8 8 8 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 4 2 4 3 6 6 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0"
+
+[Sec_5]
+Name[C]="Solder stop mask SOL"
+Name[en]="Bottom Solder Mask"
+Name[hr]="Bottom Solder Mask"
+Prompt[C]=""
+Prompt[en]=""
+Prompt[hr]=""
+Device="GERBER_RS274X"
+Wheel=".whl"
+Rack=""
+Scale=1
+Output=".bottomsoldermask.ger"
+Flags="0 0 0 1 0 1 1"
+Emulate="0"
+Offset="0.0mil 0.0mil"
+Sheet=1
+Tolerance="0 0 0 0 0 0"
+Pen="0.0mil 0"
+Page="12000.0mil 8000.0mil"
+Layers=" 30"
+Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1 1 1 3 3 1 2 6 8 8 5 8 8 8 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 4 2 4 3 6 6 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0"
+
+[Sec_6]
+Name[C]="Board Outline"
+Name[en]="Board Outline"
+Name[hr]="Board Outline"
+Prompt[C]=""
+Prompt[en]=""
+Prompt[hr]=""
+Device="GERBER_RS274X"
+Wheel=".whl"
+Rack=""
+Scale=1
+Output=".boardoutline.ger"
+Flags="0 0 0 1 0 1 1"
+Emulate="0"
+Offset="0.0mil 0.0mil"
+Sheet=1
+Tolerance="0 0 0 0 0 0"
+Pen="0.0mil 0"
+Page="12000.0mil 8000.0mil"
+Layers=" 20"
+Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1 1 1 3 3 1 2 6 8 8 5 8 8 8 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 4 2 4 3 6 6 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0"
+
+[Sec_7]
+Name[C]="Excellion Drill"
+Name[en]="Excellion Drill"
+Name[hr]="Excellion Drill"
+Prompt[C]=""
+Prompt[en]=""
+Prompt[hr]=""
+Device="EXCELLON"
+Wheel=".whl"
+Rack=""
+Scale=1
+Output=".drills.xln"
+Flags="0 0 0 1 0 1 1"
+Emulate="0"
+Offset="0.0mil 0.0mil"
+Sheet=1
+Tolerance="0 0 0 0 0 0"
+Pen="0.0mil 0"
+Page="12000.0mil 8000.0mil"
+Layers=" 44 45"
+Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1 1 1 3 3 1 2 6 8 8 5 8 8 8 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 4 2 4 3 6 6 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0"

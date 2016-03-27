@@ -162,10 +162,10 @@
 <dimension x1="4.188" y1="6.034" x2="56.188" y2="4.034" x3="30.188" y3="-5.466" layer="47" dtype="horizontal"/>
 <text x="3.175" y="24.638" size="1.524" layer="21" font="vector" ratio="10">CAUTION! HIGH VOLTAGE</text>
 <dimension x1="-1.812" y1="0.034" x2="-0.812" y2="100.034" x3="-9.812" y3="50.034" layer="47" dtype="vertical"/>
-<wire x1="0.188" y1="0.034" x2="0.188" y2="100.034" width="0.254" layer="20"/>
-<wire x1="0.188" y1="100.034" x2="60.188" y2="100.034" width="0.254" layer="20"/>
-<wire x1="60.188" y1="100.034" x2="60.188" y2="0.034" width="0.254" layer="20"/>
-<wire x1="60.188" y1="0.034" x2="0.188" y2="0.034" width="0.254" layer="20"/>
+<wire x1="0" y1="0" x2="0" y2="100" width="0.254" layer="20"/>
+<wire x1="0" y1="100" x2="60" y2="100" width="0.254" layer="20"/>
+<wire x1="60" y1="100" x2="60" y2="0" width="0.254" layer="20"/>
+<wire x1="60" y1="0" x2="0" y2="0" width="0.254" layer="20"/>
 <text x="32.048" y="9.4135" size="1.27" layer="21" font="vector" ratio="12" rot="SR0">Nout Lout</text>
 <dimension x1="6.188" y1="4.034" x2="7.188" y2="96.034" x3="-3.812" y3="50.034" layer="47" dtype="vertical"/>
 <text x="12.192" y="72.263" size="1.016" layer="21" font="vector" ratio="10" rot="SR0">+5V</text>
@@ -3676,16 +3676,16 @@ design rules under a new name.</description>
 <wire x1="10.6045" y1="75.819" x2="10.6045" y2="75.816" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TA4">
-<via x="56.188" y="4.034" extent="1-16" drill="3.2" diameter="6"/>
+<via x="56" y="4" extent="1-16" drill="3.2" diameter="6"/>
 </signal>
 <signal name="TA3">
-<via x="4.188" y="4.034" extent="1-16" drill="3.2" diameter="6"/>
+<via x="4" y="4" extent="1-16" drill="3.2" diameter="6"/>
 </signal>
 <signal name="TA1">
-<via x="4.188" y="96.034" extent="1-16" drill="3.2" diameter="6"/>
+<via x="4" y="96" extent="1-16" drill="3.2" diameter="6"/>
 </signal>
 <signal name="TA2">
-<via x="56.188" y="96.034" extent="1-16" drill="3.2" diameter="6"/>
+<via x="56" y="96" extent="1-16" drill="3.2" diameter="6"/>
 </signal>
 <signal name="AC_IN1">
 <contactref element="VAR1" pad="P$2"/>

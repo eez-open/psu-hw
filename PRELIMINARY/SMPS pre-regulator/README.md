@@ -1,17 +1,12 @@
 This product is made available under the terms of the TAPR Open Hardware License. See the LICENSE.TXT file that accompanies this distribution for the full text of the license.
 
+**Preliminary pre-regulator circuit based on LTC3864 controller**
+
 **********************
 
 Repository: www.github.com/eez-open  
 Web site: www.envox.hr/eez
 
 **********************
-
-This PCB panel include all modules required for digitaly controlled dual channel power supply. Their revision and build numbers are as follows:
-
- - Arduino Shield +BP option **r1B13**
- - AUX power supply **r4B40**
- - Mosfet pre-regulator **r3B3**
- - Mosfet post-regulator **r4B45**
-
+*OSH Park 2-layer (+tKeepout +_tNames).cam* job script is used for generating Gerber files. Use gerbv, a free/open source Gerber viewer (http://gerbv.geda-project.org/)
 
