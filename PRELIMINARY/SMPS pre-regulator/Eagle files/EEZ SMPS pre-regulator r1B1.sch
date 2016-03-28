@@ -17521,7 +17521,7 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 </part>
 <part name="FRAME7" library="frames" deviceset="DINA4_L" device=""/>
 <part name="C25" library="rcl" deviceset="C-EU" device="C0805" value="330n"/>
-<part name="R1" library="rcl" deviceset="R-EU_" device="R0805" value="18K"/>
+<part name="R1" library="rcl" deviceset="R-EU_" device="R1206" value="18K"/>
 <part name="R21" library="rcl" deviceset="R-EU_" device="R0805" value="390R"/>
 <part name="LED1" library="led" deviceset="LED" device="CHIPLED_0805" value="HSMY-C170"/>
 <part name="C39" library="rcl" deviceset="C-EU" device="C0805" value="3n3"/>
