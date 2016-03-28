@@ -9,7 +9,7 @@ Web site: www.envox.hr/eez
 
 This PCB panel include all modules required for digitaly controlled dual channel power supply. Their revision and build numbers are as follows:
 
- - Arduino Shield +BP option **r1B13**
+ - Arduino Shield +BP option **r1B13a**
  - AUX power supply **r4B40**
  - Mosfet pre-regulator **r3B3**
  - Mosfet post-regulator **r4B45**

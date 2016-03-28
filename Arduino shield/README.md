@@ -2,6 +2,8 @@ This product is made available under the terms of the TAPR Open Hardware License
 
 **Revision history:**
 
+* 2016-03-28: **r1B13a**
+    - Change remote sense inputs position on X4
 * 2016-03-27: **r1B13**
     - Fixed remote sense wiring
     - Output protection redesigned (TVS moved, SAR and MOVs removed)

@@ -19292,7 +19292,7 @@ type RDH, grid 15 mm</description>
 <wire x1="128.27" y1="38.1" x2="113.03" y2="38.1" width="0.1524" layer="101"/>
 <wire x1="113.03" y1="38.1" x2="113.03" y2="43.18" width="0.1524" layer="101"/>
 <wire x1="113.03" y1="43.18" x2="128.27" y2="43.18" width="0.1524" layer="101"/>
-<text x="109.22" y="60.325" size="2.1844" layer="101">6-pin push-in connector X3, X4</text>
+<text x="109.22" y="60.325" size="2.1844" layer="101">6-pin push-in connector X3</text>
 <circle x="119.38" y="39.37" radius="0.635" width="0.1524" layer="101"/>
 <text x="128.905" y="45.085" size="1.4224" layer="101">6 Battery NTC (Input)</text>
 <circle x="121.92" y="39.37" radius="0.635" width="0.1524" layer="101"/>
@@ -19344,6 +19344,40 @@ type RDH, grid 15 mm</description>
 <wire x1="121.92" y1="22.225" x2="121.92" y2="25.4" width="0.1524" layer="103"/>
 <wire x1="137.16" y1="22.225" x2="121.92" y2="22.225" width="0.1524" layer="103"/>
 <wire x1="111.76" y1="22.225" x2="121.92" y2="22.225" width="0.1524" layer="103"/>
+<circle x="167.64" y="39.37" radius="0.635" width="0.1524" layer="101"/>
+<circle x="165.1" y="39.37" radius="0.635" width="0.1524" layer="101"/>
+<wire x1="179.07" y1="43.18" x2="179.07" y2="38.1" width="0.1524" layer="101"/>
+<wire x1="179.07" y1="38.1" x2="163.83" y2="38.1" width="0.1524" layer="101"/>
+<wire x1="163.83" y1="38.1" x2="163.83" y2="43.18" width="0.1524" layer="101"/>
+<wire x1="163.83" y1="43.18" x2="179.07" y2="43.18" width="0.1524" layer="101"/>
+<text x="160.02" y="60.325" size="2.1844" layer="101">6-pin push-in connector X4</text>
+<circle x="170.18" y="39.37" radius="0.635" width="0.1524" layer="101"/>
+<text x="179.705" y="45.085" size="1.4224" layer="101">6 Battery NTC (Input)</text>
+<circle x="172.72" y="39.37" radius="0.635" width="0.1524" layer="101"/>
+<text x="179.705" y="47.625" size="1.4224" layer="101">5 Channel ground</text>
+<circle x="175.26" y="39.37" radius="0.635" width="0.1524" layer="101"/>
+<circle x="177.8" y="39.37" radius="0.635" width="0.1524" layer="101"/>
+<text x="179.705" y="57.785" size="1.4224" layer="101">1 Remote sense- (Input)</text>
+<text x="179.705" y="52.705" size="1.4224" layer="101">3 Earth</text>
+<wire x1="179.07" y1="55.88" x2="173.99" y2="55.88" width="0.1524" layer="101"/>
+<wire x1="173.99" y1="55.88" x2="167.64" y2="49.53" width="0.1524" layer="101"/>
+<wire x1="167.64" y1="49.53" x2="167.64" y2="44.45" width="0.1524" layer="101"/>
+<wire x1="179.07" y1="53.34" x2="175.26" y2="53.34" width="0.1524" layer="101"/>
+<wire x1="175.26" y1="53.34" x2="170.18" y2="48.26" width="0.1524" layer="101"/>
+<wire x1="170.18" y1="48.26" x2="170.18" y2="44.45" width="0.1524" layer="101"/>
+<wire x1="179.07" y1="50.8" x2="176.53" y2="50.8" width="0.1524" layer="101"/>
+<wire x1="176.53" y1="50.8" x2="172.72" y2="46.99" width="0.1524" layer="101"/>
+<wire x1="172.72" y1="46.99" x2="172.72" y2="44.45" width="0.1524" layer="101"/>
+<wire x1="177.8" y1="48.26" x2="175.26" y2="45.72" width="0.1524" layer="101"/>
+<wire x1="175.26" y1="45.72" x2="175.26" y2="44.45" width="0.1524" layer="101"/>
+<wire x1="179.07" y1="45.72" x2="177.8" y2="45.72" width="0.1524" layer="101"/>
+<wire x1="177.8" y1="44.45" x2="177.8" y2="45.72" width="0.1524" layer="101"/>
+<wire x1="177.8" y1="48.26" x2="179.07" y2="48.26" width="0.1524" layer="101"/>
+<wire x1="165.1" y1="44.45" x2="165.1" y2="50.8" width="0.1524" layer="101"/>
+<wire x1="165.1" y1="50.8" x2="172.72" y2="58.42" width="0.1524" layer="101"/>
+<wire x1="172.72" y1="58.42" x2="179.07" y2="58.42" width="0.1524" layer="101"/>
+<text x="179.705" y="50.165" size="1.4224" layer="101">4 Earth</text>
+<text x="179.705" y="55.245" size="1.4224" layer="101">2 Remote sense+ (Input)</text>
 </plain>
 <instances>
 <instance part="K_S2" gate="1" x="241.3" y="48.26" smashed="yes" rot="MR0">
@@ -19568,14 +19602,14 @@ type RDH, grid 15 mm</description>
 <instance part="X4" gate="-3" x="83.82" y="48.26" smashed="yes" rot="MR0">
 <attribute name="NAME" x="90.17" y="49.149" size="1.778" layer="95" rot="MR180"/>
 </instance>
-<instance part="X4" gate="-4" x="83.82" y="73.66" smashed="yes" rot="R180">
+<instance part="X4" gate="-4" x="83.82" y="45.72" smashed="yes" rot="R180">
+<attribute name="NAME" x="90.17" y="44.831" size="1.778" layer="95"/>
+</instance>
+<instance part="X4" gate="-5" x="83.82" y="73.66" smashed="yes" rot="R180">
 <attribute name="NAME" x="90.17" y="72.771" size="1.778" layer="95"/>
 </instance>
-<instance part="X4" gate="-5" x="83.82" y="35.56" smashed="yes" rot="R180">
-<attribute name="NAME" x="90.17" y="34.671" size="1.778" layer="95"/>
-</instance>
-<instance part="X4" gate="-6" x="83.82" y="45.72" smashed="yes" rot="MR0">
-<attribute name="NAME" x="90.17" y="46.609" size="1.778" layer="95" rot="MR180"/>
+<instance part="X4" gate="-6" x="83.82" y="35.56" smashed="yes" rot="MR0">
+<attribute name="NAME" x="90.17" y="36.449" size="1.778" layer="95" rot="MR180"/>
 </instance>
 <instance part="LED_01_POS" gate="-GREEN" x="243.84" y="129.54" smashed="yes" rot="R270">
 <attribute name="NAME" x="242.697" y="131.826" size="1.4224" layer="95" rot="R180"/>
@@ -19747,13 +19781,13 @@ type RDH, grid 15 mm</description>
 <wire x1="78.74" y1="53.34" x2="88.9" y2="53.34" width="0.1524" layer="91"/>
 <label x="88.9" y="55.88" size="1.27" layer="102" rot="R180"/>
 <pinref part="J4" gate="G$1" pin="P$1"/>
+<junction x="78.74" y="48.26"/>
+<wire x1="81.28" y1="48.26" x2="78.74" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="45.72" x2="81.28" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="X4" gate="-4" pin="1"/>
+<wire x1="81.28" y1="45.72" x2="83.82" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="X4" gate="-3" pin="1"/>
 <wire x1="83.82" y1="48.26" x2="81.28" y2="48.26" width="0.1524" layer="91"/>
-<junction x="78.74" y="48.26"/>
-<pinref part="X4" gate="-6" pin="1"/>
-<wire x1="81.28" y1="48.26" x2="78.74" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="45.72" x2="81.28" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="45.72" x2="81.28" y2="48.26" width="0.1524" layer="91"/>
 <junction x="81.28" y="48.26"/>
 </segment>
 <segment>
@@ -19806,16 +19840,16 @@ type RDH, grid 15 mm</description>
 <segment>
 <label x="83.185" y="75.565" size="1.27" layer="102" rot="R180"/>
 <wire x1="40.64" y1="73.66" x2="83.82" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="X4" gate="-4" pin="1"/>
 <pinref part="K_S2" gate="2" pin="S"/>
+<pinref part="X4" gate="-5" pin="1"/>
 </segment>
 </net>
 <net name="SENSE2-" class="0">
 <segment>
 <label x="83.185" y="37.465" size="1.27" layer="102" rot="R180"/>
 <wire x1="40.64" y1="35.56" x2="83.82" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="X4" gate="-5" pin="1"/>
 <pinref part="K_S2" gate="3" pin="S"/>
+<pinref part="X4" gate="-6" pin="1"/>
 </segment>
 </net>
 <net name="OUT2-" class="0">
