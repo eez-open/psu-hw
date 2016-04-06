@@ -1,7 +1,12 @@
 **Revision history:**
 
-* 2016-01-27: **r4B40** - A1 and A2 pins swap on triac Q1 and Q2 to lower required gate current, change KK1 heatsink type
-* 2015-11-14: **r4B39** - first public release
+* 2016-04-06: **r4B41**
+    - Add fan control
+    - Change power connector
+* 2016-01-27: **r4B40**
+    - A1 and A2 pins swap on triac Q1 and Q2 to lower required gate current    
+    - Change KK1 heatsink type
+* 2015-11-14: **r4B39** - *First public release*
 
 **********************
 

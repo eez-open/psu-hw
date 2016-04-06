@@ -2,6 +2,10 @@ This product is made available under the terms of the TAPR Open Hardware License
 
 **Revision history:**
 
+* 2016-04-06: **r1B14**
+    - Added fan control (FAN_PWM, FAN_SENSE)
+    - Power connector replaced with 6-pin IDC as on the AUX PS r4B41
+    - Removed optional reset connector
 * 2016-03-28: **r1B13a**
     - Change remote sense inputs position on X4
 * 2016-03-27: **r1B13**
@@ -11,7 +15,7 @@ This product is made available under the terms of the TAPR Open Hardware License
     - Remote sense 4 mm banana binding posts replaced with compact "push-in" connectors
     - Digital trigger input (with buffer and level shifter) added
     - THT LEDs replaced with SMD counterparts (lightpipes are now required)
-* 2015-12-07: **r1B12b** - first public release
+* 2015-12-07: **r1B12b** - *First public release*
 
 **********************
 
