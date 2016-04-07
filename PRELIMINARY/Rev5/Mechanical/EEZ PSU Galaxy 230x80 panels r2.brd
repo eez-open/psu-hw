@@ -202,7 +202,6 @@
 <wire x1="179.5" y1="186.5" x2="138.5" y2="186.5" width="0.1" layer="46"/>
 <dimension x1="181.9" y1="177" x2="186.1" y2="177" x3="184" y3="168.5" textsize="2" layer="47" dtype="diameter"/>
 <dimension x1="147.5" y1="177.5" x2="145.872534375" y2="176.337525" x3="139.525409375" y3="171.803871875" textsize="2" layer="47" dtype="radius"/>
-<dimension x1="207.5" y1="174.5" x2="241" y2="162" x3="246" y3="168.25" textsize="2" layer="47" dtype="vertical"/>
 <circle x="25" y="233" radius="1.6" width="0.1" layer="119"/>
 <circle x="25" y="170" radius="1.6" width="0.1" layer="119"/>
 <circle x="117" y="233" radius="1.6" width="0.1" layer="119"/>
@@ -276,20 +275,16 @@
 <circle x="193.5" y="69.5" radius="1.4" width="0.1" layer="20"/>
 <wire x1="20" y1="242" x2="20" y2="162" width="0.1" layer="114" style="shortdash"/>
 <wire x1="230" y1="242" x2="230" y2="162" width="0.1" layer="114" style="shortdash"/>
-<dimension x1="227" y1="176.5" x2="194" y2="176" x3="210.5" y3="168.5" textsize="2" layer="47" dtype="horizontal"/>
-<dimension x1="227.5" y1="229.5" x2="228" y2="177" x3="231.5" y3="203.25" textsize="2" layer="47" dtype="vertical"/>
-<wire x1="194" y1="177" x2="227" y2="177" width="0.1" layer="46"/>
-<wire x1="227" y1="177" x2="227" y2="229.5" width="0.1" layer="46"/>
-<wire x1="227" y1="229.5" x2="194" y2="229.5" width="0.1" layer="46"/>
-<wire x1="194" y1="229.5" x2="194" y2="177" width="0.1" layer="46"/>
-<circle x="210.5" y="174.5" radius="1.5" width="0.1" layer="20"/>
-<circle x="210.5" y="232" radius="1.5" width="0.1" layer="20"/>
+<dimension x1="227" y1="177.5" x2="199" y2="177.5" x3="213" y3="174.5" textsize="2" layer="47" dtype="horizontal"/>
+<dimension x1="228.5" y1="225" x2="228.5" y2="178" x3="231.5" y3="201.5" textsize="2" layer="47" dtype="vertical"/>
+<wire x1="199" y1="178" x2="227" y2="178" width="0.1" layer="46"/>
+<wire x1="227" y1="178" x2="227" y2="225" width="0.1" layer="46"/>
+<wire x1="227" y1="225" x2="199" y2="225" width="0.1" layer="46"/>
+<wire x1="199" y1="225" x2="199" y2="178" width="0.1" layer="46"/>
 <wire x1="129" y1="232" x2="189" y2="232" width="0.1" layer="117"/>
 <wire x1="189" y1="232" x2="189" y2="172" width="0.1" layer="117"/>
 <wire x1="189" y1="172" x2="129" y2="172" width="0.1" layer="117"/>
 <wire x1="129" y1="172" x2="129" y2="232" width="0.1" layer="117"/>
-<dimension x1="194" y1="229.5" x2="210.5" y2="229" x3="202.25" y3="236" textsize="2" layer="47" dtype="horizontal"/>
-<dimension x1="210.5" y1="235" x2="227" y2="230.5" x3="218.75" y3="236" textsize="2" layer="47" dtype="horizontal"/>
 <dimension x1="33.75" y1="92" x2="40.25" y2="92" x3="37" y3="98" textsize="2" layer="47" dtype="diameter"/>
 <dimension x1="38.4" y1="81.5" x2="35.6" y2="81.5" x3="37" y3="77.5" textsize="2" layer="47" dtype="diameter"/>
 <dimension x1="62.1" y1="88.5" x2="64.9" y2="88.5" x3="63.5" y3="92.5" textsize="2" layer="47" dtype="diameter"/>
@@ -350,22 +345,18 @@
 <dimension x1="10" y1="259" x2="98" y2="237" x3="54" y3="259.5" textsize="2" layer="47" dtype="horizontal"/>
 <dimension x1="10" y1="262" x2="134" y2="234.5" x3="72" y3="263" textsize="2" layer="47" dtype="horizontal"/>
 <dimension x1="10" y1="266" x2="184" y2="234.5" x3="97" y3="266.5" textsize="2" layer="47" dtype="horizontal"/>
-<dimension x1="10" y1="269.5" x2="194" y2="238" x3="102" y3="270" textsize="2" layer="47" dtype="horizontal"/>
-<dimension x1="10" y1="272.5" x2="210.5" y2="237.5" x3="110.25" y3="273.5" textsize="2" layer="47" dtype="horizontal"/>
-<dimension x1="10" y1="276" x2="227" y2="237.5" x3="118.5" y3="277" textsize="2" layer="47" dtype="horizontal"/>
+<dimension x1="10" y1="269.5" x2="199" y2="225.5" x3="104.5" y3="270" textsize="2" layer="47" dtype="horizontal"/>
+<dimension x1="10" y1="273" x2="227" y2="226" x3="118.5" y3="274" textsize="2" layer="47" dtype="horizontal"/>
 <dimension x1="18" y1="170" x2="9" y2="162" x3="6.5" y3="166" textsize="2" layer="47" dtype="vertical"/>
 <dimension x1="75.5" y1="219.5" x2="4" y2="162" x3="3" y3="190.75" textsize="2" layer="47" dtype="vertical"/>
 <dimension x1="52.5" y1="220.5" x2="0.5" y2="162" x3="-0.5" y3="191.25" textsize="2" layer="47" dtype="vertical"/>
-<dimension x1="235" y1="177" x2="249" y2="162" x3="250" y3="169.5" textsize="2" layer="47" dtype="vertical"/>
-<dimension x1="187" y1="227" x2="252.5" y2="162" x3="253.5" y3="194.5" textsize="2" layer="47" dtype="vertical"/>
-<dimension x1="233" y1="229.5" x2="256" y2="162" x3="257" y3="195.75" textsize="2" layer="47" dtype="vertical"/>
-<dimension x1="204.5" y1="232" x2="259.5" y2="162" x3="260.5" y3="197" textsize="2" layer="47" dtype="vertical"/>
-<dimension x1="240.5" y1="242" x2="263" y2="162" x3="264" y3="202" textsize="2" layer="47" dtype="vertical" visible="yes"/>
-<dimension x1="10" y1="279.5" x2="240" y2="243" x3="125" y3="280.5" textsize="2" layer="47" dtype="horizontal" visible="yes"/>
+<dimension x1="235" y1="178" x2="243" y2="162" x3="244" y3="170" textsize="2" layer="47" dtype="vertical"/>
+<dimension x1="187" y1="227" x2="246.5" y2="162" x3="247.5" y3="194.5" textsize="2" layer="47" dtype="vertical"/>
+<dimension x1="234.5" y1="225" x2="250" y2="162" x3="251" y3="193.5" textsize="2" layer="47" dtype="vertical"/>
+<dimension x1="240.5" y1="242" x2="257" y2="162" x3="255.5" y3="202" textsize="2" layer="47" dtype="vertical" visible="yes"/>
+<dimension x1="10" y1="276.5" x2="240" y2="243" x3="125" y3="277.5" textsize="2" layer="47" dtype="horizontal" visible="yes"/>
 <text x="33.5" y="230" size="2" layer="47">Countersink</text>
 <text x="125.5" y="236.5" size="2" layer="47">Countersink</text>
-<text x="212.5" y="233" size="2" layer="47">M3</text>
-<text x="212.5" y="171.5" size="2" layer="47">M3</text>
 <dimension x1="52" y1="232.5" x2="-3" y2="162" x3="-4" y3="197.25" textsize="2" layer="47" dtype="vertical"/>
 <dimension x1="18" y1="233" x2="-6.5" y2="162" x3="-7.5" y3="197.5" textsize="2" layer="47" dtype="vertical"/>
 <dimension x1="75" y1="236.5" x2="-10" y2="162" x3="-11" y3="199.25" textsize="2" layer="47" dtype="vertical"/>
@@ -519,6 +510,13 @@
 <dimension x1="10" y1="-3" x2="92.5" y2="1" x3="51.25" y3="-4" textsize="2" layer="47" dtype="horizontal"/>
 <dimension x1="10" y1="-6.5" x2="159.5" y2="1" x3="84.75" y3="-7.5" textsize="2" layer="47" dtype="horizontal"/>
 <dimension x1="10" y1="-10" x2="168.5" y2="-2.5" x3="89.25" y3="-11" textsize="2" layer="47" dtype="horizontal"/>
+<text x="213.5" y="200.5" size="1.8" layer="47" align="center">Hole for
+Shurter
+KM00.1105.11
+with
+4301.1403
+fuse drawer</text>
+<dimension x1="215" y1="242" x2="222" y2="225" x3="223" y3="233.5" textsize="2" layer="47" dtype="vertical"/>
 </plain>
 <libraries>
 </libraries>
@@ -730,4 +728,10 @@ Please make sure your boards conform to these design rules.</description>
 </signals>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
