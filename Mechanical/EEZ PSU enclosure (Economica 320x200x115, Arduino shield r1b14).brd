@@ -25,7 +25,9 @@
 <layer number="20" name="Dimension" color="11" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="14" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
@@ -57,8 +59,11 @@
 <layer number="111" name="HeatSink" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="112" name="trafo" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="114" name="panel" color="11" fill="1" visible="yes" active="yes"/>
+<layer number="115" name="pcb" color="2" fill="12" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="7" fill="1" visible="no" active="no"/>
+<layer number="117" name="fan" color="7" fill="1" visible="no" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
+<layer number="119" name="Countersink" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="no"/>
@@ -113,7 +118,7 @@
 </layers>
 <board>
 <plain>
-<dimension x1="0" y1="-2" x2="320" y2="-22" x3="160" y3="-28" textsize="2" layer="47" dtype="horizontal"/>
+<dimension x1="0" y1="-2" x2="320" y2="-22" x3="160" y3="-21" textsize="2" layer="47" dtype="horizontal"/>
 <dimension x1="-1" y1="115" x2="-1" y2="0" x3="-26" y3="57.5" textsize="2" layer="47" dtype="vertical"/>
 <hole x="10" y="29" drill="4.5"/>
 <hole x="10" y="86" drill="4.5"/>
@@ -145,15 +150,8 @@
 <dimension x1="146" y1="5" x2="131" y2="0" x3="148" y3="2.5" textsize="2" layer="47" dtype="vertical"/>
 <wire x1="320" y1="114" x2="320" y2="1" width="0.1" layer="20"/>
 <wire x1="320" y1="1" x2="320" y2="0" width="0.1" layer="20"/>
-<wire x1="20" y1="22.4" x2="20" y2="45.2" width="0.1" layer="20"/>
-<wire x1="22.4" y1="47.6" x2="49.2" y2="47.6" width="0.1" layer="20"/>
-<wire x1="51.6" y1="45.2" x2="51.6" y2="22.4" width="0.1" layer="20"/>
-<dimension x1="20" y1="25" x2="51.6" y2="21" x3="35.8" y3="26.2" textsize="2" layer="47" dtype="horizontal"/>
-<hole x="35.8" y="15.8" drill="3"/>
-<hole x="35.8" y="51.8" drill="3"/>
 <hole x="21.5" y="95" drill="3.2"/>
 <hole x="48.5" y="95" drill="3.2"/>
-<wire x1="49.2" y1="20" x2="22.4" y2="20" width="0.1" layer="20"/>
 <wire x1="27" y1="99" x2="43" y2="99" width="0.1" layer="20"/>
 <wire x1="43" y1="99" x2="43" y2="85" width="0.1" layer="20"/>
 <wire x1="43" y1="85" x2="27" y2="85" width="0.1" layer="20"/>
@@ -164,25 +162,19 @@
 <wire x1="81.25" y1="98.75" x2="81.25" y2="87.25" width="0.1" layer="20"/>
 <wire x1="81.25" y1="87.25" x2="68.75" y2="87.25" width="0.1" layer="20"/>
 <wire x1="68.75" y1="87.25" x2="68.75" y2="98.75" width="0.1" layer="20"/>
-<wire x1="29.75" y1="63.5" x2="29.75" y2="71.5" width="0.1" layer="20"/>
-<wire x1="40.25" y1="71.5" x2="40.25" y2="63.5" width="0.1" layer="20"/>
-<wire x1="35" y1="60.875" x2="29.75" y2="63.5" width="0.1" layer="20" curve="-51.340192"/>
-<wire x1="35" y1="74.125" x2="40.25" y2="71.5" width="0.1" layer="20" curve="-51.340192"/>
-<wire x1="35" y1="74.125" x2="29.75" y2="71.5" width="0.1" layer="20" curve="51.340192"/>
-<wire x1="35" y1="60.875" x2="40.25" y2="63.5" width="0.1" layer="20" curve="51.340192"/>
 <dimension x1="302" y1="8" x2="303" y2="0" x3="307" y3="4" textsize="3.5" layer="109" dtype="vertical"/>
 <wire x1="179" y1="9" x2="179" y2="41" width="0.1" layer="20"/>
 <wire x1="179" y1="41" x2="287" y2="41" width="0.1" layer="20"/>
 <wire x1="287" y1="41" x2="287" y2="9" width="0.1" layer="20"/>
 <wire x1="287" y1="9" x2="179" y2="9" width="0.1" layer="20"/>
 <dimension x1="178" y1="41" x2="178" y2="0" x3="168" y3="20.5" textsize="2" layer="47" dtype="vertical"/>
-<dimension x1="291" y1="87" x2="320" y2="-1" x3="305.5" y3="-6" textsize="2" layer="47" dtype="horizontal"/>
-<dimension x1="179" y1="9" x2="320" y2="-10" x3="249.5" y3="-16" textsize="2" layer="47" dtype="horizontal"/>
+<dimension x1="291" y1="87" x2="320" y2="-1" x3="305.5" y3="-4" textsize="2" layer="47" dtype="horizontal"/>
+<dimension x1="179" y1="9" x2="320" y2="-10" x3="249.5" y3="-12" textsize="2" layer="47" dtype="horizontal"/>
 <hole x="139" y="10" drill="4"/>
 <dimension x1="130" y1="0" x2="146.5" y2="50" x3="128.5" y3="25" textsize="2" layer="47" dtype="vertical"/>
 <hole x="139" y="50" drill="4"/>
 <dimension x1="143" y1="10" x2="125" y2="0" x3="134.25" y3="5" textsize="2" layer="47" dtype="vertical"/>
-<dimension x1="139" y1="53" x2="320" y2="-15" x3="229.5" y3="-22" textsize="2" layer="47" dtype="horizontal"/>
+<dimension x1="139" y1="53" x2="320" y2="-15" x3="229.5" y3="-16" textsize="2" layer="47" dtype="horizontal"/>
 <wire x1="179" y1="63" x2="179" y2="93" width="0.1" layer="20"/>
 <wire x1="179" y1="93" x2="287" y2="93" width="0.1" layer="20"/>
 <wire x1="287" y1="93" x2="287" y2="63" width="0.1" layer="20"/>
@@ -193,31 +185,16 @@
 <dimension x1="114" y1="0" x2="142.5" y2="105" x3="117.75" y3="52.5" textsize="2" layer="47" dtype="vertical"/>
 <hole x="291" y="30" drill="4"/>
 <dimension x1="286.75" y1="30" x2="293" y2="0" x3="296.75" y3="15" textsize="2" layer="47" dtype="vertical"/>
-<dimension x1="287" y1="8" x2="320" y2="-9" x3="303.5" y3="-12" textsize="2" layer="47" dtype="horizontal"/>
+<dimension x1="287" y1="8" x2="320" y2="-7" x3="303.5" y3="-8" textsize="2" layer="47" dtype="horizontal"/>
 <hole x="291" y="85" drill="4"/>
 <dimension x1="290" y1="85" x2="301" y2="0" x3="302" y3="42.5" textsize="2" layer="47" dtype="vertical"/>
 <dimension x1="178" y1="9" x2="178" y2="0" x3="174" y3="4.5" textsize="2" layer="47" dtype="vertical"/>
 <dimension x1="178" y1="61" x2="167" y2="0" x3="162" y3="30.5" textsize="2" layer="47" dtype="vertical"/>
 <dimension x1="178" y1="93" x2="158" y2="0" x3="156" y3="46.5" textsize="2" layer="47" dtype="vertical"/>
-<dimension x1="52.5" y1="20" x2="54" y2="0" x3="59.3" y3="10" textsize="2" layer="47" dtype="vertical"/>
-<dimension x1="51.6" y1="47.6" x2="57" y2="0" x3="65.6" y3="23.8" textsize="2" layer="47" dtype="vertical"/>
-<dimension x1="0" y1="-5" x2="20" y2="24" x3="10" y3="-6" textsize="2" layer="47" dtype="horizontal"/>
-<dimension x1="0" y1="-8" x2="51.6" y2="20.5" x3="25.8" y3="-20.7" textsize="2" layer="47" dtype="horizontal"/>
-<dimension x1="24" y1="47.6" x2="24.8" y2="20" x3="28.8" y3="33.8" textsize="2" layer="47" dtype="vertical"/>
-<dimension x1="29.75" y1="62.75" x2="40.25" y2="62.75" x3="35" y3="55" textsize="2" layer="47" dtype="horizontal"/>
-<dimension x1="34.25" y1="67.5" x2="73" y2="0" x3="77.7" y3="33.75" textsize="2" layer="47" dtype="vertical"/>
-<dimension x1="35" y1="60.9" x2="35" y2="74.1" x3="35" y3="74.1" textsize="2" layer="47" dtype="diameter"/>
-<dimension x1="0" y1="77.5" x2="35" y2="79.5" x3="17.5" y3="76.5" textsize="2" layer="47" dtype="horizontal"/>
-<wire x1="20" y1="22.4" x2="22.4" y2="20" width="0.1" layer="20" curve="90"/>
-<wire x1="22.4" y1="47.6" x2="20" y2="45.2" width="0.1" layer="20" curve="90"/>
-<wire x1="49.2" y1="20" x2="51.6" y2="22.4" width="0.1" layer="20" curve="90"/>
-<wire x1="51.6" y1="45.2" x2="49.2" y2="47.6" width="0.1" layer="20" curve="90"/>
-<dimension x1="36.2" y1="20" x2="32.6" y2="15.8" x3="45.7" y3="17.9" textsize="2" layer="47" dtype="vertical"/>
-<dimension x1="37.5" y1="51.8" x2="37.3" y2="47.6" x3="24.8" y3="49.7" textsize="2" layer="47" dtype="vertical"/>
-<dimension x1="38.3" y1="51.8" x2="48" y2="15.8" x3="57.1" y3="33.8" textsize="2" layer="47" dtype="vertical"/>
-<dimension x1="0" y1="-15.3" x2="35.8" y2="18.2" x3="17.9" y3="-13.7" textsize="2" layer="47" dtype="horizontal"/>
-<dimension x1="22.4" y1="22.4" x2="20.739428125" y2="20.667228125" x3="15.342565625" y3="15.035721875" textsize="2" layer="47" dtype="radius"/>
-<dimension x1="22.4" y1="45.2" x2="20.484040625" y2="46.645371875" x3="14.257175" y3="51.34283125" textsize="2" layer="47" dtype="radius"/>
+<dimension x1="50" y1="24" x2="54" y2="0" x3="52.8" y3="12" textsize="2" layer="47" dtype="vertical"/>
+<dimension x1="50" y1="71" x2="57" y2="0" x3="56.1" y3="35.5" textsize="2" layer="47" dtype="vertical"/>
+<dimension x1="0" y1="-5" x2="21" y2="17.5" x3="10.5" y3="-6" textsize="2" layer="47" dtype="horizontal"/>
+<dimension x1="0" y1="-8" x2="49" y2="18" x3="24.5" y3="-10.7" textsize="2" layer="47" dtype="horizontal"/>
 <dimension x1="0" y1="110.5" x2="21.5" y2="89" x3="10.75" y3="118" textsize="2" layer="47" dtype="horizontal"/>
 <dimension x1="0" y1="134.25" x2="48.5" y2="92.5" x3="24.25" y3="135.5" textsize="2" layer="47" dtype="horizontal"/>
 <dimension x1="0" y1="142.25" x2="60" y2="91.25" x3="30" y3="141" textsize="2" layer="47" dtype="horizontal"/>
@@ -258,8 +235,6 @@
 <dimension x1="154" y1="199" x2="150" y2="149" x3="152" y3="142" textsize="2" layer="47" dtype="horizontal"/>
 <dimension x1="155.5" y1="195" x2="152.5" y2="195" x3="154" y3="188" textsize="2" layer="47" dtype="diameter"/>
 <text x="150" y="202" size="3.5" layer="111">Heatsink SK85/50/SA</text>
-<dimension x1="32.2" y1="15.8" x2="26.3" y2="0" x3="29.3" y3="7.9" textsize="2" layer="47" dtype="vertical"/>
-<dimension x1="59.5" y1="51.8" x2="68.5" y2="0" x3="71.8" y3="25.9" textsize="2" layer="47" dtype="vertical"/>
 <dimension x1="91" y1="0" x2="75" y2="87.25" x3="93" y3="43.625" textsize="2" layer="47" dtype="vertical"/>
 <dimension x1="98.25" y1="0" x2="81.5" y2="98.75" x3="106.25" y3="49.375" textsize="2" layer="47" dtype="vertical"/>
 <dimension x1="21.5" y1="106.25" x2="48.5" y2="106" x3="35" y3="107.75" textsize="2" layer="47" dtype="horizontal"/>
@@ -267,7 +242,7 @@
 <dimension x1="52" y1="95" x2="-12" y2="0" x3="-14.5" y3="47.5" textsize="2" layer="47" dtype="vertical"/>
 <dimension x1="25" y1="99" x2="-21" y2="0" x3="-20.5" y3="49.5" textsize="2" layer="47" dtype="vertical"/>
 <dimension x1="139" y1="62" x2="179" y2="94" x3="159" y3="76" textsize="2" layer="47" dtype="horizontal"/>
-<dimension x1="179" y1="-6" x2="287" y2="-10" x3="233" y3="-10" textsize="2" layer="47" dtype="horizontal"/>
+<dimension x1="179" y1="-6" x2="287" y2="-10" x3="233" y3="-8" textsize="2" layer="47" dtype="horizontal"/>
 <dimension x1="199" y1="93" x2="205" y2="63" x3="205" y3="78" textsize="2" layer="47" dtype="vertical"/>
 <dimension x1="202" y1="41" x2="207" y2="9" x3="208" y3="25" textsize="2" layer="47" dtype="vertical"/>
 <dimension x1="60" y1="89.5" x2="90" y2="89.5" x3="75" y3="77" textsize="2" layer="47" dtype="horizontal"/>
@@ -458,8 +433,6 @@ before start drilling rear panel (some models has
 27 mm spacing instead of 30 mm)</text>
 <dimension x1="340" y1="-2" x2="350" y2="-1" x3="345" y3="-7" textsize="2" layer="47" dtype="horizontal"/>
 <text x="205" y="144" size="3.5" layer="111">All holes are M3 (5-8 mm deep)</text>
-<text x="37" y="11" size="2" layer="47">M3</text>
-<text x="38" y="48" size="2" layer="47">M3</text>
 <text x="162" y="-298" size="2" layer="47">M3</text>
 <circle x="160" y="-121" radius="1.5" width="0.1" layer="20"/>
 <dimension x1="154" y1="-121" x2="159.5" y2="-110" x3="168" y3="-115.5" textsize="2" layer="47" dtype="vertical"/>
@@ -609,6 +582,17 @@ the metal front panel.</text>
 <hole x="255" y="-442" drill="2.8"/>
 <hole x="220.75" y="-396" drill="2.8"/>
 <hole x="220.75" y="-449" drill="2.8"/>
+<dimension x1="49" y1="23.5" x2="21" y2="23.5" x3="35" y3="20.5" textsize="2" layer="47" dtype="horizontal"/>
+<wire x1="21" y1="24" x2="49" y2="24" width="0.1" layer="46"/>
+<wire x1="49" y1="24" x2="49" y2="71" width="0.1" layer="46"/>
+<wire x1="49" y1="71" x2="21" y2="71" width="0.1" layer="46"/>
+<wire x1="21" y1="71" x2="21" y2="24" width="0.1" layer="46"/>
+<text x="35.5" y="46.5" size="1.8" layer="47" align="center">Hole for
+Shurter
+KM00.1105.11
+with
+4301.1403
+fuse drawer</text>
 </plain>
 <libraries>
 </libraries>
