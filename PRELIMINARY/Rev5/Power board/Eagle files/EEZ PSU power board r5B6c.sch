@@ -82,11 +82,65 @@
 <layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="fp8" color="7" fill="1" visible="no" active="no"/>
 <layer number="109" name="fp9" color="7" fill="1" visible="no" active="no"/>
 <layer number="110" name="110" color="7" fill="1" visible="no" active="no"/>
 <layer number="111" name="111" color="7" fill="1" visible="no" active="no"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="113" name="ReferenceLS" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="7" fill="1" visible="no" active="no"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="no"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="no"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="no"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="no"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="no"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="no"/>
+<layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="no"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="no" active="no"/>
+<layer number="151" name="HeatSink" color="14" fill="1" visible="no" active="no"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
+<layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
+<layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="no" active="no"/>
+<layer number="200" name="200bmp" color="1" fill="10" visible="no" active="no"/>
+<layer number="201" name="201bmp" color="2" fill="1" visible="no" active="no"/>
+<layer number="202" name="202bmp" color="3" fill="1" visible="no" active="no"/>
+<layer number="203" name="203bmp" color="4" fill="10" visible="no" active="no"/>
+<layer number="204" name="204bmp" color="5" fill="1" visible="no" active="no"/>
+<layer number="205" name="205bmp" color="6" fill="1" visible="no" active="no"/>
+<layer number="206" name="206bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="207" name="207bmp" color="8" fill="1" visible="no" active="no"/>
+<layer number="208" name="208bmp" color="9" fill="1" visible="no" active="no"/>
+<layer number="209" name="209bmp" color="10" fill="1" visible="no" active="no"/>
+<layer number="210" name="210bmp" color="11" fill="1" visible="no" active="no"/>
+<layer number="211" name="211bmp" color="12" fill="1" visible="no" active="no"/>
+<layer number="212" name="212bmp" color="13" fill="1" visible="no" active="no"/>
+<layer number="213" name="213bmp" color="14" fill="1" visible="no" active="no"/>
+<layer number="214" name="214bmp" color="15" fill="1" visible="no" active="no"/>
+<layer number="215" name="215bmp" color="16" fill="1" visible="no" active="no"/>
+<layer number="216" name="216bmp" color="17" fill="1" visible="no" active="no"/>
+<layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
+<layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
+<layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
+<layer number="220" name="220bmp" color="21" fill="1" visible="no" active="no"/>
+<layer number="221" name="221bmp" color="22" fill="1" visible="no" active="no"/>
+<layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
+<layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
+<layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="231" name="Eagle3D_PG1" color="7" fill="1" visible="no" active="no"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="no" active="no"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="no" active="no"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="no" active="no"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="no" active="no"/>
+<layer number="250" name="Descript" color="7" fill="1" visible="no" active="no"/>
+<layer number="251" name="SMDround" color="7" fill="1" visible="no" active="no"/>
+<layer number="254" name="OrgLBR" color="13" fill="1" visible="no" active="no"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -23367,7 +23421,7 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <part name="Q7" library="EEZ_Lib1" deviceset="BCP56" device="" value="BCP56-16.115"/>
 <part name="SUPPLY25" library="supply2" deviceset="GND" device="" value="PGND"/>
 <part name="C59" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
-<part name="SH1" library="EEZ_Lib1" deviceset="SHORT" device="" value="Pgnd to Pout- short"/>
+<part name="SH1" library="EEZ_Lib1" deviceset="SHORT" device="NOHOLE" value="Pgnd to Pout- short"/>
 <part name="R31" library="rcl" deviceset="R-EU_" device="R0805" value="1K"/>
 <part name="IC9" library="EEZ_Lib1" deviceset="OP27GSZ" device="SO8" value="OP27GSZ"/>
 <part name="C56" library="rcl" deviceset="C-EU" device="C0805" value="1u"/>
@@ -23471,7 +23525,7 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <part name="R8" library="rcl" deviceset="R-EU_" device="R0805" value="100R"/>
 <part name="L3" library="EEZ_Lib1" deviceset="IHLP-2020BZ-11" device="" value="IHLP2020CZER3R3M11"/>
 <part name="L2" library="EEZ_Lib1" deviceset="IHLP-2020BZ-11" device="" value="IHLP2020CZER3R3M11"/>
-<part name="SH2" library="EEZ_Lib1" deviceset="SHORT" device="" value="Sgnd to Pgnd short"/>
+<part name="SH2" library="EEZ_Lib1" deviceset="SHORT" device="NOHOLE" value="Sgnd to Pgnd short"/>
 <part name="Q1" library="EEZ_Lib1" deviceset="P-MOSFET" device="DPAK" value="SUD19P06-60"/>
 <part name="IC1" library="EEZ_Lib1" deviceset="LTC3864" device=""/>
 <part name="R3" library="rcl" deviceset="R-EU_" device="R0805" value="0R"/>
