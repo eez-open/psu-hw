@@ -8966,8 +8966,8 @@ Farnell: 2112873</description>
 <part name="SUPPLY11" library="supply2" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="TR1" library="EEZ_Lib1" deviceset="PCB_TRAFO6VA_TEZ+VPP" device="" value="TEZ6/D230/15V"/>
-<part name="VAR1" library="EEZ_Lib1" deviceset="VARISTOR" device="" value="***"/>
-<part name="VAR2" library="EEZ_Lib1" deviceset="VARISTOR" device="" value="***"/>
+<part name="VAR1" library="EEZ_Lib1" deviceset="VARISTOR" device="" value="S20K250"/>
+<part name="VAR2" library="EEZ_Lib1" deviceset="VARISTOR" device="" value="S20K250"/>
 <part name="C2" library="rcl" deviceset="C-EU" device="102-064X133" value="6n8 (X1)"/>
 </parts>
 <sheets>
@@ -9052,10 +9052,10 @@ Farnell: 2112873</description>
 <text x="26.67" y="38.1" size="1.6764" layer="103">Value</text>
 <text x="26.67" y="34.925" size="1.6764" layer="103">2027-23-BLF</text>
 <text x="44.45" y="34.925" size="1.6764" layer="103">Farnell: 1780455, TME: CG2-230L</text>
-<text x="26.67" y="24.765" size="1.6764" layer="103">***</text>
+<text x="26.67" y="24.765" size="1.6764" layer="103">S20K140</text>
 <text x="26.67" y="32.385" size="1.6764" layer="103">VPP28-180</text>
 <text x="44.45" y="27.305" size="1.6764" layer="103">Newark: 37B9209</text>
-<text x="44.45" y="24.765" size="1.6764" layer="103">***</text>
+<text x="44.45" y="24.765" size="1.6764" layer="103">Farnell: 1004387, TME: SIOV-S20K140</text>
 <wire x1="7.62" y1="40.64" x2="25.4" y2="40.64" width="0.1524" layer="103"/>
 <wire x1="25.4" y1="40.64" x2="43.18" y2="40.64" width="0.1524" layer="103"/>
 <wire x1="43.18" y1="40.64" x2="87.63" y2="40.64" width="0.1524" layer="103"/>
