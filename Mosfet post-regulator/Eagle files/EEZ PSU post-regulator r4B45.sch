@@ -12988,28 +12988,37 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <wire x1="236.22" y1="-82.55" x2="236.22" y2="-71.12" width="0.1524" layer="103"/>
 <wire x1="248.92" y1="-82.55" x2="248.92" y2="-71.12" width="0.1524" layer="103"/>
 <wire x1="226.06" y1="-74.295" x2="261.62" y2="-74.295" width="0.1524" layer="103"/>
-<text x="267.335" y="-76.835" size="1.6764" layer="103">0-3.12A</text>
-<text x="269.24" y="-79.375" size="1.6764" layer="103">0-5A</text>
-<text x="278.13" y="-73.66" size="1.6764" layer="103">R35, R43</text>
-<text x="281.305" y="-76.835" size="1.6764" layer="103">3K9</text>
-<text x="280.67" y="-79.375" size="1.6764" layer="103">2K37</text>
-<wire x1="266.7" y1="-71.12" x2="276.86" y2="-71.12" width="0.1524" layer="103"/>
-<wire x1="276.86" y1="-71.12" x2="289.56" y2="-71.12" width="0.1524" layer="103"/>
-<wire x1="289.56" y1="-80.01" x2="276.86" y2="-80.01" width="0.1524" layer="103"/>
-<wire x1="276.86" y1="-80.01" x2="266.7" y2="-80.01" width="0.1524" layer="103"/>
-<wire x1="266.7" y1="-80.01" x2="266.7" y2="-74.295" width="0.1524" layer="103"/>
-<wire x1="266.7" y1="-74.295" x2="266.7" y2="-71.12" width="0.1524" layer="103"/>
-<wire x1="276.86" y1="-80.01" x2="276.86" y2="-71.12" width="0.1524" layer="103"/>
-<wire x1="289.56" y1="-80.01" x2="289.56" y2="-74.295" width="0.1524" layer="103"/>
-<wire x1="289.56" y1="-74.295" x2="289.56" y2="-71.12" width="0.1524" layer="103"/>
-<wire x1="266.7" y1="-74.295" x2="289.56" y2="-74.295" width="0.1524" layer="103"/>
 <text x="463.55" y="40.005" size="1.27" layer="103">See note 1.3</text>
 <text x="226.06" y="-93.98" size="1.4224" layer="103">Note 1.4: Use e.g. Pomona shorting bar (Farnell: 2406417) on binding posts with 19.05mm (750mil) raster if Arduino Shield PCB is not used</text>
 <text x="463.55" y="-8.255" size="1.27" layer="103">See note 1.3</text>
 <text x="227.965" y="-73.66" size="1.6764" layer="103">Range</text>
-<text x="268.605" y="-73.66" size="1.6764" layer="103">Range</text>
 <rectangle x1="421.64" y1="45.085" x2="442.595" y2="68.58" layer="97"/>
 <rectangle x1="363.855" y1="16.51" x2="382.905" y2="24.13" layer="97"/>
+<text x="267.335" y="-76.835" size="1.6764" layer="103">0-3.12A</text>
+<text x="267.335" y="-79.375" size="1.6764" layer="103">0-4.16A</text>
+<text x="278.13" y="-73.66" size="1.6764" layer="103">R35, R43</text>
+<text x="281.305" y="-76.835" size="1.6764" layer="103">3K9</text>
+<text x="280.67" y="-79.375" size="1.6764" layer="103">3K24</text>
+<wire x1="266.7" y1="-71.12" x2="276.86" y2="-71.12" width="0.1524" layer="103"/>
+<wire x1="276.86" y1="-71.12" x2="289.56" y2="-71.12" width="0.1524" layer="103"/>
+<wire x1="289.56" y1="-71.12" x2="302.26" y2="-71.12" width="0.1524" layer="103"/>
+<wire x1="302.26" y1="-82.55" x2="289.56" y2="-82.55" width="0.1524" layer="103"/>
+<wire x1="289.56" y1="-82.55" x2="276.86" y2="-82.55" width="0.1524" layer="103"/>
+<wire x1="276.86" y1="-82.55" x2="266.7" y2="-82.55" width="0.1524" layer="103"/>
+<wire x1="266.7" y1="-82.55" x2="266.7" y2="-74.295" width="0.1524" layer="103"/>
+<wire x1="266.7" y1="-74.295" x2="266.7" y2="-71.12" width="0.1524" layer="103"/>
+<wire x1="276.86" y1="-82.55" x2="276.86" y2="-71.12" width="0.1524" layer="103"/>
+<wire x1="302.26" y1="-82.55" x2="302.26" y2="-74.295" width="0.1524" layer="103"/>
+<wire x1="302.26" y1="-74.295" x2="302.26" y2="-71.12" width="0.1524" layer="103"/>
+<wire x1="266.7" y1="-74.295" x2="302.26" y2="-74.295" width="0.1524" layer="103"/>
+<text x="268.605" y="-73.66" size="1.6764" layer="103">Range</text>
+<wire x1="289.56" y1="-82.55" x2="289.56" y2="-71.12" width="0.1524" layer="103"/>
+<text x="293.37" y="-73.66" size="1.6764" layer="103">Q1</text>
+<text x="290.195" y="-76.835" size="1.6764" layer="103">IRFP250N</text>
+<text x="290.195" y="-79.375" size="1.6764" layer="103">IRFP250N</text>
+<text x="280.67" y="-81.915" size="1.6764" layer="103">2K37</text>
+<text x="290.195" y="-81.915" size="1.6764" layer="103">IRFP260N</text>
+<text x="269.24" y="-81.915" size="1.6764" layer="103">0-5A</text>
 </plain>
 <instances>
 <instance part="ZD1" gate="G$1" x="314.96" y="63.5" smashed="yes" rot="R270">
@@ -15533,7 +15542,6 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <text x="181.61" y="152.4" size="1.6764" layer="103">CV</text>
 <text x="181.61" y="149.86" size="1.6764" layer="103">Power good</text>
 <text x="181.61" y="147.32" size="1.6764" layer="103">Output enable</text>
-<text x="213.36" y="162.56" size="1.6764" layer="103">Output</text>
 <text x="213.36" y="160.02" size="1.6764" layer="103">Input</text>
 <text x="213.36" y="157.48" size="1.6764" layer="103">Input</text>
 <text x="213.36" y="154.94" size="1.6764" layer="103">Output</text>
@@ -15544,6 +15552,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <wire x1="223.52" y1="173.99" x2="223.52" y2="170.815" width="0.1524" layer="103"/>
 <wire x1="172.72" y1="170.815" x2="172.72" y2="173.99" width="0.1524" layer="103"/>
 <text x="190.5" y="171.45" size="1.6764" layer="103">I/O Expander</text>
+<text x="213.36" y="162.56" size="1.6764" layer="103">Output</text>
 </plain>
 <instances>
 <instance part="IC6" gate="A" x="93.98" y="78.74" smashed="yes" rot="MR0">

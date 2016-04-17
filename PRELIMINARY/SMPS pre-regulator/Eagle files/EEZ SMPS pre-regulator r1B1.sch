@@ -77,12 +77,11 @@
 <layer number="100" name="Measurement" color="12" fill="1" visible="yes" active="yes"/>
 <layer number="101" name="Pinouts" color="13" fill="1" visible="yes" active="yes"/>
 <layer number="102" name="Signals" color="3" fill="1" visible="yes" active="yes"/>
-<layer number="103" name="extrainfo" color="6" fill="0" visible="yes" active="yes"/>
-<layer number="104" name="comments" color="9" fill="1" visible="no" active="yes"/>
+<layer number="103" name="extrainfo" color="5" fill="0" visible="yes" active="yes"/>
+<layer number="104" name="comments" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="108" name="Notes" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="109" name="fp9" color="7" fill="1" visible="no" active="no"/>
 <layer number="110" name="110" color="7" fill="1" visible="no" active="no"/>
 <layer number="111" name="111" color="7" fill="1" visible="no" active="no"/>
@@ -100,6 +99,7 @@
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="no"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="no"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="no"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="no" active="no"/>
 <layer number="151" name="HeatSink" color="14" fill="1" visible="no" active="no"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
@@ -131,10 +131,6 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
-<layer number="225" name="225bmp" color="26" fill="1" visible="no" active="yes"/>
-<layer number="226" name="226bmp" color="27" fill="1" visible="no" active="yes"/>
-<layer number="227" name="227bmp" color="28" fill="1" visible="no" active="yes"/>
-<layer number="228" name="228bmp" color="29" fill="1" visible="no" active="yes"/>
 <layer number="231" name="Eagle3D_PG1" color="7" fill="1" visible="no" active="no"/>
 <layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="no" active="no"/>
 <layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="no" active="no"/>
@@ -17463,7 +17459,7 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <part name="B1" library="EEZ_Lib1" deviceset="BRIDGE" device="DIOTEC" value="GBI20D"/>
 <part name="FRAME3" library="frames" deviceset="DINA4_L" device=""/>
 <part name="R14" library="rcl" deviceset="R-EU_" device="R0805" value="0R"/>
-<part name="C20" library="rcl" deviceset="C-EU" device="C0805" value="47n"/>
+<part name="C20" library="rcl" deviceset="C-EU" device="C0805" value="47p"/>
 <part name="R13" library="rcl" deviceset="R-EU_" device="R0805" value="240K"/>
 <part name="R16" library="rcl" deviceset="R-EU_" device="R0805" value="4K32"/>
 <part name="C3" library="rcl" deviceset="C-EU" device="C1210" value="4u7"/>
@@ -17622,11 +17618,11 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <rectangle x1="130.175" y1="121.285" x2="138.43" y2="126.365" layer="97"/>
 <rectangle x1="111.125" y1="128.905" x2="118.11" y2="132.715" layer="97"/>
 <rectangle x1="182.88" y1="62.23" x2="187.96" y2="81.915" layer="97"/>
-<text x="50.165" y="119.38" size="1.778" layer="108">Fsw=350kHz (when grounded)</text>
-<text x="144.145" y="122.555" size="1.778" layer="108">Ilimit=4.06A (95mV/20mOhm-1.04/2)</text>
-<text x="144.145" y="125.095" size="1.778" layer="108">Rsense=20mOhm (95mV/(1.3*(3A+1.04/2)))</text>
-<text x="144.145" y="127.635" size="1.778" layer="108">Ilripple=1.04A for Vout=20V, L=33uH, Vin=50V (((20V/350kHz*33uH)(1-20V/50V)))</text>
-<text x="63.5" y="130.175" size="1.778" layer="108">tss=8ms</text>
+<text x="50.165" y="119.38" size="1.778" layer="103">Fsw=350kHz (when grounded)</text>
+<text x="144.145" y="122.555" size="1.778" layer="103">Ilimit=4.06A (95mV/20mOhm-1.04/2)</text>
+<text x="144.145" y="125.095" size="1.778" layer="103">Rsense=20mOhm (95mV/(1.3*(3A+1.04/2)))</text>
+<text x="144.145" y="127.635" size="1.778" layer="103">Ilripple=1.04A for Vout=20V, L=33uH, Vin=50V (((20V/350kHz*33uH)(1-20V/50V)))</text>
+<text x="63.5" y="130.175" size="1.778" layer="103">tss=8ms</text>
 <text x="2.54" y="7.62" size="1.778" layer="94">Licensed under the TAPR Open Hardware License (www.tapr.org/OHL)</text>
 <text x="2.54" y="2.54" size="1.778" layer="94">Repository: https://github.com/eez-open</text>
 <text x="2.54" y="5.08" size="1.778" layer="94">More info at http://www.envox.hr/eez</text>
@@ -17706,9 +17702,10 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 </polygon>
 <circle x="69.85" y="24.13" radius="0.635" width="0.1524" layer="101"/>
 <text x="71.755" y="24.765" size="1.4224" layer="101" rot="MR180">3 Gnd</text>
-<text x="84.455" y="66.675" size="1.778" layer="108">Sync In</text>
-<text x="6.985" y="66.04" size="1.778" layer="108">Sync Out</text>
+<text x="84.455" y="66.675" size="1.778" layer="103">Sync In</text>
+<text x="6.985" y="66.04" size="1.778" layer="103">Sync Out</text>
 <rectangle x1="129.54" y1="147.955" x2="134.62" y2="154.305" layer="97"/>
+<text x="5.08" y="13.335" size="1.778" layer="103">Note 1.1: Q1 and D2 requires thermal bridge/heatsink. See layer 90 in Board editor for an example. </text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -18637,23 +18634,23 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <text x="97.155" y="140.97" size="1.778" layer="96">2x820uH</text>
 <rectangle x1="95.885" y1="114.3" x2="107.315" y2="127.635" layer="97"/>
 <text x="22.86" y="131.445" size="1.27" layer="96">(LQH32PN2R2NN0L)</text>
-<text x="211.455" y="153.67" size="1.27" layer="108" rot="MR180">-5V</text>
-<text x="206.375" y="133.35" size="1.27" layer="108">+5V</text>
-<text x="147.955" y="133.35" size="1.27" layer="108">+9V</text>
+<text x="211.455" y="153.67" size="1.27" layer="103" rot="MR180">-5V</text>
+<text x="206.375" y="133.35" size="1.27" layer="103">+5V</text>
+<text x="147.955" y="133.35" size="1.27" layer="103">+9V</text>
 <text x="165.1" y="26.035" size="2.54" layer="94" font="vector">Bias power supply with SMPS pre-regulator</text>
-<text x="114.935" y="100.33" size="1.27" layer="108">+1.225V</text>
+<text x="114.935" y="100.33" size="1.27" layer="103">+1.225V</text>
 <text x="157.48" y="113.665" size="1.778" layer="96">Yellow</text>
-<text x="135.255" y="156.21" size="1.27" layer="108">-9V</text>
+<text x="135.255" y="156.21" size="1.27" layer="103">-9V</text>
 <text x="2.54" y="7.62" size="1.778" layer="94">Licensed under the TAPR Open Hardware License (www.tapr.org/OHL)</text>
 <text x="2.54" y="2.54" size="1.778" layer="94">Repository: https://github.com/eez-open</text>
 <text x="2.54" y="5.08" size="1.778" layer="94">More info at http://www.envox.hr/eez</text>
-<text x="230.505" y="97.155" size="1.27" layer="108">Tant.</text>
+<text x="230.505" y="97.155" size="1.27" layer="103">Tant.</text>
 <text x="118.11" y="38.1" size="1.27" layer="96">e.g. Farnell: 1187100</text>
 <text x="118.11" y="40.005" size="1.778" layer="96">10K NTC</text>
 <text x="118.11" y="36.195" size="1.27" layer="96">or TME: NTC-K45-10</text>
-<text x="86.995" y="57.785" size="1.27" layer="108">Fout: ~100Hz/oC (NTC sensor 10K, beta: 4300K) for range 25-70oC</text>
+<text x="86.995" y="57.785" size="1.27" layer="103">Fout: ~100Hz/oC (NTC sensor 10K, beta: 4300K) for range 25-70oC</text>
 <text x="7.62" y="66.04" size="1.778" layer="97" rot="MR180">V/F converter for temperature sensor (optional)</text>
-<text x="104.14" y="45.085" size="1.778" layer="108">TEMP</text>
+<text x="104.14" y="45.085" size="1.778" layer="103">TEMP</text>
 <wire x1="2.54" y1="68.58" x2="261.62" y2="68.58" width="0.1524" layer="97" style="shortdash"/>
 </plain>
 <instances>
