@@ -1,5 +1,8 @@
 **Revision history:**
 
+* 2016-05-01: **r4B42**
+    - Changed ramp capacitor from 820p to 1n
+    - Fan LDO replaced with MC7812
 * 2016-04-06: **r4B41**
     - Add fan control
     - Change power connector
