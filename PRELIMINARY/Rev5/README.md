@@ -12,12 +12,17 @@
 * Fan control (power + sense)
 * Reset circuit with voltage-fail monitoring and "watchdog" functionality
 
+**USE THIS ON YOUR OWN RISK !!!**
+
+**********************
+
+For more information about current status of this revision please visit http://www.eevblog.com/forum/projects/diy-programmable-dual-channel-bench-psu-0-50v3a/
+
+**********************
+
+
 ![Programmable dual channel PSU block diagram](EEZ PSU block diagram v5.png)
 
-**********************
 
-For more information visit http://www.envox.hr/eez
-
-**********************
 
 
