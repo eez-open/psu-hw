@@ -1,23 +1,27 @@
-![EEZ SCPI dual channel bench power supply](EEZ_PSU_prototype.jpg)
+![EEZ PSU front panel mask](Mechanical/EEZ PSU H24005 front panel.png)
+![EEZ PSU ver.1 prototype](EEZ_PSU_prototype.jpg)
 
 This is repository for the hardware part of the DIY fully programmable dual channel bench power supply. The power supply is designed with taking into consideration the following features and requirements:
 
 - Modular design that allows combining modules with various performance and capability and creation of multiple output solution (min. two channels)
 - Voltage regulation (CV), 10 mV resolution
 - Current regulation (CC), 10 mA initial resolution (possibly increased to 1 mA)
-    Various voltage single range operation (i.e. 0-30 V, 0-40 V or 0-50 V per channel)
-- Various current single range operation (i.e. 0-3 A, 0-4 A or 0-5 A per channel)
+    Various voltage single range operation (0-40 V default, 0-30 V or 0-50 V per channel)
+- Various current single range operation (0-5 A default, 0-3 A or 0-4 A per channel)
 - Minimal overshoot when new voltage or current level is programmed or in marginal cases such as power on/off
-- Min. 15-bit data acquisition resolution
+- 15-bit data acquisition resolution
 - Various protection mechanisms: over-voltage (OVP), over-current (OCP), over-power (OPP) and over-temperature (OTP)
-- Pre-regulator circuit for lower power dissipation (using e.g. phase-control or SMPS)
+- SMPS pre-regulator circuit for lower power dissipation (using e.g. SMPS)
+- SMPS pre-regulator's "100% Duty cycle" mode of operation to lower output ripple and noise 
 - Switching frequency synchronization if multiple SMPS are utilized
 - Output enable (OE) circuit
 - Remote voltage sense
+- Remote voltage programming
+- External digital trigger (3.3 or 5 V logic level)
 - Simple AC input protection (surge and transient protection)
 - Simple DC output protection (reverse voltage, over-voltage)
 - Serial and parallel connection of the multiple channels
-- MCU based digital control module using Arduino/Genuino boards such as [Mega](https://www.arduino.cc/en/Main/ArduinoBoardMega2560)  or [Due](https://www.arduino.cc/en/Main/ArduinoBoardDue) 
+- MCU based digital control module using 32-bit Arduino/Genuino boards such as [Due](https://www.arduino.cc/en/Main/ArduinoBoardDue)
 - SPI bus for communication with peripherals
 - Galvanic isolation between digital module and power channels
 - Real-time clock (RTC) with supercap/batter backup
@@ -26,13 +30,11 @@ This is repository for the hardware part of the DIY fully programmable dual chan
 - USB support that can be used for remote control, as a debug console and firmware upload
 - Ethernet support for remote control
 - Local control using TFT touch-screen display
-- Fan-less (“quiet”) operation
-- Basic functionality for e.g. initial testing during assembling phase does not require digital control. It’s achievable by using standard potentiometers and mechanical switches
 - Usage of easy to find components that could be obtain with just single order from suppliers such as Farnell element14 or Transfer Multisort Elektronik (TMU.eu)
-- Possibility to house at least dual channel version in affordable metallic enclosure (e.g. Hi-fi 2000/Modushop.biz Economica EP1153220 L 320 x P 200)
-- Comprehensive software support that include [SCPI](http://www.envox.hr/eez/bench-power-supply/psu-scpi-reference-manual/psu-scpi-introduction.html)  remote control, GUI configuration and monitoring and even multi-platform (Windows, Linux, OS X) software simulator of the firmware functionality 
+- Possibility to house at least dual channel version in affordable and compact (2U height) metallic enclosure
+- Comprehensive software support that include [SCPI](http://www.envox.hr/eez/bench-power-supply/psu-scpi-reference-manual/psu-scpi-introduction.html)  remote control, GUI configuration and monitoring and even multi-platform (Windows, Linux, OS X) software simulator of the firmware functionality
 
-![Programmable dual channel PSU block diagram](EEZ PSU block diagram v4.png)
+![Programmable dual channel PSU block diagram](EEZ PSU block diagram v5.1.png)
 
 **********************
 
