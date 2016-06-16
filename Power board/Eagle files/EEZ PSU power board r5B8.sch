@@ -27809,7 +27809,6 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <wire x1="203.2" y1="163.195" x2="203.2" y2="166.37" width="0.1524" layer="103"/>
 <text x="220.98" y="163.83" size="1.6764" layer="103">I/O Expander</text>
 <text x="182.88" y="105.41" size="1.27" layer="103" rot="R180">Tant.</text>
-<text x="-3.175" y="64.77" size="1.778" layer="97" rot="MR180">Remote programming</text>
 <text x="164.465" y="25.4" size="2.54" layer="94" font="vector">Remote programming</text>
 </plain>
 <instances>

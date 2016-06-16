@@ -17,4 +17,4 @@ Web site: www.envox.hr/eez
 
 **********************
 
-*OSH Park 2-layer (+tKeepout +_tNames).cam* job script is used for generating Gerber files. Use gerbv, a free/open source Gerber viewer (http://gerbv.geda-project.org/)
+*OSH Park 2-layer.cam* job script is used for generating Gerber files. Use gerbv, a free/open source Gerber viewer (http://gerbv.geda-project.org/)
