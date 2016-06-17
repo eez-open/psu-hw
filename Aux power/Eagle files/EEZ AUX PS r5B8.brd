@@ -98,7 +98,7 @@
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="no"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="no"/>
-<layer number="125" name="_tNames" color="14" fill="1" visible="no" active="yes"/>
+<layer number="125" name="_tNames" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="126" name="_bNames" color="5" fill="1" visible="no" active="yes"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="no" active="no"/>
@@ -2314,8 +2314,8 @@
 <text x="92.71" y="65.151" size="1.016" layer="125" ratio="10">R18</text>
 <text x="67.564" y="61.5315" size="1.016" layer="125" ratio="10" rot="R180">R19</text>
 <text x="67.564" y="59.69" size="1.016" layer="125" ratio="10" rot="R180">R20</text>
-<text x="15.621" y="37.3761" size="1.016" layer="125" ratio="10" rot="R180">SAR1</text>
-<text x="68.11449375" y="44.2094875" size="2.1844" layer="125" ratio="10" rot="SR270">TR1</text>
+<text x="15.6845" y="37.9476" size="1.016" layer="125" ratio="10" rot="R180">SAR1</text>
+<text x="42.1505125" y="57.57349375" size="2.1844" layer="125" ratio="10" rot="SR0">TR1</text>
 <text x="13.035509375" y="57.16549375" size="1.27" layer="125" ratio="10">VAR1</text>
 <text x="17.861509375" y="57.16549375" size="1.27" layer="125" ratio="10">VAR2</text>
 <text x="1.613003125" y="61.6315" size="1.27" layer="125" ratio="10">X1</text>
@@ -4042,7 +4042,7 @@ design rules under a new name.</description>
 <attribute name="MOUSER" value="553-VPP28-180" x="45.085" y="37.973" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NEWARK" value="37B9209" x="45.085" y="37.973" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DIGIKEY" value="237-1086-ND" x="45.085" y="37.973" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="68.1145" y="44.2095" size="2.1844" layer="25" ratio="10" rot="SR270"/>
+<attribute name="NAME" x="42.1505" y="57.5735" size="2.1844" layer="25" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="33.324" y="36.9995" size="2.1844" layer="27" ratio="10"/>
 </element>
 <element name="VAR1" library="EEZ_Lib1" package="VARISTOR" value="S20K250" x="15.1765" y="47.9425" smashed="yes" rot="R90">
@@ -5268,51 +5268,6 @@ design rules under a new name.</description>
 <wire x1="12.1225" y1="4.826" x2="12.0015" y2="4.947" width="0.8128" layer="1"/>
 </signal>
 </signals>
-<errors>
-<approved hash="3,16,316b1704eaa7ccc8"/>
-<approved hash="18,29,b5f48bdfbf0483b3"/>
-<approved hash="18,29,ea891dcda0b45c45"/>
-<approved hash="18,29,cb697fb0e58573db"/>
-<approved hash="18,29,3d37414e8eb9d07b"/>
-<approved hash="18,29,dc9bfa78ee32c364"/>
-<approved hash="18,29,bec5db89c18f8644"/>
-<approved hash="18,29,80252df56231ed5a"/>
-<approved hash="18,29,538f1795179ed585"/>
-<approved hash="18,29,bdbe37a607ad91b7"/>
-<approved hash="18,29,90700797379dbd86"/>
-<approved hash="18,29,d370176818845a9d"/>
-<approved hash="18,29,9743075938b6b4ae"/>
-<approved hash="18,29,bb7236970887989e"/>
-<approved hash="18,29,b82546854614b4fe"/>
-<approved hash="18,29,a7527a2eb6569ae4"/>
-<approved hash="19,1,96293a6f98dcbf8e"/>
-<approved hash="19,1,ff5b4e3ab3343a90"/>
-<approved hash="19,1,b8a95eca501d45b6"/>
-<approved hash="19,1,355656f16e02351b"/>
-<approved hash="19,1,d087bc2e441fd0f4"/>
-<approved hash="19,1,bd3381fdb9e8bd26"/>
-<approved hash="19,1,129d2706dc17128e"/>
-<approved hash="19,1,a6a3b86b04fc1b91"/>
-<approved hash="19,1,3bbf2fab1e399e59"/>
-<approved hash="19,1,20c0b76f9f5b16cc"/>
-<approved hash="19,1,7b3c1e5214b73320"/>
-<approved hash="19,1,fe27428a7a2f8ef2"/>
-<approved hash="19,1,17ba1e37d8bbe95f"/>
-<approved hash="19,1,efa7a47c1c606fbb"/>
-<approved hash="19,1,ed591806054c1744"/>
-<approved hash="19,1,967d7a9b03932695"/>
-<approved hash="19,1,046bf106e54cf746"/>
-<approved hash="19,1,3998869117fc6301"/>
-<approved hash="19,1,87e7d9a0e85bf5e4"/>
-<approved hash="19,1,6371a476dc06606f"/>
-<approved hash="19,1,7c3b5ece12c93d65"/>
-<approved hash="19,1,1555ae6ad65a12a3"/>
-<approved hash="19,1,6773b948c1386741"/>
-<approved hash="19,1,6867a37cdb6c6975"/>
-<approved hash="19,1,41a6c5ebec52537e"/>
-<approved hash="5,1,43a7f30ddd85f297"/>
-<approved hash="5,1,890aa87d8b097745"/>
-</errors>
 </board>
 </drawing>
 </eagle>
