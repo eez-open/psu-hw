@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -10884,52 +10884,6 @@ Buerklin: &lt;b&gt;09 H 2400&lt;/b&gt;</description>
 <text x="-4.31" y="3.54" size="1.27" layer="25">&gt;NAME</text>
 <text x="-4.31" y="-9.89" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="OAR1">
-<pad name="1" x="-5.08" y="0" drill="1.2" diameter="2.1844" shape="octagon"/>
-<pad name="2" x="5.04" y="0" drill="1.2" diameter="2.1844" shape="octagon"/>
-<text x="-3.8935" y="1.6129" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-4.0205" y="-2.4892" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-3.81" y1="-0.635" x2="3.81" y2="0.635" layer="21"/>
-<rectangle x1="-5.08" y1="-0.635" x2="-3.81" y2="0.635" layer="51"/>
-<rectangle x1="3.81" y1="-0.635" x2="5.08" y2="0.635" layer="51"/>
-<polygon width="0" layer="51">
-<vertex x="-5.08" y="-0.635" curve="-90"/>
-<vertex x="-5.715" y="0" curve="-90"/>
-<vertex x="-5.08" y="0.635"/>
-</polygon>
-<polygon width="0" layer="51">
-<vertex x="5.08" y="0.635" curve="-90"/>
-<vertex x="5.715" y="0" curve="-90"/>
-<vertex x="5.08" y="-0.635"/>
-</polygon>
-</package>
-<package name="OAR1+2512">
-<wire x1="-2.362" y1="1.473" x2="2.387" y2="1.473" width="0.1524" layer="51"/>
-<wire x1="-2.362" y1="-1.473" x2="2.387" y2="-1.473" width="0.1524" layer="51"/>
-<smd name="1" x="-2.8" y="0" dx="1.8" dy="3.2" layer="1"/>
-<smd name="2" x="2.8" y="0" dx="1.8" dy="3.2" layer="1"/>
-<rectangle x1="-3.2004" y1="-1.5494" x2="-2.3505" y2="1.5507" layer="51"/>
-<rectangle x1="2.3622" y1="-1.5494" x2="3.2121" y2="1.5507" layer="51"/>
-<pad name="1.1" x="-5.08" y="0" drill="1.2" diameter="2.1844" shape="octagon"/>
-<pad name="2.1" x="5.04" y="0" drill="1.2" diameter="2.1844" shape="octagon"/>
-<text x="-3.8935" y="2.1209" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.7665" y="-3.5052" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<polygon width="0" layer="51">
-<vertex x="-5.08" y="-0.635" curve="-90"/>
-<vertex x="-5.715" y="0" curve="-90"/>
-<vertex x="-5.08" y="0.635"/>
-</polygon>
-<polygon width="0" layer="51">
-<vertex x="5.08" y="0.635" curve="-90"/>
-<vertex x="5.715" y="0" curve="-90"/>
-<vertex x="5.08" y="-0.635"/>
-</polygon>
-<rectangle x1="-1.778" y1="-0.635" x2="1.778" y2="0.635" layer="21"/>
-<rectangle x1="-5.08" y1="-0.635" x2="-1.778" y2="0.635" layer="51"/>
-<rectangle x1="1.778" y1="-0.635" x2="5.08" y2="0.635" layer="51"/>
-<wire x1="-3.302" y1="1.778" x2="3.302" y2="1.778" width="0.127" layer="21"/>
-<wire x1="-3.302" y1="-1.778" x2="3.302" y2="-1.778" width="0.127" layer="21"/>
-</package>
 <package name="R_0204/5+0805">
 <smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
 <smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
@@ -10951,71 +10905,6 @@ Buerklin: &lt;b&gt;09 H 2400&lt;/b&gt;</description>
 <pad name="1.1" x="-2.54" y="0" drill="0.8128" shape="octagon" rot="R180"/>
 <text x="-2.54" y="1.27" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.54" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="OAR3">
-<pad name="1" x="-7.62" y="0" drill="1.4" diameter="2.54" shape="octagon"/>
-<pad name="2" x="7.58" y="0" drill="1.4" diameter="2.54" shape="octagon"/>
-<text x="-3.8935" y="1.6129" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-4.0205" y="-2.4892" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-6.35" y1="-0.635" x2="6.35" y2="0.635" layer="21"/>
-<rectangle x1="-7.62" y1="-0.635" x2="-6.35" y2="0.635" layer="51"/>
-<rectangle x1="6.35" y1="-0.635" x2="7.62" y2="0.635" layer="51"/>
-<polygon width="0" layer="51">
-<vertex x="-7.62" y="-0.635" curve="-90"/>
-<vertex x="-8.255" y="0" curve="-90"/>
-<vertex x="-7.62" y="0.635"/>
-</polygon>
-<polygon width="0" layer="51">
-<vertex x="7.62" y="0.635" curve="-90"/>
-<vertex x="8.255" y="0" curve="-90"/>
-<vertex x="7.62" y="-0.635"/>
-</polygon>
-</package>
-<package name="R_0913">
-<text x="-6.35" y="5.2324" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-5.842" y="-6.8072" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<pad name="1" x="-3.556" y="0" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="2" x="1.524" y="0" drill="1.016" diameter="1.9304" shape="octagon"/>
-<wire x1="-6.35" y1="-4.699" x2="-6.35" y2="4.699" width="0.254" layer="21"/>
-<wire x1="-6.35" y1="4.699" x2="6.604" y2="4.699" width="0.254" layer="21"/>
-<wire x1="6.604" y1="4.699" x2="6.604" y2="-4.699" width="0.254" layer="21"/>
-<wire x1="6.604" y1="-4.699" x2="-6.35" y2="-4.699" width="0.254" layer="21"/>
-</package>
-<package name="R_2512+0411/15">
-<wire x1="5.08" y1="-1.651" x2="5.08" y2="1.651" width="0.1524" layer="21"/>
-<wire x1="4.699" y1="2.032" x2="5.08" y2="1.651" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-5.08" y1="-1.651" x2="-4.699" y2="-2.032" width="0.1524" layer="21" curve="90"/>
-<wire x1="4.699" y1="-2.032" x2="5.08" y2="-1.651" width="0.1524" layer="21" curve="90"/>
-<wire x1="-5.08" y1="1.651" x2="-4.699" y2="2.032" width="0.1524" layer="21" curve="-90"/>
-<wire x1="4.699" y1="2.032" x2="4.064" y2="2.032" width="0.1524" layer="21"/>
-<wire x1="3.937" y1="1.905" x2="4.064" y2="2.032" width="0.1524" layer="21"/>
-<wire x1="4.699" y1="-2.032" x2="4.064" y2="-2.032" width="0.1524" layer="21"/>
-<wire x1="3.937" y1="-1.905" x2="4.064" y2="-2.032" width="0.1524" layer="21"/>
-<wire x1="-3.937" y1="1.905" x2="-4.064" y2="2.032" width="0.1524" layer="21"/>
-<wire x1="-3.937" y1="1.905" x2="3.937" y2="1.905" width="0.1524" layer="21"/>
-<wire x1="-3.937" y1="-1.905" x2="-4.064" y2="-2.032" width="0.1524" layer="21"/>
-<wire x1="-3.937" y1="-1.905" x2="3.937" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="1.651" x2="-5.08" y2="-1.651" width="0.1524" layer="21"/>
-<wire x1="-4.699" y1="2.032" x2="-4.064" y2="2.032" width="0.1524" layer="21"/>
-<wire x1="-4.699" y1="-2.032" x2="-4.064" y2="-2.032" width="0.1524" layer="21"/>
-<wire x1="-7.62" y1="0" x2="-6.35" y2="0" width="0.762" layer="51"/>
-<wire x1="6.35" y1="0" x2="7.62" y2="0" width="0.762" layer="51"/>
-<pad name="1" x="-7.62" y="0" drill="0.9144" shape="octagon"/>
-<pad name="2" x="7.62" y="0" drill="0.9144" shape="octagon"/>
-<text x="-5.08" y="2.413" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.5814" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="5.08" y1="-0.381" x2="6.477" y2="0.381" layer="21"/>
-<rectangle x1="-6.477" y1="-0.381" x2="-5.08" y2="0.381" layer="21"/>
-<wire x1="-2.362" y1="1.473" x2="2.387" y2="1.473" width="0.1524" layer="51"/>
-<wire x1="-2.362" y1="-1.473" x2="2.387" y2="-1.473" width="0.1524" layer="51"/>
-<wire x1="-3.973" y1="1.983" x2="3.973" y2="1.983" width="0.0508" layer="39"/>
-<wire x1="3.973" y1="1.983" x2="3.973" y2="-1.983" width="0.0508" layer="39"/>
-<wire x1="3.973" y1="-1.983" x2="-3.973" y2="-1.983" width="0.0508" layer="39"/>
-<wire x1="-3.973" y1="-1.983" x2="-3.973" y2="1.983" width="0.0508" layer="39"/>
-<smd name="1.1" x="-2.8" y="0" dx="1.8" dy="3.2" layer="1"/>
-<smd name="2.1" x="2.8" y="0" dx="1.8" dy="3.2" layer="1"/>
-<rectangle x1="-3.2004" y1="-1.5494" x2="-2.3505" y2="1.5507" layer="51"/>
-<rectangle x1="2.3622" y1="-1.5494" x2="3.2121" y2="1.5507" layer="51"/>
 </package>
 <package name="ECAP5/10.5+PANASONIC_F">
 <smd name="+.1" x="-4.064" y="0" dx="4.1656" dy="1.1938" layer="1"/>
@@ -11734,17 +11623,6 @@ Buerklin: &lt;b&gt;09 H 2400&lt;/b&gt;</description>
 <wire x1="12.7" y1="10.16" x2="-12.7" y2="10.16" width="0.4064" layer="94"/>
 <text x="-5.6388" y="11.303" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-6.3754" y="-13.3096" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
-</symbol>
-<symbol name="R-EU">
-<description>RESISTOR - European symbol</description>
-<wire x1="-2.54" y1="-0.889" x2="2.54" y2="-0.889" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0.889" x2="-2.54" y2="0.889" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-0.889" x2="2.54" y2="0.889" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-0.889" x2="-2.54" y2="0.889" width="0.254" layer="94"/>
-<text x="-3.81" y="1.4986" size="1.778" layer="95">&gt;NAME</text>
-<text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
 <symbol name="TVS-UNI">
 <wire x1="0.635" y1="1.905" x2="0" y2="1.27" width="0.254" layer="94"/>
@@ -13069,68 +12947,6 @@ with open collector; LM139/LM239/LM339/LM2901/LM3302&lt;br&gt;</description>
 <connects>
 <connect gate="-1" pin="1" pad="1"/>
 <connect gate="-2" pin="1" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="R_EU" prefix="R" uservalue="yes">
-<description>RESISTOR - European symbol</description>
-<gates>
-<gate name="G$1" symbol="R-EU" x="0" y="0"/>
-</gates>
-<devices>
-<device name="_OAR1" package="OAR1">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_OAR1+2512" package="OAR1+2512">
-<connects>
-<connect gate="G$1" pin="1" pad="1 1.1"/>
-<connect gate="G$1" pin="2" pad="2 2.1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0204+0805" package="R_0204/5+0805">
-<connects>
-<connect gate="G$1" pin="1" pad="1 1.1"/>
-<connect gate="G$1" pin="2" pad="2 2.1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_OAR3" package="OAR3">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="7W" package="R_0913">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="COMBO" package="R_2512+0411/15">
-<connects>
-<connect gate="G$1" pin="1" pad="1 1.1"/>
-<connect gate="G$1" pin="2" pad="2 2.1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -24441,8 +24257,6 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <part name="SUPPLY23" library="supply2" deviceset="GND" device="" value="PGND"/>
 <part name="SUPPLY30" library="supply2" deviceset="GND" device="" value="PGND"/>
 <part name="X2" library="EEZ_Lib1" deviceset="TBLOCK5.0_2A" device="" value="282836-2"/>
-<part name="R28" library="EEZ_Lib1" deviceset="R_EU" device="COMBO" value="0R1/3W"/>
-<part name="R29" library="EEZ_Lib1" deviceset="R_EU" device="COMBO" value="2R2/2W"/>
 <part name="C5" library="EEZ_Lib1" deviceset="ECAP" device="7.5G_18MM" value="2m2"/>
 <part name="R3" library="rcl" deviceset="R-EU_" device="R0805" value="0R"/>
 <part name="C16" library="Panasonic-EEEFK_EEEFP" deviceset="EEE-" device="-CASE-F" technology="FK1J470P" value="EEEFK1J470P"/>
@@ -24459,7 +24273,7 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <part name="C8" library="rcl" deviceset="C-EU" device="C1210" value="4u7"/>
 <part name="SW" library="EEZ_Lib1" deviceset="PCB_TEST_TAB" device="SMD" value="S1751-46R"/>
 <part name="GND" library="EEZ_Lib1" deviceset="PCB_TEST_TAB" device="SMD" value="S1751-46R"/>
-<part name="TR1" library="EEZ_Lib1" deviceset="BOURNS_SRF0703INV" device="" value="MSD1260-824"/>
+<part name="TR1" library="EEZ_Lib1" deviceset="BOURNS_SRF0703INV" device="" value="SRF0703-821M"/>
 <part name="R83" library="rcl" deviceset="R-EU_" device="R0805" value="330R"/>
 <part name="Q19" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" technology="MMBT5551LT1" value="MMBT5551"/>
 <part name="Q17" library="transistor" deviceset="*-PNP-" device="SOT23-BEC" technology="BC857B" value="MMBT5401"/>
@@ -24508,6 +24322,8 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <part name="L2" library="WE-HCI" deviceset="WE-HCI" device="_1350/1365" technology="-7443551331" value="See Note 1.2"/>
 <part name="L1" library="EEZ_Lib1" deviceset="RN114" device="" value="RN114-4/02"/>
 <part name="C18" library="EEZ_Lib1" deviceset="ECAP" device="F" value="EEEFK1J470P"/>
+<part name="R28" library="rcl" deviceset="R-EU_" device="R2512" value="R080/3W"/>
+<part name="R29" library="rcl" deviceset="R-EU_" device="R2512" value="2R2/2W"/>
 </parts>
 <sheets>
 <sheet>
@@ -26816,14 +26632,6 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <instance part="X3" gate="-26" x="464.82" y="68.58" smashed="yes" rot="R180">
 <attribute name="NAME" x="471.17" y="67.691" size="1.778" layer="95"/>
 </instance>
-<instance part="R28" gate="G$1" x="345.44" y="76.2" smashed="yes">
-<attribute name="NAME" x="341.63" y="77.6986" size="1.778" layer="95"/>
-<attribute name="VALUE" x="341.63" y="72.898" size="1.778" layer="96"/>
-</instance>
-<instance part="R29" gate="G$1" x="386.08" y="71.12" smashed="yes" rot="R90">
-<attribute name="NAME" x="387.35" y="72.6186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="387.35" y="70.358" size="1.778" layer="96"/>
-</instance>
 <instance part="ZD3" gate="G$1" x="449.58" y="66.04" smashed="yes" rot="R270">
 <attribute name="NAME" x="448.31" y="65.405" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="447.675" y="63.119" size="1.4224" layer="96" rot="R180"/>
@@ -26835,6 +26643,14 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <instance part="NTC1" gate="G$1" x="347.98" y="-76.2" smashed="yes">
 <attribute name="NAME" x="350.52" y="-82.55" size="1.778" layer="95"/>
 <attribute name="VALUE" x="350.52" y="-84.455" size="1.6764" layer="96"/>
+</instance>
+<instance part="R28" gate="G$1" x="345.44" y="76.2" smashed="yes">
+<attribute name="NAME" x="342.9" y="73.2536" size="1.778" layer="95"/>
+<attribute name="VALUE" x="342.9" y="70.993" size="1.778" layer="96"/>
+</instance>
+<instance part="R29" gate="G$1" x="386.08" y="71.12" smashed="yes" rot="R90">
+<attribute name="NAME" x="387.35" y="73.4314" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="387.35" y="69.723" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -27195,15 +27011,15 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <pinref part="X3" gate="-23" pin="1"/>
 <wire x1="464.82" y1="76.2" x2="462.28" y2="76.2" width="0.1524" layer="91"/>
 <junction x="462.28" y="76.2"/>
-<pinref part="R28" gate="G$1" pin="2"/>
-<pinref part="R29" gate="G$1" pin="2"/>
-<junction x="386.08" y="76.2"/>
 <pinref part="ZD3" gate="G$1" pin="1"/>
 <wire x1="449.58" y1="68.58" x2="449.58" y2="76.2" width="0.1524" layer="91"/>
 <junction x="449.58" y="76.2"/>
 <pinref part="TP2" gate="G$1" pin="TIP"/>
 <wire x1="464.82" y1="55.88" x2="462.28" y2="55.88" width="0.1524" layer="91"/>
 <junction x="462.28" y="55.88"/>
+<pinref part="R28" gate="G$1" pin="2"/>
+<pinref part="R29" gate="G$1" pin="2"/>
+<junction x="386.08" y="76.2"/>
 </segment>
 </net>
 <net name="N$150" class="0">
