@@ -26,7 +26,7 @@
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="13" fill="1" visible="no" active="yes"/>
@@ -10129,14 +10129,8 @@ design rules under a new name.</description>
 <vertex x="7.9375" y="117.2845"/>
 <vertex x="15.9385" y="117.221"/>
 <vertex x="16.256" y="117.5385"/>
-<vertex x="16.256" y="124.5235"/>
-<vertex x="15.9385" y="124.841"/>
-<vertex x="13.6525" y="124.9045"/>
-<vertex x="12.3825" y="126.1745"/>
-<vertex x="12.3825" y="131.8895"/>
-<vertex x="10.4775" y="133.7945"/>
-<vertex x="10.4775" y="142.113"/>
-<vertex x="10.16" y="142.4305"/>
+<vertex x="16.256" y="141.351"/>
+<vertex x="15.1765" y="142.4305"/>
 </polygon>
 <contactref element="ZD2" pad="A"/>
 <wire x1="8.5825" y1="132.3975" x2="8.5825" y2="139.229" width="2.54" layer="1"/>
