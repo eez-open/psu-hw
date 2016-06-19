@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -11071,7 +11071,6 @@ Buerklin: &lt;b&gt;09 H 2400&lt;/b&gt;</description>
 <wire x1="-4" y1="-10.3" x2="0" y2="-11" width="0.127" layer="21" curve="20.486348"/>
 <wire x1="-9.7" y1="-7.8" x2="-4" y2="-10.3" width="0.127" layer="21" curve="7.903119"/>
 <wire x1="9.7" y1="-7.8" x2="4" y2="-10.3" width="0.127" layer="21" curve="-7.903119"/>
-<text x="-4.572" y="-0.635" size="1.6764" layer="27">&gt;VALUE</text>
 </package>
 <package name="ECAP10/22.5">
 <wire x1="-2.54" y1="0" x2="-1.5748" y2="0" width="0.254" layer="21"/>
@@ -24190,7 +24189,7 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <part name="R20" library="rcl" deviceset="R-EU_" device="R0805" value="390R"/>
 <part name="LED1" library="led" deviceset="LED" device="CHIPLED_0805" value="HSMY-C170"/>
 <part name="C39" library="rcl" deviceset="C-EU" device="C0805" value="3n3"/>
-<part name="R22" library="rcl" deviceset="R-EU_" device="R0805" value="18K"/>
+<part name="R22" library="rcl" deviceset="R-EU_" device="R0805" value="20K"/>
 <part name="R23" library="rcl" deviceset="R-EU_" device="R0805" value="51K"/>
 <part name="C40" library="rcl" deviceset="C-EU" device="C0805" value="1n"/>
 <part name="C28" library="rcl" deviceset="C-EU" device="C0805" value="22n"/>

@@ -2316,8 +2316,8 @@
 <text x="67.564" y="59.69" size="1.016" layer="125" ratio="10" rot="R180">R20</text>
 <text x="15.6845" y="37.9476" size="1.016" layer="125" ratio="10" rot="R180">SAR1</text>
 <text x="42.1505125" y="57.57349375" size="2.1844" layer="125" ratio="10" rot="SR0">TR1</text>
-<text x="13.035509375" y="57.16549375" size="1.27" layer="125" ratio="10">VAR1</text>
-<text x="17.861509375" y="57.16549375" size="1.27" layer="125" ratio="10">VAR2</text>
+<text x="12.845009375" y="57.16549375" size="1.27" layer="125" ratio="10">VAR1</text>
+<text x="17.925009375" y="57.16549375" size="1.27" layer="125" ratio="10">VAR2</text>
 <text x="1.613003125" y="61.6315" size="1.27" layer="125" ratio="10">X1</text>
 <text x="103.981503125" y="67.197503125" size="1.27" layer="125" ratio="10">X2</text>
 <text x="106.172" y="37.4015" size="1.27" layer="125" ratio="10" rot="R180">X3</text>
@@ -3799,7 +3799,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="79.3115" y="29.845" size="0.889" layer="25" ratio="10" rot="SR270"/>
 <attribute name="VALUE" x="82.169" y="28.2575" size="1.016" layer="27" ratio="10"/>
 </element>
-<element name="R11" library="rcl" package="R0805" value="30K" x="82.2325" y="26.7335" smashed="yes">
+<element name="R11" library="rcl" package="R0805" value="18K" x="82.2325" y="26.7335" smashed="yes">
 <attribute name="NAME" x="81.1149" y="24.5364" size="1.016" layer="25" ratio="10"/>
 <attribute name="VALUE" x="84.0486" y="27.1399" size="0.9906" layer="27" ratio="10" rot="R180"/>
 </element>
@@ -3825,7 +3825,7 @@ design rules under a new name.</description>
 </element>
 <element name="C8" library="rcl" package="C0805" value="100n" x="79.3115" y="36.957" smashed="yes" rot="R180">
 <attribute name="NAME" x="81.407" y="37.6555" size="1.016" layer="25" ratio="10" rot="SR270"/>
-<attribute name="VALUE" x="81.534" y="37.4015" size="1.27" layer="27" rot="R180"/>
+<attribute name="VALUE" x="77.597" y="36.449" size="1.016" layer="27" ratio="10"/>
 </element>
 <element name="C7" library="rcl" package="C0805" value="22n" x="85.217" y="28.0035" smashed="yes" rot="R270">
 <attribute name="NAME" x="86.36" y="28.8925" size="1.016" layer="25" ratio="10" rot="SR270"/>
@@ -3853,11 +3853,11 @@ design rules under a new name.</description>
 </element>
 <element name="R7" library="rcl" package="R0805" value="15K" x="71.9455" y="36.83" smashed="yes" rot="R270">
 <attribute name="NAME" x="69.7865" y="37.5285" size="1.016" layer="25" ratio="10" rot="SR270"/>
-<attribute name="VALUE" x="71.3105" y="38.354" size="1.27" layer="27" rot="R270"/>
+<attribute name="VALUE" x="71.374" y="38.227" size="1.016" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="R8" library="rcl" package="R0805" value="2K2" x="71.9455" y="40.767" smashed="yes" rot="R270">
 <attribute name="NAME" x="71.1835" y="42.926" size="1.016" layer="25" ratio="10"/>
-<attribute name="VALUE" x="72.4535" y="39.1795" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="72.4535" y="39.497" size="1.016" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="C9" library="rcl" package="C1210" value="4u7" x="71.501" y="47.625" smashed="yes" rot="R180">
 <attribute name="NAME" x="72.39" y="45.847" size="1.016" layer="25" ratio="10" rot="R180"/>
@@ -3865,7 +3865,7 @@ design rules under a new name.</description>
 </element>
 <element name="X1" library="EEZ_Lib1" package="TBLOCK5.0_5" value="282836-5" x="4.4625" y="58.155" smashed="yes">
 <attribute name="NAME" x="1.613" y="61.6315" size="1.27" layer="25" ratio="10"/>
-<attribute name="VALUE" x="0.1525" y="33.265" size="1.27" layer="27"/>
+<attribute name="VALUE" x="1.66" y="43.7135" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="ZD2" library="EEZ_Lib1" package="DO201-BIDIR" value="1.5KE400CA" x="12.5355" y="23.737" smashed="yes">
 <attribute name="NAME" x="17.956" y="25.309" size="1.27" layer="25" ratio="10"/>
@@ -3890,7 +3890,7 @@ design rules under a new name.</description>
 <element name="EEZ_SIGNATURE" library="EEZ_Lib1" package="SIGNATURE_5MM" value="SIGNATURESMALL" x="10.538" y="70.3685" smashed="yes" rot="R180"/>
 <element name="L1" library="EEZ_Lib1" package="L1210" value="2u2" x="72.009" y="32.766" smashed="yes">
 <attribute name="NAME" x="68.2625" y="33.5915" size="1.27" layer="25" ratio="10" rot="SR270"/>
-<attribute name="VALUE" x="71.4375" y="34.417" size="1.27" layer="27" rot="R270"/>
+<attribute name="VALUE" x="70.358" y="32.131" size="1.27" layer="27"/>
 </element>
 <element name="Q1" library="triac" package="TOP3S-1" value="BTA26-600" x="46.0375" y="13.0175" smashed="yes" rot="R180">
 <attribute name="NAME" x="53.9115" y="16.256" size="1.27" layer="25" ratio="10"/>

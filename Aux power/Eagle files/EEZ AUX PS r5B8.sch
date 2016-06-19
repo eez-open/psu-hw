@@ -8983,7 +8983,7 @@ Farnell: 2112873</description>
 <part name="FRAME3" library="frames" deviceset="DINA4_L" device=""/>
 <part name="B1" library="rectifier" deviceset="DF*S" device="" technology="01" value="DF01S"/>
 <part name="C11" library="rcl" deviceset="C-EU" device="C0805" value="1n"/>
-<part name="R11" library="rcl" deviceset="R-EU_" device="R0805" value="30K"/>
+<part name="R11" library="rcl" deviceset="R-EU_" device="R0805" value="18K"/>
 <part name="R12" library="rcl" deviceset="R-EU_" device="R0805" value="20K"/>
 <part name="C12" library="rcl" deviceset="C-EU" device="C0805" value="3n9"/>
 <part name="C3" library="rcl" deviceset="C-EU" device="C0805" value="22n"/>
@@ -9085,8 +9085,6 @@ Farnell: 2112873</description>
 <plain>
 <text x="164.465" y="29.845" size="2.54" layer="94" font="vector">AC input protection, in-rush current limiter</text>
 <text x="164.465" y="26.035" size="2.54" layer="94" font="vector">+5V/1A power supply</text>
-<text x="6.985" y="15.24" size="1.27" layer="103">Note 1.1: replace with 33K or 36K (to decrease frequency) if sync with power board is required</text>
-<text x="92.71" y="55.88" size="1.27" layer="103">See note 1.1</text>
 <text x="12.7" y="165.735" size="1.778" layer="97" rot="R180">Line in</text>
 <text x="12.7" y="138.43" size="1.778" layer="97" rot="R180">Neutral in</text>
 <text x="12.7" y="123.19" size="1.778" layer="97" rot="R180">Earth</text>
