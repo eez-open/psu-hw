@@ -30,13 +30,13 @@
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="13" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="13" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="10" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="14" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -46,7 +46,7 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="15" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
@@ -98,7 +98,7 @@
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="no"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="no"/>
-<layer number="125" name="_tNames" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="125" name="_tNames" color="14" fill="1" visible="no" active="yes"/>
 <layer number="126" name="_bNames" color="5" fill="1" visible="no" active="yes"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="no" active="no"/>
@@ -3635,9 +3635,6 @@ Source: Samtec SSW.pdf</description>
 <class number="0" name="default" width="0.254" drill="0.5842">
 <clearance class="0" value="0.254"/>
 </class>
-<class number="1" name="power" width="0.254" drill="0.5842">
-<clearance class="1" value="0.254"/>
-</class>
 <class number="2" name="gnd" width="0.254" drill="0.5842">
 <clearance class="2" value="0.254"/>
 </class>
@@ -4008,7 +4005,7 @@ design rules under a new name.</description>
 <element name="X4" library="EEZ_Lib1" package="RJ45-VERT" value="LMJ2138812S0LOT6C" x="31.508" y="63.688" smashed="yes" rot="MR180">
 <attribute name="TME" value="LMJ2138812S0LOT6C" x="31.508" y="63.688" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="NAME" x="29.73" y="55.8775" size="1.778" layer="26" rot="MR180"/>
-<attribute name="VALUE" x="23.603" y="75.5355" size="1.778" layer="28" rot="MR180"/>
+<attribute name="VALUE" x="21.8885" y="61.9465" size="1.27" layer="28" ratio="10" rot="MR180"/>
 </element>
 <element name="L3" library="MyLib6" package="BEAD0603" value="60R@100MHz" x="37.973" y="71.4375" smashed="yes">
 <attribute name="NAME" x="37.2795" y="69.45" size="1.016" layer="25" ratio="10"/>

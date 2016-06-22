@@ -14134,35 +14134,8 @@ Source: RS Component / BUORNS</description>
 <vertex x="-0.254" y="1.27"/>
 </polygon>
 </package>
-<package name="MOD-NRF24L01">
-<pad name="1" x="0" y="0" drill="1" diameter="1.5" shape="octagon" rot="R270"/>
-<pad name="2" x="-2.54" y="0" drill="1" diameter="1.5" shape="octagon" rot="R270"/>
-<pad name="3" x="0" y="2.54" drill="1" diameter="1.5" shape="octagon" rot="R270"/>
-<pad name="4" x="-2.54" y="2.54" drill="1" diameter="1.5" shape="octagon" rot="R270"/>
-<pad name="5" x="0" y="5.08" drill="1" diameter="1.5" shape="octagon" rot="R270"/>
-<pad name="6" x="-2.54" y="5.08" drill="1" diameter="1.5" shape="octagon" rot="R270"/>
-<pad name="7" x="0" y="7.62" drill="1" diameter="1.5" shape="octagon" rot="R270"/>
-<pad name="8" x="-2.54" y="7.62" drill="1" diameter="1.5" shape="octagon" rot="R270"/>
-<text x="-27.686" y="14.2875" size="1.27" layer="25">&gt;NAME</text>
-<text x="-16.256" y="5.5245" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.35" y1="-0.35" x2="0.35" y2="0.35" layer="51" rot="R90"/>
-<rectangle x1="-2.89" y1="-0.35" x2="-2.19" y2="0.35" layer="51" rot="R90"/>
-<rectangle x1="-0.35" y1="2.19" x2="0.35" y2="2.89" layer="51" rot="R90"/>
-<rectangle x1="-2.89" y1="2.19" x2="-2.19" y2="2.89" layer="51" rot="R90"/>
-<rectangle x1="-0.35" y1="4.73" x2="0.35" y2="5.43" layer="51" rot="R90"/>
-<rectangle x1="-2.89" y1="4.73" x2="-2.19" y2="5.43" layer="51" rot="R90"/>
-<rectangle x1="-0.35" y1="7.27" x2="0.35" y2="7.97" layer="51" rot="R90"/>
-<rectangle x1="-2.89" y1="7.27" x2="-2.19" y2="7.97" layer="51" rot="R90"/>
-<wire x1="1.524" y1="-1.524" x2="-17.272" y2="-1.524" width="0.254" layer="21"/>
-<wire x1="-17.272" y1="-1.524" x2="-27.686" y2="-1.524" width="0.254" layer="21"/>
-<wire x1="-27.686" y1="13.716" x2="-27.686" y2="-1.524" width="0.254" layer="21"/>
-<wire x1="1.524" y1="13.716" x2="-17.272" y2="13.716" width="0.254" layer="21"/>
-<wire x1="-17.272" y1="13.716" x2="-27.686" y2="13.716" width="0.254" layer="21"/>
-<wire x1="1.524" y1="13.716" x2="1.524" y2="-1.524" width="0.254" layer="21"/>
-<wire x1="-17.272" y1="13.716" x2="-17.272" y2="-1.524" width="0.254" layer="21"/>
-</package>
 <package name="MOD-NRF24L01_MIRROR">
-<pad name="1" x="0" y="0" drill="1" diameter="1.5" shape="octagon" rot="R270"/>
+<pad name="1" x="0" y="0" drill="1" diameter="1.5" shape="square" rot="R270"/>
 <pad name="2" x="2.54" y="0" drill="1" diameter="1.5" shape="octagon" rot="R270"/>
 <pad name="3" x="0" y="2.54" drill="1" diameter="1.5" shape="octagon" rot="R270"/>
 <pad name="4" x="2.54" y="2.54" drill="1" diameter="1.5" shape="octagon" rot="R270"/>
@@ -14250,6 +14223,33 @@ Source: RS Component / BUORNS</description>
 <smd name="5" x="-4.2" y="0" dx="2.1" dy="1.4" layer="1" roundness="15" cream="no"/>
 <text x="-3.635" y="-4.89" size="1.27" layer="27">&gt;VALUE</text>
 <text x="-3.635" y="3.755" size="1.27" layer="25">&gt;NAME</text>
+</package>
+<package name="MOD-NRF24L01">
+<pad name="1" x="0" y="0" drill="1" diameter="1.5" shape="square" rot="R270"/>
+<pad name="2" x="-2.54" y="0" drill="1" diameter="1.5" shape="octagon" rot="R270"/>
+<pad name="3" x="0" y="2.54" drill="1" diameter="1.5" shape="octagon" rot="R270"/>
+<pad name="4" x="-2.54" y="2.54" drill="1" diameter="1.5" shape="octagon" rot="R270"/>
+<pad name="5" x="0" y="5.08" drill="1" diameter="1.5" shape="octagon" rot="R270"/>
+<pad name="6" x="-2.54" y="5.08" drill="1" diameter="1.5" shape="octagon" rot="R270"/>
+<pad name="7" x="0" y="7.62" drill="1" diameter="1.5" shape="octagon" rot="R270"/>
+<pad name="8" x="-2.54" y="7.62" drill="1" diameter="1.5" shape="octagon" rot="R270"/>
+<text x="-27.686" y="14.2875" size="1.27" layer="25">&gt;NAME</text>
+<text x="-16.256" y="5.5245" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.35" y1="-0.35" x2="0.35" y2="0.35" layer="51" rot="R90"/>
+<rectangle x1="-2.89" y1="-0.35" x2="-2.19" y2="0.35" layer="51" rot="R90"/>
+<rectangle x1="-0.35" y1="2.19" x2="0.35" y2="2.89" layer="51" rot="R90"/>
+<rectangle x1="-2.89" y1="2.19" x2="-2.19" y2="2.89" layer="51" rot="R90"/>
+<rectangle x1="-0.35" y1="4.73" x2="0.35" y2="5.43" layer="51" rot="R90"/>
+<rectangle x1="-2.89" y1="4.73" x2="-2.19" y2="5.43" layer="51" rot="R90"/>
+<rectangle x1="-0.35" y1="7.27" x2="0.35" y2="7.97" layer="51" rot="R90"/>
+<rectangle x1="-2.89" y1="7.27" x2="-2.19" y2="7.97" layer="51" rot="R90"/>
+<wire x1="1.524" y1="-1.524" x2="-17.272" y2="-1.524" width="0.254" layer="21"/>
+<wire x1="-17.272" y1="-1.524" x2="-27.686" y2="-1.524" width="0.254" layer="21"/>
+<wire x1="-27.686" y1="13.716" x2="-27.686" y2="-1.524" width="0.254" layer="21"/>
+<wire x1="1.524" y1="13.716" x2="-17.272" y2="13.716" width="0.254" layer="21"/>
+<wire x1="-17.272" y1="13.716" x2="-27.686" y2="13.716" width="0.254" layer="21"/>
+<wire x1="1.524" y1="13.716" x2="1.524" y2="-1.524" width="0.254" layer="21"/>
+<wire x1="-17.272" y1="13.716" x2="-17.272" y2="-1.524" width="0.254" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -16783,7 +16783,7 @@ Source: Samtec SSW.pdf</description>
 <wire x1="5.835" y1="2.025" x2="5.835" y2="0.525" width="0.2032" layer="51"/>
 <wire x1="5.835" y1="0.525" x2="4.335" y2="0.525" width="0.2032" layer="51"/>
 <wire x1="4.335" y1="0.525" x2="4.335" y2="2.025" width="0.2032" layer="51"/>
-<pad name="1" x="-5.08" y="-1.27" drill="1" diameter="1.5" shape="octagon"/>
+<pad name="1" x="-5.08" y="-1.27" drill="1" diameter="1.5" shape="square"/>
 <pad name="2" x="-5.08" y="1.27" drill="1" diameter="1.5" shape="octagon"/>
 <pad name="3" x="-2.54" y="-1.27" drill="1" diameter="1.5" shape="octagon"/>
 <pad name="4" x="-2.54" y="1.27" drill="1" diameter="1.5" shape="octagon"/>
@@ -16793,8 +16793,6 @@ Source: Samtec SSW.pdf</description>
 <pad name="8" x="2.54" y="1.27" drill="1" diameter="1.5" shape="octagon"/>
 <pad name="9" x="5.08" y="-1.27" drill="1" diameter="1.5" shape="octagon"/>
 <pad name="10" x="5.08" y="1.27" drill="1" diameter="1.5" shape="octagon"/>
-<text x="-5.588" y="-4.318" size="1.6764" layer="21" font="vector">1</text>
-<text x="-5.588" y="2.794" size="1.6764" layer="21" font="vector">2</text>
 <text x="-6.985" y="-2.54" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="8.255" y="-2.54" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 </package>
@@ -19998,9 +19996,6 @@ type RDH, grid 15 mm</description>
 <class number="0" name="default" width="0.254" drill="0.5842">
 <clearance class="0" value="0.254"/>
 </class>
-<class number="1" name="power" width="0.254" drill="0.5842">
-<clearance class="1" value="0.254"/>
-</class>
 <class number="2" name="gnd" width="0.254" drill="0.5842">
 <clearance class="2" value="0.254"/>
 </class>
@@ -20250,8 +20245,8 @@ type RDH, grid 15 mm</description>
 <part name="C29" library="rcl" deviceset="C-EU" device="C0603" value="6n8"/>
 <part name="C31" library="rcl" deviceset="C-EU" device="C0603" value="6n8"/>
 <part name="C41" library="EEZ_Lib1" deviceset="ECAP" device="1206" value="10u"/>
-<part name="C28" library="rcl" deviceset="C-EU" device="C0603" value="18p"/>
-<part name="C32" library="rcl" deviceset="C-EU" device="C0603" value="18p"/>
+<part name="C28" library="rcl" deviceset="C-EU" device="C0805" value="18p"/>
+<part name="C32" library="rcl" deviceset="C-EU" device="C0805" value="18p"/>
 <part name="SH1" library="EEZ_Lib1" deviceset="SHORT" device="NOHOLE"/>
 <part name="SUPPLY3" library="supply2" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
@@ -21155,7 +21150,7 @@ type RDH, grid 15 mm</description>
 <label x="162.56" y="120.015" size="1.27" layer="102"/>
 </segment>
 </net>
-<net name="+3V3" class="1">
+<net name="+3V3" class="0">
 <segment>
 <pinref part="IC1" gate="A" pin="VDD"/>
 <pinref part="C4" gate="G$1" pin="1"/>
@@ -22296,7 +22291,7 @@ type RDH, grid 15 mm</description>
 <wire x1="91.44" y1="25.4" x2="71.12" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+3V3" class="1">
+<net name="+3V3" class="0">
 <segment>
 <junction x="25.4" y="124.46"/>
 <pinref part="C11" gate="G$1" pin="1"/>
@@ -23711,7 +23706,7 @@ type RDH, grid 15 mm</description>
 <pinref part="SUPPLY40" gate="GND" pin="GND"/>
 </segment>
 </net>
-<net name="+3V3" class="1">
+<net name="+3V3" class="0">
 <segment>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
 <wire x1="251.46" y1="93.98" x2="254" y2="93.98" width="0.1524" layer="91"/>
@@ -24032,7 +24027,7 @@ type RDH, grid 15 mm</description>
 <pinref part="LCD1" gate="A" pin="LED_A"/>
 </segment>
 </net>
-<net name="N$10" class="1">
+<net name="N$10" class="0">
 <segment>
 <wire x1="226.06" y1="104.14" x2="246.38" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="-0R" pin="2"/>
@@ -25076,7 +25071,7 @@ type RDH, grid 15 mm</description>
 <wire x1="96.52" y1="66.04" x2="96.52" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+3V3" class="1">
+<net name="+3V3" class="0">
 <segment>
 <pinref part="+3V6" gate="G$1" pin="+3V3"/>
 <wire x1="248.92" y1="142.24" x2="248.92" y2="144.78" width="0.1524" layer="91"/>
@@ -25633,7 +25628,7 @@ type RDH, grid 15 mm</description>
 <junction x="93.98" y="73.66"/>
 </segment>
 </net>
-<net name="+3V3" class="1">
+<net name="+3V3" class="0">
 <segment>
 <pinref part="WIFI" gate="G$1" pin="3.3V"/>
 <pinref part="C50" gate="G$1" pin="1"/>
