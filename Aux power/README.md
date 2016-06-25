@@ -2,6 +2,8 @@
 * 2016-06-14: **r5B8**
     - Master sync and power connector merged into one 10-pin IDC
     - Added place for optional USB isolator ADuM3160
+    - Fixed fan control (added C97 and D21)
+    - New numbering in sync with consolidated schematics
 * 2016-05-26: **r4B43** ([Version 1.0](https://github.com/eez-open/psu-hw/releases/tag/1.0) on github)
 	- Correction of swapping pins introduced in r4B40
 * 2016-05-01: **r4B42**
