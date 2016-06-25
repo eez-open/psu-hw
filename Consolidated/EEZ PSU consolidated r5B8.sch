@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -13683,6 +13683,26 @@ Source: RS Component / BUORNS</description>
 <wire x1="-0.9525" y1="0" x2="-0.9525" y2="1.905" width="0.127" layer="39"/>
 <wire x1="-0.9525" y1="0" x2="0.9525" y2="0" width="0.127" layer="21"/>
 </package>
+<package name="SOD323-W">
+<wire x1="-1" y1="0.7" x2="1" y2="0.7" width="0.1524" layer="51"/>
+<wire x1="1" y1="0.7" x2="1" y2="-0.7" width="0.1524" layer="51"/>
+<wire x1="1" y1="-0.7" x2="-1" y2="-0.7" width="0.1524" layer="51"/>
+<wire x1="-1" y1="-0.7" x2="-1" y2="0.7" width="0.1524" layer="51"/>
+<wire x1="-0.1825" y1="0" x2="0.4175" y2="0.4" width="0.1524" layer="51"/>
+<wire x1="0.4175" y1="0.4" x2="0.4175" y2="-0.4" width="0.1524" layer="51"/>
+<wire x1="0.4175" y1="-0.4" x2="-0.1825" y2="0" width="0.1524" layer="51"/>
+<smd name="C" x="-1.45" y="0" dx="1.5" dy="1.2" layer="1"/>
+<smd name="A" x="1.45" y="0" dx="1.5" dy="1.2" layer="1"/>
+<text x="-1.1" y="1" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.1" y="-2.3" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.446" y1="-0.7" x2="-0.246" y2="0.7" layer="21"/>
+<rectangle x1="-0.446" y1="-0.7" x2="-0.246" y2="0.7" layer="51"/>
+<polygon width="0.1524" layer="21">
+<vertex x="-0.1905" y="0"/>
+<vertex x="0.381" y="0.381"/>
+<vertex x="0.381" y="-0.381"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="SHORT_H">
@@ -16169,6 +16189,15 @@ Farnell: 2112873</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="SOD323" package="SOD323-W">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="ECAP" prefix="C" uservalue="yes">
@@ -17077,7 +17106,7 @@ with open collector; LM139/LM239/LM339/LM2901/LM3302&lt;br&gt;</description>
 <connect gate="G$1" pin="FB" pad="6"/>
 <connect gate="G$1" pin="IS" pad="13"/>
 <connect gate="G$1" pin="OUT" pad="11"/>
-<connect gate="G$1" pin="PGND" pad="12"/>
+<connect gate="G$1" pin="PGND" pad="12 TP"/>
 <connect gate="G$1" pin="PRE" pad="15"/>
 <connect gate="G$1" pin="RAMP" pad="8"/>
 <connect gate="G$1" pin="RT" pad="7"/>
@@ -34019,7 +34048,7 @@ Marquardt</description>
 </class>
 </classes>
 <parts>
-<part name="ZD4" library="EEZ_Lib1" deviceset="ZENER-DIODE" device="MINIMELF" value="13V"/>
+<part name="ZD4" library="EEZ_Lib1" deviceset="ZENER-DIODE" device="SOD323" value="BZX384-C15.115"/>
 <part name="P+3" library="supply2" deviceset="V+" device=""/>
 <part name="C54" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="C62" library="rcl" deviceset="C-EU" device="C0805" value="1n"/>
@@ -34092,7 +34121,7 @@ Marquardt</description>
 <part name="C44" library="rcl" deviceset="C-EU" device="C0805" value="10n"/>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device="" value="PGND"/>
 <part name="D12" library="diode" deviceset="DIODE-" device="SOD323-W" value="BAS316"/>
-<part name="ZD5" library="EEZ_Lib1" deviceset="ZENER-DIODE" device="MINIMELF" value="6V2"/>
+<part name="ZD5" library="EEZ_Lib1" deviceset="ZENER-DIODE" device="SOD323" value="PDZ6.2B"/>
 <part name="R34" library="rcl" deviceset="R-EU_" device="R0805" value="16K"/>
 <part name="R44" library="rcl" deviceset="R-EU_" device="R0805" value="560R"/>
 <part name="SUPPLY13" library="supply2" deviceset="GND" device="" value="PGND"/>
@@ -34438,7 +34467,7 @@ Marquardt</description>
 <part name="X6" library="con-molex" deviceset="22-23-2031" device=""/>
 <part name="R116" library="rcl" deviceset="R-EU_" device="R0805" value="47K"/>
 <part name="D20" library="EEZ_Lib1" deviceset="SCHOTTKY" device="SOD123" value="SKL16"/>
-<part name="C98" library="rcl" deviceset="C-EU" device="C0805" value="47n"/>
+<part name="C99" library="rcl" deviceset="C-EU" device="C0805" value="47n"/>
 <part name="R117" library="rcl" deviceset="R-EU_" device="R0805" value="1K"/>
 <part name="X5" library="EEZ_Lib1" deviceset="IDC-10PIN" device="BLACK" value="09185067324">
 <attribute name="TME" value="T821-1-10-S1 "/>
@@ -34455,7 +34484,7 @@ Marquardt</description>
 <part name="SUPPLY45" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY46" library="supply2" deviceset="GND" device=""/>
 <part name="FRAME6" library="frames" deviceset="DINA4_L" device=""/>
-<part name="C97" library="EEZ_Lib1" deviceset="ECAP" device="PANASONIC_H" value="100u"/>
+<part name="C98" library="EEZ_Lib1" deviceset="ECAP" device="PANASONIC_H" value="100u"/>
 <part name="IC18" library="EEZ_Lib1" deviceset="TPD4E002" device="DRLR"/>
 <part name="IC19" library="EEZ_Lib1" deviceset="TPD2E001" device="DZDR"/>
 <part name="SUPPLY47" library="supply2" deviceset="GND" device=""/>
@@ -34475,45 +34504,45 @@ Marquardt</description>
 <part name="FB7" library="MyLib6" deviceset="FERRITE_BEAD" device="0603" value="60R@100MHz"/>
 <part name="IC20" library="MyLib6" deviceset="ADUM3160BRWZ" device="WIDE" value="ADUM3160BRWZ"/>
 <part name="FB6" library="MyLib6" deviceset="FERRITE_BEAD" device="0603" value="60R@100MHz"/>
-<part name="C100" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C101" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C104" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="C103" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
-<part name="C102" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
-<part name="C99" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C100" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="SUPPLY54" library="supply2" deviceset="GND" device="" value="PGND"/>
 <part name="SUPPLY52" library="supply2" deviceset="GND" device="" value="PGND"/>
 <part name="P+19" library="supply1" deviceset="+5V" device=""/>
-<part name="C101" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C102" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="K_S2" library="relay" deviceset="G6K" device="-2F" value="G6K-2F-5DC">
 <attribute name="MF" value="OMRON COMPONENTS USA"/>
 <attribute name="MPN" value="G6K-2F DC24"/>
 <attribute name="OC_FARNELL" value="1690427"/>
 <attribute name="OC_NEWARK" value="36K7467"/>
 </part>
-<part name="D24" library="diode" deviceset="DIODE-" device="SOD323-W" value="BAS316"/>
-<part name="D22" library="diode" deviceset="DIODE-" device="SOD323-W" value="BAS316"/>
+<part name="D25" library="diode" deviceset="DIODE-" device="SOD323-W" value="BAS316"/>
+<part name="D23" library="diode" deviceset="DIODE-" device="SOD323-W" value="BAS316"/>
 <part name="K_S1" library="relay" deviceset="G6K" device="-2F" value="G6K-2F-5DC">
 <attribute name="MF" value="OMRON COMPONENTS USA"/>
 <attribute name="MPN" value="G6K-2F DC24"/>
 <attribute name="OC_FARNELL" value="1690427"/>
 <attribute name="OC_NEWARK" value="36K7467"/>
 </part>
-<part name="D21" library="diode" deviceset="DIODE-" device="SOD323-W" value="BAS316"/>
-<part name="C105" library="rcl" deviceset="C-EU" device="C1206" value="10n"/>
-<part name="C108" library="rcl" deviceset="C-EU" device="C1206" value="10n"/>
-<part name="C110" library="rcl" deviceset="C-EU" device="C1206" value="10n"/>
-<part name="C112" library="rcl" deviceset="C-EU" device="C1206" value="10n"/>
+<part name="D22" library="diode" deviceset="DIODE-" device="SOD323-W" value="BAS316"/>
+<part name="C106" library="rcl" deviceset="C-EU" device="C1206" value="10n"/>
+<part name="C109" library="rcl" deviceset="C-EU" device="C1206" value="10n"/>
+<part name="C111" library="rcl" deviceset="C-EU" device="C1206" value="10n"/>
+<part name="C113" library="rcl" deviceset="C-EU" device="C1206" value="10n"/>
 <part name="IC21" library="MyLib6" deviceset="TLC5925IDBQR" device="" value="TLC5925IDBQR"/>
 <part name="R126" library="rcl" deviceset="R-EU_" device="R0805" value="1K5"/>
-<part name="C107" library="rcl" deviceset="C-EU" device="C1206" value="10u"/>
+<part name="C108" library="rcl" deviceset="C-EU" device="C1206" value="10u"/>
 <part name="R125" library="rcl" deviceset="R-EU_" device="R0805" value="100K"/>
 <part name="R123" library="rcl" deviceset="R-EU_" device="R0805" value="4K7"/>
 <part name="Q25" library="MyLib6" deviceset="IRLML2246TRPBF" device="" value="IRLML2246TRPBF"/>
 <part name="Q24" library="MyLib6" deviceset="IRLML2246TRPBF" device="" value="IRLML2246TRPBF"/>
-<part name="D23" library="diode" deviceset="DIODE-" device="SOD323-W" value="BAS316"/>
+<part name="D24" library="diode" deviceset="DIODE-" device="SOD323-W" value="BAS316"/>
 <part name="FRAME9" library="frames" deviceset="DINA4_L" device=""/>
 <part name="SUPPLY53" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY55" library="supply2" deviceset="GND" device=""/>
-<part name="D25" library="MyLib6" deviceset="DIODE" device="DO214AA" value="SMBJ5.0A-TR"/>
+<part name="D26" library="MyLib6" deviceset="DIODE" device="DO214AA" value="SMBJ5.0A-TR"/>
 <part name="P+20" library="supply1" deviceset="+5V" device=""/>
 <part name="R122" library="rcl" deviceset="R-EU_" device="R0805" value="4K7"/>
 <part name="Q23" library="MyLib6" deviceset="IRLML2246TRPBF" device=""/>
@@ -34531,17 +34560,17 @@ Marquardt</description>
 <part name="SUPPLY71" library="supply2" deviceset="GND" device=""/>
 <part name="P+24" library="supply1" deviceset="VCC" device=""/>
 <part name="IC25" library="v-reg" deviceset="LD117A?*" device="DT" technology="33TR" value="LD1117ADT33TR"/>
-<part name="C120" library="MyLib6" deviceset="ECAP" device="PANASONIC_C" value="10u"/>
+<part name="C121" library="MyLib6" deviceset="ECAP" device="PANASONIC_C" value="10u"/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
-<part name="C113" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C114" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="FRAME8" library="frames" deviceset="DINA4_L" device=""/>
-<part name="C121" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C122" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C117" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C119" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C115" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="C116" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="C118" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
-<part name="C114" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
-<part name="C115" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
-<part name="C117" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
-<part name="C122" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C123" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="SUPPLY72" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY73" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY74" library="supply2" deviceset="GND" device=""/>
@@ -34552,15 +34581,15 @@ Marquardt</description>
 <part name="SUPPLY80" library="supply2" deviceset="GND" device=""/>
 <part name="FRAME10" library="frames" deviceset="DINA4_L" device=""/>
 <part name="Y1" library="MyLib6" deviceset="XTAL" device="R26" value="32,768kHz"/>
-<part name="C123" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C124" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="IC28" library="MyLib6" deviceset="AT25XXX" device="SOIC8" value="AT25256B"/>
-<part name="C126" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C127" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="IC27" library="MyLib6" deviceset="PCA21125" device="TSSOP-14" value="PCA21125"/>
 <part name="Y2" library="MyLib6" deviceset="XTAL" device="SMD" value="25MHz"/>
 <part name="R130" library="rcl" deviceset="R-EU_" device="R0805" value="180R"/>
 <part name="SUPPLY81" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY82" library="supply2" deviceset="GND" device=""/>
-<part name="D26" library="diode" deviceset="DIODE-" device="SOD323-W" value="BAS316"/>
+<part name="D27" library="diode" deviceset="DIODE-" device="SOD323-W" value="BAS316"/>
 <part name="Q27" library="MyLib6" deviceset="2N7002" device=""/>
 <part name="SG1" library="MyLib6" deviceset="BUZZER" device="" value="LD-BZEN-0903"/>
 <part name="X17" library="con-molex" deviceset="22-23-2021" device="" value="22-23-2021">
@@ -34570,7 +34599,7 @@ Marquardt</description>
 </part>
 <part name="R132" library="rcl" deviceset="R-EU_" device="R0805" value="4K7"/>
 <part name="R131" library="rcl" deviceset="R-EU_" device="R0805" value="100K"/>
-<part name="C128" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C129" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="SUPPLY83" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY84" library="supply2" deviceset="GND" device=""/>
 <part name="U$10" library="supply1" deviceset="+5V" device=""/>
@@ -34584,8 +34613,8 @@ Marquardt</description>
 <part name="R135" library="rcl" deviceset="R-EU_" device="R0805" value="10K"/>
 <part name="IC31" library="MyLib6" deviceset="LM555" device="SOIC8" value="TLC555"/>
 <part name="R148" library="rcl" deviceset="R-EU_" device="R0805" value="1K5"/>
-<part name="C148" library="rcl" deviceset="C-EU" device="C0805" value="47n"/>
-<part name="C147" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C149" library="rcl" deviceset="C-EU" device="C0805" value="47n"/>
+<part name="C148" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="IC30" library="MyLib6" deviceset="BC857BS" device="" value="BC857BS"/>
 <part name="FRAME11" library="frames" deviceset="DINA4_L" device=""/>
 <part name="P+25" library="supply1" deviceset="+5V" device=""/>
@@ -34600,7 +34629,7 @@ Marquardt</description>
 <part name="R149" library="rcl" deviceset="R-EU_" device="R0805" value="30K"/>
 <part name="Q29" library="MyLib6" deviceset="2N7002" device="" value="2N7002"/>
 <part name="Q30" library="MyLib6" deviceset="2N7002" device="" value="2N7002"/>
-<part name="C125" library="rcl" deviceset="C-EU" device="C1206" value="10u"/>
+<part name="C126" library="rcl" deviceset="C-EU" device="C1206" value="10u"/>
 <part name="SUPPLY91" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY92" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY93" library="supply2" deviceset="GND" device=""/>
@@ -34610,19 +34639,19 @@ Marquardt</description>
 <part name="R138" library="rcl" deviceset="R-EU_" device="R0805" value="49R9"/>
 <part name="R143" library="rcl" deviceset="R-EU_" device="R0805" value="180R"/>
 <part name="R144" library="rcl" deviceset="R-EU_" device="R0805" value="180R"/>
-<part name="C130" library="rcl" deviceset="C-EU" device="C0805" value="22n"/>
-<part name="C133" library="rcl" deviceset="C-EU" device="C0805" value="10n"/>
+<part name="C131" library="rcl" deviceset="C-EU" device="C0805" value="22n"/>
+<part name="C134" library="rcl" deviceset="C-EU" device="C0805" value="10n"/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
-<part name="C111" library="MyLib6" deviceset="ECAP" device="EEEFK+2.5MM" value="UPW1J150MED"/>
+<part name="C112" library="MyLib6" deviceset="ECAP" device="EEEFK+2.5MM" value="UPW1J150MED"/>
 <part name="R124" library="rcl" deviceset="R-EU_" device="R0805" value="1R"/>
-<part name="C104" library="rcl" deviceset="C-EU" device="C1812" value="470n/100V"/>
+<part name="C105" library="rcl" deviceset="C-EU" device="C1812" value="470n/100V"/>
 <part name="R128" library="rcl" deviceset="R-EU_" device="R0805" value="1R"/>
-<part name="C109" library="rcl" deviceset="C-EU" device="C1812" value="470n/100V"/>
-<part name="C119" library="MyLib6" deviceset="ECAP" device="PANASONIC_C" value="47u"/>
-<part name="C106" library="MyLib6" deviceset="ECAP" device="EEEFK+2.5MM" value="UPW1J150MED"/>
+<part name="C110" library="rcl" deviceset="C-EU" device="C1812" value="470n/100V"/>
+<part name="C120" library="MyLib6" deviceset="ECAP" device="PANASONIC_C" value="47u"/>
+<part name="C107" library="MyLib6" deviceset="ECAP" device="EEEFK+2.5MM" value="UPW1J150MED"/>
 <part name="JP3" library="jumper" deviceset="JP1E" device="" value="826926-2 "/>
 <part name="SUPPLY94" library="supply2" deviceset="GND" device=""/>
-<part name="C127" library="EEZ_Lib1" deviceset="SUPER_CAP" device="" value="EECS5R5H105"/>
+<part name="C128" library="EEZ_Lib1" deviceset="SUPER_CAP" device="" value="EECS5R5H105"/>
 <part name="MCU" library="EEZ_Lib1" deviceset="ARDUINO_MEGA+ICSP" device="MIRROR" value="Arduino Due"/>
 <part name="SUPPLY95" library="supply2" deviceset="GND" device=""/>
 <part name="IC26" library="EEZ_Lib1" deviceset="SI8641" device="NSOIC-16" value="Si8641EC-B-IS1"/>
@@ -34650,10 +34679,10 @@ Marquardt</description>
 <part name="R146" library="rcl" deviceset="R-EU_" device="R0805" value="180R"/>
 <part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
 <part name="R129" library="rcl" deviceset="R-EU_" device="R0805" value="4K7"/>
-<part name="C124" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C125" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="SUPPLY97" library="supply2" deviceset="GND" device=""/>
 <part name="R133" library="rcl" deviceset="R-EU_" device="R0805" value="4K7"/>
-<part name="C129" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C130" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="SUPPLY98" library="supply2" deviceset="GND" device=""/>
 <part name="IC22" library="EEZ_Lib1" deviceset="SI8641" device="NSOIC-16" value="Si8641EC-B-IS1"/>
 <part name="X13" library="EEZ_Lib1" deviceset="TSW-113-07-F-D" device="">
@@ -34676,20 +34705,20 @@ Marquardt</description>
 <attribute name="TME" value="T821-1-10-S1 "/>
 </part>
 <part name="SUPPLY99" library="supply2" deviceset="GND" device=""/>
-<part name="D27" library="diode" deviceset="BAT54S" device=""/>
+<part name="D28" library="diode" deviceset="BAT54S" device=""/>
 <part name="R153" library="resistor" deviceset="R-EU_" device="R1206" value="10K"/>
 <part name="R154" library="rcl" deviceset="R-EU_" device="R0805" value="1K"/>
 <part name="IC34" library="EEZ_Lib1" deviceset="SN74LV1T34" device="" value="SN74LV1T34DBVR"/>
 <part name="R155" library="rcl" deviceset="R-EU_" device="R0805" value="1K"/>
 <part name="SUPPLY100" library="supply2" deviceset="GND" device=""/>
-<part name="C150" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C151" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
 <part name="SUPPLY103" library="supply2" deviceset="GND" device=""/>
 <part name="P+26" library="supply1" deviceset="+5V" device=""/>
 <part name="R151" library="rcl" deviceset="R-EU_" device="R0805" value="100R"/>
 <part name="ZD12" library="EEZ_Lib1" deviceset="ZENER-DIODE" device="MINIMELF" value="4V3"/>
 <part name="SUPPLY104" library="supply2" deviceset="GND" device=""/>
-<part name="D28" library="EEZ_Lib1" deviceset="SCHOTTKY" device="SOD123" value="SKL16"/>
+<part name="D29" library="EEZ_Lib1" deviceset="SCHOTTKY" device="SOD123" value="SKL16"/>
 <part name="FB8" library="EEZ_Lib1" deviceset="FERRITE_BEAD" device="0603" value="60R@100MHz"/>
 <part name="SUPPLY105" library="supply2" deviceset="GND" device=""/>
 <part name="ZD10" library="EEZ_Lib1" deviceset="PSMAXX" device="" value="SMAJ18A"/>
@@ -34701,18 +34730,18 @@ Marquardt</description>
 <part name="X12" library="EEZ_Lib1" deviceset="MC000006" device="MIRROR" value="MC000006">
 <attribute name="FARNELL" value="2007972"/>
 </part>
-<part name="C136" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C137" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="IC29" library="EEZ_Lib1" deviceset="W5500" device=""/>
 <part name="R145" library="rcl" deviceset="R-EU_" device="R0805" value="10K"/>
-<part name="C146" library="rcl" deviceset="C-EU" device="C0805" value="10n"/>
-<part name="C139" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C147" library="rcl" deviceset="C-EU" device="C0805" value="10n"/>
 <part name="C140" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="C141" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="C142" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="C143" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
-<part name="C138" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C144" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C139" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="R140" library="rcl" deviceset="R-EU_" device="R0805" value="12K4"/>
-<part name="C145" library="EEZ_Lib1" deviceset="ECAP" device="1206" value="4u7"/>
+<part name="C146" library="EEZ_Lib1" deviceset="ECAP" device="1206" value="4u7"/>
 <part name="+3V16" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V17" library="supply1" deviceset="+3V3" device=""/>
 <part name="SUPPLY106" library="supply2" deviceset="GND" device=""/>
@@ -34721,11 +34750,11 @@ Marquardt</description>
 <part name="SUPPLY109" library="supply2" deviceset="GND" device=""/>
 <part name="GND1" library="supply1" deviceset="GNDA" device=""/>
 <part name="GND2" library="supply1" deviceset="GNDA" device=""/>
-<part name="C132" library="rcl" deviceset="C-EU" device="C0603" value="6n8"/>
-<part name="C134" library="rcl" deviceset="C-EU" device="C0603" value="6n8"/>
-<part name="C144" library="EEZ_Lib1" deviceset="ECAP" device="1206" value="10u"/>
-<part name="C131" library="rcl" deviceset="C-EU" device="C0805" value="18p"/>
-<part name="C135" library="rcl" deviceset="C-EU" device="C0805" value="18p"/>
+<part name="C133" library="rcl" deviceset="C-EU" device="C0603" value="6n8"/>
+<part name="C135" library="rcl" deviceset="C-EU" device="C0603" value="6n8"/>
+<part name="C145" library="EEZ_Lib1" deviceset="ECAP" device="1206" value="10u"/>
+<part name="C132" library="rcl" deviceset="C-EU" device="C0805" value="18p"/>
+<part name="C136" library="rcl" deviceset="C-EU" device="C0805" value="18p"/>
 <part name="SH3" library="EEZ_Lib1" deviceset="SHORT" device="NOHOLE"/>
 <part name="SUPPLY110" library="supply2" deviceset="GND" device=""/>
 <part name="P+27" library="supply1" deviceset="+5V" device=""/>
@@ -34735,11 +34764,11 @@ Marquardt</description>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND3" library="supply1" deviceset="GNDA" device=""/>
 <part name="IC32" library="EEZ_Lib1" deviceset="SN74LVC2G08DCTR" device=""/>
-<part name="C149" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C150" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="SUPPLY112" library="supply2" deviceset="GND" device=""/>
 <part name="+3V12" library="supply1" deviceset="+3V3" device=""/>
 <part name="IC33" library="EEZ_Lib1" deviceset="TPS3705XX" device="" value="TPS3705-33D"/>
-<part name="C151" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C152" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="+3V19" library="supply1" deviceset="+3V3" device=""/>
 <part name="SUPPLY113" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY114" library="supply2" deviceset="GND" device=""/>
@@ -34748,17 +34777,17 @@ Marquardt</description>
 <part name="SUPPLY115" library="supply2" deviceset="GND" device=""/>
 <part name="P+31" library="supply1" deviceset="+5V" device=""/>
 <part name="WIFI" library="EEZ_Lib1" deviceset="MOD-NRF24L01" device="MIRROR" value="NRF24L01 module"/>
-<part name="C153" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C154" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="SUPPLY116" library="supply2" deviceset="GND" device=""/>
 <part name="R141" library="rcl" deviceset="R-EU_" device="R0805" value="10K"/>
-<part name="C137" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C138" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="SUPPLY117" library="supply2" deviceset="GND" device=""/>
 <part name="+3V20" library="supply1" deviceset="+3V3" device=""/>
 <part name="TP3" library="EEZ_Lib1" deviceset="TEST_POINT" device=""/>
 <part name="TP4" library="EEZ_Lib1" deviceset="TEST_POINT" device=""/>
 <part name="X19" library="con-molex" deviceset="22-23-2041" device=""/>
-<part name="C154" library="rcl" deviceset="C-EU" device="C0805" value="10n"/>
 <part name="C155" library="rcl" deviceset="C-EU" device="C0805" value="10n"/>
+<part name="C156" library="rcl" deviceset="C-EU" device="C0805" value="10n"/>
 <part name="SUPPLY118" library="supply2" deviceset="GND" device=""/>
 <part name="+3V21" library="supply1" deviceset="+3V3" device=""/>
 <part name="R157" library="rcl" deviceset="R-EU_" device="R0805" value="10K"/>
@@ -34767,18 +34796,20 @@ Marquardt</description>
 <part name="R159" library="rcl" deviceset="R-EU_" device="R0805" value="10K"/>
 <part name="SUPPLY119" library="supply2" deviceset="GND" device=""/>
 <part name="FRAME12" library="frames" deviceset="DINA4_L" device=""/>
-<part name="C156" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C157" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="IC35" library="EEZ_Lib1" deviceset="SN74LVC2G02DCTR" device=""/>
 <part name="+3V22" library="supply1" deviceset="+3V3" device=""/>
 <part name="SUPPLY120" library="supply2" deviceset="GND" device=""/>
 <part name="IC24" library="EEZ_Lib1" deviceset="SI8651" device="NSOIC-16" value="SI8651EC-B-IS1"/>
 <part name="IC23" library="EEZ_Lib1" deviceset="SI8651" device="NSOIC-16" value="SI8651EC-B-IS1"/>
-<part name="C152" library="rcl" deviceset="C-EU" device="C0805" value="47n"/>
+<part name="C153" library="rcl" deviceset="C-EU" device="C0805" value="47n"/>
 <part name="SUPPLY121" library="supply2" deviceset="GND" device=""/>
 <part name="J2" library="EEZ_Lib1" deviceset="BINDING_POST" device="-2" value="BS-244DSM-G"/>
 <part name="LED_O1" library="EEZ_Lib1" deviceset="LED" device="0805" value="HSMG-C170"/>
 <part name="LED_SP" library="EEZ_Lib1" deviceset="LED" device="0805" value="HSMH-C170"/>
 <part name="SW2" library="EEZ_Lib1" deviceset="TACT_SW" device="" value="1301.9316"/>
+<part name="D21" library="diode" deviceset="DIODE-" device="SOD323-W" value="BAS316"/>
+<part name="C97" library="MyLib6" deviceset="ECAP" device="PANASONIC_C" value="10u"/>
 </parts>
 <sheets>
 <sheet>
@@ -35036,12 +35067,12 @@ Marquardt</description>
 <instance part="SH1" gate="SH" x="175.26" y="81.28" smashed="yes" rot="R180">
 <attribute name="NAME" x="173.0375" y="81.915" size="1.778" layer="95"/>
 </instance>
-<instance part="X2" gate="-2" x="10.16" y="132.08" smashed="yes">
-<attribute name="NAME" x="8.255" y="133.985" size="1.778" layer="95"/>
+<instance part="X2" gate="-2" x="10.16" y="154.94" smashed="yes">
+<attribute name="NAME" x="8.255" y="156.845" size="1.778" layer="95"/>
 </instance>
-<instance part="X2" gate="-1" x="10.16" y="154.94" smashed="yes">
-<attribute name="VALUE" x="5.08" y="149.86" size="1.778" layer="96"/>
-<attribute name="NAME" x="9.525" y="152.4" size="1.778" layer="95"/>
+<instance part="X2" gate="-1" x="10.16" y="132.08" smashed="yes">
+<attribute name="VALUE" x="5.08" y="127" size="1.778" layer="96"/>
+<attribute name="NAME" x="9.525" y="129.54" size="1.778" layer="95"/>
 </instance>
 <instance part="C5" gate="G$1" x="63.5" y="142.24" smashed="yes">
 <attribute name="NAME" x="64.643" y="142.7226" size="1.778" layer="95"/>
@@ -35094,9 +35125,9 @@ Marquardt</description>
 <attribute name="NAME" x="154.305" y="108.585" size="1.778" layer="95"/>
 <attribute name="VALUE" x="154.305" y="106.045" size="1.778" layer="96"/>
 </instance>
-<instance part="X1" gate="-1" x="10.16" y="162.56" smashed="yes">
-<attribute name="VALUE" x="10.16" y="160.02" size="1.778" layer="96"/>
-<attribute name="NAME" x="9.525" y="163.195" size="1.778" layer="95"/>
+<instance part="X1" gate="-1" x="10.16" y="175.26" smashed="yes">
+<attribute name="VALUE" x="10.16" y="172.72" size="1.778" layer="96"/>
+<attribute name="NAME" x="9.525" y="175.895" size="1.778" layer="95"/>
 </instance>
 <instance part="X1" gate="-2" x="10.16" y="170.18" smashed="yes">
 <attribute name="NAME" x="10.795" y="170.815" size="1.778" layer="95"/>
@@ -35120,24 +35151,19 @@ Marquardt</description>
 <attribute name="NAME" x="47.879" y="166.751" size="1.778" layer="95"/>
 <attribute name="VALUE" x="47.879" y="164.846" size="1.778" layer="96"/>
 </instance>
-<instance part="X1" gate="-3" x="10.16" y="175.26" smashed="yes">
-<attribute name="NAME" x="10.795" y="172.72" size="1.778" layer="95"/>
+<instance part="X1" gate="-3" x="10.16" y="162.56" smashed="yes">
+<attribute name="NAME" x="10.795" y="160.02" size="1.778" layer="95"/>
 </instance>
 <instance part="L2" gate="G$1" x="132.08" y="99.06" smashed="yes">
 <attribute name="VALUE" x="128.27" y="101.6" size="1.778" layer="96"/>
 <attribute name="NAME" x="128.27" y="103.505" size="1.778" layer="95"/>
 </instance>
-<instance part="L1" gate="-1" x="58.42" y="162.56" smashed="yes">
-<attribute name="NAME" x="55.88" y="164.5666" size="1.778" layer="95"/>
-<attribute name="VALUE" x="52.07" y="159.639" size="1.778" layer="96"/>
-</instance>
-<instance part="L1" gate="-2" x="58.42" y="170.18" smashed="yes">
-<attribute name="NAME" x="55.88" y="172.1866" size="1.778" layer="95"/>
-</instance>
 <instance part="C18" gate="G$1" x="157.48" y="91.44" smashed="yes">
 <attribute name="NAME" x="159.258" y="91.9226" size="1.778" layer="95"/>
 <attribute name="VALUE" x="159.258" y="89.3826" size="1.778" layer="96"/>
 </instance>
+<instance part="L1" gate="-2" x="58.42" y="162.56"/>
+<instance part="L1" gate="-1" x="58.42" y="170.18"/>
 </instances>
 <busses>
 </busses>
@@ -35195,11 +35221,10 @@ Marquardt</description>
 <segment>
 <pinref part="SUPPLY37" gate="GND" pin="GND"/>
 <pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="66.04" y1="162.56" x2="68.58" y2="162.56" width="0.4064" layer="91"/>
 <wire x1="68.58" y1="162.56" x2="73.66" y2="162.56" width="0.1524" layer="91"/>
 <junction x="68.58" y="162.56"/>
-<pinref part="L1" gate="-1" pin="2"/>
-<wire x1="63.5" y1="162.56" x2="66.04" y2="162.56" width="0.4064" layer="91"/>
+<wire x1="63.5" y1="162.56" x2="68.58" y2="162.56" width="0.4064" layer="91"/>
+<pinref part="L1" gate="-2" pin="2"/>
 </segment>
 <segment>
 <pinref part="SUPPLY61" gate="GND" pin="GND"/>
@@ -35296,15 +35321,14 @@ Marquardt</description>
 <junction x="99.06" y="121.92"/>
 <junction x="71.12" y="147.32"/>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="66.04" y1="170.18" x2="71.12" y2="170.18" width="0.4064" layer="91"/>
+<wire x1="63.5" y1="170.18" x2="71.12" y2="170.18" width="0.4064" layer="91"/>
 <wire x1="71.12" y1="170.18" x2="73.66" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="147.32" x2="71.12" y2="149.86" width="0.4064" layer="91"/>
 <junction x="71.12" y="170.18"/>
 <wire x1="71.12" y1="149.86" x2="71.12" y2="170.18" width="0.4064" layer="91"/>
 <wire x1="104.14" y1="149.86" x2="71.12" y2="149.86" width="0.4064" layer="91"/>
 <junction x="71.12" y="149.86"/>
-<pinref part="L1" gate="-2" pin="2"/>
-<wire x1="63.5" y1="170.18" x2="66.04" y2="170.18" width="0.4064" layer="91"/>
+<pinref part="L1" gate="-1" pin="2"/>
 </segment>
 </net>
 <net name="N$38" class="0">
@@ -35623,15 +35647,15 @@ Marquardt</description>
 <pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="35.56" y1="149.86" x2="38.1" y2="149.86" width="0.1524" layer="91"/>
 <junction x="38.1" y="149.86"/>
-<wire x1="10.16" y1="154.94" x2="20.32" y2="154.94" width="0.4064" layer="91"/>
 <wire x1="20.32" y1="154.94" x2="38.1" y2="154.94" width="0.4064" layer="91"/>
 <wire x1="38.1" y1="154.94" x2="38.1" y2="152.4" width="0.4064" layer="91"/>
 <junction x="38.1" y="152.4"/>
-<pinref part="X2" gate="-1" pin="1"/>
 <pinref part="ZD2" gate="G$1" pin="1"/>
 <wire x1="20.32" y1="149.86" x2="20.32" y2="154.94" width="0.4064" layer="91"/>
-<junction x="20.32" y="154.94"/>
 <label x="12.7" y="155.575" size="1.27" layer="102"/>
+<pinref part="X2" gate="-2" pin="1"/>
+<wire x1="10.16" y1="154.94" x2="20.32" y2="154.94" width="0.1524" layer="91"/>
+<junction x="20.32" y="154.94"/>
 </segment>
 </net>
 <net name="AC_IN1" class="0">
@@ -35645,15 +35669,15 @@ Marquardt</description>
 <pinref part="D3" gate="G$1" pin="C"/>
 <wire x1="38.1" y1="137.16" x2="35.56" y2="137.16" width="0.1524" layer="91"/>
 <junction x="38.1" y="137.16"/>
-<wire x1="10.16" y1="132.08" x2="20.32" y2="132.08" width="0.4064" layer="91"/>
 <wire x1="20.32" y1="132.08" x2="38.1" y2="132.08" width="0.4064" layer="91"/>
 <wire x1="38.1" y1="132.08" x2="38.1" y2="134.62" width="0.4064" layer="91"/>
 <junction x="38.1" y="134.62"/>
-<pinref part="X2" gate="-2" pin="1"/>
 <pinref part="ZD2" gate="G$1" pin="2"/>
 <wire x1="20.32" y1="142.24" x2="20.32" y2="132.08" width="0.4064" layer="91"/>
-<junction x="20.32" y="132.08"/>
 <label x="13.97" y="132.715" size="1.27" layer="102"/>
+<pinref part="X2" gate="-1" pin="1"/>
+<wire x1="10.16" y1="132.08" x2="20.32" y2="132.08" width="0.1524" layer="91"/>
+<junction x="20.32" y="132.08"/>
 </segment>
 </net>
 <net name="PREG_OUT" class="0">
@@ -35722,15 +35746,15 @@ Marquardt</description>
 </net>
 <net name="DC-" class="0">
 <segment>
-<pinref part="X1" gate="-1" pin="1"/>
-<wire x1="10.16" y1="162.56" x2="38.1" y2="162.56" width="0.4064" layer="91"/>
 <pinref part="ZD1" gate="G$1" pin="2"/>
 <label x="22.86" y="163.195" size="1.27" layer="102"/>
-<pinref part="L1" gate="-1" pin="1"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="53.34" y1="162.56" x2="45.72" y2="162.56" width="0.4064" layer="91"/>
 <wire x1="45.72" y1="162.56" x2="38.1" y2="162.56" width="0.4064" layer="91"/>
 <junction x="45.72" y="162.56"/>
+<pinref part="L1" gate="-2" pin="1"/>
+<pinref part="X1" gate="-3" pin="1"/>
+<wire x1="10.16" y1="162.56" x2="38.1" y2="162.56" width="0.1524" layer="91"/>
 <junction x="38.1" y="162.56"/>
 </segment>
 </net>
@@ -35742,17 +35766,14 @@ Marquardt</description>
 <wire x1="38.1" y1="170.18" x2="45.72" y2="170.18" width="0.4064" layer="91"/>
 <junction x="38.1" y="170.18"/>
 <pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="45.72" y1="170.18" x2="50.8" y2="170.18" width="0.4064" layer="91"/>
+<wire x1="45.72" y1="170.18" x2="53.34" y2="170.18" width="0.4064" layer="91"/>
 <junction x="45.72" y="170.18"/>
 <label x="22.86" y="170.815" size="1.27" layer="102"/>
-<pinref part="L1" gate="-2" pin="1"/>
-<wire x1="53.34" y1="170.18" x2="50.8" y2="170.18" width="0.4064" layer="91"/>
+<pinref part="L1" gate="-1" pin="1"/>
 </segment>
 </net>
 <net name="EARTH" class="0">
 <segment>
-<pinref part="X1" gate="-3" pin="1"/>
-<wire x1="10.16" y1="175.26" x2="83.82" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="175.26" x2="83.82" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="81.28" y1="162.56" x2="83.82" y2="162.56" width="0.1524" layer="91"/>
@@ -35761,6 +35782,8 @@ Marquardt</description>
 <wire x1="81.28" y1="170.18" x2="83.82" y2="170.18" width="0.1524" layer="91"/>
 <junction x="83.82" y="170.18"/>
 <label x="22.86" y="175.895" size="1.27" layer="102"/>
+<pinref part="X1" gate="-1" pin="1"/>
+<wire x1="10.16" y1="175.26" x2="83.82" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -36665,7 +36688,7 @@ Marquardt</description>
 <instances>
 <instance part="ZD4" gate="G$1" x="314.96" y="63.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="316.992" y="63.5" size="1.778" layer="95"/>
-<attribute name="VALUE" x="316.992" y="61.341" size="1.778" layer="96"/>
+<attribute name="VALUE" x="316.992" y="61.341" size="1.4224" layer="96"/>
 </instance>
 <instance part="P+3" gate="1" x="312.42" y="-5.08" smashed="yes" rot="R270">
 <attribute name="VALUE" x="313.69" y="-5.715" size="1.778" layer="96"/>
@@ -40424,7 +40447,7 @@ Marquardt</description>
 <attribute name="NAME" x="208.661" y="155.575" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="208.661" y="153.416" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="C98" gate="G$1" x="223.52" y="142.24" smashed="yes" rot="MR180">
+<instance part="C99" gate="G$1" x="223.52" y="142.24" smashed="yes" rot="MR180">
 <attribute name="NAME" x="225.679" y="145.669" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="225.679" y="143.129" size="1.778" layer="96" rot="MR180"/>
 </instance>
@@ -40480,7 +40503,7 @@ Marquardt</description>
 <attribute name="SHEET" x="248.92" y="1.27" size="2.54" layer="94" font="vector"/>
 <attribute name="DRAWING_NAME" x="180.34" y="19.05" size="2.54" layer="94" font="vector"/>
 </instance>
-<instance part="C97" gate="G$1" x="241.3" y="154.94" smashed="yes" rot="MR0">
+<instance part="C98" gate="G$1" x="241.3" y="154.94" smashed="yes" rot="MR0">
 <attribute name="NAME" x="243.078" y="155.7274" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="243.078" y="153.8224" size="1.778" layer="96" rot="MR180"/>
 </instance>
@@ -40508,24 +40531,24 @@ Marquardt</description>
 <attribute name="VALUE" x="5.08" y="160.02" size="1.778" layer="96"/>
 <attribute name="NAME" x="9.652" y="97.282" size="1.524" layer="95" rot="R180"/>
 </instance>
-<instance part="R119" gate="G$1" x="220.98" y="88.9" smashed="yes" rot="MR270">
-<attribute name="NAME" x="222.25" y="91.2114" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="222.25" y="89.027" size="1.778" layer="96" rot="MR180"/>
+<instance part="R119" gate="G$1" x="213.36" y="88.9" smashed="yes" rot="MR270">
+<attribute name="NAME" x="214.63" y="91.2114" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="214.63" y="89.027" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="SUPPLY51" gate="GND" x="220.98" y="78.74" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="219.075" y="77.47" size="1.778" layer="96" rot="MR0"/>
+<instance part="SUPPLY51" gate="GND" x="213.36" y="78.74" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="211.455" y="77.47" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="X6" gate="-2" x="248.92" y="149.86"/>
 <instance part="IC17" gate="G$1" x="180.34" y="160.02" smashed="yes">
 <attribute name="NAME" x="175.26" y="165.735" size="1.778" layer="95"/>
 <attribute name="VALUE" x="175.26" y="163.195" size="1.778" layer="96"/>
 </instance>
-<instance part="P+17" gate="1" x="220.98" y="114.3" smashed="yes">
-<attribute name="VALUE" x="220.98" y="114.3" size="1.778" layer="96"/>
+<instance part="P+17" gate="1" x="213.36" y="114.3" smashed="yes">
+<attribute name="VALUE" x="213.36" y="114.3" size="1.778" layer="96"/>
 </instance>
-<instance part="R118" gate="G$1" x="220.98" y="104.14" smashed="yes" rot="MR270">
-<attribute name="NAME" x="222.25" y="106.4514" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="222.25" y="104.267" size="1.778" layer="96" rot="MR180"/>
+<instance part="R118" gate="G$1" x="213.36" y="104.14" smashed="yes" rot="MR270">
+<attribute name="NAME" x="214.63" y="106.4514" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="214.63" y="104.267" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="X5" gate="-6" x="182.88" y="139.7"/>
 <instance part="X5" gate="-5" x="175.26" y="96.52" smashed="yes" rot="MR180">
@@ -40557,19 +40580,19 @@ Marquardt</description>
 <attribute name="NAME" x="72.39" y="57.15" size="1.778" layer="95" ratio="10"/>
 <attribute name="VALUE" x="68.58" y="54.61" size="1.27" layer="96" ratio="10" rot="MR180"/>
 </instance>
-<instance part="C100" gate="G$1" x="71.12" y="50.8" smashed="yes" rot="MR270">
+<instance part="C101" gate="G$1" x="71.12" y="50.8" smashed="yes" rot="MR270">
 <attribute name="NAME" x="73.279" y="52.959" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="73.279" y="50.419" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="C103" gate="G$1" x="71.12" y="43.18" smashed="yes" rot="MR270">
+<instance part="C104" gate="G$1" x="71.12" y="43.18" smashed="yes" rot="MR270">
 <attribute name="NAME" x="73.279" y="45.339" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="73.279" y="42.799" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="C102" gate="G$1" x="22.86" y="45.72" smashed="yes" rot="MR90">
+<instance part="C103" gate="G$1" x="22.86" y="45.72" smashed="yes" rot="MR90">
 <attribute name="NAME" x="20.701" y="46.101" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="20.701" y="43.561" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="C99" gate="G$1" x="22.86" y="55.88" smashed="yes" rot="MR90">
+<instance part="C100" gate="G$1" x="22.86" y="55.88" smashed="yes" rot="MR90">
 <attribute name="NAME" x="20.701" y="56.261" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="20.701" y="53.721" size="1.778" layer="96" rot="MR0"/>
 </instance>
@@ -40582,9 +40605,17 @@ Marquardt</description>
 <instance part="P+19" gate="1" x="27.94" y="63.5" smashed="yes">
 <attribute name="VALUE" x="25.654" y="64.516" size="1.778" layer="96"/>
 </instance>
-<instance part="C101" gate="G$1" x="104.14" y="50.8" smashed="yes" rot="MR180">
+<instance part="C102" gate="G$1" x="104.14" y="50.8" smashed="yes" rot="MR180">
 <attribute name="NAME" x="101.981" y="51.816" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="101.981" y="49.911" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="D21" gate="G$1" x="226.06" y="96.52" smashed="yes">
+<attribute name="NAME" x="223.52" y="98.2726" size="1.778" layer="95"/>
+<attribute name="VALUE" x="222.25" y="92.9386" size="1.778" layer="96"/>
+</instance>
+<instance part="C97" gate="G$1" x="193.04" y="154.94" smashed="yes">
+<attribute name="NAME" x="194.818" y="153.5176" size="1.778" layer="95"/>
+<attribute name="VALUE" x="194.818" y="151.6126" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -40612,8 +40643,12 @@ Marquardt</description>
 </segment>
 <segment>
 <pinref part="SUPPLY46" gate="GND" pin="GND"/>
-<wire x1="180.34" y1="147.32" x2="180.34" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="147.32" x2="180.34" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="IC17" gate="G$1" pin="GND"/>
+<pinref part="C97" gate="G$1" pin="-"/>
+<wire x1="180.34" y1="149.86" x2="180.34" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="149.86" x2="180.34" y2="149.86" width="0.1524" layer="91"/>
+<junction x="180.34" y="149.86"/>
 </segment>
 <segment>
 <pinref part="SUPPLY48" gate="GND" pin="GND"/>
@@ -40633,7 +40668,7 @@ Marquardt</description>
 <segment>
 <pinref part="R119" gate="G$1" pin="2"/>
 <pinref part="SUPPLY51" gate="GND" pin="GND"/>
-<wire x1="220.98" y1="81.28" x2="220.98" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="81.28" x2="213.36" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC20" gate="A" pin="GND2"/>
@@ -40645,9 +40680,9 @@ Marquardt</description>
 <pinref part="IC20" gate="A" pin="GND2_2"/>
 <wire x1="27.94" y1="53.34" x2="25.4" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="53.34" x2="25.4" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="C102" gate="G$1" pin="2"/>
+<pinref part="C103" gate="G$1" pin="2"/>
 <wire x1="17.78" y1="45.72" x2="15.24" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="C99" gate="G$1" pin="2"/>
+<pinref part="C100" gate="G$1" pin="2"/>
 <wire x1="15.24" y1="45.72" x2="15.24" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="50.8" x2="15.24" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="55.88" x2="17.78" y2="55.88" width="0.1524" layer="91"/>
@@ -40691,7 +40726,7 @@ Marquardt</description>
 </net>
 <net name="N$84" class="0">
 <segment>
-<pinref part="C98" gate="G$1" pin="1"/>
+<pinref part="C99" gate="G$1" pin="1"/>
 <pinref part="R117" gate="G$1" pin="2"/>
 <wire x1="223.52" y1="137.16" x2="223.52" y2="139.7" width="0.1524" layer="91"/>
 </segment>
@@ -40716,7 +40751,7 @@ Marquardt</description>
 <wire x1="210.82" y1="149.86" x2="210.82" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="149.86" x2="223.52" y2="149.86" width="0.1524" layer="91"/>
 <junction x="210.82" y="149.86"/>
-<pinref part="C98" gate="G$1" pin="2"/>
+<pinref part="C99" gate="G$1" pin="2"/>
 <wire x1="223.52" y1="149.86" x2="210.82" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="147.32" x2="223.52" y2="149.86" width="0.1524" layer="91"/>
 <junction x="223.52" y="149.86"/>
@@ -40728,13 +40763,17 @@ Marquardt</description>
 <wire x1="210.82" y1="157.48" x2="210.82" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="160.02" x2="241.3" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="241.3" y1="160.02" x2="246.38" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="160.02" x2="190.5" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="160.02" x2="193.04" y2="160.02" width="0.1524" layer="91"/>
 <junction x="210.82" y="160.02"/>
-<pinref part="C97" gate="G$1" pin="+"/>
+<pinref part="C98" gate="G$1" pin="+"/>
+<wire x1="193.04" y1="160.02" x2="190.5" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="241.3" y1="157.48" x2="241.3" y2="160.02" width="0.1524" layer="91"/>
 <junction x="241.3" y="160.02"/>
 <pinref part="X6" gate="-1" pin="S"/>
 <pinref part="IC17" gate="G$1" pin="VO"/>
+<pinref part="C97" gate="G$1" pin="+"/>
+<wire x1="193.04" y1="157.48" x2="193.04" y2="160.02" width="0.1524" layer="91"/>
+<junction x="193.04" y="160.02"/>
 </segment>
 </net>
 <net name="AUX_FAN_CTRL" class="0">
@@ -40748,7 +40787,7 @@ Marquardt</description>
 <net name="N$86" class="0">
 <segment>
 <pinref part="L10" gate="G$1" pin="1"/>
-<pinref part="C97" gate="G$1" pin="-"/>
+<pinref part="C98" gate="G$1" pin="-"/>
 <wire x1="241.3" y1="149.86" x2="236.22" y2="149.86" width="0.1524" layer="91"/>
 <junction x="241.3" y="149.86"/>
 <pinref part="X6" gate="-2" pin="S"/>
@@ -40759,11 +40798,11 @@ Marquardt</description>
 <segment>
 <pinref part="R118" gate="G$1" pin="1"/>
 <pinref part="P+17" gate="1" pin="+5V"/>
-<wire x1="220.98" y1="109.22" x2="220.98" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="109.22" x2="213.36" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC20" gate="A" pin="VBUS2"/>
-<pinref part="C99" gate="G$1" pin="1"/>
+<pinref part="C100" gate="G$1" pin="1"/>
 <wire x1="25.4" y1="55.88" x2="27.94" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="P+19" gate="1" pin="+5V"/>
 <wire x1="27.94" y1="60.96" x2="27.94" y2="55.88" width="0.1524" layer="91"/>
@@ -40823,7 +40862,7 @@ Marquardt</description>
 <wire x1="96.52" y1="38.1" x2="96.52" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="60.96" x2="83.82" y2="55.88" width="0.1524" layer="91"/>
 <junction x="83.82" y="55.88"/>
-<pinref part="C101" gate="G$1" pin="2"/>
+<pinref part="C102" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="MCU_D-" class="0">
@@ -40851,7 +40890,7 @@ Marquardt</description>
 <junction x="63.5" y="40.64"/>
 <wire x1="68.58" y1="43.18" x2="63.5" y2="43.18" width="0.1524" layer="91"/>
 <junction x="63.5" y="43.18"/>
-<pinref part="C103" gate="G$1" pin="1"/>
+<pinref part="C104" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$88" class="0">
@@ -40872,7 +40911,7 @@ Marquardt</description>
 <segment>
 <pinref part="FB6" gate="G$1" pin="2"/>
 <pinref part="IC20" gate="A" pin="VBUS1"/>
-<pinref part="C100" gate="G$1" pin="1"/>
+<pinref part="C101" gate="G$1" pin="1"/>
 <wire x1="68.58" y1="55.88" x2="63.5" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="50.8" x2="68.58" y2="55.88" width="0.1524" layer="91"/>
 <junction x="68.58" y="55.88"/>
@@ -40883,7 +40922,7 @@ Marquardt</description>
 <pinref part="IC20" gate="A" pin="PIN"/>
 <pinref part="IC20" gate="A" pin="VDD2"/>
 <wire x1="27.94" y1="50.8" x2="27.94" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="C102" gate="G$1" pin="1"/>
+<pinref part="C103" gate="G$1" pin="1"/>
 <wire x1="25.4" y1="45.72" x2="27.94" y2="45.72" width="0.1524" layer="91"/>
 <junction x="27.94" y="45.72"/>
 <wire x1="27.94" y1="45.72" x2="27.94" y2="40.64" width="0.1524" layer="91"/>
@@ -40894,10 +40933,10 @@ Marquardt</description>
 </net>
 <net name="XUSB_GND" class="0">
 <segment>
-<pinref part="C100" gate="G$1" pin="2"/>
+<pinref part="C101" gate="G$1" pin="2"/>
 <wire x1="76.2" y1="50.8" x2="78.74" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="50.8" x2="78.74" y2="46.99" width="0.1524" layer="91"/>
-<pinref part="C103" gate="G$1" pin="2"/>
+<pinref part="C104" gate="G$1" pin="2"/>
 <wire x1="78.74" y1="46.99" x2="78.74" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="43.18" x2="76.2" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="IC20" gate="A" pin="GND1"/>
@@ -40930,7 +40969,7 @@ Marquardt</description>
 <junction x="91.44" y="27.94"/>
 <pinref part="FB7" gate="G$1" pin="2"/>
 <wire x1="66.04" y1="22.86" x2="68.58" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="C101" gate="G$1" pin="1"/>
+<pinref part="C102" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="AUX_ETH_OUT-" class="0">
@@ -41013,16 +41052,23 @@ Marquardt</description>
 </net>
 <net name="AUX_FAN_SENSE" class="0">
 <segment>
-<pinref part="X6" gate="-3" pin="S"/>
 <label x="175.895" y="97.155" size="1.27" layer="102"/>
-<wire x1="175.26" y1="96.52" x2="220.98" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="96.52" x2="238.76" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="99.06" x2="220.98" y2="96.52" width="0.1524" layer="91"/>
-<junction x="220.98" y="96.52"/>
+<wire x1="175.26" y1="96.52" x2="213.36" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="96.52" x2="223.52" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="99.06" x2="213.36" y2="96.52" width="0.1524" layer="91"/>
+<junction x="213.36" y="96.52"/>
 <pinref part="R119" gate="G$1" pin="1"/>
-<wire x1="220.98" y1="93.98" x2="220.98" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="93.98" x2="213.36" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="R118" gate="G$1" pin="2"/>
 <pinref part="X5" gate="-5" pin="1"/>
+<pinref part="D21" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="N$163" class="0">
+<segment>
+<pinref part="X6" gate="-3" pin="S"/>
+<pinref part="D21" gate="G$1" pin="C"/>
+<wire x1="228.6" y1="96.52" x2="238.76" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -41160,11 +41206,11 @@ Marquardt</description>
 <attribute name="VALUE" x="236.855" y="43.561" size="1.778" layer="96" rot="MR0"/>
 <attribute name="PART" x="236.855" y="46.355" size="1.778" layer="95" rot="MR0"/>
 </instance>
-<instance part="D24" gate="G$1" x="248.92" y="45.72" smashed="yes" rot="MR90">
+<instance part="D25" gate="G$1" x="248.92" y="45.72" smashed="yes" rot="MR90">
 <attribute name="NAME" x="250.825" y="47.7774" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="250.825" y="45.4914" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="D22" gate="G$1" x="111.76" y="109.22" smashed="yes" rot="R90">
+<instance part="D23" gate="G$1" x="111.76" y="109.22" smashed="yes" rot="R90">
 <attribute name="NAME" x="109.855" y="111.9124" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="109.855" y="109.6264" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -41172,23 +41218,23 @@ Marquardt</description>
 <attribute name="VALUE" x="200.025" y="150.241" size="1.778" layer="96"/>
 <attribute name="PART" x="200.025" y="153.035" size="1.778" layer="95"/>
 </instance>
-<instance part="D21" gate="G$1" x="188.595" y="152.4" smashed="yes" rot="R90">
+<instance part="D22" gate="G$1" x="188.595" y="152.4" smashed="yes" rot="R90">
 <attribute name="NAME" x="186.69" y="154.4574" size="1.27" layer="95" rot="R180"/>
 <attribute name="VALUE" x="186.69" y="152.8064" size="1.27" layer="96" rot="R180"/>
 </instance>
-<instance part="C105" gate="G$1" x="68.58" y="142.24" smashed="yes">
+<instance part="C106" gate="G$1" x="68.58" y="142.24" smashed="yes">
 <attribute name="NAME" x="71.374" y="140.716" size="1.778" layer="95"/>
 <attribute name="VALUE" x="71.374" y="138.176" size="1.778" layer="96"/>
 </instance>
-<instance part="C108" gate="G$1" x="68.58" y="127" smashed="yes">
+<instance part="C109" gate="G$1" x="68.58" y="127" smashed="yes">
 <attribute name="NAME" x="71.374" y="124.841" size="1.778" layer="95"/>
 <attribute name="VALUE" x="71.374" y="122.301" size="1.778" layer="96"/>
 </instance>
-<instance part="C110" gate="G$1" x="68.58" y="58.42" smashed="yes">
+<instance part="C111" gate="G$1" x="68.58" y="58.42" smashed="yes">
 <attribute name="NAME" x="69.469" y="58.166" size="1.778" layer="95"/>
 <attribute name="VALUE" x="68.834" y="54.356" size="1.778" layer="96"/>
 </instance>
-<instance part="C112" gate="G$1" x="68.58" y="40.64" smashed="yes">
+<instance part="C113" gate="G$1" x="68.58" y="40.64" smashed="yes">
 <attribute name="NAME" x="70.739" y="39.116" size="1.778" layer="95"/>
 <attribute name="VALUE" x="70.739" y="37.211" size="1.778" layer="96"/>
 </instance>
@@ -41200,7 +41246,7 @@ Marquardt</description>
 <attribute name="NAME" x="171.45" y="105.8164" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="171.45" y="103.632" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C107" gate="G$1" x="175.26" y="129.54" smashed="yes" rot="R270">
+<instance part="C108" gate="G$1" x="175.26" y="129.54" smashed="yes" rot="R270">
 <attribute name="NAME" x="172.847" y="131.5974" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="172.847" y="129.0574" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -41220,7 +41266,7 @@ Marquardt</description>
 <attribute name="NAME" x="145.415" y="135.255" size="1.778" layer="95"/>
 <attribute name="VALUE" x="145.415" y="132.715" size="1.4224" layer="96"/>
 </instance>
-<instance part="D23" gate="G$1" x="152.4" y="109.22" smashed="yes" rot="R90">
+<instance part="D24" gate="G$1" x="152.4" y="109.22" smashed="yes" rot="R90">
 <attribute name="NAME" x="154.305" y="109.0676" size="1.778" layer="95"/>
 <attribute name="VALUE" x="154.305" y="106.9086" size="1.778" layer="96"/>
 </instance>
@@ -41270,7 +41316,7 @@ Marquardt</description>
 <instance part="+3V15" gate="G$1" x="180.34" y="134.62" smashed="yes">
 <attribute name="VALUE" x="182.88" y="137.16" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C111" gate="G$1" x="20.32" y="55.88" smashed="yes">
+<instance part="C112" gate="G$1" x="20.32" y="55.88" smashed="yes">
 <attribute name="NAME" x="22.733" y="55.7276" size="1.778" layer="95"/>
 <attribute name="VALUE" x="22.733" y="53.1876" size="1.778" layer="96"/>
 </instance>
@@ -41278,7 +41324,7 @@ Marquardt</description>
 <attribute name="NAME" x="16.51" y="133.7564" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="16.51" y="131.572" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="C104" gate="G$1" x="15.24" y="144.78" smashed="yes" rot="MR0">
+<instance part="C105" gate="G$1" x="15.24" y="144.78" smashed="yes" rot="MR0">
 <attribute name="NAME" x="13.081" y="143.256" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="14.351" y="140.716" size="1.778" layer="96" rot="MR0"/>
 </instance>
@@ -41286,11 +41332,11 @@ Marquardt</description>
 <attribute name="NAME" x="13.97" y="47.3964" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="13.97" y="45.212" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C109" gate="G$1" x="15.24" y="63.5" smashed="yes">
+<instance part="C110" gate="G$1" x="15.24" y="63.5" smashed="yes">
 <attribute name="NAME" x="13.081" y="63.754" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="14.351" y="61.214" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C106" gate="G$1" x="20.32" y="139.7" smashed="yes" rot="MR0">
+<instance part="C107" gate="G$1" x="20.32" y="139.7" smashed="yes" rot="MR0">
 <attribute name="NAME" x="22.098" y="139.8524" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="22.098" y="137.9474" size="1.778" layer="96" rot="MR180"/>
 </instance>
@@ -41515,7 +41561,7 @@ Marquardt</description>
 <net name="OUT1+" class="0">
 <segment>
 <label x="83.185" y="172.085" size="1.27" layer="102" rot="R180"/>
-<pinref part="C105" gate="G$1" pin="1"/>
+<pinref part="C106" gate="G$1" pin="1"/>
 <wire x1="68.58" y1="170.18" x2="68.58" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="P$1"/>
 <wire x1="83.82" y1="170.18" x2="68.58" y2="170.18" width="0.4064" layer="91"/>
@@ -41529,8 +41575,8 @@ Marquardt</description>
 </net>
 <net name="EARTH" class="0">
 <segment>
-<pinref part="C108" gate="G$1" pin="1"/>
-<pinref part="C105" gate="G$1" pin="2"/>
+<pinref part="C109" gate="G$1" pin="1"/>
+<pinref part="C106" gate="G$1" pin="2"/>
 <wire x1="68.58" y1="137.16" x2="68.58" y2="132.08" width="0.1524" layer="91"/>
 <junction x="68.58" y="132.08"/>
 <wire x1="68.58" y1="132.08" x2="68.58" y2="129.54" width="0.1524" layer="91"/>
@@ -41544,8 +41590,8 @@ Marquardt</description>
 <wire x1="81.28" y1="129.54" x2="81.28" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C112" gate="G$1" pin="1"/>
-<pinref part="C110" gate="G$1" pin="2"/>
+<pinref part="C113" gate="G$1" pin="1"/>
+<pinref part="C111" gate="G$1" pin="2"/>
 <wire x1="68.58" y1="53.34" x2="68.58" y2="45.72" width="0.1524" layer="91"/>
 <label x="83.185" y="46.355" size="1.27" layer="102" rot="MR0"/>
 <pinref part="X14" gate="-1" pin="1"/>
@@ -41588,7 +41634,7 @@ Marquardt</description>
 </net>
 <net name="OUT2-" class="0">
 <segment>
-<pinref part="C112" gate="G$1" pin="2"/>
+<pinref part="C113" gate="G$1" pin="2"/>
 <label x="83.185" y="14.605" size="1.27" layer="102" rot="R180"/>
 <wire x1="68.58" y1="35.56" x2="68.58" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="J5" gate="G$1" pin="P$1"/>
@@ -41669,7 +41715,7 @@ Marquardt</description>
 </net>
 <net name="N$155" class="0">
 <segment>
-<pinref part="D22" gate="G$1" pin="C"/>
+<pinref part="D23" gate="G$1" pin="C"/>
 <wire x1="119.38" y1="114.3" x2="111.76" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="114.3" x2="111.76" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="Q25" gate="A" pin="D"/>
@@ -41683,7 +41729,7 @@ Marquardt</description>
 <pinref part="Q24" gate="A" pin="D"/>
 <wire x1="144.78" y1="114.3" x2="144.78" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="114.3" x2="152.4" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="D23" gate="G$1" pin="C"/>
+<pinref part="D24" gate="G$1" pin="C"/>
 <wire x1="152.4" y1="114.3" x2="152.4" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="K_PAR" gate="K" pin="C1"/>
 <junction x="144.78" y="114.3"/>
@@ -41705,7 +41751,7 @@ Marquardt</description>
 </net>
 <net name="GND" class="2">
 <segment>
-<pinref part="D22" gate="G$1" pin="A"/>
+<pinref part="D23" gate="G$1" pin="A"/>
 <wire x1="111.76" y1="104.14" x2="111.76" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="104.14" x2="111.76" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="104.14" x2="119.38" y2="93.98" width="0.1524" layer="91"/>
@@ -41725,19 +41771,19 @@ Marquardt</description>
 <junction x="119.38" y="104.14"/>
 <wire x1="144.78" y1="104.14" x2="144.78" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="104.14" x2="152.4" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="D23" gate="G$1" pin="A"/>
+<pinref part="D24" gate="G$1" pin="A"/>
 <wire x1="152.4" y1="104.14" x2="152.4" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="K_PAR" gate="K" pin="C2"/>
 <junction x="144.78" y="104.14"/>
 </segment>
 <segment>
-<pinref part="C107" gate="G$1" pin="2"/>
+<pinref part="C108" gate="G$1" pin="2"/>
 <pinref part="SUPPLY55" gate="GND" pin="GND"/>
 <wire x1="170.18" y1="129.54" x2="167.64" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="K_S1" gate="1" pin="-"/>
-<pinref part="D21" gate="G$1" pin="A"/>
+<pinref part="D22" gate="G$1" pin="A"/>
 <wire x1="188.595" y1="149.86" x2="188.595" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="188.595" y1="147.32" x2="195.58" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="SUPPLY57" gate="GND" pin="GND"/>
@@ -41745,7 +41791,7 @@ Marquardt</description>
 </segment>
 <segment>
 <pinref part="K_S2" gate="1" pin="-"/>
-<pinref part="D24" gate="G$1" pin="A"/>
+<pinref part="D25" gate="G$1" pin="A"/>
 <wire x1="248.92" y1="43.18" x2="248.92" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="40.64" x2="241.3" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="SUPPLY58" gate="GND" pin="GND"/>
@@ -41841,7 +41887,7 @@ Marquardt</description>
 </net>
 <net name="N$92" class="0">
 <segment>
-<pinref part="D21" gate="G$1" pin="C"/>
+<pinref part="D22" gate="G$1" pin="C"/>
 <pinref part="K_S1" gate="1" pin="+"/>
 <wire x1="195.58" y1="157.48" x2="188.595" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="188.595" y1="157.48" x2="188.595" y2="154.94" width="0.1524" layer="91"/>
@@ -41852,7 +41898,7 @@ Marquardt</description>
 </net>
 <net name="N$93" class="0">
 <segment>
-<pinref part="D24" gate="G$1" pin="C"/>
+<pinref part="D25" gate="G$1" pin="C"/>
 <pinref part="K_S2" gate="1" pin="+"/>
 <wire x1="241.3" y1="50.8" x2="248.92" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="50.8" x2="248.92" y2="48.26" width="0.1524" layer="91"/>
@@ -41878,7 +41924,7 @@ Marquardt</description>
 <net name="+3V3" class="0">
 <segment>
 <pinref part="IC21" gate="A" pin="VDD"/>
-<pinref part="C107" gate="G$1" pin="1"/>
+<pinref part="C108" gate="G$1" pin="1"/>
 <wire x1="177.8" y1="129.54" x2="180.34" y2="129.54" width="0.1524" layer="91"/>
 <label x="175.895" y="130.175" size="1.27" layer="102"/>
 <wire x1="180.34" y1="129.54" x2="182.88" y2="129.54" width="0.1524" layer="91"/>
@@ -41899,21 +41945,21 @@ Marquardt</description>
 <net name="N$94" class="0">
 <segment>
 <pinref part="R124" gate="G$1" pin="2"/>
-<pinref part="C104" gate="G$1" pin="2"/>
+<pinref part="C105" gate="G$1" pin="2"/>
 <wire x1="15.24" y1="139.7" x2="15.24" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$95" class="0">
 <segment>
 <pinref part="R128" gate="G$1" pin="2"/>
-<pinref part="C109" gate="G$1" pin="2"/>
+<pinref part="C110" gate="G$1" pin="2"/>
 <wire x1="15.24" y1="58.42" x2="15.24" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWR_IN2-" class="0">
 <segment>
 <label x="19.05" y="15.875" size="1.27" layer="102"/>
-<pinref part="C111" gate="G$1" pin="-"/>
+<pinref part="C112" gate="G$1" pin="-"/>
 <wire x1="20.32" y1="38.1" x2="20.32" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="R128" gate="G$1" pin="1"/>
 <wire x1="15.24" y1="38.1" x2="15.24" y2="40.64" width="0.1524" layer="91"/>
@@ -42067,8 +42113,8 @@ Marquardt</description>
 <net name="OUT2+" class="0">
 <segment>
 <label x="10.795" y="87.63" size="1.27" layer="102"/>
-<pinref part="C111" gate="G$1" pin="+"/>
-<pinref part="C109" gate="G$1" pin="1"/>
+<pinref part="C112" gate="G$1" pin="+"/>
+<pinref part="C110" gate="G$1" pin="1"/>
 <wire x1="15.24" y1="68.58" x2="15.24" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="68.58" x2="17.78" y2="68.58" width="0.4064" layer="91"/>
 <wire x1="17.78" y1="68.58" x2="15.24" y2="68.58" width="0.1524" layer="91"/>
@@ -42093,7 +42139,7 @@ Marquardt</description>
 <wire x1="25.4" y1="50.8" x2="25.4" y2="68.58" width="0.4064" layer="91"/>
 <wire x1="25.4" y1="68.58" x2="20.32" y2="68.58" width="0.4064" layer="91"/>
 <junction x="20.32" y="68.58"/>
-<pinref part="C110" gate="G$1" pin="1"/>
+<pinref part="C111" gate="G$1" pin="1"/>
 <label x="83.185" y="88.265" size="1.27" layer="102" rot="R180"/>
 <wire x1="68.58" y1="60.96" x2="68.58" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="J4" gate="G$1" pin="P$1"/>
@@ -42121,7 +42167,7 @@ Marquardt</description>
 <label x="19.05" y="102.235" size="1.27" layer="102"/>
 <pinref part="R124" gate="G$1" pin="1"/>
 <wire x1="15.24" y1="124.46" x2="15.24" y2="127" width="0.1524" layer="91"/>
-<pinref part="C106" gate="G$1" pin="-"/>
+<pinref part="C107" gate="G$1" pin="-"/>
 <wire x1="20.32" y1="134.62" x2="20.32" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="124.46" x2="17.78" y2="124.46" width="0.4064" layer="91"/>
 <wire x1="17.78" y1="124.46" x2="15.24" y2="124.46" width="0.1524" layer="91"/>
@@ -42146,7 +42192,7 @@ Marquardt</description>
 <wire x1="25.4" y1="124.46" x2="25.4" y2="127" width="0.4064" layer="91"/>
 <junction x="20.32" y="124.46"/>
 <label x="83.185" y="100.33" size="1.27" layer="102" rot="R180"/>
-<pinref part="C108" gate="G$1" pin="2"/>
+<pinref part="C109" gate="G$1" pin="2"/>
 <wire x1="68.58" y1="101.6" x2="83.82" y2="101.6" width="0.4064" layer="91"/>
 <wire x1="68.58" y1="121.92" x2="68.58" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="J3" gate="G$1" pin="P$1"/>
@@ -42171,7 +42217,7 @@ Marquardt</description>
 </net>
 <net name="PWR_IN1+" class="0">
 <segment>
-<pinref part="C106" gate="G$1" pin="+"/>
+<pinref part="C107" gate="G$1" pin="+"/>
 <pinref part="X13" gate="-23" pin="1"/>
 <wire x1="15.24" y1="167.64" x2="17.78" y2="167.64" width="0.4064" layer="91"/>
 <wire x1="17.78" y1="165.1" x2="17.78" y2="167.64" width="0.4064" layer="91"/>
@@ -42186,7 +42232,7 @@ Marquardt</description>
 <pinref part="X13" gate="-26" pin="1"/>
 <wire x1="15.24" y1="160.02" x2="17.78" y2="160.02" width="0.4064" layer="91"/>
 <junction x="17.78" y="160.02"/>
-<pinref part="C104" gate="G$1" pin="1"/>
+<pinref part="C105" gate="G$1" pin="1"/>
 <wire x1="15.24" y1="149.86" x2="15.24" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="149.86" x2="15.24" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="149.86" x2="17.78" y2="160.02" width="0.4064" layer="91"/>
@@ -42331,7 +42377,7 @@ Marquardt</description>
 <text x="140.335" y="31.115" size="1.4224" layer="101">10 +5V (Input)</text>
 </plain>
 <instances>
-<instance part="C113" gate="G$1" x="78.74" y="165.1" smashed="yes" rot="R90">
+<instance part="C114" gate="G$1" x="78.74" y="165.1" smashed="yes" rot="R90">
 <attribute name="NAME" x="80.899" y="165.481" size="1.778" layer="95"/>
 <attribute name="VALUE" x="80.899" y="162.941" size="1.778" layer="96"/>
 </instance>
@@ -42341,31 +42387,31 @@ Marquardt</description>
 <attribute name="SHEET" x="248.92" y="1.27" size="2.54" layer="94" font="vector"/>
 <attribute name="DRAWING_NAME" x="180.34" y="19.05" size="2.54" layer="94" font="vector"/>
 </instance>
-<instance part="C121" gate="G$1" x="78.74" y="43.18" smashed="yes" rot="R90">
+<instance part="C122" gate="G$1" x="78.74" y="43.18" smashed="yes" rot="R90">
 <attribute name="NAME" x="80.899" y="43.561" size="1.778" layer="95"/>
 <attribute name="VALUE" x="80.899" y="41.021" size="1.778" layer="96"/>
 </instance>
-<instance part="C116" gate="G$1" x="78.74" y="127" smashed="yes" rot="R90">
+<instance part="C117" gate="G$1" x="78.74" y="127" smashed="yes" rot="R90">
 <attribute name="NAME" x="80.899" y="127.381" size="1.778" layer="95"/>
 <attribute name="VALUE" x="80.899" y="124.841" size="1.778" layer="96"/>
 </instance>
-<instance part="C118" gate="G$1" x="78.74" y="81.28" smashed="yes" rot="R90">
+<instance part="C119" gate="G$1" x="78.74" y="81.28" smashed="yes" rot="R90">
 <attribute name="NAME" x="80.899" y="81.661" size="1.778" layer="95"/>
 <attribute name="VALUE" x="80.899" y="79.121" size="1.778" layer="96"/>
 </instance>
-<instance part="C114" gate="G$1" x="20.32" y="162.56" smashed="yes" rot="R270">
+<instance part="C115" gate="G$1" x="20.32" y="162.56" smashed="yes" rot="R270">
 <attribute name="NAME" x="18.161" y="164.719" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="18.161" y="162.179" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C115" gate="G$1" x="20.32" y="127" smashed="yes" rot="R270">
+<instance part="C116" gate="G$1" x="20.32" y="127" smashed="yes" rot="R270">
 <attribute name="NAME" x="18.161" y="129.159" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="18.161" y="126.619" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C117" gate="G$1" x="20.32" y="81.28" smashed="yes" rot="R270">
+<instance part="C118" gate="G$1" x="20.32" y="81.28" smashed="yes" rot="R270">
 <attribute name="NAME" x="18.161" y="83.439" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="18.161" y="80.899" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C122" gate="G$1" x="20.32" y="40.64" smashed="yes" rot="MR90">
+<instance part="C123" gate="G$1" x="20.32" y="40.64" smashed="yes" rot="MR90">
 <attribute name="NAME" x="18.161" y="41.021" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="18.161" y="38.481" size="1.778" layer="96" rot="MR0"/>
 </instance>
@@ -42409,7 +42455,7 @@ Marquardt</description>
 <instance part="SUPPLY60" gate="GND" x="200.66" y="149.86" smashed="yes">
 <attribute name="VALUE" x="201.295" y="150.495" size="1.778" layer="96"/>
 </instance>
-<instance part="D25" gate="G$1" x="198.12" y="55.88" smashed="yes" rot="R90">
+<instance part="D26" gate="G$1" x="198.12" y="55.88" smashed="yes" rot="R90">
 <attribute name="NAME" x="195.58" y="57.9374" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="195.58" y="55.6514" size="1.4224" layer="96" rot="R180"/>
 </instance>
@@ -42426,7 +42472,7 @@ Marquardt</description>
 <attribute name="NAME" x="223.52" y="59.055" size="1.778" layer="95"/>
 <attribute name="VALUE" x="223.52" y="56.515" size="1.778" layer="96"/>
 </instance>
-<instance part="C120" gate="G$1" x="238.76" y="48.26" smashed="yes">
+<instance part="C121" gate="G$1" x="238.76" y="48.26" smashed="yes">
 <attribute name="NAME" x="240.538" y="46.8376" size="1.778" layer="95"/>
 <attribute name="VALUE" x="240.538" y="44.9326" size="1.778" layer="96"/>
 </instance>
@@ -42439,7 +42485,7 @@ Marquardt</description>
 <instance part="SUPPLY93" gate="GND" x="226.06" y="68.58" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="222.885" y="66.675" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="C119" gate="G$1" x="208.28" y="58.42" smashed="yes">
+<instance part="C120" gate="G$1" x="208.28" y="58.42" smashed="yes">
 <attribute name="NAME" x="209.423" y="58.9026" size="1.778" layer="95"/>
 <attribute name="VALUE" x="209.423" y="53.8226" size="1.778" layer="96"/>
 </instance>
@@ -42456,8 +42502,8 @@ Marquardt</description>
 <instance part="MCU" gate="-ADCH" x="213.36" y="119.38" smashed="yes">
 <attribute name="NAME" x="213.36" y="120.015" size="1.778" layer="95"/>
 </instance>
-<instance part="MCU" gate="-ADCL" x="213.36" y="154.94" smashed="yes">
-<attribute name="NAME" x="213.36" y="155.575" size="1.778" layer="95"/>
+<instance part="MCU" gate="-ADCL" x="226.06" y="154.94" smashed="yes">
+<attribute name="NAME" x="226.06" y="155.575" size="1.778" layer="95"/>
 </instance>
 <instance part="MCU" gate="-COMM" x="185.42" y="99.06" smashed="yes">
 <attribute name="NAME" x="185.42" y="99.695" size="1.778" layer="95"/>
@@ -42629,9 +42675,9 @@ Marquardt</description>
 <nets>
 <net name="CH1_VDD" class="0">
 <segment>
-<pinref part="C113" gate="G$1" pin="1"/>
+<pinref part="C114" gate="G$1" pin="1"/>
 <label x="91.44" y="169.545" size="1.27" layer="102" rot="R180"/>
-<pinref part="C116" gate="G$1" pin="1"/>
+<pinref part="C117" gate="G$1" pin="1"/>
 <wire x1="71.12" y1="162.56" x2="76.2" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="124.46" x2="76.2" y2="127" width="0.1524" layer="91"/>
 <junction x="76.2" y="162.56"/>
@@ -42657,8 +42703,8 @@ Marquardt</description>
 </net>
 <net name="CH2_VDD" class="0">
 <segment>
-<pinref part="C121" gate="G$1" pin="1"/>
-<pinref part="C118" gate="G$1" pin="1"/>
+<pinref part="C122" gate="G$1" pin="1"/>
+<pinref part="C119" gate="G$1" pin="1"/>
 <label x="91.44" y="85.725" size="1.27" layer="102" rot="R180"/>
 <wire x1="91.44" y1="83.82" x2="76.2" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="78.74" x2="76.2" y2="78.74" width="0.1524" layer="91"/>
@@ -42691,12 +42737,12 @@ Marquardt</description>
 <pinref part="IC24" gate="A" pin="GND1"/>
 </segment>
 <segment>
-<pinref part="C122" gate="G$1" pin="2"/>
+<pinref part="C123" gate="G$1" pin="2"/>
 <wire x1="12.7" y1="40.64" x2="15.24" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="SUPPLY73" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C117" gate="G$1" pin="2"/>
+<pinref part="C118" gate="G$1" pin="2"/>
 <wire x1="12.7" y1="81.28" x2="15.24" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="SUPPLY75" gate="GND" pin="GND"/>
 </segment>
@@ -42717,12 +42763,12 @@ Marquardt</description>
 <pinref part="IC22" gate="A" pin="GND1"/>
 </segment>
 <segment>
-<pinref part="C115" gate="G$1" pin="2"/>
+<pinref part="C116" gate="G$1" pin="2"/>
 <wire x1="12.7" y1="127" x2="15.24" y2="127" width="0.1524" layer="91"/>
 <pinref part="SUPPLY77" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C114" gate="G$1" pin="2"/>
+<pinref part="C115" gate="G$1" pin="2"/>
 <wire x1="12.7" y1="162.56" x2="15.24" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="SUPPLY80" gate="GND" pin="GND"/>
 </segment>
@@ -42756,7 +42802,7 @@ Marquardt</description>
 <pinref part="MCU" gate="-PWMH" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C120" gate="G$1" pin="-"/>
+<pinref part="C121" gate="G$1" pin="-"/>
 <pinref part="SUPPLY71" gate="GND" pin="GND"/>
 <junction x="228.6" y="43.18"/>
 <pinref part="IC25" gate="G$1" pin="ADJ"/>
@@ -42769,7 +42815,7 @@ Marquardt</description>
 <wire x1="208.28" y1="53.34" x2="208.28" y2="50.8" width="0.1524" layer="91"/>
 <junction x="208.28" y="50.8"/>
 <pinref part="SUPPLY87" gate="GND" pin="GND"/>
-<pinref part="C119" gate="G$1" pin="-"/>
+<pinref part="C120" gate="G$1" pin="-"/>
 <pinref part="X16" gate="-1" pin="1"/>
 <wire x1="177.8" y1="50.8" x2="180.34" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="X16" gate="-2" pin="1"/>
@@ -42779,7 +42825,7 @@ Marquardt</description>
 <pinref part="X16" gate="-9" pin="1"/>
 <wire x1="177.8" y1="53.34" x2="180.34" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="53.34" x2="180.34" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="D25" gate="G$1" pin="A"/>
+<pinref part="D26" gate="G$1" pin="A"/>
 <wire x1="198.12" y1="53.34" x2="198.12" y2="50.8" width="0.1524" layer="91"/>
 <junction x="198.12" y="50.8"/>
 </segment>
@@ -43019,7 +43065,7 @@ Marquardt</description>
 <net name="+3V3" class="0">
 <segment>
 <junction x="25.4" y="124.46"/>
-<pinref part="C114" gate="G$1" pin="1"/>
+<pinref part="C115" gate="G$1" pin="1"/>
 <wire x1="25.4" y1="124.46" x2="25.4" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="162.56" x2="22.86" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="+3V8" gate="G$1" pin="+3V3"/>
@@ -43027,7 +43073,7 @@ Marquardt</description>
 <wire x1="30.48" y1="162.56" x2="25.4" y2="162.56" width="0.1524" layer="91"/>
 <junction x="25.4" y="162.56"/>
 <wire x1="25.4" y1="124.46" x2="25.4" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="C115" gate="G$1" pin="1"/>
+<pinref part="C116" gate="G$1" pin="1"/>
 <wire x1="22.86" y1="127" x2="25.4" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="IC22" gate="A" pin="VDD1"/>
 <pinref part="IC23" gate="A" pin="EN1"/>
@@ -43041,13 +43087,13 @@ Marquardt</description>
 <wire x1="30.48" y1="78.74" x2="25.4" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="78.74" x2="25.4" y2="58.42" width="0.1524" layer="91"/>
 <junction x="25.4" y="78.74"/>
-<pinref part="C122" gate="G$1" pin="1"/>
+<pinref part="C123" gate="G$1" pin="1"/>
 <pinref part="IC26" gate="A" pin="VDD1"/>
 <wire x1="25.4" y1="58.42" x2="25.4" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="40.64" x2="25.4" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="40.64" x2="30.48" y2="40.64" width="0.1524" layer="91"/>
 <junction x="25.4" y="40.64"/>
-<pinref part="C117" gate="G$1" pin="1"/>
+<pinref part="C118" gate="G$1" pin="1"/>
 <wire x1="22.86" y1="81.28" x2="25.4" y2="78.74" width="0.1524" layer="91"/>
 <junction x="25.4" y="78.74"/>
 <junction x="25.4" y="58.42"/>
@@ -43061,7 +43107,7 @@ Marquardt</description>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
 <wire x1="236.22" y1="53.34" x2="238.76" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="53.34" x2="246.38" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="C120" gate="G$1" pin="+"/>
+<pinref part="C121" gate="G$1" pin="+"/>
 <wire x1="238.76" y1="50.8" x2="238.76" y2="53.34" width="0.1524" layer="91"/>
 <junction x="238.76" y="53.34"/>
 <wire x1="251.46" y1="53.34" x2="246.38" y2="53.34" width="0.1524" layer="91"/>
@@ -43174,7 +43220,7 @@ Marquardt</description>
 <wire x1="231.14" y1="60.96" x2="251.46" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="53.34" x2="220.98" y2="53.34" width="0.1524" layer="91"/>
 <junction x="218.44" y="60.96"/>
-<pinref part="C119" gate="G$1" pin="+"/>
+<pinref part="C120" gate="G$1" pin="+"/>
 <wire x1="208.28" y1="60.96" x2="218.44" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="SW1" gate="1" pin="S"/>
 <wire x1="193.04" y1="60.96" x2="198.12" y2="60.96" width="0.1524" layer="91"/>
@@ -43182,7 +43228,7 @@ Marquardt</description>
 <wire x1="198.12" y1="60.96" x2="208.28" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="78.74" x2="231.14" y2="60.96" width="0.1524" layer="91"/>
 <junction x="231.14" y="60.96"/>
-<pinref part="D25" gate="G$1" pin="C"/>
+<pinref part="D26" gate="G$1" pin="C"/>
 <wire x1="198.12" y1="58.42" x2="198.12" y2="60.96" width="0.1524" layer="91"/>
 <junction x="198.12" y="60.96"/>
 </segment>
@@ -43196,8 +43242,8 @@ Marquardt</description>
 </net>
 <net name="TEMP_ANALOG" class="0">
 <segment>
-<wire x1="233.68" y1="152.4" x2="218.44" y2="152.4" width="0.1524" layer="91"/>
-<label x="233.68" y="154.305" size="1.27" layer="102" rot="R180"/>
+<wire x1="246.38" y1="152.4" x2="231.14" y2="152.4" width="0.1524" layer="91"/>
+<label x="246.38" y="154.305" size="1.27" layer="102" rot="R180"/>
 <pinref part="MCU" gate="-ADCL" pin="ADC0"/>
 </segment>
 </net>
@@ -43535,15 +43581,15 @@ Marquardt</description>
 </net>
 <net name="PWRDIR" class="0">
 <segment>
-<wire x1="218.44" y1="149.86" x2="233.68" y2="149.86" width="0.1524" layer="91"/>
-<label x="233.68" y="151.765" size="1.27" layer="102" rot="R180"/>
+<wire x1="231.14" y1="149.86" x2="246.38" y2="149.86" width="0.1524" layer="91"/>
+<label x="246.38" y="151.765" size="1.27" layer="102" rot="R180"/>
 <pinref part="MCU" gate="-ADCL" pin="ADC1"/>
 </segment>
 </net>
 <net name="PWRSS" class="0">
 <segment>
-<wire x1="218.44" y1="147.32" x2="233.68" y2="147.32" width="0.1524" layer="91"/>
-<label x="233.68" y="149.225" size="1.27" layer="102" rot="R180"/>
+<wire x1="231.14" y1="147.32" x2="246.38" y2="147.32" width="0.1524" layer="91"/>
+<label x="246.38" y="149.225" size="1.27" layer="102" rot="R180"/>
 <pinref part="MCU" gate="-ADCL" pin="ADC2"/>
 </segment>
 </net>
@@ -43586,8 +43632,8 @@ Marquardt</description>
 <net name="BATT_NTC" class="0">
 <segment>
 <pinref part="MCU" gate="-ADCL" pin="ADC4"/>
-<wire x1="218.44" y1="142.24" x2="233.68" y2="142.24" width="0.1524" layer="91"/>
-<label x="233.68" y="144.145" size="1.27" layer="102" rot="R180"/>
+<wire x1="231.14" y1="142.24" x2="246.38" y2="142.24" width="0.1524" layer="91"/>
+<label x="246.38" y="144.145" size="1.27" layer="102" rot="R180"/>
 </segment>
 </net>
 <net name="N$100" class="0">
@@ -43605,15 +43651,15 @@ Marquardt</description>
 <net name="NTC1" class="0">
 <segment>
 <pinref part="MCU" gate="-ADCL" pin="ADC5"/>
-<wire x1="218.44" y1="139.7" x2="233.68" y2="139.7" width="0.1524" layer="91"/>
-<label x="233.68" y="141.605" size="1.27" layer="102" rot="R180"/>
+<wire x1="231.14" y1="139.7" x2="246.38" y2="139.7" width="0.1524" layer="91"/>
+<label x="246.38" y="141.605" size="1.27" layer="102" rot="R180"/>
 </segment>
 </net>
 <net name="NTC2" class="0">
 <segment>
 <pinref part="MCU" gate="-ADCL" pin="ADC6"/>
-<wire x1="218.44" y1="137.16" x2="233.68" y2="137.16" width="0.1524" layer="91"/>
-<label x="233.68" y="139.065" size="1.27" layer="102" rot="R180"/>
+<wire x1="231.14" y1="137.16" x2="246.38" y2="137.16" width="0.1524" layer="91"/>
+<label x="246.38" y="139.065" size="1.27" layer="102" rot="R180"/>
 </segment>
 </net>
 <net name="!CH2_INT" class="0">
@@ -43628,12 +43674,12 @@ Marquardt</description>
 <segment>
 <label x="198.12" y="42.545" size="1.27" layer="102" rot="R180"/>
 <pinref part="X16" gate="-5" pin="1"/>
-<wire x1="177.8" y1="40.64" x2="198.12" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="40.64" x2="177.8" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="MCU" gate="-PWMH" pin="13"/>
-<wire x1="190.5" y1="147.32" x2="208.28" y2="147.32" width="0.1524" layer="91"/>
-<label x="208.28" y="149.225" size="1.27" layer="102" rot="R180"/>
+<wire x1="190.5" y1="147.32" x2="213.36" y2="147.32" width="0.1524" layer="91"/>
+<label x="213.36" y="149.225" size="1.27" layer="102" rot="R180"/>
 </segment>
 </net>
 <net name="FAN_PWM" class="0">
@@ -43651,16 +43697,16 @@ Marquardt</description>
 <net name="EXT_TRIG" class="0">
 <segment>
 <pinref part="MCU" gate="-ADCL" pin="ADC7"/>
-<wire x1="218.44" y1="134.62" x2="233.68" y2="134.62" width="0.1524" layer="91"/>
-<label x="233.68" y="136.525" size="1.27" layer="102" rot="R180"/>
+<wire x1="231.14" y1="134.62" x2="246.38" y2="134.62" width="0.1524" layer="91"/>
+<label x="246.38" y="136.525" size="1.27" layer="102" rot="R180"/>
 </segment>
 </net>
 <net name="CH1_GND" class="0">
 <segment>
-<pinref part="C113" gate="G$1" pin="2"/>
+<pinref part="C114" gate="G$1" pin="2"/>
 <wire x1="83.82" y1="165.1" x2="86.36" y2="165.1" width="0.1524" layer="91"/>
 <label x="91.44" y="103.505" size="1.27" layer="102" rot="R180"/>
-<pinref part="C116" gate="G$1" pin="2"/>
+<pinref part="C117" gate="G$1" pin="2"/>
 <wire x1="83.82" y1="127" x2="86.36" y2="127" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="101.6" x2="88.9" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="101.6" x2="73.66" y2="101.6" width="0.1524" layer="91"/>
@@ -43694,7 +43740,7 @@ Marquardt</description>
 </net>
 <net name="CH2_GND" class="0">
 <segment>
-<pinref part="C121" gate="G$1" pin="2"/>
+<pinref part="C122" gate="G$1" pin="2"/>
 <label x="91.44" y="19.685" size="1.27" layer="102" rot="R180"/>
 <wire x1="73.66" y1="76.2" x2="73.66" y2="55.88" width="0.1524" layer="91"/>
 <junction x="73.66" y="55.88"/>
@@ -43713,7 +43759,7 @@ Marquardt</description>
 <wire x1="88.9" y1="17.78" x2="91.44" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="76.2" x2="86.36" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="76.2" x2="86.36" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="C118" gate="G$1" pin="2"/>
+<pinref part="C119" gate="G$1" pin="2"/>
 <wire x1="86.36" y1="81.28" x2="83.82" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="X15" gate="-10" pin="1"/>
 <pinref part="X15" gate="-12" pin="1"/>
@@ -43737,16 +43783,16 @@ Marquardt</description>
 </net>
 <net name="ENC_A" class="0">
 <segment>
-<pinref part="MCU" gate="-ADCH" pin="ADC14"/>
-<wire x1="218.44" y1="101.6" x2="236.22" y2="101.6" width="0.1524" layer="91"/>
-<label x="236.22" y="103.505" size="1.27" layer="102" rot="R180"/>
+<label x="236.22" y="118.745" size="1.27" layer="102" rot="R180"/>
+<pinref part="MCU" gate="-ADCH" pin="ADC8"/>
+<wire x1="218.44" y1="116.84" x2="236.22" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ENC_B" class="0">
 <segment>
-<pinref part="MCU" gate="-ADCH" pin="ADC15"/>
-<wire x1="218.44" y1="99.06" x2="236.22" y2="99.06" width="0.1524" layer="91"/>
-<label x="236.22" y="100.965" size="1.27" layer="102" rot="R180"/>
+<label x="236.22" y="116.205" size="1.27" layer="102" rot="R180"/>
+<pinref part="MCU" gate="-ADCH" pin="ADC9"/>
+<wire x1="218.44" y1="114.3" x2="236.22" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CH1_SYNC" class="0">
@@ -43858,7 +43904,7 @@ Marquardt</description>
 <attribute name="NAME" x="120.015" y="150.495" size="1.778" layer="95"/>
 <attribute name="VALUE" x="120.015" y="147.955" size="1.778" layer="96"/>
 </instance>
-<instance part="C123" gate="G$1" x="121.92" y="170.18" smashed="yes" rot="R270">
+<instance part="C124" gate="G$1" x="121.92" y="170.18" smashed="yes" rot="R270">
 <attribute name="NAME" x="122.174" y="171.196" size="1.778" layer="95"/>
 <attribute name="VALUE" x="121.539" y="168.021" size="1.778" layer="96"/>
 </instance>
@@ -43866,7 +43912,7 @@ Marquardt</description>
 <attribute name="NAME" x="32.7406" y="155.8036" size="2.0828" layer="95" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="28.2956" y="129.1082" size="2.0828" layer="96" ratio="10" rot="SR0"/>
 </instance>
-<instance part="C126" gate="G$1" x="55.88" y="149.86" smashed="yes" rot="R90">
+<instance part="C127" gate="G$1" x="55.88" y="149.86" smashed="yes" rot="R90">
 <attribute name="NAME" x="58.039" y="150.241" size="1.778" layer="95"/>
 <attribute name="VALUE" x="58.039" y="147.701" size="1.778" layer="96"/>
 </instance>
@@ -43884,7 +43930,7 @@ Marquardt</description>
 <instance part="SUPPLY82" gate="GND" x="142.24" y="132.08" smashed="yes">
 <attribute name="VALUE" x="139.7" y="133.985" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="D26" gate="G$1" x="111.76" y="170.18" smashed="yes">
+<instance part="D27" gate="G$1" x="111.76" y="170.18" smashed="yes">
 <attribute name="NAME" x="109.855" y="174.4726" size="1.778" layer="95"/>
 <attribute name="VALUE" x="109.855" y="172.3136" size="1.778" layer="96"/>
 </instance>
@@ -43929,7 +43975,7 @@ Marquardt</description>
 <instance part="X17" gate="-2" x="208.28" y="147.32" smashed="yes">
 <attribute name="NAME" x="210.82" y="146.558" size="1.524" layer="95"/>
 </instance>
-<instance part="C128" gate="G$1" x="200.66" y="139.7" smashed="yes" rot="MR180">
+<instance part="C129" gate="G$1" x="200.66" y="139.7" smashed="yes" rot="MR180">
 <attribute name="NAME" x="201.549" y="143.764" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="200.914" y="139.954" size="1.778" layer="96" rot="MR180"/>
 </instance>
@@ -43965,14 +44011,14 @@ Marquardt</description>
 <attribute name="NAME" x="242.57" y="64.77" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="242.57" y="62.23" size="1.4224" layer="96" rot="MR180"/>
 </instance>
-<instance part="C125" gate="G$1" x="162.56" y="160.02" smashed="yes" rot="R180">
+<instance part="C126" gate="G$1" x="162.56" y="160.02" smashed="yes" rot="R180">
 <attribute name="NAME" x="160.401" y="163.449" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="160.401" y="161.544" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="SUPPLY91" gate="GND" x="162.56" y="154.94" smashed="yes">
 <attribute name="VALUE" x="160.655" y="155.575" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C127" gate="G$1" x="142.24" y="149.86" smashed="yes" rot="R90">
+<instance part="C128" gate="G$1" x="142.24" y="149.86" smashed="yes" rot="R90">
 <attribute name="NAME" x="139.065" y="152.4" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="147.32" y="143.51" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -43983,7 +44029,7 @@ Marquardt</description>
 <attribute name="NAME" x="247.65" y="164.2364" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="247.65" y="162.052" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="C124" gate="G$1" x="238.76" y="162.56" smashed="yes" rot="R180">
+<instance part="C125" gate="G$1" x="238.76" y="162.56" smashed="yes" rot="R180">
 <attribute name="NAME" x="237.871" y="166.624" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="238.506" y="162.814" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -43994,7 +44040,7 @@ Marquardt</description>
 <attribute name="NAME" x="247.65" y="141.3764" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="247.65" y="139.192" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="C129" gate="G$1" x="238.76" y="139.7" smashed="yes" rot="R180">
+<instance part="C130" gate="G$1" x="238.76" y="139.7" smashed="yes" rot="R180">
 <attribute name="NAME" x="237.871" y="143.764" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="238.506" y="139.954" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -44023,7 +44069,7 @@ Marquardt</description>
 <attribute name="NAME" x="155.575" y="74.295" size="1.778" layer="95"/>
 </instance>
 <instance part="JP7" gate="G$2" x="161.925" y="71.12"/>
-<instance part="C136" gate="G$1" x="20.32" y="53.34" smashed="yes" rot="R180">
+<instance part="C137" gate="G$1" x="20.32" y="53.34" smashed="yes" rot="R180">
 <attribute name="NAME" x="17.526" y="56.134" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="17.526" y="53.594" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -44035,31 +44081,31 @@ Marquardt</description>
 <attribute name="NAME" x="41.91" y="29.6164" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="41.91" y="27.432" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C146" gate="G$1" x="53.34" y="25.4" smashed="yes" rot="MR180">
+<instance part="C147" gate="G$1" x="53.34" y="25.4" smashed="yes" rot="MR180">
 <attribute name="NAME" x="51.308" y="26.67" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="51.054" y="24.765" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="C139" gate="G$1" x="88.9" y="30.48" smashed="yes" rot="MR0">
+<instance part="C140" gate="G$1" x="88.9" y="30.48" smashed="yes" rot="MR0">
 <attribute name="NAME" x="87.376" y="30.861" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="87.376" y="26.416" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="C140" gate="G$1" x="96.52" y="30.48" smashed="yes" rot="MR0">
+<instance part="C141" gate="G$1" x="96.52" y="30.48" smashed="yes" rot="MR0">
 <attribute name="NAME" x="94.996" y="30.861" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="94.996" y="26.416" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="C141" gate="G$1" x="104.14" y="30.48" smashed="yes" rot="MR0">
+<instance part="C142" gate="G$1" x="104.14" y="30.48" smashed="yes" rot="MR0">
 <attribute name="NAME" x="102.616" y="30.861" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="102.616" y="26.416" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="C142" gate="G$1" x="111.76" y="30.48" smashed="yes" rot="MR0">
+<instance part="C143" gate="G$1" x="111.76" y="30.48" smashed="yes" rot="MR0">
 <attribute name="NAME" x="110.236" y="30.861" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="110.236" y="26.416" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="C143" gate="G$1" x="119.38" y="30.48" smashed="yes" rot="MR0">
+<instance part="C144" gate="G$1" x="119.38" y="30.48" smashed="yes" rot="MR0">
 <attribute name="NAME" x="117.856" y="30.861" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="117.856" y="26.416" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="C138" gate="G$1" x="81.28" y="30.48" smashed="yes" rot="MR0">
+<instance part="C139" gate="G$1" x="81.28" y="30.48" smashed="yes" rot="MR0">
 <attribute name="NAME" x="79.756" y="30.861" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="79.756" y="26.416" size="1.778" layer="96" rot="MR0"/>
 </instance>
@@ -44067,7 +44113,7 @@ Marquardt</description>
 <attribute name="NAME" x="90.17" y="55.0164" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="90.17" y="52.832" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="C145" gate="G$1" x="58.42" y="27.94" smashed="yes" rot="MR0">
+<instance part="C146" gate="G$1" x="58.42" y="27.94" smashed="yes" rot="MR0">
 <attribute name="NAME" x="60.198" y="28.7274" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="60.833" y="26.1874" size="1.778" layer="96" rot="MR180"/>
 </instance>
@@ -44102,23 +44148,23 @@ Marquardt</description>
 <instance part="GND2" gate="1" x="58.42" y="17.78" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="61.595" y="18.415" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="C132" gate="G$1" x="99.06" y="73.66" smashed="yes" rot="MR90">
+<instance part="C133" gate="G$1" x="99.06" y="73.66" smashed="yes" rot="MR90">
 <attribute name="NAME" x="96.901" y="74.041" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="96.901" y="71.501" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="C134" gate="G$1" x="99.06" y="68.58" smashed="yes" rot="MR90">
+<instance part="C135" gate="G$1" x="99.06" y="68.58" smashed="yes" rot="MR90">
 <attribute name="NAME" x="96.901" y="68.961" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="96.901" y="66.421" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="C144" gate="G$1" x="127" y="30.48" smashed="yes" rot="MR0">
+<instance part="C145" gate="G$1" x="127" y="30.48" smashed="yes" rot="MR0">
 <attribute name="NAME" x="125.857" y="30.9626" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="125.857" y="25.8826" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="C131" gate="G$1" x="15.24" y="76.2" smashed="yes" rot="MR90">
+<instance part="C132" gate="G$1" x="15.24" y="76.2" smashed="yes" rot="MR90">
 <attribute name="NAME" x="13.081" y="78.486" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="13.081" y="76.581" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="C135" gate="G$1" x="15.24" y="66.04" smashed="yes" rot="MR90">
+<instance part="C136" gate="G$1" x="15.24" y="66.04" smashed="yes" rot="MR90">
 <attribute name="NAME" x="13.081" y="66.421" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="13.081" y="63.881" size="1.778" layer="96" rot="MR0"/>
 </instance>
@@ -44146,11 +44192,11 @@ Marquardt</description>
 <attribute name="NAME" x="25.4" y="29.4386" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="25.4" y="24.638" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="C130" gate="G$1" x="111.76" y="93.98" smashed="yes" rot="R270">
+<instance part="C131" gate="G$1" x="111.76" y="93.98" smashed="yes" rot="R270">
 <attribute name="NAME" x="111.379" y="94.361" size="1.778" layer="95"/>
 <attribute name="VALUE" x="111.379" y="91.821" size="1.778" layer="96"/>
 </instance>
-<instance part="C133" gate="G$1" x="111.76" y="71.12" smashed="yes" rot="R270">
+<instance part="C134" gate="G$1" x="111.76" y="71.12" smashed="yes" rot="R270">
 <attribute name="NAME" x="112.014" y="71.501" size="1.778" layer="95"/>
 <attribute name="VALUE" x="112.014" y="68.961" size="1.778" layer="96"/>
 </instance>
@@ -44227,7 +44273,7 @@ Marquardt</description>
 <attribute name="NAME" x="239.395" y="53.7464" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="239.395" y="49.657" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="C137" gate="G$1" x="248.92" y="43.18" smashed="yes" rot="R180">
+<instance part="C138" gate="G$1" x="248.92" y="43.18" smashed="yes" rot="R180">
 <attribute name="NAME" x="251.079" y="44.196" size="1.778" layer="95"/>
 <attribute name="VALUE" x="251.079" y="42.291" size="1.778" layer="96"/>
 </instance>
@@ -44279,7 +44325,7 @@ Marquardt</description>
 <net name="GND" class="2">
 <segment>
 <pinref part="SUPPLY85" gate="GND" pin="GND"/>
-<pinref part="C123" gate="G$1" pin="1"/>
+<pinref part="C124" gate="G$1" pin="1"/>
 <wire x1="124.46" y1="170.18" x2="127" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="127" y1="170.18" x2="127" y2="167.64" width="0.1524" layer="91"/>
 </segment>
@@ -44289,11 +44335,11 @@ Marquardt</description>
 <wire x1="111.76" y1="137.16" x2="142.24" y2="137.16" width="0.1524" layer="91"/>
 <junction x="142.24" y="137.16"/>
 <pinref part="SUPPLY82" gate="GND" pin="GND"/>
-<pinref part="C127" gate="G$1" pin="-"/>
+<pinref part="C128" gate="G$1" pin="-"/>
 <wire x1="142.24" y1="144.78" x2="142.24" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C126" gate="G$1" pin="2"/>
+<pinref part="C127" gate="G$1" pin="2"/>
 <wire x1="60.96" y1="149.86" x2="60.96" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="IC28" gate="G$1" pin="GND"/>
 <wire x1="60.96" y1="137.16" x2="60.96" y2="134.62" width="0.1524" layer="91"/>
@@ -44321,19 +44367,19 @@ Marquardt</description>
 <wire x1="200.66" y1="137.16" x2="200.66" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="R132" gate="G$1" pin="2"/>
 <wire x1="200.66" y1="134.62" x2="193.04" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="C128" gate="G$1" pin="1"/>
+<pinref part="C129" gate="G$1" pin="1"/>
 <pinref part="SUPPLY84" gate="GND" pin="GND"/>
 <junction x="200.66" y="134.62"/>
 </segment>
 <segment>
-<pinref part="C125" gate="G$1" pin="1"/>
+<pinref part="C126" gate="G$1" pin="1"/>
 <pinref part="SUPPLY91" gate="GND" pin="GND"/>
 </segment>
 <segment>
 <wire x1="238.76" y1="160.02" x2="238.76" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="R129" gate="G$1" pin="2"/>
 <wire x1="238.76" y1="157.48" x2="246.38" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="C124" gate="G$1" pin="1"/>
+<pinref part="C125" gate="G$1" pin="1"/>
 <pinref part="SUPPLY97" gate="GND" pin="GND"/>
 <junction x="238.76" y="157.48"/>
 </segment>
@@ -44341,7 +44387,7 @@ Marquardt</description>
 <wire x1="238.76" y1="137.16" x2="238.76" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="R133" gate="G$1" pin="2"/>
 <wire x1="238.76" y1="134.62" x2="246.38" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="C129" gate="G$1" pin="1"/>
+<pinref part="C130" gate="G$1" pin="1"/>
 <pinref part="SUPPLY98" gate="GND" pin="GND"/>
 <junction x="238.76" y="134.62"/>
 </segment>
@@ -44350,20 +44396,20 @@ Marquardt</description>
 <wire x1="127" y1="20.32" x2="119.38" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="20.32" x2="111.76" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="20.32" x2="104.14" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="C138" gate="G$1" pin="2"/>
+<pinref part="C139" gate="G$1" pin="2"/>
 <wire x1="104.14" y1="20.32" x2="96.52" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="20.32" x2="88.9" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="20.32" x2="81.28" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="20.32" x2="81.28" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="C139" gate="G$1" pin="2"/>
-<wire x1="88.9" y1="25.4" x2="88.9" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="C140" gate="G$1" pin="2"/>
-<wire x1="96.52" y1="25.4" x2="96.52" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="25.4" x2="88.9" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="C141" gate="G$1" pin="2"/>
-<wire x1="104.14" y1="25.4" x2="104.14" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="25.4" x2="96.52" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="C142" gate="G$1" pin="2"/>
-<wire x1="111.76" y1="25.4" x2="111.76" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="25.4" x2="104.14" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="C143" gate="G$1" pin="2"/>
+<wire x1="111.76" y1="25.4" x2="111.76" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="C144" gate="G$1" pin="2"/>
 <wire x1="119.38" y1="25.4" x2="119.38" y2="20.32" width="0.1524" layer="91"/>
 <junction x="88.9" y="20.32"/>
 <junction x="96.52" y="20.32"/>
@@ -44371,7 +44417,7 @@ Marquardt</description>
 <junction x="111.76" y="20.32"/>
 <junction x="119.38" y="20.32"/>
 <pinref part="SUPPLY106" gate="GND" pin="GND"/>
-<pinref part="C144" gate="G$1" pin="-"/>
+<pinref part="C145" gate="G$1" pin="-"/>
 </segment>
 <segment>
 <pinref part="R145" gate="G$1" pin="1"/>
@@ -44379,12 +44425,12 @@ Marquardt</description>
 <wire x1="43.18" y1="22.86" x2="43.18" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C146" gate="G$1" pin="1"/>
+<pinref part="C147" gate="G$1" pin="1"/>
 <wire x1="53.34" y1="20.32" x2="53.34" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="SUPPLY107" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C136" gate="G$1" pin="1"/>
+<pinref part="C137" gate="G$1" pin="1"/>
 <wire x1="20.32" y1="48.26" x2="20.32" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="IC29" gate="G$1" pin="GND"/>
 <wire x1="40.64" y1="66.04" x2="30.48" y2="66.04" width="0.1524" layer="91"/>
@@ -44397,9 +44443,9 @@ Marquardt</description>
 <segment>
 <pinref part="SUPPLY86" gate="GND" pin="GND"/>
 <wire x1="10.16" y1="71.12" x2="5.08" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="C135" gate="G$1" pin="2"/>
+<pinref part="C136" gate="G$1" pin="2"/>
 <wire x1="10.16" y1="66.04" x2="10.16" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="C131" gate="G$1" pin="2"/>
+<pinref part="C132" gate="G$1" pin="2"/>
 <wire x1="10.16" y1="76.2" x2="10.16" y2="71.12" width="0.1524" layer="91"/>
 <junction x="10.16" y="71.12"/>
 </segment>
@@ -44427,7 +44473,7 @@ Marquardt</description>
 <junction x="58.42" y="111.76"/>
 </segment>
 <segment>
-<pinref part="C137" gate="G$1" pin="1"/>
+<pinref part="C138" gate="G$1" pin="1"/>
 <pinref part="SUPPLY117" gate="GND" pin="GND"/>
 </segment>
 </net>
@@ -44445,7 +44491,7 @@ Marquardt</description>
 </segment>
 <segment>
 <pinref part="IC28" gate="G$1" pin="VCC"/>
-<pinref part="C126" gate="G$1" pin="1"/>
+<pinref part="C127" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="149.86" x2="53.34" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="157.48" x2="53.34" y2="149.86" width="0.1524" layer="91"/>
 <junction x="53.34" y="149.86"/>
@@ -44460,7 +44506,7 @@ Marquardt</description>
 </segment>
 <segment>
 <wire x1="106.68" y1="170.18" x2="109.22" y2="170.18" width="0.1524" layer="91"/>
-<pinref part="D26" gate="G$1" pin="A"/>
+<pinref part="D27" gate="G$1" pin="A"/>
 <pinref part="+3V14" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
@@ -44479,7 +44525,7 @@ Marquardt</description>
 <wire x1="203.2" y1="149.86" x2="203.2" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C136" gate="G$1" pin="2"/>
+<pinref part="C137" gate="G$1" pin="2"/>
 <wire x1="20.32" y1="60.96" x2="20.32" y2="58.42" width="0.1524" layer="91"/>
 <junction x="20.32" y="60.96"/>
 <pinref part="IC29" gate="G$1" pin="VDD"/>
@@ -44521,17 +44567,17 @@ Marquardt</description>
 <wire x1="111.76" y1="35.56" x2="119.38" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="35.56" x2="127" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="127" y1="35.56" x2="127" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="C143" gate="G$1" pin="1"/>
+<pinref part="C144" gate="G$1" pin="1"/>
 <wire x1="119.38" y1="33.02" x2="119.38" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="C142" gate="G$1" pin="1"/>
+<pinref part="C143" gate="G$1" pin="1"/>
 <wire x1="111.76" y1="33.02" x2="111.76" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="C141" gate="G$1" pin="1"/>
+<pinref part="C142" gate="G$1" pin="1"/>
 <wire x1="104.14" y1="33.02" x2="104.14" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="C140" gate="G$1" pin="1"/>
+<pinref part="C141" gate="G$1" pin="1"/>
 <wire x1="96.52" y1="33.02" x2="96.52" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="C139" gate="G$1" pin="1"/>
+<pinref part="C140" gate="G$1" pin="1"/>
 <wire x1="88.9" y1="33.02" x2="88.9" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="C138" gate="G$1" pin="1"/>
+<pinref part="C139" gate="G$1" pin="1"/>
 <wire x1="81.28" y1="33.02" x2="81.28" y2="35.56" width="0.1524" layer="91"/>
 <junction x="119.38" y="35.56"/>
 <junction x="111.76" y="35.56"/>
@@ -44540,7 +44586,7 @@ Marquardt</description>
 <junction x="88.9" y="35.56"/>
 <junction x="81.28" y="35.56"/>
 <pinref part="+3V17" gate="G$1" pin="+3V3"/>
-<pinref part="C144" gate="G$1" pin="+"/>
+<pinref part="C145" gate="G$1" pin="+"/>
 <wire x1="86.36" y1="58.42" x2="86.36" y2="35.56" width="0.1524" layer="91"/>
 <junction x="86.36" y="35.56"/>
 </segment>
@@ -44549,7 +44595,7 @@ Marquardt</description>
 <pinref part="R134" gate="G$1" pin="1"/>
 <pinref part="R136" gate="G$1" pin="2"/>
 <junction x="116.84" y="93.98"/>
-<pinref part="C130" gate="G$1" pin="1"/>
+<pinref part="C131" gate="G$1" pin="1"/>
 <wire x1="121.92" y1="109.22" x2="121.92" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="93.98" x2="116.84" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="93.98" x2="114.3" y2="93.98" width="0.1524" layer="91"/>
@@ -44610,12 +44656,12 @@ Marquardt</description>
 <pinref part="IC27" gate="G$1" pin="VDD"/>
 <wire x1="111.76" y1="160.02" x2="116.84" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="R130" gate="G$1" pin="2"/>
-<pinref part="C123" gate="G$1" pin="2"/>
+<pinref part="C124" gate="G$1" pin="2"/>
 <junction x="116.84" y="170.18"/>
 <wire x1="116.84" y1="160.02" x2="124.46" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="170.18" x2="116.84" y2="160.02" width="0.1524" layer="91"/>
 <junction x="116.84" y="160.02"/>
-<pinref part="D26" gate="G$1" pin="C"/>
+<pinref part="D27" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="LCD_CS" class="0">
@@ -44701,7 +44747,7 @@ Marquardt</description>
 <pinref part="SG1" gate="G$1" pin="+"/>
 <wire x1="170.18" y1="167.64" x2="170.18" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="U$10" gate="1" pin="+5V"/>
-<pinref part="C125" gate="G$1" pin="2"/>
+<pinref part="C126" gate="G$1" pin="2"/>
 <wire x1="170.18" y1="165.1" x2="162.56" y2="165.1" width="0.1524" layer="91"/>
 <junction x="170.18" y="165.1"/>
 </segment>
@@ -44734,7 +44780,7 @@ Marquardt</description>
 <wire x1="200.66" y1="144.78" x2="200.66" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="147.32" x2="193.04" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="144.78" x2="193.04" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="C128" gate="G$1" pin="2"/>
+<pinref part="C129" gate="G$1" pin="2"/>
 <pinref part="X17" gate="-2" pin="S"/>
 <wire x1="200.66" y1="147.32" x2="205.74" y2="147.32" width="0.1524" layer="91"/>
 <junction x="200.66" y="147.32"/>
@@ -45010,7 +45056,7 @@ Marquardt</description>
 <segment>
 <pinref part="R129" gate="G$1" pin="1"/>
 <wire x1="246.38" y1="167.64" x2="246.38" y2="170.18" width="0.1524" layer="91"/>
-<pinref part="C124" gate="G$1" pin="2"/>
+<pinref part="C125" gate="G$1" pin="2"/>
 <wire x1="246.38" y1="170.18" x2="238.76" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="170.18" x2="238.76" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="170.18" x2="226.06" y2="170.18" width="0.1524" layer="91"/>
@@ -45025,7 +45071,7 @@ Marquardt</description>
 <segment>
 <pinref part="R133" gate="G$1" pin="1"/>
 <wire x1="246.38" y1="144.78" x2="246.38" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="C129" gate="G$1" pin="2"/>
+<pinref part="C130" gate="G$1" pin="2"/>
 <wire x1="246.38" y1="147.32" x2="238.76" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="147.32" x2="238.76" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="147.32" x2="226.06" y2="147.32" width="0.1524" layer="91"/>
@@ -45064,7 +45110,7 @@ Marquardt</description>
 <net name="N$107" class="0">
 <segment>
 <pinref part="R130" gate="G$1" pin="1"/>
-<pinref part="C127" gate="G$1" pin="+"/>
+<pinref part="C128" gate="G$1" pin="+"/>
 <wire x1="142.24" y1="157.48" x2="142.24" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="160.02" x2="134.62" y2="160.02" width="0.1524" layer="91"/>
 </segment>
@@ -45090,7 +45136,7 @@ Marquardt</description>
 <pinref part="X18" gate="-4" pin="1"/>
 <label x="127" y="61.595" size="1.27" layer="102" rot="MR0"/>
 <wire x1="101.6" y1="68.58" x2="104.14" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="C134" gate="G$1" pin="1"/>
+<pinref part="C135" gate="G$1" pin="1"/>
 <wire x1="116.84" y1="60.96" x2="104.14" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="60.96" x2="104.14" y2="68.58" width="0.1524" layer="91"/>
 </segment>
@@ -45103,7 +45149,7 @@ Marquardt</description>
 <pinref part="X18" gate="-5" pin="1"/>
 <label x="127" y="81.915" size="1.27" layer="102" rot="MR0"/>
 <wire x1="101.6" y1="73.66" x2="104.14" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="C132" gate="G$1" pin="1"/>
+<pinref part="C133" gate="G$1" pin="1"/>
 <wire x1="116.84" y1="81.28" x2="104.14" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="81.28" x2="104.14" y2="73.66" width="0.1524" layer="91"/>
 </segment>
@@ -45132,7 +45178,7 @@ Marquardt</description>
 </net>
 <net name="1V2O" class="0">
 <segment>
-<pinref part="C146" gate="G$1" pin="2"/>
+<pinref part="C147" gate="G$1" pin="2"/>
 <pinref part="IC29" gate="G$1" pin="1V2O"/>
 <wire x1="53.34" y1="30.48" x2="53.34" y2="40.64" width="0.1524" layer="91"/>
 <label x="53.975" y="33.02" size="1.27" layer="102" rot="MR90"/>
@@ -45148,7 +45194,7 @@ Marquardt</description>
 </net>
 <net name="TOCAP" class="0">
 <segment>
-<pinref part="C145" gate="G$1" pin="+"/>
+<pinref part="C146" gate="G$1" pin="+"/>
 <wire x1="58.42" y1="30.48" x2="58.42" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="IC29" gate="G$1" pin="TOCAP"/>
 </segment>
@@ -45160,7 +45206,7 @@ Marquardt</description>
 <pinref part="Y2" gate="A" pin="1"/>
 <wire x1="25.4" y1="76.2" x2="20.32" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="71.12" x2="25.4" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="C131" gate="G$1" pin="1"/>
+<pinref part="C132" gate="G$1" pin="1"/>
 <wire x1="17.78" y1="76.2" x2="20.32" y2="76.2" width="0.1524" layer="91"/>
 <junction x="20.32" y="76.2"/>
 </segment>
@@ -45209,7 +45255,7 @@ Marquardt</description>
 </segment>
 <segment>
 <pinref part="GND2" gate="1" pin="GNDA"/>
-<pinref part="C145" gate="G$1" pin="-"/>
+<pinref part="C146" gate="G$1" pin="-"/>
 <wire x1="58.42" y1="20.32" x2="58.42" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -45233,7 +45279,7 @@ Marquardt</description>
 <wire x1="25.4" y1="66.04" x2="20.32" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="IC29" gate="G$1" pin="XI/CLKIN"/>
 <wire x1="40.64" y1="68.58" x2="25.4" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="C135" gate="G$1" pin="1"/>
+<pinref part="C136" gate="G$1" pin="1"/>
 <wire x1="20.32" y1="66.04" x2="17.78" y2="66.04" width="0.1524" layer="91"/>
 <junction x="20.32" y="66.04"/>
 </segment>
@@ -45241,7 +45287,7 @@ Marquardt</description>
 <net name="N$113" class="0">
 <segment>
 <pinref part="IC29" gate="G$1" pin="RXN"/>
-<pinref part="C132" gate="G$1" pin="2"/>
+<pinref part="C133" gate="G$1" pin="2"/>
 <wire x1="83.82" y1="73.66" x2="93.98" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -45250,7 +45296,7 @@ Marquardt</description>
 <pinref part="IC29" gate="G$1" pin="RXP"/>
 <wire x1="83.82" y1="71.12" x2="91.44" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="71.12" x2="91.44" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="C134" gate="G$1" pin="2"/>
+<pinref part="C135" gate="G$1" pin="2"/>
 <wire x1="91.44" y1="68.58" x2="93.98" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -45259,14 +45305,14 @@ Marquardt</description>
 <pinref part="R137" gate="G$1" pin="1"/>
 <pinref part="R138" gate="G$1" pin="2"/>
 <junction x="116.84" y="71.12"/>
-<pinref part="C133" gate="G$1" pin="1"/>
+<pinref part="C134" gate="G$1" pin="1"/>
 <wire x1="114.3" y1="71.12" x2="116.84" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="EARTH" class="0">
 <segment>
-<pinref part="C133" gate="G$1" pin="2"/>
-<pinref part="C130" gate="G$1" pin="2"/>
+<pinref part="C134" gate="G$1" pin="2"/>
+<pinref part="C131" gate="G$1" pin="2"/>
 <wire x1="106.68" y1="71.12" x2="106.68" y2="93.98" width="0.1524" layer="91"/>
 <label x="127" y="56.515" size="1.27" layer="102" rot="MR0"/>
 <junction x="106.68" y="71.12"/>
@@ -45353,7 +45399,7 @@ Marquardt</description>
 <junction x="251.46" y="50.8"/>
 <wire x1="251.46" y1="50.8" x2="248.92" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="R141" gate="G$1" pin="2"/>
-<pinref part="C137" gate="G$1" pin="2"/>
+<pinref part="C138" gate="G$1" pin="2"/>
 <wire x1="248.92" y1="50.8" x2="246.38" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="48.26" x2="248.92" y2="50.8" width="0.1524" layer="91"/>
 <junction x="248.92" y="50.8"/>
@@ -45405,11 +45451,11 @@ Marquardt</description>
 <attribute name="NAME" x="162.56" y="133.5786" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="162.56" y="128.778" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="C148" gate="G$1" x="167.64" y="124.46" smashed="yes" rot="MR180">
+<instance part="C149" gate="G$1" x="167.64" y="124.46" smashed="yes" rot="MR180">
 <attribute name="NAME" x="170.434" y="127.254" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="170.434" y="125.349" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="C147" gate="G$1" x="210.82" y="137.16" smashed="yes">
+<instance part="C148" gate="G$1" x="210.82" y="137.16" smashed="yes">
 <attribute name="NAME" x="212.979" y="135.636" size="1.778" layer="95"/>
 <attribute name="VALUE" x="212.979" y="133.731" size="1.778" layer="96"/>
 </instance>
@@ -45448,7 +45494,7 @@ Marquardt</description>
 <instance part="SUPPLY99" gate="GND" x="142.24" y="55.88" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="143.51" y="54.61" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="D27" gate="G$1" x="149.86" y="91.44" smashed="yes" rot="MR180">
+<instance part="D28" gate="G$1" x="149.86" y="91.44" smashed="yes" rot="MR180">
 <attribute name="NAME" x="154.178" y="95.3516" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="154.178" y="93.1926" size="1.778" layer="96" rot="MR0"/>
 </instance>
@@ -45474,7 +45520,7 @@ Marquardt</description>
 <instance part="SUPPLY100" gate="GND" x="175.26" y="53.34" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="176.53" y="52.705" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="C150" gate="G$1" x="180.34" y="78.74" smashed="yes" rot="R90">
+<instance part="C151" gate="G$1" x="180.34" y="78.74" smashed="yes" rot="R90">
 <attribute name="NAME" x="180.721" y="80.899" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="180.721" y="78.359" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -45498,7 +45544,7 @@ Marquardt</description>
 <instance part="SUPPLY104" gate="GND" x="160.02" y="76.2" smashed="yes">
 <attribute name="VALUE" x="161.925" y="74.93" size="1.778" layer="96"/>
 </instance>
-<instance part="D28" gate="G$1" x="177.8" y="91.44" smashed="yes" rot="MR0">
+<instance part="D29" gate="G$1" x="177.8" y="91.44" smashed="yes" rot="MR0">
 <attribute name="NAME" x="179.705" y="93.1926" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="180.34" y="87.8586" size="1.778" layer="96" rot="MR0"/>
 </instance>
@@ -45579,7 +45625,7 @@ Marquardt</description>
 <attribute name="NAME" x="58.42" y="102.87" size="1.778" layer="95"/>
 <attribute name="VALUE" x="58.42" y="100.33" size="1.778" layer="96"/>
 </instance>
-<instance part="C149" gate="G$1" x="96.52" y="104.14" smashed="yes" rot="R180">
+<instance part="C150" gate="G$1" x="96.52" y="104.14" smashed="yes" rot="R180">
 <attribute name="NAME" x="98.679" y="105.791" size="1.778" layer="95"/>
 <attribute name="VALUE" x="98.679" y="103.886" size="1.778" layer="96"/>
 </instance>
@@ -45593,7 +45639,7 @@ Marquardt</description>
 <attribute name="NAME" x="37.6428" y="81.6864" size="2.0828" layer="95" ratio="10" rot="SMR180"/>
 <attribute name="VALUE" x="32.0802" y="57.2516" size="2.0828" layer="96" ratio="10" rot="SMR180"/>
 </instance>
-<instance part="C151" gate="G$1" x="71.12" y="76.2" smashed="yes" rot="R270">
+<instance part="C152" gate="G$1" x="71.12" y="76.2" smashed="yes" rot="R270">
 <attribute name="NAME" x="70.739" y="76.581" size="1.778" layer="95"/>
 <attribute name="VALUE" x="70.739" y="74.041" size="1.778" layer="96"/>
 </instance>
@@ -45621,7 +45667,7 @@ Marquardt</description>
 <attribute name="NAME" x="33.02" y="102.235" size="1.778" layer="95"/>
 <attribute name="VALUE" x="23.495" y="91.44" size="1.778" layer="96"/>
 </instance>
-<instance part="C152" gate="G$1" x="91.44" y="66.04" smashed="yes" rot="MR90">
+<instance part="C153" gate="G$1" x="91.44" y="66.04" smashed="yes" rot="MR90">
 <attribute name="NAME" x="91.059" y="68.199" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="91.059" y="65.659" size="1.778" layer="96" rot="MR180"/>
 </instance>
@@ -45667,7 +45713,7 @@ Marquardt</description>
 <net name="N$136" class="0">
 <segment>
 <pinref part="IC31" gate="A" pin="THR"/>
-<pinref part="C148" gate="G$1" pin="2"/>
+<pinref part="C149" gate="G$1" pin="2"/>
 <wire x1="180.34" y1="132.08" x2="175.26" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="132.08" x2="167.64" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="132.08" x2="167.64" y2="129.54" width="0.1524" layer="91"/>
@@ -45715,7 +45761,7 @@ Marquardt</description>
 <wire x1="175.26" y1="55.88" x2="175.26" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C150" gate="G$1" pin="2"/>
+<pinref part="C151" gate="G$1" pin="2"/>
 <wire x1="185.42" y1="78.74" x2="187.96" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="SUPPLY103" gate="GND" pin="GND"/>
 </segment>
@@ -45725,7 +45771,7 @@ Marquardt</description>
 <pinref part="SUPPLY104" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="D27" gate="G$1" pin="A1"/>
+<pinref part="D28" gate="G$1" pin="A1"/>
 <wire x1="144.78" y1="91.44" x2="142.24" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="91.44" x2="142.24" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="SUPPLY105" gate="GND" pin="GND"/>
@@ -45753,7 +45799,7 @@ Marquardt</description>
 </segment>
 <segment>
 <pinref part="IC32" gate="P" pin="VSS"/>
-<pinref part="C149" gate="G$1" pin="1"/>
+<pinref part="C150" gate="G$1" pin="1"/>
 <wire x1="88.9" y1="99.06" x2="96.52" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="99.06" x2="96.52" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="99.06" x2="88.9" y2="96.52" width="0.1524" layer="91"/>
@@ -45761,7 +45807,7 @@ Marquardt</description>
 <pinref part="SUPPLY112" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C151" gate="G$1" pin="1"/>
+<pinref part="C152" gate="G$1" pin="1"/>
 <pinref part="SUPPLY113" gate="GND" pin="GND"/>
 <wire x1="73.66" y1="76.2" x2="78.74" y2="76.2" width="0.1524" layer="91"/>
 </segment>
@@ -45790,7 +45836,7 @@ Marquardt</description>
 <pinref part="SW2" gate="A" pin="5-GND"/>
 </segment>
 <segment>
-<pinref part="C152" gate="G$1" pin="1"/>
+<pinref part="C153" gate="G$1" pin="1"/>
 <pinref part="SUPPLY121" gate="GND" pin="GND"/>
 <wire x1="93.98" y1="66.04" x2="96.52" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="66.04" x2="96.52" y2="63.5" width="0.1524" layer="91"/>
@@ -45803,7 +45849,7 @@ Marquardt</description>
 <pinref part="R147" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="C150" gate="G$1" pin="1"/>
+<pinref part="C151" gate="G$1" pin="1"/>
 <pinref part="+3V10" gate="G$1" pin="+3V3"/>
 <wire x1="175.26" y1="78.74" x2="175.26" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="78.74" x2="175.26" y2="78.74" width="0.1524" layer="91"/>
@@ -45823,7 +45869,7 @@ Marquardt</description>
 </segment>
 <segment>
 <pinref part="IC32" gate="P" pin="VDD"/>
-<pinref part="C149" gate="G$1" pin="2"/>
+<pinref part="C150" gate="G$1" pin="2"/>
 <wire x1="88.9" y1="114.3" x2="96.52" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="114.3" x2="96.52" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="114.3" x2="88.9" y2="116.84" width="0.1524" layer="91"/>
@@ -45832,7 +45878,7 @@ Marquardt</description>
 </segment>
 <segment>
 <pinref part="IC33" gate="A" pin="VDD"/>
-<pinref part="C151" gate="G$1" pin="2"/>
+<pinref part="C152" gate="G$1" pin="2"/>
 <wire x1="55.88" y1="76.2" x2="63.5" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="+3V19" gate="G$1" pin="+3V3"/>
 <wire x1="63.5" y1="76.2" x2="66.04" y2="76.2" width="0.1524" layer="91"/>
@@ -45862,7 +45908,7 @@ Marquardt</description>
 <segment>
 <pinref part="IC31" gate="A" pin="R"/>
 <wire x1="205.74" y1="137.16" x2="200.66" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="C147" gate="G$1" pin="1"/>
+<pinref part="C148" gate="G$1" pin="1"/>
 <pinref part="IC31" gate="A" pin="V+"/>
 <wire x1="180.34" y1="127" x2="177.8" y2="127" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="127" x2="177.8" y2="154.94" width="0.1524" layer="91"/>
@@ -45887,7 +45933,7 @@ Marquardt</description>
 <net name="N$139" class="0">
 <segment>
 <pinref part="R154" gate="G$1" pin="2"/>
-<pinref part="D27" gate="G$1" pin="C1A2"/>
+<pinref part="D28" gate="G$1" pin="C1A2"/>
 <wire x1="154.94" y1="66.04" x2="149.86" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="66.04" x2="149.86" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="R153" gate="G$1" pin="2"/>
@@ -45925,7 +45971,7 @@ Marquardt</description>
 <net name="N$144" class="0">
 <segment>
 <pinref part="R151" gate="G$1" pin="1"/>
-<pinref part="D27" gate="G$1" pin="C2"/>
+<pinref part="D28" gate="G$1" pin="C2"/>
 <wire x1="162.56" y1="91.44" x2="160.02" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="ZD12" gate="G$1" pin="C"/>
 <wire x1="160.02" y1="91.44" x2="154.94" y2="91.44" width="0.1524" layer="91"/>
@@ -45936,13 +45982,13 @@ Marquardt</description>
 <net name="N$148" class="0">
 <segment>
 <pinref part="R151" gate="G$1" pin="2"/>
-<pinref part="D28" gate="G$1" pin="C"/>
+<pinref part="D29" gate="G$1" pin="C"/>
 <wire x1="175.26" y1="91.44" x2="172.72" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$149" class="0">
 <segment>
-<pinref part="D28" gate="G$1" pin="A"/>
+<pinref part="D29" gate="G$1" pin="A"/>
 <wire x1="180.34" y1="91.44" x2="182.88" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="FB8" gate="G$1" pin="2"/>
 </segment>
@@ -45975,7 +46021,7 @@ Marquardt</description>
 <segment>
 <pinref part="IC31" gate="A" pin="GND"/>
 <wire x1="200.66" y1="127" x2="205.74" y2="127" width="0.1524" layer="91"/>
-<pinref part="C148" gate="G$1" pin="1"/>
+<pinref part="C149" gate="G$1" pin="1"/>
 <wire x1="167.64" y1="121.92" x2="167.64" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="116.84" x2="205.74" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="116.84" x2="205.74" y2="127" width="0.1524" layer="91"/>
@@ -45985,7 +46031,7 @@ Marquardt</description>
 <label x="124.46" y="118.745" size="1.27" layer="102" rot="MR180"/>
 <wire x1="167.64" y1="116.84" x2="124.46" y2="116.84" width="0.1524" layer="91"/>
 <junction x="167.64" y="116.84"/>
-<pinref part="C147" gate="G$1" pin="2"/>
+<pinref part="C148" gate="G$1" pin="2"/>
 <wire x1="210.82" y1="132.08" x2="210.82" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="116.84" x2="210.82" y2="116.84" width="0.1524" layer="91"/>
 <junction x="210.82" y="116.84"/>
@@ -46063,7 +46109,7 @@ Marquardt</description>
 <wire x1="83.82" y1="71.12" x2="83.82" y2="66.04" width="0.1524" layer="91"/>
 <junction x="83.82" y="50.8"/>
 <wire x1="83.82" y1="66.04" x2="83.82" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="C152" gate="G$1" pin="2"/>
+<pinref part="C153" gate="G$1" pin="2"/>
 <wire x1="86.36" y1="66.04" x2="83.82" y2="66.04" width="0.1524" layer="91"/>
 <junction x="83.82" y="66.04"/>
 <pinref part="SW2" gate="A" pin="3"/>
@@ -46230,7 +46276,7 @@ Marquardt</description>
 <attribute name="NAME" x="139.4206" y="155.8036" size="2.0828" layer="95" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="139.3952" y="153.416" size="2.0828" layer="96" ratio="10" rot="SR0"/>
 </instance>
-<instance part="C153" gate="G$1" x="132.08" y="147.32" smashed="yes">
+<instance part="C154" gate="G$1" x="132.08" y="147.32" smashed="yes">
 <attribute name="NAME" x="129.921" y="148.209" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="129.921" y="146.304" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -46253,11 +46299,11 @@ Marquardt</description>
 <instance part="X19" gate="-4" x="208.28" y="119.38" smashed="yes" rot="R180">
 <attribute name="NAME" x="205.74" y="120.142" size="1.524" layer="95" rot="R180"/>
 </instance>
-<instance part="C154" gate="G$1" x="233.68" y="142.24" smashed="yes" rot="R180">
+<instance part="C155" gate="G$1" x="233.68" y="142.24" smashed="yes" rot="R180">
 <attribute name="NAME" x="235.839" y="143.891" size="1.778" layer="95"/>
 <attribute name="VALUE" x="235.839" y="141.986" size="1.778" layer="96"/>
 </instance>
-<instance part="C155" gate="G$1" x="233.68" y="127" smashed="yes">
+<instance part="C156" gate="G$1" x="233.68" y="127" smashed="yes">
 <attribute name="NAME" x="235.839" y="125.476" size="1.778" layer="95"/>
 <attribute name="VALUE" x="235.839" y="123.571" size="1.778" layer="96"/>
 </instance>
@@ -46289,7 +46335,7 @@ Marquardt</description>
 <instance part="X16" gate="-7" x="17.78" y="81.28" smashed="yes">
 <attribute name="NAME" x="11.43" y="82.169" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="C156" gate="G$1" x="101.6" y="81.28" smashed="yes">
+<instance part="C157" gate="G$1" x="101.6" y="81.28" smashed="yes">
 <attribute name="NAME" x="103.759" y="81.026" size="1.778" layer="95"/>
 <attribute name="VALUE" x="103.759" y="78.486" size="1.778" layer="96"/>
 </instance>
@@ -46328,19 +46374,19 @@ Marquardt</description>
 <wire x1="50.8" y1="144.78" x2="55.88" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C153" gate="G$1" pin="2"/>
+<pinref part="C154" gate="G$1" pin="2"/>
 <pinref part="SUPPLY116" gate="GND" pin="GND"/>
 <pinref part="WIFI" gate="G$1" pin="GND"/>
 <wire x1="137.16" y1="142.24" x2="132.08" y2="142.24" width="0.1524" layer="91"/>
 <junction x="132.08" y="142.24"/>
 </segment>
 <segment>
-<pinref part="C154" gate="G$1" pin="1"/>
+<pinref part="C155" gate="G$1" pin="1"/>
 <pinref part="SUPPLY118" gate="GND" pin="GND"/>
 </segment>
 <segment>
 <pinref part="X19" gate="-4" pin="S"/>
-<pinref part="C155" gate="G$1" pin="2"/>
+<pinref part="C156" gate="G$1" pin="2"/>
 <wire x1="210.82" y1="119.38" x2="233.68" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="119.38" x2="233.68" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="SUPPLY119" gate="GND" pin="GND"/>
@@ -46348,7 +46394,7 @@ Marquardt</description>
 </segment>
 <segment>
 <pinref part="IC35" gate="P" pin="VSS"/>
-<pinref part="C156" gate="G$1" pin="2"/>
+<pinref part="C157" gate="G$1" pin="2"/>
 <wire x1="93.98" y1="73.66" x2="101.6" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="73.66" x2="101.6" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="SUPPLY120" gate="GND" pin="GND"/>
@@ -46359,7 +46405,7 @@ Marquardt</description>
 <net name="+3V3" class="0">
 <segment>
 <pinref part="WIFI" gate="G$1" pin="3.3V"/>
-<pinref part="C153" gate="G$1" pin="1"/>
+<pinref part="C154" gate="G$1" pin="1"/>
 <wire x1="137.16" y1="149.86" x2="132.08" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="149.86" x2="132.08" y2="152.4" width="0.1524" layer="91"/>
 <junction x="132.08" y="149.86"/>
@@ -46379,7 +46425,7 @@ Marquardt</description>
 </segment>
 <segment>
 <pinref part="IC35" gate="P" pin="VDD"/>
-<pinref part="C156" gate="G$1" pin="1"/>
+<pinref part="C157" gate="G$1" pin="1"/>
 <wire x1="93.98" y1="88.9" x2="101.6" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="88.9" x2="101.6" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="+3V22" gate="G$1" pin="+3V3"/>
@@ -46463,7 +46509,7 @@ Marquardt</description>
 </net>
 <net name="ENC_A" class="0">
 <segment>
-<pinref part="C154" gate="G$1" pin="2"/>
+<pinref part="C155" gate="G$1" pin="2"/>
 <pinref part="R157" gate="G$1" pin="1"/>
 <wire x1="233.68" y1="147.32" x2="248.92" y2="147.32" width="0.1524" layer="91"/>
 <junction x="233.68" y="147.32"/>
@@ -46473,7 +46519,7 @@ Marquardt</description>
 <net name="ENC_B" class="0">
 <segment>
 <pinref part="R159" gate="G$1" pin="1"/>
-<pinref part="C155" gate="G$1" pin="1"/>
+<pinref part="C156" gate="G$1" pin="1"/>
 <wire x1="233.68" y1="129.54" x2="248.92" y2="129.54" width="0.1524" layer="91"/>
 <junction x="233.68" y="129.54"/>
 <label x="248.92" y="131.445" size="1.27" layer="102" rot="R180"/>
