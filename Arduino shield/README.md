@@ -15,6 +15,7 @@ This product is made available under the terms of the TAPR Open Hardware License
     - 2x4-pin 0.1" header for optional NRF24L01 Wifi module (eBay)
     - Added support for incremental encoder
     - 4 mm binding posts for remote sensing inputs replaced with 0.1" push-in connector
+    - New numbering in sync with consolidated schematics
 * 2016-04-06: **r1B14** ([Version 1.0](https://github.com/eez-open/psu-hw/releases/tag/1.0) on github)
     - Added fan control (FAN_PWM, FAN_SENSE)
     - Power connector replaced with 6-pin IDC as on the AUX PS r4B41
