@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="10" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="10" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
@@ -58,7 +58,7 @@
 <layer number="116" name="Patch_BOT" color="7" fill="1" visible="no" active="no"/>
 <layer number="117" name="fan" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
-<layer number="120" name="Transformer" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="120" name="Transformer" color="2" fill="1" visible="no" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="no"/>
@@ -67,8 +67,8 @@
 <layer number="126" name="_bNames" color="7" fill="1" visible="no" active="no"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="129" name="ac_dc" color="11" fill="1" visible="yes" active="yes"/>
-<layer number="130" name="support" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="129" name="ac_dc" color="11" fill="1" visible="no" active="yes"/>
+<layer number="130" name="support" color="5" fill="1" visible="no" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="no"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="no"/>
 <layer number="133" name="vent_holes" color="7" fill="3" visible="yes" active="yes"/>
@@ -212,10 +212,10 @@ e.g. TME: RI-SOF-15129</text>
 <wire x1="27.5" y1="230" x2="27.5" y2="190" width="0.1" layer="120" style="shortdash"/>
 <wire x1="27.5" y1="190" x2="140.5" y2="190" width="0.1" layer="120" style="shortdash"/>
 <wire x1="140.5" y1="230" x2="140.5" y2="190" width="0.1" layer="120" style="shortdash"/>
-<circle x="43.5" y="148" radius="1.5" width="0.1" layer="120"/>
-<circle x="113.5" y="148" radius="1.5" width="0.1" layer="120"/>
-<circle x="43.5" y="271" radius="1.5" width="0.1" layer="120"/>
-<circle x="113.5" y="271" radius="1.5" width="0.1" layer="120"/>
+<circle x="32.5" y="148" radius="1.5" width="0.1" layer="120"/>
+<circle x="125.5" y="148" radius="1.5" width="0.1" layer="120"/>
+<circle x="32.5" y="271" radius="1.5" width="0.1" layer="120"/>
+<circle x="125.5" y="271" radius="1.5" width="0.1" layer="120"/>
 <circle x="17.5" y="210" radius="1.5" width="0.1" layer="120"/>
 <rectangle x1="12.5" y1="157.5" x2="171.5" y2="254.5" layer="129"/>
 <dimension x1="50" y1="277" x2="49" y2="142" x3="45.5" y3="209.5" textsize="2" textratio="10" layer="120" dtype="vertical"/>
@@ -487,10 +487,10 @@ e.g. TME: RI-SOF-15129</text>
 <circle x="239" y="239" radius="1.55" width="0.1" layer="138"/>
 <circle x="206" y="139" radius="1.55" width="0.1" layer="138"/>
 <circle x="239" y="139" radius="1.55" width="0.1" layer="138"/>
-<circle x="113.5" y="271" radius="1.55" width="0.1" layer="138"/>
-<circle x="43.5" y="271" radius="1.55" width="0.1" layer="138"/>
-<circle x="43.5" y="148" radius="1.55" width="0.1" layer="138"/>
-<circle x="113.5" y="148" radius="1.55" width="0.1" layer="138"/>
+<circle x="125.5" y="271" radius="1.55" width="0.1" layer="138"/>
+<circle x="32.5" y="271" radius="1.55" width="0.1" layer="138"/>
+<circle x="32.5" y="148" radius="1.55" width="0.1" layer="138"/>
+<circle x="125.5" y="148" radius="1.55" width="0.1" layer="138"/>
 <circle x="17" y="249" radius="1.55" width="0.1" layer="138"/>
 <circle x="169.5" y="164" radius="1.55" width="0.1" layer="138"/>
 <circle x="84.5" y="10.5" radius="1.5" width="0.1" layer="137"/>
@@ -502,11 +502,10 @@ e.g. TME: RI-SOF-15129</text>
 <circle x="9" y="8" radius="2.1" width="0.1" layer="20"/>
 <circle x="9" y="72" radius="2.1" width="0.1" layer="20"/>
 <text x="113.5" y="318.5" size="5" layer="47" ratio="10">Bottom plate (top view)</text>
-<dimension x1="45.05" y1="271" x2="41.95" y2="271" x3="43.5" y3="266" textsize="1.778" layer="47" dtype="diameter"/>
 <text x="104" y="313" size="2.5" layer="47" ratio="10">All holes on this plate should be 3.1 mm countersink if possible</text>
-<dimension x1="113.5" y1="144" x2="43.5" y2="145" x3="78.5" y3="276" textsize="2" textratio="10" layer="47" dtype="horizontal"/>
+<dimension x1="125.5" y1="144" x2="32.5" y2="145" x3="79" y3="276" textsize="2" textratio="10" layer="47" dtype="horizontal"/>
 <dimension x1="239" y1="136.5" x2="206" y2="136" x3="222.5" y3="245" textsize="2" textratio="10" layer="47" dtype="horizontal"/>
-<dimension x1="40.5" y1="271" x2="41.5" y2="148" x3="120.5" y3="209.5" textsize="2" layer="47" dtype="vertical"/>
+<dimension x1="28" y1="271" x2="27" y2="148" x3="131" y3="209.5" textsize="2" layer="47" dtype="vertical"/>
 <dimension x1="204" y1="239" x2="203.5" y2="139" x3="244" y3="189" textsize="2" layer="47" dtype="vertical"/>
 <dimension x1="169.5" y1="169.5" x2="17" y2="253.5" x3="93.25" y3="158.5" textsize="2" textratio="10" layer="47" dtype="horizontal"/>
 <dimension x1="12.5" y1="249" x2="175" y2="164" x3="92.5" y3="206.5" textsize="2" layer="47" dtype="vertical"/>
@@ -558,7 +557,7 @@ e.g. TME: RI-SOF-15129</text>
 <dimension x1="74.5" y1="38.5" x2="1.5" y2="46.5" x3="38" y3="49.5" textsize="2" layer="47" dtype="horizontal"/>
 <dimension x1="95.5" y1="52.5" x2="74.5" y2="51.5" x3="85" y3="49.5" textsize="2" layer="47" dtype="horizontal"/>
 <dimension x1="17" y1="250.5" x2="1.5" y2="259.5" x3="9.25" y3="255" textsize="2" layer="47" dtype="horizontal"/>
-<dimension x1="43.5" y1="271.5" x2="1.5" y2="274.5" x3="22.5" y3="276" textsize="2" layer="47" dtype="horizontal"/>
+<dimension x1="32.5" y1="273" x2="1.5" y2="274.5" x3="17" y3="276" textsize="2" layer="47" dtype="horizontal"/>
 <dimension x1="288.5" y1="243" x2="239" y2="234" x3="263.75" y3="245" textsize="2" textratio="10" layer="47" dtype="horizontal"/>
 <dimension x1="242.5" y1="139" x2="244" y2="101.5" x3="244" y3="120.25" textsize="2" textratio="10" layer="47" dtype="vertical"/>
 <dimension x1="1.5" y1="114.5" x2="288.5" y2="112" x3="145" y3="110.5" textsize="2" textratio="10" layer="47" dtype="horizontal"/>
@@ -670,6 +669,86 @@ e.g. TME: RI-SOF-15129</text>
 <wire x1="74.5" y1="419" x2="96.5" y2="397" width="0.1" layer="117" curve="-90"/>
 <wire x1="96.5" y1="397" x2="96.5" y2="383" width="0.1" layer="117"/>
 <dimension x1="90.25" y1="415" x2="94.75" y2="415" x3="92.5" y3="418" textsize="1.778" layer="47" dtype="diameter"/>
+<wire x1="325" y1="306" x2="450" y2="306" width="0.1" layer="20"/>
+<wire x1="325" y1="305" x2="450" y2="305" width="0.1" layer="20"/>
+<wire x1="325" y1="375" x2="450" y2="375" width="0.1" layer="20"/>
+<wire x1="325" y1="306" x2="325" y2="375" width="0.1" layer="20"/>
+<wire x1="325" y1="305" x2="325" y2="306" width="0.1" layer="20"/>
+<wire x1="450" y1="306" x2="450" y2="375" width="0.1" layer="20"/>
+<wire x1="450" y1="305" x2="450" y2="306" width="0.1" layer="20"/>
+<circle x="329" y="311" radius="1.55" width="0.1" layer="20"/>
+<circle x="446" y="311" radius="1.55" width="0.1" layer="20"/>
+<wire x1="460" y1="305" x2="460" y2="308.95" width="0.1" layer="20"/>
+<wire x1="460" y1="308.95" x2="460" y2="312.05" width="0.1" layer="20"/>
+<wire x1="460" y1="312.05" x2="460" y2="375" width="0.1" layer="20"/>
+<wire x1="461" y1="306" x2="461" y2="308.95" width="0.1" layer="20"/>
+<wire x1="461" y1="308.95" x2="461" y2="312.05" width="0.1" layer="20"/>
+<wire x1="461" y1="312.05" x2="461" y2="375" width="0.1" layer="20"/>
+<wire x1="470" y1="305" x2="467" y2="305" width="0.1" layer="20"/>
+<wire x1="467" y1="305" x2="464" y2="305" width="0.1" layer="20"/>
+<wire x1="464" y1="305" x2="460" y2="305" width="0.1" layer="20"/>
+<wire x1="461" y1="375" x2="460" y2="375" width="0.1" layer="20"/>
+<wire x1="470" y1="306" x2="467" y2="306" width="0.1" layer="20"/>
+<wire x1="467" y1="306" x2="464" y2="306" width="0.1" layer="20"/>
+<wire x1="464" y1="306" x2="461" y2="306" width="0.1" layer="20"/>
+<wire x1="470" y1="306" x2="470" y2="305" width="0.1" layer="20"/>
+<wire x1="325" y1="294" x2="327.45" y2="294" width="0.1" layer="20"/>
+<wire x1="327.45" y1="294" x2="330.55" y2="294" width="0.1" layer="20"/>
+<wire x1="330.55" y1="294" x2="444.45" y2="294" width="0.1" layer="20"/>
+<wire x1="444.45" y1="294" x2="447.55" y2="294" width="0.1" layer="20"/>
+<wire x1="447.55" y1="294" x2="450" y2="294" width="0.1" layer="20"/>
+<wire x1="325" y1="285" x2="450" y2="285" width="0.1" layer="20"/>
+<wire x1="325" y1="295" x2="327.45" y2="295" width="0.1" layer="20"/>
+<wire x1="327.45" y1="295" x2="330.55" y2="295" width="0.1" layer="20"/>
+<wire x1="330.55" y1="295" x2="444.45" y2="295" width="0.1" layer="20"/>
+<wire x1="444.45" y1="295" x2="447.55" y2="295" width="0.1" layer="20"/>
+<wire x1="447.55" y1="295" x2="450" y2="295" width="0.1" layer="20"/>
+<wire x1="325" y1="294" x2="325" y2="295" width="0.1" layer="20"/>
+<wire x1="325" y1="285" x2="325" y2="294" width="0.1" layer="20"/>
+<wire x1="450" y1="294" x2="450" y2="295" width="0.1" layer="20"/>
+<wire x1="450" y1="285" x2="450" y2="294" width="0.1" layer="20"/>
+<wire x1="330.55" y1="294" x2="330.55" y2="295" width="0.1" layer="20" style="shortdash"/>
+<wire x1="327.45" y1="294" x2="327.45" y2="295" width="0.1" layer="20" style="shortdash"/>
+<wire x1="447.55" y1="294" x2="447.55" y2="295" width="0.1" layer="20" style="shortdash"/>
+<wire x1="444.45" y1="294" x2="444.45" y2="295" width="0.1" layer="20" style="shortdash"/>
+<dimension x1="325" y1="376" x2="329" y2="308" x3="327" y3="377.5" textsize="2" textratio="10" layer="47" dtype="horizontal"/>
+<dimension x1="329" y1="377" x2="446" y2="308" x3="387.5" y3="377.5" textsize="2" textratio="10" layer="47" dtype="horizontal"/>
+<dimension x1="446" y1="376" x2="450" y2="375.5" x3="448" y3="377.5" textsize="2" textratio="10" layer="47" dtype="horizontal"/>
+<dimension x1="460" y1="376" x2="461" y2="376" x3="460.5" y3="377.5" textsize="2" textratio="10" layer="47" dtype="horizontal"/>
+<dimension x1="448.5" y1="311" x2="324" y2="305" x3="321.5" y3="308" textsize="2" textratio="10" layer="47" dtype="vertical"/>
+<dimension x1="325" y1="284" x2="450" y2="284.5" x3="387.5" y3="281" textsize="2" textratio="10" layer="47" dtype="horizontal"/>
+<wire x1="461" y1="312.05" x2="460" y2="312.05" width="0.1" layer="20" style="shortdash"/>
+<wire x1="461" y1="308.95" x2="460" y2="308.95" width="0.1" layer="20" style="shortdash"/>
+<circle x="335" y="289.5" radius="1.5" width="0.1" layer="20"/>
+<dimension x1="325" y1="296" x2="335" y2="286" x3="330" y3="297.5" textsize="2" textratio="10" layer="47" dtype="horizontal"/>
+<dimension x1="446.5" y1="289.5" x2="323.5" y2="285" x3="321.5" y3="287.25" textsize="2" textratio="10" layer="47" dtype="vertical"/>
+<dimension x1="440" y1="286.5" x2="450" y2="295.5" x3="445" y3="297.5" textsize="2" textratio="10" layer="47" dtype="horizontal"/>
+<circle x="440" y="289.5" radius="1.5" width="0.1" layer="20"/>
+<dimension x1="462" y1="375" x2="471" y2="305" x3="472.5" y3="340" textsize="2" textratio="10" layer="47" dtype="vertical"/>
+<text x="337" y="290.5" size="2" layer="47">M3</text>
+<text x="434.5" y="290.5" size="2" layer="47">M3</text>
+<wire x1="467" y1="305" x2="467" y2="306" width="0.1" layer="20"/>
+<wire x1="464" y1="305" x2="464" y2="306" width="0.1" layer="20"/>
+<text x="325" y="388" size="5" layer="47" ratio="10">AC/DC module mounting rail</text>
+<dimension x1="335" y1="296" x2="440" y2="288" x3="387.5" y3="297.5" textsize="2" textratio="10" layer="47" dtype="horizontal"/>
+<dimension x1="449" y1="329" x2="440" y2="311" x3="441.5" y3="320" textsize="2" textratio="10" layer="47" dtype="vertical"/>
+<circle x="446" y="329" radius="1.55" width="0.1" layer="20"/>
+<dimension x1="450" y1="351" x2="435" y2="305" x3="436.5" y3="328" textsize="2" textratio="10" layer="47" dtype="vertical"/>
+<circle x="446" y="351" radius="1.55" width="0.1" layer="20"/>
+<dimension x1="449" y1="369" x2="440" y2="351" x3="441.5" y3="360" textsize="2" textratio="10" layer="47" dtype="vertical"/>
+<circle x="446" y="369" radius="1.55" width="0.1" layer="20"/>
+<dimension x1="321" y1="351" x2="333.5" y2="305" x3="335" y3="328" textsize="2" textratio="10" layer="47" dtype="vertical"/>
+<circle x="329" y="351" radius="1.55" width="0.1" layer="20"/>
+<wire x1="441.5" y1="305" x2="441.5" y2="306" width="0.1" layer="20"/>
+<wire x1="438.5" y1="305" x2="438.5" y2="306" width="0.1" layer="20"/>
+<wire x1="336.5" y1="305" x2="336.5" y2="306" width="0.1" layer="20"/>
+<wire x1="333.5" y1="305" x2="333.5" y2="306" width="0.1" layer="20"/>
+<dimension x1="17" y1="247" x2="12.5" y2="244.5" x3="14.75" y3="244.5" textsize="2" layer="47" dtype="horizontal"/>
+<dimension x1="34.5" y1="157.5" x2="12.5" y2="157" x3="23.5" y3="150.5" textsize="2" layer="47" dtype="horizontal"/>
+<circle x="40.5" y="152" radius="1.55" width="0.1" layer="138"/>
+<circle x="145.5" y="152" radius="1.55" width="0.1" layer="138"/>
+<dimension x1="15.45" y1="249" x2="18.55" y2="249" x3="17" y3="251.5" textsize="1.778" layer="47" dtype="diameter"/>
+<dimension x1="30.95" y1="271" x2="34.05" y2="271" x3="32.5" y3="273" textsize="1.778" layer="47" dtype="diameter"/>
 </plain>
 <libraries>
 </libraries>
