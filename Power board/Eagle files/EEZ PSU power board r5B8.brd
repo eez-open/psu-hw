@@ -36,8 +36,8 @@
 <layer number="26" name="bNames" color="13" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="10" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="11" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -95,8 +95,8 @@
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="no"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="no"/>
-<layer number="125" name="_tNames" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="126" name="_bNames" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="125" name="_tNames" color="14" fill="1" visible="no" active="yes"/>
+<layer number="126" name="_bNames" color="5" fill="1" visible="no" active="yes"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="no"/>
@@ -10110,7 +10110,7 @@ design rules under a new name.</description>
 <vertex x="114.3635" y="133.858"/>
 <vertex x="120.7135" y="133.858"/>
 <vertex x="121.031" y="134.1755"/>
-<vertex x="121.0945" y="142.1765"/>
+<vertex x="121.031" y="142.113"/>
 <vertex x="122.3645" y="143.4465"/>
 <vertex x="136.652" y="143.4465"/>
 <vertex x="137.6045" y="144.399"/>
@@ -10158,7 +10158,7 @@ design rules under a new name.</description>
 <vertex x="137.922" y="143.764"/>
 <vertex x="136.9695" y="142.8115"/>
 <vertex x="122.9995" y="142.8115"/>
-<vertex x="122.3645" y="142.1765"/>
+<vertex x="122.301" y="142.113"/>
 <vertex x="122.301" y="134.1755"/>
 <vertex x="122.6185" y="133.858"/>
 <vertex x="146.431" y="133.858"/>
