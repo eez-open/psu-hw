@@ -36,7 +36,7 @@
 <layer number="26" name="bNames" color="13" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="10" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="11" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -46,7 +46,7 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="15" fill="1" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="13" fill="1" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
@@ -3100,7 +3100,7 @@ Farnell: &lt;b&gt;1886596&lt;/b&gt;</description>
 <text x="-3.4544" y="2.032" size="1.27" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-4.3942" y="-4.2926" size="1.27" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
 </package>
-<package name="PCB_TRAFO6VA_TEZ+VPP">
+<package name="PCB_TRAFO6VA_7.5W">
 <wire x1="19" y1="22.5" x2="-19" y2="22.5" width="0.3048" layer="21"/>
 <wire x1="-19" y1="22.5" x2="-19" y2="-22.5" width="0.3048" layer="21"/>
 <wire x1="-19" y1="-22.5" x2="19" y2="-22.5" width="0.3048" layer="21"/>
@@ -3130,7 +3130,7 @@ Farnell: &lt;b&gt;1886596&lt;/b&gt;</description>
 <wire x1="13.462" y1="20.701" x2="-18.8595" y2="20.701" width="0.3048" layer="21" style="shortdash"/>
 <wire x1="13.462" y1="-20.701" x2="13.462" y2="-14.5415" width="0.3048" layer="21" style="shortdash"/>
 <wire x1="13.462" y1="14.5415" x2="13.462" y2="20.701" width="0.3048" layer="21" style="shortdash"/>
-<text x="16.2025" y="19.8275" size="1.9304" layer="21" font="vector" ratio="10" rot="R270">TEZ</text>
+<text x="16.2025" y="19.8275" size="1.9304" layer="21" font="vector" ratio="10" rot="R270">TEZ/Myrra</text>
 <text x="10.805" y="19.8275" size="1.9304" layer="21" font="vector" ratio="10" rot="R270">VPP</text>
 <wire x1="13.462" y1="-10.8585" x2="13.462" y2="10.541" width="0.3048" layer="21" style="shortdash"/>
 <wire x1="-0.635" y1="-5.715" x2="-0.635" y2="5.715" width="0.254" layer="21"/>
@@ -3151,6 +3151,8 @@ Farnell: &lt;b&gt;1886596&lt;/b&gt;</description>
 <rectangle x1="0.635" y1="-5.715" x2="2.54" y2="5.715" layer="21"/>
 <rectangle x1="-4.445" y1="-5.715" x2="-2.54" y2="5.715" layer="21" rot="R180"/>
 <wire x1="-1.27" y1="-5.715" x2="-1.27" y2="5.715" width="0.254" layer="21"/>
+<pad name="S1M" x="-12.5" y="5" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
+<pad name="S2M" x="-12.5" y="-5" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
 </package>
 <package name="VARISTOR">
 <description>EPCOS - B72220S0251K101 - VARISTOR, 140J, 250VAC&lt;br&gt;
@@ -4055,11 +4057,7 @@ design rules under a new name.</description>
 <element name="U$1" library="olimex_logo1" package="RECYCLE_BIN1/8" value="" x="90.746" y="45.9115" smashed="yes"/>
 <element name="U$5" library="olimex_logo1" package="PB_SMALL" value="" x="92.9685" y="54.611" smashed="yes"/>
 <element name="U$6" library="olimex_logo1" package="ESD_SYMBOL" value="" x="86.456" y="57.1925" smashed="yes"/>
-<element name="TR2" library="EEZ_Lib1" package="PCB_TRAFO6VA_TEZ+VPP" value="TEZ6/D230/12V" x="45.085" y="37.719" smashed="yes" rot="R270">
-<attribute name="TME" value="TEZ6/D/15-15V" x="45.085" y="37.719" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MOUSER" value="553-VPP28-180" x="45.085" y="37.719" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NEWARK" value="37B9209" x="45.085" y="37.719" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DIGIKEY" value="237-1086-ND" x="45.085" y="37.719" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="TR2" library="EEZ_Lib1" package="PCB_TRAFO6VA_7.5W" value="TEZ6/D230/12V" x="45.085" y="37.719" smashed="yes" rot="R270">
 <attribute name="NAME" x="42.1505" y="57.3195" size="2.1844" layer="25" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="33.324" y="36.7455" size="2.1844" layer="27" ratio="10"/>
 </element>
@@ -4996,6 +4994,8 @@ design rules under a new name.</description>
 <wire x1="90.4345" y1="1.7865" x2="89.7805" y2="1.7865" width="0.8128" layer="1"/>
 <wire x1="89.7805" y1="1.7865" x2="89.154" y2="1.778" width="0.8128" layer="1"/>
 <wire x1="81.2165" y1="9.7155" x2="89.154" y2="1.778" width="0.8128" layer="16"/>
+<contactref element="TR2" pad="S2M"/>
+<wire x1="40.005" y1="50.2825" x2="40.085" y2="50.219" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$80">
 <contactref element="TR2" pad="S1.2T"/>
@@ -5009,8 +5009,6 @@ design rules under a new name.</description>
 <wire x1="35.3695" y1="47.4345" x2="32.585" y2="50.219" width="0.8128" layer="16"/>
 <wire x1="34.925" y1="53.594" x2="34.925" y2="52.559" width="0.8128" layer="16"/>
 <wire x1="34.925" y1="52.559" x2="32.585" y2="50.219" width="0.8128" layer="16"/>
-<wire x1="50.165" y1="53.594" x2="50.165" y2="52.639" width="0.8128" layer="16"/>
-<wire x1="50.165" y1="52.639" x2="52.585" y2="50.219" width="0.8128" layer="16"/>
 <wire x1="52.585" y1="50.219" x2="52.585" y2="48.0765" width="0.8128" layer="16"/>
 <wire x1="52.585" y1="48.0765" x2="52.578" y2="47.4345" width="0.8128" layer="16"/>
 <wire x1="52.578" y1="47.4345" x2="35.3695" y2="47.4345" width="0.8128" layer="16"/>
@@ -5022,6 +5020,10 @@ design rules under a new name.</description>
 <wire x1="85.3345" y1="1.7865" x2="84.51" y2="1.7865" width="0.8128" layer="1"/>
 <wire x1="84.51" y1="1.7865" x2="84.074" y2="1.778" width="0.8128" layer="1"/>
 <wire x1="79.375" y1="6.477" x2="84.074" y2="1.778" width="0.8128" layer="16"/>
+<contactref element="TR2" pad="S1M"/>
+<wire x1="52.585" y1="50.219" x2="50.085" y2="50.219" width="0.8128" layer="16"/>
+<wire x1="50.165" y1="53.594" x2="50.085" y2="53.594" width="0.8128" layer="16"/>
+<wire x1="50.085" y1="53.594" x2="50.085" y2="50.219" width="0.8128" layer="16"/>
 </signal>
 <signal name="TA5">
 <via x="45" y="65" extent="1-16" drill="3.2" diameter="5.5"/>

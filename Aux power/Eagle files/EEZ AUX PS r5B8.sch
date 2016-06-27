@@ -8363,6 +8363,60 @@ Farnell: &lt;b&gt;1004357&lt;/b&gt;</description>
 <text x="-3.58" y="-0.175" size="1.27" layer="27">&gt;VALUE</text>
 <text x="-9.0625" y="2.6825" size="1.27" layer="25">&gt;NAME</text>
 </package>
+<package name="PCB_TRAFO6VA_7.5W">
+<wire x1="19" y1="22.5" x2="-19" y2="22.5" width="0.3048" layer="21"/>
+<wire x1="-19" y1="22.5" x2="-19" y2="-22.5" width="0.3048" layer="21"/>
+<wire x1="-19" y1="-22.5" x2="19" y2="-22.5" width="0.3048" layer="21"/>
+<wire x1="19" y1="-22.5" x2="19" y2="22.5" width="0.3048" layer="21"/>
+<wire x1="13.462" y1="20.701" x2="-19.812" y2="20.701" width="0.3048" layer="51" style="shortdash"/>
+<wire x1="-19.812" y1="-20.701" x2="13.462" y2="-20.701" width="0.3048" layer="51" style="shortdash"/>
+<pad name="P1_TEZ" x="12.5" y="12.5" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
+<pad name="P2_TEZ" x="12.5" y="-12.5" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
+<pad name="S1.1T" x="-12.5" y="12.5" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
+<pad name="S1.2T" x="-12.5" y="7.5" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
+<pad name="S2.1T" x="-12.5" y="-7.5" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
+<pad name="S2.2T" x="-12.5" y="-12.5" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
+<pad name="NC" x="-12.5" y="0" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
+<text x="-19" y="23.22" size="2.1844" layer="25" ratio="10">&gt;NAME</text>
+<text x="-6.3" y="-19.325" size="2.1844" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="13.462" y1="20.701" x2="13.462" y2="-20.701" width="0.3048" layer="51" style="shortdash"/>
+<pad name="P2.1V" x="9.525" y="-5.08" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
+<pad name="P1.2V" x="9.525" y="5.08" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
+<pad name="S1.1V" x="-15.875" y="10.16" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
+<pad name="S1.2V" x="-15.875" y="5.08" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
+<pad name="S2.1V" x="-15.875" y="-5.08" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
+<pad name="S2.2V" x="-15.875" y="-10.16" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
+<wire x1="-19.812" y1="20.701" x2="-19.812" y2="-20.701" width="0.3048" layer="51" style="shortdash"/>
+<pad name="P2.2V" x="9.525" y="-10.16" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
+<pad name="P1.1V" x="9.525" y="10.16" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
+<wire x1="-18.8595" y1="-20.701" x2="13.462" y2="-20.701" width="0.3048" layer="21" style="shortdash"/>
+<wire x1="13.462" y1="20.701" x2="-18.8595" y2="20.701" width="0.3048" layer="21" style="shortdash"/>
+<wire x1="13.462" y1="-20.701" x2="13.462" y2="-14.5415" width="0.3048" layer="21" style="shortdash"/>
+<wire x1="13.462" y1="14.5415" x2="13.462" y2="20.701" width="0.3048" layer="21" style="shortdash"/>
+<text x="16.2025" y="19.8275" size="1.9304" layer="21" font="vector" ratio="10" rot="R270">TEZ/Myrra</text>
+<text x="10.805" y="19.8275" size="1.9304" layer="21" font="vector" ratio="10" rot="R270">VPP</text>
+<wire x1="13.462" y1="-10.8585" x2="13.462" y2="10.541" width="0.3048" layer="21" style="shortdash"/>
+<wire x1="-0.635" y1="-5.715" x2="-0.635" y2="5.715" width="0.254" layer="21"/>
+<wire x1="0.635" y1="5.715" x2="0.635" y2="-5.715" width="0.254" layer="21"/>
+<wire x1="0.635" y1="-5.715" x2="2.54" y2="-5.715" width="0.254" layer="21"/>
+<wire x1="0.635" y1="5.715" x2="2.54" y2="5.715" width="0.254" layer="21"/>
+<wire x1="2.54" y1="-5.715" x2="2.54" y2="5.715" width="0.254" layer="21"/>
+<wire x1="2.54" y1="-5.715" x2="5.08" y2="-5.715" width="0.254" layer="21"/>
+<wire x1="2.54" y1="5.715" x2="5.08" y2="5.715" width="0.254" layer="21"/>
+<wire x1="-2.54" y1="-5.715" x2="-2.54" y2="5.715" width="0.254" layer="21"/>
+<wire x1="-2.54" y1="5.715" x2="-4.445" y2="5.715" width="0.254" layer="21"/>
+<wire x1="-2.54" y1="-5.715" x2="-4.445" y2="-5.715" width="0.254" layer="21"/>
+<wire x1="-4.445" y1="5.715" x2="-4.445" y2="-5.715" width="0.254" layer="21"/>
+<wire x1="-4.445" y1="5.715" x2="-6.985" y2="5.715" width="0.254" layer="21"/>
+<wire x1="-4.445" y1="-5.715" x2="-6.985" y2="-5.715" width="0.254" layer="21"/>
+<text x="-8.255" y="2.54" size="1.778" layer="21" font="vector" ratio="10" rot="R270">Sec</text>
+<text x="5.715" y="-1.905" size="1.778" layer="21" font="vector" ratio="10" rot="R90">Pri</text>
+<rectangle x1="0.635" y1="-5.715" x2="2.54" y2="5.715" layer="21"/>
+<rectangle x1="-4.445" y1="-5.715" x2="-2.54" y2="5.715" layer="21" rot="R180"/>
+<wire x1="-1.27" y1="-5.715" x2="-1.27" y2="5.715" width="0.254" layer="21"/>
+<pad name="S1M" x="-12.5" y="5" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
+<pad name="S2M" x="-12.5" y="-5" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="L">
@@ -9590,6 +9644,17 @@ Socket; RJ45; PIN:8; vertical, shielded, with LED and trafo</description>
 <attribute name="NEWARK" value="37B9209" constant="no"/>
 <attribute name="TME" value="TEZ6/D/15-15V" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="+MYRRA" package="PCB_TRAFO6VA_7.5W">
+<connects>
+<connect gate="G$1" pin="P1" pad="P1.1V P1_TEZ P2.1V"/>
+<connect gate="G$1" pin="P2" pad="P1.2V P2.2V P2_TEZ"/>
+<connect gate="G$1" pin="S1" pad="S1.1T S1.1V S2.1T S2.1V S2M"/>
+<connect gate="G$1" pin="S2" pad="S1.2T S1.2V S1M S2.2T S2.2V"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -11954,7 +12019,7 @@ Farnell: 2112873</description>
 <part name="SUPPLY48" library="supply2" deviceset="GND" device=""/>
 <part name="R119" library="rcl" deviceset="R-EU_" device="R0805" value="10K"/>
 <part name="SUPPLY51" library="supply2" deviceset="GND" device=""/>
-<part name="TR2" library="EEZ_Lib1" deviceset="PCB_TRAFO6VA_TEZ+VPP" device="" value="TEZ6/D230/12V"/>
+<part name="TR2" library="EEZ_Lib1" deviceset="PCB_TRAFO6VA_TEZ+VPP" device="+MYRRA" value="TEZ6/D230/12V"/>
 <part name="VAR1" library="EEZ_Lib1" deviceset="VARISTOR" device="" value="S20K250"/>
 <part name="VAR2" library="EEZ_Lib1" deviceset="VARISTOR" device="" value="S20K250"/>
 <part name="C84" library="rcl" deviceset="C-EU" device="102-064X133" value="6n8 (X1)"/>
@@ -12022,37 +12087,6 @@ Farnell: 2112873</description>
 <text x="6.985" y="107.95" size="1.778" layer="97" rot="MR180">5V power supply</text>
 <text x="6.985" y="176.53" size="1.778" layer="97" rot="MR180">AC input protection and soft-start/stand-by</text>
 <text x="10.16" y="157.48" size="1.778" layer="103">AC input (230V)</text>
-<text x="9.525" y="34.925" size="1.6764" layer="103">SAR1</text>
-<text x="9.525" y="24.765" size="1.6764" layer="103">VAR1, VAR2</text>
-<text x="9.525" y="22.225" size="1.6764" layer="103">ZD1, ZD2</text>
-<text x="44.45" y="38.1" size="1.6764" layer="103">Code</text>
-<text x="26.67" y="38.1" size="1.6764" layer="103">Value</text>
-<text x="26.67" y="34.925" size="1.6764" layer="103">2027-23-BLF</text>
-<text x="44.45" y="34.925" size="1.6764" layer="103">Farnell: 1780455, TME: CG2-230L</text>
-<text x="26.67" y="24.765" size="1.6764" layer="103">S20K140</text>
-<text x="26.67" y="32.385" size="1.6764" layer="103">VPP28-180</text>
-<text x="44.45" y="27.305" size="1.6764" layer="103">Newark: 93F8764</text>
-<text x="44.45" y="24.765" size="1.6764" layer="103">Farnell: 1004387, TME: SIOV-S20K140</text>
-<wire x1="7.62" y1="40.64" x2="25.4" y2="40.64" width="0.1524" layer="103"/>
-<wire x1="25.4" y1="40.64" x2="43.18" y2="40.64" width="0.1524" layer="103"/>
-<wire x1="43.18" y1="40.64" x2="87.63" y2="40.64" width="0.1524" layer="103"/>
-<wire x1="87.63" y1="40.64" x2="87.63" y2="37.465" width="0.1524" layer="103"/>
-<wire x1="87.63" y1="37.465" x2="87.63" y2="21.59" width="0.1524" layer="103"/>
-<wire x1="87.63" y1="21.59" x2="43.18" y2="21.59" width="0.1524" layer="103"/>
-<wire x1="43.18" y1="21.59" x2="25.4" y2="21.59" width="0.1524" layer="103"/>
-<wire x1="25.4" y1="21.59" x2="7.62" y2="21.59" width="0.1524" layer="103"/>
-<wire x1="7.62" y1="21.59" x2="7.62" y2="37.465" width="0.1524" layer="103"/>
-<wire x1="7.62" y1="37.465" x2="7.62" y2="40.64" width="0.1524" layer="103"/>
-<wire x1="25.4" y1="21.59" x2="25.4" y2="40.64" width="0.1524" layer="103"/>
-<wire x1="43.18" y1="21.59" x2="43.18" y2="40.64" width="0.1524" layer="103"/>
-<wire x1="7.62" y1="37.465" x2="87.63" y2="37.465" width="0.1524" layer="103"/>
-<text x="9.525" y="38.1" size="1.6764" layer="103">Name</text>
-<text x="6.985" y="41.91" size="1.6764" layer="103">115VAC option:</text>
-<text x="9.525" y="32.385" size="1.6764" layer="103">TR1</text>
-<text x="26.67" y="22.225" size="1.6764" layer="103">1.5KE200CA</text>
-<text x="44.45" y="22.225" size="1.6764" layer="103">Farnell: 1837117, TME: 1.5KE200CA</text>
-<text x="44.45" y="32.385" size="1.6764" layer="103">Digikey: 237-1085-ND</text>
-<text x="44.45" y="29.845" size="1.6764" layer="103">Mouser: 553-VPP24-210</text>
 <circle x="232.41" y="67.31" radius="0.635" width="0.1524" layer="101"/>
 <circle x="232.41" y="69.85" radius="0.635" width="0.1524" layer="101"/>
 <text x="230.505" y="70.485" size="1.4224" layer="101" rot="R180">PWR_DIRECT (Input) 3</text>
@@ -12080,6 +12114,40 @@ Farnell: 2112873</description>
 <text x="2.54" y="154.94" size="1.4224" layer="103">Use e.g. Schurter 4303.6090 IEC inlet</text>
 <text x="2.54" y="152.4" size="1.4224" layer="103">or Schurter KM00.1105.11 IEC intlet</text>
 <text x="2.54" y="149.86" size="1.4224" layer="103">with Schurter 4301.1403 fuse drawer</text>
+<text x="6.985" y="34.925" size="1.6764" layer="103">SAR1</text>
+<text x="6.985" y="19.685" size="1.6764" layer="103">VAR1, VAR2</text>
+<text x="6.985" y="17.145" size="1.6764" layer="103">ZD1, ZD2</text>
+<text x="44.45" y="38.1" size="1.6764" layer="103">Code</text>
+<text x="24.13" y="38.1" size="1.6764" layer="103">Value</text>
+<text x="24.13" y="34.925" size="1.6764" layer="103">2027-23-BLF</text>
+<text x="44.45" y="34.925" size="1.6764" layer="103">Farnell: 1780455, TME: CG2-230L</text>
+<text x="24.13" y="19.685" size="1.6764" layer="103">S20K140</text>
+<text x="24.13" y="32.385" size="1.6764" layer="103">VPP24-210</text>
+<text x="44.45" y="19.685" size="1.6764" layer="103">Farnell: 1004387, TME: SIOV-S20K140</text>
+<wire x1="5.08" y1="40.64" x2="22.86" y2="40.64" width="0.1524" layer="103"/>
+<wire x1="22.86" y1="40.64" x2="43.18" y2="40.64" width="0.1524" layer="103"/>
+<wire x1="43.18" y1="40.64" x2="87.63" y2="40.64" width="0.1524" layer="103"/>
+<wire x1="87.63" y1="40.64" x2="87.63" y2="37.465" width="0.1524" layer="103"/>
+<wire x1="87.63" y1="37.465" x2="87.63" y2="16.51" width="0.1524" layer="103"/>
+<wire x1="87.63" y1="16.51" x2="43.18" y2="16.51" width="0.1524" layer="103"/>
+<wire x1="43.18" y1="16.51" x2="22.86" y2="16.51" width="0.1524" layer="103"/>
+<wire x1="22.86" y1="16.51" x2="5.08" y2="16.51" width="0.1524" layer="103"/>
+<wire x1="5.08" y1="16.51" x2="5.08" y2="37.465" width="0.1524" layer="103"/>
+<wire x1="5.08" y1="37.465" x2="5.08" y2="40.64" width="0.1524" layer="103"/>
+<wire x1="22.86" y1="16.51" x2="22.86" y2="40.64" width="0.1524" layer="103"/>
+<wire x1="43.18" y1="16.51" x2="43.18" y2="40.64" width="0.1524" layer="103"/>
+<wire x1="5.08" y1="37.465" x2="87.63" y2="37.465" width="0.1524" layer="103"/>
+<text x="6.985" y="38.1" size="1.6764" layer="103">Name</text>
+<text x="4.445" y="41.91" size="1.6764" layer="103">115VAC option:</text>
+<text x="6.985" y="32.385" size="1.6764" layer="103">TR2</text>
+<text x="24.13" y="17.145" size="1.6764" layer="103">1.5KE200CA</text>
+<text x="44.45" y="17.145" size="1.6764" layer="103">Farnell: 1837117, TME: 1.5KE200CA</text>
+<text x="44.45" y="22.225" size="1.6764" layer="103">Farnell: 2469211</text>
+<text x="44.45" y="32.385" size="1.6764" layer="103">Digikey: 237-1085-ND</text>
+<text x="44.45" y="29.845" size="1.6764" layer="103">Mouser: 553-VPP24-210</text>
+<text x="24.13" y="24.765" size="1.6764" layer="103">or AC/DC module</text>
+<text x="44.45" y="27.305" size="1.6764" layer="103">Newark: 93F8764</text>
+<text x="24.13" y="22.225" size="1.6764" layer="103">Myrra 47202</text>
 </plain>
 <instances>
 <instance part="C88" gate="G$1" x="81.28" y="81.28" smashed="yes">
