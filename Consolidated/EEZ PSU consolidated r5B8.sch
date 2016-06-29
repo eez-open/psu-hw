@@ -88,6 +88,7 @@
 <layer number="111" name="111" color="7" fill="1" visible="no" active="no"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="113" name="ReferenceLS" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="114" name="EEZ" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="7" fill="1" visible="no" active="no"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="no"/>
@@ -13703,6 +13704,70 @@ Source: RS Component / BUORNS</description>
 <vertex x="0.381" y="-0.381"/>
 </polygon>
 </package>
+<package name="PCB_TRAFO6VA_7.5W">
+<wire x1="19" y1="22.5" x2="-19" y2="22.5" width="0.3048" layer="21"/>
+<wire x1="-19" y1="22.5" x2="-19" y2="-22.5" width="0.3048" layer="21"/>
+<wire x1="-19" y1="-22.5" x2="19" y2="-22.5" width="0.3048" layer="21"/>
+<wire x1="19" y1="-22.5" x2="19" y2="22.5" width="0.3048" layer="21"/>
+<wire x1="13.462" y1="20.701" x2="-19.812" y2="20.701" width="0.3048" layer="51" style="shortdash"/>
+<wire x1="-19.812" y1="-20.701" x2="13.462" y2="-20.701" width="0.3048" layer="51" style="shortdash"/>
+<pad name="P1_TEZ" x="12.5" y="12.5" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
+<pad name="P2_TEZ" x="12.5" y="-12.5" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
+<pad name="S1.1T" x="-12.5" y="12.5" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
+<pad name="S1.2T" x="-12.5" y="7.5" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
+<pad name="S2.1T" x="-12.5" y="-7.5" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
+<pad name="S2.2T" x="-12.5" y="-12.5" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
+<pad name="NC" x="-12.5" y="0" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
+<text x="-19" y="23.22" size="2.1844" layer="25" ratio="10">&gt;NAME</text>
+<text x="-6.3" y="-19.325" size="2.1844" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="13.462" y1="20.701" x2="13.462" y2="-20.701" width="0.3048" layer="51" style="shortdash"/>
+<pad name="P2.1V" x="9.525" y="-5.08" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
+<pad name="P1.2V" x="9.525" y="5.08" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
+<pad name="S1.1V" x="-15.875" y="10.16" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
+<pad name="S1.2V" x="-15.875" y="5.08" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
+<pad name="S2.1V" x="-15.875" y="-5.08" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
+<pad name="S2.2V" x="-15.875" y="-10.16" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
+<wire x1="-19.812" y1="20.701" x2="-19.812" y2="-20.701" width="0.3048" layer="51" style="shortdash"/>
+<pad name="P2.2V" x="9.525" y="-10.16" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
+<pad name="P1.1V" x="9.525" y="10.16" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
+<wire x1="-18.8595" y1="-20.701" x2="13.462" y2="-20.701" width="0.3048" layer="21" style="shortdash"/>
+<wire x1="13.462" y1="20.701" x2="-18.8595" y2="20.701" width="0.3048" layer="21" style="shortdash"/>
+<wire x1="13.462" y1="-20.701" x2="13.462" y2="-14.5415" width="0.3048" layer="21" style="shortdash"/>
+<wire x1="13.462" y1="14.5415" x2="13.462" y2="20.701" width="0.3048" layer="21" style="shortdash"/>
+<text x="16.2025" y="19.8275" size="1.9304" layer="21" font="vector" ratio="10" rot="R270">TEZ/Myrra</text>
+<text x="10.805" y="19.8275" size="1.9304" layer="21" font="vector" ratio="10" rot="R270">VPP</text>
+<wire x1="13.462" y1="-10.8585" x2="13.462" y2="10.541" width="0.3048" layer="21" style="shortdash"/>
+<wire x1="-0.635" y1="-5.715" x2="-0.635" y2="5.715" width="0.254" layer="21"/>
+<wire x1="0.635" y1="5.715" x2="0.635" y2="-5.715" width="0.254" layer="21"/>
+<wire x1="0.635" y1="-5.715" x2="2.54" y2="-5.715" width="0.254" layer="21"/>
+<wire x1="0.635" y1="5.715" x2="2.54" y2="5.715" width="0.254" layer="21"/>
+<wire x1="2.54" y1="-5.715" x2="2.54" y2="5.715" width="0.254" layer="21"/>
+<wire x1="2.54" y1="-5.715" x2="5.08" y2="-5.715" width="0.254" layer="21"/>
+<wire x1="2.54" y1="5.715" x2="5.08" y2="5.715" width="0.254" layer="21"/>
+<wire x1="-2.54" y1="-5.715" x2="-2.54" y2="5.715" width="0.254" layer="21"/>
+<wire x1="-2.54" y1="5.715" x2="-4.445" y2="5.715" width="0.254" layer="21"/>
+<wire x1="-2.54" y1="-5.715" x2="-4.445" y2="-5.715" width="0.254" layer="21"/>
+<wire x1="-4.445" y1="5.715" x2="-4.445" y2="-5.715" width="0.254" layer="21"/>
+<wire x1="-4.445" y1="5.715" x2="-6.985" y2="5.715" width="0.254" layer="21"/>
+<wire x1="-4.445" y1="-5.715" x2="-6.985" y2="-5.715" width="0.254" layer="21"/>
+<text x="-8.255" y="2.54" size="1.778" layer="21" font="vector" ratio="10" rot="R270">Sec</text>
+<text x="5.715" y="-1.905" size="1.778" layer="21" font="vector" ratio="10" rot="R90">Pri</text>
+<rectangle x1="0.635" y1="-5.715" x2="2.54" y2="5.715" layer="21"/>
+<rectangle x1="-4.445" y1="-5.715" x2="-2.54" y2="5.715" layer="21" rot="R180"/>
+<wire x1="-1.27" y1="-5.715" x2="-1.27" y2="5.715" width="0.254" layer="21"/>
+<pad name="S1M" x="-12.5" y="5" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
+<pad name="S2M" x="-12.5" y="-5" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
+</package>
+<package name="FIDUCIAL">
+<circle x="0" y="0" radius="1.5" width="0.127" layer="41"/>
+<smd name="T" x="0" y="0" dx="1.016" dy="1.016" layer="1" roundness="100"/>
+</package>
+<package name="FIDUCIAL_DUAL">
+<circle x="0" y="0" radius="1.5" width="0.127" layer="41"/>
+<smd name="T" x="0" y="0" dx="1.016" dy="1.016" layer="1" roundness="100"/>
+<circle x="0" y="0" radius="1.5" width="0.127" layer="42"/>
+<smd name="B" x="0" y="0" dx="1.016" dy="1.016" layer="16" roundness="100" rot="R180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SHORT_H">
@@ -15703,6 +15768,19 @@ Source: RS Component / BUORNS</description>
 <vertex x="-2.413" y="-0.381"/>
 </polygon>
 </symbol>
+<symbol name="FIDUCIAL">
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
+<polygon width="0.254" layer="94">
+<vertex x="0" y="0.635" curve="-90"/>
+<vertex x="0.635" y="0" curve="-90"/>
+<vertex x="0" y="-0.635" curve="-90"/>
+<vertex x="-0.635" y="0" curve="-90"/>
+</polygon>
+<wire x1="0" y1="1.27" x2="0" y2="3.175" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="3.175" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-3.175" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="0" y2="-3.175" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="SHORT" prefix="SH" uservalue="yes">
@@ -17460,6 +17538,17 @@ Socket; RJ45; PIN:8; vertical, shielded, with LED and trafo</description>
 </technology>
 </technologies>
 </device>
+<device name="+MYRRA" package="PCB_TRAFO6VA_7.5W">
+<connects>
+<connect gate="G$1" pin="P1" pad="P1.1V P1_TEZ P2.1V"/>
+<connect gate="G$1" pin="P2" pad="P1.2V P2.2V P2_TEZ"/>
+<connect gate="G$1" pin="S1" pad="S1.1T S1.1V S2.1T S2.1V S2M"/>
+<connect gate="G$1" pin="S2" pad="S1.2T S1.2V S1M S2.2T S2.2V"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="VARISTOR" prefix="VAR" uservalue="yes">
@@ -18389,6 +18478,24 @@ Case TQFP48</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FIDUCIAL">
+<description>Fiducial mark for pick and place automation</description>
+<gates>
+<gate name="FD" symbol="FIDUCIAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FIDUCIAL">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_2" package="FIDUCIAL_DUAL">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -34491,7 +34598,7 @@ Marquardt</description>
 <part name="SUPPLY48" library="supply2" deviceset="GND" device=""/>
 <part name="R119" library="rcl" deviceset="R-EU_" device="R0805" value="10K"/>
 <part name="SUPPLY51" library="supply2" deviceset="GND" device=""/>
-<part name="TR2" library="EEZ_Lib1" deviceset="PCB_TRAFO6VA_TEZ+VPP" device="" value="TEZ6/D230/15V"/>
+<part name="TR2" library="EEZ_Lib1" deviceset="PCB_TRAFO6VA_TEZ+VPP" device="+MYRRA" value="TEZ6/D230/15V"/>
 <part name="VAR1" library="EEZ_Lib1" deviceset="VARISTOR" device="" value="S20K250"/>
 <part name="VAR2" library="EEZ_Lib1" deviceset="VARISTOR" device="" value="S20K250"/>
 <part name="C84" library="rcl" deviceset="C-EU" device="102-064X133" value="6n8 (X1)"/>
@@ -34810,6 +34917,12 @@ Marquardt</description>
 <part name="SW2" library="EEZ_Lib1" deviceset="TACT_SW" device="" value="1301.9316"/>
 <part name="D21" library="diode" deviceset="DIODE-" device="SOD323-W" value="BAS316"/>
 <part name="C97" library="MyLib6" deviceset="ECAP" device="PANASONIC_C" value="10u"/>
+<part name="U$11" library="EEZ_Lib1" deviceset="FIDUCIAL" device="_2"/>
+<part name="U$12" library="EEZ_Lib1" deviceset="FIDUCIAL" device="_2"/>
+<part name="U$13" library="EEZ_Lib1" deviceset="FIDUCIAL" device="_2"/>
+<part name="U$14" library="EEZ_Lib1" deviceset="FIDUCIAL" device="_2"/>
+<part name="U$15" library="EEZ_Lib1" deviceset="FIDUCIAL" device="_2"/>
+<part name="U$16" library="EEZ_Lib1" deviceset="FIDUCIAL" device="_2"/>
 </parts>
 <sheets>
 <sheet>
@@ -35164,6 +35277,8 @@ Marquardt</description>
 </instance>
 <instance part="L1" gate="-2" x="58.42" y="162.56"/>
 <instance part="L1" gate="-1" x="58.42" y="170.18"/>
+<instance part="U$11" gate="FD" x="157.48" y="5.08"/>
+<instance part="U$12" gate="FD" x="149.86" y="5.08"/>
 </instances>
 <busses>
 </busses>
@@ -39573,37 +39688,34 @@ Marquardt</description>
 <text x="6.985" y="107.95" size="1.778" layer="97" rot="MR180">5V power supply</text>
 <text x="6.985" y="176.53" size="1.778" layer="97" rot="MR180">AC input protection and soft-start/stand-by</text>
 <text x="10.16" y="157.48" size="1.778" layer="103">AC input (230V)</text>
-<text x="9.525" y="34.925" size="1.6764" layer="103">SAR1</text>
-<text x="9.525" y="24.765" size="1.6764" layer="103">VAR1, VAR2</text>
-<text x="9.525" y="22.225" size="1.6764" layer="103">ZD1, ZD2</text>
+<text x="6.985" y="34.925" size="1.6764" layer="103">SAR1</text>
+<text x="6.985" y="19.685" size="1.6764" layer="103">VAR1, VAR2</text>
+<text x="6.985" y="17.145" size="1.6764" layer="103">ZD1, ZD2</text>
 <text x="44.45" y="38.1" size="1.6764" layer="103">Code</text>
-<text x="26.67" y="38.1" size="1.6764" layer="103">Value</text>
-<text x="26.67" y="34.925" size="1.6764" layer="103">2027-23-BLF</text>
+<text x="24.13" y="38.1" size="1.6764" layer="103">Value</text>
+<text x="24.13" y="34.925" size="1.6764" layer="103">2027-23-BLF</text>
 <text x="44.45" y="34.925" size="1.6764" layer="103">Farnell: 1780455, TME: CG2-230L</text>
-<text x="26.67" y="24.765" size="1.6764" layer="103">S20K140</text>
-<text x="26.67" y="32.385" size="1.6764" layer="103">VPP28-180</text>
-<text x="44.45" y="27.305" size="1.6764" layer="103">Newark: 37B9209</text>
-<text x="44.45" y="24.765" size="1.6764" layer="103">Farnell: 1004387, TME: SIOV-S20K140</text>
-<wire x1="7.62" y1="40.64" x2="25.4" y2="40.64" width="0.1524" layer="103"/>
-<wire x1="25.4" y1="40.64" x2="43.18" y2="40.64" width="0.1524" layer="103"/>
+<text x="24.13" y="19.685" size="1.6764" layer="103">S20K140</text>
+<text x="24.13" y="32.385" size="1.6764" layer="103">VPP24-210</text>
+<text x="44.45" y="19.685" size="1.6764" layer="103">Farnell: 1004387, TME: SIOV-S20K140</text>
+<wire x1="5.08" y1="40.64" x2="22.86" y2="40.64" width="0.1524" layer="103"/>
+<wire x1="22.86" y1="40.64" x2="43.18" y2="40.64" width="0.1524" layer="103"/>
 <wire x1="43.18" y1="40.64" x2="87.63" y2="40.64" width="0.1524" layer="103"/>
 <wire x1="87.63" y1="40.64" x2="87.63" y2="37.465" width="0.1524" layer="103"/>
-<wire x1="87.63" y1="37.465" x2="87.63" y2="21.59" width="0.1524" layer="103"/>
-<wire x1="87.63" y1="21.59" x2="43.18" y2="21.59" width="0.1524" layer="103"/>
-<wire x1="43.18" y1="21.59" x2="25.4" y2="21.59" width="0.1524" layer="103"/>
-<wire x1="25.4" y1="21.59" x2="7.62" y2="21.59" width="0.1524" layer="103"/>
-<wire x1="7.62" y1="21.59" x2="7.62" y2="37.465" width="0.1524" layer="103"/>
-<wire x1="7.62" y1="37.465" x2="7.62" y2="40.64" width="0.1524" layer="103"/>
-<wire x1="25.4" y1="21.59" x2="25.4" y2="40.64" width="0.1524" layer="103"/>
-<wire x1="43.18" y1="21.59" x2="43.18" y2="40.64" width="0.1524" layer="103"/>
-<wire x1="7.62" y1="37.465" x2="87.63" y2="37.465" width="0.1524" layer="103"/>
-<text x="9.525" y="38.1" size="1.6764" layer="103">Name</text>
-<text x="6.985" y="41.91" size="1.6764" layer="103">115VAC option:</text>
-<text x="9.525" y="32.385" size="1.6764" layer="103">TR1</text>
-<text x="26.67" y="22.225" size="1.6764" layer="103">1.5KE200CA</text>
-<text x="44.45" y="22.225" size="1.6764" layer="103">Farnell: 1837117, TME: 1.5KE200CA</text>
-<text x="44.45" y="32.385" size="1.6764" layer="103">Digikey: 237-1086-ND</text>
-<text x="44.45" y="29.845" size="1.6764" layer="103">Mouser: 553-VPP28-180</text>
+<wire x1="87.63" y1="37.465" x2="87.63" y2="16.51" width="0.1524" layer="103"/>
+<wire x1="87.63" y1="16.51" x2="43.18" y2="16.51" width="0.1524" layer="103"/>
+<wire x1="43.18" y1="16.51" x2="22.86" y2="16.51" width="0.1524" layer="103"/>
+<wire x1="22.86" y1="16.51" x2="5.08" y2="16.51" width="0.1524" layer="103"/>
+<wire x1="5.08" y1="16.51" x2="5.08" y2="37.465" width="0.1524" layer="103"/>
+<wire x1="5.08" y1="37.465" x2="5.08" y2="40.64" width="0.1524" layer="103"/>
+<wire x1="22.86" y1="16.51" x2="22.86" y2="40.64" width="0.1524" layer="103"/>
+<wire x1="43.18" y1="16.51" x2="43.18" y2="40.64" width="0.1524" layer="103"/>
+<wire x1="5.08" y1="37.465" x2="87.63" y2="37.465" width="0.1524" layer="103"/>
+<text x="6.985" y="38.1" size="1.6764" layer="103">Name</text>
+<text x="4.445" y="41.91" size="1.6764" layer="103">115VAC option:</text>
+<text x="6.985" y="32.385" size="1.6764" layer="103">TR2</text>
+<text x="24.13" y="17.145" size="1.6764" layer="103">1.5KE200CA</text>
+<text x="44.45" y="17.145" size="1.6764" layer="103">Farnell: 1837117, TME: 1.5KE200CA</text>
 <circle x="232.41" y="67.31" radius="0.635" width="0.1524" layer="101"/>
 <circle x="232.41" y="69.85" radius="0.635" width="0.1524" layer="101"/>
 <text x="230.505" y="70.485" size="1.4224" layer="101" rot="R180">PWR_DIRECT (Input) 3</text>
@@ -39631,6 +39743,12 @@ Marquardt</description>
 <text x="2.54" y="154.94" size="1.4224" layer="103">Use e.g. Schurter 4303.6090 IEC inlet</text>
 <text x="2.54" y="152.4" size="1.4224" layer="103">or Schurter KM00.1105.11 IEC intlet</text>
 <text x="2.54" y="149.86" size="1.4224" layer="103">with Schurter 4301.1403 fuse drawer</text>
+<text x="44.45" y="22.225" size="1.6764" layer="103">Farnell: 2469211</text>
+<text x="44.45" y="32.385" size="1.6764" layer="103">Digikey: 237-1085-ND</text>
+<text x="44.45" y="29.845" size="1.6764" layer="103">Mouser: 553-VPP24-210</text>
+<text x="24.13" y="24.765" size="1.6764" layer="103">or AC/DC module</text>
+<text x="44.45" y="27.305" size="1.6764" layer="103">Newark: 93F8764</text>
+<text x="24.13" y="22.225" size="1.6764" layer="103">Myrra 47202</text>
 </plain>
 <instances>
 <instance part="C88" gate="G$1" x="81.28" y="81.28" smashed="yes">
@@ -39864,6 +39982,8 @@ Marquardt</description>
 <instance part="X5" gate="-3" x="193.04" y="144.78" smashed="yes" rot="R180">
 <attribute name="NAME" x="199.39" y="143.891" size="1.778" layer="95"/>
 </instance>
+<instance part="U$13" gate="FD" x="149.86" y="5.08"/>
+<instance part="U$14" gate="FD" x="157.48" y="5.08"/>
 </instances>
 <busses>
 </busses>
@@ -40360,7 +40480,7 @@ Marquardt</description>
 <plain>
 <wire x1="177.8" y1="38.1" x2="177.8" y2="81.28" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="177.8" y1="81.28" x2="157.48" y2="81.28" width="0.1524" layer="97" style="shortdash"/>
-<text x="6.985" y="13.97" size="1.27" layer="103">Note 2.1: Mount X4 and X8 on the opposite (top) side of the PCB. Use 14 mm (e.g. Bossard B3X14/BN3320) for enclosure with 3 mm rear panel</text>
+<text x="6.985" y="13.97" size="1.27" layer="103">Note 7.1: Mount X4 and X8 on the opposite (top) side of the PCB. Use 14 mm (e.g. Bossard B3X14/BN3320) for enclosure with 3 mm rear panel</text>
 <text x="164.465" y="29.845" size="2.54" layer="94" font="vector">Ethernet and USB PCB connectors</text>
 <text x="164.465" y="26.035" size="2.54" layer="94" font="vector">12VDC fan driver (max. 300 mA)</text>
 <rectangle x1="23.495" y1="121.285" x2="48.26" y2="144.145" layer="97"/>
@@ -41096,9 +41216,9 @@ Marquardt</description>
 <wire x1="2.54" y1="96.52" x2="101.6" y2="96.52" width="0.1524" layer="97" style="shortdash"/>
 <text x="189.23" y="82.55" size="1.4224" layer="104">Require SPI_MODE0</text>
 <text x="2.54" y="2.54" size="1.778" layer="94">Licensed under the TAPR Open Hardware License (www.tapr.org/OHL)</text>
-<text x="104.14" y="2.54" size="1.4224" layer="103">Note 1.1: Solder X1 and X3 on the PCB's opposite side</text>
-<text x="78.74" y="147.32" size="1.4224" layer="103">See Note 1.1</text>
-<text x="76.2" y="66.04" size="1.4224" layer="103">See Note 1.1</text>
+<text x="104.14" y="2.54" size="1.4224" layer="103">Note 8.1: Solder X1 and X3 on the PCB's opposite side</text>
+<text x="78.74" y="147.32" size="1.4224" layer="103">See Note 8.1</text>
+<text x="76.2" y="66.04" size="1.4224" layer="103">See Note 8.1</text>
 <circle x="109.22" y="36.83" radius="0.635" width="0.1524" layer="101"/>
 <circle x="106.68" y="36.83" radius="0.635" width="0.1524" layer="101"/>
 <text x="126.365" y="55.245" size="1.4224" layer="101">3 NTC (Input)</text>
@@ -41541,6 +41661,8 @@ Marquardt</description>
 <attribute name="VALUE" x="146.05" y="112.141" size="1.778" layer="96"/>
 <attribute name="PART" x="146.05" y="114.3" size="1.778" layer="95"/>
 </instance>
+<instance part="U$15" gate="FD" x="157.48" y="12.7"/>
+<instance part="U$16" gate="FD" x="157.48" y="5.08"/>
 </instances>
 <busses>
 </busses>
@@ -43858,7 +43980,7 @@ Marquardt</description>
 <text x="142.24" y="121.92" size="1.778" layer="97">TFT touch scrreen with SD-card</text>
 <text x="5.08" y="116.84" size="1.778" layer="97">Ethernet</text>
 <text x="206.375" y="153.67" size="1.778" layer="103">Temp in</text>
-<text x="167.64" y="40.64" size="1.4224" layer="103">Solder LCD1 on the PCB's opposite side</text>
+<text x="167.64" y="40.64" size="1.4224" layer="103">Solder LCD1 socket on the PCB's opposite side</text>
 <text x="87.63" y="133.35" size="1.4224" layer="104">Require SPI_MODE0</text>
 <text x="26.67" y="133.35" size="1.4224" layer="104">Require SPI_MODE0</text>
 <text x="52.705" y="82.55" size="1.4224" layer="104">Require SPI_MODE0</text>

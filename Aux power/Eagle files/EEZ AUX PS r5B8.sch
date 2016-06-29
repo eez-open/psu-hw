@@ -88,6 +88,7 @@
 <layer number="111" name="111" color="7" fill="1" visible="no" active="no"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="113" name="ReferenceLS" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="114" name="EEZ" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="7" fill="1" visible="no" active="no"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="no"/>
@@ -8417,6 +8418,33 @@ Farnell: &lt;b&gt;1004357&lt;/b&gt;</description>
 <pad name="S1M" x="-12.5" y="5" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
 <pad name="S2M" x="-12.5" y="-5" drill="1.2" diameter="2.54" shape="octagon" rot="R180"/>
 </package>
+<package name="FIDUCIAL_DUAL">
+<smd name="T" x="0" y="0" dx="1.016" dy="1.016" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="B" x="0" y="0" dx="1.016" dy="1.016" layer="16" roundness="100" rot="R180" stop="no" cream="no"/>
+<polygon width="0.127" layer="29">
+<vertex x="0" y="1.27" curve="-90"/>
+<vertex x="1.27" y="0" curve="-90"/>
+<vertex x="0" y="-1.27" curve="-90"/>
+<vertex x="-1.27" y="0" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="0" y="1.27" curve="-90"/>
+<vertex x="1.27" y="0" curve="-90"/>
+<vertex x="0" y="-1.27" curve="-90"/>
+<vertex x="-1.27" y="0" curve="-90"/>
+</polygon>
+<circle x="0" y="0" radius="1.27" width="0.127" layer="41"/>
+<circle x="0" y="0" radius="1.27" width="0.127" layer="42"/>
+</package>
+<package name="FIDUCIAL">
+<smd name="T" x="0" y="0" dx="1.016" dy="1.016" layer="1" roundness="100" stop="no" cream="no"/>
+<polygon width="0.127" layer="29">
+<vertex x="0" y="1.27" curve="-90"/>
+<vertex x="1.27" y="0" curve="-90"/>
+<vertex x="0" y="-1.27" curve="-90"/>
+<vertex x="-1.27" y="0" curve="-90"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="L">
@@ -8966,6 +8994,19 @@ Farnell: &lt;b&gt;1004357&lt;/b&gt;</description>
 <text x="-5.08" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="P$1" x="-5.08" y="0" visible="off" length="short"/>
 <pin name="P$2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+</symbol>
+<symbol name="FIDUCIAL">
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
+<polygon width="0.254" layer="94">
+<vertex x="0" y="0.635" curve="-90"/>
+<vertex x="0.635" y="0" curve="-90"/>
+<vertex x="0" y="-0.635" curve="-90"/>
+<vertex x="-0.635" y="0" curve="-90"/>
+</polygon>
+<wire x1="0" y1="1.27" x2="0" y2="3.175" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="3.175" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-3.175" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="0" y2="-3.175" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -9690,6 +9731,24 @@ Regulators</description>
 <connect gate="G$1" pin="VI" pad="1"/>
 <connect gate="G$1" pin="VO" pad="2"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FIDUCIAL">
+<description>Fiducial mark for pick and place automation</description>
+<gates>
+<gate name="FD" symbol="FIDUCIAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FIDUCIAL">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_2" package="FIDUCIAL_DUAL">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -12019,7 +12078,7 @@ Farnell: 2112873</description>
 <part name="SUPPLY48" library="supply2" deviceset="GND" device=""/>
 <part name="R119" library="rcl" deviceset="R-EU_" device="R0805" value="10K"/>
 <part name="SUPPLY51" library="supply2" deviceset="GND" device=""/>
-<part name="TR2" library="EEZ_Lib1" deviceset="PCB_TRAFO6VA_TEZ+VPP" device="+MYRRA" value="TEZ6/D230/12V"/>
+<part name="TR2" library="EEZ_Lib1" deviceset="PCB_TRAFO6VA_TEZ+VPP" device="+MYRRA" value="TEZ6/D230/15V"/>
 <part name="VAR1" library="EEZ_Lib1" deviceset="VARISTOR" device="" value="S20K250"/>
 <part name="VAR2" library="EEZ_Lib1" deviceset="VARISTOR" device="" value="S20K250"/>
 <part name="C84" library="rcl" deviceset="C-EU" device="102-064X133" value="6n8 (X1)"/>
@@ -12042,6 +12101,8 @@ Farnell: 2112873</description>
 <part name="C102" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="D21" library="diode" deviceset="DIODE-" device="SOD323-W" value="BAS316"/>
 <part name="C97" library="MyLib6" deviceset="ECAP" device="PANASONIC_C" value="10u"/>
+<part name="U$13" library="EEZ_Lib1" deviceset="FIDUCIAL" device="_2"/>
+<part name="U$14" library="EEZ_Lib1" deviceset="FIDUCIAL" device="_2"/>
 </parts>
 <sheets>
 <sheet>
@@ -12055,6 +12116,7 @@ Farnell: 2112873</description>
 <text x="233.68" y="163.83" size="1.778" layer="97">Line out</text>
 <text x="233.68" y="118.11" size="1.778" layer="97">Neutral out</text>
 <text x="45.085" y="145.415" size="1.778" layer="96" rot="R180">or 2027-47-BLF</text>
+<rectangle x1="156.845" y1="71.12" x2="168.275" y2="84.455" layer="97"/>
 <text x="86.36" y="88.265" size="1.27" layer="96">(LQH32PN2R2NN0L)</text>
 <polygon width="0.1524" layer="101">
 <vertex x="220.345" y="52.705"/>
@@ -12087,33 +12149,6 @@ Farnell: 2112873</description>
 <text x="6.985" y="107.95" size="1.778" layer="97" rot="MR180">5V power supply</text>
 <text x="6.985" y="176.53" size="1.778" layer="97" rot="MR180">AC input protection and soft-start/stand-by</text>
 <text x="10.16" y="157.48" size="1.778" layer="103">AC input (230V)</text>
-<circle x="232.41" y="67.31" radius="0.635" width="0.1524" layer="101"/>
-<circle x="232.41" y="69.85" radius="0.635" width="0.1524" layer="101"/>
-<text x="230.505" y="70.485" size="1.4224" layer="101" rot="R180">PWR_DIRECT (Input) 3</text>
-<text x="230.505" y="67.945" size="1.4224" layer="101" rot="R180">FAN_SENSE (Output) 5</text>
-<wire x1="236.22" y1="60.96" x2="231.14" y2="60.96" width="0.1524" layer="101"/>
-<wire x1="231.14" y1="60.96" x2="231.14" y2="73.66" width="0.1524" layer="101"/>
-<wire x1="231.14" y1="73.66" x2="236.22" y2="73.66" width="0.1524" layer="101"/>
-<wire x1="236.22" y1="73.66" x2="236.22" y2="60.96" width="0.1524" layer="101"/>
-<circle x="232.41" y="64.77" radius="0.635" width="0.1524" layer="101"/>
-<text x="230.505" y="65.405" size="1.4224" layer="101" rot="R180">Sync (Output) 7</text>
-<circle x="234.95" y="69.85" radius="0.635" width="0.1524" layer="101"/>
-<text x="236.855" y="69.215" size="1.4224" layer="101">4 PWR_SSTART (Input)</text>
-<circle x="234.95" y="67.31" radius="0.635" width="0.1524" layer="101"/>
-<circle x="234.95" y="64.77" radius="0.635" width="0.1524" layer="101"/>
-<text x="236.855" y="66.675" size="1.4224" layer="101">6 FAN_PWM (Input)</text>
-<text x="236.855" y="64.135" size="1.4224" layer="101">8 +5V (Output)</text>
-<circle x="232.41" y="72.39" radius="0.635" width="0.1524" layer="101"/>
-<text x="230.505" y="73.025" size="1.4224" layer="101" rot="R180">Gnd 1</text>
-<circle x="234.95" y="72.39" radius="0.635" width="0.1524" layer="101"/>
-<text x="236.855" y="71.755" size="1.4224" layer="101">2 Gnd</text>
-<circle x="232.41" y="62.23" radius="0.635" width="0.1524" layer="101"/>
-<text x="230.505" y="62.865" size="1.4224" layer="101" rot="R180">Gnd 9</text>
-<circle x="234.95" y="62.23" radius="0.635" width="0.1524" layer="101"/>
-<text x="236.855" y="61.595" size="1.4224" layer="101">10 +5V (Output)</text>
-<text x="2.54" y="154.94" size="1.4224" layer="103">Use e.g. Schurter 4303.6090 IEC inlet</text>
-<text x="2.54" y="152.4" size="1.4224" layer="103">or Schurter KM00.1105.11 IEC intlet</text>
-<text x="2.54" y="149.86" size="1.4224" layer="103">with Schurter 4301.1403 fuse drawer</text>
 <text x="6.985" y="34.925" size="1.6764" layer="103">SAR1</text>
 <text x="6.985" y="19.685" size="1.6764" layer="103">VAR1, VAR2</text>
 <text x="6.985" y="17.145" size="1.6764" layer="103">ZD1, ZD2</text>
@@ -12142,6 +12177,33 @@ Farnell: 2112873</description>
 <text x="6.985" y="32.385" size="1.6764" layer="103">TR2</text>
 <text x="24.13" y="17.145" size="1.6764" layer="103">1.5KE200CA</text>
 <text x="44.45" y="17.145" size="1.6764" layer="103">Farnell: 1837117, TME: 1.5KE200CA</text>
+<circle x="232.41" y="67.31" radius="0.635" width="0.1524" layer="101"/>
+<circle x="232.41" y="69.85" radius="0.635" width="0.1524" layer="101"/>
+<text x="230.505" y="70.485" size="1.4224" layer="101" rot="R180">PWR_DIRECT (Input) 3</text>
+<text x="230.505" y="67.945" size="1.4224" layer="101" rot="R180">FAN_SENSE (Output) 5</text>
+<wire x1="236.22" y1="60.96" x2="231.14" y2="60.96" width="0.1524" layer="101"/>
+<wire x1="231.14" y1="60.96" x2="231.14" y2="73.66" width="0.1524" layer="101"/>
+<wire x1="231.14" y1="73.66" x2="236.22" y2="73.66" width="0.1524" layer="101"/>
+<wire x1="236.22" y1="73.66" x2="236.22" y2="60.96" width="0.1524" layer="101"/>
+<circle x="232.41" y="64.77" radius="0.635" width="0.1524" layer="101"/>
+<text x="230.505" y="65.405" size="1.4224" layer="101" rot="R180">Sync (Output) 7</text>
+<circle x="234.95" y="69.85" radius="0.635" width="0.1524" layer="101"/>
+<text x="236.855" y="69.215" size="1.4224" layer="101">4 PWR_SSTART (Input)</text>
+<circle x="234.95" y="67.31" radius="0.635" width="0.1524" layer="101"/>
+<circle x="234.95" y="64.77" radius="0.635" width="0.1524" layer="101"/>
+<text x="236.855" y="66.675" size="1.4224" layer="101">6 FAN_PWM (Input)</text>
+<text x="236.855" y="64.135" size="1.4224" layer="101">8 +5V (Output)</text>
+<circle x="232.41" y="72.39" radius="0.635" width="0.1524" layer="101"/>
+<text x="230.505" y="73.025" size="1.4224" layer="101" rot="R180">Gnd 1</text>
+<circle x="234.95" y="72.39" radius="0.635" width="0.1524" layer="101"/>
+<text x="236.855" y="71.755" size="1.4224" layer="101">2 Gnd</text>
+<circle x="232.41" y="62.23" radius="0.635" width="0.1524" layer="101"/>
+<text x="230.505" y="62.865" size="1.4224" layer="101" rot="R180">Gnd 9</text>
+<circle x="234.95" y="62.23" radius="0.635" width="0.1524" layer="101"/>
+<text x="236.855" y="61.595" size="1.4224" layer="101">10 +5V (Output)</text>
+<text x="2.54" y="154.94" size="1.4224" layer="103">Use e.g. Schurter 4303.6090 IEC inlet</text>
+<text x="2.54" y="152.4" size="1.4224" layer="103">or Schurter KM00.1105.11 IEC intlet</text>
+<text x="2.54" y="149.86" size="1.4224" layer="103">with Schurter 4301.1403 fuse drawer</text>
 <text x="44.45" y="22.225" size="1.6764" layer="103">Farnell: 2469211</text>
 <text x="44.45" y="32.385" size="1.6764" layer="103">Digikey: 237-1085-ND</text>
 <text x="44.45" y="29.845" size="1.6764" layer="103">Mouser: 553-VPP24-210</text>
@@ -12381,6 +12443,8 @@ Farnell: 2112873</description>
 <instance part="X5" gate="-3" x="193.04" y="144.78" smashed="yes" rot="R180">
 <attribute name="NAME" x="199.39" y="143.891" size="1.778" layer="95"/>
 </instance>
+<instance part="U$13" gate="FD" x="149.86" y="5.08"/>
+<instance part="U$14" gate="FD" x="157.48" y="5.08"/>
 </instances>
 <busses>
 </busses>
@@ -12877,7 +12941,7 @@ Farnell: 2112873</description>
 <plain>
 <wire x1="177.8" y1="38.1" x2="177.8" y2="81.28" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="177.8" y1="81.28" x2="157.48" y2="81.28" width="0.1524" layer="97" style="shortdash"/>
-<text x="6.985" y="13.97" size="1.27" layer="103">Note 2.1: Mount X4 and X8 on the opposite (top) side of the PCB. Use 14 mm (e.g. Bossard B3X14/BN3320) for enclosure with 3 mm rear panel</text>
+<text x="6.985" y="13.97" size="1.27" layer="103">Note 7.1: Mount X4 and X8 on the opposite (top) side of the PCB. Use 14 mm (e.g. Bossard B3X14/BN3320) for enclosure with 3 mm rear panel</text>
 <text x="164.465" y="29.845" size="2.54" layer="94" font="vector">Ethernet and USB PCB connectors</text>
 <text x="164.465" y="26.035" size="2.54" layer="94" font="vector">12VDC fan driver (max. 300 mA)</text>
 <rectangle x1="23.495" y1="121.285" x2="48.26" y2="144.145" layer="97"/>

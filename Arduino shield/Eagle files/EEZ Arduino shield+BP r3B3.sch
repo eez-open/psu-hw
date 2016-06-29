@@ -88,6 +88,7 @@
 <layer number="111" name="111" color="7" fill="1" visible="no" active="no"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="113" name="ReferenceLS" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="114" name="EEZ" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="7" fill="1" visible="no" active="no"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="no"/>
@@ -9900,6 +9901,33 @@ Source: RS Component / BUORNS</description>
 <vertex x="0.381" y="-0.381"/>
 </polygon>
 </package>
+<package name="FIDUCIAL_DUAL">
+<smd name="T" x="0" y="0" dx="1.016" dy="1.016" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="B" x="0" y="0" dx="1.016" dy="1.016" layer="16" roundness="100" rot="R180" stop="no" cream="no"/>
+<polygon width="0.127" layer="29">
+<vertex x="0" y="1.27" curve="-90"/>
+<vertex x="1.27" y="0" curve="-90"/>
+<vertex x="0" y="-1.27" curve="-90"/>
+<vertex x="-1.27" y="0" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="0" y="1.27" curve="-90"/>
+<vertex x="1.27" y="0" curve="-90"/>
+<vertex x="0" y="-1.27" curve="-90"/>
+<vertex x="-1.27" y="0" curve="-90"/>
+</polygon>
+<circle x="0" y="0" radius="1.27" width="0.127" layer="41"/>
+<circle x="0" y="0" radius="1.27" width="0.127" layer="42"/>
+</package>
+<package name="FIDUCIAL">
+<smd name="T" x="0" y="0" dx="1.016" dy="1.016" layer="1" roundness="100" stop="no" cream="no"/>
+<polygon width="0.127" layer="29">
+<vertex x="0" y="1.27" curve="-90"/>
+<vertex x="1.27" y="0" curve="-90"/>
+<vertex x="0" y="-1.27" curve="-90"/>
+<vertex x="-1.27" y="0" curve="-90"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="SHORT_H">
@@ -10929,6 +10957,19 @@ Source: RS Component / BUORNS</description>
 <vertex x="-2.921" y="0.127"/>
 <vertex x="-2.413" y="-0.381"/>
 </polygon>
+</symbol>
+<symbol name="FIDUCIAL">
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
+<polygon width="0.254" layer="94">
+<vertex x="0" y="0.635" curve="-90"/>
+<vertex x="0.635" y="0" curve="-90"/>
+<vertex x="0" y="-0.635" curve="-90"/>
+<vertex x="-0.635" y="0" curve="-90"/>
+</polygon>
+<wire x1="0" y1="1.27" x2="0" y2="3.175" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="3.175" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-3.175" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="0" y2="-3.175" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -12318,6 +12359,24 @@ Case TQFP48</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FIDUCIAL">
+<description>Fiducial mark for pick and place automation</description>
+<gates>
+<gate name="FD" symbol="FIDUCIAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FIDUCIAL">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_2" package="FIDUCIAL_DUAL">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -19090,6 +19149,8 @@ Marquardt</description>
 <part name="LED_O1" library="EEZ_Lib1" deviceset="LED" device="0805" value="HSMG-C170"/>
 <part name="LED_SP" library="EEZ_Lib1" deviceset="LED" device="0805" value="HSMH-C170"/>
 <part name="SW2" library="EEZ_Lib1" deviceset="TACT_SW" device="" value="1301.9316"/>
+<part name="U$15" library="EEZ_Lib1" deviceset="FIDUCIAL" device="_2"/>
+<part name="U$16" library="EEZ_Lib1" deviceset="FIDUCIAL" device="_2"/>
 </parts>
 <sheets>
 <sheet>
@@ -19115,9 +19176,9 @@ Marquardt</description>
 <wire x1="2.54" y1="96.52" x2="101.6" y2="96.52" width="0.1524" layer="97" style="shortdash"/>
 <text x="189.23" y="82.55" size="1.4224" layer="104">Require SPI_MODE0</text>
 <text x="2.54" y="2.54" size="1.778" layer="94">Licensed under the TAPR Open Hardware License (www.tapr.org/OHL)</text>
-<text x="104.14" y="2.54" size="1.4224" layer="103">Note 1.1: Solder X1 and X3 on the PCB's opposite side</text>
-<text x="78.74" y="147.32" size="1.4224" layer="103">See Note 1.1</text>
-<text x="76.2" y="66.04" size="1.4224" layer="103">See Note 1.1</text>
+<text x="104.14" y="2.54" size="1.4224" layer="103">Note 8.1: Solder X1 and X3 on the PCB's opposite side</text>
+<text x="78.74" y="147.32" size="1.4224" layer="103">See Note 8.1</text>
+<text x="76.2" y="66.04" size="1.4224" layer="103">See Note 8.1</text>
 <circle x="109.22" y="36.83" radius="0.635" width="0.1524" layer="101"/>
 <circle x="106.68" y="36.83" radius="0.635" width="0.1524" layer="101"/>
 <text x="126.365" y="55.245" size="1.4224" layer="101">3 NTC (Input)</text>
@@ -19560,6 +19621,8 @@ Marquardt</description>
 <attribute name="VALUE" x="146.05" y="112.141" size="1.778" layer="96"/>
 <attribute name="PART" x="146.05" y="114.3" size="1.778" layer="95"/>
 </instance>
+<instance part="U$15" gate="FD" x="157.48" y="12.7"/>
+<instance part="U$16" gate="FD" x="157.48" y="5.08"/>
 </instances>
 <busses>
 </busses>
@@ -21877,7 +21940,7 @@ Marquardt</description>
 <text x="142.24" y="121.92" size="1.778" layer="97">TFT touch scrreen with SD-card</text>
 <text x="5.08" y="116.84" size="1.778" layer="97">Ethernet</text>
 <text x="206.375" y="153.67" size="1.778" layer="103">Temp in</text>
-<text x="167.64" y="40.64" size="1.4224" layer="103">Solder LCD1 on the PCB's opposite side</text>
+<text x="167.64" y="40.64" size="1.4224" layer="103">Solder LCD1 socket on the PCB's opposite side</text>
 <text x="87.63" y="133.35" size="1.4224" layer="104">Require SPI_MODE0</text>
 <text x="26.67" y="133.35" size="1.4224" layer="104">Require SPI_MODE0</text>
 <text x="52.705" y="82.55" size="1.4224" layer="104">Require SPI_MODE0</text>

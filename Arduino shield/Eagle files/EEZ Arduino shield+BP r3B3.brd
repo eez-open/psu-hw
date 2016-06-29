@@ -30,7 +30,7 @@
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="13" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="13" fill="1" visible="no" active="yes"/>
@@ -2447,7 +2447,7 @@
 <wire x1="154.051" y1="27.432" x2="152.781" y2="26.162" width="2.54" layer="30"/>
 <wire x1="152.781" y1="26.162" x2="152.781" y2="23.8125" width="2.54" layer="30"/>
 <text x="254.889" y="7.8105" size="1.016" layer="21" ratio="10" rot="R90">1</text>
-<dimension x1="316" y1="0" x2="109" y2="-1" x3="212.5" y3="-6.5" layer="113" dtype="horizontal"/>
+<dimension x1="316" y1="0" x2="109" y2="-1" x3="212.5" y3="-10.5" layer="47" dtype="horizontal"/>
 <dimension x1="301.5" y1="9.5" x2="216.5" y2="10" x3="259" y3="-5" layer="47" dtype="horizontal"/>
 <dimension x1="138.714" y1="21.7" x2="147.2" y2="0" x3="140.3145" y3="10.85" layer="47" dtype="vertical"/>
 <dimension x1="184.914" y1="74" x2="180.05" y2="52.3" x3="186.5145" y3="63.15" layer="47" dtype="vertical"/>
@@ -2626,7 +2626,6 @@
 <text x="196.3055" y="31.004003125" size="1.27" layer="125" ratio="10">ZD10</text>
 <text x="130.5980125" y="28.781503125" size="1.27" layer="125" ratio="10">ZD11</text>
 <text x="186.309" y="67.31" size="1.016" layer="125" ratio="10">ZD12</text>
-<dimension x1="109" y1="74" x2="108" y2="0" x3="105.5" y3="37" layer="113" dtype="vertical"/>
 </plain>
 <libraries>
 <library name="rcl">
@@ -4379,6 +4378,24 @@ Source: RS Component / BUORNS</description>
 <wire x1="-0.9525" y1="-1.905" x2="-0.9525" y2="0" width="0.127" layer="39"/>
 <wire x1="-0.9525" y1="0" x2="-0.9525" y2="1.905" width="0.127" layer="39"/>
 <wire x1="-0.9525" y1="0" x2="0.9525" y2="0" width="0.127" layer="21"/>
+</package>
+<package name="FIDUCIAL_DUAL">
+<smd name="T" x="0" y="0" dx="1.016" dy="1.016" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="B" x="0" y="0" dx="1.016" dy="1.016" layer="16" roundness="100" rot="R180" stop="no" cream="no"/>
+<polygon width="0.127" layer="29">
+<vertex x="0" y="1.27" curve="-90"/>
+<vertex x="1.27" y="0" curve="-90"/>
+<vertex x="0" y="-1.27" curve="-90"/>
+<vertex x="-1.27" y="0" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="0" y="1.27" curve="-90"/>
+<vertex x="1.27" y="0" curve="-90"/>
+<vertex x="0" y="-1.27" curve="-90"/>
+<vertex x="-1.27" y="0" curve="-90"/>
+</polygon>
+<circle x="0" y="0" radius="1.27" width="0.127" layer="41"/>
+<circle x="0" y="0" radius="1.27" width="0.127" layer="42"/>
 </package>
 </packages>
 </library>
@@ -7355,6 +7372,8 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="306.1805" y="37.7425" size="1.27" layer="28" rot="MR180"/>
 <attribute name="NAME" x="312.4895" y="42.624" size="1.016" layer="26" ratio="10" rot="SMR0"/>
 </element>
+<element name="U$15" library="EEZ_Lib1" package="FIDUCIAL_DUAL" value="FIDUCIAL_2" x="313.436" y="71.628"/>
+<element name="U$16" library="EEZ_Lib1" package="FIDUCIAL_DUAL" value="FIDUCIAL_2" x="111.506" y="2.159"/>
 </elements>
 <signals>
 <signal name="GND" class="2">
@@ -7467,7 +7486,7 @@ design rules under a new name.</description>
 <via x="231.7115" y="23.368" extent="1-16" drill="0.6" shape="octagon"/>
 <wire x1="238.379" y1="11.176" x2="240.7285" y2="11.176" width="0.254" layer="1"/>
 <via x="216.916" y="27.6225" extent="1-16" drill="0.6" shape="octagon"/>
-<via x="313.2455" y="71.9455" extent="1-16" drill="0.6" shape="octagon"/>
+<via x="314.6425" y="69.2785" extent="1-16" drill="0.6" shape="octagon"/>
 <via x="293.6875" y="13.462" extent="1-16" drill="0.6" shape="octagon"/>
 <via x="258.0005" y="15.6845" extent="1-16" drill="0.6" shape="octagon"/>
 <via x="293.37" y="4.064" extent="1-16" drill="0.6" shape="octagon"/>
@@ -12085,15 +12104,15 @@ design rules under a new name.</description>
 <contactref element="MCU" pad="4"/>
 <wire x1="274.3708" y1="73.0123" x2="290.8935" y2="73.0123" width="0.254" layer="16"/>
 <via x="291.2745" y="72.644" extent="1-16" drill="0.6" shape="octagon"/>
-<wire x1="291.6555" y1="73.0123" x2="309.5117" y2="73.0123" width="0.254" layer="1"/>
+<wire x1="291.6555" y1="73.0123" x2="308.3687" y2="73.0123" width="0.254" layer="1"/>
 <wire x1="310.515" y1="57.912" x2="310.515" y2="58.1025" width="0.254" layer="1"/>
 <wire x1="310.515" y1="58.1025" x2="311.785" y2="59.3725" width="0.254" layer="1"/>
-<wire x1="311.785" y1="59.3725" x2="311.785" y2="70.739" width="0.254" layer="1"/>
+<wire x1="311.785" y1="59.3725" x2="311.785" y2="69.596" width="0.254" layer="1"/>
 <wire x1="291.6555" y1="73.0123" x2="291.2745" y2="72.644" width="0.254" layer="1"/>
 <wire x1="290.8935" y1="73.0123" x2="291.2745" y2="72.644" width="0.254" layer="16"/>
-<wire x1="309.5117" y1="73.0123" x2="311.785" y2="70.739" width="0.254" layer="1"/>
 <wire x1="274.3708" y1="73.0123" x2="272.912" y2="71.5535" width="0.254" layer="16"/>
 <wire x1="272.912" y1="71.412" x2="272.912" y2="71.5535" width="0.254" layer="16"/>
+<wire x1="308.3687" y1="73.0123" x2="311.785" y2="69.596" width="0.254" layer="1"/>
 </signal>
 <signal name="N$132">
 <contactref element="Q28" pad="1"/>

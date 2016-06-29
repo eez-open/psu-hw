@@ -88,6 +88,7 @@
 <layer number="111" name="111" color="7" fill="1" visible="no" active="no"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="113" name="ReferenceLS" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="114" name="EEZ" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="7" fill="1" visible="no" active="no"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="no"/>
@@ -11079,6 +11080,33 @@ Buerklin: &lt;b&gt;09 H 2400&lt;/b&gt;</description>
 <vertex x="0.381" y="-0.381"/>
 </polygon>
 </package>
+<package name="FIDUCIAL_DUAL">
+<smd name="T" x="0" y="0" dx="1.016" dy="1.016" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="B" x="0" y="0" dx="1.016" dy="1.016" layer="16" roundness="100" rot="R180" stop="no" cream="no"/>
+<polygon width="0.127" layer="29">
+<vertex x="0" y="1.27" curve="-90"/>
+<vertex x="1.27" y="0" curve="-90"/>
+<vertex x="0" y="-1.27" curve="-90"/>
+<vertex x="-1.27" y="0" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="0" y="1.27" curve="-90"/>
+<vertex x="1.27" y="0" curve="-90"/>
+<vertex x="0" y="-1.27" curve="-90"/>
+<vertex x="-1.27" y="0" curve="-90"/>
+</polygon>
+<circle x="0" y="0" radius="1.27" width="0.127" layer="41"/>
+<circle x="0" y="0" radius="1.27" width="0.127" layer="42"/>
+</package>
+<package name="FIDUCIAL">
+<smd name="T" x="0" y="0" dx="1.016" dy="1.016" layer="1" roundness="100" stop="no" cream="no"/>
+<polygon width="0.127" layer="29">
+<vertex x="0" y="1.27" curve="-90"/>
+<vertex x="1.27" y="0" curve="-90"/>
+<vertex x="0" y="-1.27" curve="-90"/>
+<vertex x="-1.27" y="0" curve="-90"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="SHORT_H">
@@ -11695,6 +11723,19 @@ Buerklin: &lt;b&gt;09 H 2400&lt;/b&gt;</description>
 <vertex x="-2.921" y="0.127"/>
 <vertex x="-2.413" y="-0.381"/>
 </polygon>
+</symbol>
+<symbol name="FIDUCIAL">
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
+<polygon width="0.254" layer="94">
+<vertex x="0" y="0.635" curve="-90"/>
+<vertex x="0.635" y="0" curve="-90"/>
+<vertex x="0" y="-0.635" curve="-90"/>
+<vertex x="-0.635" y="0" curve="-90"/>
+</polygon>
+<wire x1="0" y1="1.27" x2="0" y2="3.175" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="3.175" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-3.175" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="0" y2="-3.175" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -13095,6 +13136,24 @@ with open collector; LM139/LM239/LM339/LM2901/LM3302&lt;br&gt;</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FIDUCIAL">
+<description>Fiducial mark for pick and place automation</description>
+<gates>
+<gate name="FD" symbol="FIDUCIAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FIDUCIAL">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_2" package="FIDUCIAL_DUAL">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -22839,6 +22898,8 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <part name="C18" library="EEZ_Lib1" deviceset="ECAP" device="F" value="EEEFK1J101P"/>
 <part name="R28" library="rcl" deviceset="R-EU_" device="R2512" value="R080/3W"/>
 <part name="R29" library="rcl" deviceset="R-EU_" device="R2512" value="2R2/2W"/>
+<part name="U$11" library="EEZ_Lib1" deviceset="FIDUCIAL" device="_2"/>
+<part name="U$12" library="EEZ_Lib1" deviceset="FIDUCIAL" device="_2"/>
 </parts>
 <sheets>
 <sheet>
@@ -23193,6 +23254,8 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 </instance>
 <instance part="L1" gate="-2" x="58.42" y="162.56"/>
 <instance part="L1" gate="-1" x="58.42" y="170.18"/>
+<instance part="U$11" gate="FD" x="157.48" y="5.08"/>
+<instance part="U$12" gate="FD" x="149.86" y="5.08"/>
 </instances>
 <busses>
 </busses>
