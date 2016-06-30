@@ -68,7 +68,7 @@
 <layer number="127" name="_tValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="129" name="ac_dc" color="11" fill="1" visible="no" active="yes"/>
-<layer number="130" name="support" color="5" fill="1" visible="no" active="yes"/>
+<layer number="130" name="support" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="no"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="no"/>
 <layer number="133" name="vent_holes" color="7" fill="3" visible="yes" active="yes"/>
@@ -650,7 +650,7 @@ e.g. TME: RI-SOF-15129</text>
 <dimension x1="151" y1="428.5" x2="151" y2="422" x3="154.5" y3="425.25" textsize="2" layer="47" dtype="vertical"/>
 <dimension x1="175.5" y1="422" x2="216.5" y2="399" x3="196" y3="396.5" textsize="2" layer="47" dtype="horizontal"/>
 <dimension x1="124.5" y1="424.5" x2="175.5" y2="399" x3="150" y3="396.5" textsize="2" layer="47" dtype="horizontal"/>
-<text x="3.5" y="435" size="5" layer="47" ratio="10">Rear panel (back view)</text>
+<text x="3.5" y="435" size="5" layer="47" ratio="10">Rear panel for AC inlet KM00.1105.11 (back view)</text>
 <text x="6.5" y="-14.5" size="5" layer="47" ratio="10">Front panel (frontal view)</text>
 <dimension x1="547" y1="52.5" x2="567" y2="38" x3="557" y3="36.5" textsize="2" textratio="10" layer="47" dtype="horizontal"/>
 <text x="537" y="30" size="2.5" layer="47" ratio="10">Suggested distance for front foot</text>
@@ -660,14 +660,14 @@ e.g. TME: RI-SOF-15129</text>
 <dimension x1="30.5" y1="420" x2="46" y2="415" x3="34" y3="417.5" textsize="2" layer="139" dtype="vertical"/>
 <wire x1="97.5" y1="420" x2="37.5" y2="420" width="0.1" layer="139" style="shortdash"/>
 <wire x1="37.5" y1="420" x2="37.5" y2="360" width="0.1" layer="139" style="shortdash"/>
-<wire x1="96.5" y1="383" x2="74.5" y2="361" width="0.1" layer="117" curve="-90"/>
-<wire x1="74.5" y1="361" x2="60.5" y2="361" width="0.1" layer="117"/>
-<wire x1="60.5" y1="361" x2="38.5" y2="383" width="0.1" layer="117" curve="-90"/>
-<wire x1="38.5" y1="383" x2="38.5" y2="397" width="0.1" layer="117"/>
-<wire x1="38.5" y1="397" x2="60.5" y2="419" width="0.1" layer="117" curve="-90"/>
-<wire x1="60.5" y1="419" x2="74.5" y2="419" width="0.1" layer="117"/>
-<wire x1="74.5" y1="419" x2="96.5" y2="397" width="0.1" layer="117" curve="-90"/>
-<wire x1="96.5" y1="397" x2="96.5" y2="383" width="0.1" layer="117"/>
+<wire x1="96.5" y1="383" x2="74.5" y2="361" width="0.1" layer="20" curve="-90"/>
+<wire x1="74.5" y1="361" x2="60.5" y2="361" width="0.1" layer="20"/>
+<wire x1="60.5" y1="361" x2="38.5" y2="383" width="0.1" layer="20" curve="-90"/>
+<wire x1="38.5" y1="383" x2="38.5" y2="397" width="0.1" layer="20"/>
+<wire x1="38.5" y1="397" x2="60.5" y2="419" width="0.1" layer="20" curve="-90"/>
+<wire x1="60.5" y1="419" x2="74.5" y2="419" width="0.1" layer="20"/>
+<wire x1="74.5" y1="419" x2="96.5" y2="397" width="0.1" layer="20" curve="-90"/>
+<wire x1="96.5" y1="397" x2="96.5" y2="383" width="0.1" layer="20"/>
 <dimension x1="90.25" y1="415" x2="94.75" y2="415" x3="92.5" y3="418" textsize="1.778" layer="47" dtype="diameter"/>
 <wire x1="325" y1="306" x2="450" y2="306" width="0.1" layer="20"/>
 <wire x1="325" y1="305" x2="450" y2="305" width="0.1" layer="20"/>
@@ -744,11 +744,12 @@ e.g. TME: RI-SOF-15129</text>
 <wire x1="336.5" y1="305" x2="336.5" y2="306" width="0.1" layer="20"/>
 <wire x1="333.5" y1="305" x2="333.5" y2="306" width="0.1" layer="20"/>
 <dimension x1="17" y1="247" x2="12.5" y2="244.5" x3="14.75" y3="244.5" textsize="2" layer="47" dtype="horizontal"/>
-<dimension x1="34.5" y1="157.5" x2="12.5" y2="157" x3="23.5" y3="150.5" textsize="2" layer="47" dtype="horizontal"/>
+<dimension x1="32.5" y1="144" x2="11.5" y2="152" x3="22" y3="138" textsize="2" layer="120" dtype="horizontal"/>
 <circle x="40.5" y="152" radius="1.55" width="0.1" layer="138"/>
 <circle x="145.5" y="152" radius="1.55" width="0.1" layer="138"/>
 <dimension x1="15.45" y1="249" x2="18.55" y2="249" x3="17" y3="251.5" textsize="1.778" layer="47" dtype="diameter"/>
 <dimension x1="30.95" y1="271" x2="34.05" y2="271" x3="32.5" y3="273" textsize="1.778" layer="47" dtype="diameter"/>
+<dimension x1="146.5" y1="151" x2="125.5" y2="147.5" x3="136" y3="138" textsize="2" layer="120" dtype="horizontal"/>
 </plain>
 <libraries>
 </libraries>
