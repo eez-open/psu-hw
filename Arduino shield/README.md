@@ -1,7 +1,9 @@
 This product is made available under the terms of the TAPR Open Hardware License. See the LICENSE.TXT file that accompanies this distribution for the full text of the license.
 
 **Revision history:**
-
+* 2016-07-23: **r3B4**
+	- Corrected WATCHDOG functionality, added possibility to choose between RESET and Power off if MCU stalled
+	- Optimized number of parts size and values, renumbered reference designators
 * 2016-06-14: **r3B3**
     - Removed suport for Mega2560 - only 3.3 V board such as Due (and hopefully soon [STAR - OTTO](http://http://www.arduino.org/products/boards/arduino-star-otto)) is supported
     - TFT touch screen rotated (landscape view) for housing in more compact (2U height) enclosure. Tested with both SSD1289 and ILI9341 display controllers
