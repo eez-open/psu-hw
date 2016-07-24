@@ -10912,7 +10912,7 @@ Farnell: 2112873</description>
 <part name="R114" library="rcl" deviceset="R-EU_" device="R0805" value="220R"/>
 <part name="R108" library="rcl" deviceset="R-EU_" device="R2512" value="330R/2W"/>
 <part name="C86" library="rcl" deviceset="C-EU" device="075-052X106" value="47n/400V"/>
-<part name="R107" library="EEZ_Lib1" deviceset="R_EU" device="7W" value="15R/7W"/>
+<part name="R107" library="EEZ_Lib1" deviceset="R_EU" device="7W" value="22R/7W"/>
 <part name="KK1" library="EEZ_Lib1" deviceset="SK145" device="" value="SK 145/37,5"/>
 <part name="OK1" library="EEZ_Lib1" deviceset="MOC305X" device="" value="MOC3052"/>
 <part name="OK2" library="optocoupler" deviceset="MOC30*" device="S" technology="33" value="MOC3062">

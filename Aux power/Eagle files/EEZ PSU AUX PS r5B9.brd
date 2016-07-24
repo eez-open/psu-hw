@@ -3885,7 +3885,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="15.24" y="11.43" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="17.0815" y="10.9855" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="R107" library="EEZ_Lib1" package="R_0913" value="15R/7W" x="34.671" y="10.541" smashed="yes" rot="R270">
+<element name="R107" library="EEZ_Lib1" package="R_0913" value="22R/7W" x="34.671" y="10.541" smashed="yes" rot="R270">
 <attribute name="NAME" x="31.8135" y="1.8034" size="1.6764" layer="25" ratio="10"/>
 <attribute name="VALUE" x="31.115" y="10.9093" size="1.27" layer="27" ratio="10"/>
 </element>
