@@ -1,4 +1,10 @@
 **Revision history:**
+* 2016-07-24: **r5B9**
+	- Replaced PCB iron core transformer with AC/DC module 12 V/5 W that support 115 / 230 VAC power input (bridge rectifier, filter capacitor and 12 V LDO for fan is not needed any more)
+	- Changed Ethernet RJ-45 connector model and pinouts (X7)
+	- Changed power input connector type (X4)
+	- Added triac pull-down resistors R110, R111
+	- Optimized number of parts size and values, renumbered reference designators
 * 2016-06-14: **r5B8**
     - Master sync and power connector merged into one 10-pin IDC
     - Added place for optional USB isolator ADuM3160
