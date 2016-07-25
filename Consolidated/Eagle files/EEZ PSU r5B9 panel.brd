@@ -36,7 +36,7 @@
 <layer number="26" name="bNames" color="13" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="10" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="11" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -87,7 +87,7 @@
 <layer number="110" name="110" color="7" fill="1" visible="no" active="no"/>
 <layer number="111" name="111" color="7" fill="1" visible="no" active="no"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="no" active="no"/>
-<layer number="113" name="dimension2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="dimension2" color="7" fill="1" visible="no" active="yes"/>
 <layer number="115" name="border" color="12" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="7" fill="1" visible="no" active="no"/>
 <layer number="117" name="bridges" color="10" fill="1" visible="no" active="yes"/>
@@ -6694,529 +6694,6 @@
 <wire x1="101.458" y1="132.1435" x2="103.871" y2="132.1435" width="0.254" layer="51"/>
 <wire x1="104.8235" y1="131.064" x2="104.76" y2="131.064" width="0.254" layer="51"/>
 <wire x1="104.76" y1="131.064" x2="103.5535" y2="132.2705" width="0.254" layer="51"/>
-<text x="136.1925" y="104.8385" size="1.27" layer="125" ratio="10">C1</text>
-<text x="137.78" y="95.1865" size="1.27" layer="125">C2</text>
-<text x="139.304" y="104.902" size="1.27" layer="125" ratio="10">C3</text>
-<text x="133.7795" y="135.4455" size="1.778" layer="126" ratio="10" rot="MR0">C4</text>
-<text x="133.7795" y="117.348" size="1.778" layer="126" ratio="10" rot="MR0">C5</text>
-<text x="101.585" y="98.4885" size="1.016" layer="125" ratio="10">C6</text>
-<text x="104.5695" y="98.4885" size="1.016" layer="125" ratio="10">C7</text>
-<text x="98.2195" y="98.425" size="1.016" layer="125" ratio="10">C8</text>
-<text x="99.1085" y="110.8075" size="1.016" layer="125" ratio="10">C9</text>
-<text x="107.8715" y="114.554" size="1.016" layer="125" ratio="10">C10</text>
-<text x="106.538" y="122.174" size="1.016" layer="125" ratio="10" rot="R90">C11</text>
-<text x="102.5375" y="87.884" size="1.016" layer="125" ratio="10">C12</text>
-<text x="86.4085" y="95.0595" size="1.016" layer="125" ratio="10" rot="R180">C13</text>
-<text x="84.5035" y="97.3455" size="1.016" layer="125" ratio="10" rot="R180">C14</text>
-<text x="82.027" y="98.4885" size="0.889" layer="125" ratio="10">C15</text>
-<text x="81.5825" y="77.8256" size="1.27" layer="125" ratio="10" rot="SR0">C16</text>
-<text x="113.777" y="94.742" size="1.016" layer="125" ratio="10">C17</text>
-<text x="105.5601" y="84.4804" size="1.27" layer="125" ratio="10" rot="SR90">C18</text>
-<text x="87.1705" y="90.424" size="0.889" layer="125" ratio="10">C19</text>
-<text x="99.3625" y="87.884" size="1.016" layer="125" ratio="10">C20</text>
-<text x="99.3625" y="125.349" size="1.016" layer="125" ratio="10">C21</text>
-<text x="99.426" y="126.365" size="1.016" layer="125" ratio="10" rot="R180">C22</text>
-<text x="86.853" y="117.7925" size="1.016" layer="125" ratio="10" rot="R270">C23</text>
-<text x="81.9635" y="144.399" size="1.016" layer="125" ratio="10">C24</text>
-<text x="74.788" y="135.9535" size="1.016" layer="125" ratio="10" rot="R270">C25</text>
-<text x="72.248" y="127.127" size="1.016" layer="125" ratio="10" rot="R180">C26</text>
-<text x="76.7819" y="135.8519" size="1.016" layer="125" ratio="10" rot="SR90">C27</text>
-<text x="101.331" y="126.746" size="1.016" layer="125" ratio="10">C28</text>
-<text x="97.775" y="139.5095" size="1.016" layer="125" ratio="10" rot="R180">C29</text>
-<text x="79.5505" y="112.9665" size="1.016" layer="125" ratio="10">C30</text>
-<text x="96.3145" y="131.6355" size="1.016" layer="125" ratio="10">C31</text>
-<text x="75.8675" y="123.317" size="1.016" layer="125" ratio="10" rot="R270">C32</text>
-<text x="92.949" y="148.717" size="1.016" layer="125" ratio="10" rot="R180">C33</text>
-<text x="103.49" y="146.8755" size="1.016" layer="125" ratio="10">C34</text>
-<text x="85.8116" y="129.5146" size="1.27" layer="125" ratio="10" rot="SR270">C35</text>
-<text x="88.1865" y="132.207" size="1.016" layer="125" ratio="10">C36</text>
-<text x="95.489" y="134.112" size="1.016" layer="125" ratio="10" rot="R90">C37</text>
-<text x="88.9485" y="127.1905" size="1.016" layer="125" ratio="10" rot="R270">C38</text>
-<text x="90.917" y="127.1905" size="1.016" layer="125" ratio="10" rot="R270">C39</text>
-<text x="102.728" y="143.764" size="0.889" layer="125" ratio="10" rot="R270">C40</text>
-<text x="108.824" y="134.0485" size="1.016" layer="125" ratio="10">C41</text>
-<text x="75.042" y="144.8435" size="1.016" layer="125" ratio="10">C42</text>
-<text x="62.215" y="140.6525" size="1.016" layer="125" ratio="10">C43</text>
-<text x="79.106" y="90.424" size="1.016" layer="125" ratio="10" rot="R90">C44</text>
-<text x="65.39" y="83.439" size="0.889" layer="125" ratio="10">C45</text>
-<text x="30.832003125" y="114.07650625" size="1.016" layer="125" ratio="10" rot="R180">C46</text>
-<text x="35.6085" y="129.159" size="1.016" layer="125" ratio="10" rot="R180">C47</text>
-<text x="36.107" y="118.80100625" size="0.889" layer="125" ratio="10" rot="R270">C48</text>
-<text x="36.145990625" y="126.03449375" size="0.889" layer="125" ratio="10" rot="R270">C49</text>
-<text x="57.1985" y="120.396" size="1.016" layer="125" ratio="10">C50</text>
-<text x="41.133" y="119.1895" size="0.889" layer="125" ratio="10" rot="R270">C51</text>
-<text x="26.4399875" y="123.9488" size="1.016" layer="125" ratio="10" rot="R270">C52</text>
-<text x="17.54399375" y="94.361" size="1.016" layer="125" ratio="10" rot="R270">C53</text>
-<text x="19.797" y="91.3765" size="1.016" layer="125" ratio="10" rot="R180">C54</text>
-<text x="48.4355" y="116.332" size="1.016" layer="125" ratio="10" rot="R180">C55</text>
-<text x="16.4315" y="108.966" size="1.016" layer="125" ratio="10">C56</text>
-<text x="19.622503125" y="95.9334875" size="1.016" layer="125" ratio="10">C57</text>
-<text x="35.865496875" y="96.0755" size="1.016" layer="125" ratio="10" rot="R270">C58</text>
-<text x="32.3065" y="97.777503125" size="1.016" layer="125" ratio="10">C59</text>
-<text x="31.862" y="90.6145" size="1.016" layer="125" ratio="10">C60</text>
-<text x="49.1975" y="125.1585" size="1.016" layer="125" ratio="10" rot="R180">C61</text>
-<text x="29.6395" y="111.506" size="1.016" layer="125" ratio="10" rot="R180">C62</text>
-<text x="26.91250625" y="102.259890625" size="0.889" layer="125" ratio="10">C63</text>
-<text x="14.336" y="104.902" size="1.016" layer="125" ratio="10" rot="R270">C64</text>
-<text x="29.5125" y="147.066" size="1.016" layer="125" ratio="10">C65</text>
-<text x="60.582490625" y="144.284496875" size="1.016" layer="125" ratio="10">C66</text>
-<text x="53.3885" y="141.732" size="1.016" layer="125" ratio="10">C67</text>
-<text x="49.5785" y="144.0815" size="1.016" layer="125" ratio="10" rot="R180">C68</text>
-<text x="52.182" y="135.1915" size="1.016" layer="125" ratio="10">C69</text>
-<text x="55.6745" y="137.9855" size="1.016" layer="125" ratio="10">C70</text>
-<text x="40.8155" y="134.8105" size="0.889" layer="125" ratio="10">C71</text>
-<text x="32.5605" y="134.8105" size="0.889" layer="125" ratio="10">C72</text>
-<text x="35.291" y="143.9545" size="1.016" layer="125" ratio="10" rot="R180">C73</text>
-<text x="34.783" y="147.32" size="1.016" layer="125" ratio="10">C74</text>
-<text x="41.768" y="142.748" size="1.016" layer="125" ratio="10">C75</text>
-<text x="38.9105" y="147.32" size="1.016" layer="125" ratio="10">C76</text>
-<text x="36.688" y="134.8105" size="0.889" layer="125" ratio="10">C77</text>
-<text x="44.562" y="134.8105" size="0.889" layer="125" ratio="10">C78</text>
-<text x="43.3555" y="140.589" size="1.016" layer="125" ratio="10" rot="R270">C79</text>
-<text x="2.652" y="82.9945" size="1.016" layer="125" ratio="10">C80</text>
-<text x="14.9075" y="91.2495" size="1.016" layer="125" ratio="10" rot="R180">C81</text>
-<text x="54.7855" y="129.4765" size="1.016" layer="125" ratio="10" rot="R270">C82</text>
-<text x="66.3425" y="125.2855" size="1.016" layer="125" ratio="10">C83</text>
-<text x="17.3205" y="115.6335" size="1.016" layer="125" ratio="10" rot="R270">C84</text>
-<text x="18.2095" y="60.8965" size="1.27" layer="125" ratio="10">C85</text>
-<text x="8.24" y="11.43" size="1.27" layer="125" ratio="10" rot="R180">C86</text>
-<text x="78.5345" y="36.322" size="1.016" layer="125" ratio="10" rot="SR0">C87</text>
-<text x="70.6605" y="36.83" size="1.016" layer="125" ratio="10" rot="SR270">C88</text>
-<text x="86.1545" y="38.735" size="1.016" layer="125" ratio="10" rot="SR270">C89</text>
-<text x="80.63" y="27.813" size="1.016" layer="125" ratio="10" rot="SR270">C90</text>
-<text x="75.423" y="36.8935" size="1.016" layer="125" ratio="10" rot="SR270">C91</text>
-<text x="64.5645" y="43.688" size="1.016" layer="125" ratio="10">C92</text>
-<text x="64.501" y="51.7525" size="1.016" layer="125" ratio="10">C93</text>
-<text x="73.645" y="29.0195" size="0.889" layer="125" ratio="10" rot="SR270">C94</text>
-<text x="68.184" y="24.4729" size="1.016" layer="125" ratio="10" rot="SR270">C95</text>
-<text x="64.4375" y="22.606" size="1.016" layer="125" ratio="10">C96</text>
-<text x="88.9866" y="28.6131" size="1.27" layer="125" ratio="10" rot="SR270">C97</text>
-<text x="88.4405" y="17.907" size="1.016" layer="125" ratio="10" rot="SR270">C98</text>
-<text x="28.052" y="57.658" size="1.016" layer="125" ratio="10" rot="R180">C99</text>
-<text x="41.0695" y="55.3085" size="1.016" layer="125" ratio="10">C100</text>
-<text x="56.8175" y="68.199" size="1.016" layer="125" ratio="10">C101</text>
-<text x="25.4485" y="61.6585" size="1.016" layer="125" ratio="10">C102</text>
-<text x="43.8" y="61.5315" size="1.016" layer="125" ratio="10">C103</text>
-<text x="177.15" y="18.8595" size="1.016" layer="125" ratio="10">C104</text>
-<text x="173.594" y="1.3335" size="1.016" layer="125" ratio="10">C105</text>
-<text x="182.0649" y="28.2321" size="1.27" layer="125" ratio="10" rot="SR0">C106</text>
-<text x="154.989009375" y="63.110490625" size="1.016" layer="125" ratio="10" rot="R180">C107</text>
-<text x="155.306" y="1.397" size="1.016" layer="125" ratio="10">C108</text>
-<text x="128.001" y="48.0695" size="1.016" layer="125" ratio="10" rot="R90">C109</text>
-<text x="135.9385" y="1.27" size="1.016" layer="125" ratio="10">C110</text>
-<text x="119.0729" y="40.6146" size="1.27" layer="125" ratio="10" rot="SR0">C111</text>
-<text x="116.698" y="1.397" size="1.016" layer="125" ratio="10">C112</text>
-<text x="206.5505" y="39.878" size="1.016" layer="125" ratio="10" rot="R180">C113</text>
-<text x="211.8845" y="39.878" size="1.016" layer="125" ratio="10" rot="R180">C114</text>
-<text x="210.3605" y="25.4635" size="1.016" layer="125" ratio="10">C115</text>
-<text x="205.217" y="29.7815" size="1.016" layer="125" ratio="10" rot="R180">C116</text>
-<text x="128.001" y="69.0245" size="1.016" layer="125" ratio="10">C117</text>
-<text x="129.5885" y="60.452" size="1.016" layer="125" ratio="10">C118</text>
-<text x="285.6969" y="19.0246" size="1.27" layer="125" ratio="10" rot="SR0">C119</text>
-<text x="250.8227" y="17.7927" size="1.27" layer="125" ratio="10" rot="SR0">C120</text>
-<text x="144.13" y="63.3095" size="1.016" layer="125" ratio="10">C121</text>
-<text x="144.1935" y="69.215" size="1.016" layer="125" ratio="10">C122</text>
-<text x="266.431" y="53.213" size="1.016" layer="125" ratio="10" rot="R180">C123</text>
-<text x="257.8585" y="25.3365" size="1.016" layer="125" ratio="10">C124</text>
-<text x="286.4335" y="66.294" size="1.016" layer="125" ratio="10">C125</text>
-<text x="244.333" y="50.6095" size="1.016" layer="125" ratio="10">C126</text>
-<text x="277.3657" y="37.7317" size="1.4224" layer="125" ratio="10" rot="SR0">C127</text>
-<text x="266.4945" y="29.21" size="1.016" layer="125" ratio="10" rot="R90">C128</text>
-<text x="251.445" y="29.0195" size="1.016" layer="125" ratio="10" rot="R90">C129</text>
-<text x="207.884" y="12.573" size="1.016" layer="125" ratio="10" rot="R180">C130</text>
-<text x="236.967" y="19.939" size="1.016" layer="125" ratio="10" rot="R180">C131</text>
-<text x="212.583" y="17.4625" size="1.016" layer="125" ratio="10">C132</text>
-<text x="207.884" y="14.5415" size="1.016" layer="125" ratio="10" rot="R180">C133</text>
-<text x="212.456" y="11.1125" size="1.016" layer="125" ratio="10">C134</text>
-<text x="237.5385" y="1.27" size="1.016" layer="125" ratio="10">C135</text>
-<text x="232.141" y="10.9855" size="1.016" layer="125" ratio="10">C136</text>
-<text x="301.4195" y="32.893" size="1.016" layer="125" ratio="10">C137</text>
-<text x="217.409" y="7.8105" size="1.016" layer="125" ratio="10" rot="R180">C138</text>
-<text x="226.934" y="2.921" size="0.762" layer="125" ratio="10" rot="R270">C139</text>
-<text x="224.7115" y="2.921" size="0.762" layer="125" ratio="10" rot="R270">C140</text>
-<text x="222.743" y="2.921" size="0.762" layer="125" ratio="10" rot="R270">C141</text>
-<text x="217.536" y="14.986" size="1.016" layer="125" ratio="10">C142</text>
-<text x="221.2825" y="13.0175" size="0.8128" layer="125" ratio="10" rot="R270">C143</text>
-<text x="217.4725" y="2.159" size="1.27" layer="125" ratio="10">C144</text>
-<text x="227.962496875" y="12.278003125" size="1.016" layer="126" ratio="10" rot="SMR0">C145</text>
-<text x="230.236" y="6.858" size="0.762" layer="125" ratio="10">C146</text>
-<text x="186.167" y="45.7835" size="1.016" layer="125" ratio="10">C147</text>
-<text x="185.2145" y="47.5615" size="1.016" layer="125" ratio="10" rot="R90">C148</text>
-<text x="263.7005" y="29.21" size="1.016" layer="125" ratio="10" rot="R90">C149</text>
-<text x="191.6915" y="68.707" size="1.016" layer="125" ratio="10">C150</text>
-<text x="287.005" y="31.369" size="1.016" layer="125" ratio="10">C151</text>
-<text x="305.4835" y="27.8765" size="1.016" layer="126" ratio="10" rot="SMR0">C152</text>
-<text x="303.3245" y="50.6095" size="1.016" layer="125" ratio="10">C153</text>
-<text x="243.444" y="31.877" size="1.016" layer="125" ratio="10" rot="R90">C154</text>
-<text x="240.4595" y="31.877" size="1.016" layer="125" ratio="10" rot="R90">C155</text>
-<text x="203.058" y="60.96" size="1.016" layer="125" ratio="10" rot="R90">C156</text>
-<text x="119.5555" y="145.0975" size="1.27" layer="125" ratio="10" rot="R180">D1</text>
-<text x="117.079" y="122.2375" size="1.27" layer="125" ratio="10">D2</text>
-<text x="127.8105" y="145.161" size="1.27" layer="125" ratio="10" rot="R180">D3</text>
-<text x="125.3975" y="122.2375" size="1.27" layer="125" ratio="10">D4</text>
-<text x="119.619" y="99.3775" size="1.27" layer="125" ratio="10">D5</text>
-<text x="92.016996875" y="112.411003125" size="1.016" layer="125" ratio="10" rot="R180">D6</text>
-<text x="86.853" y="147.193" size="1.27" layer="125" ratio="10" rot="R180">D7</text>
-<text x="70.834996875" y="124.480496875" size="1.016" layer="125" ratio="10" rot="R270">D8</text>
-<text x="75.724496875" y="112.859996875" size="1.016" layer="125" ratio="10" rot="R270">D9</text>
-<text x="100.95" y="147.0025" size="1.27" layer="125" ratio="10" rot="R180">D10</text>
-<text x="59.2305" y="77.216" size="1.016" layer="125" ratio="10">D11</text>
-<text x="57.643" y="92.5195" size="1.016" layer="125" ratio="10" rot="R270">D12</text>
-<text x="35.8625" y="99.1235" size="1.016" layer="125" ratio="10" rot="R270">D13</text>
-<text x="59.1035" y="82.296" size="1.016" layer="125" ratio="10">D14</text>
-<text x="57.0715" y="116.1415" size="1.016" layer="125" ratio="10" rot="R180">D15</text>
-<text x="57.5795" y="124.1425" size="0.889" layer="125" ratio="10" rot="R270">D16</text>
-<text x="31.6715" y="100.9015" size="1.016" layer="125" ratio="10">D17</text>
-<text x="31.735" y="103.6955" size="1.016" layer="125" ratio="10">D18</text>
-<text x="82.154" y="30.48" size="1.27" layer="125" ratio="10" rot="SR270">D19</text>
-<text x="87.154496875" y="24.086996875" size="1.016" layer="125" ratio="10" rot="SR270">D20</text>
-<text x="96.552496875" y="64.409496875" size="1.016" layer="125" ratio="10" rot="SR270">D21</text>
-<text x="191.4979" y="15.027096875" size="1.27" layer="125" ratio="10">D22</text>
-<text x="151.904" y="21.174990625" size="1.27" layer="125" ratio="10" rot="R270">D23</text>
-<text x="142.0289875" y="51.50200625" size="1.016" layer="125" ratio="10">D24</text>
-<text x="111.7457875" y="53.1026875" size="1.016" layer="125" ratio="10">D25</text>
-<text x="294.46350625" y="2.0074875" size="1.27" layer="125" ratio="10">D26</text>
-<text x="267.971003125" y="51.732003125" size="1.27" layer="125" ratio="10" rot="R90">D27</text>
-<text x="185.0875" y="60.6425" size="1.27" layer="125" ratio="10">D28</text>
-<text x="172.1335" y="61.7855" size="1.016" layer="125" ratio="10">D29</text>
-<text x="74.515" y="121.851496875" size="1.016" layer="125" ratio="10" rot="R270">FB1</text>
-<text x="78.656496875" y="118.5735" size="1.016" layer="125" ratio="10" rot="R180">FB2</text>
-<text x="63.998003125" y="144.634" size="1.016" layer="125" ratio="10">FB3</text>
-<text x="86.731003125" y="66.529" size="1.016" layer="125" ratio="10">FB4</text>
-<text x="45.011503125" y="53.575" size="1.016" layer="125" ratio="10">FB5</text>
-<text x="44.630503125" y="68.2435" size="1.016" layer="125" ratio="10">FB6</text>
-<text x="171.122503125" y="67.2275" size="1.016" layer="125" ratio="10">FB7</text>
-<text x="132.8905" y="107.442" size="1.016" layer="125" ratio="10">GND</text>
-<text x="99.8832" y="114.808" size="1.27" layer="125" ratio="10" rot="SR90">IC1</text>
-<text x="67.6506" y="133.985" size="1.27" layer="125" ratio="10" rot="SR0">IC2</text>
-<text x="85.6465" y="118.6561" size="1.27" layer="125" ratio="10" rot="SR90">IC3</text>
-<text x="99.9594" y="132.2959" size="1.27" layer="125" ratio="10" rot="SR0">IC4</text>
-<text x="75.296" y="136.9441" size="1.27" layer="125" ratio="10" rot="SR90">IC5</text>
-<text x="49.5531" y="117.0305" size="1.27" layer="125" ratio="10" rot="SR0">IC6</text>
-<text x="21.8036" y="110.109" size="1.27" layer="125" ratio="10" rot="SR0">IC7</text>
-<text x="30.3761" y="88.9" size="1.27" layer="125" ratio="10" rot="SR0">IC8</text>
-<text x="20.2288" y="147.0025" size="1.27" layer="125" ratio="10" rot="SR0">IC9</text>
-<text x="51.8391" y="148.336" size="1.016" layer="125" ratio="10" rot="SR0">IC10</text>
-<text x="46.3908" y="140.3985" size="1.27" layer="125" ratio="10" rot="SR0">IC11</text>
-<text x="25.258" y="120.6246" size="1.27" layer="125" ratio="10" rot="SR90">IC12</text>
-<text x="48.8546" y="132.1435" size="1.27" layer="125" ratio="10" rot="SR0">IC13</text>
-<text x="31.69801875" y="138.93048125" size="1.27" layer="125" ratio="10">IC14</text>
-<text x="60.4116" y="120.015" size="1.27" layer="125" ratio="10" rot="SR0">IC15</text>
-<text x="79.2584" y="32.2961" size="1.016" layer="125" ratio="10" rot="SR270">IC16</text>
-<text x="78.3821" y="59.1185" size="1.27" layer="125" ratio="10" rot="SR0">IC17</text>
-<text x="57.8081" y="63.9445" size="1.27" layer="125" ratio="10" rot="SR0">IC18</text>
-<text x="25.9311" y="63.373" size="1.27" layer="125" ratio="10" rot="SR0">IC19</text>
-<text x="162.8966125" y="56.0705" size="1.27" layer="125" ratio="10">IC20</text>
-<text x="210.7923" y="46.609" size="1.27" layer="125" ratio="10" rot="SR0">IC21</text>
-<text x="212.6338" y="33.02" size="1.27" layer="125" ratio="10" rot="SR0">IC22</text>
-<text x="120.6223" y="68.961" size="1.27" layer="125" ratio="10" rot="SR0">IC23</text>
-<text x="268.6535" y="19.1135" size="1.27" layer="125" ratio="10">IC24</text>
-<text x="137.0688" y="68.834" size="1.27" layer="125" ratio="10" rot="SR0">IC25</text>
-<text x="260.8938" y="43.18" size="1.27" layer="125" ratio="10" rot="SR0">IC26</text>
-<text x="243.3551" y="41.5925" size="1.27" layer="125" ratio="10" rot="SR0">IC27</text>
-<text x="230.7955125" y="15.331490625" size="1.27" layer="125" ratio="10">IC28</text>
-<text x="180.4266" y="47.4345" size="1.016" layer="125" ratio="10" rot="SR0">IC29</text>
-<text x="191.9836" y="46.1645" size="1.016" layer="125" ratio="10" rot="SR0">IC30</text>
-<text x="262.621" y="33.1724" size="1.27" layer="125" ratio="10" rot="SR270">IC31</text>
-<text x="281.8996" y="31.877" size="1.016" layer="125" ratio="10" rot="SR0">IC32</text>
-<text x="191.4756" y="61.7855" size="1.27" layer="125" ratio="10">IC33</text>
-<text x="203.4771" y="62.5475" size="1.27" layer="125" ratio="10" rot="SR0">IC34</text>
-<text x="182.85900625" y="0.93700625" size="1.27" layer="125" ratio="10">J1</text>
-<text x="109.310003125" y="0.93700625" size="1.27" layer="125" ratio="10">J2</text>
-<text x="163.42800625" y="0.93700625" size="1.27" layer="125" ratio="10">J3</text>
-<text x="144.50500625" y="0.93700625" size="1.27" layer="125" ratio="10">J4</text>
-<text x="125.70900625" y="0.93700625" size="1.27" layer="125" ratio="10">J5</text>
-<text x="109.332" y="124.635996875" size="1.016" layer="125" ratio="10">JP1</text>
-<text x="11.463996875" y="136.017" size="1.016" layer="125" ratio="10" rot="R270">JP2</text>
-<text x="215.8215" y="68.453" size="1.016" layer="125" ratio="10">JP3</text>
-<text x="301.370503125" y="61.9125" size="1.27" layer="125" ratio="10" rot="R90">JP4</text>
-<text x="291.2595" y="42.559503125" size="1.27" layer="125" ratio="10" rot="R180">JP5</text>
-<text x="291.2595" y="36.273003125" size="1.27" layer="125" ratio="10" rot="R180">JP6</text>
-<text x="290.815" y="25.512496875" size="1.27" layer="125" ratio="10">JP7</text>
-<text x="279.639" y="25.067996875" size="1.016" layer="125" ratio="10">JP8</text>
-<text x="33.64" y="2.1709875" size="1.6764" layer="125" ratio="10">KK1</text>
-<text x="162.004996875" y="49.3395" size="1.27" layer="125" ratio="10">K_PAR</text>
-<text x="192.6455" y="28.64200625" size="1.27" layer="125" ratio="10">K_S1</text>
-<text x="108.124" y="39.307490625" size="1.27" layer="125" ratio="10">K_S2</text>
-<text x="161.941496875" y="34.29" size="1.27" layer="125" ratio="10">K_SER</text>
-<text x="124.191" y="104.2035" size="1.6764" layer="126" ratio="10" rot="MR180">L1</text>
-<text x="119.7864875" y="84.656496875" size="1.6764" layer="125" ratio="10">L2</text>
-<text x="96.9820125" y="95.006996875" size="1.016" layer="125" ratio="10">L3</text>
-<text x="93.0450125" y="104.023996875" size="1.016" layer="125" ratio="10">L4</text>
-<text x="77.6455" y="143.5735" size="1.016" layer="125" ratio="10" rot="R270">L5</text>
-<text x="106.919" y="128.8415" size="1.27" layer="125" ratio="10">L6</text>
-<text x="90.7805" y="135.460003125" size="1.016" layer="125" ratio="10">L7</text>
-<text x="68.7555" y="31.0515" size="1.27" layer="125" ratio="10" rot="SR0">L8</text>
-<text x="77.1684875" y="51.678003125" size="1.27" layer="125" ratio="10" rot="R180">L9</text>
-<text x="93.4260125" y="13.790496875" size="1.27" layer="125" ratio="10">L10</text>
-<text x="302.6275" y="35.479" size="2.1844" layer="125" ratio="10" rot="SR90">LCD1</text>
-<text x="75.931" y="147.955" size="1.016" layer="125" ratio="10">LED1</text>
-<text x="193.794009375" y="55.33349375" size="1.016" layer="126" ratio="10" rot="SMR0">LED_CC1</text>
-<text x="120.97200625" y="55.31599375" size="1.016" layer="126" ratio="10" rot="SMR0">LED_CC2</text>
-<text x="120.90850625" y="62.28600625" size="1.016" layer="126" ratio="10" rot="SMR0">LED_CV1</text>
-<text x="193.857509375" y="62.33350625" size="1.016" layer="126" ratio="10" rot="SMR0">LED_CV2</text>
-<text x="176.53999375" y="15.840990625" size="1.016" layer="126" ratio="10" rot="SMR0">LED_O1</text>
-<text x="138.53199375" y="19.370496875" size="1.016" layer="126" ratio="10" rot="SMR0">LED_O2</text>
-<text x="202.687490625" y="48.240009375" size="1.016" layer="126" ratio="10" rot="SMR0">LED_PROG1</text>
-<text x="129.219996875" y="48.282503125" size="0.889" layer="126" ratio="10" rot="SMR0">LED_PROG2</text>
-<text x="307.392996875" y="22.2940125" size="1.016" layer="126" ratio="10" rot="SMR0">LED_PWR</text>
-<text x="193.36200625" y="48.367009375" size="1.016" layer="126" ratio="10" rot="SMR0">LED_S1</text>
-<text x="120.21000625" y="48.346003125" size="1.016" layer="126" ratio="10" rot="SMR0">LED_S2</text>
-<text x="157.31450625" y="19.306996875" size="1.016" layer="126" ratio="10" rot="SMR0">LED_SP</text>
-<text x="114.0945" y="116.1415" size="1.27" layer="125" ratio="10">NTC1</text>
-<text x="69.8985" y="20.7645" size="1.27" layer="125" ratio="10" rot="SR0">OK1</text>
-<text x="73.772" y="0.5715" size="1.27" layer="125" ratio="10">OK2</text>
-<text x="201.534" y="54.864" size="1.27" layer="125" ratio="10">OK3</text>
-<text x="118.095" y="109.093" size="1.27" layer="125" ratio="10">Q1</text>
-<text x="91.171" y="116.7765" size="1.016" layer="125" ratio="10" rot="R90">Q2</text>
-<text x="89.5581" y="121.539" size="1.016" layer="125" ratio="10" rot="SR0">Q3</text>
-<text x="72.46900625" y="104.90400625" size="1.778" layer="126" ratio="10" rot="SMR0">Q4</text>
-<text x="37.5135" y="82.296" size="1.016" layer="125" ratio="10" rot="R180">Q5</text>
-<text x="40.244" y="78.105" size="1.016" layer="125" ratio="10">Q6</text>
-<text x="74.1784" y="79.8195" size="1.27" layer="125" ratio="10" rot="SR0">Q7</text>
-<text x="42.827003125" y="93.08180625" size="1.27" layer="125" ratio="10">Q8</text>
-<text x="41.1584" y="107.188" size="1.27" layer="125" ratio="10" rot="SR0">Q9</text>
-<text x="59.421" y="98.3615" size="1.016" layer="125" ratio="10">Q10</text>
-<text x="63.358" y="98.3615" size="1.016" layer="125" ratio="10">Q11</text>
-<text x="62.7865" y="94.234" size="1.016" layer="125" ratio="10" rot="R180">Q12</text>
-<text x="68.057" y="98.298" size="1.016" layer="125" ratio="10">Q13</text>
-<text x="55.9666" y="100.965" size="1.016" layer="125" ratio="10" rot="SR0">Q14</text>
-<text x="72.5401" y="98.298" size="1.016" layer="125" ratio="10" rot="SR0">Q15</text>
-<text x="15.479" y="91.2495" size="1.016" layer="125" ratio="10" rot="R270">Q16</text>
-<text x="8.494" y="87.884" size="1.016" layer="125" ratio="10">Q17</text>
-<text x="19.2255" y="130.4925" size="1.016" layer="125" ratio="10">Q18</text>
-<text x="16.3045" y="111.3155" size="1.016" layer="125" ratio="10">Q19</text>
-<text x="46.594" y="6.5405" size="1.27" layer="125" ratio="10">Q20</text>
-<text x="55.865" y="20.2565" size="1.27" layer="125" ratio="10">Q21</text>
-<text x="90.0915" y="5.5372" size="1.27" layer="125" ratio="10" rot="R180">Q22</text>
-<text x="198.2066" y="16.891" size="1.016" layer="125" ratio="10" rot="SR0">Q23</text>
-<text x="148.375509375" y="57.14799375" size="1.016" layer="125" ratio="10">Q24</text>
-<text x="157.53050625" y="13.97200625" size="1.27" layer="125" ratio="10">Q25</text>
-<text x="112.1006" y="64.008" size="1.27" layer="125" ratio="10" rot="SR0">Q26</text>
-<text x="282.7251" y="58.2295" size="1.27" layer="125" ratio="10" rot="SR0">Q27</text>
-<text x="304.5056" y="21.59" size="1.27" layer="125" ratio="10" rot="SR0">Q28</text>
-<text x="273.3906" y="24.638" size="1.27" layer="125" ratio="10" rot="SR0">Q29</text>
-<text x="269.4536" y="24.5745" size="1.27" layer="125" ratio="10" rot="SR0">Q30</text>
-<text x="130.922" y="135.382" size="1.016" layer="125" ratio="10">R1</text>
-<text x="96.124" y="105.918" size="1.27" layer="125" ratio="10">R2</text>
-<text x="86.345" y="105.918" size="1.016" layer="125" ratio="10">R3</text>
-<text x="132.827" y="100.6475" size="1.016" layer="125" ratio="10">R4</text>
-<text x="98.9815" y="89.916" size="1.016" layer="125" ratio="10" rot="R180">R5</text>
-<text x="90.7265" y="96.8375" size="0.889" layer="125" ratio="10" rot="R180">R6</text>
-<text x="107.9985" y="119.4435" size="1.016" layer="125" ratio="10">R7</text>
-<text x="106.157" y="96.393" size="1.016" layer="125" ratio="10">R8</text>
-<text x="98.0925" y="118.11" size="1.016" layer="125" ratio="10">R9</text>
-<text x="96.0605" y="114.7445" size="1.016" layer="125" ratio="10" rot="R270">R10</text>
-<text x="94.1555" y="114.7445" size="1.016" layer="125" ratio="10" rot="R270">R11</text>
-<text x="97.5845" y="124.0155" size="1.016" layer="125" ratio="10" rot="R180">R12</text>
-<text x="92.06" y="122.936" size="1.016" layer="125" ratio="10">R13</text>
-<text x="88.4405" y="112.268" size="1.016" layer="125" ratio="10" rot="R180">R14</text>
-<text x="102.093" y="125.349" size="1.016" layer="125" ratio="10">R15</text>
-<text x="94.7905" y="127.4445" size="1.016" layer="125" ratio="10" rot="R270">R16</text>
-<text x="92.822" y="127.4445" size="1.016" layer="125" ratio="10" rot="R270">R17</text>
-<text x="102.0295" y="148.082" size="1.016" layer="125" ratio="10">R18</text>
-<text x="108.7859" y="136.4234" size="0.9906" layer="125" ratio="10">R19</text>
-<text x="80.5919" y="148.0439" size="0.9906" layer="125" ratio="10">R20</text>
-<text x="5.827" y="137.795" size="1.016" layer="125" ratio="10">R21</text>
-<text x="107.7826" y="144.7419" size="1.016" layer="125" ratio="10" rot="R90">R22</text>
-<text x="111.745" y="140.9065" size="1.016" layer="125" ratio="10">R23</text>
-<text x="108.7859" y="131.9149" size="1.016" layer="125" ratio="10">R24</text>
-<text x="67.9935" y="147.955" size="1.016" layer="125" ratio="10">R25</text>
-<text x="103.5789" y="140.1826" size="1.016" layer="125" ratio="10" rot="R270">R26</text>
-<text x="71.8035" y="148.0185" size="1.016" layer="125" ratio="10">R27</text>
-<text x="112.8245" y="140.6525" size="1.016" layer="125" ratio="10" rot="R270">R28</text>
-<text x="67.168" y="137.287" size="1.016" layer="125" ratio="10">R29</text>
-<text x="47.737" y="85.217" size="1.27" layer="125" ratio="10">R30</text>
-<text x="46.848" y="88.3285" size="1.27" layer="125" ratio="10">R31</text>
-<text x="55.5094" y="86.7791" size="1.016" layer="125" ratio="10" rot="R270">R32</text>
-<text x="46.9115" y="77.343" size="1.016" layer="125" ratio="10">R33</text>
-<text x="35.0751" y="82.0801" size="0.9906" layer="125" ratio="10" rot="R180">R34</text>
-<text x="36.8404" y="90.1954" size="0.9906" layer="125" ratio="10">R35</text>
-<text x="60.7291" y="88.6206" size="0.9906" layer="125" ratio="10" rot="R180">R36</text>
-<text x="26.4264" y="118.6561" size="1.016" layer="125" ratio="10" rot="R270">R37</text>
-<text x="62.0626" y="106.7816" size="1.016" layer="125" ratio="10" rot="R180">R38</text>
-<text x="66.3171" y="106.7816" size="1.016" layer="125" ratio="10" rot="R180">R39</text>
-<text x="73.4164" y="85.0519" size="0.889" layer="125" ratio="10">R40</text>
-<text x="53.0456" y="102.5144" size="0.9906" layer="125" ratio="10" rot="R90">R41</text>
-<text x="49.1086" y="105.9434" size="0.9906" layer="125" ratio="10" rot="R90">R42</text>
-<text x="73.3529" y="86.8299" size="0.9906" layer="125" ratio="10">R43</text>
-<text x="40.498" y="122.3645" size="1.016" layer="125" ratio="10" rot="R180">R44</text>
-<text x="35.15559375" y="114.08209375" size="0.889" layer="125" ratio="10" rot="R180">R45</text>
-<text x="64.0565" y="79.9465" size="1.016" layer="125" ratio="10" rot="R90">R46</text>
-<text x="60.6529" y="87.5919" size="0.9906" layer="125" ratio="10">R47</text>
-<text x="40.4726" y="129.1336" size="1.016" layer="125" ratio="10" rot="R180">R48</text>
-<text x="36.1165" y="121.2215" size="0.889" layer="125" ratio="10" rot="R270">R49</text>
-<text x="26.401" y="121.285" size="1.016" layer="125" ratio="10" rot="R270">R50</text>
-<text x="67.9681" y="89.2556" size="0.889" layer="125" ratio="10" rot="R180">R51</text>
-<text x="44.308" y="127.127" size="1.016" layer="125" ratio="10" rot="R270">R52</text>
-<text x="60.7164" y="95.8469" size="0.9906" layer="125" ratio="10">R53</text>
-<text x="41.9077" y="114.1476" size="1.016" layer="125" ratio="10">R54</text>
-<text x="44.308" y="122.3645" size="1.016" layer="125" ratio="10" rot="R270">R55</text>
-<text x="68.5904" y="105.7529" size="0.9906" layer="125" ratio="10">R56</text>
-<text x="57.1985" y="118.5545" size="1.016" layer="125" ratio="10">R57</text>
-<text x="40.4726" y="114.6556" size="1.016" layer="125" ratio="10" rot="R180">R58</text>
-<text x="40.498" y="123.825" size="1.016" layer="125" ratio="10" rot="R180">R59</text>
-<text x="26.4645" y="126.873" size="1.016" layer="125" ratio="10" rot="R270">R60</text>
-<text x="36.1236125" y="123.65959375" size="0.889" layer="125" ratio="10" rot="R270">R61</text>
-<text x="31.1" y="129.159" size="1.016" layer="125" ratio="10" rot="R180">R62</text>
-<text x="21.067" y="83.947" size="1.016" layer="125" ratio="10">R63</text>
-<text x="23.099" y="89.154" size="0.889" layer="125" ratio="10">R64</text>
-<text x="28.1051125" y="107.305603125" size="0.9906" layer="125" ratio="10">R65</text>
-<text x="27.925" y="90.043" size="0.889" layer="125" ratio="10" rot="R180">R66</text>
-<text x="25.3215" y="81.8515" size="1.016" layer="125" ratio="10" rot="R90">R67</text>
-<text x="19.5533875" y="97.151696875" size="0.9906" layer="125" ratio="10">R68</text>
-<text x="33.894" y="78.359" size="1.27" layer="125" ratio="10">R69</text>
-<text x="30.592" y="85.852" size="1.016" layer="125" ratio="10" rot="R90">R70</text>
-<text x="30.592" y="81.8515" size="1.016" layer="125" ratio="10" rot="R90">R71</text>
-<text x="26.401" y="98.425" size="1.016" layer="125" ratio="10" rot="R180">R72</text>
-<text x="27.8615" y="97.536" size="1.016" layer="125" ratio="10">R73</text>
-<text x="22.972" y="99.06" size="1.016" layer="125" ratio="10">R74</text>
-<text x="17.0411" y="101.6381" size="0.9906" layer="125" ratio="10" rot="R180">R75</text>
-<text x="23.5054" y="105.1306" size="0.9906" layer="125" ratio="10" rot="R270">R76</text>
-<text x="56.7286" y="108.0516" size="0.9906" layer="125" ratio="10" rot="R180">R77</text>
-<text x="53.4901" y="99.1616" size="0.9906" layer="125" ratio="10" rot="R180">R78</text>
-<text x="72.5274" y="105.7529" size="0.9906" layer="125" ratio="10">R79</text>
-<text x="30.084" y="133.731" size="0.889" layer="125" ratio="10" rot="R270">R80</text>
-<text x="38.7835" y="129.7305" size="0.889" layer="125" ratio="10">R81</text>
-<text x="15.352" y="122.428" size="1.016" layer="125" ratio="10">R82</text>
-<text x="42.403" y="129.667" size="0.889" layer="125" ratio="10">R83</text>
-<text x="34.5925" y="129.7305" size="0.889" layer="125" ratio="10">R84</text>
-<text x="45.8701" y="148.3106" size="0.9906" layer="125" ratio="10" rot="R180">R85</text>
-<text x="52.5249" y="126.5936" size="1.016" layer="125" ratio="10" rot="R270">R86</text>
-<text x="5.5095" y="82.9945" size="1.016" layer="125" ratio="10">R87</text>
-<text x="59.5734" y="134.8994" size="0.9906" layer="125" ratio="10">R88</text>
-<text x="70.4319" y="122.2756" size="1.016" layer="125" ratio="10" rot="R270">R89</text>
-<text x="16.495" y="82.4865" size="1.016" layer="125" ratio="10">R90</text>
-<text x="14.6535" y="86.0425" size="1.016" layer="125" ratio="10" rot="R180">R91</text>
-<text x="56.9191" y="131.4704" size="0.9906" layer="125" ratio="10" rot="R90">R92</text>
-<text x="7.4145" y="91.3765" size="1.016" layer="125" ratio="10" rot="R270">R93</text>
-<text x="66.4949" y="124.3584" size="1.016" layer="125" ratio="10">R94</text>
-<text x="2.2075" y="95.377" size="1.016" layer="125" ratio="10" rot="R270">R95</text>
-<text x="2.2075" y="92.075" size="1.016" layer="125" ratio="10" rot="R270">R96</text>
-<text x="58.278" y="116.332" size="1.016" layer="125" ratio="10">R97</text>
-<text x="11.7325" y="132.461" size="1.016" layer="125" ratio="10" rot="R180">R98</text>
-<text x="18.146" y="126.619" size="1.016" layer="125" ratio="10">R99</text>
-<text x="20.686" y="115.2525" size="1.016" layer="125" ratio="10">R100</text>
-<text x="61.2244" y="134.0866" size="0.9906" layer="125" ratio="10" rot="R270">R101</text>
-<text x="65.0344" y="118.3259" size="1.016" layer="125" ratio="10">R102</text>
-<text x="18.146" y="124.714" size="1.016" layer="125" ratio="10">R103</text>
-<text x="63.7009" y="134.8994" size="0.9906" layer="125" ratio="10">R104</text>
-<text x="13.5105" y="119.888" size="1.016" layer="125" ratio="10" rot="R270">R105</text>
-<text x="36.4086" y="110.7821" size="1.016" layer="125" ratio="10" rot="R180">R106</text>
-<text x="24.8135" y="1.8034" size="1.6764" layer="125" ratio="10">R107</text>
-<text x="18.4635" y="2.3495" size="1.27" layer="125" ratio="10" rot="R180">R108</text>
-<text x="17.4475" y="10.922" size="1.016" layer="125" ratio="10">R109</text>
-<text x="50.4675" y="3.683" size="1.016" layer="125" ratio="10">R110</text>
-<text x="36.8785" y="22.86" size="1.016" layer="125" ratio="10" rot="R270">R111</text>
-<text x="68.1205" y="18.288" size="1.27" layer="125" ratio="10" rot="SR270">R112</text>
-<text x="83.17" y="19.1135" size="1.016" layer="125" ratio="10" rot="SR270">R113</text>
-<text x="83.17" y="23.0505" size="1.016" layer="125" ratio="10" rot="SR270">R114</text>
-<text x="68.184" y="7.62" size="1.27" layer="125" ratio="10" rot="SR270">R115</text>
-<text x="83.7415" y="9.398" size="1.016" layer="125" ratio="10" rot="SR270">R116</text>
-<text x="83.7415" y="13.335" size="1.016" layer="125" ratio="10" rot="SR270">R117</text>
-<text x="64.0565" y="37.465" size="1.016" layer="125" ratio="10" rot="SR270">R118</text>
-<text x="64.755" y="41.7195" size="1.016" layer="125" ratio="10">R119</text>
-<text x="86.091" y="34.6075" size="1.016" layer="125" ratio="10" rot="SR270">R120</text>
-<text x="69.9874" y="23.5204" size="0.9906" layer="125" ratio="10">R121</text>
-<text x="74.7245" y="21.463" size="1.016" layer="125" ratio="10">R122</text>
-<text x="73.6704" y="26.5811" size="0.8128" layer="125" ratio="10" rot="SR270">R123</text>
-<text x="62.4944" y="32.2961" size="1.016" layer="125" ratio="10" rot="SR270">R124</text>
-<text x="62.5325" y="28.6385" size="1.016" layer="125" ratio="10" rot="SR270">R125</text>
-<text x="71.8416" y="29.6926" size="1.016" layer="125" ratio="10" rot="R180">R126</text>
-<text x="89.0755" y="36.8935" size="1.016" layer="125" ratio="10" rot="SR270">R127</text>
-<text x="97.013" y="14.224" size="1.016" layer="125" ratio="10" rot="SR270">R128</text>
-<text x="84.5035" y="20.0025" size="1.016" layer="125" ratio="10" rot="SR0">R129</text>
-<text x="91.2345" y="64.7065" size="1.016" layer="125" ratio="10" rot="SR0">R130</text>
-<text x="89.2025" y="64.3255" size="1.016" layer="125" ratio="10" rot="SR270">R131</text>
-<text x="46.594" y="63.3095" size="1.016" layer="125" ratio="10">R132</text>
-<text x="46.594" y="65.0875" size="1.016" layer="125" ratio="10">R133</text>
-<text x="191.755" y="12.319" size="1.016" layer="125" ratio="10">R134</text>
-<text x="153.09589375" y="13.482903125" size="0.9906" layer="125" ratio="10">R135</text>
-<text x="178.293" y="24.257" size="1.016" layer="125" ratio="10" rot="R90">R136</text>
-<text x="151.26389375" y="52.269390625" size="0.9906" layer="125" ratio="10">R137</text>
-<text x="156.5394" y="67.20489375" size="0.9906" layer="125" ratio="10">R138</text>
-<text x="108.2525" y="63.881" size="1.016" layer="125" ratio="10">R139</text>
-<text x="128.0645" y="44.1325" size="1.016" layer="125" ratio="10" rot="R90">R140</text>
-<text x="254.8105" y="29.337" size="1.016" layer="125" ratio="10">R141</text>
-<text x="290.688" y="51.3715" size="1.016" layer="125" ratio="10">R142</text>
-<text x="286.116" y="61.976" size="1.016" layer="125" ratio="10">R143</text>
-<text x="268.3995" y="29.5275" size="1.016" layer="125" ratio="10" rot="R90">R144</text>
-<text x="253.477" y="29.337" size="1.016" layer="125" ratio="10" rot="R90">R145</text>
-<text x="207.884" y="22.2885" size="1.016" layer="125" ratio="10" rot="R180">R146</text>
-<text x="300.0225" y="46.482" size="1.016" layer="125" ratio="10">R147</text>
-<text x="207.884" y="20.447" size="1.016" layer="125" ratio="10" rot="R180">R148</text>
-<text x="207.884" y="18.415" size="1.016" layer="125" ratio="10" rot="R180">R149</text>
-<text x="207.884" y="16.4465" size="1.016" layer="125" ratio="10" rot="R180">R150</text>
-<text x="304.277" y="18.796" size="1.016" layer="125" ratio="10">R151</text>
-<text x="217.282" y="9.2075" size="1.016" layer="125" ratio="10" rot="R180">R152</text>
-<text x="306.2455" y="28.067" size="1.016" layer="125" ratio="10" rot="R90">R153</text>
-<text x="306.309" y="24.384" size="1.016" layer="125" ratio="10" rot="R90">R154</text>
-<text x="212.6465" y="5.1435" size="1.016" layer="125" ratio="10" rot="R180">R155</text>
-<text x="212.964" y="0.9525" size="1.016" layer="125" ratio="10">R156</text>
-<text x="228.1532" y="1.5875" size="1.016" layer="125" ratio="10">R157</text>
-<text x="198.6765" y="47.4345" size="1.016" layer="125" ratio="10">R158</text>
-<text x="197.2795" y="61.722" size="1.016" layer="125" ratio="10">R159</text>
-<text x="181.5315" y="53.2765" size="1.016" layer="125" ratio="10">R160</text>
-<text x="185.532" y="53.2765" size="1.016" layer="125" ratio="10">R161</text>
-<text x="273.543" y="32.4485" size="1.016" layer="125" ratio="10">R162</text>
-<text x="269.4155" y="32.4485" size="1.016" layer="125" ratio="10">R163</text>
-<text x="178.928" y="61.595" size="1.016" layer="125" ratio="10">R164</text>
-<text x="183.3095" y="42.545" size="1.016" layer="125" ratio="10">R165</text>
-<text x="178.42" y="42.545" size="1.016" layer="125" ratio="10">R166</text>
-<text x="187.564" y="68.0085" size="1.016" layer="125" ratio="10">R167</text>
-<text x="196.835" y="66.294" size="1.016" layer="125" ratio="10">R168</text>
-<text x="247.1905" y="31.877" size="1.016" layer="125" ratio="10" rot="R90">R169</text>
-<text x="245.4125" y="31.877" size="1.016" layer="125" ratio="10" rot="R90">R170</text>
-<text x="236.5225" y="31.877" size="1.016" layer="125" ratio="10" rot="R90">R171</text>
-<text x="238.364" y="31.877" size="1.016" layer="125" ratio="10" rot="R90">R172</text>
-<text x="231.0615" y="17.78" size="1.016" layer="125" ratio="10">RN1</text>
-<text x="224.267" y="19.304" size="1.016" layer="125" ratio="10" rot="R180">RN2</text>
-<text x="17.511" y="29.4894" size="1.016" layer="125" ratio="10">SAR1</text>
-<text x="267.828" y="63.5" size="1.27" layer="125" ratio="10">SP1</text>
-<text x="130.287" y="107.3785" size="1.016" layer="125" ratio="10">SW</text>
-<text x="306.9130125" y="0.98300625" size="1.778" layer="126" ratio="10" rot="SMR0">SW1</text>
-<text x="305.48949375" y="42.62399375" size="1.016" layer="126" ratio="10" rot="SMR0">SW2</text>
-<text x="14.336" y="95.1865" size="1.016" layer="125" ratio="10" rot="R270">TP1</text>
-<text x="171.134009375" y="5.731003125" size="1.016" layer="125" ratio="10">TP2</text>
-<text x="134.445996875" y="12.2555" size="1.27" layer="125" ratio="10">TP3</text>
-<text x="87.75350625" y="145.750990625" size="1.27" layer="125" ratio="10">TR1</text>
-<text x="27.5940125" y="53.63649375" size="2.1844" layer="125" ratio="10">TR2</text>
-<text x="7.7955" y="41.4655" size="1.27" layer="125" ratio="10" rot="SR270">VAR1</text>
-<text x="7.7955" y="36.3855" size="1.27" layer="125" ratio="10" rot="SR270">VAR2</text>
-<text x="306.309" y="64.5795" size="1.27" layer="126" ratio="10" rot="SMR0">WIFI</text>
-<text x="149.2965125" y="91.94" size="1.27" layer="126" ratio="10" rot="MR0">X1</text>
-<text x="148.44" y="137.016996875" size="1.27" layer="126" ratio="10" rot="MR0">X2</text>
-<text x="5.8039125" y="129.94119375" size="1.27" layer="125" ratio="10" rot="SR0">X3</text>
-<text x="2.9464875" y="64.762" size="1.27" layer="125">X4</text>
-<text x="97.172003125" y="60.403003125" size="1.27" layer="125" ratio="10">X5</text>
-<text x="92.568" y="39.751" size="1.27" layer="125" ratio="10" rot="R180">X6</text>
-<text x="80.757" y="49.53" size="1.778" layer="126" ratio="10" rot="SMR0">X7</text>
-<text x="92.949" y="72.263" size="1.27" layer="125" ratio="10" rot="R180">X8</text>
-<text x="55.7888" y="70.5231" size="1.27" layer="125" ratio="10">X9</text>
-<text x="23.5943" y="68.3006" size="1.27" layer="125" ratio="10">X10</text>
-<text x="53.21750625" y="53.847490625" size="1.27" layer="126" rot="MR180">X11</text>
-<text x="176.814490625" y="36.47800625" size="1.27" layer="125" ratio="10">X13</text>
-<text x="108.462" y="36.540009375" size="1.27" layer="126" ratio="10" rot="SMR0">X14</text>
-<text x="132.726009375" y="37.4515125" size="1.27" layer="125" ratio="10" rot="R180">X15</text>
-<text x="288.0845" y="4.318" size="1.27" layer="125" ratio="10">X16</text>
-<text x="264.0815" y="3.7465" size="1.016" layer="125" ratio="10">X17</text>
-<text x="201.3435" y="25.146" size="1.27" layer="125" ratio="10">X18</text>
-<text x="246.5555" y="3.7465" size="1.016" layer="125" ratio="10">X19</text>
-<text x="242.809" y="5.2705" size="1.27" layer="125" ratio="10">X20</text>
-<text x="258.3665" y="58.166" size="1.016" layer="125" ratio="10">Y1</text>
-<text x="239.9515" y="4.7625" size="1.27" layer="125" ratio="10">Y2</text>
-<text x="128.282" y="80.6204875" size="1.27" layer="125" ratio="10">ZD1</text>
-<text x="136.156" y="138.7229875" size="1.27" layer="125" ratio="10">ZD2</text>
-<text x="8.648" y="90.6534875" size="1.27" layer="125" ratio="10">ZD3</text>
-<text x="51.801" y="77.2795" size="1.016" layer="125" ratio="10">ZD4</text>
-<text x="54.7855" y="100.076" size="1.016" layer="125" ratio="10" rot="R270">ZD5</text>
-<text x="3.208996875" y="16.272003125" size="1.27" layer="125" ratio="10">ZD6</text>
-<text x="3.145496875" y="21.879990625" size="1.27" layer="125" ratio="10">ZD7</text>
-<text x="171.3960125" y="33.9075" size="0.889" layer="125" ratio="10" rot="R90">ZD8</text>
-<text x="128.9345" y="50.943003125" size="1.27" layer="125" ratio="10">ZD9</text>
-<text x="189.3055" y="31.004003125" size="1.27" layer="125" ratio="10">ZD10</text>
-<text x="122.7725125" y="28.718003125" size="1.27" layer="125" ratio="10">ZD11</text>
-<text x="179.309" y="67.31" size="1.016" layer="125" ratio="10">ZD12</text>
 <wire x1="153.5" y1="76" x2="300.5" y2="76" width="0.1" layer="20"/>
 <wire x1="152" y1="148.5" x2="152" y2="77.5" width="0.1" layer="20"/>
 <rectangle x1="155.0553" y1="145.8122" x2="155.4325" y2="145.816" layer="21"/>
@@ -9351,274 +8828,798 @@
 <wire x1="253.458" y1="132.1435" x2="255.871" y2="132.1435" width="0.254" layer="51"/>
 <wire x1="256.8235" y1="131.064" x2="256.76" y2="131.064" width="0.254" layer="51"/>
 <wire x1="256.76" y1="131.064" x2="255.5535" y2="132.2705" width="0.254" layer="51"/>
-<text x="288.1925" y="104.8385" size="1.27" layer="125" ratio="10">C1</text>
-<text x="289.78" y="95.1865" size="1.27" layer="125">C2</text>
-<text x="291.304" y="104.902" size="1.27" layer="125" ratio="10">C3</text>
-<text x="285.7795" y="135.4455" size="1.778" layer="126" ratio="10" rot="MR0">C4</text>
-<text x="285.7795" y="117.348" size="1.778" layer="126" ratio="10" rot="MR0">C5</text>
-<text x="253.585" y="98.4885" size="1.016" layer="125" ratio="10">C6</text>
-<text x="256.5695" y="98.4885" size="1.016" layer="125" ratio="10">C7</text>
-<text x="250.2195" y="98.425" size="1.016" layer="125" ratio="10">C8</text>
-<text x="251.1085" y="110.8075" size="1.016" layer="125" ratio="10">C9</text>
-<text x="259.8715" y="114.554" size="1.016" layer="125" ratio="10">C10</text>
-<text x="258.538" y="122.174" size="1.016" layer="125" ratio="10" rot="R90">C11</text>
-<text x="254.5375" y="87.884" size="1.016" layer="125" ratio="10">C12</text>
-<text x="238.4085" y="95.0595" size="1.016" layer="125" ratio="10" rot="R180">C13</text>
-<text x="236.5035" y="97.3455" size="1.016" layer="125" ratio="10" rot="R180">C14</text>
-<text x="234.027" y="98.4885" size="0.889" layer="125" ratio="10">C15</text>
-<text x="233.5825" y="77.8256" size="1.27" layer="125" ratio="10" rot="SR0">C16</text>
-<text x="265.777" y="94.742" size="1.016" layer="125" ratio="10">C17</text>
-<text x="257.5601" y="84.4804" size="1.27" layer="125" ratio="10" rot="SR90">C18</text>
-<text x="239.1705" y="90.424" size="0.889" layer="125" ratio="10">C19</text>
-<text x="251.3625" y="87.884" size="1.016" layer="125" ratio="10">C20</text>
-<text x="251.3625" y="125.349" size="1.016" layer="125" ratio="10">C21</text>
-<text x="251.426" y="126.365" size="1.016" layer="125" ratio="10" rot="R180">C22</text>
-<text x="238.853" y="117.7925" size="1.016" layer="125" ratio="10" rot="R270">C23</text>
-<text x="233.9635" y="144.399" size="1.016" layer="125" ratio="10">C24</text>
-<text x="226.788" y="135.9535" size="1.016" layer="125" ratio="10" rot="R270">C25</text>
-<text x="224.248" y="127.127" size="1.016" layer="125" ratio="10" rot="R180">C26</text>
-<text x="228.7819" y="135.8519" size="1.016" layer="125" ratio="10" rot="SR90">C27</text>
-<text x="253.331" y="126.746" size="1.016" layer="125" ratio="10">C28</text>
-<text x="249.775" y="139.5095" size="1.016" layer="125" ratio="10" rot="R180">C29</text>
-<text x="231.5505" y="112.9665" size="1.016" layer="125" ratio="10">C30</text>
-<text x="248.3145" y="131.6355" size="1.016" layer="125" ratio="10">C31</text>
-<text x="227.8675" y="123.317" size="1.016" layer="125" ratio="10" rot="R270">C32</text>
-<text x="244.949" y="148.717" size="1.016" layer="125" ratio="10" rot="R180">C33</text>
-<text x="255.49" y="146.8755" size="1.016" layer="125" ratio="10">C34</text>
-<text x="237.8116" y="129.5146" size="1.27" layer="125" ratio="10" rot="SR270">C35</text>
-<text x="240.1865" y="132.207" size="1.016" layer="125" ratio="10">C36</text>
-<text x="247.489" y="134.112" size="1.016" layer="125" ratio="10" rot="R90">C37</text>
-<text x="240.9485" y="127.1905" size="1.016" layer="125" ratio="10" rot="R270">C38</text>
-<text x="242.917" y="127.1905" size="1.016" layer="125" ratio="10" rot="R270">C39</text>
-<text x="254.728" y="143.764" size="0.889" layer="125" ratio="10" rot="R270">C40</text>
-<text x="260.824" y="134.0485" size="1.016" layer="125" ratio="10">C41</text>
-<text x="227.042" y="144.8435" size="1.016" layer="125" ratio="10">C42</text>
-<text x="214.215" y="140.6525" size="1.016" layer="125" ratio="10">C43</text>
-<text x="231.106" y="90.424" size="1.016" layer="125" ratio="10" rot="R90">C44</text>
-<text x="217.39" y="83.439" size="0.889" layer="125" ratio="10">C45</text>
-<text x="182.832003125" y="114.07650625" size="1.016" layer="125" ratio="10" rot="R180">C46</text>
-<text x="187.6085" y="129.159" size="1.016" layer="125" ratio="10" rot="R180">C47</text>
-<text x="188.107" y="118.80100625" size="0.889" layer="125" ratio="10" rot="R270">C48</text>
-<text x="188.145990625" y="126.03449375" size="0.889" layer="125" ratio="10" rot="R270">C49</text>
-<text x="209.1985" y="120.396" size="1.016" layer="125" ratio="10">C50</text>
-<text x="193.133" y="119.1895" size="0.889" layer="125" ratio="10" rot="R270">C51</text>
-<text x="178.4399875" y="123.9488" size="1.016" layer="125" ratio="10" rot="R270">C52</text>
-<text x="169.54399375" y="94.361" size="1.016" layer="125" ratio="10" rot="R270">C53</text>
-<text x="171.797" y="91.3765" size="1.016" layer="125" ratio="10" rot="R180">C54</text>
-<text x="200.4355" y="116.332" size="1.016" layer="125" ratio="10" rot="R180">C55</text>
-<text x="168.4315" y="108.966" size="1.016" layer="125" ratio="10">C56</text>
-<text x="171.622503125" y="95.9334875" size="1.016" layer="125" ratio="10">C57</text>
-<text x="187.865496875" y="96.0755" size="1.016" layer="125" ratio="10" rot="R270">C58</text>
-<text x="184.3065" y="97.777503125" size="1.016" layer="125" ratio="10">C59</text>
-<text x="183.862" y="90.6145" size="1.016" layer="125" ratio="10">C60</text>
-<text x="201.1975" y="125.1585" size="1.016" layer="125" ratio="10" rot="R180">C61</text>
-<text x="181.6395" y="111.506" size="1.016" layer="125" ratio="10" rot="R180">C62</text>
-<text x="178.91250625" y="102.259890625" size="0.889" layer="125" ratio="10">C63</text>
-<text x="166.336" y="104.902" size="1.016" layer="125" ratio="10" rot="R270">C64</text>
-<text x="181.5125" y="147.066" size="1.016" layer="125" ratio="10">C65</text>
-<text x="212.582490625" y="144.284496875" size="1.016" layer="125" ratio="10">C66</text>
-<text x="205.3885" y="141.732" size="1.016" layer="125" ratio="10">C67</text>
-<text x="201.5785" y="144.0815" size="1.016" layer="125" ratio="10" rot="R180">C68</text>
-<text x="204.182" y="135.1915" size="1.016" layer="125" ratio="10">C69</text>
-<text x="207.6745" y="137.9855" size="1.016" layer="125" ratio="10">C70</text>
-<text x="192.8155" y="134.8105" size="0.889" layer="125" ratio="10">C71</text>
-<text x="184.5605" y="134.8105" size="0.889" layer="125" ratio="10">C72</text>
-<text x="187.291" y="143.9545" size="1.016" layer="125" ratio="10" rot="R180">C73</text>
-<text x="186.783" y="147.32" size="1.016" layer="125" ratio="10">C74</text>
-<text x="193.768" y="142.748" size="1.016" layer="125" ratio="10">C75</text>
-<text x="190.9105" y="147.32" size="1.016" layer="125" ratio="10">C76</text>
-<text x="188.688" y="134.8105" size="0.889" layer="125" ratio="10">C77</text>
-<text x="196.562" y="134.8105" size="0.889" layer="125" ratio="10">C78</text>
-<text x="195.3555" y="140.589" size="1.016" layer="125" ratio="10" rot="R270">C79</text>
-<text x="154.652" y="82.9945" size="1.016" layer="125" ratio="10">C80</text>
-<text x="166.9075" y="91.2495" size="1.016" layer="125" ratio="10" rot="R180">C81</text>
-<text x="206.7855" y="129.4765" size="1.016" layer="125" ratio="10" rot="R270">C82</text>
-<text x="218.3425" y="125.2855" size="1.016" layer="125" ratio="10">C83</text>
-<text x="169.3205" y="115.6335" size="1.016" layer="125" ratio="10" rot="R270">C84</text>
-<text x="271.5555" y="145.0975" size="1.27" layer="125" ratio="10" rot="R180">D1</text>
-<text x="269.079" y="122.2375" size="1.27" layer="125" ratio="10">D2</text>
-<text x="279.8105" y="145.161" size="1.27" layer="125" ratio="10" rot="R180">D3</text>
-<text x="277.3975" y="122.2375" size="1.27" layer="125" ratio="10">D4</text>
-<text x="271.619" y="99.3775" size="1.27" layer="125" ratio="10">D5</text>
-<text x="244.016996875" y="112.411003125" size="1.016" layer="125" ratio="10" rot="R180">D6</text>
-<text x="238.853" y="147.193" size="1.27" layer="125" ratio="10" rot="R180">D7</text>
-<text x="222.834996875" y="124.480496875" size="1.016" layer="125" ratio="10" rot="R270">D8</text>
-<text x="227.724496875" y="112.859996875" size="1.016" layer="125" ratio="10" rot="R270">D9</text>
-<text x="252.95" y="147.0025" size="1.27" layer="125" ratio="10" rot="R180">D10</text>
-<text x="211.2305" y="77.216" size="1.016" layer="125" ratio="10">D11</text>
-<text x="209.643" y="92.5195" size="1.016" layer="125" ratio="10" rot="R270">D12</text>
-<text x="187.8625" y="99.1235" size="1.016" layer="125" ratio="10" rot="R270">D13</text>
-<text x="211.1035" y="82.296" size="1.016" layer="125" ratio="10">D14</text>
-<text x="209.0715" y="116.1415" size="1.016" layer="125" ratio="10" rot="R180">D15</text>
-<text x="209.5795" y="124.1425" size="0.889" layer="125" ratio="10" rot="R270">D16</text>
-<text x="183.6715" y="100.9015" size="1.016" layer="125" ratio="10">D17</text>
-<text x="183.735" y="103.6955" size="1.016" layer="125" ratio="10">D18</text>
-<text x="226.515" y="121.851496875" size="1.016" layer="125" ratio="10" rot="R270">FB1</text>
-<text x="230.656496875" y="118.5735" size="1.016" layer="125" ratio="10" rot="R180">FB2</text>
-<text x="215.998003125" y="144.634" size="1.016" layer="125" ratio="10">FB3</text>
-<text x="284.8905" y="107.442" size="1.016" layer="125" ratio="10">GND</text>
-<text x="251.8832" y="114.808" size="1.27" layer="125" ratio="10" rot="SR90">IC1</text>
-<text x="219.6506" y="133.985" size="1.27" layer="125" ratio="10" rot="SR0">IC2</text>
-<text x="237.6465" y="118.6561" size="1.27" layer="125" ratio="10" rot="SR90">IC3</text>
-<text x="251.9594" y="132.2959" size="1.27" layer="125" ratio="10" rot="SR0">IC4</text>
-<text x="227.296" y="136.9441" size="1.27" layer="125" ratio="10" rot="SR90">IC5</text>
-<text x="201.5531" y="117.0305" size="1.27" layer="125" ratio="10" rot="SR0">IC6</text>
-<text x="173.8036" y="110.109" size="1.27" layer="125" ratio="10" rot="SR0">IC7</text>
-<text x="182.3761" y="88.9" size="1.27" layer="125" ratio="10" rot="SR0">IC8</text>
-<text x="172.2288" y="147.0025" size="1.27" layer="125" ratio="10" rot="SR0">IC9</text>
-<text x="203.8391" y="148.336" size="1.016" layer="125" ratio="10" rot="SR0">IC10</text>
-<text x="198.3908" y="140.3985" size="1.27" layer="125" ratio="10" rot="SR0">IC11</text>
-<text x="177.258" y="120.6246" size="1.27" layer="125" ratio="10" rot="SR90">IC12</text>
-<text x="200.8546" y="132.1435" size="1.27" layer="125" ratio="10" rot="SR0">IC13</text>
-<text x="183.69801875" y="138.93048125" size="1.27" layer="125" ratio="10">IC14</text>
-<text x="212.4116" y="120.015" size="1.27" layer="125" ratio="10" rot="SR0">IC15</text>
-<text x="261.332" y="124.635996875" size="1.016" layer="125" ratio="10">JP1</text>
-<text x="163.463996875" y="136.017" size="1.016" layer="125" ratio="10" rot="R270">JP2</text>
-<text x="276.191" y="104.2035" size="1.6764" layer="126" ratio="10" rot="MR180">L1</text>
-<text x="271.7864875" y="84.656496875" size="1.6764" layer="125" ratio="10">L2</text>
-<text x="248.9820125" y="95.006996875" size="1.016" layer="125" ratio="10">L3</text>
-<text x="245.0450125" y="104.023996875" size="1.016" layer="125" ratio="10">L4</text>
-<text x="229.6455" y="143.5735" size="1.016" layer="125" ratio="10" rot="R270">L5</text>
-<text x="258.919" y="128.8415" size="1.27" layer="125" ratio="10">L6</text>
-<text x="242.7805" y="135.460003125" size="1.016" layer="125" ratio="10">L7</text>
-<text x="227.931" y="147.955" size="1.016" layer="125" ratio="10">LED1</text>
-<text x="266.0945" y="116.1415" size="1.27" layer="125" ratio="10">NTC1</text>
-<text x="270.095" y="109.093" size="1.27" layer="125" ratio="10">Q1</text>
-<text x="243.171" y="116.7765" size="1.016" layer="125" ratio="10" rot="R90">Q2</text>
-<text x="241.5581" y="121.539" size="1.016" layer="125" ratio="10" rot="SR0">Q3</text>
-<text x="224.46900625" y="104.90400625" size="1.778" layer="126" ratio="10" rot="SMR0">Q4</text>
-<text x="189.5135" y="82.296" size="1.016" layer="125" ratio="10" rot="R180">Q5</text>
-<text x="192.244" y="78.105" size="1.016" layer="125" ratio="10">Q6</text>
-<text x="226.1784" y="79.8195" size="1.27" layer="125" ratio="10" rot="SR0">Q7</text>
-<text x="194.827003125" y="93.08180625" size="1.27" layer="125" ratio="10">Q8</text>
-<text x="193.1584" y="107.188" size="1.27" layer="125" ratio="10" rot="SR0">Q9</text>
-<text x="211.421" y="98.3615" size="1.016" layer="125" ratio="10">Q10</text>
-<text x="215.358" y="98.3615" size="1.016" layer="125" ratio="10">Q11</text>
-<text x="214.7865" y="94.234" size="1.016" layer="125" ratio="10" rot="R180">Q12</text>
-<text x="220.057" y="98.298" size="1.016" layer="125" ratio="10">Q13</text>
-<text x="207.9666" y="100.965" size="1.016" layer="125" ratio="10" rot="SR0">Q14</text>
-<text x="224.5401" y="98.298" size="1.016" layer="125" ratio="10" rot="SR0">Q15</text>
-<text x="167.479" y="91.2495" size="1.016" layer="125" ratio="10" rot="R270">Q16</text>
-<text x="160.494" y="87.884" size="1.016" layer="125" ratio="10">Q17</text>
-<text x="171.2255" y="130.4925" size="1.016" layer="125" ratio="10">Q18</text>
-<text x="168.3045" y="111.3155" size="1.016" layer="125" ratio="10">Q19</text>
-<text x="282.922" y="135.382" size="1.016" layer="125" ratio="10">R1</text>
-<text x="248.124" y="105.918" size="1.27" layer="125" ratio="10">R2</text>
-<text x="238.345" y="105.918" size="1.016" layer="125" ratio="10">R3</text>
-<text x="284.827" y="100.6475" size="1.016" layer="125" ratio="10">R4</text>
-<text x="250.9815" y="89.916" size="1.016" layer="125" ratio="10" rot="R180">R5</text>
-<text x="242.7265" y="96.8375" size="0.889" layer="125" ratio="10" rot="R180">R6</text>
-<text x="259.9985" y="119.4435" size="1.016" layer="125" ratio="10">R7</text>
-<text x="258.157" y="96.393" size="1.016" layer="125" ratio="10">R8</text>
-<text x="250.0925" y="118.11" size="1.016" layer="125" ratio="10">R9</text>
-<text x="248.0605" y="114.7445" size="1.016" layer="125" ratio="10" rot="R270">R10</text>
-<text x="246.1555" y="114.7445" size="1.016" layer="125" ratio="10" rot="R270">R11</text>
-<text x="249.5845" y="124.0155" size="1.016" layer="125" ratio="10" rot="R180">R12</text>
-<text x="244.06" y="122.936" size="1.016" layer="125" ratio="10">R13</text>
-<text x="240.4405" y="112.268" size="1.016" layer="125" ratio="10" rot="R180">R14</text>
-<text x="254.093" y="125.349" size="1.016" layer="125" ratio="10">R15</text>
-<text x="246.7905" y="127.4445" size="1.016" layer="125" ratio="10" rot="R270">R16</text>
-<text x="244.822" y="127.4445" size="1.016" layer="125" ratio="10" rot="R270">R17</text>
-<text x="254.0295" y="148.082" size="1.016" layer="125" ratio="10">R18</text>
-<text x="260.7859" y="136.4234" size="0.9906" layer="125" ratio="10">R19</text>
-<text x="232.5919" y="148.0439" size="0.9906" layer="125" ratio="10">R20</text>
-<text x="157.827" y="137.795" size="1.016" layer="125" ratio="10">R21</text>
-<text x="259.7826" y="144.7419" size="1.016" layer="125" ratio="10" rot="R90">R22</text>
-<text x="263.745" y="140.9065" size="1.016" layer="125" ratio="10">R23</text>
-<text x="260.7859" y="131.9149" size="1.016" layer="125" ratio="10">R24</text>
-<text x="219.9935" y="147.955" size="1.016" layer="125" ratio="10">R25</text>
-<text x="255.5789" y="140.1826" size="1.016" layer="125" ratio="10" rot="R270">R26</text>
-<text x="223.8035" y="148.0185" size="1.016" layer="125" ratio="10">R27</text>
-<text x="264.8245" y="140.6525" size="1.016" layer="125" ratio="10" rot="R270">R28</text>
-<text x="219.168" y="137.287" size="1.016" layer="125" ratio="10">R29</text>
-<text x="199.737" y="85.217" size="1.27" layer="125" ratio="10">R30</text>
-<text x="198.848" y="88.3285" size="1.27" layer="125" ratio="10">R31</text>
-<text x="207.5094" y="86.7791" size="1.016" layer="125" ratio="10" rot="R270">R32</text>
-<text x="198.9115" y="77.343" size="1.016" layer="125" ratio="10">R33</text>
-<text x="187.0751" y="82.0801" size="0.9906" layer="125" ratio="10" rot="R180">R34</text>
-<text x="188.8404" y="90.1954" size="0.9906" layer="125" ratio="10">R35</text>
-<text x="212.7291" y="88.6206" size="0.9906" layer="125" ratio="10" rot="R180">R36</text>
-<text x="178.4264" y="118.6561" size="1.016" layer="125" ratio="10" rot="R270">R37</text>
-<text x="214.0626" y="106.7816" size="1.016" layer="125" ratio="10" rot="R180">R38</text>
-<text x="218.3171" y="106.7816" size="1.016" layer="125" ratio="10" rot="R180">R39</text>
-<text x="225.4164" y="85.0519" size="0.889" layer="125" ratio="10">R40</text>
-<text x="205.0456" y="102.5144" size="0.9906" layer="125" ratio="10" rot="R90">R41</text>
-<text x="201.1086" y="105.9434" size="0.9906" layer="125" ratio="10" rot="R90">R42</text>
-<text x="225.3529" y="86.8299" size="0.9906" layer="125" ratio="10">R43</text>
-<text x="192.498" y="122.3645" size="1.016" layer="125" ratio="10" rot="R180">R44</text>
-<text x="187.15559375" y="114.08209375" size="0.889" layer="125" ratio="10" rot="R180">R45</text>
-<text x="216.0565" y="79.9465" size="1.016" layer="125" ratio="10" rot="R90">R46</text>
-<text x="212.6529" y="87.5919" size="0.9906" layer="125" ratio="10">R47</text>
-<text x="192.4726" y="129.1336" size="1.016" layer="125" ratio="10" rot="R180">R48</text>
-<text x="188.1165" y="121.2215" size="0.889" layer="125" ratio="10" rot="R270">R49</text>
-<text x="178.401" y="121.285" size="1.016" layer="125" ratio="10" rot="R270">R50</text>
-<text x="219.9681" y="89.2556" size="0.889" layer="125" ratio="10" rot="R180">R51</text>
-<text x="196.308" y="127.127" size="1.016" layer="125" ratio="10" rot="R270">R52</text>
-<text x="212.7164" y="95.8469" size="0.9906" layer="125" ratio="10">R53</text>
-<text x="193.9077" y="114.1476" size="1.016" layer="125" ratio="10">R54</text>
-<text x="196.308" y="122.3645" size="1.016" layer="125" ratio="10" rot="R270">R55</text>
-<text x="220.5904" y="105.7529" size="0.9906" layer="125" ratio="10">R56</text>
-<text x="209.1985" y="118.5545" size="1.016" layer="125" ratio="10">R57</text>
-<text x="192.4726" y="114.6556" size="1.016" layer="125" ratio="10" rot="R180">R58</text>
-<text x="192.498" y="123.825" size="1.016" layer="125" ratio="10" rot="R180">R59</text>
-<text x="178.4645" y="126.873" size="1.016" layer="125" ratio="10" rot="R270">R60</text>
-<text x="188.1236125" y="123.65959375" size="0.889" layer="125" ratio="10" rot="R270">R61</text>
-<text x="183.1" y="129.159" size="1.016" layer="125" ratio="10" rot="R180">R62</text>
-<text x="173.067" y="83.947" size="1.016" layer="125" ratio="10">R63</text>
-<text x="175.099" y="89.154" size="0.889" layer="125" ratio="10">R64</text>
-<text x="180.1051125" y="107.305603125" size="0.9906" layer="125" ratio="10">R65</text>
-<text x="179.925" y="90.043" size="0.889" layer="125" ratio="10" rot="R180">R66</text>
-<text x="177.3215" y="81.8515" size="1.016" layer="125" ratio="10" rot="R90">R67</text>
-<text x="171.5533875" y="97.151696875" size="0.9906" layer="125" ratio="10">R68</text>
-<text x="185.894" y="78.359" size="1.27" layer="125" ratio="10">R69</text>
-<text x="182.592" y="85.852" size="1.016" layer="125" ratio="10" rot="R90">R70</text>
-<text x="182.592" y="81.8515" size="1.016" layer="125" ratio="10" rot="R90">R71</text>
-<text x="178.401" y="98.425" size="1.016" layer="125" ratio="10" rot="R180">R72</text>
-<text x="179.8615" y="97.536" size="1.016" layer="125" ratio="10">R73</text>
-<text x="174.972" y="99.06" size="1.016" layer="125" ratio="10">R74</text>
-<text x="169.0411" y="101.6381" size="0.9906" layer="125" ratio="10" rot="R180">R75</text>
-<text x="175.5054" y="105.1306" size="0.9906" layer="125" ratio="10" rot="R270">R76</text>
-<text x="208.7286" y="108.0516" size="0.9906" layer="125" ratio="10" rot="R180">R77</text>
-<text x="205.4901" y="99.1616" size="0.9906" layer="125" ratio="10" rot="R180">R78</text>
-<text x="224.5274" y="105.7529" size="0.9906" layer="125" ratio="10">R79</text>
-<text x="182.084" y="133.731" size="0.889" layer="125" ratio="10" rot="R270">R80</text>
-<text x="190.7835" y="129.7305" size="0.889" layer="125" ratio="10">R81</text>
-<text x="167.352" y="122.428" size="1.016" layer="125" ratio="10">R82</text>
-<text x="194.403" y="129.667" size="0.889" layer="125" ratio="10">R83</text>
-<text x="186.5925" y="129.7305" size="0.889" layer="125" ratio="10">R84</text>
-<text x="197.8701" y="148.3106" size="0.9906" layer="125" ratio="10" rot="R180">R85</text>
-<text x="204.5249" y="126.5936" size="1.016" layer="125" ratio="10" rot="R270">R86</text>
-<text x="157.5095" y="82.9945" size="1.016" layer="125" ratio="10">R87</text>
-<text x="211.5734" y="134.8994" size="0.9906" layer="125" ratio="10">R88</text>
-<text x="222.4319" y="122.2756" size="1.016" layer="125" ratio="10" rot="R270">R89</text>
-<text x="168.495" y="82.4865" size="1.016" layer="125" ratio="10">R90</text>
-<text x="166.6535" y="86.0425" size="1.016" layer="125" ratio="10" rot="R180">R91</text>
-<text x="208.9191" y="131.4704" size="0.9906" layer="125" ratio="10" rot="R90">R92</text>
-<text x="159.4145" y="91.3765" size="1.016" layer="125" ratio="10" rot="R270">R93</text>
-<text x="218.4949" y="124.3584" size="1.016" layer="125" ratio="10">R94</text>
-<text x="154.2075" y="95.377" size="1.016" layer="125" ratio="10" rot="R270">R95</text>
-<text x="154.2075" y="92.075" size="1.016" layer="125" ratio="10" rot="R270">R96</text>
-<text x="210.278" y="116.332" size="1.016" layer="125" ratio="10">R97</text>
-<text x="163.7325" y="132.461" size="1.016" layer="125" ratio="10" rot="R180">R98</text>
-<text x="170.146" y="126.619" size="1.016" layer="125" ratio="10">R99</text>
-<text x="172.686" y="115.2525" size="1.016" layer="125" ratio="10">R100</text>
-<text x="213.2244" y="134.0866" size="0.9906" layer="125" ratio="10" rot="R270">R101</text>
-<text x="217.0344" y="118.3259" size="1.016" layer="125" ratio="10">R102</text>
-<text x="170.146" y="124.714" size="1.016" layer="125" ratio="10">R103</text>
-<text x="215.7009" y="134.8994" size="0.9906" layer="125" ratio="10">R104</text>
-<text x="165.5105" y="119.888" size="1.016" layer="125" ratio="10" rot="R270">R105</text>
-<text x="188.4086" y="110.7821" size="1.016" layer="125" ratio="10" rot="R180">R106</text>
-<text x="282.287" y="107.3785" size="1.016" layer="125" ratio="10">SW</text>
-<text x="166.336" y="95.1865" size="1.016" layer="125" ratio="10" rot="R270">TP1</text>
-<text x="239.75350625" y="145.750990625" size="1.27" layer="125" ratio="10">TR1</text>
-<text x="301.2965125" y="91.94" size="1.27" layer="126" ratio="10" rot="MR0">X1</text>
-<text x="300.44" y="137.016996875" size="1.27" layer="126" ratio="10" rot="MR0">X2</text>
-<text x="157.8039125" y="129.94119375" size="1.27" layer="125" ratio="10" rot="SR0">X3</text>
-<text x="280.282" y="80.6204875" size="1.27" layer="125" ratio="10">ZD1</text>
-<text x="288.156" y="138.7229875" size="1.27" layer="125" ratio="10">ZD2</text>
-<text x="160.648" y="90.6534875" size="1.27" layer="125" ratio="10">ZD3</text>
-<text x="203.801" y="77.2795" size="1.016" layer="125" ratio="10">ZD4</text>
-<text x="206.7855" y="100.076" size="1.016" layer="125" ratio="10" rot="R270">ZD5</text>
+<text x="136.1924875" y="104.8385" size="1.27" layer="125" ratio="10">C1</text>
+<text x="137.7799875" y="95.1865" size="1.27" layer="125">C2</text>
+<text x="139.3039875" y="104.902" size="1.27" layer="125" ratio="10">C3</text>
+<text x="133.7794875" y="135.4455" size="1.778" layer="126" ratio="10" rot="MR0">C4</text>
+<text x="133.7794875" y="117.348" size="1.778" layer="126" ratio="10" rot="MR0">C5</text>
+<text x="101.5849875" y="98.4885" size="1.016" layer="125" ratio="10">C6</text>
+<text x="104.5694875" y="98.4885" size="1.016" layer="125" ratio="10">C7</text>
+<text x="98.2194875" y="98.425" size="1.016" layer="125" ratio="10">C8</text>
+<text x="99.1084875" y="110.8075" size="1.016" layer="125" ratio="10">C9</text>
+<text x="107.8714875" y="114.554" size="1.016" layer="125" ratio="10">C10</text>
+<text x="106.5379875" y="122.174" size="1.016" layer="125" ratio="10" rot="R90">C11</text>
+<text x="102.5374875" y="87.884" size="1.016" layer="125" ratio="10">C12</text>
+<text x="86.4084875" y="95.0595" size="1.016" layer="125" ratio="10" rot="R180">C13</text>
+<text x="84.5034875" y="97.3455" size="1.016" layer="125" ratio="10" rot="R180">C14</text>
+<text x="82.0269875" y="98.4885" size="0.889" layer="125" ratio="10">C15</text>
+<text x="81.5824875" y="77.8256" size="1.27" layer="125" ratio="10" rot="SR0">C16</text>
+<text x="113.7769875" y="94.742" size="1.016" layer="125" ratio="10">C17</text>
+<text x="105.5600875" y="84.4804" size="1.27" layer="125" ratio="10" rot="SR90">C18</text>
+<text x="87.1704875" y="90.424" size="0.889" layer="125" ratio="10">C19</text>
+<text x="99.3624875" y="87.884" size="1.016" layer="125" ratio="10">C20</text>
+<text x="99.3624875" y="125.349" size="1.016" layer="125" ratio="10">C21</text>
+<text x="99.4259875" y="126.365" size="1.016" layer="125" ratio="10" rot="R180">C22</text>
+<text x="86.8529875" y="117.7925" size="1.016" layer="125" ratio="10" rot="R270">C23</text>
+<text x="81.9634875" y="144.399" size="1.016" layer="125" ratio="10">C24</text>
+<text x="74.7879875" y="135.9535" size="1.016" layer="125" ratio="10" rot="R270">C25</text>
+<text x="72.2479875" y="127.127" size="1.016" layer="125" ratio="10" rot="R180">C26</text>
+<text x="76.7818875" y="135.8519" size="1.016" layer="125" ratio="10" rot="SR90">C27</text>
+<text x="101.3309875" y="126.746" size="1.016" layer="125" ratio="10">C28</text>
+<text x="97.7749875" y="139.5095" size="1.016" layer="125" ratio="10" rot="R180">C29</text>
+<text x="79.5504875" y="112.9665" size="1.016" layer="125" ratio="10">C30</text>
+<text x="96.3144875" y="131.6355" size="1.016" layer="125" ratio="10">C31</text>
+<text x="75.8674875" y="123.317" size="1.016" layer="125" ratio="10" rot="R270">C32</text>
+<text x="92.9489875" y="148.717" size="1.016" layer="125" ratio="10" rot="R180">C33</text>
+<text x="103.4899875" y="146.8755" size="1.016" layer="125" ratio="10">C34</text>
+<text x="85.8115875" y="129.5146" size="1.27" layer="125" ratio="10" rot="SR270">C35</text>
+<text x="88.1864875" y="132.207" size="1.016" layer="125" ratio="10">C36</text>
+<text x="95.4889875" y="134.112" size="1.016" layer="125" ratio="10" rot="R90">C37</text>
+<text x="88.9484875" y="127.1905" size="1.016" layer="125" ratio="10" rot="R270">C38</text>
+<text x="90.9169875" y="127.1905" size="1.016" layer="125" ratio="10" rot="R270">C39</text>
+<text x="102.7279875" y="143.764" size="0.889" layer="125" ratio="10" rot="R270">C40</text>
+<text x="108.8239875" y="134.0485" size="1.016" layer="125" ratio="10">C41</text>
+<text x="75.0419875" y="144.8435" size="1.016" layer="125" ratio="10">C42</text>
+<text x="62.2149875" y="140.6525" size="1.016" layer="125" ratio="10">C43</text>
+<text x="79.1059875" y="90.424" size="1.016" layer="125" ratio="10" rot="R90">C44</text>
+<text x="65.3899875" y="83.439" size="0.889" layer="125" ratio="10">C45</text>
+<text x="30.83199375" y="114.07650625" size="1.016" layer="125" ratio="10" rot="R180">C46</text>
+<text x="35.6084875" y="129.159" size="1.016" layer="125" ratio="10" rot="R180">C47</text>
+<text x="36.1069875" y="118.80100625" size="0.889" layer="125" ratio="10" rot="R270">C48</text>
+<text x="36.146003125" y="126.03449375" size="0.889" layer="125" ratio="10" rot="R270">C49</text>
+<text x="57.1984875" y="120.396" size="1.016" layer="125" ratio="10">C50</text>
+<text x="41.1329875" y="119.1895" size="0.889" layer="125" ratio="10" rot="R270">C51</text>
+<text x="26.440003125" y="123.9488" size="1.016" layer="125" ratio="10" rot="R270">C52</text>
+<text x="17.544009375" y="94.361" size="1.016" layer="125" ratio="10" rot="R270">C53</text>
+<text x="19.7969875" y="91.3765" size="1.016" layer="125" ratio="10" rot="R180">C54</text>
+<text x="48.4354875" y="116.332" size="1.016" layer="125" ratio="10" rot="R180">C55</text>
+<text x="16.4314875" y="108.966" size="1.016" layer="125" ratio="10">C56</text>
+<text x="19.622490625" y="95.9334875" size="1.016" layer="125" ratio="10">C57</text>
+<text x="35.8655125" y="96.0755" size="1.016" layer="125" ratio="10" rot="R270">C58</text>
+<text x="32.3064875" y="97.777503125" size="1.016" layer="125" ratio="10">C59</text>
+<text x="31.8619875" y="90.6145" size="1.016" layer="125" ratio="10">C60</text>
+<text x="49.1974875" y="125.1585" size="1.016" layer="125" ratio="10" rot="R180">C61</text>
+<text x="29.6394875" y="111.506" size="1.016" layer="125" ratio="10" rot="R180">C62</text>
+<text x="26.91249375" y="102.259890625" size="0.889" layer="125" ratio="10">C63</text>
+<text x="14.3359875" y="104.902" size="1.016" layer="125" ratio="10" rot="R270">C64</text>
+<text x="29.5124875" y="147.066" size="1.016" layer="125" ratio="10">C65</text>
+<text x="60.58250625" y="144.284496875" size="1.016" layer="125" ratio="10">C66</text>
+<text x="53.3884875" y="141.732" size="1.016" layer="125" ratio="10">C67</text>
+<text x="49.5784875" y="144.0815" size="1.016" layer="125" ratio="10" rot="R180">C68</text>
+<text x="52.1819875" y="135.1915" size="1.016" layer="125" ratio="10">C69</text>
+<text x="55.6744875" y="137.9855" size="1.016" layer="125" ratio="10">C70</text>
+<text x="40.8154875" y="134.8105" size="0.889" layer="125" ratio="10">C71</text>
+<text x="32.5604875" y="134.8105" size="0.889" layer="125" ratio="10">C72</text>
+<text x="35.2909875" y="143.9545" size="1.016" layer="125" ratio="10" rot="R180">C73</text>
+<text x="34.7829875" y="147.32" size="1.016" layer="125" ratio="10">C74</text>
+<text x="41.7679875" y="142.748" size="1.016" layer="125" ratio="10">C75</text>
+<text x="38.9104875" y="147.32" size="1.016" layer="125" ratio="10">C76</text>
+<text x="36.6879875" y="134.8105" size="0.889" layer="125" ratio="10">C77</text>
+<text x="44.5619875" y="134.8105" size="0.889" layer="125" ratio="10">C78</text>
+<text x="43.3554875" y="140.589" size="1.016" layer="125" ratio="10" rot="R270">C79</text>
+<text x="2.6519875" y="82.9945" size="1.016" layer="125" ratio="10">C80</text>
+<text x="14.9074875" y="91.2495" size="1.016" layer="125" ratio="10" rot="R180">C81</text>
+<text x="54.7854875" y="129.4765" size="1.016" layer="125" ratio="10" rot="R270">C82</text>
+<text x="66.3424875" y="125.2855" size="1.016" layer="125" ratio="10">C83</text>
+<text x="17.3204875" y="115.6335" size="1.016" layer="125" ratio="10" rot="R270">C84</text>
+<text x="18.2094875" y="60.8965" size="1.27" layer="125" ratio="10">C85</text>
+<text x="8.2399875" y="11.43" size="1.27" layer="125" ratio="10" rot="R180">C86</text>
+<text x="78.5344875" y="36.322" size="1.016" layer="125" ratio="10" rot="SR0">C87</text>
+<text x="70.6604875" y="36.83" size="1.016" layer="125" ratio="10" rot="SR270">C88</text>
+<text x="86.1544875" y="38.735" size="1.016" layer="125" ratio="10" rot="SR270">C89</text>
+<text x="80.6299875" y="27.813" size="1.016" layer="125" ratio="10" rot="SR270">C90</text>
+<text x="75.4229875" y="36.8935" size="1.016" layer="125" ratio="10" rot="SR270">C91</text>
+<text x="64.5644875" y="43.688" size="1.016" layer="125" ratio="10">C92</text>
+<text x="64.5009875" y="51.7525" size="1.016" layer="125" ratio="10">C93</text>
+<text x="73.6449875" y="29.0195" size="0.889" layer="125" ratio="10" rot="SR270">C94</text>
+<text x="68.1839875" y="24.4729" size="1.016" layer="125" ratio="10" rot="SR270">C95</text>
+<text x="64.4374875" y="22.606" size="1.016" layer="125" ratio="10">C96</text>
+<text x="88.9865875" y="28.6131" size="1.27" layer="125" ratio="10" rot="SR270">C97</text>
+<text x="88.4404875" y="17.907" size="1.016" layer="125" ratio="10" rot="SR270">C98</text>
+<text x="28.0519875" y="57.658" size="1.016" layer="125" ratio="10" rot="R180">C99</text>
+<text x="41.0694875" y="55.3085" size="1.016" layer="125" ratio="10">C100</text>
+<text x="56.8174875" y="68.199" size="1.016" layer="125" ratio="10">C101</text>
+<text x="25.4484875" y="61.6585" size="1.016" layer="125" ratio="10">C102</text>
+<text x="43.7999875" y="61.5315" size="1.016" layer="125" ratio="10">C103</text>
+<text x="177.1499875" y="18.8595" size="1.016" layer="125" ratio="10">C104</text>
+<text x="173.5939875" y="1.3335" size="1.016" layer="125" ratio="10">C105</text>
+<text x="182.0648875" y="28.2321" size="1.27" layer="125" ratio="10" rot="SR0">C106</text>
+<text x="154.988996875" y="63.110490625" size="1.016" layer="125" ratio="10" rot="R180">C107</text>
+<text x="155.3059875" y="1.397" size="1.016" layer="125" ratio="10">C108</text>
+<text x="128.0009875" y="48.0695" size="1.016" layer="125" ratio="10" rot="R90">C109</text>
+<text x="135.9384875" y="1.27" size="1.016" layer="125" ratio="10">C110</text>
+<text x="119.0728875" y="40.6146" size="1.27" layer="125" ratio="10" rot="SR0">C111</text>
+<text x="116.6979875" y="1.397" size="1.016" layer="125" ratio="10">C112</text>
+<text x="206.5504875" y="39.878" size="1.016" layer="125" ratio="10" rot="R180">C113</text>
+<text x="211.8844875" y="39.878" size="1.016" layer="125" ratio="10" rot="R180">C114</text>
+<text x="210.3604875" y="25.4635" size="1.016" layer="125" ratio="10">C115</text>
+<text x="205.2169875" y="29.7815" size="1.016" layer="125" ratio="10" rot="R180">C116</text>
+<text x="128.0009875" y="69.0245" size="1.016" layer="125" ratio="10">C117</text>
+<text x="129.5884875" y="60.452" size="1.016" layer="125" ratio="10">C118</text>
+<text x="285.6968875" y="19.0246" size="1.27" layer="125" ratio="10" rot="SR0">C119</text>
+<text x="250.8226875" y="17.7927" size="1.27" layer="125" ratio="10" rot="SR0">C120</text>
+<text x="144.1299875" y="63.3095" size="1.016" layer="125" ratio="10">C121</text>
+<text x="144.1934875" y="69.215" size="1.016" layer="125" ratio="10">C122</text>
+<text x="266.4309875" y="53.213" size="1.016" layer="125" ratio="10" rot="R180">C123</text>
+<text x="257.8584875" y="25.3365" size="1.016" layer="125" ratio="10">C124</text>
+<text x="286.4334875" y="66.294" size="1.016" layer="125" ratio="10">C125</text>
+<text x="244.3329875" y="50.6095" size="1.016" layer="125" ratio="10">C126</text>
+<text x="277.3656875" y="37.7317" size="1.4224" layer="125" ratio="10" rot="SR0">C127</text>
+<text x="266.4944875" y="29.21" size="1.016" layer="125" ratio="10" rot="R90">C128</text>
+<text x="251.4449875" y="29.0195" size="1.016" layer="125" ratio="10" rot="R90">C129</text>
+<text x="207.8839875" y="12.573" size="1.016" layer="125" ratio="10" rot="R180">C130</text>
+<text x="236.9669875" y="19.939" size="1.016" layer="125" ratio="10" rot="R180">C131</text>
+<text x="212.5829875" y="17.4625" size="1.016" layer="125" ratio="10">C132</text>
+<text x="207.8839875" y="14.5415" size="1.016" layer="125" ratio="10" rot="R180">C133</text>
+<text x="212.4559875" y="11.1125" size="1.016" layer="125" ratio="10">C134</text>
+<text x="237.5384875" y="1.27" size="1.016" layer="125" ratio="10">C135</text>
+<text x="232.1409875" y="10.9855" size="1.016" layer="125" ratio="10">C136</text>
+<text x="301.4194875" y="32.893" size="1.016" layer="125" ratio="10">C137</text>
+<text x="217.4089875" y="7.8105" size="1.016" layer="125" ratio="10" rot="R180">C138</text>
+<text x="226.9339875" y="2.921" size="0.762" layer="125" ratio="10" rot="R270">C139</text>
+<text x="224.7114875" y="2.921" size="0.762" layer="125" ratio="10" rot="R270">C140</text>
+<text x="222.7429875" y="2.921" size="0.762" layer="125" ratio="10" rot="R270">C141</text>
+<text x="217.5359875" y="14.986" size="1.016" layer="125" ratio="10">C142</text>
+<text x="221.2824875" y="13.0175" size="0.8128" layer="125" ratio="10" rot="R270">C143</text>
+<text x="217.4724875" y="2.159" size="1.27" layer="125" ratio="10">C144</text>
+<text x="227.962509375" y="12.278003125" size="1.016" layer="126" ratio="10" rot="SMR0">C145</text>
+<text x="230.2359875" y="6.858" size="0.762" layer="125" ratio="10">C146</text>
+<text x="186.1669875" y="45.7835" size="1.016" layer="125" ratio="10">C147</text>
+<text x="185.2144875" y="47.5615" size="1.016" layer="125" ratio="10" rot="R90">C148</text>
+<text x="263.7004875" y="29.21" size="1.016" layer="125" ratio="10" rot="R90">C149</text>
+<text x="191.6914875" y="68.707" size="1.016" layer="125" ratio="10">C150</text>
+<text x="287.0049875" y="31.369" size="1.016" layer="125" ratio="10">C151</text>
+<text x="305.4834875" y="27.8765" size="1.016" layer="126" ratio="10" rot="SMR0">C152</text>
+<text x="303.3244875" y="50.6095" size="1.016" layer="125" ratio="10">C153</text>
+<text x="243.4439875" y="31.877" size="1.016" layer="125" ratio="10" rot="R90">C154</text>
+<text x="240.4594875" y="31.877" size="1.016" layer="125" ratio="10" rot="R90">C155</text>
+<text x="203.0579875" y="60.96" size="1.016" layer="125" ratio="10" rot="R90">C156</text>
+<text x="200.435490625" y="116.332" size="1.016" layer="125" ratio="10" rot="R180">C157</text>
+<text x="178.91249375" y="102.259890625" size="0.889" layer="125" ratio="10">C158</text>
+<text x="201.197490625" y="125.1585" size="1.016" layer="125" ratio="10" rot="R180">C159</text>
+<text x="209.198490625" y="120.396" size="1.016" layer="125" ratio="10">C160</text>
+<text x="212.58250625" y="144.284496875" size="1.016" layer="125" ratio="10">C161</text>
+<text x="204.181990625" y="135.1915" size="1.016" layer="125" ratio="10">C162</text>
+<text x="207.674490625" y="137.9855" size="1.016" layer="125" ratio="10">C163</text>
+<text x="181.512490625" y="147.066" size="1.016" layer="125" ratio="10">C164</text>
+<text x="193.767990625" y="142.748" size="1.016" layer="125" ratio="10">C165</text>
+<text x="187.290990625" y="143.9545" size="1.016" layer="125" ratio="10" rot="R180">C166</text>
+<text x="206.785490625" y="129.4765" size="1.016" layer="125" ratio="10" rot="R270">C167</text>
+<text x="182.83199375" y="114.07650625" size="1.016" layer="125" ratio="10" rot="R180">C168</text>
+<text x="188.106990625" y="118.80100625" size="0.889" layer="125" ratio="10" rot="R270">C169</text>
+<text x="178.440003125" y="123.9488" size="1.016" layer="125" ratio="10" rot="R270">C170</text>
+<text x="188.146003125" y="126.03449375" size="0.889" layer="125" ratio="10" rot="R270">C171</text>
+<text x="218.342490625" y="125.2855" size="1.016" layer="125" ratio="10">C172</text>
+<text x="171.796990625" y="91.3765" size="1.016" layer="125" ratio="10" rot="R180">C173</text>
+<text x="166.335990625" y="104.902" size="1.016" layer="125" ratio="10" rot="R270">C174</text>
+<text x="187.608490625" y="129.159" size="1.016" layer="125" ratio="10" rot="R180">C175</text>
+<text x="193.132990625" y="119.1895" size="0.889" layer="125" ratio="10" rot="R270">C176</text>
+<text x="217.389990625" y="83.439" size="0.889" layer="125" ratio="10">C177</text>
+<text x="183.861990625" y="90.6145" size="1.016" layer="125" ratio="10">C178</text>
+<text x="171.622490625" y="95.9334875" size="1.016" layer="125" ratio="10">C179</text>
+<text x="187.8655125" y="96.0755" size="1.016" layer="125" ratio="10" rot="R270">C180</text>
+<text x="184.306490625" y="97.777503125" size="1.016" layer="125" ratio="10">C181</text>
+<text x="169.544009375" y="94.361" size="1.016" layer="125" ratio="10" rot="R270">C182</text>
+<text x="168.431490625" y="108.966" size="1.016" layer="125" ratio="10">C183</text>
+<text x="181.639490625" y="111.506" size="1.016" layer="125" ratio="10" rot="R180">C184</text>
+<text x="190.910490625" y="147.32" size="1.016" layer="125" ratio="10">C185</text>
+<text x="186.782990625" y="147.32" size="1.016" layer="125" ratio="10">C186</text>
+<text x="201.578490625" y="144.0815" size="1.016" layer="125" ratio="10" rot="R180">C187</text>
+<text x="231.105990625" y="90.424" size="1.016" layer="125" ratio="10" rot="R90">C188</text>
+<text x="256.569490625" y="98.4885" size="1.016" layer="125" ratio="10">C189</text>
+<text x="254.537490625" y="87.884" size="1.016" layer="125" ratio="10">C190</text>
+<text x="265.776990625" y="94.742" size="1.016" layer="125" ratio="10">C191</text>
+<text x="251.362490625" y="87.884" size="1.016" layer="125" ratio="10">C192</text>
+<text x="253.584990625" y="98.4885" size="1.016" layer="125" ratio="10">C193</text>
+<text x="251.425990625" y="126.365" size="1.016" layer="125" ratio="10" rot="R180">C194</text>
+<text x="251.362490625" y="125.349" size="1.016" layer="125" ratio="10">C195</text>
+<text x="259.871490625" y="114.554" size="1.016" layer="125" ratio="10">C196</text>
+<text x="251.108490625" y="110.8075" size="1.016" layer="125" ratio="10">C197</text>
+<text x="258.537990625" y="122.174" size="1.016" layer="125" ratio="10" rot="R90">C198</text>
+<text x="239.170490625" y="90.424" size="0.889" layer="125" ratio="10">C199</text>
+<text x="234.026990625" y="98.4885" size="0.889" layer="125" ratio="10">C200</text>
+<text x="233.963490625" y="144.399" size="1.016" layer="125" ratio="10">C201</text>
+<text x="228.781890625" y="135.8519" size="1.016" layer="125" ratio="10" rot="SR90">C202</text>
+<text x="237.811590625" y="129.5146" size="1.27" layer="125" ratio="10" rot="SR270">C203</text>
+<text x="240.186490625" y="132.207" size="1.016" layer="125" ratio="10">C204</text>
+<text x="226.787990625" y="135.9535" size="1.016" layer="125" ratio="10" rot="R270">C205</text>
+<text x="254.727990625" y="143.764" size="0.889" layer="125" ratio="10" rot="R270">C206</text>
+<text x="260.823990625" y="134.0485" size="1.016" layer="125" ratio="10">C207</text>
+<text x="249.774990625" y="139.5095" size="1.016" layer="125" ratio="10" rot="R180">C208</text>
+<text x="247.488990625" y="134.112" size="1.016" layer="125" ratio="10" rot="R90">C209</text>
+<text x="255.489990625" y="146.8755" size="1.016" layer="125" ratio="10">C210</text>
+<text x="248.314490625" y="131.6355" size="1.016" layer="125" ratio="10">C211</text>
+<text x="242.916990625" y="127.1905" size="1.016" layer="125" ratio="10" rot="R270">C212</text>
+<text x="240.948490625" y="127.1905" size="1.016" layer="125" ratio="10" rot="R270">C213</text>
+<text x="244.948990625" y="148.717" size="1.016" layer="125" ratio="10" rot="R180">C214</text>
+<text x="285.779490625" y="135.4455" size="1.778" layer="126" ratio="10" rot="MR0">C215</text>
+<text x="227.867490625" y="123.317" size="1.016" layer="125" ratio="10" rot="R270">C216</text>
+<text x="227.041990625" y="144.8435" size="1.016" layer="125" ratio="10">C217</text>
+<text x="231.550490625" y="112.9665" size="1.016" layer="125" ratio="10">C218</text>
+<text x="224.247990625" y="127.127" size="1.016" layer="125" ratio="10" rot="R180">C219</text>
+<text x="205.388490625" y="141.732" size="1.016" layer="125" ratio="10">C220</text>
+<text x="214.214990625" y="140.6525" size="1.016" layer="125" ratio="10">C221</text>
+<text x="285.779490625" y="117.348" size="1.778" layer="126" ratio="10" rot="MR0">C222</text>
+<text x="233.582490625" y="77.8256" size="1.27" layer="125" ratio="10" rot="SR0">C223</text>
+<text x="238.852990625" y="117.7925" size="1.016" layer="125" ratio="10" rot="R270">C224</text>
+<text x="250.219490625" y="98.425" size="1.016" layer="125" ratio="10">C225</text>
+<text x="154.651990625" y="82.9945" size="1.016" layer="125" ratio="10">C226</text>
+<text x="169.320490625" y="115.6335" size="1.016" layer="125" ratio="10" rot="R270">C227</text>
+<text x="166.907490625" y="91.2495" size="1.016" layer="125" ratio="10" rot="R180">C228</text>
+<text x="288.192490625" y="104.8385" size="1.27" layer="125" ratio="10">C229</text>
+<text x="291.303990625" y="104.902" size="1.27" layer="125" ratio="10">C230</text>
+<text x="289.779990625" y="95.1865" size="1.27" layer="125">C231</text>
+<text x="195.355490625" y="140.589" size="1.016" layer="125" ratio="10" rot="R270">C232</text>
+<text x="196.561990625" y="134.8105" size="0.889" layer="125" ratio="10">C233</text>
+<text x="188.687990625" y="134.8105" size="0.889" layer="125" ratio="10">C234</text>
+<text x="192.815490625" y="134.8105" size="0.889" layer="125" ratio="10">C235</text>
+<text x="184.560490625" y="134.8105" size="0.889" layer="125" ratio="10">C236</text>
+<text x="257.560090625" y="84.4804" size="1.27" layer="125" ratio="10" rot="SR90">C237</text>
+<text x="238.408490625" y="95.0595" size="1.016" layer="125" ratio="10" rot="R180">C238</text>
+<text x="236.503490625" y="97.3455" size="1.016" layer="125" ratio="10" rot="R180">C239</text>
+<text x="253.330990625" y="126.746" size="1.016" layer="125" ratio="10">C240</text>
+<text x="119.5554875" y="145.0975" size="1.27" layer="125" ratio="10" rot="R180">D1</text>
+<text x="117.0789875" y="122.2375" size="1.27" layer="125" ratio="10">D2</text>
+<text x="127.8104875" y="145.161" size="1.27" layer="125" ratio="10" rot="R180">D3</text>
+<text x="125.3974875" y="122.2375" size="1.27" layer="125" ratio="10">D4</text>
+<text x="119.6189875" y="99.3775" size="1.27" layer="125" ratio="10">D5</text>
+<text x="92.0170125" y="112.411003125" size="1.016" layer="125" ratio="10" rot="R180">D6</text>
+<text x="86.8529875" y="147.193" size="1.27" layer="125" ratio="10" rot="R180">D7</text>
+<text x="70.8350125" y="124.480496875" size="1.016" layer="125" ratio="10" rot="R270">D8</text>
+<text x="75.7245125" y="112.859996875" size="1.016" layer="125" ratio="10" rot="R270">D9</text>
+<text x="100.9499875" y="147.0025" size="1.27" layer="125" ratio="10" rot="R180">D10</text>
+<text x="59.2304875" y="77.216" size="1.016" layer="125" ratio="10">D11</text>
+<text x="57.6429875" y="92.5195" size="1.016" layer="125" ratio="10" rot="R270">D12</text>
+<text x="35.8624875" y="99.1235" size="1.016" layer="125" ratio="10" rot="R270">D13</text>
+<text x="59.1034875" y="82.296" size="1.016" layer="125" ratio="10">D14</text>
+<text x="57.0714875" y="116.1415" size="1.016" layer="125" ratio="10" rot="R180">D15</text>
+<text x="57.5794875" y="124.1425" size="0.889" layer="125" ratio="10" rot="R270">D16</text>
+<text x="31.6714875" y="100.9015" size="1.016" layer="125" ratio="10">D17</text>
+<text x="31.7349875" y="103.6955" size="1.016" layer="125" ratio="10">D18</text>
+<text x="82.1539875" y="30.48" size="1.27" layer="125" ratio="10" rot="SR270">D19</text>
+<text x="87.1545125" y="24.086996875" size="1.016" layer="125" ratio="10" rot="SR270">D20</text>
+<text x="96.5525125" y="64.409496875" size="1.016" layer="125" ratio="10" rot="SR270">D21</text>
+<text x="191.497890625" y="15.027096875" size="1.27" layer="125" ratio="10">D22</text>
+<text x="151.9039875" y="21.174990625" size="1.27" layer="125" ratio="10" rot="R270">D23</text>
+<text x="142.029003125" y="51.50200625" size="1.016" layer="125" ratio="10">D24</text>
+<text x="111.7458" y="53.1026875" size="1.016" layer="125" ratio="10">D25</text>
+<text x="294.463496875" y="2.0074875" size="1.27" layer="125" ratio="10">D26</text>
+<text x="267.970990625" y="51.732003125" size="1.27" layer="125" ratio="10" rot="R90">D27</text>
+<text x="185.0874875" y="60.6425" size="1.27" layer="125" ratio="10">D28</text>
+<text x="172.1334875" y="61.7855" size="1.016" layer="125" ratio="10">D29</text>
+<text x="183.734990625" y="103.6955" size="1.016" layer="125" ratio="10">D30</text>
+<text x="209.579490625" y="124.1425" size="0.889" layer="125" ratio="10" rot="R270">D31</text>
+<text x="209.071490625" y="116.1415" size="1.016" layer="125" ratio="10" rot="R180">D32</text>
+<text x="183.671490625" y="100.9015" size="1.016" layer="125" ratio="10">D33</text>
+<text x="211.230490625" y="77.216" size="1.016" layer="125" ratio="10">D34</text>
+<text x="211.103490625" y="82.296" size="1.016" layer="125" ratio="10">D35</text>
+<text x="209.642990625" y="92.5195" size="1.016" layer="125" ratio="10" rot="R270">D36</text>
+<text x="187.862490625" y="99.1235" size="1.016" layer="125" ratio="10" rot="R270">D37</text>
+<text x="271.618990625" y="99.3775" size="1.27" layer="125" ratio="10">D38</text>
+<text x="244.0170125" y="112.411003125" size="1.016" layer="125" ratio="10" rot="R180">D39</text>
+<text x="252.949990625" y="147.0025" size="1.27" layer="125" ratio="10" rot="R180">D40</text>
+<text x="238.852990625" y="147.193" size="1.27" layer="125" ratio="10" rot="R180">D41</text>
+<text x="269.078990625" y="122.2375" size="1.27" layer="125" ratio="10">D42</text>
+<text x="277.397490625" y="122.2375" size="1.27" layer="125" ratio="10">D43</text>
+<text x="271.555490625" y="145.0975" size="1.27" layer="125" ratio="10" rot="R180">D44</text>
+<text x="279.810490625" y="145.161" size="1.27" layer="125" ratio="10" rot="R180">D45</text>
+<text x="222.8349875" y="124.480496875" size="1.016" layer="125" ratio="10" rot="R270">D46</text>
+<text x="227.7244875" y="112.859996875" size="1.016" layer="125" ratio="10" rot="R270">D47</text>
+<text x="74.514990625" y="121.851496875" size="1.016" layer="125" ratio="10" rot="R270">FB1</text>
+<text x="78.656509375" y="118.5735" size="1.016" layer="125" ratio="10" rot="R180">FB2</text>
+<text x="63.99799375" y="144.634" size="1.016" layer="125" ratio="10">FB3</text>
+<text x="86.73099375" y="66.529" size="1.016" layer="125" ratio="10">FB4</text>
+<text x="45.01149375" y="53.575" size="1.016" layer="125" ratio="10">FB5</text>
+<text x="44.63049375" y="68.2435" size="1.016" layer="125" ratio="10">FB6</text>
+<text x="171.12249375" y="67.2275" size="1.016" layer="125" ratio="10">FB7</text>
+<text x="226.514990625" y="121.851496875" size="1.016" layer="125" ratio="10" rot="R270">FB8</text>
+<text x="230.6565125" y="118.5735" size="1.016" layer="125" ratio="10" rot="R180">FB9</text>
+<text x="215.99799375" y="144.634" size="1.016" layer="125" ratio="10">FB10</text>
+<text x="132.8904875" y="107.442" size="1.016" layer="125" ratio="10">GND</text>
+<text x="284.890490625" y="107.442" size="1.016" layer="125" ratio="10">GND1</text>
+<text x="99.8831875" y="114.808" size="1.27" layer="125" ratio="10" rot="SR90">IC1</text>
+<text x="67.6505875" y="133.985" size="1.27" layer="125" ratio="10" rot="SR0">IC2</text>
+<text x="85.6464875" y="118.6561" size="1.27" layer="125" ratio="10" rot="SR90">IC3</text>
+<text x="99.9593875" y="132.2959" size="1.27" layer="125" ratio="10" rot="SR0">IC4</text>
+<text x="75.2959875" y="136.9441" size="1.27" layer="125" ratio="10" rot="SR90">IC5</text>
+<text x="49.5530875" y="117.0305" size="1.27" layer="125" ratio="10" rot="SR0">IC6</text>
+<text x="21.8035875" y="110.109" size="1.27" layer="125" ratio="10" rot="SR0">IC7</text>
+<text x="30.3760875" y="88.9" size="1.27" layer="125" ratio="10" rot="SR0">IC8</text>
+<text x="20.2287875" y="147.0025" size="1.27" layer="125" ratio="10" rot="SR0">IC9</text>
+<text x="51.8390875" y="148.336" size="1.016" layer="125" ratio="10" rot="SR0">IC10</text>
+<text x="46.3907875" y="140.3985" size="1.27" layer="125" ratio="10" rot="SR0">IC11</text>
+<text x="25.2579875" y="120.6246" size="1.27" layer="125" ratio="10" rot="SR90">IC12</text>
+<text x="48.8545875" y="132.1435" size="1.27" layer="125" ratio="10" rot="SR0">IC13</text>
+<text x="31.69800625" y="138.93048125" size="1.27" layer="125" ratio="10">IC14</text>
+<text x="60.4115875" y="120.015" size="1.27" layer="125" ratio="10" rot="SR0">IC15</text>
+<text x="79.2583875" y="32.2961" size="1.016" layer="125" ratio="10" rot="SR270">IC16</text>
+<text x="78.3820875" y="59.1185" size="1.27" layer="125" ratio="10" rot="SR0">IC17</text>
+<text x="57.8080875" y="63.9445" size="1.27" layer="125" ratio="10" rot="SR0">IC18</text>
+<text x="25.9310875" y="63.373" size="1.27" layer="125" ratio="10" rot="SR0">IC19</text>
+<text x="162.8966" y="56.0705" size="1.27" layer="125" ratio="10">IC20</text>
+<text x="210.7922875" y="46.609" size="1.27" layer="125" ratio="10" rot="SR0">IC21</text>
+<text x="212.6337875" y="33.02" size="1.27" layer="125" ratio="10" rot="SR0">IC22</text>
+<text x="120.6222875" y="68.961" size="1.27" layer="125" ratio="10" rot="SR0">IC23</text>
+<text x="268.6534875" y="19.1135" size="1.27" layer="125" ratio="10">IC24</text>
+<text x="137.0687875" y="68.834" size="1.27" layer="125" ratio="10" rot="SR0">IC25</text>
+<text x="260.8937875" y="43.18" size="1.27" layer="125" ratio="10" rot="SR0">IC26</text>
+<text x="243.3550875" y="41.5925" size="1.27" layer="125" ratio="10" rot="SR0">IC27</text>
+<text x="230.7955" y="15.331490625" size="1.27" layer="125" ratio="10">IC28</text>
+<text x="180.4265875" y="47.4345" size="1.016" layer="125" ratio="10" rot="SR0">IC29</text>
+<text x="191.9835875" y="46.1645" size="1.016" layer="125" ratio="10" rot="SR0">IC30</text>
+<text x="262.6209875" y="33.1724" size="1.27" layer="125" ratio="10" rot="SR270">IC31</text>
+<text x="281.8995875" y="31.877" size="1.016" layer="125" ratio="10" rot="SR0">IC32</text>
+<text x="191.4755875" y="61.7855" size="1.27" layer="125" ratio="10">IC33</text>
+<text x="203.4770875" y="62.5475" size="1.27" layer="125" ratio="10" rot="SR0">IC34</text>
+<text x="198.390790625" y="140.3985" size="1.27" layer="125" ratio="10" rot="SR0">IC35</text>
+<text x="183.69800625" y="138.93048125" size="1.27" layer="125" ratio="10">IC36</text>
+<text x="172.228790625" y="147.0025" size="1.27" layer="125" ratio="10" rot="SR0">IC37</text>
+<text x="182.376090625" y="88.9" size="1.27" layer="125" ratio="10" rot="SR0">IC38</text>
+<text x="201.553090625" y="117.0305" size="1.27" layer="125" ratio="10" rot="SR0">IC39</text>
+<text x="173.803590625" y="110.109" size="1.27" layer="125" ratio="10" rot="SR0">IC40</text>
+<text x="203.839090625" y="148.336" size="1.016" layer="125" ratio="10" rot="SR0">IC41</text>
+<text x="251.883190625" y="114.808" size="1.27" layer="125" ratio="10" rot="SR90">IC42</text>
+<text x="251.959390625" y="132.2959" size="1.27" layer="125" ratio="10" rot="SR0">IC43</text>
+<text x="219.650590625" y="133.985" size="1.27" layer="125" ratio="10" rot="SR0">IC44</text>
+<text x="237.646490625" y="118.6561" size="1.27" layer="125" ratio="10" rot="SR90">IC45</text>
+<text x="200.854590625" y="132.1435" size="1.27" layer="125" ratio="10" rot="SR0">IC46</text>
+<text x="177.257990625" y="120.6246" size="1.27" layer="125" ratio="10" rot="SR90">IC47</text>
+<text x="212.411590625" y="120.015" size="1.27" layer="125" ratio="10" rot="SR0">IC48</text>
+<text x="227.295990625" y="136.9441" size="1.27" layer="125" ratio="10" rot="SR90">IC49</text>
+<text x="182.85899375" y="0.93700625" size="1.27" layer="125" ratio="10">J1</text>
+<text x="109.30999375" y="0.93700625" size="1.27" layer="125" ratio="10">J2</text>
+<text x="163.42799375" y="0.93700625" size="1.27" layer="125" ratio="10">J3</text>
+<text x="144.50499375" y="0.93700625" size="1.27" layer="125" ratio="10">J4</text>
+<text x="125.70899375" y="0.93700625" size="1.27" layer="125" ratio="10">J5</text>
+<text x="109.3319875" y="124.635996875" size="1.016" layer="125" ratio="10">JP1</text>
+<text x="11.464009375" y="136.017" size="1.016" layer="125" ratio="10" rot="R270">JP2</text>
+<text x="215.8214875" y="68.453" size="1.016" layer="125" ratio="10">JP3</text>
+<text x="301.370490625" y="61.9125" size="1.27" layer="125" ratio="10" rot="R90">JP4</text>
+<text x="291.2594875" y="42.559503125" size="1.27" layer="125" ratio="10" rot="R180">JP5</text>
+<text x="291.2594875" y="36.273003125" size="1.27" layer="125" ratio="10" rot="R180">JP6</text>
+<text x="290.8149875" y="25.512496875" size="1.27" layer="125" ratio="10">JP7</text>
+<text x="279.6389875" y="25.067996875" size="1.016" layer="125" ratio="10">JP8</text>
+<text x="261.331990625" y="124.635996875" size="1.016" layer="125" ratio="10">JP9</text>
+<text x="163.4640125" y="136.017" size="1.016" layer="125" ratio="10" rot="R270">JP10</text>
+<text x="33.6399875" y="2.1709875" size="1.6764" layer="125" ratio="10">KK1</text>
+<text x="162.005009375" y="49.3395" size="1.27" layer="125" ratio="10">K_PAR</text>
+<text x="192.6455125" y="28.64200625" size="1.27" layer="125" ratio="10">K_S1</text>
+<text x="108.123990625" y="39.307490625" size="1.27" layer="125" ratio="10">K_S2</text>
+<text x="161.941509375" y="34.29" size="1.27" layer="125" ratio="10">K_SER</text>
+<text x="124.1909875" y="104.2035" size="1.6764" layer="126" ratio="10" rot="MR180">L1</text>
+<text x="119.786503125" y="84.656496875" size="1.6764" layer="125" ratio="10">L2</text>
+<text x="96.982" y="95.006996875" size="1.016" layer="125" ratio="10">L3</text>
+<text x="93.045" y="104.023996875" size="1.016" layer="125" ratio="10">L4</text>
+<text x="77.6454875" y="143.5735" size="1.016" layer="125" ratio="10" rot="R270">L5</text>
+<text x="106.9189875" y="128.8415" size="1.27" layer="125" ratio="10">L6</text>
+<text x="90.7804875" y="135.460003125" size="1.016" layer="125" ratio="10">L7</text>
+<text x="68.7554875" y="31.0515" size="1.27" layer="125" ratio="10" rot="SR0">L8</text>
+<text x="77.168503125" y="51.678003125" size="1.27" layer="125" ratio="10" rot="R180">L9</text>
+<text x="93.426" y="13.790496875" size="1.27" layer="125" ratio="10">L10</text>
+<text x="245.045" y="104.023996875" size="1.016" layer="125" ratio="10">L11</text>
+<text x="248.982" y="95.006996875" size="1.016" layer="125" ratio="10">L12</text>
+<text x="229.645490625" y="143.5735" size="1.016" layer="125" ratio="10" rot="R270">L13</text>
+<text x="242.780490625" y="135.460003125" size="1.016" layer="125" ratio="10">L14</text>
+<text x="258.918990625" y="128.8415" size="1.27" layer="125" ratio="10">L15</text>
+<text x="271.786503125" y="84.656496875" size="1.6764" layer="125" ratio="10">L16</text>
+<text x="276.190990625" y="104.2035" size="1.6764" layer="126" ratio="10" rot="MR180">L17</text>
+<text x="302.6275125" y="35.479" size="2.1844" layer="125" ratio="10" rot="SR90">LCD1</text>
+<text x="75.9309875" y="147.955" size="1.016" layer="125" ratio="10">LED1</text>
+<text x="227.930990625" y="147.955" size="1.016" layer="125" ratio="10">LED2</text>
+<text x="193.794" y="55.33349375" size="1.016" layer="126" ratio="10" rot="SMR0">LED_CC1</text>
+<text x="120.971996875" y="55.31599375" size="1.016" layer="126" ratio="10" rot="SMR0">LED_CC2</text>
+<text x="120.908496875" y="62.28600625" size="1.016" layer="126" ratio="10" rot="SMR0">LED_CV1</text>
+<text x="193.8575" y="62.33350625" size="1.016" layer="126" ratio="10" rot="SMR0">LED_CV2</text>
+<text x="176.54000625" y="15.840990625" size="1.016" layer="126" ratio="10" rot="SMR0">LED_O1</text>
+<text x="138.53200625" y="19.370496875" size="1.016" layer="126" ratio="10" rot="SMR0">LED_O2</text>
+<text x="202.687503125" y="48.240009375" size="1.016" layer="126" ratio="10" rot="SMR0">LED_PROG1</text>
+<text x="129.220009375" y="48.282503125" size="0.889" layer="126" ratio="10" rot="SMR0">LED_PROG2</text>
+<text x="307.393009375" y="22.2940125" size="1.016" layer="126" ratio="10" rot="SMR0">LED_PWR</text>
+<text x="193.361996875" y="48.367009375" size="1.016" layer="126" ratio="10" rot="SMR0">LED_S1</text>
+<text x="120.209996875" y="48.346003125" size="1.016" layer="126" ratio="10" rot="SMR0">LED_S2</text>
+<text x="157.31449375" y="19.306996875" size="1.016" layer="126" ratio="10" rot="SMR0">LED_SP</text>
+<text x="114.0944875" y="116.1415" size="1.27" layer="125" ratio="10">NTC1</text>
+<text x="266.094490625" y="116.1415" size="1.27" layer="125" ratio="10">NTC2</text>
+<text x="69.8984875" y="20.7645" size="1.27" layer="125" ratio="10" rot="SR0">OK1</text>
+<text x="73.7719875" y="0.5715" size="1.27" layer="125" ratio="10">OK2</text>
+<text x="201.5339875" y="54.864" size="1.27" layer="125" ratio="10">OK3</text>
+<text x="118.0949875" y="109.093" size="1.27" layer="125" ratio="10">Q1</text>
+<text x="91.1709875" y="116.7765" size="1.016" layer="125" ratio="10" rot="R90">Q2</text>
+<text x="89.5580875" y="121.539" size="1.016" layer="125" ratio="10" rot="SR0">Q3</text>
+<text x="72.46899375" y="104.90400625" size="1.778" layer="126" ratio="10" rot="SMR0">Q4</text>
+<text x="37.5134875" y="82.296" size="1.016" layer="125" ratio="10" rot="R180">Q5</text>
+<text x="40.2439875" y="78.105" size="1.016" layer="125" ratio="10">Q6</text>
+<text x="74.1783875" y="79.8195" size="1.27" layer="125" ratio="10" rot="SR0">Q7</text>
+<text x="42.826990625" y="93.08180625" size="1.27" layer="125" ratio="10">Q8</text>
+<text x="41.1583875" y="107.188" size="1.27" layer="125" ratio="10" rot="SR0">Q9</text>
+<text x="59.4209875" y="98.3615" size="1.016" layer="125" ratio="10">Q10</text>
+<text x="63.3579875" y="98.3615" size="1.016" layer="125" ratio="10">Q11</text>
+<text x="62.7864875" y="94.234" size="1.016" layer="125" ratio="10" rot="R180">Q12</text>
+<text x="68.0569875" y="98.298" size="1.016" layer="125" ratio="10">Q13</text>
+<text x="55.9665875" y="100.965" size="1.016" layer="125" ratio="10" rot="SR0">Q14</text>
+<text x="72.5400875" y="98.298" size="1.016" layer="125" ratio="10" rot="SR0">Q15</text>
+<text x="15.4789875" y="91.2495" size="1.016" layer="125" ratio="10" rot="R270">Q16</text>
+<text x="8.4939875" y="87.884" size="1.016" layer="125" ratio="10">Q17</text>
+<text x="19.2254875" y="130.4925" size="1.016" layer="125" ratio="10">Q18</text>
+<text x="16.3044875" y="111.3155" size="1.016" layer="125" ratio="10">Q19</text>
+<text x="46.5939875" y="6.5405" size="1.27" layer="125" ratio="10">Q20</text>
+<text x="55.8649875" y="20.2565" size="1.27" layer="125" ratio="10">Q21</text>
+<text x="90.0914875" y="5.5372" size="1.27" layer="125" ratio="10" rot="R180">Q22</text>
+<text x="198.2065875" y="16.891" size="1.016" layer="125" ratio="10" rot="SR0">Q23</text>
+<text x="148.375496875" y="57.14799375" size="1.016" layer="125" ratio="10">Q24</text>
+<text x="157.53049375" y="13.97200625" size="1.27" layer="125" ratio="10">Q25</text>
+<text x="112.1005875" y="64.008" size="1.27" layer="125" ratio="10" rot="SR0">Q26</text>
+<text x="282.7250875" y="58.2295" size="1.27" layer="125" ratio="10" rot="SR0">Q27</text>
+<text x="304.5055875" y="21.59" size="1.27" layer="125" ratio="10" rot="SR0">Q28</text>
+<text x="273.3905875" y="24.638" size="1.27" layer="125" ratio="10" rot="SR0">Q29</text>
+<text x="269.4535875" y="24.5745" size="1.27" layer="125" ratio="10" rot="SR0">Q30</text>
+<text x="224.46899375" y="104.90400625" size="1.778" layer="126" ratio="10" rot="SMR0">Q31</text>
+<text x="226.178390625" y="79.8195" size="1.27" layer="125" ratio="10" rot="SR0">Q32</text>
+<text x="220.056990625" y="98.298" size="1.016" layer="125" ratio="10">Q33</text>
+<text x="192.243990625" y="78.105" size="1.016" layer="125" ratio="10">Q34</text>
+<text x="193.158390625" y="107.188" size="1.27" layer="125" ratio="10" rot="SR0">Q35</text>
+<text x="211.420990625" y="98.3615" size="1.016" layer="125" ratio="10">Q36</text>
+<text x="215.357990625" y="98.3615" size="1.016" layer="125" ratio="10">Q37</text>
+<text x="214.786490625" y="94.234" size="1.016" layer="125" ratio="10" rot="R180">Q38</text>
+<text x="189.513490625" y="82.296" size="1.016" layer="125" ratio="10" rot="R180">Q39</text>
+<text x="224.540090625" y="98.298" size="1.016" layer="125" ratio="10" rot="SR0">Q40</text>
+<text x="207.966590625" y="100.965" size="1.016" layer="125" ratio="10" rot="SR0">Q41</text>
+<text x="194.826990625" y="93.08180625" size="1.27" layer="125" ratio="10">Q42</text>
+<text x="243.170990625" y="116.7765" size="1.016" layer="125" ratio="10" rot="R90">Q43</text>
+<text x="270.094990625" y="109.093" size="1.27" layer="125" ratio="10">Q44</text>
+<text x="241.558090625" y="121.539" size="1.016" layer="125" ratio="10" rot="SR0">Q45</text>
+<text x="168.304490625" y="111.3155" size="1.016" layer="125" ratio="10">Q46</text>
+<text x="160.493990625" y="87.884" size="1.016" layer="125" ratio="10">Q47</text>
+<text x="167.478990625" y="91.2495" size="1.016" layer="125" ratio="10" rot="R270">Q48</text>
+<text x="171.225490625" y="130.4925" size="1.016" layer="125" ratio="10">Q49</text>
+<text x="130.9219875" y="135.382" size="1.016" layer="125" ratio="10">R1</text>
+<text x="96.1239875" y="105.918" size="1.27" layer="125" ratio="10">R2</text>
+<text x="86.3449875" y="105.918" size="1.016" layer="125" ratio="10">R3</text>
+<text x="132.8269875" y="100.6475" size="1.016" layer="125" ratio="10">R4</text>
+<text x="98.9814875" y="89.916" size="1.016" layer="125" ratio="10" rot="R180">R5</text>
+<text x="90.7264875" y="96.8375" size="0.889" layer="125" ratio="10" rot="R180">R6</text>
+<text x="107.9984875" y="119.4435" size="1.016" layer="125" ratio="10">R7</text>
+<text x="106.1569875" y="96.393" size="1.016" layer="125" ratio="10">R8</text>
+<text x="98.0924875" y="118.11" size="1.016" layer="125" ratio="10">R9</text>
+<text x="96.0604875" y="114.7445" size="1.016" layer="125" ratio="10" rot="R270">R10</text>
+<text x="94.1554875" y="114.7445" size="1.016" layer="125" ratio="10" rot="R270">R11</text>
+<text x="97.5844875" y="124.0155" size="1.016" layer="125" ratio="10" rot="R180">R12</text>
+<text x="92.0599875" y="122.936" size="1.016" layer="125" ratio="10">R13</text>
+<text x="88.4404875" y="112.268" size="1.016" layer="125" ratio="10" rot="R180">R14</text>
+<text x="102.0929875" y="125.349" size="1.016" layer="125" ratio="10">R15</text>
+<text x="94.7904875" y="127.4445" size="1.016" layer="125" ratio="10" rot="R270">R16</text>
+<text x="92.8219875" y="127.4445" size="1.016" layer="125" ratio="10" rot="R270">R17</text>
+<text x="102.0294875" y="148.082" size="1.016" layer="125" ratio="10">R18</text>
+<text x="108.7858875" y="136.4234" size="0.9906" layer="125" ratio="10">R19</text>
+<text x="80.5918875" y="148.0439" size="0.9906" layer="125" ratio="10">R20</text>
+<text x="5.8269875" y="137.795" size="1.016" layer="125" ratio="10">R21</text>
+<text x="107.7825875" y="144.7419" size="1.016" layer="125" ratio="10" rot="R90">R22</text>
+<text x="111.7449875" y="140.9065" size="1.016" layer="125" ratio="10">R23</text>
+<text x="108.7858875" y="131.9149" size="1.016" layer="125" ratio="10">R24</text>
+<text x="67.9934875" y="147.955" size="1.016" layer="125" ratio="10">R25</text>
+<text x="103.5788875" y="140.1826" size="1.016" layer="125" ratio="10" rot="R270">R26</text>
+<text x="71.8034875" y="148.0185" size="1.016" layer="125" ratio="10">R27</text>
+<text x="112.8244875" y="140.6525" size="1.016" layer="125" ratio="10" rot="R270">R28</text>
+<text x="67.1679875" y="137.287" size="1.016" layer="125" ratio="10">R29</text>
+<text x="47.7369875" y="85.217" size="1.27" layer="125" ratio="10">R30</text>
+<text x="46.8479875" y="88.3285" size="1.27" layer="125" ratio="10">R31</text>
+<text x="55.5093875" y="86.7791" size="1.016" layer="125" ratio="10" rot="R270">R32</text>
+<text x="46.9114875" y="77.343" size="1.016" layer="125" ratio="10">R33</text>
+<text x="35.0750875" y="82.0801" size="0.9906" layer="125" ratio="10" rot="R180">R34</text>
+<text x="36.8403875" y="90.1954" size="0.9906" layer="125" ratio="10">R35</text>
+<text x="60.7290875" y="88.6206" size="0.9906" layer="125" ratio="10" rot="R180">R36</text>
+<text x="26.4263875" y="118.6561" size="1.016" layer="125" ratio="10" rot="R270">R37</text>
+<text x="62.0625875" y="106.7816" size="1.016" layer="125" ratio="10" rot="R180">R38</text>
+<text x="66.3170875" y="106.7816" size="1.016" layer="125" ratio="10" rot="R180">R39</text>
+<text x="73.4163875" y="85.0519" size="0.889" layer="125" ratio="10">R40</text>
+<text x="53.0455875" y="102.5144" size="0.9906" layer="125" ratio="10" rot="R90">R41</text>
+<text x="49.1085875" y="105.9434" size="0.9906" layer="125" ratio="10" rot="R90">R42</text>
+<text x="73.3528875" y="86.8299" size="0.9906" layer="125" ratio="10">R43</text>
+<text x="40.4979875" y="122.3645" size="1.016" layer="125" ratio="10" rot="R180">R44</text>
+<text x="35.15560625" y="114.08209375" size="0.889" layer="125" ratio="10" rot="R180">R45</text>
+<text x="64.0564875" y="79.9465" size="1.016" layer="125" ratio="10" rot="R90">R46</text>
+<text x="60.6528875" y="87.5919" size="0.9906" layer="125" ratio="10">R47</text>
+<text x="40.4725875" y="129.1336" size="1.016" layer="125" ratio="10" rot="R180">R48</text>
+<text x="36.1164875" y="121.2215" size="0.889" layer="125" ratio="10" rot="R270">R49</text>
+<text x="26.4009875" y="121.285" size="1.016" layer="125" ratio="10" rot="R270">R50</text>
+<text x="67.9680875" y="89.2556" size="0.889" layer="125" ratio="10" rot="R180">R51</text>
+<text x="44.3079875" y="127.127" size="1.016" layer="125" ratio="10" rot="R270">R52</text>
+<text x="60.7163875" y="95.8469" size="0.9906" layer="125" ratio="10">R53</text>
+<text x="41.9076875" y="114.1476" size="1.016" layer="125" ratio="10">R54</text>
+<text x="44.3079875" y="122.3645" size="1.016" layer="125" ratio="10" rot="R270">R55</text>
+<text x="68.5903875" y="105.7529" size="0.9906" layer="125" ratio="10">R56</text>
+<text x="57.1984875" y="118.5545" size="1.016" layer="125" ratio="10">R57</text>
+<text x="40.4725875" y="114.6556" size="1.016" layer="125" ratio="10" rot="R180">R58</text>
+<text x="40.4979875" y="123.825" size="1.016" layer="125" ratio="10" rot="R180">R59</text>
+<text x="26.4644875" y="126.873" size="1.016" layer="125" ratio="10" rot="R270">R60</text>
+<text x="36.1236" y="123.65959375" size="0.889" layer="125" ratio="10" rot="R270">R61</text>
+<text x="31.0999875" y="129.159" size="1.016" layer="125" ratio="10" rot="R180">R62</text>
+<text x="21.0669875" y="83.947" size="1.016" layer="125" ratio="10">R63</text>
+<text x="23.0989875" y="89.154" size="0.889" layer="125" ratio="10">R64</text>
+<text x="28.1051" y="107.305603125" size="0.9906" layer="125" ratio="10">R65</text>
+<text x="27.9249875" y="90.043" size="0.889" layer="125" ratio="10" rot="R180">R66</text>
+<text x="25.3214875" y="81.8515" size="1.016" layer="125" ratio="10" rot="R90">R67</text>
+<text x="19.553403125" y="97.151696875" size="0.9906" layer="125" ratio="10">R68</text>
+<text x="33.8939875" y="78.359" size="1.27" layer="125" ratio="10">R69</text>
+<text x="30.5919875" y="85.852" size="1.016" layer="125" ratio="10" rot="R90">R70</text>
+<text x="30.5919875" y="81.8515" size="1.016" layer="125" ratio="10" rot="R90">R71</text>
+<text x="26.4009875" y="98.425" size="1.016" layer="125" ratio="10" rot="R180">R72</text>
+<text x="27.8614875" y="97.536" size="1.016" layer="125" ratio="10">R73</text>
+<text x="22.9719875" y="99.06" size="1.016" layer="125" ratio="10">R74</text>
+<text x="17.0410875" y="101.6381" size="0.9906" layer="125" ratio="10" rot="R180">R75</text>
+<text x="23.5053875" y="105.1306" size="0.9906" layer="125" ratio="10" rot="R270">R76</text>
+<text x="56.7285875" y="108.0516" size="0.9906" layer="125" ratio="10" rot="R180">R77</text>
+<text x="53.4900875" y="99.1616" size="0.9906" layer="125" ratio="10" rot="R180">R78</text>
+<text x="72.5273875" y="105.7529" size="0.9906" layer="125" ratio="10">R79</text>
+<text x="30.0839875" y="133.731" size="0.889" layer="125" ratio="10" rot="R270">R80</text>
+<text x="38.7834875" y="129.7305" size="0.889" layer="125" ratio="10">R81</text>
+<text x="15.3519875" y="122.428" size="1.016" layer="125" ratio="10">R82</text>
+<text x="42.4029875" y="129.667" size="0.889" layer="125" ratio="10">R83</text>
+<text x="34.5924875" y="129.7305" size="0.889" layer="125" ratio="10">R84</text>
+<text x="45.8700875" y="148.3106" size="0.9906" layer="125" ratio="10" rot="R180">R85</text>
+<text x="52.5248875" y="126.5936" size="1.016" layer="125" ratio="10" rot="R270">R86</text>
+<text x="5.5094875" y="82.9945" size="1.016" layer="125" ratio="10">R87</text>
+<text x="59.5733875" y="134.8994" size="0.9906" layer="125" ratio="10">R88</text>
+<text x="70.4318875" y="122.2756" size="1.016" layer="125" ratio="10" rot="R270">R89</text>
+<text x="16.4949875" y="82.4865" size="1.016" layer="125" ratio="10">R90</text>
+<text x="14.6534875" y="86.0425" size="1.016" layer="125" ratio="10" rot="R180">R91</text>
+<text x="56.9190875" y="131.4704" size="0.9906" layer="125" ratio="10" rot="R90">R92</text>
+<text x="7.4144875" y="91.3765" size="1.016" layer="125" ratio="10" rot="R270">R93</text>
+<text x="66.4948875" y="124.3584" size="1.016" layer="125" ratio="10">R94</text>
+<text x="2.2074875" y="95.377" size="1.016" layer="125" ratio="10" rot="R270">R95</text>
+<text x="2.2074875" y="92.075" size="1.016" layer="125" ratio="10" rot="R270">R96</text>
+<text x="58.2779875" y="116.332" size="1.016" layer="125" ratio="10">R97</text>
+<text x="11.7324875" y="132.461" size="1.016" layer="125" ratio="10" rot="R180">R98</text>
+<text x="18.1459875" y="126.619" size="1.016" layer="125" ratio="10">R99</text>
+<text x="20.6859875" y="115.2525" size="1.016" layer="125" ratio="10">R100</text>
+<text x="61.2243875" y="134.0866" size="0.9906" layer="125" ratio="10" rot="R270">R101</text>
+<text x="65.0343875" y="118.3259" size="1.016" layer="125" ratio="10">R102</text>
+<text x="18.1459875" y="124.714" size="1.016" layer="125" ratio="10">R103</text>
+<text x="63.7008875" y="134.8994" size="0.9906" layer="125" ratio="10">R104</text>
+<text x="13.5104875" y="119.888" size="1.016" layer="125" ratio="10" rot="R270">R105</text>
+<text x="36.4085875" y="110.7821" size="1.016" layer="125" ratio="10" rot="R180">R106</text>
+<text x="24.8134875" y="1.8034" size="1.6764" layer="125" ratio="10">R107</text>
+<text x="18.4634875" y="2.3495" size="1.27" layer="125" ratio="10" rot="R180">R108</text>
+<text x="17.4474875" y="10.922" size="1.016" layer="125" ratio="10">R109</text>
+<text x="50.4674875" y="3.683" size="1.016" layer="125" ratio="10">R110</text>
+<text x="36.8784875" y="22.86" size="1.016" layer="125" ratio="10" rot="R270">R111</text>
+<text x="68.1204875" y="18.288" size="1.27" layer="125" ratio="10" rot="SR270">R112</text>
+<text x="83.1699875" y="19.1135" size="1.016" layer="125" ratio="10" rot="SR270">R113</text>
+<text x="83.1699875" y="23.0505" size="1.016" layer="125" ratio="10" rot="SR270">R114</text>
+<text x="68.1839875" y="7.62" size="1.27" layer="125" ratio="10" rot="SR270">R115</text>
+<text x="83.7414875" y="9.398" size="1.016" layer="125" ratio="10" rot="SR270">R116</text>
+<text x="83.7414875" y="13.335" size="1.016" layer="125" ratio="10" rot="SR270">R117</text>
+<text x="64.0564875" y="37.465" size="1.016" layer="125" ratio="10" rot="SR270">R118</text>
+<text x="64.7549875" y="41.7195" size="1.016" layer="125" ratio="10">R119</text>
+<text x="86.0909875" y="34.6075" size="1.016" layer="125" ratio="10" rot="SR270">R120</text>
+<text x="69.9873875" y="23.5204" size="0.9906" layer="125" ratio="10">R121</text>
+<text x="74.7244875" y="21.463" size="1.016" layer="125" ratio="10">R122</text>
+<text x="73.6703875" y="26.5811" size="0.8128" layer="125" ratio="10" rot="SR270">R123</text>
+<text x="62.4943875" y="32.2961" size="1.016" layer="125" ratio="10" rot="SR270">R124</text>
+<text x="62.5324875" y="28.6385" size="1.016" layer="125" ratio="10" rot="SR270">R125</text>
+<text x="71.8415875" y="29.6926" size="1.016" layer="125" ratio="10" rot="R180">R126</text>
+<text x="89.0754875" y="36.8935" size="1.016" layer="125" ratio="10" rot="SR270">R127</text>
+<text x="97.0129875" y="14.224" size="1.016" layer="125" ratio="10" rot="SR270">R128</text>
+<text x="84.5034875" y="20.0025" size="1.016" layer="125" ratio="10" rot="SR0">R129</text>
+<text x="91.2344875" y="64.7065" size="1.016" layer="125" ratio="10" rot="SR0">R130</text>
+<text x="89.2024875" y="64.3255" size="1.016" layer="125" ratio="10" rot="SR270">R131</text>
+<text x="46.5939875" y="63.3095" size="1.016" layer="125" ratio="10">R132</text>
+<text x="46.5939875" y="65.0875" size="1.016" layer="125" ratio="10">R133</text>
+<text x="191.7549875" y="12.319" size="1.016" layer="125" ratio="10">R134</text>
+<text x="153.095909375" y="13.482903125" size="0.9906" layer="125" ratio="10">R135</text>
+<text x="178.2929875" y="24.257" size="1.016" layer="125" ratio="10" rot="R90">R136</text>
+<text x="151.263909375" y="52.269390625" size="0.9906" layer="125" ratio="10">R137</text>
+<text x="156.5394125" y="67.20489375" size="0.9906" layer="125" ratio="10">R138</text>
+<text x="108.2524875" y="63.881" size="1.016" layer="125" ratio="10">R139</text>
+<text x="128.0644875" y="44.1325" size="1.016" layer="125" ratio="10" rot="R90">R140</text>
+<text x="254.8104875" y="29.337" size="1.016" layer="125" ratio="10">R141</text>
+<text x="290.6879875" y="51.3715" size="1.016" layer="125" ratio="10">R142</text>
+<text x="286.1159875" y="61.976" size="1.016" layer="125" ratio="10">R143</text>
+<text x="268.3994875" y="29.5275" size="1.016" layer="125" ratio="10" rot="R90">R144</text>
+<text x="253.4769875" y="29.337" size="1.016" layer="125" ratio="10" rot="R90">R145</text>
+<text x="207.8839875" y="22.2885" size="1.016" layer="125" ratio="10" rot="R180">R146</text>
+<text x="300.0224875" y="46.482" size="1.016" layer="125" ratio="10">R147</text>
+<text x="207.8839875" y="20.447" size="1.016" layer="125" ratio="10" rot="R180">R148</text>
+<text x="207.8839875" y="18.415" size="1.016" layer="125" ratio="10" rot="R180">R149</text>
+<text x="207.8839875" y="16.4465" size="1.016" layer="125" ratio="10" rot="R180">R150</text>
+<text x="304.2769875" y="18.796" size="1.016" layer="125" ratio="10">R151</text>
+<text x="217.2819875" y="9.2075" size="1.016" layer="125" ratio="10" rot="R180">R152</text>
+<text x="306.2454875" y="28.067" size="1.016" layer="125" ratio="10" rot="R90">R153</text>
+<text x="306.3089875" y="24.384" size="1.016" layer="125" ratio="10" rot="R90">R154</text>
+<text x="212.6464875" y="5.1435" size="1.016" layer="125" ratio="10" rot="R180">R155</text>
+<text x="212.9639875" y="0.9525" size="1.016" layer="125" ratio="10">R156</text>
+<text x="228.1531875" y="1.5875" size="1.016" layer="125" ratio="10">R157</text>
+<text x="198.6764875" y="47.4345" size="1.016" layer="125" ratio="10">R158</text>
+<text x="197.2794875" y="61.722" size="1.016" layer="125" ratio="10">R159</text>
+<text x="181.5314875" y="53.2765" size="1.016" layer="125" ratio="10">R160</text>
+<text x="185.5319875" y="53.2765" size="1.016" layer="125" ratio="10">R161</text>
+<text x="273.5429875" y="32.4485" size="1.016" layer="125" ratio="10">R162</text>
+<text x="269.4154875" y="32.4485" size="1.016" layer="125" ratio="10">R163</text>
+<text x="178.9279875" y="61.595" size="1.016" layer="125" ratio="10">R164</text>
+<text x="183.3094875" y="42.545" size="1.016" layer="125" ratio="10">R165</text>
+<text x="178.4199875" y="42.545" size="1.016" layer="125" ratio="10">R166</text>
+<text x="187.5639875" y="68.0085" size="1.016" layer="125" ratio="10">R167</text>
+<text x="196.8349875" y="66.294" size="1.016" layer="125" ratio="10">R168</text>
+<text x="247.1904875" y="31.877" size="1.016" layer="125" ratio="10" rot="R90">R169</text>
+<text x="245.4124875" y="31.877" size="1.016" layer="125" ratio="10" rot="R90">R170</text>
+<text x="236.5224875" y="31.877" size="1.016" layer="125" ratio="10" rot="R90">R171</text>
+<text x="238.3639875" y="31.877" size="1.016" layer="125" ratio="10" rot="R90">R172</text>
+<text x="171.553403125" y="97.151696875" size="0.9906" layer="125" ratio="10">R173</text>
+<text x="180.1051" y="107.305603125" size="0.9906" layer="125" ratio="10">R174</text>
+<text x="178.426390625" y="118.6561" size="1.016" layer="125" ratio="10" rot="R270">R175</text>
+<text x="183.099990625" y="129.159" size="1.016" layer="125" ratio="10" rot="R180">R176</text>
+<text x="196.307990625" y="127.127" size="1.016" layer="125" ratio="10" rot="R270">R177</text>
+<text x="193.907690625" y="114.1476" size="1.016" layer="125" ratio="10">R178</text>
+<text x="197.870090625" y="148.3106" size="0.9906" layer="125" ratio="10" rot="R180">R179</text>
+<text x="217.034390625" y="118.3259" size="1.016" layer="125" ratio="10">R180</text>
+<text x="218.494890625" y="124.3584" size="1.016" layer="125" ratio="10">R181</text>
+<text x="208.919090625" y="131.4704" size="0.9906" layer="125" ratio="10" rot="R90">R182</text>
+<text x="215.700890625" y="134.8994" size="0.9906" layer="125" ratio="10">R183</text>
+<text x="211.573390625" y="134.8994" size="0.9906" layer="125" ratio="10">R184</text>
+<text x="213.224390625" y="134.0866" size="0.9906" layer="125" ratio="10" rot="R270">R185</text>
+<text x="187.15560625" y="114.08209375" size="0.889" layer="125" ratio="10" rot="R180">R186</text>
+<text x="188.1236" y="123.65959375" size="0.889" layer="125" ratio="10" rot="R270">R187</text>
+<text x="169.041090625" y="101.6381" size="0.9906" layer="125" ratio="10" rot="R180">R188</text>
+<text x="175.505390625" y="105.1306" size="0.9906" layer="125" ratio="10" rot="R270">R189</text>
+<text x="192.472590625" y="129.1336" size="1.016" layer="125" ratio="10" rot="R180">R190</text>
+<text x="192.472590625" y="114.6556" size="1.016" layer="125" ratio="10" rot="R180">R191</text>
+<text x="212.716390625" y="95.8469" size="0.9906" layer="125" ratio="10">R192</text>
+<text x="225.352890625" y="86.8299" size="0.9906" layer="125" ratio="10">R193</text>
+<text x="207.509390625" y="86.7791" size="1.016" layer="125" ratio="10" rot="R270">R194</text>
+<text x="225.416390625" y="85.0519" size="0.889" layer="125" ratio="10">R195</text>
+<text x="212.729090625" y="88.6206" size="0.9906" layer="125" ratio="10" rot="R180">R196</text>
+<text x="212.652890625" y="87.5919" size="0.9906" layer="125" ratio="10">R197</text>
+<text x="187.075090625" y="82.0801" size="0.9906" layer="125" ratio="10" rot="R180">R198</text>
+<text x="188.840390625" y="90.1954" size="0.9906" layer="125" ratio="10">R199</text>
+<text x="201.108590625" y="105.9434" size="0.9906" layer="125" ratio="10" rot="R90">R200</text>
+<text x="205.045590625" y="102.5144" size="0.9906" layer="125" ratio="10" rot="R90">R201</text>
+<text x="222.431890625" y="122.2756" size="1.016" layer="125" ratio="10" rot="R270">R202</text>
+<text x="204.524890625" y="126.5936" size="1.016" layer="125" ratio="10" rot="R270">R203</text>
+<text x="188.408590625" y="110.7821" size="1.016" layer="125" ratio="10" rot="R180">R204</text>
+<text x="224.527390625" y="105.7529" size="0.9906" layer="125" ratio="10">R205</text>
+<text x="205.490090625" y="99.1616" size="0.9906" layer="125" ratio="10" rot="R180">R206</text>
+<text x="218.317090625" y="106.7816" size="1.016" layer="125" ratio="10" rot="R180">R207</text>
+<text x="214.062590625" y="106.7816" size="1.016" layer="125" ratio="10" rot="R180">R208</text>
+<text x="220.590390625" y="105.7529" size="0.9906" layer="125" ratio="10">R209</text>
+<text x="219.968090625" y="89.2556" size="0.889" layer="125" ratio="10" rot="R180">R210</text>
+<text x="208.728590625" y="108.0516" size="0.9906" layer="125" ratio="10" rot="R180">R211</text>
+<text x="198.911490625" y="77.343" size="1.016" layer="125" ratio="10">R212</text>
+<text x="192.497990625" y="122.3645" size="1.016" layer="125" ratio="10" rot="R180">R213</text>
+<text x="188.116490625" y="121.2215" size="0.889" layer="125" ratio="10" rot="R270">R214</text>
+<text x="192.497990625" y="123.825" size="1.016" layer="125" ratio="10" rot="R180">R215</text>
+<text x="178.400990625" y="121.285" size="1.016" layer="125" ratio="10" rot="R270">R216</text>
+<text x="178.464490625" y="126.873" size="1.016" layer="125" ratio="10" rot="R270">R217</text>
+<text x="196.307990625" y="122.3645" size="1.016" layer="125" ratio="10" rot="R270">R218</text>
+<text x="175.098990625" y="89.154" size="0.889" layer="125" ratio="10">R219</text>
+<text x="177.321490625" y="81.8515" size="1.016" layer="125" ratio="10" rot="R90">R220</text>
+<text x="182.591990625" y="81.8515" size="1.016" layer="125" ratio="10" rot="R90">R221</text>
+<text x="178.400990625" y="98.425" size="1.016" layer="125" ratio="10" rot="R180">R222</text>
+<text x="185.893990625" y="78.359" size="1.27" layer="125" ratio="10">R223</text>
+<text x="179.924990625" y="90.043" size="0.889" layer="125" ratio="10" rot="R180">R224</text>
+<text x="182.591990625" y="85.852" size="1.016" layer="125" ratio="10" rot="R90">R225</text>
+<text x="179.861490625" y="97.536" size="1.016" layer="125" ratio="10">R226</text>
+<text x="173.066990625" y="83.947" size="1.016" layer="125" ratio="10">R227</text>
+<text x="210.277990625" y="116.332" size="1.016" layer="125" ratio="10">R228</text>
+<text x="209.198490625" y="118.5545" size="1.016" layer="125" ratio="10">R229</text>
+<text x="249.584490625" y="124.0155" size="1.016" layer="125" ratio="10" rot="R180">R230</text>
+<text x="254.092990625" y="125.349" size="1.016" layer="125" ratio="10">R231</text>
+<text x="258.156990625" y="96.393" size="1.016" layer="125" ratio="10">R232</text>
+<text x="240.440490625" y="112.268" size="1.016" layer="125" ratio="10" rot="R180">R233</text>
+<text x="248.060490625" y="114.7445" size="1.016" layer="125" ratio="10" rot="R270">R234</text>
+<text x="246.155490625" y="114.7445" size="1.016" layer="125" ratio="10" rot="R270">R235</text>
+<text x="259.998490625" y="119.4435" size="1.016" layer="125" ratio="10">R236</text>
+<text x="248.123990625" y="105.918" size="1.27" layer="125" ratio="10">R237</text>
+<text x="250.092490625" y="118.11" size="1.016" layer="125" ratio="10">R238</text>
+<text x="242.726490625" y="96.8375" size="0.889" layer="125" ratio="10" rot="R180">R239</text>
+<text x="282.921990625" y="135.382" size="1.016" layer="125" ratio="10">R240</text>
+<text x="232.591890625" y="148.0439" size="0.9906" layer="125" ratio="10">R241</text>
+<text x="259.782590625" y="144.7419" size="1.016" layer="125" ratio="10" rot="R90">R242</text>
+<text x="260.785890625" y="131.9149" size="1.016" layer="125" ratio="10">R243</text>
+<text x="260.785890625" y="136.4234" size="0.9906" layer="125" ratio="10">R244</text>
+<text x="255.578890625" y="140.1826" size="1.016" layer="125" ratio="10" rot="R270">R245</text>
+<text x="246.790490625" y="127.4445" size="1.016" layer="125" ratio="10" rot="R270">R246</text>
+<text x="244.821990625" y="127.4445" size="1.016" layer="125" ratio="10" rot="R270">R247</text>
+<text x="254.029490625" y="148.082" size="1.016" layer="125" ratio="10">R248</text>
+<text x="167.351990625" y="122.428" size="1.016" layer="125" ratio="10">R249</text>
+<text x="219.993490625" y="147.955" size="1.016" layer="125" ratio="10">R250</text>
+<text x="223.803490625" y="148.0185" size="1.016" layer="125" ratio="10">R251</text>
+<text x="219.167990625" y="137.287" size="1.016" layer="125" ratio="10">R252</text>
+<text x="238.344990625" y="105.918" size="1.016" layer="125" ratio="10">R253</text>
+<text x="244.059990625" y="122.936" size="1.016" layer="125" ratio="10">R254</text>
+<text x="284.826990625" y="100.6475" size="1.016" layer="125" ratio="10">R255</text>
+<text x="250.981490625" y="89.916" size="1.016" layer="125" ratio="10" rot="R180">R256</text>
+<text x="157.509490625" y="82.9945" size="1.016" layer="125" ratio="10">R257</text>
+<text x="159.414490625" y="91.3765" size="1.016" layer="125" ratio="10" rot="R270">R258</text>
+<text x="154.207490625" y="95.377" size="1.016" layer="125" ratio="10" rot="R270">R259</text>
+<text x="165.510490625" y="119.888" size="1.016" layer="125" ratio="10" rot="R270">R260</text>
+<text x="172.685990625" y="115.2525" size="1.016" layer="125" ratio="10">R261</text>
+<text x="166.653490625" y="86.0425" size="1.016" layer="125" ratio="10" rot="R180">R262</text>
+<text x="168.494990625" y="82.4865" size="1.016" layer="125" ratio="10">R263</text>
+<text x="170.145990625" y="126.619" size="1.016" layer="125" ratio="10">R264</text>
+<text x="163.732490625" y="132.461" size="1.016" layer="125" ratio="10" rot="R180">R265</text>
+<text x="170.145990625" y="124.714" size="1.016" layer="125" ratio="10">R266</text>
+<text x="157.826990625" y="137.795" size="1.016" layer="125" ratio="10">R267</text>
+<text x="194.402990625" y="129.667" size="0.889" layer="125" ratio="10">R268</text>
+<text x="186.592490625" y="129.7305" size="0.889" layer="125" ratio="10">R269</text>
+<text x="190.783490625" y="129.7305" size="0.889" layer="125" ratio="10">R270</text>
+<text x="182.083990625" y="133.731" size="0.889" layer="125" ratio="10" rot="R270">R271</text>
+<text x="199.736990625" y="85.217" size="1.27" layer="125" ratio="10">R272</text>
+<text x="198.847990625" y="88.3285" size="1.27" layer="125" ratio="10">R273</text>
+<text x="264.824490625" y="140.6525" size="1.016" layer="125" ratio="10" rot="R270">R274</text>
+<text x="263.744990625" y="140.9065" size="1.016" layer="125" ratio="10">R275</text>
+<text x="174.971990625" y="99.06" size="1.016" layer="125" ratio="10">R276</text>
+<text x="216.056490625" y="79.9465" size="1.016" layer="125" ratio="10" rot="R90">R277</text>
+<text x="154.207490625" y="92.075" size="1.016" layer="125" ratio="10" rot="R270">R278</text>
+<text x="231.0614875" y="17.78" size="1.016" layer="125" ratio="10">RN1</text>
+<text x="224.2669875" y="19.304" size="1.016" layer="125" ratio="10" rot="R180">RN2</text>
+<text x="17.5109875" y="29.4894" size="1.016" layer="125" ratio="10">SAR1</text>
+<text x="267.8279875" y="63.5" size="1.27" layer="125" ratio="10">SP1</text>
+<text x="130.2869875" y="107.3785" size="1.016" layer="125" ratio="10">SW</text>
+<text x="306.913" y="0.98300625" size="1.778" layer="126" ratio="10" rot="SMR0">SW1</text>
+<text x="305.489509375" y="42.62399375" size="1.016" layer="126" ratio="10" rot="SMR0">SW2</text>
+<text x="282.286990625" y="107.3785" size="1.016" layer="125" ratio="10">SW3</text>
+<text x="14.3359875" y="95.1865" size="1.016" layer="125" ratio="10" rot="R270">TP1</text>
+<text x="171.134" y="5.731003125" size="1.016" layer="125" ratio="10">TP2</text>
+<text x="134.446009375" y="12.2555" size="1.27" layer="125" ratio="10">TP3</text>
+<text x="166.335990625" y="95.1865" size="1.016" layer="125" ratio="10" rot="R270">TP4</text>
+<text x="87.75349375" y="145.750990625" size="1.27" layer="125" ratio="10">TR1</text>
+<text x="27.594" y="53.63649375" size="2.1844" layer="125" ratio="10">TR2</text>
+<text x="239.753496875" y="145.750990625" size="1.27" layer="125" ratio="10">TR3</text>
+<text x="7.7954875" y="41.4655" size="1.27" layer="125" ratio="10" rot="SR270">VAR1</text>
+<text x="7.7954875" y="36.3855" size="1.27" layer="125" ratio="10" rot="SR270">VAR2</text>
+<text x="306.3089875" y="64.5795" size="1.27" layer="126" ratio="10" rot="SMR0">WIFI</text>
+<text x="149.2965" y="91.94" size="1.27" layer="126" ratio="10" rot="MR0">X1</text>
+<text x="148.4399875" y="137.016996875" size="1.27" layer="126" ratio="10" rot="MR0">X2</text>
+<text x="5.8039" y="129.94119375" size="1.27" layer="125" ratio="10" rot="SR0">X3</text>
+<text x="2.946503125" y="64.762" size="1.27" layer="125">X4</text>
+<text x="97.17199375" y="60.403003125" size="1.27" layer="125" ratio="10">X5</text>
+<text x="92.5679875" y="39.751" size="1.27" layer="125" ratio="10" rot="R180">X6</text>
+<text x="80.7569875" y="49.53" size="1.778" layer="126" ratio="10" rot="SMR0">X7</text>
+<text x="92.9489875" y="72.263" size="1.27" layer="125" ratio="10" rot="R180">X8</text>
+<text x="55.7887875" y="70.5231" size="1.27" layer="125" ratio="10">X9</text>
+<text x="23.5942875" y="68.3006" size="1.27" layer="125" ratio="10">X10</text>
+<text x="53.217496875" y="53.847490625" size="1.27" layer="126" rot="MR180">X11</text>
+<text x="182.063490625" y="46.001509375" size="1.27" layer="126" ratio="10" rot="MR180">X12</text>
+<text x="176.81450625" y="36.47800625" size="1.27" layer="125" ratio="10">X13</text>
+<text x="108.4619875" y="36.540009375" size="1.27" layer="126" ratio="10" rot="SMR0">X14</text>
+<text x="132.725996875" y="37.4515125" size="1.27" layer="125" ratio="10" rot="R180">X15</text>
+<text x="288.0844875" y="4.318" size="1.27" layer="125" ratio="10">X16</text>
+<text x="264.0814875" y="3.7465" size="1.016" layer="125" ratio="10">X17</text>
+<text x="201.3434875" y="25.146" size="1.27" layer="125" ratio="10">X18</text>
+<text x="246.5554875" y="3.7465" size="1.016" layer="125" ratio="10">X19</text>
+<text x="242.8089875" y="5.2705" size="1.27" layer="125" ratio="10">X20</text>
+<text x="157.8039" y="129.94119375" size="1.27" layer="125" ratio="10" rot="SR0">X21</text>
+<text x="300.4399875" y="137.016996875" size="1.27" layer="126" ratio="10" rot="MR0">X22</text>
+<text x="301.296503125" y="91.94" size="1.27" layer="126" ratio="10" rot="MR0">X23</text>
+<text x="258.3664875" y="58.166" size="1.016" layer="125" ratio="10">Y1</text>
+<text x="239.9514875" y="4.7625" size="1.27" layer="125" ratio="10">Y2</text>
+<text x="128.2819875" y="80.6204875" size="1.27" layer="125" ratio="10">ZD1</text>
+<text x="136.1559875" y="138.7229875" size="1.27" layer="125" ratio="10">ZD2</text>
+<text x="8.6479875" y="90.6534875" size="1.27" layer="125" ratio="10">ZD3</text>
+<text x="51.8009875" y="77.2795" size="1.016" layer="125" ratio="10">ZD4</text>
+<text x="54.7854875" y="100.076" size="1.016" layer="125" ratio="10" rot="R270">ZD5</text>
+<text x="3.209009375" y="16.272003125" size="1.27" layer="125" ratio="10">ZD6</text>
+<text x="3.145509375" y="21.879990625" size="1.27" layer="125" ratio="10">ZD7</text>
+<text x="171.396" y="33.9075" size="0.889" layer="125" ratio="10" rot="R90">ZD8</text>
+<text x="128.934490625" y="50.943003125" size="1.27" layer="125" ratio="10">ZD9</text>
+<text x="189.3054875" y="31.004003125" size="1.27" layer="125" ratio="10">ZD10</text>
+<text x="122.7725" y="28.718003125" size="1.27" layer="125" ratio="10">ZD11</text>
+<text x="179.3089875" y="67.31" size="1.016" layer="125" ratio="10">ZD12</text>
+<text x="203.800990625" y="77.2795" size="1.016" layer="125" ratio="10">ZD13</text>
+<text x="206.785490625" y="100.076" size="1.016" layer="125" ratio="10" rot="R270">ZD14</text>
+<text x="280.281990625" y="80.6204875" size="1.27" layer="125" ratio="10">ZD15</text>
+<text x="160.647990625" y="90.6534875" size="1.27" layer="125" ratio="10">ZD16</text>
+<text x="288.155990625" y="138.7229875" size="1.27" layer="125" ratio="10">ZD17</text>
 </plain>
 <libraries>
 <library name="rcl">
@@ -16415,7 +16416,8 @@ design rules under a new name.</description>
 </element>
 <element name="X12" library="EEZ_Lib1" package="MC000006_MIRROR" value="MC000006" x="182" y="34" smashed="yes" rot="R180">
 <attribute name="FARNELL" value="2007972" x="182" y="34" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="192.795" y="37.175" size="1.016" layer="27" ratio="10" rot="R180"/>
+<attribute name="NAME" x="182.0635" y="46.0015" size="1.27" layer="26" ratio="10" rot="MR180"/>
+<attribute name="VALUE" x="192.795" y="37.175" size="1.6764" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="C136" library="rcl" package="C0603" value="100n" x="233.6015" y="9.2075" smashed="yes" rot="R90">
 <attribute name="NAME" x="232.141" y="10.9855" size="1.016" layer="25" ratio="10"/>

@@ -7416,13 +7416,14 @@
 <text x="62.7888" y="70.5231" size="1.27" layer="125" ratio="10">X9</text>
 <text x="30.5943" y="68.3006" size="1.27" layer="125" ratio="10">X10</text>
 <text x="60.21750625" y="53.847490625" size="1.27" layer="126" rot="MR180">X11</text>
+<text x="188.047503125" y="46.001509375" size="1.27" layer="126" ratio="10" rot="MR180">X12</text>
 <text x="183.814490625" y="36.47800625" size="1.27" layer="125" ratio="10">X13</text>
 <text x="115.462" y="36.540009375" size="1.27" layer="126" ratio="10" rot="SMR0">X14</text>
 <text x="139.726009375" y="37.4515125" size="1.27" layer="125" ratio="10" rot="R180">X15</text>
 <text x="295.0845" y="4.318" size="1.27" layer="125" ratio="10">X16</text>
 <text x="271.0815" y="3.7465" size="1.016" layer="125" ratio="10">X17</text>
 <text x="208.3435" y="25.146" size="1.27" layer="125" ratio="10">X18</text>
-<text x="253.5555" y="3.7465" size="1.016" layer="125" ratio="10">X19</text>
+<text x="255.4605" y="4.572" size="1.016" layer="125" ratio="10" rot="R180">X19</text>
 <text x="249.809" y="5.2705" size="1.27" layer="125" ratio="10">X20</text>
 <text x="265.3665" y="58.166" size="1.016" layer="125" ratio="10">Y1</text>
 <text x="246.9515" y="4.7625" size="1.27" layer="125" ratio="10">Y2</text>
@@ -14234,7 +14235,8 @@ design rules under a new name.</description>
 </element>
 <element name="X12" library="EEZ_Lib1" package="MC000006_MIRROR" value="MC000006" x="189" y="34" smashed="yes" rot="R180">
 <attribute name="FARNELL" value="2007972" x="189" y="34" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="199.795" y="37.175" size="1.016" layer="27" ratio="10" rot="R180"/>
+<attribute name="NAME" x="188.0475" y="46.0015" size="1.27" layer="26" ratio="10" rot="MR180"/>
+<attribute name="VALUE" x="199.795" y="37.175" size="1.6764" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="C136" library="rcl" package="C0603" value="100n" x="240.6015" y="9.2075" smashed="yes" rot="R90">
 <attribute name="NAME" x="239.141" y="10.9855" size="1.016" layer="25" ratio="10"/>
@@ -14360,7 +14362,7 @@ design rules under a new name.</description>
 <attribute name="MPN" value="22-23-2041" x="260.604" y="4.191" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="MOLEX" x="260.604" y="4.191" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="1462920" x="260.604" y="4.191" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="253.5555" y="3.7465" size="1.016" layer="25" ratio="10"/>
+<attribute name="NAME" x="255.4605" y="4.572" size="1.016" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="256.0955" y="5.842" size="1.016" layer="27" ratio="10"/>
 </element>
 <element name="C154" library="rcl" package="C0805" value="10n" x="249.936" y="29.7815" smashed="yes" rot="R270">
