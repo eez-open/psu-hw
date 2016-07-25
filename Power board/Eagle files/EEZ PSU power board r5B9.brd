@@ -5080,7 +5080,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="103.3145" y="131.6355" size="1.016" layer="25" ratio="10"/>
 <attribute name="VALUE" x="105.537" y="133.35" size="0.8128" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="C39" library="rcl" package="C0805" value="2u2" x="98.298" y="129.54" smashed="yes" rot="R270">
+<element name="C39" library="rcl" package="C0805" value="n.c." x="98.298" y="129.54" smashed="yes" rot="R270">
 <attribute name="NAME" x="97.917" y="127.1905" size="1.016" layer="25" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="98.679" y="128.397" size="1.016" layer="27" ratio="10" rot="R90"/>
 <variant name="Farnell" value="2320829"/>

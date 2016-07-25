@@ -17803,7 +17803,7 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <part name="C34" library="rcl" deviceset="C-EU" device="C0805" value="10n"/>
 <part name="D10" library="EEZ_Lib1" deviceset="SCHOTTKY" device="SOD123" value="DFLS1100-7"/>
 <part name="C31" library="rcl" deviceset="C-EU" device="C1206" value="1u/100V"/>
-<part name="C39" library="rcl" deviceset="C-EU" device="C0805" value="2u2">
+<part name="C39" library="rcl" deviceset="C-EU" device="C0805" value="n.c.">
 <variant name="Farnell" value="2320829"/>
 <variant name="TME" value="CL21B225KAFNNNG "/>
 </part>
