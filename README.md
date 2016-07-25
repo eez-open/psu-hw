@@ -1,8 +1,8 @@
 ![EEZ PSU front panel mask](Mechanical/EEZ PSU H24005 panels r.4.5.png)
-<div align="center">*Rear and front panels for the new enclosure*</div>
+*<div align="center">Rear and front panels for the new enclosure</div>*
 
 ![EEZ PSU ver.1 prototype](EEZ_PSU_prototype.jpg)
-<div align="center">*Second working prototype without front mask (2 x 40 V, 5 A)*</div>
+*<div align="center">Second working prototype without front mask (2 x 40 V, 5 A)</div>*
 
 This is repository for the hardware part of the DIY fully programmable dual channel bench power supply. The power supply is designed with taking into consideration the following features and requirements:
 
@@ -13,7 +13,7 @@ This is repository for the hardware part of the DIY fully programmable dual chan
 - Various current single range operation (0-5 A default, 0-3 A or 0-4 A per channel)
 - Minimal overshoot when new voltage or current level is programmed or in marginal cases such as power on/off
 - 15-bit data acquisition resolution
-- Various protection mechanisms: over-voltage (OVP), over-current (OCP), over-power (OPP) and over-temperature (OTP)
+- Various protection mechanisms: over-voltage (OVP), over-current (OCP), over-power (OPP) and over-temperature (OTP), current limiting when temperature sensors or cooling fan fault is detected
 - SMPS pre-regulator circuit for lower power dissipation (using e.g. SMPS)
 - SMPS pre-regulator's "100% Duty cycle" mode of operation to lower output ripple and noise 
 - Switching frequency synchronization if multiple SMPS are utilized
@@ -22,6 +22,7 @@ This is repository for the hardware part of the DIY fully programmable dual chan
 - Remote voltage programming
 - External digital trigger (3.3 or 5 V logic level)
 - Simple AC input protection (surge and transient protection)
+- Selectable 115/230 VAC, Soft-start/Stand-by mode
 - Simple DC output protection (reverse voltage, over-voltage)
 - Serial and parallel connection of the multiple channels
 - MCU based digital control module using 32-bit Arduino/Genuino boards such as [Due](https://www.arduino.cc/en/Main/ArduinoBoardDue)
