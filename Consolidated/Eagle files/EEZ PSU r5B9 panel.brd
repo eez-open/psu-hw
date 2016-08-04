@@ -30,7 +30,7 @@
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="13" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="13" fill="1" visible="no" active="yes"/>
@@ -6771,13 +6771,6 @@
 <wire x1="152" y1="140" x2="152" y2="148.5" width="0.1" layer="117"/>
 <wire x1="150" y1="89" x2="150" y2="137" width="0.1" layer="117"/>
 <wire x1="152" y1="89" x2="152" y2="137" width="0.1" layer="117"/>
-<circle x="70.5" y="111" radius="3.25" width="0.1" layer="117"/>
-<circle x="209.5" y="66.5" radius="1.6" width="0.1" layer="117"/>
-<circle x="294.5" y="66.5" radius="1.6" width="0.1" layer="117"/>
-<circle x="209.5" y="7.5" radius="1.6" width="0.1" layer="117"/>
-<circle x="294.5" y="7.5" radius="1.6" width="0.1" layer="117"/>
-<circle x="37.22" y="62.17" radius="1.6" width="0.1" layer="117"/>
-<circle x="25.8" y="62.17" radius="1.6" width="0.1" layer="117"/>
 <text x="52.35" y="35.0035" size="1.4224" layer="16" ratio="10" rot="MR0">(07/2016)</text>
 <text x="146.5595" y="82.169" size="1.27" layer="21" font="vector" ratio="10" rot="SR90">DC in</text>
 <text x="131.049" y="80.01" size="1.016" layer="22" ratio="10" rot="MR90">DC input X1</text>
