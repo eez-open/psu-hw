@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="10" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="2" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
@@ -1175,6 +1175,17 @@ It can be different within marked area.</text>
 <wire x1="199" y1="223.05" x2="194" y2="223.05" width="0.1" layer="151" style="shortdash"/>
 <wire x1="199" y1="219.95" x2="194" y2="219.95" width="0.1" layer="151" style="shortdash"/>
 <dimension x1="455" y1="355" x2="460.5" y2="363.5" x3="457.75" y3="357" textsize="2" textratio="10" layer="47" dtype="horizontal"/>
+<circle x="195.3" y="15.8" radius="0.8" width="0.1" layer="20"/>
+<circle x="195.3" y="8.2" radius="0.8" width="0.1" layer="20"/>
+<circle x="214.35" y="15.8" radius="0.8" width="0.1" layer="20"/>
+<circle x="233.4" y="15.8" radius="0.8" width="0.1" layer="20"/>
+<circle x="214.35" y="8.2" radius="0.8" width="0.1" layer="20"/>
+<circle x="233.4" y="8.2" radius="0.8" width="0.1" layer="20"/>
+<circle x="252.45" y="15.8" radius="0.8" width="0.1" layer="20"/>
+<circle x="252.45" y="8.2" radius="0.8" width="0.1" layer="20"/>
+<circle x="268.5" y="15.8" radius="0.8" width="0.1" layer="20"/>
+<circle x="268.5" y="8.2" radius="0.8" width="0.1" layer="20"/>
+<dimension x1="269" y1="16.6" x2="269" y2="7.4" x3="275.5" y3="12" textsize="2" textratio="10" layer="47" dtype="vertical"/>
 </plain>
 <libraries>
 </libraries>
