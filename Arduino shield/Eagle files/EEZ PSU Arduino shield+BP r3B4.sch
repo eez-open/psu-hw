@@ -16033,7 +16033,7 @@ Marquardt</description>
 </part>
 <part name="OK3" library="EEZ_Lib1" deviceset="HCPL-181" device=""/>
 <part name="R159" library="rcl" deviceset="R-EU_" device="R0805" value="1K8"/>
-<part name="X18" library="con-samtec" deviceset="SSW-108-02-S-S" device="" value="826629-8">
+<part name="X18" library="con-samtec" deviceset="SSW-108-02-S-S" device="" value="MC34753">
 <attribute name="MPN" value="SSW-108-02-S-S"/>
 <attribute name="OC_NEWARK" value="11P9448"/>
 </part>
