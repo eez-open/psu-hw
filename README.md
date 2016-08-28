@@ -1,4 +1,4 @@
-![EEZ PSU front panel mask](Mechanical/EEZ PSU H24005 panels r.4.5.png)
+![EEZ PSU front panel mask](Mechanical/EEZ PSU H24005 panels r4.6.png)
 *<div align="center">Rear and front panels for the new enclosure</div>*
 
 ![EEZ PSU ver.1 prototype](EEZ_PSU_prototype.jpg)
