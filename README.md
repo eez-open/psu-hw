@@ -1,8 +1,4 @@
-![EEZ PSU front panel mask](Mechanical/EEZ PSU H24005 panels r4.6.png)
-*<div align="center">Rear and front panels for the new enclosure</div>*
-
-![EEZ PSU ver.1 prototype](EEZ_PSU_prototype.jpg)
-*<div align="center">Second working prototype without front mask (2 x 40 V, 5 A)</div>*
+![EEZ PSU ver.1 prototype](EEZ_PSU_prototype.png)
 
 This is repository for the hardware part of the DIY fully programmable dual channel bench power supply. The power supply is designed with taking into consideration the following features and requirements:
 
