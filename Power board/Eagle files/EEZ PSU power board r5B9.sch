@@ -17594,7 +17594,7 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <part name="C75" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="C73" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="FRAME5" library="frames" deviceset="DINA4_L" device=""/>
-<part name="R102" library="rcl" deviceset="R-EU_" device="R0805" value="5K6"/>
+<part name="R102" library="rcl" deviceset="R-EU_" device="R0805" value="4K7"/>
 <part name="R94" library="rcl" deviceset="R-EU_" device="R0805" value="2K2"/>
 <part name="R92" library="rcl" deviceset="R-EU_" device="R0805" value="5K6"/>
 <part name="R104" library="rcl" deviceset="R-EU_" device="R0805" value="5K6"/>
@@ -17726,7 +17726,7 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <part name="C44" library="rcl" deviceset="C-EU" device="C1206" value="1u/100V"/>
 <part name="SUPPLY4" library="supply2" deviceset="GND" device="" value="PGND"/>
 <part name="SUPPLY22" library="supply2" deviceset="GND" device="" value="PGND"/>
-<part name="R97" library="rcl" deviceset="R-EU_" device="R0805" value="4K7"/>
+<part name="R97" library="rcl" deviceset="R-EU_" device="R0805" value="5K6"/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device="" value="PGND"/>
 <part name="SUPPLY2" library="supply2" deviceset="-9V" device=""/>
 <part name="IC10" library="EEZ_Lib1" deviceset="REF50XX" device="" value="REF5025AIDG4"/>
@@ -22155,7 +22155,7 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <text x="164.465" y="28.575" size="2.54" layer="94" font="vector">CC/CV indicators, Sense error detection</text>
 <polygon width="0.1524" layer="101">
 </polygon>
-<text x="88.265" y="118.745" size="1.27" layer="100" rot="MR180">-2.27V</text>
+<text x="88.265" y="118.745" size="1.27" layer="100" rot="MR180">-2.72V</text>
 <text x="2.54" y="7.62" size="1.778" layer="94">Licensed under the TAPR Open Hardware License (www.tapr.org/OHL)</text>
 <text x="2.54" y="2.54" size="1.778" layer="94">Repository: https://github.com/eez-open</text>
 <text x="2.54" y="5.08" size="1.778" layer="94">More info at http://www.envox.hr/eez</text>

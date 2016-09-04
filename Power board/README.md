@@ -1,4 +1,4 @@
-This product is made available under the terms of the TAPR Open Hardware License. See the LICENSE.TXT file that accompanies this distribution for the full text of the license.
+![EEZ PSU Power board r5B9](Power board r5B9 assembled.JPG)
 
 **Revision history:**
 * 2016-07-23: **r5B9**
@@ -13,6 +13,8 @@ This product is made available under the terms of the TAPR Open Hardware License
 	- Remote sense reverse polarity protection
 	- Switching frequency synchronization with other channel via Arduino Shield board (no additional cable is required)
 	- On-board SMT temperature sensor (no additional cable is required)
+
+This product is made available under the terms of the TAPR Open Hardware License. See the LICENSE.TXT file that accompanies this distribution for the full text of the license.
 
 **********************
 

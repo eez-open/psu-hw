@@ -12369,7 +12369,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="42.291" y="143.9545" size="1.016" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="45.4025" y="144.7165" size="1.016" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="R102" library="rcl" package="R0805" value="5K6" x="69.9135" y="118.745" smashed="yes" rot="R180">
+<element name="R102" library="rcl" package="R0805" value="4K7" x="69.9135" y="118.745" smashed="yes" rot="R180">
 <attribute name="NAME" x="72.0344" y="118.3259" size="1.016" layer="25" ratio="10"/>
 <attribute name="VALUE" x="68.6054" y="118.2751" size="1.016" layer="27" ratio="10"/>
 </element>
@@ -12762,7 +12762,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="86.106" y="90.424" size="1.016" layer="25" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="86.6775" y="91.059" size="1.016" layer="27" ratio="10"/>
 </element>
-<element name="R97" library="rcl" package="R0805" value="4K7" x="69.9135" y="116.7765" smashed="yes">
+<element name="R97" library="rcl" package="R0805" value="5K6" x="69.9135" y="116.7765" smashed="yes">
 <attribute name="NAME" x="65.278" y="116.332" size="1.016" layer="25" ratio="10"/>
 <attribute name="VALUE" x="68.3895" y="116.0145" size="1.016" layer="27" ratio="10"/>
 </element>
@@ -13377,7 +13377,7 @@ design rules under a new name.</description>
 </element>
 <element name="R123" library="rcl" package="R0805" value="16K" x="83.5025" y="25.527" smashed="yes">
 <attribute name="NAME" x="80.6704" y="26.5811" size="0.8128" layer="25" ratio="10" rot="SR270"/>
-<attribute name="VALUE" x="85.3186" y="25.9334" size="0.9906" layer="27" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="84.8741" y="25.9969" size="0.9906" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="R124" library="rcl" package="R0805" value="10K" x="72.644" y="28.702" smashed="yes" rot="R180">
 <attribute name="NAME" x="69.4944" y="32.2961" size="1.016" layer="25" ratio="10" rot="SR270"/>
@@ -13393,7 +13393,7 @@ design rules under a new name.</description>
 </element>
 <element name="R121" library="rcl" package="R0805" value="5K6" x="78.613" y="25.5905" smashed="yes" rot="R180">
 <attribute name="NAME" x="76.9874" y="23.5204" size="0.9906" layer="25" ratio="10"/>
-<attribute name="VALUE" x="76.7969" y="25.1206" size="0.9906" layer="27" ratio="10"/>
+<attribute name="VALUE" x="77.3049" y="25.1841" size="0.9906" layer="27" ratio="10"/>
 </element>
 <element name="R126" library="rcl" package="R0805" value="1K8" x="78.613" y="27.559" smashed="yes">
 <attribute name="NAME" x="78.8416" y="29.6926" size="1.016" layer="25" ratio="10" rot="R180"/>
@@ -13413,7 +13413,7 @@ design rules under a new name.</description>
 </element>
 <element name="IC16" library="EEZ_Lib1" package="SOP65P640X110-17N" value="LM25575MH/NOPB" x="82.423" y="31.6865" smashed="yes">
 <attribute name="NAME" x="86.2584" y="32.2961" size="1.016" layer="25" ratio="10" rot="SR270"/>
-<attribute name="VALUE" x="83.5914" y="35.2298" size="1.016" layer="27" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="76.0857" y="31.3944" size="1.016" layer="27" ratio="10" rot="SR0"/>
 </element>
 <element name="C88" library="rcl" package="C1210" value="4u7" x="75.946" y="35.8775" smashed="yes" rot="R90">
 <attribute name="NAME" x="77.6605" y="36.83" size="1.016" layer="25" ratio="10" rot="SR270"/>
@@ -13449,7 +13449,7 @@ design rules under a new name.</description>
 </element>
 <element name="C96" library="rcl" package="C0805" value="180p" x="72.644" y="24.765" smashed="yes" rot="R180">
 <attribute name="NAME" x="71.4375" y="22.606" size="1.016" layer="25" ratio="10"/>
-<attribute name="VALUE" x="70.104" y="24.1935" size="1.27" layer="27"/>
+<attribute name="VALUE" x="70.866" y="24.257" size="1.016" layer="27" ratio="10"/>
 </element>
 <element name="R120" library="rcl" package="R1206" value="10R" x="91.948" y="32.8295" smashed="yes" rot="R90">
 <attribute name="NAME" x="93.091" y="34.6075" size="1.016" layer="25" ratio="10" rot="SR270"/>
@@ -13555,7 +13555,7 @@ design rules under a new name.</description>
 </element>
 <element name="Q22" library="transistor-power" package="SOT223" value="IRLL014N" x="95.377" y="10.16" smashed="yes" rot="R180">
 <attribute name="NAME" x="97.0915" y="5.5372" size="1.27" layer="25" ratio="10" rot="R180"/>
-<attribute name="VALUE" x="94.7547" y="14.732" size="1.016" layer="27" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="91.8845" y="9.5377" size="1.016" layer="27" ratio="10"/>
 </element>
 <element name="X11" library="con-kycon" package="KUSBVX-BS1N" value="2411-01" x="61.7255" y="59.123" smashed="yes" rot="MR0">
 <attribute name="NAME" x="60.2175" y="53.8475" size="1.27" layer="26" rot="MR180"/>
@@ -13595,7 +13595,7 @@ design rules under a new name.</description>
 </element>
 <element name="IC17" library="EEZ_Lib1" package="SOT50P280X60-5N" value="TPD4E002DRLR" x="87.4395" y="61.6585" smashed="yes" rot="R180">
 <attribute name="NAME" x="85.3821" y="59.1185" size="1.27" layer="25" ratio="10" rot="SR0"/>
-<attribute name="VALUE" x="86.8045" y="64.9224" size="0.8128" layer="27" ratio="10" rot="SR270"/>
+<attribute name="VALUE" x="82.9056" y="61.214" size="0.8128" layer="27" ratio="10" rot="SR0"/>
 </element>
 <element name="IC18" library="EEZ_Lib1" package="SOP192P292X122-4N" value="TPD2E001DZDR" x="62.865" y="64.4525" smashed="yes" rot="R270">
 <attribute name="NAME" x="64.8081" y="63.9445" size="1.27" layer="25" ratio="10" rot="SR0"/>
@@ -13646,11 +13646,11 @@ design rules under a new name.</description>
 </element>
 <element name="IC19" library="MyLib6" package="SOIC-16W" value="ADUM3160BRWZ" x="43.053" y="62.103" smashed="yes" rot="R180">
 <attribute name="NAME" x="32.9311" y="63.373" size="1.27" layer="25" ratio="10" rot="SR0"/>
-<attribute name="VALUE" x="48.7299" y="62.611" size="1.016" layer="27" ratio="10" rot="SR180"/>
+<attribute name="VALUE" x="37.7571" y="61.595" size="1.016" layer="27" ratio="10" rot="SR0"/>
 </element>
 <element name="FB5" library="MyLib6" package="BEAD0603" value="60R@100MHz" x="53.1495" y="55.6895" smashed="yes" rot="R180">
 <attribute name="NAME" x="52.0115" y="53.575" size="1.016" layer="25" ratio="10"/>
-<attribute name="VALUE" x="53.473" y="53.5165" size="0.8128" layer="27" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="51.929" y="55.366" size="0.8128" layer="27" ratio="10"/>
 </element>
 <element name="C100" library="rcl" package="C0603" value="100n" x="50.292" y="58.166" smashed="yes" rot="R90">
 <attribute name="NAME" x="48.0695" y="55.3085" size="1.016" layer="25" ratio="10"/>
@@ -14449,11 +14449,11 @@ design rules under a new name.</description>
 </element>
 <element name="R122" library="rcl" package="R0805" value="2K2" x="83.5025" y="23.5585" smashed="yes" rot="R180">
 <attribute name="NAME" x="81.7245" y="21.463" size="1.016" layer="25" ratio="10"/>
-<attribute name="VALUE" x="84.1375" y="26.0985" size="1.27" layer="27" rot="R180"/>
+<attribute name="VALUE" x="82.169" y="22.987" size="1.016" layer="27" ratio="10"/>
 </element>
 <element name="R125" library="rcl" package="R0805" value="10K" x="72.644" y="26.7335" smashed="yes">
 <attribute name="NAME" x="69.5325" y="28.6385" size="1.016" layer="25" ratio="10" rot="SR270"/>
-<attribute name="VALUE" x="72.009" y="24.1935" size="1.27" layer="27"/>
+<attribute name="VALUE" x="71.374" y="26.162" size="1.016" layer="27" ratio="10"/>
 </element>
 <element name="R74" library="rcl" package="R0805" value="1K" x="29.845" y="101.1555" smashed="yes" rot="R180">
 <attribute name="NAME" x="29.972" y="99.06" size="1.016" layer="25" ratio="10"/>
@@ -14473,11 +14473,11 @@ design rules under a new name.</description>
 </element>
 <element name="R116" library="rcl" package="R0805" value="49R9" x="89.5985" y="7.4295" smashed="yes" rot="R90">
 <attribute name="NAME" x="90.7415" y="9.398" size="1.016" layer="25" ratio="10" rot="SR270"/>
-<attribute name="VALUE" x="92.1385" y="6.7945" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="90.297" y="4.7625" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="R113" library="rcl" package="R0805" value="49R9" x="89.0905" y="17.145" smashed="yes" rot="R90">
 <attribute name="NAME" x="90.17" y="19.1135" size="1.016" layer="25" ratio="10" rot="SR270"/>
-<attribute name="VALUE" x="91.6305" y="16.51" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="88.4555" y="19.05" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R166" library="rcl" package="R0805" value="5K1" x="187.96" y="41.402" smashed="yes">
 <attribute name="NAME" x="185.42" y="42.545" size="1.016" layer="25" ratio="10"/>
@@ -14495,7 +14495,7 @@ design rules under a new name.</description>
 <element name="X4" library="EEZ_Lib1" package="MINIFIT_6659-5" value="39303055" x="20.2565" y="61.722"/>
 <element name="R109" library="rcl" package="R2512" value="330R/2W" x="26.8605" y="6.731" smashed="yes" rot="R270">
 <attribute name="NAME" x="24.4475" y="10.922" size="1.016" layer="25" ratio="10"/>
-<attribute name="VALUE" x="23.6855" y="9.271" size="1.27" layer="27" rot="R270"/>
+<attribute name="VALUE" x="26.289" y="10.8585" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R111" library="rcl" package="R0805" value="2K2" x="46.101" y="20.6375" smashed="yes" rot="R90">
 <attribute name="NAME" x="43.8785" y="22.86" size="1.016" layer="25" ratio="10" rot="R270"/>

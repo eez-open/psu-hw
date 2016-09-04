@@ -27037,7 +27037,7 @@ Marquardt</description>
 <part name="C75" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="C73" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="FRAME5" library="frames" deviceset="DINA4_L" device=""/>
-<part name="R102" library="rcl" deviceset="R-EU_" device="R0805" value="5K6"/>
+<part name="R102" library="rcl" deviceset="R-EU_" device="R0805" value="4K7"/>
 <part name="R94" library="rcl" deviceset="R-EU_" device="R0805" value="2K2"/>
 <part name="R92" library="rcl" deviceset="R-EU_" device="R0805" value="5K6"/>
 <part name="R104" library="rcl" deviceset="R-EU_" device="R0805" value="5K6"/>
@@ -27169,7 +27169,7 @@ Marquardt</description>
 <part name="C44" library="rcl" deviceset="C-EU" device="C1206" value="1u/100V"/>
 <part name="SUPPLY4" library="supply2" deviceset="GND" device="" value="PGND"/>
 <part name="SUPPLY22" library="supply2" deviceset="GND" device="" value="PGND"/>
-<part name="R97" library="rcl" deviceset="R-EU_" device="R0805" value="4K7"/>
+<part name="R97" library="rcl" deviceset="R-EU_" device="R0805" value="5K6"/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device="" value="PGND"/>
 <part name="SUPPLY2" library="supply2" deviceset="-9V" device=""/>
 <part name="IC10" library="EEZ_Lib1" deviceset="REF50XX" device="" value="REF5025AIDG4"/>
@@ -32000,11 +32000,11 @@ Marquardt</description>
 <description>CC/CV, Remote sense protection</description>
 <plain>
 <text x="7.62" y="172.72" size="1.778" layer="97" rot="MR180">Constant Voltage (CV) and Constant Current (CC) mode indicator</text>
-<text x="87.63" y="144.145" size="1.27" layer="100" rot="MR180">+0.22V</text>
+<text x="87.63" y="144.145" size="1.27" layer="100" rot="MR180">+0.275V</text>
 <text x="164.465" y="28.575" size="2.54" layer="94" font="vector">CC/CV indicators, Sense error detection</text>
 <polygon width="0.1524" layer="101">
 </polygon>
-<text x="88.265" y="118.745" size="1.27" layer="100" rot="MR180">-2.27V</text>
+<text x="88.265" y="118.745" size="1.27" layer="100" rot="MR180">-2.72V</text>
 <text x="2.54" y="7.62" size="1.778" layer="94">Licensed under the TAPR Open Hardware License (www.tapr.org/OHL)</text>
 <text x="2.54" y="2.54" size="1.778" layer="94">Repository: https://github.com/eez-open</text>
 <text x="2.54" y="5.08" size="1.778" layer="94">More info at http://www.envox.hr/eez</text>
@@ -32012,6 +32012,8 @@ Marquardt</description>
 <text x="139.7" y="172.72" size="1.778" layer="97" rot="MR180">Remote sense reverse polarity detection</text>
 <wire x1="7.62" y1="76.835" x2="134.62" y2="76.835" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="134.62" y1="76.835" x2="259.08" y2="76.835" width="0.1524" layer="97" style="shortdash"/>
+<text x="57.15" y="139.065" size="1.27" layer="100" rot="MR180">+5.19V @ Vout=+5V</text>
+<text x="22.225" y="142.875" size="1.27" layer="100" rot="MR180">+5.18V @ Vout=+5V</text>
 </plain>
 <instances>
 <instance part="FRAME5" gate="G$1" x="0" y="0" smashed="yes"/>

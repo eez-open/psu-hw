@@ -36,6 +36,15 @@ This is repository for the hardware part of the DIY fully programmable dual chan
 
 ![Programmable dual channel PSU block diagram](EEZ PSU block diagram v5.2.png)
 
+Files in this repository are organized using the following folders:
+
+- **Consolidated** - contains information about all modules. That include BOM with parts required to build complete dual channel unit (1 x Aux, 2 x Power, and 1 x Arduino Shield).
+*Use this as a primary reference for PCB manufacturing and assembling.*
+- Aux power - information about Auxiliary power module only
+- Power board - information about Power board only
+- Arduino shield - information about Arduino Shield only
+- Mechanical - drawings for metal custom enclosure and acrylic demonstration enclosure. 
+
 **********************
 
 For more information visit http://www.envox.hr/eez/bench-power-supply/psu-introduction.html

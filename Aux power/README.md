@@ -1,3 +1,5 @@
+![EEZ PSU Power board r5B9](AUX PS r5B9 top view.JPG)
+
 **Revision history:**
 * 2016-07-24: **r5B9**
 	- Replaced PCB iron core transformer with AC/DC module 12 V/5 W that support 115 / 230 VAC power input (bridge rectifier, filter capacitor and 12 V LDO for fan is not needed any more)
