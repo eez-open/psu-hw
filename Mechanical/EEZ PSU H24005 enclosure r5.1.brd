@@ -239,14 +239,14 @@ e.g. TME: RI-SOF-15129</text>
 <circle x="214.35" y="12" radius="4" width="0.1" layer="20"/>
 <circle x="195.3" y="12" radius="4" width="0.1" layer="20"/>
 <circle x="252.45" y="12" radius="4" width="0.1" layer="20"/>
-<wire x1="269.5" y1="47.5" x2="250.5" y2="47.5" width="0.1" layer="20"/>
+<wire x1="267.5" y1="47.5" x2="250.5" y2="47.5" width="0.1" layer="20"/>
 <wire x1="250.5" y1="47.5" x2="250.5" y2="37.5" width="0.1" layer="20"/>
-<wire x1="250.5" y1="37.5" x2="269.5" y2="37.5" width="0.1" layer="20"/>
-<wire x1="269.5" y1="37.5" x2="269.5" y2="47.5" width="0.1" layer="20"/>
-<wire x1="201.5" y1="47.5" x2="177.5" y2="47.5" width="0.1" layer="20"/>
+<wire x1="250.5" y1="37.5" x2="267.5" y2="37.5" width="0.1" layer="20"/>
+<wire x1="267.5" y1="37.5" x2="267.5" y2="47.5" width="0.1" layer="20"/>
+<wire x1="199.5" y1="47.5" x2="177.5" y2="47.5" width="0.1" layer="20"/>
 <wire x1="177.5" y1="47.5" x2="177.5" y2="37.5" width="0.1" layer="20"/>
-<wire x1="177.5" y1="37.5" x2="201.5" y2="37.5" width="0.1" layer="20"/>
-<wire x1="201.5" y1="37.5" x2="201.5" y2="47.5" width="0.1" layer="20"/>
+<wire x1="177.5" y1="37.5" x2="199.5" y2="37.5" width="0.1" layer="20"/>
+<wire x1="199.5" y1="37.5" x2="199.5" y2="47.5" width="0.1" layer="20"/>
 <circle x="261" y="57" radius="1.4" width="0.1" layer="20"/>
 <circle x="74.5" y="13" radius="3.25" width="0.1" layer="20"/>
 <circle x="74.5" y="40" radius="1.75" width="0.1" layer="20"/>
@@ -300,40 +300,7 @@ e.g. TME: RI-SOF-15129</text>
 <vertex x="14" y="209"/>
 <vertex x="14" y="210" curve="-90"/>
 </polygon>
-<wire x1="320" y1="315" x2="394" y2="315" width="0.1" layer="20"/>
-<wire x1="394" y1="315" x2="394" y2="295" width="0.1" layer="20"/>
-<wire x1="394" y1="295" x2="320" y2="295" width="0.1" layer="20"/>
-<wire x1="320" y1="295" x2="320" y2="315" width="0.1" layer="20"/>
-<circle x="324" y="299" radius="1.55" width="0.1" layer="20"/>
-<text x="320" y="323" size="5" layer="47" ratio="10">Alu thermal bridge (2 per unit)</text>
-<circle x="390" y="311" radius="1.55" width="0.1" layer="20"/>
 <dimension x1="290" y1="431.5" x2="291" y2="348.5" x3="297" y3="390" textsize="2" layer="47" dtype="vertical"/>
-<dimension x1="395" y1="315" x2="395" y2="295" x3="398.5" y3="305" textsize="2" textratio="10" layer="47" dtype="vertical"/>
-<dimension x1="320" y1="294" x2="394" y2="294" x3="357" y3="291" textsize="2" textratio="10" layer="47" dtype="horizontal"/>
-<wire x1="394" y1="285" x2="320" y2="285" width="0.1" layer="20"/>
-<wire x1="394" y1="280" x2="320" y2="280" width="0.1" layer="20"/>
-<wire x1="320" y1="285" x2="320" y2="280" width="0.1" layer="20"/>
-<wire x1="394" y1="285" x2="394" y2="280" width="0.1" layer="20"/>
-<dimension x1="322.45" y1="299" x2="325.55" y2="299" x3="324" y3="302" textsize="1.778" layer="47" dtype="diameter"/>
-<dimension x1="391.55" y1="311" x2="388.45" y2="311" x3="390" y3="308" textsize="1.778" layer="47" dtype="diameter"/>
-<dimension x1="331" y1="299" x2="319.5" y2="295" x3="317" y3="297" textsize="2" textratio="10" layer="47" dtype="vertical"/>
-<dimension x1="388" y1="315" x2="391" y2="311" x3="386.5" y3="313" textsize="2" textratio="10" layer="47" dtype="vertical"/>
-<wire x1="325.55" y1="280" x2="325.55" y2="285" width="0.1" layer="20" style="shortdash"/>
-<wire x1="322.45" y1="280" x2="322.45" y2="285" width="0.1" layer="20" style="shortdash"/>
-<wire x1="391.55" y1="280" x2="391.55" y2="285" width="0.1" layer="20" style="shortdash"/>
-<wire x1="388.45" y1="280" x2="388.45" y2="285" width="0.1" layer="20" style="shortdash"/>
-<dimension x1="319" y1="285" x2="319.5" y2="280" x3="317" y3="282.5" textsize="2" textratio="10" layer="47" dtype="vertical"/>
-<wire x1="425" y1="285" x2="405" y2="285" width="0.1" layer="20"/>
-<wire x1="425" y1="280" x2="405" y2="280" width="0.1" layer="20"/>
-<wire x1="405" y1="285" x2="405" y2="280" width="0.1" layer="20"/>
-<wire x1="425" y1="285" x2="425" y2="280" width="0.1" layer="20"/>
-<wire x1="410.55" y1="280" x2="410.55" y2="285" width="0.1" layer="20" style="shortdash"/>
-<wire x1="407.45" y1="280" x2="407.45" y2="285" width="0.1" layer="20" style="shortdash"/>
-<wire x1="422.55" y1="280" x2="422.55" y2="285" width="0.1" layer="20" style="shortdash"/>
-<wire x1="419.45" y1="280" x2="419.45" y2="285" width="0.1" layer="20" style="shortdash"/>
-<dimension x1="320" y1="315.5" x2="324" y2="296.5" x3="322" y3="318" textsize="2" textratio="10" layer="47" dtype="horizontal"/>
-<dimension x1="324" y1="315.5" x2="390" y2="307.5" x3="357" y3="318" textsize="2" textratio="10" layer="47" dtype="horizontal"/>
-<dimension x1="390" y1="315.5" x2="394" y2="315.5" x3="392" y3="318" textsize="2" textratio="10" layer="47" dtype="horizontal"/>
 <text x="320" y="270" size="5" layer="47" ratio="10">Heatsink (2 per unit)</text>
 <circle x="184" y="239" radius="1.55" width="0.1" layer="138"/>
 <circle x="261" y="239" radius="1.55" width="0.1" layer="138"/>
@@ -365,10 +332,10 @@ e.g. TME: RI-SOF-15129</text>
 <dimension x1="9" y1="76" x2="1.5" y2="69" x3="5.25" y3="67" textsize="2" layer="47" dtype="horizontal"/>
 <dimension x1="9.5" y1="80" x2="12.5" y2="72" x3="14.5" y3="76" textsize="2" textratio="10" layer="47" dtype="vertical"/>
 <text x="77" y="73.5" size="2.5" layer="137" ratio="10">M3 x 8mm studs (4 pcs for display support)</text>
-<dimension x1="201.5" y1="36.5" x2="177.5" y2="37" x3="189.5" y3="33" textsize="2" layer="47" dtype="horizontal"/>
-<dimension x1="269.5" y1="37" x2="250.5" y2="36.5" x3="260" y3="33" textsize="2" layer="47" dtype="horizontal"/>
-<dimension x1="202" y1="47.5" x2="202" y2="37.5" x3="206" y3="42.5" textsize="2" textratio="10" layer="47" dtype="vertical"/>
-<dimension x1="270" y1="47.5" x2="270" y2="37.5" x3="274" y3="42.5" textsize="2" textratio="10" layer="47" dtype="vertical"/>
+<dimension x1="199.5" y1="35.5" x2="177.5" y2="37" x3="188.5" y3="33" textsize="2" layer="47" dtype="horizontal"/>
+<dimension x1="267.5" y1="37" x2="250.5" y2="36.5" x3="259" y3="33" textsize="2" layer="47" dtype="horizontal"/>
+<dimension x1="200" y1="47.5" x2="200" y2="37.5" x3="204" y3="42.5" textsize="2" textratio="10" layer="47" dtype="vertical"/>
+<dimension x1="268" y1="47.5" x2="268" y2="37.5" x3="272" y3="42.5" textsize="2" textratio="10" layer="47" dtype="vertical"/>
 <dimension x1="72.75" y1="40" x2="76.25" y2="40" x3="74.5" y3="44" textsize="1.778" layer="47" dtype="diameter"/>
 <dimension x1="278.9" y1="72" x2="283.1" y2="72" x3="281" y3="75" textsize="1.778" layer="47" dtype="diameter"/>
 <dimension x1="31.5" y1="80" x2="35" y2="0" x3="35" y3="40" textsize="2" textratio="10" layer="47" dtype="vertical"/>
@@ -378,9 +345,9 @@ e.g. TME: RI-SOF-15129</text>
 <dimension x1="190.5" y1="57" x2="190.5" y2="50" x3="176" y3="53.5" textsize="2" textratio="10" layer="47" dtype="vertical"/>
 <dimension x1="182.5" y1="80" x2="190.5" y2="64" x3="176" y3="72" textsize="2" textratio="10" layer="47" dtype="vertical"/>
 <dimension x1="174.5" y1="37.5" x2="177" y2="0" x3="176" y3="18.75" textsize="2" textratio="10" layer="47" dtype="vertical"/>
-<dimension x1="250.5" y1="35" x2="201.5" y2="37" x3="226" y3="33" textsize="2" layer="47" dtype="horizontal"/>
+<dimension x1="250.5" y1="35" x2="199.5" y2="37" x3="225" y3="33" textsize="2" layer="47" dtype="horizontal"/>
 <dimension x1="177.5" y1="36.5" x2="163.5" y2="36.5" x3="170.5" y3="33" textsize="2" layer="47" dtype="horizontal"/>
-<dimension x1="288.5" y1="37" x2="269.5" y2="36.5" x3="279" y3="33" textsize="2" layer="47" dtype="horizontal"/>
+<dimension x1="288.5" y1="37" x2="267.5" y2="36.5" x3="278" y3="33" textsize="2" layer="47" dtype="horizontal"/>
 <dimension x1="77.75" y1="13" x2="71.25" y2="13" x3="74.5" y3="6.5" textsize="1.778" layer="47" dtype="diameter"/>
 <dimension x1="71" y1="80" x2="80.5" y2="40" x3="66.5" y3="60" textsize="2" textratio="10" layer="47" dtype="vertical"/>
 <dimension x1="68" y1="40" x2="79" y2="24" x3="66.5" y3="32" textsize="2" textratio="10" layer="47" dtype="vertical"/>
@@ -571,7 +538,6 @@ e.g. TME: RI-SOF-15129</text>
 <dimension x1="15.45" y1="249" x2="18.55" y2="249" x3="17" y3="251.5" textsize="1.778" layer="47" dtype="diameter"/>
 <dimension x1="30.95" y1="271" x2="34.05" y2="271" x3="32.5" y3="273" textsize="1.778" layer="47" dtype="diameter"/>
 <dimension x1="146.5" y1="151" x2="125.5" y2="147.5" x3="136" y3="138" textsize="2" layer="120" dtype="horizontal"/>
-<dimension x1="383.5" y1="311" x2="332" y2="299" x3="374.5" y3="305" textsize="2" textratio="10" layer="47" dtype="vertical"/>
 <wire x1="440" y1="266.5" x2="440" y2="264.5" width="0.1" layer="20"/>
 <wire x1="440" y1="264.5" x2="440" y2="254.5" width="0.1" layer="20"/>
 <wire x1="440" y1="254.5" x2="440" y2="252.5" width="0.1" layer="20"/>
@@ -602,9 +568,6 @@ e.g. TME: RI-SOF-15129</text>
 <wire x1="320" y1="266.5" x2="440" y2="266.5" width="0.1" layer="20"/>
 <circle x="436" y="193.5" radius="1.5" width="0.1" layer="20"/>
 <circle x="324" y="259.5" radius="1.5" width="0.1" layer="20"/>
-<circle x="424" y="259.5" radius="1.5" width="0.1" layer="20"/>
-<circle x="324" y="193.5" radius="1.5" width="0.1" layer="20"/>
-<circle x="384" y="224.5" radius="1.5" width="0.1" layer="20"/>
 <dimension x1="440" y1="186.5" x2="320" y2="186.5" x3="380" y3="179" textsize="2" layer="47" dtype="horizontal"/>
 <dimension x1="319" y1="266.5" x2="319" y2="186.5" x3="316.5" y3="226.5" textsize="2" layer="47" dtype="vertical"/>
 <wire x1="450.5" y1="267" x2="450" y2="266.5" width="0.1" layer="20" curve="90"/>
@@ -660,8 +623,6 @@ e.g. TME: RI-SOF-15129</text>
 <wire x1="452" y1="261" x2="452" y2="258" width="0.1" layer="20"/>
 <wire x1="452" y1="192" x2="450" y2="192" width="0.1" layer="20" style="shortdash"/>
 <wire x1="452" y1="195" x2="450" y2="195" width="0.1" layer="20" style="shortdash"/>
-<wire x1="456" y1="223" x2="450" y2="223" width="0.1" layer="20" style="shortdash"/>
-<wire x1="456" y1="226" x2="450" y2="226" width="0.1" layer="20" style="shortdash"/>
 <wire x1="456" y1="226" x2="456" y2="225" width="0.1" layer="20" style="shortdash"/>
 <wire x1="456" y1="225" x2="456" y2="223" width="0.1" layer="20" style="shortdash"/>
 <wire x1="452.5" y1="188.5" x2="452" y2="189" width="0.1" layer="20" curve="-90"/>
@@ -687,23 +648,20 @@ e.g. TME: RI-SOF-15129</text>
 <wire x1="456" y1="230" x2="450" y2="230" width="0.1" layer="20" style="shortdash"/>
 <wire x1="456" y1="227" x2="450" y2="227" width="0.1" layer="20" style="shortdash"/>
 <dimension x1="470" y1="185.5" x2="450" y2="185.5" x3="460" y3="175.5" textsize="2" layer="47" dtype="horizontal"/>
-<dimension x1="455" y1="259.5" x2="434" y2="226.5" x3="418.5" y3="243" textsize="2" textratio="10" layer="47" dtype="vertical"/>
+<dimension x1="455" y1="259.5" x2="434" y2="226.5" x3="426.5" y3="243" textsize="2" textratio="10" layer="47" dtype="vertical"/>
 <dimension x1="426" y1="226.5" x2="454" y2="193.5" x3="418.5" y3="210" textsize="2" textratio="10" layer="47" dtype="vertical"/>
 <dimension x1="426" y1="193.5" x2="418.5" y2="186.5" x3="418.5" y3="190" textsize="2" textratio="10" layer="47" dtype="vertical"/>
-<dimension x1="426" y1="266.5" x2="418.5" y2="259.5" x3="418.5" y3="263" textsize="2" textratio="10" layer="47" dtype="vertical"/>
-<dimension x1="436" y1="262" x2="424" y2="264" x3="430" y3="255.5" textsize="2" layer="47" dtype="horizontal"/>
+<dimension x1="426" y1="266.5" x2="426.5" y2="259.5" x3="426.5" y3="263" textsize="2" textratio="10" layer="47" dtype="vertical"/>
 <dimension x1="440" y1="261" x2="436" y2="264" x3="438" y3="255.5" textsize="2" layer="47" dtype="horizontal"/>
 <dimension x1="324" y1="262" x2="320" y2="255.5" x3="322" y3="255.5" textsize="2" layer="47" dtype="horizontal"/>
-<dimension x1="424" y1="261" x2="324" y2="255.5" x3="374" y3="255.5" textsize="2" layer="47" dtype="horizontal"/>
-<dimension x1="378.5" y1="228.5" x2="389" y2="224.5" x3="371" y3="226.5" textsize="2" textratio="10" layer="47" dtype="vertical"/>
-<dimension x1="378.5" y1="224.5" x2="374" y2="186.5" x3="371" y3="205.5" textsize="2" textratio="10" layer="47" dtype="vertical"/>
+<dimension x1="436" y1="257" x2="324" y2="255.5" x3="380" y3="255.5" textsize="2" layer="47" dtype="horizontal"/>
+<dimension x1="372.5" y1="228.5" x2="374" y2="186.5" x3="371" y3="207.5" textsize="2" textratio="10" layer="47" dtype="vertical"/>
 <dimension x1="378.5" y1="266.5" x2="374" y2="228.5" x3="371" y3="247.5" textsize="2" textratio="10" layer="47" dtype="vertical"/>
-<dimension x1="330" y1="230.5" x2="320" y2="225" x3="325" y3="218.5" textsize="2" layer="47" dtype="horizontal"/>
-<dimension x1="376" y1="231.5" x2="330" y2="225" x3="353" y3="218.5" textsize="2" layer="47" dtype="horizontal"/>
-<dimension x1="384" y1="228" x2="376" y2="225" x3="380" y3="218.5" textsize="2" layer="47" dtype="horizontal"/>
-<dimension x1="430" y1="231.5" x2="384" y2="225" x3="407" y3="218.5" textsize="2" layer="47" dtype="horizontal"/>
+<dimension x1="330" y1="229.5" x2="320" y2="225" x3="325" y3="218.5" textsize="2" layer="47" dtype="horizontal"/>
+<dimension x1="376" y1="231.5" x2="330" y2="220.5" x3="353" y3="218.5" textsize="2" layer="47" dtype="horizontal"/>
+<dimension x1="430" y1="231.5" x2="376" y2="220" x3="403" y3="218.5" textsize="2" layer="47" dtype="horizontal"/>
 <dimension x1="440" y1="221.5" x2="430" y2="225" x3="435" y3="218.5" textsize="2" layer="47" dtype="horizontal"/>
-<dimension x1="336" y1="189.5" x2="324" y2="189" x3="330" y3="197" textsize="2" layer="47" dtype="horizontal"/>
+<dimension x1="336" y1="189.5" x2="320" y2="195" x3="328" y3="197" textsize="2" layer="47" dtype="horizontal"/>
 <wire x1="240.5" y1="419.4" x2="268.5" y2="419.4" width="0.1" layer="20"/>
 <wire x1="268.5" y1="419.4" x2="268.5" y2="360.6" width="0.1" layer="20"/>
 <wire x1="268.5" y1="360.6" x2="240.5" y2="360.6" width="0.1" layer="20"/>
@@ -855,19 +813,18 @@ e.g. TME: RI-SOF-15129</text>
 <wire x1="459" y1="360" x2="455.5" y2="360" width="0.1" layer="20"/>
 <wire x1="455.5" y1="360" x2="455" y2="360.5" width="0.1" layer="20" curve="-90"/>
 <wire x1="455" y1="360.5" x2="455" y2="363.95" width="0.1" layer="20"/>
-<circle x="357" y="305" radius="4" width="0.1" layer="20"/>
-<dimension x1="353" y1="305" x2="361" y2="305" x3="357" y3="312" textsize="1.778" layer="47" dtype="diameter"/>
-<dimension x1="363" y1="305" x2="351.5" y2="295" x3="349" y3="300" textsize="2" textratio="10" layer="47" dtype="vertical"/>
-<dimension x1="320" y1="308" x2="357" y2="300.5" x3="338.5" y3="309.5" textsize="2" textratio="10" layer="47" dtype="horizontal"/>
 <dimension x1="191.3" y1="12" x2="199.3" y2="12" x3="199.3" y3="12" textsize="1.778" layer="47" dtype="diameter"/>
 <dimension x1="267.25" y1="15.8" x2="269.75" y2="15.8" x3="268.5" y3="18" textsize="1.778" layer="47" dtype="diameter"/>
 <text x="6.5" y="-22" size="2.5" layer="47" ratio="10" align="top-left">Changes in this revision:
 1. AD/DC mounting rail 3 upper holes adjustment
-2. Central hole 8mm in thermal bridge
-3. binding posts holes changed to 8mm and added 2.5mm holes for latches.
-4. Increased display studs distance 85.5mm
-5. Incereased LED holes to 3mm (due to paint thickness)
-6. LCD hole moved 1mm to the right</text>
+2. binding posts holes changed to 8mm and added 2.5mm holes for latches.
+3. Increased display studs distance 85.5mm
+4. Increased LED holes to 3mm (due to paint thickness)
+5. LCD hole left edge moved 1mm to the right
+6. Right edge of holes for snap-in connectors is moved 2mm to the left
+7. Removed redunant holes on heatsink, adjusted position of left fixing hole
+8. Additional stud at the left top corner
+9. Thermal bridge is deleted</text>
 <dimension x1="170" y1="13.5" x2="84.5" y2="13.5" x3="127.25" y3="5.5" textsize="2" layer="137" dtype="horizontal"/>
 <dimension x1="81.5" y1="69.5" x2="81" y2="10.5" x3="87.5" y3="40" textsize="2" textratio="10" layer="137" dtype="vertical"/>
 <dimension x1="73" y1="24" x2="76" y2="24" x3="74.5" y3="27" textsize="1.778" layer="47" dtype="diameter"/>
@@ -1201,6 +1158,10 @@ e.g. TME: RI-SOF-15129</text>
 <wire x1="452" y1="192" x2="452" y2="189" width="0.1" layer="20"/>
 <wire x1="456.5" y1="207.5" x2="456" y2="208" width="0.1" layer="20" curve="-90"/>
 <dimension x1="1.5" y1="394.5" x2="38.5" y2="395" x3="20" y3="396.5" textsize="2" layer="47" dtype="horizontal"/>
+<dimension x1="327.5" y1="226.5" x2="331.5" y2="193.5" x3="340" y3="210" textsize="2" textratio="10" layer="47" dtype="vertical"/>
+<circle x="273" y="73" radius="1.5" width="0.1" layer="137"/>
+<dimension x1="273" y1="68" x2="170" y2="64.5" x3="221.5" y3="76" textsize="2" layer="137" dtype="horizontal"/>
+<dimension x1="167" y1="69.5" x2="277" y2="73" x3="234.5" y3="71.25" textsize="2" textratio="10" layer="137" dtype="vertical"/>
 </plain>
 <libraries>
 </libraries>
