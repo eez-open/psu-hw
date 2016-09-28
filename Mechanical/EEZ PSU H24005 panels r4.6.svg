@@ -12,7 +12,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r"
-   sodipodi:docname="EEZ PSU H24005 panels r.4.6.svg"
+   sodipodi:docname="EEZ PSU H24005 panels r4.6.svg"
    inkscape:export-filename="/home/denis/BACKUP/Home/Audio/DIY v2/Power supply/git-public/psu-hw/Mechanical/EEZ PSU H24005 panels r4.6.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
@@ -24,7 +24,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
         <cc:license
            rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
       </cc:Work>
@@ -52,13 +52,13 @@
      inkscape:window-height="1176"
      id="namedview492"
      showgrid="false"
-     inkscape:zoom="2.0058594"
-     inkscape:cx="185.24551"
-     inkscape:cy="343.36136"
+     inkscape:zoom="5.7402051"
+     inkscape:cx="737.32683"
+     inkscape:cy="346.85533"
      inkscape:window-x="49"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer6"
+     inkscape:current-layer="layer7"
      units="mm"
      inkscape:document-units="mm"
      showguides="false" />
@@ -1216,7 +1216,7 @@
          y="563.10242"
          x="729.52325"
          sodipodi:role="line"
-         id="tspan5703">3 NTC</tspan><tspan
+         id="tspan5703">3 Temp. sensor</tspan><tspan
          y="574.35242"
          x="729.52325"
          sodipodi:role="line"
@@ -1550,78 +1550,78 @@
        sodipodi:linespacing="100%"
        id="text5782-0-8-6-4"
        y="222.66728"
-       x="789.71912"
+       x="775.71912"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:100%;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300"><tspan
          y="222.66728"
-         x="789.71912"
+         x="775.71912"
          sodipodi:role="line"
          id="tspan10242">2 x 8 A</tspan></text>
     <text
        sodipodi:linespacing="100%"
        id="text5782-0-8-6-4-0"
        y="205.53"
-       x="789.40051"
+       x="775.40051"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:100%;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300"><tspan
          y="205.53"
-         x="789.40051"
+         x="775.40051"
          sodipodi:role="line"
          id="tspan13359">Fuse   </tspan></text>
     <text
        sodipodi:linespacing="100%"
        id="text5782-0-8-6-4-0-1"
        y="236.84052"
-       x="716.7218"
+       x="702.7218"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:100%;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300"><tspan
          y="236.84052"
-         x="716.7218"
+         x="702.7218"
          sodipodi:role="line"
          id="tspan13359-6">170 - 264VAC </tspan></text>
     <text
        sodipodi:linespacing="100%"
        id="text5782-0-8-6-4-0-4"
        y="222.66728"
-       x="717.22717"
+       x="703.22717"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:100%;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300"><tspan
          y="222.66728"
-         x="717.22717"
+         x="703.22717"
          sodipodi:role="line"
          id="tspan13359-0">85 - 132VAC    </tspan></text>
     <text
        sodipodi:linespacing="100%"
        id="text5782-0-8-6-4-0-1-3"
        y="236.91193"
-       x="789.71912"
+       x="775.71912"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:100%;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300"><tspan
          y="236.91193"
-         x="789.71912"
+         x="775.71912"
          sodipodi:role="line"
          id="tspan13359-6-5">2 x 4 A </tspan></text>
     <text
        sodipodi:linespacing="100%"
        id="text5782-0-8-6-4-0-8"
        y="204.59891"
-       x="716.73279"
+       x="702.73279"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:100%;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300"><tspan
          y="204.59891"
-         x="716.73279"
+         x="702.73279"
          sodipodi:role="line"
          id="tspan13359-5">Set voltage   </tspan></text>
     <rect
@@ -1629,7 +1629,7 @@
        id="rect13442"
        width="13.5"
        height="11.5"
-       x="699.45905"
+       x="685.45905"
        y="213.3632"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
@@ -1638,7 +1638,7 @@
        id="rect13442-0"
        width="13.5"
        height="11.5"
-       x="699.45905"
+       x="685.45905"
        y="227.53644"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
@@ -1646,13 +1646,13 @@
        sodipodi:linespacing="100%"
        id="text5782-0-8-6-4-0-1-9"
        y="253.01373"
-       x="717.41394"
+       x="703.41394"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:100%;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300"><tspan
          y="253.01373"
-         x="717.41394"
+         x="703.41394"
          sodipodi:role="line"
          id="tspan13359-6-9">47 - 63 Hz</tspan></text>
     <rect
@@ -1660,20 +1660,20 @@
        id="rect13477"
        width="133.75"
        height="65"
-       x="693.25"
+       x="679.25"
        y="193.09448"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 693.25,210.34449 c 133.5,0 133.625,-0.125 133.625,-0.125"
+       d="m 679.25,210.34449 c 133.5,0 133.625,-0.125 133.625,-0.125"
        id="path13505"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <path
        style="display:inline;fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 693.34777,241.94316 c 133.5,0 133.625,-0.125 133.625,-0.125"
+       d="m 679.34777,241.94316 c 133.5,0 133.625,-0.125 133.625,-0.125"
        id="path13505-0"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="300"
@@ -1792,28 +1792,33 @@
          x="871.97729"
          sodipodi:role="line"
          id="tspan5859-8-41-76-9">Channel 2</tspan></text>
-    <text
-       sodipodi:linespacing="100%"
-       id="text5782-0-8-2"
-       y="471.32407"
-       x="75.698181"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:100%;font-family:Calibri;-inkscape-font-specification:'Calibri, Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         y="471.32407"
-         x="75.698181"
-         sodipodi:role="line"
-         id="tspan5859-8-7">Envox Experimental Zone</tspan></text>
-    <text
-       sodipodi:linespacing="100%"
-       id="text5782-0-8-2-1"
-       y="488.24945"
-       x="75.565659"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:100%;font-family:Calibri;-inkscape-font-specification:'Calibri, Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         y="488.24945"
-         x="75.565659"
-         sodipodi:role="line"
-         id="tspan5859-8-7-0">Open hardware / open source</tspan></text>
+    <g
+       style="display:inline"
+       id="g11574"
+       transform="translate(46,-2.9381874)">
+      <text
+         xml:space="preserve"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:100%;font-family:Calibri;-inkscape-font-specification:'Calibri, Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="29.698183"
+         y="474.26227"
+         id="text5782-0-8-2"
+         sodipodi:linespacing="100%"><tspan
+           id="tspan5859-8-7"
+           sodipodi:role="line"
+           x="29.698183"
+           y="474.26227">Envox Experimental Zone</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:100%;font-family:Calibri;-inkscape-font-specification:'Calibri, Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="29.56566"
+         y="491.18765"
+         id="text5782-0-8-2-1"
+         sodipodi:linespacing="100%"><tspan
+           id="tspan5859-8-7-0"
+           sodipodi:role="line"
+           x="29.56566"
+           y="491.18765">Open hardware / open source</tspan></text>
+    </g>
     <path
        id="path5131-1"
        style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.59448814;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
