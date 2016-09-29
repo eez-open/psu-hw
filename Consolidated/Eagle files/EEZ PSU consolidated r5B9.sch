@@ -29547,8 +29547,8 @@ Marquardt</description>
 <text x="225.425" y="-51.435" size="1.6764" layer="103">0-30V</text>
 <text x="225.425" y="-53.975" size="1.6764" layer="103">0-40V</text>
 <text x="225.425" y="-56.515" size="1.6764" layer="103">0-50V</text>
-<text x="247.65" y="-48.26" size="1.6764" layer="103">R47, R57 / ext.range</text>
-<text x="234.95" y="-48.26" size="1.6764" layer="103">R46, R56</text>
+<text x="247.65" y="-48.26" size="1.6764" layer="103">R50, R60 / ext.range</text>
+<text x="234.95" y="-48.26" size="1.6764" layer="103">R49, R59</text>
 <text x="238.125" y="-51.435" size="1.6764" layer="103">75K</text>
 <text x="252.73" y="-51.435" size="1.6764" layer="103">15K / 16K</text>
 <text x="237.49" y="-53.975" size="1.6764" layer="103">100K</text>
@@ -29570,7 +29570,7 @@ Marquardt</description>
 <wire x1="223.52" y1="-48.895" x2="271.78" y2="-48.895" width="0.1524" layer="103"/>
 <text x="224.155" y="-66.675" size="1.6764" layer="103">0-3.12A</text>
 <text x="224.155" y="-69.215" size="1.6764" layer="103">0-4.16A</text>
-<text x="234.95" y="-63.5" size="1.6764" layer="103">R61, R69</text>
+<text x="234.95" y="-63.5" size="1.6764" layer="103">R64, R72</text>
 <text x="238.125" y="-66.675" size="1.6764" layer="103">3K9</text>
 <text x="237.49" y="-69.215" size="1.6764" layer="103">3K24</text>
 <wire x1="223.52" y1="-60.96" x2="233.68" y2="-60.96" width="0.1524" layer="103"/>
@@ -32590,7 +32590,7 @@ Marquardt</description>
 <text x="10.16" y="157.48" size="1.778" layer="103">AC input (230V)</text>
 <text x="6.985" y="34.925" size="1.6764" layer="103">SAR1</text>
 <text x="6.985" y="19.685" size="1.6764" layer="103">VAR1, VAR2</text>
-<text x="6.985" y="17.145" size="1.6764" layer="103">ZD1, ZD2</text>
+<text x="6.985" y="17.145" size="1.6764" layer="103">ZD6, ZD7</text>
 <text x="44.45" y="38.1" size="1.6764" layer="103">Code</text>
 <text x="24.13" y="38.1" size="1.6764" layer="103">Value</text>
 <text x="24.13" y="34.925" size="1.6764" layer="103">2027-23-BLF</text>
@@ -34129,11 +34129,12 @@ Marquardt</description>
 <text x="2.54" y="170.18" size="1.778" layer="103">Ch#1 Power/Sense</text>
 <text x="3.175" y="91.44" size="1.778" layer="103">Ch#2 Power/Sense</text>
 <wire x1="101.6" y1="175.26" x2="101.6" y2="96.52" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="101.6" y1="96.52" x2="101.6" y2="2.54" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="101.6" y1="96.52" x2="101.6" y2="68.58" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="101.6" y1="68.58" x2="101.6" y2="30.48" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="2.54" y1="96.52" x2="101.6" y2="96.52" width="0.1524" layer="97" style="shortdash"/>
 <text x="189.23" y="82.55" size="1.4224" layer="104">Require SPI_MODE0</text>
 <text x="2.54" y="2.54" size="1.778" layer="94">Licensed under the TAPR Open Hardware License (www.tapr.org/OHL)</text>
-<text x="104.14" y="2.54" size="1.4224" layer="103">Note 8.1: Solder X1 and X3 on the PCB's opposite side</text>
+<text x="104.14" y="33.02" size="1.4224" layer="103">Note 8.1: Solder X12 and X14 on the PCB's opposite side</text>
 <text x="78.74" y="147.32" size="1.4224" layer="103">See Note 8.1</text>
 <text x="76.2" y="66.04" size="1.4224" layer="103">See Note 8.1</text>
 <circle x="109.22" y="36.83" radius="0.635" width="0.1524" layer="101"/>
@@ -34214,33 +34215,41 @@ Marquardt</description>
 <wire x1="165.1" y1="46.99" x2="165.1" y2="53.34" width="0.1524" layer="101"/>
 <wire x1="165.1" y1="53.34" x2="172.72" y2="60.96" width="0.1524" layer="101"/>
 <wire x1="172.72" y1="60.96" x2="179.07" y2="60.96" width="0.1524" layer="101"/>
-<text x="106.045" y="14.605" size="1.6764" layer="103">0-30V</text>
-<text x="106.045" y="12.065" size="1.6764" layer="103">0-40V</text>
-<text x="106.045" y="9.525" size="1.6764" layer="103">0-50V</text>
-<text x="116.84" y="17.78" size="1.6764" layer="103">ZD1-ZD4</text>
-<text x="115.57" y="14.605" size="1.6764" layer="103">P4SMAJ36A</text>
-<text x="115.57" y="12.065" size="1.6764" layer="103">P4SMAJ48A</text>
-<text x="115.57" y="9.525" size="1.6764" layer="103">P4SMAJ60A</text>
-<wire x1="104.14" y1="20.32" x2="114.3" y2="20.32" width="0.1524" layer="103"/>
-<wire x1="114.3" y1="20.32" x2="129.54" y2="20.32" width="0.1524" layer="103"/>
-<wire x1="129.54" y1="20.32" x2="129.54" y2="17.145" width="0.1524" layer="103"/>
-<wire x1="129.54" y1="17.145" x2="129.54" y2="8.89" width="0.1524" layer="103"/>
-<wire x1="129.54" y1="8.89" x2="114.3" y2="8.89" width="0.1524" layer="103"/>
-<wire x1="114.3" y1="8.89" x2="104.14" y2="8.89" width="0.1524" layer="103"/>
-<wire x1="104.14" y1="8.89" x2="104.14" y2="17.145" width="0.1524" layer="103"/>
-<wire x1="104.14" y1="17.145" x2="104.14" y2="20.32" width="0.1524" layer="103"/>
-<wire x1="114.3" y1="8.89" x2="114.3" y2="17.145" width="0.1524" layer="103"/>
-<text x="106.045" y="17.78" size="1.6764" layer="103">Range</text>
+<text x="108.585" y="19.685" size="1.6764" layer="103">0-30V</text>
+<text x="108.585" y="17.145" size="1.6764" layer="103">0-40V</text>
+<text x="108.585" y="14.605" size="1.6764" layer="103">0-50V</text>
+<text x="119.38" y="22.86" size="1.6764" layer="103">ZD8, ZD9</text>
+<text x="118.11" y="19.685" size="1.6764" layer="103">P4SMAJ36A</text>
+<text x="118.11" y="17.145" size="1.6764" layer="103">P4SMAJ48A</text>
+<text x="118.11" y="14.605" size="1.6764" layer="103">P4SMAJ60A</text>
+<wire x1="106.68" y1="25.4" x2="116.84" y2="25.4" width="0.1524" layer="103"/>
+<wire x1="116.84" y1="25.4" x2="132.08" y2="25.4" width="0.1524" layer="103"/>
+<wire x1="132.08" y1="25.4" x2="132.08" y2="22.225" width="0.1524" layer="103"/>
+<wire x1="132.08" y1="22.225" x2="132.08" y2="13.97" width="0.1524" layer="103"/>
+<wire x1="132.08" y1="13.97" x2="116.84" y2="13.97" width="0.1524" layer="103"/>
+<wire x1="116.84" y1="13.97" x2="106.68" y2="13.97" width="0.1524" layer="103"/>
+<wire x1="106.68" y1="13.97" x2="106.68" y2="22.225" width="0.1524" layer="103"/>
+<wire x1="106.68" y1="22.225" x2="106.68" y2="25.4" width="0.1524" layer="103"/>
+<wire x1="116.84" y1="13.97" x2="116.84" y2="22.225" width="0.1524" layer="103"/>
+<text x="108.585" y="22.86" size="1.6764" layer="103">Range</text>
 <text x="27.94" y="126.365" size="1.4224" layer="103">See Table 1</text>
 <text x="27.94" y="38.1" size="1.4224" layer="103">See Table 1</text>
-<text x="104.14" y="21.59" size="1.4224" layer="103">Table 1</text>
-<wire x1="114.3" y1="17.145" x2="114.3" y2="20.32" width="0.1524" layer="103"/>
-<wire x1="129.54" y1="17.145" x2="114.3" y2="17.145" width="0.1524" layer="103"/>
-<wire x1="104.14" y1="17.145" x2="114.3" y2="17.145" width="0.1524" layer="103"/>
+<text x="106.68" y="26.67" size="1.4224" layer="103">Table 1</text>
+<wire x1="116.84" y1="22.225" x2="116.84" y2="25.4" width="0.1524" layer="103"/>
+<wire x1="132.08" y1="22.225" x2="116.84" y2="22.225" width="0.1524" layer="103"/>
+<wire x1="106.68" y1="22.225" x2="116.84" y2="22.225" width="0.1524" layer="103"/>
 <rectangle x1="65.405" y1="136.525" x2="71.12" y2="143.51" layer="97"/>
 <rectangle x1="65.405" y1="122.555" x2="71.755" y2="128.27" layer="97"/>
 <rectangle x1="65.405" y1="52.705" x2="71.755" y2="59.69" layer="97"/>
 <rectangle x1="65.405" y1="36.195" x2="71.755" y2="42.545" layer="97"/>
+<wire x1="101.6" y1="30.48" x2="160.02" y2="30.48" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="101.6" y1="2.54" x2="101.6" y2="10.16" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="101.6" y1="10.16" x2="101.6" y2="30.48" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="101.6" y1="68.58" x2="215.9" y2="68.58" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="215.9" y1="68.58" x2="215.9" y2="38.1" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="101.6" y1="10.16" x2="152.4" y2="10.16" width="0.1524" layer="97" style="shortdash"/>
+<text x="104.14" y="5.08" size="1.4224" layer="103">Solder 1uF+1R on the channel's outputs</text>
+<text x="104.14" y="2.54" size="1.4224" layer="103">(Rout1, Cout1 and Rout2, Cout2 in BOM)</text>
 </plain>
 <instances>
 <instance part="K_S2" gate="1" x="241.3" y="45.72" smashed="yes" rot="MR0">
