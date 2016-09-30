@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -27340,7 +27340,7 @@ Marquardt</description>
 <part name="R98" library="rcl" deviceset="R-EU_" device="R0805" value="10K"/>
 <part name="P+14" library="supply1" deviceset="+5V" device=""/>
 <part name="R103" library="rcl" deviceset="R-EU_" device="R0805" value="47K"/>
-<part name="NTC1" library="EEZ_Lib1" deviceset="NTC" device="0805" value="10K/Beta:3570K"/>
+<part name="NTC1" library="EEZ_Lib1" deviceset="NTC" device="0805" value="NTCS0805E3103JMT"/>
 <part name="P+15" library="supply2" deviceset="V+" device=""/>
 <part name="P+4" library="supply2" deviceset="V+" device=""/>
 <part name="FB3" library="EEZ_Lib1" deviceset="FERRITE_BEAD" device="0603" value="60R@100MHz"/>
@@ -29659,6 +29659,7 @@ Marquardt</description>
 <text x="328.93" y="-64.135" size="1.778" layer="97">Temperature sensor</text>
 <wire x1="246.38" y1="-64.135" x2="233.68" y2="-64.135" width="0.1524" layer="103"/>
 <wire x1="223.52" y1="-64.135" x2="233.68" y2="-64.135" width="0.1524" layer="103"/>
+<text x="350.52" y="-86.36" size="1.27" layer="96">10K NTC Beta: 3570K</text>
 </plain>
 <instances>
 <instance part="ZD4" gate="G$1" x="314.96" y="63.5" smashed="yes" rot="R270">
@@ -36891,9 +36892,9 @@ Marquardt</description>
 <description>SPI peripherals, TFT display</description>
 <plain>
 <text x="164.465" y="29.845" size="2.54" layer="94" font="vector">TFT-touchscreen, RTC, EEPROM, Ethernet</text>
-<text x="207.645" y="141.605" size="1.27" layer="96">e.g. Farnell: 1187100</text>
-<text x="207.645" y="143.51" size="1.778" layer="96">10K NTC</text>
-<text x="207.645" y="139.7" size="1.27" layer="96">or TME: NTC-K45-10</text>
+<text x="207.645" y="141.605" size="1.27" layer="96">e.g. Farnell: 1187031</text>
+<text x="207.645" y="143.51" size="1.27" layer="96">10K NTC Beta: 3977K</text>
+<text x="207.645" y="139.7" size="1.27" layer="96">or TME: NTCLE100E3103JB0</text>
 <text x="164.465" y="26.035" size="2.54" layer="94" font="vector">Buzzer, temperature sensor (NTC)</text>
 <polygon width="0.1524" layer="91">
 <vertex x="251.46" y="50.8"/>
