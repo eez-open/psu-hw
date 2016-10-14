@@ -21,7 +21,7 @@ This is repository for the hardware part of the DIY fully programmable dual chan
 - Selectable 115/230 VAC, Soft-start/Stand-by mode
 - Simple DC output protection (reverse voltage, over-voltage)
 - Serial and parallel connection of the multiple channels
-- MCU based digital control module using 32-bit Arduino/Genuino boards such as [Due](https://www.arduino.cc/en/Main/ArduinoBoardDue)
+- MCU based digital control module using 32-bit Arduino/Genuino boards such as [Due](https://www.arduino.cc/en/Main/ArduinoBoardDue) or possibly [Star - OTTO](http://www.arduino.org/products/boards/arduino-star-otto)
 - SPI bus for communication with peripherals
 - Galvanic isolation between digital module and power channels
 - Real-time clock (RTC) with supercap/batter backup

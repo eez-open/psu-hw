@@ -6,5 +6,6 @@
 - Side 2 of USB isolator (IC19) has no power connected. Add wiring from X10-1 to pin 16 and X10-4 to pin 9 if you'd like to add USB isolation.
 
 **Power module r5B9**
-- No known issues
+- Voltage programming switch (IC13) is not wired correctly. Therefore remote programming cannot be selected without simple PCB correction (see *rprog_correction.jpg* in Building instructions folder).
+- The main (Q4) heatisink is earthed, cut that PCB trace to decrease EMI (see *heatsink_earth.jpg* in Building instructions folder).
 
