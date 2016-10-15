@@ -1,3 +1,14 @@
+[![GitHub release](https://img.shields.io/github/release/eez-open/psu-hw.svg)](https://github.com/eez-open/psu-hw/releases)
+[![license](https://img.shields.io/github/license/eez-open/psu-hw.svg)](https://github.com/eez-open/psu-hw/blob/master/LICENSE.TXT)
+
+### Ownership and License
+
+The contributors are listed in CONTRIB.TXT. This project uses the TAPR v1.0 license, see LICENSE.TXT.
+EEZ psu-firmware uses the [C4.1 (Collective Code Construction Contract)](http://rfc.zeromq.org/spec:22) process for contributions.
+To report an issue, use the [EEZ psu-hw issue tracker](https://github.com/eez-open/psu-hw/issues).
+
+### Overview
+
 ![EEZ PSU ver.1 prototype](EEZ_PSU_prototype.png)
 
 This is repository for the hardware part of the DIY fully programmable dual channel bench power supply. The power supply is designed with taking into consideration the following features and requirements:
