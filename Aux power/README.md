@@ -1,7 +1,10 @@
 ![EEZ PSU Power board r5B9](AUX PS r5B9 top view.JPG)
 
 **Revision history:**
-* 2016-07-24: **r5B9**
+* 2016-10-24: **r5B10**
+    - Side 2 of USB isolator (IC19) has now power connected ([#4](https://github.com/eez-open/psu-hw/issues/4))
+    - Removed +Vcc (pin 1) on USB header X9 ([#10](https://github.com/eez-open/psu-hw/issues/10))
+* 2016-07-24: **r5B9** ([Version 2.0](https://github.com/eez-open/psu-hw/releases/tag/2.0) on github)
 	- Replaced PCB iron core transformer with AC/DC module 12 V/5 W that support 115 / 230 VAC power input (bridge rectifier, filter capacitor and 12 V LDO for fan is not needed any more)
 	- Changed Ethernet RJ-45 connector model and pinouts (X7)
 	- Changed power input connector type (X4)

@@ -1,7 +1,11 @@
 ![EEZ PSU Power board r5B9](Power board r5B9 assembled.JPG)
 
 **Revision history:**
-* 2016-07-23: **r5B9**
+* 2016-10-24: **r5B10**
+	- Voltage programming switch (IC13) wiring is fixed ([#2](https://github.com/eez-open/psu-hw/issues/2))
+	- Mainheatsink (Q4) earth connection is removed ([#3](https://github.com/eez-open/psu-hw/issues/3))
+	- Error amps ground reference offset ([#11](https://github.com/eez-open/psu-hw/issues/11))
+* 2016-07-23: **r5B9** ([Version 2.0](https://github.com/eez-open/psu-hw/releases/tag/2.0) on github)
 	- DAC Vdd input moved from digital +5 V to analog +5 V power supply
 	- Changed power input connector type (X1)
 	- Optimized number of parts size and values, renumbered reference designators

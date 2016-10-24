@@ -1,7 +1,15 @@
+![Arduino Shield r3B4 top view.jpg](Arduino Shield r3B4 top view.jpg)
+
 This product is made available under the terms of the TAPR Open Hardware License. See the LICENSE.TXT file that accompanies this distribution for the full text of the license.
 
 **Revision history:**
-* 2016-07-23: **r3B4**
+* 2016-10-24: **r3B5**
+    - Small adjustment of TFT display (holes and offest)
+    - Removed header for optional WiFi module
+    - Ethernet header (X18) is moved to the right ([#5](Ethernet header position on the Arduino Shield))
+    - Fixed wrong silkscreen for all red LEDs ([#6](https://github.com/eez-open/psu-hw/issues/6))
+    - Arduino output is used to generate master sync for switching regulators ([#7](https://github.com/eez-open/psu-hw/issues/7))
+* 2016-07-23: **r3B4** ([Version 2.0](https://github.com/eez-open/psu-hw/releases/tag/2.0) on github)
 	- Corrected WATCHDOG functionality, added possibility to choose between RESET and Power off if MCU stalled
 	- Optimized number of parts size and values, renumbered reference designators
 * 2016-06-14: **r3B3**
