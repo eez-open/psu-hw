@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="8" display="no" altdistance="12.5" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="2" display="no" altdistance="12.5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -30,7 +30,7 @@
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="13" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="13" fill="1" visible="no" active="yes"/>
@@ -98,7 +98,7 @@
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="no"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="no"/>
-<layer number="125" name="_tNames" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="125" name="_tNames" color="14" fill="1" visible="no" active="yes"/>
 <layer number="126" name="_bNames" color="5" fill="1" visible="no" active="yes"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="no" active="no"/>
@@ -2232,7 +2232,7 @@
 <wire x1="17.872" y1="132.8595" x2="17.872" y2="135.082" width="0.254" layer="21"/>
 <wire x1="17.872" y1="135.082" x2="14.443" y2="135.082" width="0.254" layer="21"/>
 <text x="114.158" y="146.177" size="1.27" layer="21" font="vector" ratio="10" rot="SR0">(10/2016 r5B10)</text>
-<text x="4.3665" y="89.7255" size="1.4224" layer="22" ratio="10" rot="MR90">Project source code at github.com/eez-open</text>
+<text x="82.7255" y="146.177" size="1.4224" layer="22" ratio="10" rot="MR0">Project source code at github.com/eez-open</text>
 <wire x1="21.575" y1="78.994" x2="19.3525" y2="78.994" width="2.54" layer="30"/>
 <wire x1="19.3525" y1="78.994" x2="6.5255" y2="91.821" width="2.54" layer="30"/>
 <wire x1="6.5255" y1="91.821" x2="6.5255" y2="104.521" width="2.54" layer="30"/>
@@ -6375,48 +6375,27 @@
 <wire x1="230.469" y1="67.273" x2="230.469" y2="60.9865" width="0.254" layer="21"/>
 <wire x1="299.792" y1="61.4995" x2="299.792" y2="58.0705" width="0.254" layer="21"/>
 <text x="121.38" y="0.909" size="1.27" layer="16" ratio="10" rot="SMR0">r3B5 (10/2016)</text>
-<text x="245.0315" y="65.786" size="1.016" layer="22" ratio="10" rot="SMR0">WIFI module (optional)</text>
-<circle x="235.824" y="59.182" radius="0.127" width="0.254" layer="22"/>
-<circle x="237.094" y="59.182" radius="0.127" width="0.254" layer="22"/>
-<circle x="235.824" y="60.706" radius="0.127" width="0.254" layer="22"/>
-<circle x="237.094" y="60.706" radius="0.127" width="0.254" layer="22"/>
-<circle x="235.824" y="62.23" radius="0.127" width="0.254" layer="22"/>
-<circle x="237.094" y="62.23" radius="0.127" width="0.254" layer="22"/>
-<circle x="235.824" y="63.754" radius="0.127" width="0.254" layer="22"/>
-<circle x="237.094" y="63.754" radius="0.127" width="0.254" layer="22"/>
-<wire x1="235.062" y1="58.3565" x2="237.856" y2="58.3565" width="0.1524" layer="22"/>
-<wire x1="237.856" y1="58.3565" x2="237.856" y2="64.516" width="0.1524" layer="22"/>
-<wire x1="237.856" y1="64.516" x2="235.062" y2="64.516" width="0.1524" layer="22"/>
-<wire x1="235.062" y1="64.516" x2="235.062" y2="58.3565" width="0.1524" layer="22"/>
-<text x="234.554" y="58.928" size="1.016" layer="22" ratio="10" rot="SMR0">8 IRQ</text>
-<text x="234.554" y="60.452" size="1.016" layer="22" ratio="10" rot="SMR0">6 MOSI</text>
-<text x="234.554" y="61.976" size="1.016" layer="22" ratio="10" rot="SMR0">4 CSN</text>
-<text x="234.554" y="63.5" size="1.016" layer="22" ratio="10" rot="SMR0">2 +3.3V</text>
-<text x="238.364" y="58.674" size="1.016" layer="22" ratio="10" rot="SMR0" align="bottom-right">MISO 7</text>
-<text x="238.364" y="60.198" size="1.016" layer="22" ratio="10" rot="SMR0" align="bottom-right">SCLK 5</text>
-<text x="238.364" y="61.722" size="1.016" layer="22" ratio="10" rot="SMR0" align="bottom-right">CE 3</text>
-<text x="238.364" y="63.5" size="1.016" layer="22" ratio="10" rot="SMR0" align="bottom-right">Gnd 1</text>
-<text x="222.87" y="24.8285" size="1.016" layer="22" ratio="10" rot="SMR0">RJ-45 Ethernet X18</text>
-<circle x="210.932" y="18.542" radius="0.127" width="0.254" layer="22"/>
-<circle x="210.932" y="12.446" radius="0.127" width="0.254" layer="22"/>
-<circle x="210.932" y="20.066" radius="0.127" width="0.254" layer="22"/>
-<circle x="210.932" y="13.97" radius="0.127" width="0.254" layer="22"/>
-<circle x="210.932" y="21.59" radius="0.127" width="0.254" layer="22"/>
-<circle x="210.932" y="15.494" radius="0.127" width="0.254" layer="22"/>
-<circle x="210.932" y="23.114" radius="0.127" width="0.254" layer="22"/>
-<circle x="210.932" y="17.018" radius="0.127" width="0.254" layer="22"/>
-<wire x1="210.17" y1="11.6205" x2="211.694" y2="11.6205" width="0.1524" layer="22"/>
-<wire x1="211.694" y1="11.6205" x2="211.694" y2="23.876" width="0.1524" layer="22"/>
-<wire x1="211.694" y1="23.876" x2="210.17" y2="23.876" width="0.1524" layer="22"/>
-<wire x1="210.17" y1="23.876" x2="210.17" y2="11.6205" width="0.1524" layer="22"/>
-<text x="212.202" y="18.288" size="1.016" layer="22" ratio="10" rot="SMR0" align="bottom-right">RX+ 4</text>
-<text x="212.202" y="19.812" size="1.016" layer="22" ratio="10" rot="SMR0" align="bottom-right">Shield 3</text>
-<text x="212.202" y="21.336" size="1.016" layer="22" ratio="10" rot="SMR0" align="bottom-right">LED Active 2</text>
-<text x="212.202" y="22.86" size="1.016" layer="22" ratio="10" rot="SMR0" align="bottom-right">LED Link 1</text>
-<text x="212.202" y="12.192" size="1.016" layer="22" ratio="10" rot="SMR0" align="bottom-right">+3.3V 8</text>
-<text x="212.202" y="13.716" size="1.016" layer="22" ratio="10" rot="SMR0" align="bottom-right">TX- 7</text>
-<text x="212.202" y="15.24" size="1.016" layer="22" ratio="10" rot="SMR0" align="bottom-right">TX+ 6</text>
-<text x="212.202" y="16.764" size="1.016" layer="22" ratio="10" rot="SMR0" align="bottom-right">RX- 5</text>
+<text x="211.694" y="23.241" size="1.016" layer="22" ratio="10" rot="SMR0">RJ-45 Ethernet X18</text>
+<circle x="199.756" y="16.9545" radius="0.127" width="0.254" layer="22"/>
+<circle x="199.756" y="10.8585" radius="0.127" width="0.254" layer="22"/>
+<circle x="199.756" y="18.4785" radius="0.127" width="0.254" layer="22"/>
+<circle x="199.756" y="12.3825" radius="0.127" width="0.254" layer="22"/>
+<circle x="199.756" y="20.0025" radius="0.127" width="0.254" layer="22"/>
+<circle x="199.756" y="13.9065" radius="0.127" width="0.254" layer="22"/>
+<circle x="199.756" y="21.5265" radius="0.127" width="0.254" layer="22"/>
+<circle x="199.756" y="15.4305" radius="0.127" width="0.254" layer="22"/>
+<wire x1="198.994" y1="10.033" x2="200.518" y2="10.033" width="0.1524" layer="22"/>
+<wire x1="200.518" y1="10.033" x2="200.518" y2="22.2885" width="0.1524" layer="22"/>
+<wire x1="200.518" y1="22.2885" x2="198.994" y2="22.2885" width="0.1524" layer="22"/>
+<wire x1="198.994" y1="22.2885" x2="198.994" y2="10.033" width="0.1524" layer="22"/>
+<text x="201.026" y="16.7005" size="1.016" layer="22" ratio="10" rot="SMR0" align="bottom-right">RX+ 4</text>
+<text x="201.026" y="18.2245" size="1.016" layer="22" ratio="10" rot="SMR0" align="bottom-right">Shield 3</text>
+<text x="201.026" y="19.7485" size="1.016" layer="22" ratio="10" rot="SMR0" align="bottom-right">LED Active 2</text>
+<text x="201.026" y="21.2725" size="1.016" layer="22" ratio="10" rot="SMR0" align="bottom-right">LED Link 1</text>
+<text x="201.026" y="10.6045" size="1.016" layer="22" ratio="10" rot="SMR0" align="bottom-right">+3.3V 8</text>
+<text x="201.026" y="12.1285" size="1.016" layer="22" ratio="10" rot="SMR0" align="bottom-right">TX- 7</text>
+<text x="201.026" y="13.6525" size="1.016" layer="22" ratio="10" rot="SMR0" align="bottom-right">TX+ 6</text>
+<text x="201.026" y="15.1765" size="1.016" layer="22" ratio="10" rot="SMR0" align="bottom-right">RX- 5</text>
 <text x="283.83" y="18.7325" size="1.016" layer="22" ratio="10" rot="SMR0">Power X16</text>
 <circle x="279.512" y="10.922" radius="0.127" width="0.254" layer="22"/>
 <circle x="280.782" y="10.922" radius="0.127" width="0.254" layer="22"/>
@@ -6601,10 +6580,6 @@
 <text x="110.983" y="18.8595" size="1.016" layer="22" ratio="10" rot="SMR0" align="bottom-right">Protective earth 6</text>
 <text x="110.983" y="20.3835" size="1.016" layer="22" ratio="10" rot="SMR0" align="bottom-right">Remote sense- 5</text>
 <wire x1="109.205" y1="27.6225" x2="110.729" y2="27.6225" width="0.1524" layer="22"/>
-<wire x1="226.553" y1="68.072" x2="245.857" y2="68.072" width="0.1524" layer="22"/>
-<wire x1="245.857" y1="68.072" x2="245.857" y2="57.4675" width="0.1524" layer="22"/>
-<wire x1="245.857" y1="57.4675" x2="226.553" y2="57.4675" width="0.1524" layer="22"/>
-<wire x1="226.553" y1="57.4675" x2="226.553" y2="68.072" width="0.1524" layer="22"/>
 <wire x1="174.102" y1="30.9245" x2="171.562" y2="30.9245" width="2.54" layer="29"/>
 <wire x1="171.562" y1="30.9245" x2="169.0855" y2="33.401" width="2.54" layer="29"/>
 <wire x1="169.0855" y1="33.401" x2="169.0855" y2="36.0045" width="2.54" layer="29"/>
@@ -9361,7 +9336,7 @@
 <wire x1="169.872" y1="132.8595" x2="169.872" y2="135.082" width="0.254" layer="21"/>
 <wire x1="169.872" y1="135.082" x2="166.443" y2="135.082" width="0.254" layer="21"/>
 <text x="266.158" y="146.177" size="1.27" layer="21" font="vector" ratio="10" rot="SR0">(10/2016 r5B10)</text>
-<text x="156.3665" y="89.7255" size="1.4224" layer="22" ratio="10" rot="MR90">Project source code at github.com/eez-open</text>
+<text x="234.7255" y="146.177" size="1.4224" layer="22" ratio="10" rot="MR0">Project source code at github.com/eez-open</text>
 <wire x1="173.575" y1="78.994" x2="171.3525" y2="78.994" width="2.54" layer="30"/>
 <wire x1="171.3525" y1="78.994" x2="158.5255" y2="91.821" width="2.54" layer="30"/>
 <wire x1="158.5255" y1="91.821" x2="158.5255" y2="104.521" width="2.54" layer="30"/>
