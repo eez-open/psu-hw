@@ -2,6 +2,7 @@
 
 **Revision history:**
 * 2016-10-24: **r5B10**
+	- Added optional components on the AC power input
 	- Voltage programming switch (IC13) wiring is fixed ([#2](https://github.com/eez-open/psu-hw/issues/2))
 	- Mainheatsink (Q4) earth connection is removed ([#3](https://github.com/eez-open/psu-hw/issues/3))
 	- Error amps ground reference offset ([#11](https://github.com/eez-open/psu-hw/issues/11))

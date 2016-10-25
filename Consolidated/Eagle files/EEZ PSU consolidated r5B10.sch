@@ -27716,7 +27716,7 @@ Marquardt</description>
 <part name="C104A" library="rcl" deviceset="C-EU" device="C0805" value="1u"/>
 <part name="R136A" library="rcl" deviceset="R-EU_" device="R0805" value="1R"/>
 <part name="C109A" library="rcl" deviceset="C-EU" device="C0805" value="1u"/>
-<part name="R136A1" library="rcl" deviceset="R-EU_" device="R0805" value="1R"/>
+<part name="R140A" library="rcl" deviceset="R-EU_" device="R0805" value="1R"/>
 <part name="C111" library="Panasonic-EEEFK_EEEFP" deviceset="EEE-" device="-CASE-E" technology="FK1J220P" value="EEEFK1J220P"/>
 <part name="C106" library="Panasonic-EEEFK_EEEFP" deviceset="EEE-" device="-CASE-E" technology="FK1J220P" value="EEEFK1J220P"/>
 <part name="R173" library="rcl" deviceset="R-EU_" device="R0805" value="0R"/>
@@ -33106,9 +33106,9 @@ Marquardt</description>
 <segment>
 <pinref part="L8" gate="G$1" pin="1"/>
 <wire x1="83.82" y1="91.44" x2="76.2" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="91.44" x2="76.2" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="104.14" x2="78.74" y2="104.14" width="0.1524" layer="91"/>
-<label x="87.63" y="104.14" size="1.27" layer="102" rot="R180" xref="yes"/>
+<wire x1="76.2" y1="91.44" x2="76.2" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="99.06" x2="78.74" y2="99.06" width="0.1524" layer="91"/>
+<label x="87.63" y="99.06" size="1.27" layer="102" rot="R180" xref="yes"/>
 <pinref part="TR2" gate="TR1" pin="+"/>
 <wire x1="66.04" y1="91.44" x2="76.2" y2="91.44" width="0.1524" layer="91"/>
 <junction x="76.2" y="91.44"/>
@@ -34662,7 +34662,7 @@ Marquardt</description>
 <attribute name="NAME" x="75.819" y="40.894" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="75.819" y="38.354" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="R136A1" gate="G$1" x="73.66" y="27.94" smashed="yes" rot="MR90">
+<instance part="R140A" gate="G$1" x="73.66" y="27.94" smashed="yes" rot="MR90">
 <attribute name="NAME" x="74.93" y="29.6164" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="74.93" y="27.432" size="1.778" layer="96" rot="MR180"/>
 </instance>
@@ -34781,7 +34781,7 @@ Marquardt</description>
 <junction x="68.58" y="12.7"/>
 <pinref part="K_SER" gate="-1" pin="S"/>
 <pinref part="C112" gate="G$1" pin="2"/>
-<pinref part="R136A1" gate="G$1" pin="1"/>
+<pinref part="R140A" gate="G$1" pin="1"/>
 <wire x1="73.66" y1="22.86" x2="73.66" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="15.24" x2="81.28" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="15.24" x2="83.82" y2="12.7" width="0.1524" layer="91"/>
@@ -35426,7 +35426,7 @@ Marquardt</description>
 <net name="N$178" class="0">
 <segment>
 <pinref part="C109A" gate="G$1" pin="2"/>
-<pinref part="R136A1" gate="G$1" pin="2"/>
+<pinref part="R140A" gate="G$1" pin="2"/>
 <wire x1="73.66" y1="33.02" x2="73.66" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
