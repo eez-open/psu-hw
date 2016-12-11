@@ -1,6 +1,8 @@
 ![EEZ PSU Power board r5B9](Power board r5B9 assembled.JPG)
 
 **Revision history:**
+* 2016-12-11: **r5B11**
+	- Current limiter is removed
 * 2016-10-24: **r5B10**
 	- Added optional components on the AC power input
 	- Voltage programming switch (IC13) wiring is fixed ([#2](https://github.com/eez-open/psu-hw/issues/2))

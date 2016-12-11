@@ -1,6 +1,10 @@
 ![Arduino Shield r3B4 top view.jpg](Arduino Shield r3B4 top view.jpg)
 
 **Revision history:**
+* 2016-12-11: **r4B1**
+    - Added isolated output on X14 that is replaced with 8 pin push-in connector ([#8](https://github.com/eez-open/psu-hw/issues/8))
+    - D33 is added to isolate RESET signal ([#14](https://github.com/eez-open/psu-hw/issues/14))
+    - Space for optional R33 is added and IC31 is replaced with 4 AND gate ([#15](https://github.com/eez-open/psu-hw/issues/15))
 * 2016-10-24: **r3B5**
     - Small adjustment of TFT display (holes and offset)
     - Removed header for optional WiFi module
