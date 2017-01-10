@@ -1,6 +1,8 @@
 ![EEZ PSU Power board r5B9](AUX PS r5B9 top view.JPG)
 
 **Revision history:**
+* 2017-01-11: **r5B11**
+    - Added capacitor between ground and Earth ([#17](https://github.com/eez-open/psu-hw/issues/17))
 * 2016-10-24: **r5B10**
     - Side 2 of USB isolator (IC19) has now power connected ([#4](https://github.com/eez-open/psu-hw/issues/4))
     - Removed +Vcc (pin 1) on USB header X9 ([#10](https://github.com/eez-open/psu-hw/issues/10))

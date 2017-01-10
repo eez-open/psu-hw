@@ -1,6 +1,10 @@
 ![Arduino Shield r3B4 top view.jpg](Arduino Shield r3B4 top view.jpg)
 
 **Revision history:**
+* 2017-01-11: **r4B2**
+    - +3.3V for buzzer ([#16](https://github.com/eez-open/psu-hw/issues/16))
+    - Reorganized capacitors ([#17](https://github.com/eez-open/psu-hw/issues/17))
+    - Wrong positions of DOUT pins on X14 push-in connector ([#18](https://github.com/eez-open/psu-hw/issues/18))
 * 2016-12-11: **r4B1**
     - Added isolated output on X14 that is replaced with 8 pin push-in connector ([#8](https://github.com/eez-open/psu-hw/issues/8))
     - D33 is added to isolate RESET signal ([#14](https://github.com/eez-open/psu-hw/issues/14))
