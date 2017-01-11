@@ -1,5 +1,7 @@
 ![Arduino Shield r3B4 top view.jpg](Arduino Shield r3B4 top view.jpg)
 
+Please refer to the BOM in *Consolidated/BOM* folder where **Board Name** (Col F) is *Arduino shield*. Eagle files is available in *Consolidated/Eagle files* folder.
+
 **Revision history:**
 * 2017-01-11: **r4B2**
     - +3.3V for buzzer ([#16](https://github.com/eez-open/psu-hw/issues/16))

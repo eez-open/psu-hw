@@ -1,1 +1,0 @@
-Eagle files is available in *Consolidated/Eagle files* folder.

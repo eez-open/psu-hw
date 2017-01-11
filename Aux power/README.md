@@ -1,5 +1,8 @@
 ![EEZ PSU Power board r5B9](AUX PS r5B9 top view.JPG)
 
+Please refer to the BOM in *Consolidated/BOM folder* where **Board Name** (Col F) is *AUX PS*. Eagle files is available in *Consolidated/Eagle files* folder.
+
+
 **Revision history:**
 * 2017-01-11: **r5B11**
     - Added capacitor between ground and Earth ([#17](https://github.com/eez-open/psu-hw/issues/17))

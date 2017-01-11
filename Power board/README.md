@@ -1,5 +1,7 @@
 ![EEZ PSU Power board r5B9](Power board r5B9 assembled.JPG)
 
+Please refer to the BOM in *Consolidated/BOM* folder where **Board Name** (Col F) is *Arduino shield*. Eagle files is available in *Consolidated/Eagle files* folder.
+
 **Revision history:**
 * 2016-12-11: **r5B11**
 	- Current limiter is removed
