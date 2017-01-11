@@ -99,7 +99,7 @@
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="no"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="no"/>
-<layer number="125" name="_tNames" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="125" name="_tNames" color="14" fill="1" visible="no" active="yes"/>
 <layer number="126" name="_bNames" color="5" fill="1" visible="no" active="yes"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="no" active="no"/>
@@ -7008,15 +7008,15 @@
 <text x="50.8" y="61.5315" size="1.016" layer="125" ratio="10">C103</text>
 <text x="183.9595" y="18.8595" size="1.016" layer="125" ratio="10">C104</text>
 <text x="181.991" y="9.5885" size="1.016" layer="126" ratio="10" rot="MR90">C104A</text>
-<text x="191.77" y="16.3195" size="1.016" layer="126" ratio="10" rot="MR270">C105</text>
+<text x="194.2465" y="18.669" size="1.016" layer="126" ratio="10" rot="MR180">C105</text>
 <text x="190.2587" y="28.702" size="1.27" layer="125" ratio="10" rot="SR0">C106</text>
 <text x="161.989009375" y="63.110490625" size="1.016" layer="125" ratio="10" rot="R180">C107</text>
-<text x="195.1355" y="23.0505" size="1.016" layer="126" ratio="10" rot="MR270">C108</text>
+<text x="194.183" y="21.7805" size="1.016" layer="126" ratio="10" rot="MR180">C108</text>
 <text x="126.3015" y="51.689" size="1.016" layer="125" ratio="10" rot="R90">C109</text>
 <text x="143.764" y="13.589" size="1.016" layer="125" ratio="10">C109A</text>
-<text x="153.162" y="44.069" size="1.016" layer="126" ratio="10" rot="MR0">C110</text>
+<text x="149.606" y="47.6885" size="1.016" layer="126" ratio="10" rot="MR0">C110</text>
 <text x="132.3467" y="53.34" size="1.27" layer="125" ratio="10" rot="SR0">C111</text>
-<text x="152.908" y="48.4505" size="1.016" layer="126" ratio="10" rot="MR180">C112</text>
+<text x="156.21" y="45.974" size="1.016" layer="126" ratio="10" rot="MR180">C112</text>
 <text x="213.5505" y="39.878" size="1.016" layer="125" ratio="10" rot="R180">C113</text>
 <text x="218.8845" y="39.878" size="1.016" layer="125" ratio="10" rot="R180">C114</text>
 <text x="217.3605" y="25.4635" size="1.016" layer="125" ratio="10">C115</text>
@@ -14390,19 +14390,19 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="91.8845" y="96.52" size="1.27" layer="27"/>
 </element>
 <element name="C105" library="rcl" package="C1210" value="4n7" x="191.516" y="18.161" smashed="yes" rot="MR180">
-<attribute name="NAME" x="191.77" y="16.3195" size="1.016" layer="26" ratio="10" rot="MR270"/>
+<attribute name="NAME" x="194.2465" y="18.669" size="1.016" layer="26" ratio="10" rot="MR180"/>
 <attribute name="VALUE" x="189.6745" y="18.796" size="1.27" layer="28" rot="MR180"/>
 </element>
 <element name="C108" library="rcl" package="C1210" value="4n7" x="191.516" y="21.3995" smashed="yes" rot="MR0">
-<attribute name="NAME" x="195.1355" y="23.0505" size="1.016" layer="26" ratio="10" rot="MR270"/>
+<attribute name="NAME" x="194.183" y="21.7805" size="1.016" layer="26" ratio="10" rot="MR180"/>
 <attribute name="VALUE" x="192.9765" y="20.7645" size="1.27" layer="28" rot="MR0"/>
 </element>
 <element name="C110" library="rcl" package="C1210" value="4n7" x="151.384" y="47.6885" smashed="yes" rot="MR270">
-<attribute name="NAME" x="153.162" y="44.069" size="1.016" layer="26" ratio="10" rot="MR0"/>
+<attribute name="NAME" x="149.606" y="47.6885" size="1.016" layer="26" ratio="10" rot="MR0"/>
 <attribute name="VALUE" x="152.019" y="49.657" size="1.27" layer="28" rot="MR270"/>
 </element>
 <element name="C112" library="rcl" package="C1210" value="4n7" x="154.6225" y="44.831" smashed="yes" rot="MR270">
-<attribute name="NAME" x="152.908" y="48.4505" size="1.016" layer="26" ratio="10" rot="MR180"/>
+<attribute name="NAME" x="156.21" y="45.974" size="1.016" layer="26" ratio="10" rot="MR180"/>
 <attribute name="VALUE" x="155.194" y="46.355" size="1.27" layer="28" rot="MR270"/>
 </element>
 <element name="C28" library="rcl" package="C1206" value="1u/100V" x="105.7275" y="128.2065" smashed="yes" rot="R180">
