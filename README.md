@@ -47,7 +47,7 @@ This is repository for the hardware part of the DIY fully programmable dual chan
 - Possibility to house at least dual channel version in affordable and compact (2U height) metallic enclosure
 - Comprehensive software support that include [SCPI](http://www.envox.hr/eez/bench-power-supply/psu-scpi-reference-manual/psu-scpi-introduction.html)  remote control, GUI configuration and monitoring and even multi-platform (Windows, Linux, OS X) software simulator of the firmware functionality
 
-![Programmable dual channel PSU block diagram](EEZ PSU block diagram v5.2.png)
+![Programmable dual channel PSU block diagram](EEZ PSU block diagram v5.3.png)
 
 Files in this repository are organized using the following folders:
 
