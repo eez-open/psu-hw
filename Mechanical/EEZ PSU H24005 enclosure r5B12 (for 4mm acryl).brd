@@ -154,20 +154,6 @@ e.g. TME: RI-SOF-15129</text>
 <wire x1="80" y1="87" x2="80" y2="79" width="0.1" layer="20"/>
 <wire x1="80" y1="374" x2="323" y2="374" width="0.1" layer="20"/>
 <wire x1="80" y1="79" x2="323" y2="79" width="0.1" layer="20"/>
-<wire x1="65.5" y1="279" x2="65.5" y2="212" width="0.1" layer="20"/>
-<wire x1="65.5" y1="212" x2="14.5" y2="212" width="0.1" layer="20"/>
-<wire x1="14.5" y1="212" x2="14.5" y2="279" width="0.1" layer="20"/>
-<wire x1="14.5" y1="279" x2="65.5" y2="279" width="0.1" layer="20"/>
-<wire x1="47.5" y1="103" x2="47.5" y2="125" width="0.1" layer="20"/>
-<wire x1="47.5" y1="125" x2="37.5" y2="125" width="0.1" layer="20"/>
-<wire x1="37.5" y1="125" x2="37.5" y2="103" width="0.1" layer="20"/>
-<wire x1="37.5" y1="103" x2="47.5" y2="103" width="0.1" layer="20"/>
-<wire x1="47.5" y1="176" x2="47.5" y2="198" width="0.1" layer="20"/>
-<wire x1="47.5" y1="198" x2="37.5" y2="198" width="0.1" layer="20"/>
-<wire x1="37.5" y1="198" x2="37.5" y2="176" width="0.1" layer="20"/>
-<wire x1="37.5" y1="176" x2="47.5" y2="176" width="0.1" layer="20"/>
-<circle x="13" y="301" radius="3.25" width="0.1" layer="20"/>
-<circle x="40" y="301" radius="1.75" width="0.1" layer="20"/>
 <wire x1="0" y1="87" x2="0" y2="374" width="0.1" layer="20"/>
 <wire x1="0" y1="87" x2="80" y2="87" width="0.1" layer="20"/>
 <wire x1="80" y1="374" x2="80" y2="87" width="0.1" layer="20"/>
@@ -181,10 +167,6 @@ e.g. TME: RI-SOF-15129</text>
 <circle x="133.5" y="246" radius="1.55" width="0.1" layer="20"/>
 <circle x="234.5" y="354.5" radius="1.55" width="0.1" layer="20"/>
 <circle x="149.5" y="202" radius="1.55" width="0.1" layer="20"/>
-<circle x="10.5" y="291" radius="1.6" width="0.1" layer="20"/>
-<circle x="69.5" y="291" radius="1.6" width="0.1" layer="20"/>
-<circle x="69.5" y="206" radius="1.6" width="0.1" layer="20"/>
-<circle x="10.5" y="206" radius="1.6" width="0.1" layer="20"/>
 <circle x="137.5" y="331" radius="1.55" width="0.1" layer="20"/>
 <circle x="137.5" y="226" radius="1.55" width="0.1" layer="20"/>
 <wire x1="113.5" y1="176" x2="137.5" y2="176" width="0.1" layer="20"/>
@@ -424,18 +406,6 @@ e.g. TME: RI-SOF-15129</text>
 <circle x="293" y="88.5" radius="1.6" width="0.1" layer="20"/>
 <circle x="293" y="364.5" radius="1.6" width="0.1" layer="20"/>
 <wire x1="646" y1="374" x2="646" y2="87" width="0.1" layer="20"/>
-<circle x="631" y="283" radius="2.25" width="0.1" layer="20"/>
-<circle x="581" y="283" radius="2.25" width="0.1" layer="20"/>
-<circle x="581" y="333" radius="2.25" width="0.1" layer="20"/>
-<circle x="631" y="333" radius="2.25" width="0.1" layer="20"/>
-<wire x1="599" y1="279" x2="577" y2="301" width="0.1" layer="20" curve="-90"/>
-<wire x1="577" y1="301" x2="577" y2="315" width="0.1" layer="20"/>
-<wire x1="577" y1="315" x2="599" y2="337" width="0.1" layer="20" curve="-90"/>
-<wire x1="599" y1="337" x2="613" y2="337" width="0.1" layer="20"/>
-<wire x1="613" y1="337" x2="635" y2="315" width="0.1" layer="20" curve="-90"/>
-<wire x1="635" y1="315" x2="635" y2="301" width="0.1" layer="20"/>
-<wire x1="635" y1="301" x2="613" y2="279" width="0.1" layer="20" curve="-90"/>
-<wire x1="613" y1="279" x2="599" y2="279" width="0.1" layer="20"/>
 <wire x1="635.4" y1="135" x2="635.4" y2="107" width="0.1" layer="20"/>
 <wire x1="635.4" y1="107" x2="576.6" y2="107" width="0.1" layer="20"/>
 <wire x1="576.6" y1="107" x2="576.6" y2="135" width="0.1" layer="20"/>
@@ -494,21 +464,51 @@ e.g. TME: RI-SOF-15129</text>
 <circle x="268" y="8.5" radius="1.6" width="0.1" layer="20"/>
 <circle x="262" y="18.5" radius="1.6" width="0.1" layer="20"/>
 <wire x1="486" y1="79" x2="486" y2="-1" width="0.1" layer="20"/>
-<circle x="12" y="107" radius="3.8" width="0.1" layer="20"/>
-<circle x="12" y="161.15" radius="3.8" width="0.1" layer="20"/>
-<circle x="12" y="180.2" radius="3.8" width="0.1" layer="20"/>
-<circle x="12" y="123.05" radius="3.8" width="0.1" layer="20"/>
-<circle x="12" y="142.1" radius="3.8" width="0.1" layer="20"/>
-<circle x="15.8" y="180.2" radius="0.8" width="0.1" layer="20"/>
-<circle x="8.2" y="180.2" radius="0.8" width="0.1" layer="20"/>
-<circle x="15.8" y="161.15" radius="0.8" width="0.1" layer="20"/>
-<circle x="15.8" y="142.1" radius="0.8" width="0.1" layer="20"/>
-<circle x="8.2" y="161.15" radius="0.8" width="0.1" layer="20"/>
-<circle x="8.2" y="142.1" radius="0.8" width="0.1" layer="20"/>
-<circle x="15.8" y="123.05" radius="0.8" width="0.1" layer="20"/>
-<circle x="8.2" y="123.05" radius="0.8" width="0.1" layer="20"/>
-<circle x="15.8" y="107" radius="0.8" width="0.1" layer="20"/>
-<circle x="8.2" y="107" radius="0.8" width="0.1" layer="20"/>
+<circle x="631" y="284.5" radius="2.25" width="0.1" layer="20"/>
+<circle x="581" y="284.5" radius="2.25" width="0.1" layer="20"/>
+<circle x="581" y="334.5" radius="2.25" width="0.1" layer="20"/>
+<circle x="631" y="334.5" radius="2.25" width="0.1" layer="20"/>
+<wire x1="592.5" y1="253" x2="592.5" y2="270" width="0.1" layer="20"/>
+<wire x1="579.5" y1="253" x2="579.5" y2="270" width="0.1" layer="20"/>
+<wire x1="579.5" y1="253" x2="592.5" y2="253" width="0.1" layer="20"/>
+<wire x1="579.5" y1="270" x2="592.5" y2="270" width="0.1" layer="20"/>
+<circle x="606" y="309.5" radius="29.5" width="0.1" layer="20"/>
+<circle x="617.5" y="344.5" radius="1.55" width="0.1" layer="20"/>
+<circle x="12" y="205.5" radius="4" width="0.1" layer="20"/>
+<circle x="24" y="313" radius="1.5" width="0.1" layer="20"/>
+<wire x1="65.5" y1="293" x2="65.5" y2="226" width="0.1" layer="20"/>
+<wire x1="65.5" y1="226" x2="14.5" y2="226" width="0.1" layer="20"/>
+<wire x1="14.5" y1="226" x2="14.5" y2="293" width="0.1" layer="20"/>
+<wire x1="14.5" y1="293" x2="65.5" y2="293" width="0.1" layer="20"/>
+<circle x="12" y="160.15" radius="4" width="0.1" layer="20"/>
+<circle x="12" y="179.2" radius="4" width="0.1" layer="20"/>
+<circle x="12" y="122.05" radius="4" width="0.1" layer="20"/>
+<wire x1="47.5" y1="103" x2="47.5" y2="125" width="0.1" layer="20"/>
+<wire x1="47.5" y1="125" x2="37.5" y2="125" width="0.1" layer="20"/>
+<wire x1="37.5" y1="125" x2="37.5" y2="103" width="0.1" layer="20"/>
+<wire x1="37.5" y1="103" x2="47.5" y2="103" width="0.1" layer="20"/>
+<wire x1="47.5" y1="176" x2="47.5" y2="198" width="0.1" layer="20"/>
+<wire x1="47.5" y1="198" x2="37.5" y2="198" width="0.1" layer="20"/>
+<wire x1="37.5" y1="198" x2="37.5" y2="176" width="0.1" layer="20"/>
+<wire x1="37.5" y1="176" x2="47.5" y2="176" width="0.1" layer="20"/>
+<circle x="13" y="313" radius="3.25" width="0.1" layer="20"/>
+<circle x="7" y="274.5" radius="1.75" width="0.1" layer="20"/>
+<circle x="12" y="141.1" radius="4" width="0.1" layer="20"/>
+<circle x="15.8" y="179.2" radius="1.25" width="0.1" layer="20"/>
+<circle x="8.2" y="179.2" radius="1.25" width="0.1" layer="20"/>
+<circle x="15.8" y="160.15" radius="1.25" width="0.1" layer="20"/>
+<circle x="15.8" y="141.1" radius="1.25" width="0.1" layer="20"/>
+<circle x="8.2" y="141.1" radius="1.25" width="0.1" layer="20"/>
+<circle x="15.8" y="122.05" radius="1.25" width="0.1" layer="20"/>
+<circle x="8.2" y="122.05" radius="1.25" width="0.1" layer="20"/>
+<circle x="15.8" y="205.5" radius="1.25" width="0.1" layer="20"/>
+<circle x="8.2" y="205.5" radius="1.25" width="0.1" layer="20"/>
+<circle x="8.2" y="160.15" radius="1.25" width="0.1" layer="20"/>
+<circle x="65" y="205.5" radius="8.25" width="0.1" layer="20"/>
+<circle x="10.5" y="301.4858" radius="1.6" width="0.1" layer="20"/>
+<circle x="10.5" y="215.9835" radius="1.6" width="0.1" layer="20"/>
+<circle x="69.5" y="215.9858" radius="1.6" width="0.1" layer="20"/>
+<circle x="69.5" y="301.5" radius="1.6" width="0.1" layer="20"/>
 </plain>
 <libraries>
 </libraries>
