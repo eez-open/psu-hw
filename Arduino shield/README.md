@@ -3,6 +3,11 @@
 Please refer to the BOM in *Consolidated/BOM* folder where **Board Name** (Col F) is *Arduino shield*. Eagle files is available in *Consolidated/Eagle files* folder.
 
 **Revision history:**
+* 2017-02-23: **r5B12**
+    - Encoder with switch on Arduino shield ([#20](https://github.com/eez-open/psu-hw/issues/20))
+    - Power relay MCU controlled on the AUX PS module([#23](https://github.com/eez-open/psu-hw/issues/23))
+    - Support for 3.5" Riverdi TFT touchscreen display ([#24](https://github.com/eez-open/psu-hw/issues/24))
+    - Micro SD card socket ([#30](https://github.com/eez-open/psu-hw/issues/30))
 * 2017-01-11: **r4B2**
     - +3.3V for buzzer ([#16](https://github.com/eez-open/psu-hw/issues/16))
     - Reorganized capacitors ([#17](https://github.com/eez-open/psu-hw/issues/17))

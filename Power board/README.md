@@ -3,6 +3,11 @@
 Please refer to the BOM in *Consolidated/BOM* folder where **Board Name** (Col F) is *Arduino shield*. Eagle files is available in *Consolidated/Eagle files* folder.
 
 **Revision history:**
+* 2017-02-23: **r5B12**
+    - Additional Vin capacitor on Power board ([#19](https://github.com/eez-open/psu-hw/issues/19))
+    - Rsense with 4-terminal sensing ([#21](https://github.com/eez-open/psu-hw/issues/21))
+    - Protection improvement for DC power input ([#25](https://github.com/eez-open/psu-hw/issues/25))
+    - PCB is now 15 mm longer (but still compatible with previous heatsink/mounting holes)
 * 2016-12-11: **r5B11**
 	- Current limiter is removed
 * 2016-10-24: **r5B10**

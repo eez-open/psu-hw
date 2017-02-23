@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -18915,6 +18915,41 @@ Buerklin: &lt;b&gt;09 H 2401&lt;/b&gt;</description>
 <vertex x="-1.2" y="2.15"/>
 </polygon>
 </package>
+<package name="693072010801">
+<description>&lt;B&gt;WR-CRD&lt;/B&gt;&lt;BR&gt;
+MICRO SD CARD CONNECTOR&lt;BR&gt;
+HINGE&lt;BR&gt;
+8PINS</description>
+<wire x1="-2.45" y1="9.55" x2="11.3" y2="9.55" width="0.127" layer="21"/>
+<wire x1="11.3" y1="9.55" x2="11.3" y2="-4.15" width="0.127" layer="21"/>
+<wire x1="11.3" y1="-4.15" x2="-2.45" y2="-4.15" width="0.127" layer="21"/>
+<wire x1="-2.45" y1="-4.15" x2="-2.45" y2="9.55" width="0.127" layer="21"/>
+<wire x1="-2.45" y1="9.55" x2="11.3" y2="9.55" width="0.127" layer="51"/>
+<wire x1="11.3" y1="9.55" x2="11.3" y2="-4.15" width="0.127" layer="51"/>
+<wire x1="11.3" y1="-4.15" x2="-1.1" y2="-4.15" width="0.127" layer="51"/>
+<wire x1="-1.1" y1="-4.15" x2="-2.45" y2="-4.15" width="0.127" layer="51"/>
+<wire x1="-2.45" y1="-4.15" x2="-2.45" y2="9.55" width="0.127" layer="51"/>
+<smd name="8" x="0" y="0" dx="0.8" dy="1.5" layer="1"/>
+<smd name="7" x="1.1" y="0" dx="0.8" dy="1.5" layer="1"/>
+<smd name="6" x="2.2" y="0" dx="0.8" dy="1.5" layer="1"/>
+<smd name="5" x="3.3" y="0" dx="0.8" dy="1.5" layer="1"/>
+<smd name="4" x="4.4" y="0" dx="0.8" dy="1.5" layer="1"/>
+<smd name="3" x="5.5" y="0" dx="0.8" dy="1.5" layer="1"/>
+<smd name="2" x="6.6" y="0" dx="0.8" dy="1.5" layer="1"/>
+<smd name="1" x="7.7" y="0" dx="0.8" dy="1.5" layer="1"/>
+<smd name="Z3" x="-2.45" y="-2.6" dx="1.45" dy="2" layer="1"/>
+<smd name="Z4" x="11.3" y="-2.6" dx="1.45" dy="2" layer="1"/>
+<smd name="Z2" x="11.3" y="5.7" dx="1.45" dy="2" layer="1"/>
+<smd name="Z1" x="-2.45" y="5.7" dx="1.45" dy="2" layer="1"/>
+<text x="4.445" y="2.54" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<text x="-2.2225" y="9.8425" size="1.27" layer="25">&gt;NAME</text>
+<wire x1="8.975" y1="-5.65" x2="-0.1" y2="-5.65" width="0.127" layer="51"/>
+<wire x1="-0.1" y1="-5.65" x2="-1.1" y2="-4.6" width="0.127" layer="51" curve="-92.794354"/>
+<wire x1="-1.1" y1="-4.6" x2="-1.1" y2="-4.15" width="0.127" layer="51"/>
+<wire x1="9.95" y1="-4.15" x2="11.3" y2="-4.15" width="0.127" layer="52"/>
+<wire x1="8.95" y1="-5.65" x2="9.95" y2="-4.6" width="0.127" layer="51" curve="92.7944"/>
+<wire x1="9.95" y1="-4.6" x2="9.95" y2="-4.15" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SHORT_H">
@@ -20955,6 +20990,45 @@ Buerklin: &lt;b&gt;09 H 2401&lt;/b&gt;</description>
 <wire x1="10.16" y1="5.08" x2="-10.16" y2="5.08" width="0.4064" layer="94"/>
 <text x="-4.7498" y="7.0104" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-5.7912" y="-16.129" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
+</symbol>
+<symbol name="MICRO_SD_CARD">
+<wire x1="-10.16" y1="17.78" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-17.78" x2="5.08" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-17.78" x2="10.16" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-17.78" x2="10.16" y2="17.78" width="0.254" layer="94"/>
+<wire x1="10.16" y1="17.78" x2="5.08" y2="17.78" width="0.254" layer="94"/>
+<text x="-10.16" y="18.415" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-20.32" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="DAT2" x="-12.7" y="12.7" length="short"/>
+<pin name="CD/DAT3" x="-12.7" y="10.16" length="short"/>
+<pin name="CMD" x="-12.7" y="7.62" length="short"/>
+<pin name="VDD" x="-12.7" y="5.08" length="short"/>
+<pin name="CLK" x="-12.7" y="2.54" length="short"/>
+<pin name="VSS" x="-12.7" y="0" length="short"/>
+<pin name="DAT0" x="-12.7" y="-2.54" length="short"/>
+<pin name="DAT1" x="-12.7" y="-5.08" length="short"/>
+<pin name="P$9" x="5.08" y="20.32" visible="pad" length="short" rot="R270"/>
+<pin name="P$10" x="5.08" y="-20.32" visible="pad" length="short" rot="R90"/>
+<pin name="P$11" x="-12.7" y="-10.16" visible="pad" length="short"/>
+<pin name="P$12" x="-12.7" y="-15.24" visible="pad" length="short"/>
+<wire x1="5.08" y1="17.78" x2="-10.16" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-5.08" y2="-10.16" width="0.127" layer="94"/>
+<wire x1="5.08" y1="-17.78" x2="5.08" y2="-10.16" width="0.127" layer="94"/>
+<wire x1="5.08" y1="-10.16" x2="5.08" y2="17.78" width="0.127" layer="94"/>
+<wire x1="0" y1="-10.16" x2="5.08" y2="-10.16" width="0.127" layer="94"/>
+<circle x="-5.08" y="-10.16" radius="0.254" width="0.127" layer="94"/>
+<wire x1="-5.08" y1="-10.16" x2="0" y2="-7.62" width="0.254" layer="94" style="shortdash"/>
+<wire x1="-5.08" y1="-10.16" x2="0" y2="-10.16" width="0.254" layer="94"/>
+<circle x="0" y="-10.16" radius="0.254" width="0.127" layer="94"/>
+<circle x="5.08" y="-10.16" radius="0.254" width="0.127" layer="94"/>
+<wire x1="-10.16" y1="-15.24" x2="-5.08" y2="-15.24" width="0.127" layer="94"/>
+<wire x1="0" y1="-15.24" x2="5.08" y2="-15.24" width="0.127" layer="94"/>
+<circle x="-5.08" y="-15.24" radius="0.254" width="0.127" layer="94"/>
+<wire x1="-5.08" y1="-15.24" x2="0" y2="-12.7" width="0.254" layer="94" style="shortdash"/>
+<wire x1="-5.08" y1="-15.24" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<circle x="0" y="-15.24" radius="0.254" width="0.127" layer="94"/>
+<circle x="5.08" y="-15.24" radius="0.254" width="0.127" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -23779,6 +23853,32 @@ Case TQFP48</description>
 <connect gate="G$1" pin="D" pad="MB"/>
 <connect gate="G$1" pin="G" pad="4"/>
 <connect gate="G$1" pin="S" pad="1 2 3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="693072010801" prefix="J" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="MICRO_SD_CARD" x="-5.08" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="693072010801">
+<connects>
+<connect gate="G$1" pin="CD/DAT3" pad="2"/>
+<connect gate="G$1" pin="CLK" pad="5"/>
+<connect gate="G$1" pin="CMD" pad="3"/>
+<connect gate="G$1" pin="DAT0" pad="7"/>
+<connect gate="G$1" pin="DAT1" pad="8"/>
+<connect gate="G$1" pin="DAT2" pad="1"/>
+<connect gate="G$1" pin="P$10" pad="Z2"/>
+<connect gate="G$1" pin="P$11" pad="Z3"/>
+<connect gate="G$1" pin="P$12" pad="Z4"/>
+<connect gate="G$1" pin="P$9" pad="Z1"/>
+<connect gate="G$1" pin="VDD" pad="4"/>
+<connect gate="G$1" pin="VSS" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -33639,6 +33739,11 @@ Marquardt</description>
 <part name="Q14" library="EEZ_Lib1" deviceset="N-MOSFET" device="DPAK" value="IRFR48ZPBF"/>
 <part name="SUPPLY102" library="supply2" deviceset="GND" device="" value="PGND"/>
 <part name="R63" library="rcl" deviceset="R-EU_" device="R1210" value="0R2"/>
+<part name="J7" library="EEZ_Lib1" deviceset="693072010801" device="" value="693072010801"/>
+<part name="+3V27" library="supply1" deviceset="+3V3" device=""/>
+<part name="SUPPLY47" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY116" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY126" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -42451,6 +42556,13 @@ Marquardt</description>
 <label x="241.3" y="146.685" size="1.27" layer="102" rot="R180"/>
 </segment>
 </net>
+<net name="EXTSD_CS" class="0">
+<segment>
+<pinref part="MCU" gate="-ADCH" pin="ADC12"/>
+<wire x1="226.06" y1="104.14" x2="241.3" y2="104.14" width="0.1524" layer="91"/>
+<label x="241.3" y="106.045" size="1.27" layer="102" rot="R180"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -45177,14 +45289,16 @@ Marquardt</description>
 <wire x1="27.94" y1="111.76" x2="27.94" y2="106.68" width="0.1524" layer="101"/>
 <text x="33.02" y="114.935" size="2.1844" layer="101" rot="R180">2-pin connector X2</text>
 <text x="8.255" y="172.72" size="1.778" layer="97" rot="MR180">AC input option</text>
-<text x="6.985" y="93.345" size="1.778" layer="97">Riverdi 3.5" LCD (optional)</text>
+<text x="7.62" y="93.98" size="1.778" layer="97">Riverdi 3.5" LCD (optional)</text>
 <wire x1="76.2" y1="35.56" x2="76.2" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="76.2" y1="99.06" x2="7.62" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="261.62" y1="99.06" x2="101.6" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
-<text x="80.645" y="93.345" size="1.778" layer="97">Riverdi 3.5" Audio amplifier (optional)</text>
+<wire x1="261.62" y1="99.06" x2="121.92" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
+<text x="81.28" y="93.98" size="1.778" layer="97">Riverdi 3.5" Audio amplifier (optional)</text>
 <text x="164.465" y="29.21" size="2.1844" layer="94" font="vector" ratio="10">Optional sections: AC input, 20-pin 3.5" TFT display</text>
-<text x="164.465" y="26.035" size="2.1844" layer="94" font="vector" ratio="10">Audio amplifier for 3.5" TFT display</text>
-<wire x1="101.6" y1="99.06" x2="76.2" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
+<text x="164.465" y="26.035" size="2.1844" layer="94" font="vector" ratio="10">Audio amplifier for 3.5" TFT display, Micro SD card</text>
+<wire x1="121.92" y1="99.06" x2="76.2" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="121.92" y1="99.06" x2="121.92" y2="175.895" width="0.1524" layer="97" style="shortdash"/>
+<text x="127" y="170.18" size="1.778" layer="97">Micro SD card (optional)</text>
 </plain>
 <instances>
 <instance part="IC34" gate="A" x="208.28" y="66.04" smashed="yes">
@@ -45403,6 +45517,22 @@ Marquardt</description>
 <instance part="SUPPLY94" gate="GND" x="48.26" y="63.5" smashed="yes">
 <attribute name="VALUE" x="50.165" y="61.595" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="J7" gate="G$1" x="170.18" y="142.24" smashed="yes">
+<attribute name="NAME" x="180.975" y="158.115" size="1.778" layer="95"/>
+<attribute name="VALUE" x="180.975" y="155.575" size="1.778" layer="96"/>
+</instance>
+<instance part="+3V27" gate="G$1" x="144.78" y="147.32" smashed="yes" rot="R90">
+<attribute name="VALUE" x="144.145" y="147.955" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="SUPPLY47" gate="GND" x="142.24" y="134.62" smashed="yes">
+<attribute name="VALUE" x="144.145" y="132.715" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="SUPPLY116" gate="GND" x="175.26" y="116.84" smashed="yes">
+<attribute name="VALUE" x="177.165" y="114.935" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="SUPPLY126" gate="GND" x="180.34" y="165.1" smashed="yes">
+<attribute name="VALUE" x="182.245" y="163.195" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -45514,6 +45644,23 @@ Marquardt</description>
 <wire x1="43.18" y1="63.5" x2="43.18" y2="66.04" width="0.1524" layer="91"/>
 <junction x="43.18" y="66.04"/>
 </segment>
+<segment>
+<pinref part="J7" gate="G$1" pin="VSS"/>
+<wire x1="157.48" y1="142.24" x2="142.24" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="SUPPLY47" gate="GND" pin="GND"/>
+<wire x1="142.24" y1="142.24" x2="142.24" y2="137.16" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J7" gate="G$1" pin="P$10"/>
+<pinref part="SUPPLY116" gate="GND" pin="GND"/>
+<wire x1="175.26" y1="119.38" x2="175.26" y2="121.92" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY126" gate="GND" pin="GND"/>
+<pinref part="J7" gate="G$1" pin="P$9"/>
+<wire x1="180.34" y1="167.64" x2="175.26" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="167.64" x2="175.26" y2="162.56" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -45547,6 +45694,11 @@ Marquardt</description>
 <wire x1="40.64" y1="71.12" x2="43.18" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="71.12" x2="43.18" y2="73.66" width="0.1524" layer="91"/>
 <junction x="43.18" y="73.66"/>
+</segment>
+<segment>
+<pinref part="J7" gate="G$1" pin="VDD"/>
+<wire x1="157.48" y1="147.32" x2="147.32" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="+3V27" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="AUDIO_OUT" class="0">
@@ -45795,6 +45947,11 @@ Marquardt</description>
 <wire x1="40.64" y1="55.88" x2="60.96" y2="55.88" width="0.1524" layer="91"/>
 <label x="60.96" y="57.785" size="1.27" layer="102" rot="R180"/>
 </segment>
+<segment>
+<pinref part="J7" gate="G$1" pin="DAT0"/>
+<wire x1="157.48" y1="139.7" x2="147.32" y2="139.7" width="0.1524" layer="91"/>
+<label x="147.32" y="140.335" size="1.27" layer="102"/>
+</segment>
 </net>
 <net name="SCLK" class="0">
 <segment>
@@ -45802,12 +45959,22 @@ Marquardt</description>
 <wire x1="40.64" y1="58.42" x2="60.96" y2="58.42" width="0.1524" layer="91"/>
 <label x="60.96" y="60.325" size="1.27" layer="102" rot="R180"/>
 </segment>
+<segment>
+<pinref part="J7" gate="G$1" pin="CLK"/>
+<wire x1="157.48" y1="144.78" x2="147.32" y2="144.78" width="0.1524" layer="91"/>
+<label x="147.32" y="145.415" size="1.27" layer="102"/>
+</segment>
 </net>
 <net name="MOSI" class="0">
 <segment>
 <pinref part="X20" gate="-5" pin="1"/>
 <wire x1="40.64" y1="53.34" x2="60.96" y2="53.34" width="0.1524" layer="91"/>
 <label x="60.96" y="55.245" size="1.27" layer="102" rot="R180"/>
+</segment>
+<segment>
+<pinref part="J7" gate="G$1" pin="CMD"/>
+<wire x1="157.48" y1="149.86" x2="147.32" y2="149.86" width="0.1524" layer="91"/>
+<label x="147.32" y="150.495" size="1.27" layer="102"/>
 </segment>
 </net>
 <net name="!LCD_PD" class="0">
@@ -45822,6 +45989,13 @@ Marquardt</description>
 <pinref part="X20" gate="-7" pin="1"/>
 <wire x1="40.64" y1="48.26" x2="60.96" y2="48.26" width="0.1524" layer="91"/>
 <label x="60.96" y="50.165" size="1.27" layer="102" rot="R180"/>
+</segment>
+</net>
+<net name="EXTSD_CS" class="0">
+<segment>
+<pinref part="J7" gate="G$1" pin="CD/DAT3"/>
+<wire x1="157.48" y1="152.4" x2="147.32" y2="152.4" width="0.1524" layer="91"/>
+<label x="147.32" y="153.035" size="1.27" layer="102"/>
 </segment>
 </net>
 </nets>
