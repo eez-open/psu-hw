@@ -1,6 +1,6 @@
-![EEZ PSU Power board r5B9](Power board r5B9 assembled.JPG)
+Please refer to the BOM in [Consolidated/BOM](https://github.com/eez-open/psu-hw/tree/master/Consolidated/BOM) folder where **Board Name** (Col F) is *Power board*. Eagle files is available in [Consolidated/Eagle files](https://github.com/eez-open/psu-hw/tree/master/Consolidated/Eagle%20files) folder.
 
-Please refer to the BOM in *Consolidated/BOM* folder where **Board Name** (Col F) is *Arduino shield*. Eagle files is available in *Consolidated/Eagle files* folder.
+![EEZ PSU Power board r5B9](Power board r5B9 assembled.JPG)
 
 **Revision history:**
 * 2017-02-23: **r5B12**
@@ -32,9 +32,7 @@ This product is made available under the terms of the TAPR Open Hardware License
 
 **********************
 
-Repository: www.github.com/eez-open/psu_hw
-Web site: www.envox.hr/eez
+Repository: [www.github.com/eez-open](https://www.github.com/eez-open)  
+Web site: [www.envox.hr/eez](https://www.envox.hr/eez)
 
 **********************
-
-*OSH Park 2-layer.cam* job script is used for generating Gerber files. Use gerbv, a free/open source Gerber viewer (http://gerbv.geda-project.org/)

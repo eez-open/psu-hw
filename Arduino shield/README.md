@@ -1,6 +1,5 @@
+Please refer to the BOM in [Consolidated/BOM](https://github.com/eez-open/psu-hw/tree/master/Consolidated/BOM) folder where **Board Name** (Col F) is *Arduino shield*. Eagle files is available in [Consolidated/Eagle files](https://github.com/eez-open/psu-hw/tree/master/Consolidated/Eagle%20files) folder.
 ![Arduino Shield r3B4 top view.jpg](Arduino Shield r3B4 top view.jpg)
-
-Please refer to the BOM in *Consolidated/BOM* folder where **Board Name** (Col F) is *Arduino shield*. Eagle files is available in *Consolidated/Eagle files* folder.
 
 **Revision history:**
 * 2017-02-23: **r5B12**
@@ -66,4 +65,5 @@ Web site: [www.envox.hr/eez](https://www.envox.hr/eez)
 
 **********************
 
-Consult *EEZ PSU Arduino pin mapping r3B3.odt* for Arduino pins assignements and *EEZ PSU Arduino shield+BP TLC5925 codes r3B3.odt* for binding posts connections and LED indications.
+Consult [EEZ PSU Arduino pin mapping r5B12.odt
+](https://github.com/eez-open/psu-hw/raw/master/Arduino%20shield/EEZ%20PSU%20Arduino%20pin%20mapping%20r5B12.odt) for Arduino pins assignements and [EEZ PSU Arduino shield+BP TLC5925 codes r3B3.odt](https://github.com/eez-open/psu-hw/raw/master/Arduino%20shield/EEZ%20PSU%20Arduino%20shield%2BBP%20TLC5925%20codes%20r3B3.odt) for binding posts connections and LED indications.
