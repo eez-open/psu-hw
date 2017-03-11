@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="14" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -12686,7 +12686,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="53.1495" y="103.251" size="1.016" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="SH1" library="EEZ_Lib1" package="SHORT_NOHOLE" value="Pgnd to Pout- short" x="116.84" y="82.931" smashed="yes" rot="R180"/>
-<element name="IC7" library="EEZ_Lib1" package="SOIC127P600X173-8N" value="OP27GSZ" x="45.0215" y="100.6475" smashed="yes" rot="R180">
+<element name="IC7" library="EEZ_Lib1" package="SOIC127P600X173-8N" value="LTC2050HVCS8#PBF" x="45.0215" y="100.6475" smashed="yes" rot="R180">
 <attribute name="NAME" x="47.1551" y="96.3295" size="1.27" layer="25" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="41.7036" y="100.249" size="1.016" layer="27" ratio="10" rot="SR0"/>
 </element>

@@ -33031,7 +33031,7 @@ Marquardt</description>
 <part name="SUPPLY25" library="supply2" deviceset="GND" device="" value="PGND"/>
 <part name="C49" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="SH1" library="EEZ_Lib1" deviceset="SHORT" device="NOHOLE" value="Pgnd to Pout- short"/>
-<part name="IC7" library="EEZ_Lib1" deviceset="OP27GSZ" device="SO8" value="OP27GSZ"/>
+<part name="IC7" library="EEZ_Lib1" deviceset="OP27GSZ" device="SO8" value="LTC2050HVCS8#PBF"/>
 <part name="C46" library="rcl" deviceset="C-EU" device="C0805" value="1u"/>
 <part name="C47" library="rcl" deviceset="C-EU" device="C0805" value="10n"/>
 <part name="C48" library="rcl" deviceset="C-EU" device="C0805" value="1u"/>
@@ -35437,8 +35437,8 @@ Marquardt</description>
 <attribute name="VALUE" x="256.159" y="-32.639" size="1.778" layer="96"/>
 </instance>
 <instance part="IC7" gate="A" x="408.94" y="-38.1" smashed="yes" rot="MR0">
-<attribute name="NAME" x="398.145" y="-29.845" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="398.145" y="-32.385" size="1.778" layer="96" rot="MR180"/>
+<attribute name="NAME" x="405.13" y="-28.575" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="398.78" y="-31.115" size="1.4224" layer="96" rot="MR180"/>
 </instance>
 <instance part="IC7" gate="P" x="248.92" y="-20.32" smashed="yes">
 <attribute name="NAME" x="245.745" y="-19.685" size="1.778" layer="95"/>
