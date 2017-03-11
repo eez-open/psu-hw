@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="4" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -33750,6 +33750,7 @@ Marquardt</description>
 <attribute name="PACKAGE" value="SOT-23-3"/>
 <attribute name="SUPPLIER" value="DIODES INC."/>
 </part>
+<part name="R176" library="rcl" deviceset="R-EU_" device="R0805" value="1M"/>
 </parts>
 <sheets>
 <sheet>
@@ -42865,11 +42866,11 @@ Marquardt</description>
 <attribute name="VALUE" x="18.415" y="42.545" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="Y2" gate="A" x="20.32" y="71.12" smashed="yes" rot="MR270">
-<attribute name="NAME" x="17.145" y="70.485" size="1.778" layer="95" rot="MR0"/>
+<attribute name="NAME" x="20.32" y="78.74" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="23.495" y="67.31" size="1.778" layer="96" rot="MR90"/>
 </instance>
-<instance part="SUPPLY86" gate="GND" x="5.08" y="68.58" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="7.62" y="64.77" size="1.778" layer="96" rot="MR0"/>
+<instance part="SUPPLY86" gate="GND" x="5.08" y="73.66" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="6.985" y="69.85" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="GND1" gate="1" x="99.06" y="45.72" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="95.25" y="44.45" size="1.778" layer="96" rot="MR180"/>
@@ -42889,13 +42890,13 @@ Marquardt</description>
 <attribute name="NAME" x="125.857" y="30.9626" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="125.857" y="25.8826" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="C116" gate="G$1" x="15.24" y="76.2" smashed="yes" rot="MR90">
-<attribute name="NAME" x="13.081" y="78.486" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="13.081" y="76.581" size="1.778" layer="96" rot="MR0"/>
+<instance part="C116" gate="G$1" x="12.7" y="76.2" smashed="yes" rot="MR90">
+<attribute name="NAME" x="10.541" y="78.486" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="10.541" y="76.581" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="C120" gate="G$1" x="15.24" y="66.04" smashed="yes" rot="MR90">
-<attribute name="NAME" x="13.081" y="66.421" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="13.081" y="63.881" size="1.778" layer="96" rot="MR0"/>
+<instance part="C120" gate="G$1" x="12.7" y="66.04" smashed="yes" rot="MR90">
+<attribute name="NAME" x="10.541" y="66.421" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="10.541" y="63.881" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="R138" gate="G$1" x="116.84" y="99.06" smashed="yes" rot="R90">
 <attribute name="NAME" x="118.11" y="99.2886" size="1.778" layer="95"/>
@@ -43015,6 +43016,10 @@ Marquardt</description>
 </instance>
 <instance part="+3V23" gate="G$1" x="170.18" y="170.18" smashed="yes">
 <attribute name="VALUE" x="167.005" y="171.45" size="1.778" layer="96"/>
+</instance>
+<instance part="R176" gate="G$1" x="15.24" y="71.12" smashed="yes" rot="MR90">
+<attribute name="NAME" x="13.97" y="71.3486" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="10.795" y="70.612" size="1.778" layer="96" rot="MR180"/>
 </instance>
 </instances>
 <busses>
@@ -43178,12 +43183,11 @@ Marquardt</description>
 </segment>
 <segment>
 <pinref part="SUPPLY86" gate="GND" pin="GND"/>
-<wire x1="10.16" y1="71.12" x2="5.08" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="76.2" x2="5.08" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="C120" gate="G$1" pin="2"/>
-<wire x1="10.16" y1="66.04" x2="10.16" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="66.04" x2="7.62" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="C116" gate="G$1" pin="2"/>
-<wire x1="10.16" y1="76.2" x2="10.16" y2="71.12" width="0.1524" layer="91"/>
-<junction x="10.16" y="71.12"/>
+<junction x="7.62" y="76.2"/>
 </segment>
 <segment>
 <pinref part="SH3" gate="SH" pin="GND_A"/>
@@ -43943,8 +43947,10 @@ Marquardt</description>
 <wire x1="25.4" y1="76.2" x2="20.32" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="71.12" x2="25.4" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="C116" gate="G$1" pin="1"/>
-<wire x1="17.78" y1="76.2" x2="20.32" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="76.2" x2="20.32" y2="76.2" width="0.1524" layer="91"/>
 <junction x="20.32" y="76.2"/>
+<pinref part="R176" gate="G$1" pin="2"/>
+<junction x="15.24" y="76.2"/>
 </segment>
 </net>
 <net name="ETH_ACTLED" class="0">
@@ -44016,8 +44022,10 @@ Marquardt</description>
 <pinref part="IC26" gate="G$1" pin="XI/CLKIN"/>
 <wire x1="40.64" y1="68.58" x2="25.4" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="C120" gate="G$1" pin="1"/>
-<wire x1="20.32" y1="66.04" x2="17.78" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="66.04" x2="15.24" y2="66.04" width="0.1524" layer="91"/>
 <junction x="20.32" y="66.04"/>
+<pinref part="R176" gate="G$1" pin="1"/>
+<junction x="15.24" y="66.04"/>
 </segment>
 </net>
 <net name="N$113" class="0">
