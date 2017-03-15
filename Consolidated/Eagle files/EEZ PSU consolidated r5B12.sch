@@ -18938,6 +18938,42 @@ HINGE&lt;BR&gt;
 <wire x1="9" y1="5.4" x2="8.2" y2="6.7" width="0.127" layer="21" curve="67.380135"/>
 <wire x1="-9" y1="5.4" x2="-8.2" y2="6.7" width="0.127" layer="21" curve="-67.3801"/>
 </package>
+<package name="DRL5">
+<smd name="1" x="-0.6985" y="0.5" dx="1.016" dy="0.3048" layer="1"/>
+<smd name="2" x="-0.6985" y="0" dx="1.016" dy="0.3048" layer="1"/>
+<smd name="3" x="-0.6985" y="-0.5" dx="1.016" dy="0.3048" layer="1"/>
+<smd name="4" x="0.6985" y="-0.5" dx="1.016" dy="0.3048" layer="1"/>
+<smd name="5" x="0.6985" y="0.5" dx="1.016" dy="0.3048" layer="1"/>
+<wire x1="-0.6604" y1="-0.8636" x2="0.6604" y2="-0.8636" width="0.1524" layer="51"/>
+<wire x1="0.6604" y1="-0.8636" x2="0.6604" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="0.6604" y1="-0.381" x2="0.6604" y2="0.381" width="0.1524" layer="51"/>
+<wire x1="0.6604" y1="0.8636" x2="-0.6604" y2="0.8636" width="0.1524" layer="21"/>
+<wire x1="-0.6604" y1="0.8636" x2="-0.6604" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="-0.6604" y1="0.381" x2="-0.6604" y2="0.127" width="0.1524" layer="51"/>
+<wire x1="-0.6604" y1="-0.127" x2="-0.6604" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="-0.6604" y1="0.635" x2="-0.8636" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="-0.8636" y1="0.635" x2="-0.8636" y2="0.381" width="0.1524" layer="51"/>
+<wire x1="-0.8636" y1="0.381" x2="-0.6604" y2="0.381" width="0.1524" layer="51"/>
+<wire x1="-0.6604" y1="0.127" x2="-0.8636" y2="0.127" width="0.1524" layer="51"/>
+<wire x1="-0.8636" y1="0.127" x2="-0.8636" y2="-0.127" width="0.1524" layer="51"/>
+<wire x1="-0.8636" y1="-0.127" x2="-0.6604" y2="-0.127" width="0.1524" layer="51"/>
+<wire x1="-0.6604" y1="-0.8636" x2="-0.6604" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="-0.6604" y1="-0.381" x2="-0.8636" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="-0.8636" y1="-0.381" x2="-0.8636" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="-0.8636" y1="-0.635" x2="-0.6604" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="0.6604" y1="-0.635" x2="0.8636" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="0.8636" y1="-0.635" x2="0.8636" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="0.8636" y1="-0.381" x2="0.6604" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="0.6604" y1="0.8636" x2="0.6604" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="0.6604" y1="0.381" x2="0.8636" y2="0.381" width="0.1524" layer="51"/>
+<wire x1="0.8636" y1="0.381" x2="0.8636" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="0.8636" y1="0.635" x2="0.6604" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="0.3048" y1="0.8636" x2="-0.3048" y2="0.8382" width="0.1524" layer="51" curve="-180"/>
+<text x="-2.8702" y="1.143" size="1.016" layer="25" ratio="6" rot="SR0">&gt;NAME</text>
+<text x="0" y="0" size="1.016" layer="27" ratio="6" rot="SR0" align="center">&gt;VALUE</text>
+<wire x1="-0.6604" y1="-0.8636" x2="0.6604" y2="-0.8636" width="0.1524" layer="21"/>
+<wire x1="0.6604" y1="0.8636" x2="-0.6604" y2="0.8636" width="0.1524" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SHORT_H">
@@ -22323,6 +22359,18 @@ Socket; RJ45; PIN:8; vertical, shielded, with LED and trafo</description>
 </gates>
 <devices>
 <device name="DRLR" package="SOT50P280X60-5N">
+<connects>
+<connect gate="A" pin="GND" pad="2"/>
+<connect gate="A" pin="IO1" pad="1"/>
+<connect gate="A" pin="IO2" pad="3"/>
+<connect gate="A" pin="IO3" pad="4"/>
+<connect gate="A" pin="IO4" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DRL" package="DRL5">
 <connects>
 <connect gate="A" pin="GND" pad="2"/>
 <connect gate="A" pin="IO1" pad="1"/>
@@ -33240,7 +33288,7 @@ Marquardt</description>
 <part name="P+16" library="supply1" deviceset="+5V" device=""/>
 <part name="FRAME6" library="frames" deviceset="DINA4_L" device=""/>
 <part name="C78" library="EEZ_Lib1" deviceset="ECAP" device="PANASONIC_H" value="220u"/>
-<part name="IC15" library="EEZ_Lib1" deviceset="TPD4E002" device="DRLR"/>
+<part name="IC15" library="EEZ_Lib1" deviceset="TPD4E002" device="DRL"/>
 <part name="IC16" library="EEZ_Lib1" deviceset="TPD2E001" device="DZDR"/>
 <part name="SUPPLY48" library="supply2" deviceset="GND" device=""/>
 <part name="R122" library="rcl" deviceset="R-EU_" device="R0805" value="10K"/>
