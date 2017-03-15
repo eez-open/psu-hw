@@ -38209,7 +38209,7 @@ Marquardt</description>
 <circle x="250.19" y="130.81" radius="0.635" width="0.1524" layer="101"/>
 <circle x="250.19" y="133.35" radius="0.635" width="0.1524" layer="101"/>
 <text x="248.285" y="133.985" size="1.4224" layer="101" rot="R180">Protective earth 1</text>
-<text x="248.285" y="131.445" size="1.4224" layer="101" rot="R180">AC in1 2</text>
+<text x="248.285" y="131.445" size="1.4224" layer="101" rot="R180">Neutral out 2</text>
 <wire x1="86.36" y1="109.22" x2="182.88" y2="109.22" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="182.88" y1="109.22" x2="261.62" y2="109.22" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="251.46" y1="121.92" x2="248.92" y2="121.92" width="0.1524" layer="101"/>
@@ -38218,11 +38218,11 @@ Marquardt</description>
 <wire x1="251.46" y1="134.62" x2="251.46" y2="121.92" width="0.1524" layer="101"/>
 <text x="259.08" y="137.795" size="2.1844" layer="101" rot="R180">5-pin power connector X3</text>
 <circle x="250.19" y="128.27" radius="0.635" width="0.1524" layer="101"/>
-<text x="248.285" y="128.905" size="1.4224" layer="101" rot="R180">AC in2 3</text>
+<text x="248.285" y="128.905" size="1.4224" layer="101" rot="R180">Line out 3</text>
 <circle x="250.19" y="125.73" radius="0.635" width="0.1524" layer="101"/>
-<text x="248.285" y="126.365" size="1.4224" layer="101" rot="R180">AC out1 4</text>
+<text x="248.285" y="126.365" size="1.4224" layer="101" rot="R180">Neutral in 4</text>
 <circle x="250.19" y="123.19" radius="0.635" width="0.1524" layer="101"/>
-<text x="248.285" y="123.825" size="1.4224" layer="101" rot="R180">AC out2 5</text>
+<text x="248.285" y="123.825" size="1.4224" layer="101" rot="R180">Line in 5</text>
 <text x="2.54" y="7.62" size="1.778" layer="94">Licensed under the TAPR Open Hardware License (www.tapr.org/OHL)</text>
 <text x="2.54" y="2.54" size="1.778" layer="94">Repository: https://github.com/eez-open</text>
 <text x="2.54" y="5.08" size="1.778" layer="94">More info at http://www.envox.hr/eez</text>
