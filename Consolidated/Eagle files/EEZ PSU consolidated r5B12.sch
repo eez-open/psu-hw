@@ -33627,7 +33627,7 @@ Marquardt</description>
 <part name="SUPPLY67" library="supply2" deviceset="GND" device="" value="PGND"/>
 <part name="C23" library="EEZ_Lib1" deviceset="ECAP" device="1206" value="10u"/>
 <part name="C31" library="EEZ_Lib1" deviceset="ECAP" device="1206" value="10u"/>
-<part name="SW2" library="EEZ_Lib1" deviceset="ENCODER_SW" device="" value="EC12E20-24P24C-SW"/>
+<part name="SW2" library="EEZ_Lib1" deviceset="ENCODER_SW" device="" value="PEC12R-4225F-S0024"/>
 <part name="D12" library="diode" deviceset="DIODE-" device="SOD323-W" value="BAS316"/>
 <part name="K_DOUT" library="EEZ_Lib1" deviceset="RELAY_RT314012" device="-2" value="RT424005"/>
 <part name="ZD6" library="EEZ_Lib1" deviceset="PSMAXX" device="" value="SMAJ18A"/>
@@ -44189,8 +44189,8 @@ Marquardt</description>
 <wire x1="261.62" y1="63.5" x2="205.74" y2="63.5" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="261.62" y1="127" x2="205.74" y2="127" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="160.02" y1="30.48" x2="104.14" y2="30.48" width="0.1524" layer="97" style="shortdash"/>
-<text x="208.28" y="69.215" size="1.4224" layer="97">Possible alternatives:</text>
-<text x="208.28" y="66.675" size="1.4224" layer="97">PEC11R-4220F-S0024 or EN12-HS22AF20</text>
+<text x="208.28" y="69.215" size="1.4224" layer="97">Encoder shaft length: 25 mm</text>
+<text x="208.28" y="66.675" size="1.4224" layer="97">Knob head: A3116068 (OKW), Knob cap: A3216007 (OKW)</text>
 </plain>
 <instances>
 <instance part="IC28" gate="A" x="193.04" y="149.86" smashed="yes" rot="MR0">
