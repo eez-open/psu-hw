@@ -32969,7 +32969,7 @@ Marquardt</description>
 <part name="P+3" library="supply2" deviceset="V+" device=""/>
 <part name="C44" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="C52" library="rcl" deviceset="C-EU" device="C0805" value="1n"/>
-<part name="R64" library="rcl" deviceset="R-EU_" device="R0805" value="2K2"/>
+<part name="R64" library="rcl" deviceset="R-EU_" device="R0805" value="10K"/>
 <part name="R61" library="rcl" deviceset="R-EU_" device="R0805" value="2K2"/>
 <part name="C50" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="R32" library="rcl" deviceset="R-EU_" device="R0805" value="2K2"/>
