@@ -1,9 +1,13 @@
 Please refer to the BOM in [Consolidated/BOM](https://github.com/eez-open/psu-hw/tree/master/Consolidated/BOM) folder where **Board Name** (Col F) is *Power board*. Eagle files is available in [Consolidated/Eagle files](https://github.com/eez-open/psu-hw/tree/master/Consolidated/Eagle%20files) folder.
 
-![EEZ PSU Power board r5B9](Power board r5B9 assembled.JPG)
+![r5b12](Power%20board%20r5B12%20assembled.png)
 
 **Revision history:**
-* 2017-02-23: **r5B12**
+* 2017-03-11: **r5B12**
+    - Dual range current programming and measurement (0-500 mA, 0-5 A)
+    - New current monitor (LTC3050HV)
+    - 16-bit I/O expander
+    - New bias pre-regulator (TL783, LTC3260)
     - Additional Vin capacitor on Power board ([#19](https://github.com/eez-open/psu-hw/issues/19))
     - Rsense with 4-terminal sensing ([#21](https://github.com/eez-open/psu-hw/issues/21))
     - Protection improvement for DC power input ([#25](https://github.com/eez-open/psu-hw/issues/25))
@@ -13,7 +17,7 @@ Please refer to the BOM in [Consolidated/BOM](https://github.com/eez-open/psu-hw
 * 2016-10-24: **r5B10**
 	- Added optional components on the AC power input
 	- Voltage programming switch (IC13) wiring is fixed ([#2](https://github.com/eez-open/psu-hw/issues/2))
-	- Mainheatsink (Q4) earth connection is removed ([#3](https://github.com/eez-open/psu-hw/issues/3))
+	- Main heatsink (Q4) earth connection is removed ([#3](https://github.com/eez-open/psu-hw/issues/3))
 	- Error amps ground reference offset ([#11](https://github.com/eez-open/psu-hw/issues/11))
 * 2016-07-23: **r5B9** ([Version 2.0](https://github.com/eez-open/psu-hw/releases/tag/2.0) on github)
 	- DAC Vdd input moved from digital +5 V to analog +5 V power supply

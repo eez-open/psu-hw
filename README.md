@@ -11,7 +11,7 @@ To report an issue, use the [EEZ psu-hw issue tracker](https://github.com/eez-op
 
 ### Overview
 
-![EEZ PSU ver.1 prototype](EEZ_PSU_prototype.png)
+![prototype](EEZ_PSU_prototype.png)
 
 This is repository for the hardware part of the DIY fully programmable dual channel bench power supply. The power supply is designed with taking into consideration the following features and requirements:
 

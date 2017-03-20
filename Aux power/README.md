@@ -1,6 +1,6 @@
 Please refer to the BOM in [Consolidated/BOM](https://github.com/eez-open/psu-hw/tree/master/Consolidated/BOM) folder where **Board Name** (Col F) is *AUX PS*. Eagle files is available in [Consolidated/Eagle files](https://github.com/eez-open/psu-hw/tree/master/Consolidated/Eagle%20files) folder.
 
-![EEZ PSU Power board r5B9](AUX PS r5B9 top view.JPG)
+![EEZ PSU Power board r5B9](AUX%20PS%20r5B9%20top%20view.JPG)
 
 **Revision history:**
 * 2017-02-23: **r5B12**
