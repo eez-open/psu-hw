@@ -15285,9 +15285,16 @@ Source: Samtec SSW.pdf</description>
 <pad name="G" x="-5.588" y="-19.304" drill="1.4986" shape="long" rot="R90"/>
 <pad name="D" x="0" y="-19.304" drill="1.4986" shape="long" rot="R90"/>
 <pad name="S" x="5.588" y="-19.304" drill="1.4986" shape="long" rot="R90"/>
-<text x="-5.08" y="-13.335" size="1.778" layer="25" ratio="10">&gt;NAME</text>
-<text x="-5.08" y="-15.875" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-4.572" y="-13.335" size="1.778" layer="26" ratio="10">&gt;NAME</text>
 <hole x="0" y="0" drill="6.5"/>
+<wire x1="-7.874" y1="-14.224" x2="7.874" y2="-14.224" width="0.1524" layer="22"/>
+<wire x1="7.874" y1="5.461" x2="7.874" y2="-14.224" width="0.1524" layer="22"/>
+<wire x1="7.874" y1="5.461" x2="-7.874" y2="5.461" width="0.1524" layer="22"/>
+<wire x1="-7.874" y1="-14.224" x2="-7.874" y2="5.461" width="0.1524" layer="22"/>
+<rectangle x1="-6.477" y1="-16.764" x2="-4.826" y2="-14.224" layer="22"/>
+<text x="0" y="-5.715" size="1.778" layer="28" ratio="10" align="center">&gt;VALUE</text>
+<rectangle x1="-0.889" y1="-16.764" x2="0.762" y2="-14.224" layer="22"/>
+<rectangle x1="4.699" y1="-16.764" x2="6.35" y2="-14.224" layer="22"/>
 </package>
 <package name="TO252">
 <wire x1="3.29" y1="2.485" x2="3.29" y2="-3.615" width="0.2032" layer="21"/>
@@ -33281,7 +33288,7 @@ Marquardt</description>
 <part name="X11" library="con-kycon" deviceset="KUSBVX-BS1N" device="" value="2411-01"/>
 <part name="X8" library="EEZ_Lib1" deviceset="HEADER_8-PIN" device="" value="826629-8"/>
 <part name="X9" library="con-samtec" deviceset="SSW-105-02-S-S" device="" value="826629-5"/>
-<part name="X7" library="EEZ_Lib1" deviceset="RJ45-VERT" device="LMJ2138814S0L1T1C" value="LMJ2138814S0L1T1C"/>
+<part name="X7" library="EEZ_Lib1" deviceset="RJ45-VERT" device="" value="Amphenol: LMJ2138812S0LOT6C or WE: 74990101210"/>
 <part name="FB4" library="MyLib6" deviceset="FERRITE_BEAD" device="0603" value="60R@100MHz"/>
 <part name="P+11" library="supply1" deviceset="+5V" device=""/>
 <part name="R116" library="rcl" deviceset="R-EU_" device="R0805" value="100R"/>
@@ -33699,7 +33706,7 @@ Marquardt</description>
 <attribute name="VALUE" value="22UF"/>
 <attribute name="VOLTAGERATING" value="63V"/>
 </part>
-<part name="R65" library="EEZ_Lib1" deviceset="R-EU_4WIRE" device="2512" value="0R020"/>
+<part name="R65" library="EEZ_Lib1" deviceset="R-EU_4WIRE" device="2512" value="0R020 (1-3W)"/>
 <part name="R67" library="rcl" deviceset="R-EU_" device="R0805" value="47K"/>
 <part name="R66" library="rcl" deviceset="R-EU_" device="R0805" value="47K"/>
 <part name="SUPPLY101" library="supply2" deviceset="GND" device="" value="PGND"/>
@@ -33768,7 +33775,7 @@ Marquardt</description>
 <part name="Q13" library="transistor-power" deviceset="N-HEXFET-2D_?-*" device="SOT232" technology="IRLL014N" value="IRLL2705PBF"/>
 <part name="Q14" library="EEZ_Lib1" deviceset="N-MOSFET" device="DPAK" value="IRFR48ZPBF"/>
 <part name="SUPPLY102" library="supply2" deviceset="GND" device="" value="PGND"/>
-<part name="R63" library="rcl" deviceset="R-EU_" device="R1210" value="0R2"/>
+<part name="R63" library="rcl" deviceset="R-EU_" device="R1210" value="0R16"/>
 <part name="J7" library="EEZ_Lib1" deviceset="693072010801" device="" value="693072010801"/>
 <part name="+3V27" library="supply1" deviceset="+3V3" device=""/>
 <part name="SUPPLY47" library="supply2" deviceset="GND" device=""/>
@@ -33784,10 +33791,6 @@ Marquardt</description>
 <part name="R176" library="rcl" deviceset="R-EU_" device="R0805" value="1M"/>
 <part name="L1" library="EEZ_Lib1" deviceset="RN112" device="" value="RN112-4-02"/>
 <part name="X1" library="EEZ_Lib1" deviceset="MINIFIT_39301039" device="" value="39-30-1039"/>
-<part name="X21" library="con-samtec" deviceset="SSW-105-02-S-S" device="" value="ZL262-5SG">
-<attribute name="MPN" value="SSW-105-02-S-S"/>
-<attribute name="OC_NEWARK" value="11P9399"/>
-</part>
 <part name="R177" library="rcl" deviceset="R-EU_" device="R0805" value="220R"/>
 </parts>
 <sheets>
@@ -35550,8 +35553,8 @@ Marquardt</description>
 <attribute name="VALUE" x="424.18" y="-31.242" size="1.4224" layer="96"/>
 </instance>
 <instance part="R71" gate="G$1" x="426.72" y="-48.26" smashed="yes" rot="R180">
-<attribute name="NAME" x="424.18" y="-44.8564" size="1.778" layer="95"/>
-<attribute name="VALUE" x="424.18" y="-47.117" size="1.4224" layer="96"/>
+<attribute name="NAME" x="424.18" y="-46.7614" size="1.778" layer="95"/>
+<attribute name="VALUE" x="424.18" y="-50.927" size="1.4224" layer="96"/>
 </instance>
 <instance part="R70" gate="G$1" x="408.94" y="-48.26" smashed="yes" rot="R180">
 <attribute name="NAME" x="406.4" y="-46.7614" size="1.778" layer="95"/>
@@ -36469,10 +36472,10 @@ Marquardt</description>
 </net>
 <net name="POUT-" class="0">
 <segment>
-<label x="439.42" y="-53.34" size="1.27" layer="102" rot="R180" xref="yes"/>
-<wire x1="447.04" y1="-53.34" x2="439.42" y2="-53.34" width="0.4064" layer="91"/>
+<label x="439.42" y="-55.88" size="1.27" layer="102" rot="R180" xref="yes"/>
+<wire x1="447.04" y1="-55.88" x2="439.42" y2="-55.88" width="0.4064" layer="91"/>
 <pinref part="R65" gate="G$1" pin="1"/>
-<wire x1="447.04" y1="-53.34" x2="447.04" y2="-48.26" width="0.4064" layer="91"/>
+<wire x1="447.04" y1="-55.88" x2="447.04" y2="-48.26" width="0.4064" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -39173,8 +39176,8 @@ Marquardt</description>
 <instance part="X8" gate="-2" x="12.7" y="101.6" smashed="yes">
 <attribute name="NAME" x="12.7" y="104.394" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="X8" gate="-4" x="12.7" y="119.38" smashed="yes">
-<attribute name="NAME" x="12.7" y="122.174" size="1.778" layer="95" rot="R180"/>
+<instance part="X8" gate="-4" x="12.7" y="144.78" smashed="yes">
+<attribute name="NAME" x="12.7" y="147.574" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="X8" gate="-7" x="12.7" y="165.1" smashed="yes">
 <attribute name="NAME" x="12.7" y="167.894" size="1.778" layer="95" rot="R180"/>
@@ -39182,14 +39185,14 @@ Marquardt</description>
 <instance part="X8" gate="-8" x="12.7" y="157.48" smashed="yes">
 <attribute name="NAME" x="12.7" y="160.274" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="X8" gate="-5" x="12.7" y="144.78" smashed="yes">
-<attribute name="NAME" x="12.7" y="147.574" size="1.778" layer="95" rot="R180"/>
+<instance part="X8" gate="-5" x="12.7" y="116.84" smashed="yes">
+<attribute name="NAME" x="12.7" y="119.634" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="X8" gate="-6" x="12.7" y="149.86" smashed="yes">
 <attribute name="NAME" x="12.7" y="152.654" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="X8" gate="-1" x="12.7" y="91.44" smashed="yes">
-<attribute name="VALUE" x="6.985" y="163.83" size="1.778" layer="96"/>
+<attribute name="VALUE" x="6.985" y="168.91" size="1.778" layer="96"/>
 <attribute name="NAME" x="12.7" y="93.98" size="1.524" layer="95" rot="R180"/>
 </instance>
 <instance part="X10" gate="-2" x="12.7" y="35.56" smashed="yes">
@@ -39584,30 +39587,28 @@ Marquardt</description>
 </net>
 <net name="AUX_ETH_IN-" class="0">
 <segment>
-<wire x1="55.88" y1="144.78" x2="12.7" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="144.78" x2="81.28" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="X7" gate="G$1" pin="RD+"/>
-<wire x1="55.88" y1="129.54" x2="55.88" y2="144.78" width="0.1524" layer="91"/>
-<junction x="55.88" y="144.78"/>
-<label x="17.78" y="145.415" size="1.27" layer="102"/>
+<wire x1="55.88" y1="116.84" x2="12.7" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="129.54" x2="55.88" y2="116.84" width="0.1524" layer="91"/>
+<label x="17.78" y="117.475" size="1.27" layer="102"/>
 <pinref part="X8" gate="-5" pin="1"/>
 <pinref part="IC15" gate="A" pin="IO4"/>
 <wire x1="48.26" y1="129.54" x2="55.88" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="X7" gate="G$1" pin="RD-"/>
+<wire x1="55.88" y1="129.54" x2="81.28" y2="129.54" width="0.1524" layer="91"/>
+<junction x="55.88" y="129.54"/>
 </segment>
 </net>
 <net name="AUX_ETH_IN+" class="0">
 <segment>
-<wire x1="12.7" y1="119.38" x2="53.34" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="119.38" x2="76.2" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="129.54" x2="76.2" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="X7" gate="G$1" pin="RD-"/>
-<wire x1="76.2" y1="129.54" x2="81.28" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="132.08" x2="53.34" y2="119.38" width="0.1524" layer="91"/>
-<junction x="53.34" y="119.38"/>
-<label x="17.78" y="120.015" size="1.27" layer="102"/>
+<wire x1="12.7" y1="144.78" x2="55.88" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="132.08" x2="55.88" y2="144.78" width="0.1524" layer="91"/>
+<label x="17.78" y="145.415" size="1.27" layer="102"/>
 <pinref part="X8" gate="-4" pin="1"/>
 <pinref part="IC15" gate="A" pin="IO3"/>
-<wire x1="48.26" y1="132.08" x2="53.34" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="132.08" x2="55.88" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="X7" gate="G$1" pin="RD+"/>
+<wire x1="81.28" y1="144.78" x2="55.88" y2="144.78" width="0.1524" layer="91"/>
+<junction x="55.88" y="144.78"/>
 </segment>
 </net>
 <net name="AUX_ETH_ACTLED" class="0">
@@ -45362,8 +45363,6 @@ Marquardt</description>
 <wire x1="121.92" y1="99.06" x2="76.2" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="121.92" y1="99.06" x2="121.92" y2="175.895" width="0.1524" layer="97" style="shortdash"/>
 <text x="127" y="170.18" size="1.778" layer="97">Micro SD card (optional)</text>
-<wire x1="208.28" y1="99.06" x2="208.28" y2="175.895" width="0.1524" layer="97" style="shortdash"/>
-<text x="213.36" y="170.18" size="1.778" layer="97">Pre-regulator tracking (optional)</text>
 </plain>
 <instances>
 <instance part="IC34" gate="A" x="208.28" y="66.04" smashed="yes">
@@ -45597,20 +45596,6 @@ Marquardt</description>
 </instance>
 <instance part="SUPPLY126" gate="GND" x="180.34" y="165.1" smashed="yes">
 <attribute name="VALUE" x="182.245" y="163.195" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="X21" gate="-4" x="226.06" y="137.16" smashed="yes">
-<attribute name="NAME" x="223.012" y="137.922" size="1.524" layer="95" rot="R180"/>
-</instance>
-<instance part="X21" gate="-1" x="226.06" y="144.78" smashed="yes">
-<attribute name="VALUE" x="218.44" y="147.32" size="1.778" layer="96"/>
-<attribute name="NAME" x="223.012" y="145.542" size="1.524" layer="95" rot="R180"/>
-</instance>
-<instance part="X21" gate="-3" x="226.06" y="139.7" rot="MR180"/>
-<instance part="X21" gate="-2" x="226.06" y="142.24" smashed="yes">
-<attribute name="NAME" x="223.012" y="143.002" size="1.524" layer="95" rot="R180"/>
-</instance>
-<instance part="X21" gate="-5" x="226.06" y="134.62" smashed="yes">
-<attribute name="NAME" x="223.012" y="135.382" size="1.524" layer="95" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -45933,11 +45918,6 @@ Marquardt</description>
 <wire x1="60.96" y1="121.92" x2="60.96" y2="129.54" width="0.1524" layer="91"/>
 <junction x="60.96" y="129.54"/>
 </segment>
-<segment>
-<pinref part="X21" gate="-5" pin="1"/>
-<wire x1="228.6" y1="134.62" x2="238.76" y2="134.62" width="0.1524" layer="91"/>
-<label x="238.76" y="135.255" size="1.27" layer="102" rot="MR0"/>
-</segment>
 </net>
 <net name="AC_IN2" class="0">
 <segment>
@@ -46080,34 +46060,6 @@ Marquardt</description>
 <pinref part="J7" gate="G$1" pin="CD/DAT3"/>
 <wire x1="157.48" y1="152.4" x2="147.32" y2="152.4" width="0.1524" layer="91"/>
 <label x="147.32" y="153.035" size="1.27" layer="102"/>
-</segment>
-</net>
-<net name="FB" class="0">
-<segment>
-<label x="238.76" y="137.795" size="1.27" layer="102" rot="MR0"/>
-<pinref part="X21" gate="-4" pin="1"/>
-<wire x1="228.6" y1="137.16" x2="238.76" y2="137.16" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="OUT+" class="0">
-<segment>
-<label x="238.76" y="140.335" size="1.27" layer="102" rot="MR0"/>
-<pinref part="X21" gate="-3" pin="1"/>
-<wire x1="228.6" y1="139.7" x2="238.76" y2="139.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="PREG_OUT" class="0">
-<segment>
-<label x="238.76" y="142.875" size="1.27" layer="102" rot="MR0"/>
-<pinref part="X21" gate="-2" pin="1"/>
-<wire x1="228.6" y1="142.24" x2="238.76" y2="142.24" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="V-" class="0">
-<segment>
-<label x="238.76" y="145.415" size="1.27" layer="102" rot="MR0"/>
-<pinref part="X21" gate="-1" pin="1"/>
-<wire x1="228.6" y1="144.78" x2="238.76" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

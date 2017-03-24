@@ -3,10 +3,11 @@ Please refer to the BOM in [Consolidated/BOM](https://github.com/eez-open/psu-hw
 ![EEZ PSU Power board r5B9](AUX%20PS%20r5B9%20top%20view.JPG)
 
 **Revision history:**
-* 2017-02-23: **r5B12**
+* 2017-03-24: **r5B12a**
     - Fan generates EMI, isolated fan supply ([#9](https://github.com/eez-open/psu-hw/issues/9))
     - Power relay MCU controlled on the AUX PS module ([#23](https://github.com/eez-open/psu-hw/issues/23))
     - Ethernet LEDs connected wrong ([#28](https://github.com/eez-open/psu-hw/issues/28))
+    - RJ45 modular jack replacement ([#34](https://github.com/eez-open/psu-hw/issues/34))
 * 2017-01-11: **r5B11**
     - Added capacitor between ground and Earth ([#17](https://github.com/eez-open/psu-hw/issues/17))
 * 2016-10-24: **r5B10**
