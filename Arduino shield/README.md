@@ -1,9 +1,10 @@
 Please refer to the BOM in [Consolidated/BOM](https://github.com/eez-open/psu-hw/tree/master/Consolidated/BOM) folder where **Board Name** (Col F) is *Arduino shield*. Eagle files is available in [Consolidated/Eagle files](https://github.com/eez-open/psu-hw/tree/master/Consolidated/Eagle%20files) folder.
-![Shield](Arduino%20Shield%20r3B4%20top%20view.jpg)
+![Shield_top](Arduino%20r5B12%20top%20view.jpg)
+![Shield_bottom](Arduino%20r5B12%20bottom%20view.jpg)
 
 **Revision history:**
 * 2017-02-23: **r5B12**
-    - Encoder with switch on Arduino shield ([#20](https://github.com/eez-open/psu-hw/issues/20))
+    - Encoder with switch mounted directly on the PCB ([#20](https://github.com/eez-open/psu-hw/issues/20))
     - Power relay MCU controlled on the AUX PS module([#23](https://github.com/eez-open/psu-hw/issues/23))
     - Support for 3.5" Riverdi TFT touchscreen display ([#24](https://github.com/eez-open/psu-hw/issues/24))
     - Micro SD card socket ([#30](https://github.com/eez-open/psu-hw/issues/30))
