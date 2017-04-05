@@ -18921,9 +18921,9 @@ HINGE&lt;BR&gt;
 </package>
 <package name="RN112">
 <pad name="1" x="-7.5" y="5" drill="1.2" diameter="2.54"/>
-<pad name="2" x="-7.5" y="-5" drill="1.2" diameter="2.54"/>
-<pad name="3" x="7.5" y="-5" drill="1.2" diameter="2.54"/>
-<pad name="4" x="7.5" y="5" drill="1.2" diameter="2.54"/>
+<pad name="3" x="-7.5" y="-5" drill="1.2" diameter="2.54"/>
+<pad name="4" x="7.5" y="-5" drill="1.2" diameter="2.54"/>
+<pad name="2" x="7.5" y="5" drill="1.2" diameter="2.54"/>
 <text x="-9.398" y="-3.937" size="1.6764" layer="25" rot="R90">&gt;NAME</text>
 <text x="-4.575" y="-0.675" size="1.6764" layer="27">&gt;VALUE</text>
 <wire x1="-4.25" y1="-4.97" x2="4.25" y2="-4.97" width="0.254" layer="21"/>
@@ -18932,8 +18932,6 @@ HINGE&lt;BR&gt;
 <wire x1="-4.25" y1="5.03" x2="4.25" y2="5.03" width="0.254" layer="21"/>
 <rectangle x1="-2.75" y1="4.03" x2="2.75" y2="6.03" layer="21"/>
 <circle x="-3.75" y="6.03" radius="0.18" width="0.35" layer="21"/>
-<wire x1="-9" y1="-6.8" x2="-9" y2="6.9" width="0.127" layer="51"/>
-<wire x1="9" y1="6.8" x2="9" y2="-6.9" width="0.127" layer="51"/>
 <wire x1="-9" y1="5.4" x2="-9" y2="-5.4" width="0.127" layer="21"/>
 <wire x1="-9" y1="-5.4" x2="-8.2" y2="-6.7" width="0.127" layer="21" curve="67.380135"/>
 <wire x1="-8.2" y1="-6.7" x2="0" y2="-8.9" width="0.127" layer="21" curve="21.245931"/>
@@ -23915,10 +23913,10 @@ Case TQFP48</description>
 <devices>
 <device name="" package="RN112">
 <connects>
-<connect gate="-1" pin="1" pad="2"/>
-<connect gate="-1" pin="2" pad="3"/>
+<connect gate="-1" pin="1" pad="3"/>
+<connect gate="-1" pin="2" pad="4"/>
 <connect gate="-2" pin="1" pad="1"/>
-<connect gate="-2" pin="2" pad="4"/>
+<connect gate="-2" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -34207,8 +34205,8 @@ Marquardt</description>
 <junction x="71.12" y="172.72"/>
 <wire x1="96.52" y1="132.08" x2="99.06" y2="132.08" width="0.1524" layer="91"/>
 <junction x="99.06" y="132.08"/>
-<wire x1="71.12" y1="172.72" x2="96.52" y2="172.72" width="0.4064" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="71.12" y1="172.72" x2="96.52" y2="172.72" width="0.4064" layer="91"/>
 <wire x1="96.52" y1="172.72" x2="124.46" y2="172.72" width="0.4064" layer="91"/>
 <junction x="96.52" y="172.72"/>
 <pinref part="C3" gate="A" pin="1"/>
@@ -34526,8 +34524,8 @@ Marquardt</description>
 <segment>
 <label x="27.94" y="165.735" size="1.27" layer="102"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="55.88" y1="165.1" x2="48.26" y2="165.1" width="0.4064" layer="91"/>
 <junction x="48.26" y="165.1"/>
+<wire x1="55.88" y1="165.1" x2="48.26" y2="165.1" width="0.4064" layer="91"/>
 <wire x1="15.24" y1="165.1" x2="48.26" y2="165.1" width="0.4064" layer="91"/>
 <pinref part="L1" gate="-2" pin="1"/>
 <pinref part="X1" gate="-2" pin="1"/>
@@ -34537,11 +34535,11 @@ Marquardt</description>
 <segment>
 <wire x1="15.24" y1="172.72" x2="48.26" y2="172.72" width="0.4064" layer="91"/>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="48.26" y1="172.72" x2="55.88" y2="172.72" width="0.4064" layer="91"/>
 <junction x="48.26" y="172.72"/>
 <label x="27.94" y="173.355" size="1.27" layer="102"/>
 <pinref part="L1" gate="-1" pin="1"/>
 <pinref part="X1" gate="-3" pin="1"/>
+<wire x1="48.26" y1="172.72" x2="55.88" y2="172.72" width="0.4064" layer="91"/>
 </segment>
 </net>
 <net name="EARTH" class="0">

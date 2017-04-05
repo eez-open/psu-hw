@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="4" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -77,7 +77,7 @@
 <layer number="101" name="MCU_PCB" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="102" name="ETH_USB_PCB" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="103" name="BP_PCB" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="104" name="AUX_PCB" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="AUX_PCB" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="105" name="+15V" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="106" name="-15V" color="11" fill="1" visible="yes" active="yes"/>
 <layer number="107" name="+5V" color="4" fill="1" visible="yes" active="yes"/>
@@ -779,7 +779,7 @@ Sense, Output Enable</text>
 <vertex x="226.3775" y="122.8725"/>
 </polygon>
 <text x="2.54" y="15.24" size="2.1844" layer="94">EEZ PSU block diagram</text>
-<text x="2.54" y="12.7" size="1.778" layer="94">Diagram revision: 5.3 (02/2017)</text>
+<text x="2.54" y="12.7" size="1.778" layer="94">Diagram revision: 5.4 (04/2017)</text>
 <text x="250.19" y="170.4975" size="1.778" layer="91">PE</text>
 <circle x="256.54" y="170.18" radius="0.3175" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="80.645" x2="58.42" y2="165.1" width="0.4064" layer="100"/>
@@ -1681,44 +1681,44 @@ sync out</text>
 <sheet>
 <plain>
 <wire x1="22.86" y1="71.12" x2="48.26" y2="71.12" width="0.4064" layer="104"/>
-<wire x1="48.26" y1="71.12" x2="48.26" y2="33.02" width="0.4064" layer="104"/>
-<wire x1="48.26" y1="33.02" x2="22.86" y2="33.02" width="0.4064" layer="104"/>
-<wire x1="22.86" y1="33.02" x2="22.86" y2="71.12" width="0.4064" layer="104"/>
-<text x="24.4475" y="34.6075" size="2.1844" layer="104">Aux PS module</text>
+<wire x1="48.26" y1="71.12" x2="48.26" y2="27.94" width="0.4064" layer="104"/>
+<wire x1="48.26" y1="27.94" x2="22.86" y2="27.94" width="0.4064" layer="104"/>
+<wire x1="22.86" y1="27.94" x2="22.86" y2="71.12" width="0.4064" layer="104"/>
+<text x="24.4475" y="29.5275" size="2.1844" layer="104">Aux PS module</text>
 <wire x1="53.34" y1="71.12" x2="81.28" y2="71.12" width="0.4064" layer="100"/>
-<wire x1="53.34" y1="33.02" x2="53.34" y2="71.12" width="0.4064" layer="100"/>
-<wire x1="81.28" y1="33.02" x2="81.28" y2="71.12" width="0.4064" layer="100"/>
-<wire x1="53.34" y1="33.02" x2="81.28" y2="33.02" width="0.4064" layer="100"/>
-<text x="54.61" y="34.29" size="2.1844" layer="100">Power board Ch#1</text>
+<wire x1="53.34" y1="27.94" x2="53.34" y2="71.12" width="0.4064" layer="100"/>
+<wire x1="81.28" y1="27.94" x2="81.28" y2="71.12" width="0.4064" layer="100"/>
+<wire x1="53.34" y1="27.94" x2="81.28" y2="27.94" width="0.4064" layer="100"/>
+<text x="54.61" y="29.21" size="2.1844" layer="100">Power board Ch#1</text>
 <wire x1="86.36" y1="71.12" x2="114.3" y2="71.12" width="0.4064" layer="100"/>
-<wire x1="86.36" y1="33.02" x2="86.36" y2="71.12" width="0.4064" layer="100"/>
-<wire x1="114.3" y1="33.02" x2="114.3" y2="71.12" width="0.4064" layer="100"/>
-<wire x1="86.36" y1="33.02" x2="114.3" y2="33.02" width="0.4064" layer="100"/>
-<text x="87.63" y="34.29" size="2.1844" layer="100">Power board Ch#2</text>
+<wire x1="86.36" y1="27.94" x2="86.36" y2="71.12" width="0.4064" layer="100"/>
+<wire x1="114.3" y1="27.94" x2="114.3" y2="71.12" width="0.4064" layer="100"/>
+<wire x1="86.36" y1="27.94" x2="114.3" y2="27.94" width="0.4064" layer="100"/>
+<text x="87.63" y="29.21" size="2.1844" layer="100">Power board Ch#2</text>
 <wire x1="114.3" y1="78.74" x2="22.86" y2="78.74" width="0.4064" layer="100"/>
 <wire x1="114.3" y1="109.22" x2="22.86" y2="109.22" width="0.4064" layer="100"/>
 <wire x1="22.86" y1="109.22" x2="22.86" y2="78.74" width="0.4064" layer="100"/>
 <wire x1="114.3" y1="109.22" x2="114.3" y2="78.74" width="0.4064" layer="100"/>
 <text x="24.13" y="105.41" size="2.1844" layer="100">Arduino shield</text>
-<wire x1="86.36" y1="22.86" x2="114.3" y2="22.86" width="0.4064" layer="104"/>
-<wire x1="114.3" y1="22.86" x2="114.3" y2="0" width="0.4064" layer="104"/>
+<wire x1="86.36" y1="17.78" x2="114.3" y2="17.78" width="0.4064" layer="104"/>
+<wire x1="114.3" y1="17.78" x2="114.3" y2="0" width="0.4064" layer="104"/>
 <wire x1="114.3" y1="0" x2="86.36" y2="0" width="0.4064" layer="104"/>
-<wire x1="86.36" y1="0" x2="86.36" y2="22.86" width="0.4064" layer="104"/>
+<wire x1="86.36" y1="0" x2="86.36" y2="17.78" width="0.4064" layer="104"/>
 <text x="87.3125" y="1.5875" size="2.1844" layer="104">AC/DC module
 LRS-150-48 #1</text>
-<wire x1="53.34" y1="22.86" x2="81.28" y2="22.86" width="0.4064" layer="104"/>
-<wire x1="81.28" y1="22.86" x2="81.28" y2="0" width="0.4064" layer="104"/>
+<wire x1="53.34" y1="17.78" x2="81.28" y2="17.78" width="0.4064" layer="104"/>
+<wire x1="81.28" y1="17.78" x2="81.28" y2="0" width="0.4064" layer="104"/>
 <wire x1="81.28" y1="0" x2="53.34" y2="0" width="0.4064" layer="104"/>
-<wire x1="53.34" y1="0" x2="53.34" y2="22.86" width="0.4064" layer="104"/>
+<wire x1="53.34" y1="0" x2="53.34" y2="17.78" width="0.4064" layer="104"/>
 <text x="54.2925" y="1.5875" size="2.1844" layer="104">AC/DC module
 LRS-150-48 #1</text>
-<text x="69.215" y="25.4" size="1.778" layer="108">48-54 Vdc
-max. 3 A</text>
-<text x="102.235" y="25.4" size="1.778" layer="108">48-54 Vdc
-max. 3 A</text>
+<text x="69.215" y="20.32" size="1.778" layer="108">48 Vdc
+max. 3.2 A</text>
+<text x="102.235" y="20.32" size="1.778" layer="108">48 Vdc
+max. 3.2 A</text>
 <text x="69.215" y="-3.81" size="1.778" layer="108">AC input (115/230 V)</text>
 <text x="102.235" y="-3.81" size="1.778" layer="108">AC input (115/230 V)</text>
-<text x="69.215" y="72.39" size="1.778" layer="108">IDC connector
+<text x="69.215" y="72.39" size="1.778" layer="97">IDC connector
 (analog and digital I/O)</text>
 <text x="17.145" y="66.675" size="1.778" layer="108" rot="R90">USB cable</text>
 <polygon width="0.1524" layer="91">
@@ -1754,7 +1754,7 @@ max. 3 A</text>
 <vertex x="101.6" y="78.74"/>
 <vertex x="101.9175" y="77.1525"/>
 </polygon>
-<text x="102.235" y="72.39" size="1.778" layer="108">IDC connector
+<text x="102.235" y="72.39" size="1.778" layer="97">IDC connector
 (analog and digital I/O)</text>
 <text x="100.6475" y="75.2475" size="1.27" layer="91" rot="R180">26</text>
 <polygon width="0.1524" layer="91">
@@ -1768,14 +1768,14 @@ max. 3 A</text>
 <vertex x="68.2625" y="72.7075"/>
 </polygon>
 <polygon width="0.1524" layer="91">
-<vertex x="68.2625" y="31.4325"/>
-<vertex x="68.58" y="33.02"/>
-<vertex x="68.8975" y="31.4325"/>
+<vertex x="68.2625" y="26.3525"/>
+<vertex x="68.58" y="27.94"/>
+<vertex x="68.8975" y="26.3525"/>
 </polygon>
 <polygon width="0.1524" layer="91">
-<vertex x="101.2825" y="31.4325"/>
-<vertex x="101.6" y="33.02"/>
-<vertex x="101.9175" y="31.4325"/>
+<vertex x="101.2825" y="26.3525"/>
+<vertex x="101.6" y="27.94"/>
+<vertex x="101.9175" y="26.3525"/>
 </polygon>
 <polygon width="0.1524" layer="91">
 <vertex x="101.2825" y="-1.5875"/>
@@ -1787,10 +1787,10 @@ max. 3 A</text>
 <vertex x="68.58" y="0"/>
 <vertex x="68.8975" y="-1.5875"/>
 </polygon>
-<text x="67.6275" y="28.575" size="1.27" layer="91" rot="R180">3</text>
-<text x="100.6475" y="28.575" size="1.27" layer="91" rot="R180">3</text>
+<text x="67.6275" y="23.495" size="1.27" layer="91" rot="R180">3</text>
+<text x="100.6475" y="23.495" size="1.27" layer="91" rot="R180">3</text>
 <text x="11.7475" y="82.8675" size="1.27" layer="91" rot="R180">8</text>
-<text x="16.8275" y="82.8675" size="1.27" layer="91" rot="R180">4</text>
+<text x="16.8275" y="82.8675" size="1.27" layer="91" rot="R180">5</text>
 <text x="36.195" y="72.39" size="1.778" layer="108">IDC cable
 (power and digital I/O)</text>
 <text x="34.6075" y="75.2475" size="1.27" layer="91" rot="R180">10</text>
@@ -1804,27 +1804,25 @@ max. 3 A</text>
 <vertex x="35.56" y="71.12"/>
 <vertex x="35.2425" y="72.7075"/>
 </polygon>
-<circle x="7.3025" y="48.26" radius="0.3175" width="0.1524" layer="91"/>
-<circle x="4.7625" y="48.26" radius="0.3175" width="0.1524" layer="91"/>
 <circle x="7.3025" y="43.18" radius="0.3175" width="0.1524" layer="91"/>
 <circle x="4.7625" y="43.18" radius="0.3175" width="0.1524" layer="91"/>
-<text x="120.65" y="105.0925" size="1.778" layer="108">Ch#1 0-40 V or 0-80 V 
-max. 5 A or 10 A</text>
+<circle x="7.3025" y="38.1" radius="0.3175" width="0.1524" layer="91"/>
+<circle x="4.7625" y="38.1" radius="0.3175" width="0.1524" layer="91"/>
+<text x="120.65" y="105.0925" size="1.778" layer="97">Ch#1 40 V / 5 A</text>
 <polygon width="0.1524" layer="91">
 <vertex x="140.6525" y="104.4575"/>
 <vertex x="142.24" y="104.14"/>
 <vertex x="140.6525" y="103.8225"/>
 </polygon>
 <text x="118.11" y="104.775" size="1.27" layer="91">2</text>
-<text x="120.65" y="92.3925" size="1.778" layer="108">Ch#2 0-40 V 
-max. 5 A</text>
+<text x="120.65" y="92.3925" size="1.778" layer="97">Ch#2 40 V / 5 A</text>
 <polygon width="0.1524" layer="91">
 <vertex x="140.6525" y="91.7575"/>
 <vertex x="142.24" y="91.44"/>
 <vertex x="140.6525" y="91.1225"/>
 </polygon>
 <text x="118.11" y="92.075" size="1.27" layer="91">2</text>
-<text x="120.65" y="100.0125" size="1.778" layer="108">Ch#1 remote controls</text>
+<text x="120.65" y="100.0125" size="1.778" layer="97">Ch#1 remote controls</text>
 <polygon width="0.1524" layer="91">
 <vertex x="140.6525" y="99.3775"/>
 <vertex x="142.24" y="99.06"/>
@@ -1836,7 +1834,7 @@ max. 5 A</text>
 <vertex x="114.3" y="99.06"/>
 <vertex x="115.8875" y="99.3775"/>
 </polygon>
-<text x="120.65" y="87.3125" size="1.778" layer="108">Ch#2 remote controls</text>
+<text x="120.65" y="87.3125" size="1.778" layer="97">Ch#2 remote controls</text>
 <polygon width="0.1524" layer="91">
 <vertex x="140.6525" y="86.6775"/>
 <vertex x="142.24" y="86.36"/>
@@ -1848,50 +1846,50 @@ max. 5 A</text>
 <vertex x="114.3" y="86.36"/>
 <vertex x="115.8875" y="86.6775"/>
 </polygon>
-<text x="-17.78" y="46.355" size="1.778" layer="108">AC mains
+<text x="-17.78" y="41.275" size="1.778" layer="97">AC mains
 input</text>
 <polygon width="0.1524" layer="91">
 <vertex x="140.6525" y="81.5975"/>
 <vertex x="142.24" y="81.28"/>
 <vertex x="140.6525" y="80.9625"/>
 </polygon>
-<circle x="27.94" y="22.225" radius="2.71271875" width="0.1524" layer="109"/>
-<wire x1="24.765" y1="25.4" x2="31.115" y2="25.4" width="0.1524" layer="109"/>
-<wire x1="31.115" y1="25.4" x2="31.115" y2="19.05" width="0.1524" layer="109"/>
-<wire x1="31.115" y1="19.05" x2="24.765" y2="19.05" width="0.1524" layer="109"/>
-<wire x1="24.765" y1="19.05" x2="24.765" y2="25.4" width="0.1524" layer="109"/>
-<circle x="25.4" y="24.765" radius="0.3175" width="0.1524" layer="109"/>
-<circle x="30.48" y="24.765" radius="0.3175" width="0.1524" layer="109"/>
-<circle x="30.48" y="19.685" radius="0.3175" width="0.1524" layer="109"/>
+<circle x="27.94" y="17.145" radius="2.71271875" width="0.1524" layer="109"/>
+<wire x1="24.765" y1="20.32" x2="31.115" y2="20.32" width="0.1524" layer="109"/>
+<wire x1="31.115" y1="20.32" x2="31.115" y2="13.97" width="0.1524" layer="109"/>
+<wire x1="31.115" y1="13.97" x2="24.765" y2="13.97" width="0.1524" layer="109"/>
+<wire x1="24.765" y1="13.97" x2="24.765" y2="20.32" width="0.1524" layer="109"/>
 <circle x="25.4" y="19.685" radius="0.3175" width="0.1524" layer="109"/>
-<circle x="27.94" y="22.225" radius="1.1447625" width="0.1524" layer="109"/>
-<text x="22.86" y="16.8275" size="1.4224" layer="91">12VDC fan</text>
-<text x="28.575" y="26.67" size="1.778" layer="108">+12Vdc
+<circle x="30.48" y="19.685" radius="0.3175" width="0.1524" layer="109"/>
+<circle x="30.48" y="14.605" radius="0.3175" width="0.1524" layer="109"/>
+<circle x="25.4" y="14.605" radius="0.3175" width="0.1524" layer="109"/>
+<circle x="27.94" y="17.145" radius="1.1447625" width="0.1524" layer="109"/>
+<text x="22.86" y="11.7475" size="1.4224" layer="91">12VDC fan</text>
+<text x="28.575" y="21.59" size="1.778" layer="108">+12Vdc
 Fan sense</text>
-<text x="26.9875" y="29.5275" size="1.27" layer="91" rot="R180">3</text>
+<text x="26.9875" y="24.4475" size="1.27" layer="91" rot="R180">3</text>
 <polygon width="0.1524" layer="91">
-<vertex x="27.6225" y="31.4325"/>
-<vertex x="27.94" y="33.02"/>
-<vertex x="28.2575" y="31.4325"/>
+<vertex x="27.6225" y="26.3525"/>
+<vertex x="27.94" y="27.94"/>
+<vertex x="28.2575" y="26.3525"/>
 </polygon>
 <polygon width="0.1524" layer="91">
-<vertex x="28.2575" y="26.9875"/>
-<vertex x="27.94" y="25.4"/>
-<vertex x="27.6225" y="26.9875"/>
+<vertex x="28.2575" y="21.9075"/>
+<vertex x="27.94" y="20.32"/>
+<vertex x="27.6225" y="21.9075"/>
 </polygon>
-<text x="1.27" y="60.6425" size="1.4224" layer="108">USB (B type)</text>
+<text x="1.27" y="60.6425" size="1.4224" layer="97">USB (B type)</text>
 <polygon width="0.1524" layer="91">
 <vertex x="21.2725" y="60.0075"/>
 <vertex x="22.86" y="59.69"/>
 <vertex x="21.2725" y="59.3725"/>
 </polygon>
-<text x="17.78" y="60.325" size="1.27" layer="91">4</text>
+<text x="17.78" y="60.325" size="1.27" layer="91">5</text>
 <polygon width="0.1524" layer="91">
 <vertex x="-3.4925" y="59.3725"/>
 <vertex x="-5.08" y="59.69"/>
 <vertex x="-3.4925" y="60.0075"/>
 </polygon>
-<text x="1.27" y="55.5625" size="1.4224" layer="108">RJ-45 (Ethernet)</text>
+<text x="1.27" y="55.5625" size="1.4224" layer="97">RJ-45 (Ethernet)</text>
 <polygon width="0.1524" layer="91">
 <vertex x="21.2725" y="54.9275"/>
 <vertex x="22.86" y="54.61"/>
@@ -1903,39 +1901,51 @@ Fan sense</text>
 <vertex x="-5.08" y="54.61"/>
 <vertex x="-3.4925" y="54.9275"/>
 </polygon>
-<text x="120.65" y="82.2325" size="1.778" layer="108">Protective earth</text>
+<text x="120.65" y="82.2325" size="1.778" layer="97">Protective earth</text>
 <polygon width="0.1524" layer="108">
-<vertex x="15.5575" y="32.0675"/>
-<vertex x="17.145" y="31.75"/>
-<vertex x="15.5575" y="31.4325"/>
+<vertex x="15.5575" y="26.9875"/>
+<vertex x="17.145" y="26.67"/>
+<vertex x="15.5575" y="26.3525"/>
 </polygon>
-<wire x1="17.145" y1="31.75" x2="12.7" y2="31.75" width="0.1524" layer="108"/>
-<text x="0.635" y="29.845" size="1.778" layer="108">Connected
+<wire x1="17.145" y1="26.67" x2="12.7" y2="26.67" width="0.1524" layer="108"/>
+<text x="0.635" y="24.765" size="1.778" layer="97">Connected
 to chassis</text>
 <text x="116.84" y="113.03" size="1.778" layer="94">Front panel binding posts
 and push-in connectors</text>
 <text x="-8.89" y="63.5" size="1.778" layer="94">Rear panel
 connectors</text>
+<text x="1.27" y="50.4825" size="1.4224" layer="97">DOUT2</text>
+<polygon width="0.1524" layer="91">
+<vertex x="21.2725" y="49.8475"/>
+<vertex x="22.86" y="49.53"/>
+<vertex x="21.2725" y="49.2125"/>
+</polygon>
+<text x="17.78" y="50.165" size="1.27" layer="91">3</text>
+<polygon width="0.1524" layer="91">
+<vertex x="-3.4925" y="49.2125"/>
+<vertex x="-5.08" y="49.53"/>
+<vertex x="-3.4925" y="49.8475"/>
+</polygon>
 </plain>
 <instances>
-<instance part="PE2" gate="M" x="19.3675" y="32.7025" smashed="yes"/>
+<instance part="PE2" gate="M" x="19.3675" y="27.6225" smashed="yes"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="N$15" class="0">
 <segment>
-<wire x1="68.58" y1="22.86" x2="68.58" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="17.78" x2="68.58" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
-<wire x1="101.6" y1="22.86" x2="101.6" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="17.78" x2="101.6" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$33" class="0">
 <segment>
-<wire x1="43.18" y1="33.02" x2="43.18" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="27.94" x2="43.18" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="-5.08" x2="68.58" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="-5.08" x2="68.58" y2="0" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="-5.08" x2="101.6" y2="-5.08" width="0.1524" layer="91"/>
@@ -1984,12 +1994,12 @@ connectors</text>
 </net>
 <net name="N$100" class="0">
 <segment>
-<wire x1="67.945" y1="28.2575" x2="69.215" y2="27.6225" width="0.1524" layer="91"/>
+<wire x1="67.945" y1="23.1775" x2="69.215" y2="22.5425" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$101" class="0">
 <segment>
-<wire x1="100.965" y1="28.2575" x2="102.235" y2="27.6225" width="0.1524" layer="91"/>
+<wire x1="100.965" y1="23.1775" x2="102.235" y2="22.5425" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$102" class="0">
@@ -2014,49 +2024,49 @@ connectors</text>
 </net>
 <net name="N$106" class="0">
 <segment>
-<wire x1="12.7" y1="49.2125" x2="16.51" y2="49.2125" width="0.1524" layer="91"/>
-<wire x1="16.51" y1="49.2125" x2="16.51" y2="47.3075" width="0.1524" layer="91"/>
-<wire x1="16.51" y1="47.3075" x2="12.7" y2="47.3075" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="47.3075" x2="12.7" y2="49.2125" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$107" class="0">
-<segment>
-<wire x1="7.62" y1="48.26" x2="22.86" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$108" class="0">
-<segment>
-<wire x1="5.08" y1="48.26" x2="6.985" y2="49.2125" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$109" class="0">
-<segment>
 <wire x1="12.7" y1="44.1325" x2="16.51" y2="44.1325" width="0.1524" layer="91"/>
 <wire x1="16.51" y1="44.1325" x2="16.51" y2="42.2275" width="0.1524" layer="91"/>
 <wire x1="16.51" y1="42.2275" x2="12.7" y2="42.2275" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="42.2275" x2="12.7" y2="44.1325" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$110" class="0">
+<net name="N$107" class="0">
 <segment>
 <wire x1="7.62" y1="43.18" x2="22.86" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$111" class="0">
+<net name="N$108" class="0">
 <segment>
 <wire x1="5.08" y1="43.18" x2="6.985" y2="44.1325" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$109" class="0">
+<segment>
+<wire x1="12.7" y1="39.0525" x2="16.51" y2="39.0525" width="0.1524" layer="91"/>
+<wire x1="16.51" y1="39.0525" x2="16.51" y2="37.1475" width="0.1524" layer="91"/>
+<wire x1="16.51" y1="37.1475" x2="12.7" y2="37.1475" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="37.1475" x2="12.7" y2="39.0525" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$110" class="0">
+<segment>
+<wire x1="7.62" y1="38.1" x2="22.86" y2="38.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$111" class="0">
+<segment>
+<wire x1="5.08" y1="38.1" x2="6.985" y2="39.0525" width="0.1524" layer="91"/>
+</segment>
+</net>
 <net name="N$112" class="0">
 <segment>
-<wire x1="-6.35" y1="51.435" x2="17.78" y2="51.435" width="0.1524" layer="91" style="shortdash"/>
-<wire x1="17.78" y1="51.435" x2="17.78" y2="36.5125" width="0.1524" layer="91" style="shortdash"/>
-<wire x1="17.78" y1="36.5125" x2="-6.35" y2="36.5125" width="0.1524" layer="91" style="shortdash"/>
-<wire x1="-6.35" y1="36.5125" x2="-6.35" y2="51.435" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="-6.35" y1="46.355" x2="17.78" y2="46.355" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="17.78" y1="46.355" x2="17.78" y2="31.4325" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="17.78" y1="31.4325" x2="-6.35" y2="31.4325" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="-6.35" y1="31.4325" x2="-6.35" y2="46.355" width="0.1524" layer="91" style="shortdash"/>
 </segment>
 <segment>
-<wire x1="6.0325" y1="42.8625" x2="6.0325" y2="49.53" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="6.0325" y1="37.7825" x2="6.0325" y2="44.45" width="0.1524" layer="91" style="shortdash"/>
 </segment>
 <segment>
 <wire x1="116.84" y1="111.76" x2="146.05" y2="111.76" width="0.1524" layer="91" style="shortdash"/>
@@ -2067,32 +2077,32 @@ connectors</text>
 <wire x1="116.84" y1="78.74" x2="146.05" y2="78.74" width="0.1524" layer="91" style="shortdash"/>
 </segment>
 <segment>
-<wire x1="-6.35" y1="53.34" x2="0" y2="53.34" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="-6.35" y1="48.26" x2="0" y2="48.26" width="0.1524" layer="91" style="shortdash"/>
 </segment>
 <segment>
-<wire x1="-6.35" y1="61.595" x2="0" y2="61.595" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="-6.35" y1="60.96" x2="0" y2="60.96" width="0.1524" layer="91" style="shortdash"/>
 </segment>
 <segment>
-<wire x1="-6.35" y1="53.34" x2="-6.35" y2="61.595" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="-6.35" y1="48.26" x2="-6.35" y2="60.96" width="0.1524" layer="91" style="shortdash"/>
 </segment>
 <segment>
-<wire x1="0" y1="53.34" x2="0" y2="61.595" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="0" y1="48.26" x2="0" y2="60.96" width="0.1524" layer="91" style="shortdash"/>
 </segment>
 </net>
 <net name="PE" class="0">
 <segment>
-<wire x1="-5.08" y1="48.895" x2="-5.08" y2="45.72" width="0.1524" layer="91" curve="-180"/>
-<wire x1="-5.08" y1="48.26" x2="4.445" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="46.355" x2="0" y2="46.355" width="0.1524" layer="91"/>
-<wire x1="0" y1="46.355" x2="0" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="0" y1="43.18" x2="4.445" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="-5.715" y1="47.3075" x2="1.27" y2="47.3075" width="0.1524" layer="91"/>
-<wire x1="1.27" y1="47.3075" x2="1.27" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="1.27" y1="38.1" x2="19.3675" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="43.815" x2="-5.08" y2="40.64" width="0.1524" layer="91" curve="-180"/>
+<wire x1="-5.08" y1="43.18" x2="4.445" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="41.275" x2="0" y2="41.275" width="0.1524" layer="91"/>
+<wire x1="0" y1="41.275" x2="0" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="0" y1="38.1" x2="4.445" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="-5.715" y1="42.2275" x2="1.27" y2="42.2275" width="0.1524" layer="91"/>
+<wire x1="1.27" y1="42.2275" x2="1.27" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="1.27" y1="33.02" x2="19.3675" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="PE2" gate="M" pin="PE"/>
-<wire x1="19.3675" y1="38.1" x2="22.86" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="19.3675" y1="35.2425" x2="19.3675" y2="38.1" width="0.1524" layer="91"/>
-<junction x="19.3675" y="38.1"/>
+<wire x1="19.3675" y1="33.02" x2="22.86" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="19.3675" y1="30.1625" x2="19.3675" y2="33.02" width="0.1524" layer="91"/>
+<junction x="19.3675" y="33.02"/>
 </segment>
 </net>
 <net name="N$113" class="0">
@@ -2137,12 +2147,12 @@ connectors</text>
 </net>
 <net name="N$122" class="0">
 <segment>
-<wire x1="27.94" y1="25.4" x2="27.94" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="20.32" x2="27.94" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$123" class="0">
 <segment>
-<wire x1="27.305" y1="29.21" x2="28.575" y2="28.575" width="0.1524" layer="91"/>
+<wire x1="27.305" y1="24.13" x2="28.575" y2="23.495" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$121" class="0">
@@ -2170,21 +2180,20 @@ connectors</text>
 <wire x1="114.3" y1="81.28" x2="142.24" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$60" class="0">
+<segment>
+<wire x1="-5.08" y1="49.53" x2="22.86" y2="49.53" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$61" class="0">
+<segment>
+<wire x1="19.3675" y1="50.165" x2="18.7325" y2="48.895" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
 <plain>
-<wire x1="0" y1="38.1" x2="25.4" y2="38.1" width="0.4064" layer="104"/>
-<wire x1="25.4" y1="38.1" x2="25.4" y2="0" width="0.4064" layer="104"/>
-<wire x1="25.4" y1="0" x2="0" y2="0" width="0.4064" layer="104"/>
-<wire x1="0" y1="0" x2="0" y2="38.1" width="0.4064" layer="104"/>
-<text x="1.5875" y="1.5875" size="2.1844" layer="104">Aux PCB</text>
-<wire x1="2.54" y1="30.48" x2="22.86" y2="30.48" width="0.4064" layer="104"/>
-<wire x1="22.86" y1="30.48" x2="22.86" y2="15.24" width="0.4064" layer="104"/>
-<wire x1="22.86" y1="15.24" x2="2.54" y2="15.24" width="0.4064" layer="104"/>
-<wire x1="2.54" y1="15.24" x2="2.54" y2="30.48" width="0.4064" layer="104"/>
-<text x="5.08" y="20.32" size="1.778" layer="104">(LM25575)</text>
-<text x="5.08" y="22.86" size="1.778" layer="104">+5V SMPS</text>
 <wire x1="27.94" y1="38.1" x2="60.96" y2="38.1" width="0.4064" layer="100"/>
 <wire x1="27.94" y1="0" x2="27.94" y2="38.1" width="0.4064" layer="100"/>
 <wire x1="60.96" y1="0" x2="60.96" y2="38.1" width="0.4064" layer="100"/>
@@ -2278,11 +2287,6 @@ connectors</text>
 <text x="5.715" y="63.5" size="1.778" layer="104">Master
 sync out</text>
 <text x="14.605" y="66.675" size="1.4224" layer="108">~320 kHz</text>
-<polygon width="0.1524" layer="91">
-<vertex x="10.4775" y="32.385"/>
-<vertex x="10.16" y="30.7975"/>
-<vertex x="9.8425" y="32.385"/>
-</polygon>
 </plain>
 <instances>
 </instances>
@@ -2323,91 +2327,9 @@ sync out</text>
 <wire x1="76.2" y1="66.04" x2="76.2" y2="61.595" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$131" class="0">
+<net name="N$63" class="0">
 <segment>
-<wire x1="10.16" y1="30.48" x2="10.16" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="53.34" x2="17.78" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="53.34" x2="17.78" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="66.04" x2="27.94" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="66.04" x2="15.24" y2="66.04" width="0.1524" layer="91"/>
-<junction x="17.78" y="66.04"/>
-</segment>
-</net>
-</nets>
-</sheet>
-<sheet>
-<plain>
-<wire x1="33.02" y1="71.12" x2="60.96" y2="71.12" width="0.4064" layer="100"/>
-<wire x1="33.02" y1="48.26" x2="33.02" y2="71.12" width="0.4064" layer="100"/>
-<wire x1="60.96" y1="48.26" x2="60.96" y2="71.12" width="0.4064" layer="100"/>
-<wire x1="33.02" y1="48.26" x2="60.96" y2="48.26" width="0.4064" layer="100"/>
-<text x="46.99" y="59.69" size="2.1844" layer="100" align="center">Power pre-regulator
-(SMPS)</text>
-<wire x1="-7.62" y1="71.12" x2="20.32" y2="71.12" width="0.4064" layer="104"/>
-<wire x1="20.32" y1="71.12" x2="20.32" y2="48.26" width="0.4064" layer="104"/>
-<wire x1="20.32" y1="48.26" x2="-7.62" y2="48.26" width="0.4064" layer="104"/>
-<wire x1="-7.62" y1="48.26" x2="-7.62" y2="71.12" width="0.4064" layer="104"/>
-<text x="6.0325" y="60.0075" size="2.1844" layer="104" align="center">AC/DC module</text>
-<text x="21.59" y="58.42" size="1.778" layer="108">+48 Vdc</text>
-<text x="-24.765" y="61.595" size="1.778" layer="108">AC input
-(115/230 Vac)</text>
-<polygon width="0.1524" layer="91">
-<vertex x="31.4325" y="61.2775"/>
-<vertex x="33.02" y="60.96"/>
-<vertex x="31.4325" y="60.6425"/>
-</polygon>
-<wire x1="75.565" y1="71.12" x2="103.505" y2="71.12" width="0.4064" layer="100"/>
-<wire x1="75.565" y1="48.26" x2="75.565" y2="71.12" width="0.4064" layer="100"/>
-<wire x1="103.505" y1="48.26" x2="103.505" y2="71.12" width="0.4064" layer="100"/>
-<wire x1="75.565" y1="48.26" x2="103.505" y2="48.26" width="0.4064" layer="100"/>
-<text x="89.535" y="59.69" size="2.1844" layer="100" align="center">Post-regulator
-(linear)</text>
-<polygon width="0.1524" layer="91">
-<vertex x="73.9775" y="61.2775"/>
-<vertex x="75.565" y="60.96"/>
-<vertex x="73.9775" y="60.6425"/>
-</polygon>
-<polygon width="0.1524" layer="91">
-<vertex x="-9.2075" y="61.2775"/>
-<vertex x="-7.62" y="60.96"/>
-<vertex x="-9.2075" y="60.6425"/>
-</polygon>
-<polygon width="0.1524" layer="91">
-<vertex x="114.6175" y="61.2775"/>
-<vertex x="116.205" y="60.96"/>
-<vertex x="114.6175" y="60.6425"/>
-</polygon>
-<text x="104.775" y="58.42" size="1.778" layer="108">+0...40 Vdc</text>
-</plain>
-<instances>
-</instances>
-<busses>
-</busses>
-<nets>
-<net name="N$60" class="0">
-<segment>
-<wire x1="60.96" y1="60.96" x2="67.945" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="67.945" y1="60.96" x2="75.565" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="27.305" y1="78.74" x2="67.945" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="67.945" y1="78.74" x2="67.945" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="60.96" x2="27.305" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="27.305" y1="60.96" x2="33.02" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="27.305" y1="78.74" x2="27.305" y2="60.96" width="0.1524" layer="91"/>
-<junction x="27.305" y="60.96"/>
-<junction x="67.945" y="60.96"/>
-</segment>
-<segment>
-<wire x1="-19.05" y1="78.74" x2="-13.335" y2="78.74" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$61" class="0">
-<segment>
-<wire x1="-20.32" y1="60.96" x2="-7.62" y2="60.96" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$62" class="0">
-<segment>
-<wire x1="103.505" y1="60.96" x2="116.205" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="66.04" x2="27.94" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

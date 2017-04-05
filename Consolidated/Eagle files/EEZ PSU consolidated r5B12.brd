@@ -11073,9 +11073,9 @@ HINGE&lt;BR&gt;
 </package>
 <package name="RN112">
 <pad name="1" x="-7.5" y="5" drill="1.2" diameter="2.54"/>
-<pad name="2" x="-7.5" y="-5" drill="1.2" diameter="2.54"/>
-<pad name="3" x="7.5" y="-5" drill="1.2" diameter="2.54"/>
-<pad name="4" x="7.5" y="5" drill="1.2" diameter="2.54"/>
+<pad name="3" x="-7.5" y="-5" drill="1.2" diameter="2.54"/>
+<pad name="4" x="7.5" y="-5" drill="1.2" diameter="2.54"/>
+<pad name="2" x="7.5" y="5" drill="1.2" diameter="2.54"/>
 <text x="-9.398" y="-3.937" size="1.6764" layer="25" rot="R90">&gt;NAME</text>
 <text x="-4.575" y="-0.675" size="1.6764" layer="27">&gt;VALUE</text>
 <wire x1="-4.25" y1="-4.97" x2="4.25" y2="-4.97" width="0.254" layer="21"/>
@@ -11084,8 +11084,6 @@ HINGE&lt;BR&gt;
 <wire x1="-4.25" y1="5.03" x2="4.25" y2="5.03" width="0.254" layer="21"/>
 <rectangle x1="-2.75" y1="4.03" x2="2.75" y2="6.03" layer="21"/>
 <circle x="-3.75" y="6.03" radius="0.18" width="0.35" layer="21"/>
-<wire x1="-9" y1="-6.8" x2="-9" y2="6.9" width="0.127" layer="51"/>
-<wire x1="9" y1="6.8" x2="9" y2="-6.9" width="0.127" layer="51"/>
 <wire x1="-9" y1="5.4" x2="-9" y2="-5.4" width="0.127" layer="21"/>
 <wire x1="-9" y1="-5.4" x2="-8.2" y2="-6.7" width="0.127" layer="21" curve="67.380135"/>
 <wire x1="-8.2" y1="-6.7" x2="0" y2="-8.9" width="0.127" layer="21" curve="21.245931"/>
@@ -15680,7 +15678,7 @@ design rules under a new name.</description>
 <via x="275.717" y="2.667" extent="1-16" drill="0.6" shape="octagon"/>
 <via x="265.5062" y="10.033" extent="1-16" drill="0.6" shape="octagon"/>
 <via x="116.6495" y="138.811" extent="1-16" drill="0.6" shape="octagon"/>
-<contactref element="L1" pad="4"/>
+<contactref element="L1" pad="2"/>
 <via x="101.854" y="117.602" extent="1-16" drill="0.6" shape="octagon"/>
 <via x="104.394" y="117.602" extent="1-16" drill="0.6" shape="octagon"/>
 <via x="228.0285" y="22.1615" extent="1-16" drill="0.6" shape="octagon"/>
@@ -17936,7 +17934,7 @@ design rules under a new name.</description>
 <wire x1="121.27" y1="127.762" x2="119.873" y2="129.159" width="0.6096" layer="1"/>
 <wire x1="119.873" y1="129.159" x2="119.873" y2="131.7094" width="0.6096" layer="1"/>
 <wire x1="119.873" y1="131.7094" x2="119.9261" y2="131.7625" width="0.6096" layer="1"/>
-<contactref element="L1" pad="3"/>
+<contactref element="L1" pad="4"/>
 <wire x1="112.014" y1="112.0775" x2="112.014" y2="105.664" width="0.254" layer="16"/>
 <via x="112.014" y="105.664" extent="1-16" drill="0.6" shape="octagon"/>
 <wire x1="112.014" y1="105.664" x2="116.1542" y2="105.664" width="0.254" layer="1"/>
@@ -18852,7 +18850,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="DC+">
 <contactref element="C1" pad="2"/>
-<contactref element="L1" pad="2"/>
+<contactref element="L1" pad="3"/>
 <polygon width="0.254" layer="1" isolate="0.3048" thermals="no">
 <vertex x="155.2575" y="97.155"/>
 <vertex x="158.369" y="97.155"/>
