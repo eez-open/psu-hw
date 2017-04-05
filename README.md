@@ -52,12 +52,13 @@ This is repository for the hardware part of the DIY fully programmable dual chan
 
 Files in this repository are organized using the following folders:
 
-- [Consolidated]( 	#92 Taking into account reference ground when rprog is activated) - contains information about all modules. That include BOM with parts required to build complete dual channel unit (1 x Aux, 2 x Power, and 1 x Arduino Shield).
+- [Consolidated](https://github.com/eez-open/psu-hw/tree/master/Consolidated) - contains information about all modules. That include BOM with parts required to build complete dual channel unit (1 x Aux, 2 x Power, and 1 x Arduino Shield).
 *Use this as a primary reference for PCB manufacturing and assembling.*
 - Aux power - information about Auxiliary power module only
 - Power board - information about Power board only
 - Arduino shield - information about Arduino Shield only
-- Mechanical - drawings for metal custom enclosure and acrylic demonstration enclosure. 
+- [Mechanical](https://github.com/eez-open/psu-hw/tree/master/Mechanical) - drawings for metal custom enclosure and acrylic demonstration enclosure.
+- [Building instructions](https://github.com/eez-open/psu-hw/tree/master/Building%20instructions) - details about power supply assembly and wire harness
 
 **********************
 
