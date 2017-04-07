@@ -24253,7 +24253,7 @@ design rules under a new name.</description>
 <wire x1="130.9497" y1="110.871" x2="130.49" y2="110.871" width="0.8128" layer="1"/>
 <wire x1="130.49" y1="110.871" x2="130.49" y2="111.186" width="0.8128" layer="1"/>
 </signal>
-<signal name="N$157">
+<signal name="EOUT_B">
 <contactref element="R157" pad="2"/>
 <contactref element="R156" pad="2"/>
 <wire x1="264.1727" y1="30.2235" x2="266.1412" y2="30.2235" width="0.254" layer="1"/>
@@ -24279,7 +24279,7 @@ design rules under a new name.</description>
 <wire x1="263.652" y1="57.8485" x2="246.38" y2="57.8485" width="0.254" layer="1"/>
 <wire x1="246.38" y1="57.8485" x2="245.9355" y2="57.404" width="0.254" layer="1"/>
 </signal>
-<signal name="ENC_A">
+<signal name="ENC_B">
 <contactref element="C137" pad="2"/>
 <contactref element="R157" pad="1"/>
 <contactref element="MCU" pad="A8"/>
@@ -24293,7 +24293,7 @@ design rules under a new name.</description>
 <wire x1="264.2235" y1="27.4955" x2="264.2235" y2="23.522" width="0.254" layer="16"/>
 <wire x1="264.2235" y1="23.522" x2="264.6062" y2="23.152" width="0.254" layer="16"/>
 </signal>
-<signal name="ENC_B">
+<signal name="ENC_A">
 <contactref element="R165" pad="1"/>
 <contactref element="C138" pad="1"/>
 <contactref element="MCU" pad="A9"/>
@@ -24305,7 +24305,7 @@ design rules under a new name.</description>
 <wire x1="262.0662" y1="23.152" x2="262.0662" y2="26.3" width="0.254" layer="16"/>
 <wire x1="262.0662" y1="26.3" x2="260.6802" y2="27.686" width="0.254" layer="16"/>
 </signal>
-<signal name="N$159">
+<signal name="EOUT_A">
 <contactref element="R165" pad="2"/>
 <contactref element="R159" pad="2"/>
 <wire x1="255.6002" y1="29.5885" x2="257.5687" y2="29.5885" width="0.254" layer="1"/>

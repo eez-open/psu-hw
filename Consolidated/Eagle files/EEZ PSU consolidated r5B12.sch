@@ -20836,8 +20836,8 @@ HINGE&lt;BR&gt;
 <text x="-3.81" y="2.54" size="1.778" layer="95" rot="R90">&gt;NAME</text>
 <text x="6.35" y="2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="C" x="0" y="0" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="A" x="-2.54" y="10.16" visible="off" length="short" direction="pas" rot="R270"/>
-<pin name="B" x="2.54" y="10.16" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="A" x="-2.54" y="10.16" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="B" x="2.54" y="10.16" visible="pad" length="short" direction="pas" rot="R270"/>
 </symbol>
 <symbol name="LTC3260">
 <wire x1="-12.7" y1="20.32" x2="-12.7" y2="-20.32" width="0.4064" layer="94"/>
@@ -41846,7 +41846,7 @@ Marquardt</description>
 <wire x1="238.76" y1="50.8" x2="238.76" y2="53.34" width="0.1524" layer="91"/>
 <junction x="238.76" y="53.34"/>
 <wire x1="251.46" y1="53.34" x2="246.38" y2="53.34" width="0.1524" layer="91"/>
-<label x="249.555" y="53.975" size="1.27" layer="102"/>
+<label x="247.015" y="53.975" size="1.27" layer="102"/>
 <wire x1="251.46" y1="48.26" x2="246.38" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="246.38" y1="48.26" x2="246.38" y2="53.34" width="0.1524" layer="91"/>
 <junction x="246.38" y="53.34"/>
@@ -42549,14 +42549,14 @@ Marquardt</description>
 <label x="208.28" y="118.745" size="1.27" layer="102" rot="R180"/>
 </segment>
 </net>
-<net name="ENC_A" class="0">
+<net name="ENC_B" class="0">
 <segment>
 <label x="241.3" y="116.205" size="1.27" layer="102" rot="R180"/>
 <pinref part="MCU" gate="-ADCH" pin="ADC8"/>
 <wire x1="226.06" y1="114.3" x2="241.3" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="ENC_B" class="0">
+<net name="ENC_A" class="0">
 <segment>
 <label x="241.3" y="113.665" size="1.27" layer="102" rot="R180"/>
 <pinref part="MCU" gate="-ADCH" pin="ADC9"/>
@@ -45150,7 +45150,7 @@ Marquardt</description>
 <pinref part="IC32" gate="A" pin="O"/>
 </segment>
 </net>
-<net name="N$157" class="0">
+<net name="EOUT_B" class="0">
 <segment>
 <wire x1="223.52" y1="101.6" x2="233.68" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="R157" gate="G$1" pin="2"/>
@@ -45161,7 +45161,7 @@ Marquardt</description>
 <pinref part="SW2" gate="-1" pin="B"/>
 </segment>
 </net>
-<net name="ENC_A" class="0">
+<net name="ENC_B" class="0">
 <segment>
 <pinref part="C137" gate="G$1" pin="2"/>
 <pinref part="R157" gate="G$1" pin="1"/>
@@ -45170,7 +45170,7 @@ Marquardt</description>
 <label x="259.08" y="103.505" size="1.27" layer="102" rot="R180"/>
 </segment>
 </net>
-<net name="ENC_B" class="0">
+<net name="ENC_A" class="0">
 <segment>
 <pinref part="R165" gate="G$1" pin="1"/>
 <pinref part="C138" gate="G$1" pin="1"/>
@@ -45180,7 +45180,7 @@ Marquardt</description>
 <junction x="246.38" y="83.82"/>
 </segment>
 </net>
-<net name="N$159" class="0">
+<net name="EOUT_A" class="0">
 <segment>
 <pinref part="R165" gate="G$1" pin="2"/>
 <wire x1="223.52" y1="83.82" x2="228.6" y2="83.82" width="0.1524" layer="91"/>
