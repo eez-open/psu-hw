@@ -1,4 +1,4 @@
-This folder contains consolidated [Eagle](https://github.com/eez-open/psu-hw/tree/master/Consolidated/Eagle%20files) and [Gerber](https://github.com/eez-open/psu-hw/tree/master/Consolidated/Gerber%20files%20(panel) files of all required EEZ PSU modules:
+This folder contains consolidated [Eagle](https://github.com/eez-open/psu-hw/tree/master/Consolidated/Eagle%20files) and [Gerber](https://github.com/eez-open/psu-hw/tree/master/Consolidated/Gerber%20files%20%28panel%29) files of all required EEZ PSU modules:
  * Power module **r5B12** (two per unit)
  * Auxiliary power supply **r5B12a**
  * Arduino shield **r5B12** (digital control)

@@ -11,15 +11,13 @@ To report an issue, use the [EEZ psu-hw issue tracker](https://github.com/eez-op
 
 ### Overview
 
-![prototype](EEZ_PSU_prototype.png)
+![prototype](EEZ_H24005_front_panel.png)
 
 This is repository for the hardware part of the DIY fully programmable dual channel bench power supply. The power supply is designed with taking into consideration the following features and requirements:
 
 - Modular design that allows combining modules with various performance and capability and creation of multiple output solution (min. two channels)
-- Voltage regulation (CV), 1/10 mV resolution
-- Current regulation (CC), 0.1/1/10 mA initial resolution (dual range or more)
-    Various voltage single range operation (0-40 V default, 0-30 V or 0-50 V per channel)
-- Various current single range operation (0-5 A default, 0-3 A or 0-4 A per channel)
+- Voltage regulation (CV), 1/10 mV resolution, up to 50 V (40 V default)
+- Current regulation (CC), 0.1/1/10 mA resolution (dual range: e.g. 500 mA / 5 A or more)
 - Minimal overshoot when new voltage or current level is programmed or in marginal cases such as power on/off
 - 15-bit data acquisition resolution
 - Various protection mechanisms: over-voltage (OVP), over-current (OCP), over-power (OPP) and over-temperature (OTP), current limiting when temperature sensors or cooling fan fault is detected
@@ -44,7 +42,7 @@ This is repository for the hardware part of the DIY fully programmable dual chan
 - Ethernet support for remote control
 - Local control using TFT touch-screen display
 - Incremental encoder with tactile switch as an additional mean of setting output values
-- Usage of easy to find components that could be obtain with just single order from suppliers such as Farnell element14, Transfer Multisort Elektronik (TMU.eu), DigiKey, Mouser, RS online, etc.
+- Usage of easy to find components that could be obtain with just single order from suppliers such as Farnell element14, TMU.eu, DigiKey, Mouser, RS online, etc.
 - Possibility to house at least dual channel version in affordable and compact (2U height) metallic enclosure
 - Comprehensive software support that include [SCPI](http://www.envox.hr/eez/bench-power-supply/psu-scpi-reference-manual/psu-scpi-introduction.html)  remote control, GUI configuration and monitoring and even cross platform (Windows, Linux, OS X) software simulator of the firmware functionality
 
