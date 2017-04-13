@@ -16,8 +16,8 @@ To report an issue, use the [EEZ psu-hw issue tracker](https://github.com/eez-op
 This is repository for the hardware part of the DIY fully programmable dual channel bench power supply. The power supply is designed with taking into consideration the following features and requirements:
 
 - Modular design that allows combining modules with various performance and capability and creation of multiple output solution (min. two channels)
-- Voltage regulation (CV), 1/10 mV resolution, up to 50 V (40 V default)
-- Current regulation (CC), 0.1/1/10 mA resolution (dual range: e.g. 500 mA / 5 A or more)
+- Voltage regulation (CV), 1/10 mV resolution, up to 50 V (default: 0 - 40 V)
+- Current regulation (CC), 0.1/1 mA resolution (dual range, default: 0 - 500 mA / 0 - 5 A)
 - Minimal overshoot when new voltage or current level is programmed or in marginal cases such as power on/off
 - 15-bit data acquisition resolution
 - Various protection mechanisms: over-voltage (OVP), over-current (OCP), over-power (OPP) and over-temperature (OTP), current limiting when temperature sensors or cooling fan fault is detected
@@ -46,7 +46,7 @@ This is repository for the hardware part of the DIY fully programmable dual chan
 - Possibility to house at least dual channel version in affordable and compact (2U height) metallic enclosure
 - Comprehensive software support that include [SCPI](http://www.envox.hr/eez/bench-power-supply/psu-scpi-reference-manual/psu-scpi-introduction.html)  remote control, GUI configuration and monitoring and even cross platform (Windows, Linux, OS X) software simulator of the firmware functionality
 
-![Programmable dual channel PSU block diagram](EEZ%20PSU%20block%20diagram%20v5.3.png)
+![Programmable dual channel PSU block diagram](EEZ%20PSU%20block%20diagram%20v5.4.png)
 
 Files in this repository are organized using the following folders:
 
