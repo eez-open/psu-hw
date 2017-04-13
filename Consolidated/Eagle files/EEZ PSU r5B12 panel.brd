@@ -26,7 +26,7 @@
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="14" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="13" fill="1" visible="no" active="yes"/>
@@ -6713,11 +6713,6 @@
 <wire x1="19.543" y1="84.328" x2="15.225" y2="84.328" width="2.54" layer="29"/>
 <wire x1="15.225" y1="84.328" x2="6.462" y2="93.091" width="2.54" layer="29"/>
 <wire x1="6.462" y1="93.091" x2="6.462" y2="95.1865" width="2.54" layer="29"/>
-<text x="82.154" y="120.7135" size="1.016" layer="21" font="vector" ratio="10" rot="SR0">1 -5V</text>
-<text x="82.154" y="119.4435" size="1.016" layer="21" font="vector" ratio="10" rot="SR0">2 Pout</text>
-<text x="82.154" y="118.1735" size="1.016" layer="21" font="vector" ratio="10" rot="SR0">3 Out+</text>
-<text x="82.154" y="116.9035" size="1.016" layer="21" font="vector" ratio="10" rot="SR0">4 FB</text>
-<text x="82.154" y="115.6335" size="1.016" layer="21" font="vector" ratio="10" rot="SR0">5 +Vin</text>
 <wire x1="233.044" y1="54.483" x2="233.044" y2="54.61" width="0.4064" layer="51"/>
 <text x="153.8455" y="97.8535" size="1.27" layer="125" ratio="10">C1</text>
 <text x="158.4175" y="101.7905" size="1.27" layer="125" ratio="10">C2</text>
@@ -9366,11 +9361,6 @@
 <wire x1="186.543" y1="84.328" x2="182.225" y2="84.328" width="2.54" layer="29"/>
 <wire x1="182.225" y1="84.328" x2="173.462" y2="93.091" width="2.54" layer="29"/>
 <wire x1="173.462" y1="93.091" x2="173.462" y2="95.1865" width="2.54" layer="29"/>
-<text x="249.154" y="120.7135" size="1.016" layer="21" font="vector" ratio="10" rot="SR0">1 -5V</text>
-<text x="249.154" y="119.4435" size="1.016" layer="21" font="vector" ratio="10" rot="SR0">2 Pout</text>
-<text x="249.154" y="118.1735" size="1.016" layer="21" font="vector" ratio="10" rot="SR0">3 Out+</text>
-<text x="249.154" y="116.9035" size="1.016" layer="21" font="vector" ratio="10" rot="SR0">4 FB</text>
-<text x="249.154" y="115.6335" size="1.016" layer="21" font="vector" ratio="10" rot="SR0">5 +Vin</text>
 <text x="320.8455" y="97.8535" size="1.27" layer="125" ratio="10">C1</text>
 <text x="325.4175" y="101.7905" size="1.27" layer="125" ratio="10">C2</text>
 <text x="273.5507" y="107.95" size="1.27" layer="125" ratio="10" rot="SR0">C3</text>
@@ -28173,9 +28163,6 @@ design rules under a new name.</description>
 <via x="32.37" y="146.4945" extent="1-16" drill="0.6" shape="octagon"/>
 <wire x1="18.7175" y1="101.9175" x2="18.7175" y2="135.128" width="0.254" layer="16"/>
 <contactref element="Q14" pad="1"/>
-<wire x1="33.3225" y1="86.2355" x2="33.3225" y2="85.2805" width="0.254" layer="1"/>
-<wire x1="33.3225" y1="85.2805" x2="32.6875" y2="84.6455" width="0.254" layer="1"/>
-<wire x1="32.6875" y1="84.6455" x2="29.0045" y2="84.6455" width="0.254" layer="1"/>
 <wire x1="29.0045" y1="84.6455" x2="29.0045" y2="80.5815" width="0.3048" layer="1"/>
 <wire x1="29.0045" y1="80.5815" x2="30.592" y2="78.994" width="0.3048" layer="1"/>
 <via x="29.0045" y="84.6455" extent="1-16" drill="0.6" shape="octagon"/>
@@ -28187,6 +28174,10 @@ design rules under a new name.</description>
 <wire x1="32.3065" y1="146.4945" x2="31.608" y2="145.796" width="0.254" layer="16"/>
 <wire x1="31.608" y1="145.796" x2="29.3855" y2="145.796" width="0.254" layer="16"/>
 <wire x1="29.3855" y1="145.796" x2="18.7175" y2="135.128" width="0.254" layer="16"/>
+<wire x1="33.3225" y1="86.2355" x2="33.3225" y2="86.0275" width="0.254" layer="1"/>
+<wire x1="33.3225" y1="86.0275" x2="32.258" y2="84.963" width="0.254" layer="1"/>
+<wire x1="32.258" y1="84.963" x2="29.322" y2="84.963" width="0.254" layer="1"/>
+<wire x1="29.322" y1="84.963" x2="29.0045" y2="84.6455" width="0.254" layer="1"/>
 </signal>
 <signal name="CURR_500MA">
 <contactref element="R66" pad="2"/>
@@ -32251,9 +32242,6 @@ design rules under a new name.</description>
 <via x="199.37" y="146.4945" extent="1-16" drill="0.6" shape="octagon"/>
 <wire x1="185.7175" y1="101.9175" x2="185.7175" y2="135.128" width="0.254" layer="16"/>
 <contactref element="Q53" pad="1"/>
-<wire x1="200.3225" y1="86.2355" x2="200.3225" y2="85.2805" width="0.254" layer="1"/>
-<wire x1="200.3225" y1="85.2805" x2="199.6875" y2="84.6455" width="0.254" layer="1"/>
-<wire x1="199.6875" y1="84.6455" x2="196.0045" y2="84.6455" width="0.254" layer="1"/>
 <wire x1="196.0045" y1="84.6455" x2="196.0045" y2="80.5815" width="0.3048" layer="1"/>
 <wire x1="196.0045" y1="80.5815" x2="197.592" y2="78.994" width="0.3048" layer="1"/>
 <via x="196.0045" y="84.6455" extent="1-16" drill="0.6" shape="octagon"/>
@@ -32265,6 +32253,10 @@ design rules under a new name.</description>
 <wire x1="199.3065" y1="146.4945" x2="198.608" y2="145.796" width="0.254" layer="16"/>
 <wire x1="198.608" y1="145.796" x2="196.3855" y2="145.796" width="0.254" layer="16"/>
 <wire x1="196.3855" y1="145.796" x2="185.7175" y2="135.128" width="0.254" layer="16"/>
+<wire x1="200.3225" y1="86.2355" x2="200.3225" y2="85.959" width="0.254" layer="1"/>
+<wire x1="200.3225" y1="85.959" x2="199.3265" y2="84.963" width="0.254" layer="1"/>
+<wire x1="199.3265" y1="84.963" x2="196.322" y2="84.963" width="0.254" layer="1"/>
+<wire x1="196.322" y1="84.963" x2="196.0045" y2="84.6455" width="0.254" layer="1"/>
 </signal>
 <signal name="CURR_500MA1">
 <contactref element="R275" pad="2"/>
