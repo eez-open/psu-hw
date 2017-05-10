@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -33083,10 +33083,10 @@ Marquardt</description>
 <part name="Q12" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" technology="MMBT5551LT1" value="MMBT5551"/>
 <part name="Q8" library="EEZ_Lib1" deviceset="BCP56" device="" value="BCP56-16.115"/>
 <part name="IC5" library="EEZ_Lib1" deviceset="TL072" device="SOIC8" value="TL072D"/>
-<part name="R60" library="rcl" deviceset="R-EU_" device="R0805" value="2K 0.1%"/>
-<part name="R62" library="rcl" deviceset="R-EU_" device="R0805" value="82R 0.1%"/>
-<part name="R71" library="rcl" deviceset="R-EU_" device="R0805" value="82R 0.1%"/>
-<part name="R70" library="rcl" deviceset="R-EU_" device="R0805" value="2K 0.1%"/>
+<part name="R60" library="rcl" deviceset="R-EU_" device="R0805" value="1K91"/>
+<part name="R62" library="rcl" deviceset="R-EU_" device="R0805" value="82R"/>
+<part name="R71" library="rcl" deviceset="R-EU_" device="R0805" value="82R"/>
+<part name="R70" library="rcl" deviceset="R-EU_" device="R0805" value="1K91"/>
 <part name="Q9" library="transistor" deviceset="*-PNP-" device="SOT23-BEC" technology="BC857B" value="MMBT5401"/>
 <part name="Q10" library="transistor" deviceset="*-PNP-" device="SOT23-BEC" technology="BC857B" value="MMBT5401"/>
 <part name="Q11" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" technology="MMBT5551LT1" value="MMBT5551"/>
@@ -35113,7 +35113,7 @@ Marquardt</description>
 <text x="382.905" y="-70.485" size="2.54" layer="94" font="vector">Output enable and "down-programmer"</text>
 <text x="226.06" y="-81.28" size="1.4224" layer="103">Note 3.1: Q4 is mounted on the external heatsink (e.g. RAD-A4463/120)</text>
 <wire x1="459.74" y1="-10.16" x2="454.66" y2="-10.16" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="320.04" y1="-12.7" x2="320.04" y2="-58.42" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="320.04" y1="-12.7" x2="320.04" y2="-93.98" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="330.2" y1="80.01" x2="330.2" y2="26.035" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="400.685" y1="80.01" x2="400.685" y2="43.18" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="400.685" y1="43.18" x2="400.685" y2="25.4" width="0.1524" layer="97" style="shortdash"/>
@@ -35128,7 +35128,6 @@ Marquardt</description>
 <text x="220.98" y="-88.9" size="1.778" layer="94">Licensed under the TAPR Open Hardware License (www.tapr.org/OHL)</text>
 <text x="220.98" y="-93.98" size="1.778" layer="94">Repository: https://github.com/eez-open</text>
 <text x="220.98" y="-91.44" size="1.778" layer="94">More info at http://www.envox.hr/eez</text>
-<wire x1="320.04" y1="-93.98" x2="320.04" y2="-58.42" width="0.1524" layer="97" style="shortdash"/>
 <circle x="293.37" y="-44.45" radius="0.635" width="0.1524" layer="101"/>
 <circle x="293.37" y="-46.99" radius="0.635" width="0.1524" layer="101"/>
 <circle x="293.37" y="-49.53" radius="0.635" width="0.1524" layer="101"/>
@@ -35218,12 +35217,12 @@ Marquardt</description>
 <wire x1="223.52" y1="-48.895" x2="259.08" y2="-48.895" width="0.1524" layer="103"/>
 <text x="224.155" y="-66.675" size="1.6764" layer="103">0-3.12A</text>
 <text x="224.155" y="-69.215" size="1.6764" layer="103">0-4.16A</text>
-<text x="234.95" y="-63.5" size="1.6764" layer="103">R60, R70</text>
-<text x="237.49" y="-66.675" size="1.6764" layer="103">3K24</text>
-<text x="237.49" y="-69.215" size="1.6764" layer="103">2K74</text>
+<text x="239.395" y="-63.5" size="1.6764" layer="103">R60, R70</text>
+<text x="236.22" y="-66.675" size="1.6764" layer="103">3K16 (not tested)</text>
+<text x="236.22" y="-69.215" size="1.6764" layer="103">2K7 (not tested)</text>
 <wire x1="223.52" y1="-60.96" x2="233.68" y2="-60.96" width="0.1524" layer="103"/>
-<wire x1="233.68" y1="-60.96" x2="246.38" y2="-60.96" width="0.1524" layer="103"/>
-<wire x1="246.38" y1="-72.39" x2="233.68" y2="-72.39" width="0.1524" layer="103"/>
+<wire x1="233.68" y1="-60.96" x2="256.54" y2="-60.96" width="0.1524" layer="103"/>
+<wire x1="256.54" y1="-72.39" x2="233.68" y2="-72.39" width="0.1524" layer="103"/>
 <wire x1="233.68" y1="-72.39" x2="223.52" y2="-72.39" width="0.1524" layer="103"/>
 <wire x1="223.52" y1="-72.39" x2="223.52" y2="-64.135" width="0.1524" layer="103"/>
 <wire x1="223.52" y1="-64.135" x2="223.52" y2="-60.96" width="0.1524" layer="103"/>
@@ -35231,11 +35230,11 @@ Marquardt</description>
 <text x="225.425" y="-48.26" size="1.6764" layer="103">Range</text>
 <text x="225.425" y="-63.5" size="1.6764" layer="103">Range</text>
 <wire x1="233.68" y1="-64.135" x2="233.68" y2="-60.96" width="0.1524" layer="103"/>
-<wire x1="246.38" y1="-72.39" x2="246.38" y2="-64.135" width="0.1524" layer="103"/>
-<text x="237.49" y="-71.755" size="1.6764" layer="103">2K</text>
+<wire x1="256.54" y1="-72.39" x2="256.54" y2="-64.135" width="0.1524" layer="103"/>
+<text x="236.22" y="-71.755" size="1.6764" layer="103">1K91</text>
 <text x="226.06" y="-71.755" size="1.6764" layer="103">0-5A</text>
-<wire x1="246.38" y1="-64.135" x2="246.38" y2="-60.96" width="0.1524" layer="103"/>
-<wire x1="246.38" y1="-64.135" x2="233.68" y2="-64.135" width="0.1524" layer="103"/>
+<wire x1="256.54" y1="-64.135" x2="256.54" y2="-60.96" width="0.1524" layer="103"/>
+<wire x1="256.54" y1="-64.135" x2="233.68" y2="-64.135" width="0.1524" layer="103"/>
 <wire x1="223.52" y1="-64.135" x2="233.68" y2="-64.135" width="0.1524" layer="103"/>
 <wire x1="320.04" y1="-2.54" x2="320.04" y2="-12.7" width="0.1524" layer="97" style="shortdash"/>
 <text x="252.095" y="49.53" size="1.27" layer="100">+48 V</text>
