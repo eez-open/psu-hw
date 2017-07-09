@@ -33359,7 +33359,7 @@ Marquardt</description>
 <part name="P+23" library="supply1" deviceset="+5V" device=""/>
 <part name="SUPPLY71" library="supply2" deviceset="GND" device=""/>
 <part name="P+24" library="supply1" deviceset="VCC" device=""/>
-<part name="IC22" library="v-reg" deviceset="LD117A?*" device="S" technology="33TR" value="LD1117ADT33TR"/>
+<part name="IC22" library="v-reg" deviceset="LD117A?*" device="S" technology="33TR" value="LD1117S33TR"/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="C97" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="FRAME8" library="frames" deviceset="DINA4_L" device=""/>
