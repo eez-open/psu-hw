@@ -3,6 +3,12 @@ Please refer to the BOM in [Consolidated/BOM](https://github.com/eez-open/psu-hw
 ![r5b12](Power%20board%20r5B12%20assembled.png)
 
 **Revision history:**
+* 2017-09-24: **r5B13**
+    - High range (0-5 A) sense resistor improvement ([#40](https://github.com/eez-open/psu-hw/issues/40))
+    - Additional current range 0-50 mA ([#41](https://github.com/eez-open/psu-hw/issues/41))
+    - Output enters unregulated mode too early ([#42](https://github.com/eez-open/psu-hw/issues/42))
+    - Remote sense resistors removed ([#44](https://github.com/eez-open/psu-hw/issues/44))
+    - Overvoltage protection for V+ output ([#46](https://github.com/eez-open/psu-hw/issues/46))
 * 2017-03-11: **r5B12**
     - Dual range current programming and measurement (0-500 mA, 0-5 A)
     - New current monitor (LTC3050HV)

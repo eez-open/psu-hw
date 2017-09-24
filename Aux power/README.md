@@ -3,6 +3,8 @@ Please refer to the BOM in [Consolidated/BOM](https://github.com/eez-open/psu-hw
 ![EEZ PSU Power board r5B12](AUX%20PS%20r5B12%20side%20view.jpg)
 
 **Revision history:**
+* 2017-09-24: **r5B13**
+    - USB isolator speed selection ([#56](https://github.com/eez-open/psu-hw/issues/56))
 * 2017-03-24: **r5B12a**
     - Fan generates EMI, isolated fan supply, +5 V SMPS replaced with AC/DC module ([#9](https://github.com/eez-open/psu-hw/issues/9))
     - Power relay MCU controlled ([#23](https://github.com/eez-open/psu-hw/issues/23))

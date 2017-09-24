@@ -9,6 +9,18 @@ EEZ psu-firmware uses the [C4.1 (Collective Code Construction Contract)](http://
 
 To report an issue, use the [EEZ psu-hw issue tracker](https://github.com/eez-open/psu-hw/issues).
 
+### Repository structure
+
+Files in this repository are organized using the following folders:
+
+- [Consolidated](https://github.com/eez-open/psu-hw/tree/master/Consolidated) - contains information about all modules. That include **schematics** and **PCB layout** (Eagle, .png, PDF), **BOM** (.ods, PDF) with parts required to build complete dual channel unit (1 x Aux, 2 x Power, and 1 x Arduino Shield).
+*Use this as a primary reference for PCB manufacturing and assembling.*
+- Aux power - information about Auxiliary power module only
+- Power board - information about Power board only
+- Arduino shield - information about Arduino Shield only
+- [Mechanical](https://github.com/eez-open/psu-hw/tree/master/Mechanical) - drawings for metal custom enclosure and acrylic demonstration enclosure.
+- [Building instructions](https://github.com/eez-open/psu-hw/tree/master/Building%20instructions) - details about power supply assembly and wire harness
+
 ### Overview
 
 ![prototype](EEZ_H24005_front_panel.png)
@@ -47,16 +59,6 @@ This is repository for the hardware part of the DIY fully programmable dual chan
 - Comprehensive software support that include [SCPI](http://www.envox.hr/eez/bench-power-supply/psu-scpi-reference-manual/psu-scpi-introduction.html)  remote control, GUI configuration and monitoring and even cross platform (Windows, Linux, OS X) software simulator of the firmware functionality
 
 ![Programmable dual channel PSU block diagram](EEZ%20PSU%20block%20diagram%20v5.4.png)
-
-Files in this repository are organized using the following folders:
-
-- [Consolidated](https://github.com/eez-open/psu-hw/tree/master/Consolidated) - contains information about all modules. That include BOM with parts required to build complete dual channel unit (1 x Aux, 2 x Power, and 1 x Arduino Shield).
-*Use this as a primary reference for PCB manufacturing and assembling.*
-- Aux power - information about Auxiliary power module only
-- Power board - information about Power board only
-- Arduino shield - information about Arduino Shield only
-- [Mechanical](https://github.com/eez-open/psu-hw/tree/master/Mechanical) - drawings for metal custom enclosure and acrylic demonstration enclosure.
-- [Building instructions](https://github.com/eez-open/psu-hw/tree/master/Building%20instructions) - details about power supply assembly and wire harness
 
 **********************
 

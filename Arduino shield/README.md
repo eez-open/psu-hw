@@ -3,6 +3,8 @@ Please refer to the BOM in [Consolidated/BOM](https://github.com/eez-open/psu-hw
 ![Shield_bottom](Arduino%20r5B12%20bottom%20view.jpg)
 
 **Revision history:**
+* 2017-09-24: **r5B12**
+    - X12, X14 connection improvement on PCB ([#43](https://github.com/eez-open/psu-hw/issues/43))
 * 2017-02-23: **r5B12**
     - Encoder with switch mounted directly on the PCB ([#20](https://github.com/eez-open/psu-hw/issues/20))
     - Power relay MCU controlled on the AUX PS module([#23](https://github.com/eez-open/psu-hw/issues/23))
