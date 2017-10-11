@@ -29,7 +29,7 @@ This is repository for the hardware part of the DIY fully programmable dual chan
 
 - Modular design that allows combining modules with various performance and capability and creation of multiple output solution (min. two channels)
 - Voltage regulation (CV), 1/10 mV resolution, up to 50 V (default: 0 - 40 V)
-- Current regulation (CC), 0.1/1 mA resolution (dual range, default: 0 - 500 mA / 0 - 5 A)
+- Current regulation (CC), 0.1/1 mA resolution (multiple ranges, default: 0 - 500 mA / 0 - 5 A)
 - Minimal overshoot when new voltage or current level is programmed or in marginal cases such as power on/off
 - 15-bit data acquisition resolution
 - Various protection mechanisms: over-voltage (OVP), over-current (OCP), over-power (OPP) and over-temperature (OTP), current limiting when temperature sensors or cooling fan fault is detected
@@ -44,7 +44,7 @@ This is repository for the hardware part of the DIY fully programmable dual chan
 - Selectable 115/230 VAC, Soft-start/Stand-by mode
 - Simple DC output protection (reverse voltage, over-voltage)
 - Serial and parallel connection of the multiple channels
-- MCU based digital control module using 32-bit Arduino/Genuino boards such as [Due](https://www.arduino.cc/en/Main/ArduinoBoardDue) (or possibly [Star - OTTO](http://www.arduino.org/products/boards/arduino-star-otto) in the future)
+- MCU based digital control module using 32-bit ARM Arduino [Due](https://www.arduino.cc/en/Main/ArduinoBoardDue)
 - SPI bus for communication with peripherals
 - Galvanic isolation between digital module and power channels
 - Real-time clock (RTC) with supercap/batter backup
