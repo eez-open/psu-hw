@@ -3,6 +3,10 @@ Please refer to the BOM in [Consolidated/BOM](https://github.com/eez-open/psu-hw
 ![Shield_bottom](Arduino%20r5B12%20bottom%20view.jpg)
 
 **Revision history:**
+* 2017-11-04: **r5B13**
+    - Soft start and DOUT2 controls ([#36](https://github.com/eez-open/psu-hw/issues/36))
+    - Removed JP5, JP6, JP7 ([#59](https://github.com/eez-open/psu-hw/issues/59))
+    - R93 PCB layout spacing ([#60](https://github.com/eez-open/psu-hw/issues/60))
 * 2017-09-24: **r5B12**
     - X12, X14 connection improvement on PCB ([#43](https://github.com/eez-open/psu-hw/issues/43))
 * 2017-02-23: **r5B12**

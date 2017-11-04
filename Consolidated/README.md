@@ -1,7 +1,7 @@
 This folder contains consolidated [Eagle](https://github.com/eez-open/psu-hw/tree/master/Consolidated/Eagle%20files) and [Gerber](https://github.com/eez-open/psu-hw/tree/master/Consolidated/Gerber%20files%20%28panel%29) files of all required EEZ PSU modules:
  * Power module **r5B13** (two per unit)
  * Auxiliary power supply **r5B13**
- * Arduino shield **r5B12** (digital control)
+ * Arduino shield **r5B13** (digital control)
 
 Centroid files was generated using Eagle's *mount-marks-smd.ulp* script.
 
