@@ -26,45 +26,44 @@
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="14" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="13" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="13" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="10" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="11" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="13" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="13" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="10" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="11" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="9" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
-<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
-<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
-<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="39" name="tKeepout" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="13" fill="1" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="15" fill="1" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="13" fill="1" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="14" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="90" name="Modules" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
@@ -87,13 +86,10 @@
 <layer number="110" name="110" color="7" fill="1" visible="no" active="no"/>
 <layer number="111" name="111" color="7" fill="1" visible="no" active="no"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="no" active="no"/>
-<layer number="113" name="ReferenceLS" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="114" name="EEZ" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="115" name="border" color="12" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="7" fill="1" visible="no" active="no"/>
 <layer number="117" name="bridges" color="10" fill="1" visible="no" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
-<layer number="120" name="front_panel" color="11" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="no"/>
@@ -102,7 +98,6 @@
 <layer number="126" name="_bNames" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="129" name="rear_panel" color="10" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="no"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="no"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="no"/>
@@ -6947,7 +6942,7 @@
 <text x="27.7345" y="114.094996875" size="1.016" layer="125" ratio="10">JP2</text>
 <text x="43.4825" y="136.446996875" size="1.016" layer="125" ratio="10">JP3</text>
 <text x="331.9135" y="64.657503125" size="1.27" layer="125" ratio="10" rot="R180">JP4</text>
-<text x="22.50299375" y="63.897003125" size="1.27" layer="125" ratio="10">JP9</text>
+<text x="23.26499375" y="64.341503125" size="1.27" layer="125" ratio="10">JP9</text>
 <text x="47.58549375" y="63.897003125" size="1.27" layer="125" ratio="10">JP10</text>
 <text x="33.654" y="2.1709875" size="1.6764" layer="125" ratio="10">KK1</text>
 <text x="95.249" y="22.9235" size="1.27" layer="125" ratio="10">K_DOUT</text>
@@ -15675,7 +15670,7 @@ design rules under a new name.</description>
 </element>
 <element name="X8" library="EEZ_Lib1" package="HEADER_8-PIN" value="826629-8" x="79.12" y="71.12" smashed="yes">
 <attribute name="NAME" x="66.42" y="70.485" size="1.27" layer="25" ratio="10"/>
-<attribute name="VALUE" x="83.692" y="71.755" size="1.27" layer="27" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="74.802" y="72.517" size="1.27" layer="27" ratio="10"/>
 </element>
 <element name="X9" library="con-samtec" package="SSW-105-02-S-S" value="826629-5" x="48.894" y="71.12" smashed="yes" rot="R180">
 <attribute name="OC_NEWARK" value="11P9399" x="48.894" y="71.12" size="1.778" layer="27" rot="R180" display="off"/>
@@ -17060,9 +17055,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="317.9435" y="33.0835" size="1.016" layer="25" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="318.007" y="30.099" size="1.016" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="JP9" library="EEZ_Lib1" package="ZL303-03P" value="ZL303-03P" x="26.9865" y="64.4525" smashed="yes" rot="R270">
-<attribute name="NAME" x="22.503" y="63.897" size="1.27" layer="25" ratio="10"/>
-<attribute name="VALUE" x="24.891" y="68.6435" size="1.016" layer="27" ratio="10" rot="R270"/>
+<element name="JP9" library="EEZ_Lib1" package="ZL303-03P" value="ZL303-03P" x="27.7485" y="64.897" smashed="yes" rot="R270">
+<attribute name="NAME" x="23.265" y="64.3415" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="25.653" y="69.088" size="1.016" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="JP10" library="EEZ_Lib1" package="ZL303-03P" value="ZL303-03P" x="45.6555" y="62.738" smashed="yes">
 <attribute name="NAME" x="47.5855" y="63.897" size="1.27" layer="25" ratio="10"/>
@@ -23487,14 +23482,14 @@ design rules under a new name.</description>
 <contactref element="C84" pad="1"/>
 <wire x1="31.368" y1="60.198" x2="27.4555" y2="60.198" width="0.4064" layer="1"/>
 <wire x1="27.4555" y1="60.198" x2="26.9865" y2="60.667" width="0.4064" layer="1"/>
-<wire x1="26.9865" y1="60.667" x2="27.1135" y2="60.667" width="0.254" layer="1"/>
 <wire x1="31.368" y1="62.738" x2="32.765" y2="62.738" width="0.4064" layer="1"/>
 <wire x1="32.765" y1="62.738" x2="33.146" y2="62.357" width="0.4064" layer="1"/>
 <wire x1="33.146" y1="62.357" x2="33.146" y2="60.579" width="0.4064" layer="1"/>
 <wire x1="33.146" y1="60.579" x2="32.765" y2="60.198" width="0.4064" layer="1"/>
 <wire x1="32.765" y1="60.198" x2="31.368" y2="60.198" width="0.4064" layer="1"/>
 <contactref element="JP9" pad="1"/>
-<wire x1="26.9865" y1="60.667" x2="26.9865" y2="62.4525" width="0.254" layer="1"/>
+<wire x1="26.9865" y1="60.667" x2="26.9865" y2="62.135" width="0.254" layer="1"/>
+<wire x1="26.9865" y1="62.135" x2="27.7485" y2="62.897" width="0.254" layer="1"/>
 </signal>
 <signal name="XUSB_GND">
 <contactref element="C82" pad="2"/>
@@ -28759,12 +28754,12 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$105">
 <contactref element="IC17" pad="13"/>
-<wire x1="28.32" y1="64.4525" x2="29.209" y2="63.5635" width="0.254" layer="1"/>
 <wire x1="29.209" y1="63.5635" x2="29.209" y2="62.484" width="0.254" layer="1"/>
 <wire x1="29.209" y1="62.484" x2="30.225" y2="61.468" width="0.254" layer="1"/>
 <wire x1="30.225" y1="61.468" x2="31.368" y2="61.468" width="0.254" layer="1"/>
 <contactref element="JP9" pad="2"/>
-<wire x1="26.9865" y1="64.4525" x2="28.32" y2="64.4525" width="0.254" layer="1"/>
+<wire x1="27.7485" y1="64.897" x2="27.8755" y2="64.897" width="0.254" layer="1"/>
+<wire x1="27.8755" y1="64.897" x2="29.209" y2="63.5635" width="0.254" layer="1"/>
 </signal>
 <signal name="N$125">
 <contactref element="IC17" pad="5"/>
