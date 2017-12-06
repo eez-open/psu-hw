@@ -39,7 +39,7 @@ This is repository for the hardware part of the DIY fully programmable dual chan
 - Remote voltage programming
 - External digital trigger (3.3 or 5 V logic level)
 - Simple AC input protection (surge and transient protection)
-- Selectable 115/230 VAC, Soft-start/Stand-by mode
+- Selectable 115/230 VAC with solid-state (not mechanical!) soft-start/standby circuit
 - Simple DC output protection (reverse voltage, over-voltage)
 - Serial and parallel connection of the multiple channels
 - MCU based digital control module using 32-bit ARM Arduino [Due](https://www.arduino.cc/en/Main/ArduinoBoardDue)
