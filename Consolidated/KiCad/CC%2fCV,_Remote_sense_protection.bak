@@ -3,15 +3,15 @@ EELAYER 26 0
 EELAYER END
 $Descr User 12095 8468
 encoding utf-8
-Sheet 6 13
-Title "EEZ PSU consolidated"
+Sheet 1 13
+Title ""
 Date ""
-Rev "r5B13a"
+Rev ""
 Comp ""
 Comment1 ""
 Comment2 ""
 Comment3 ""
-Comment4 "CC/CV indicators, Sense error detection"
+Comment4 ""
 $EndDescr
 Wire Wire Line
 	5500 2400 5500 2500
@@ -69,6 +69,7 @@ Wire Wire Line
 Connection ~ 2600 3500
 Text GLabel 2300 3500 2    50   BiDi ~ 0
 CC_ACTIVE
+Connection ~ 2600 3500
 Wire Wire Line
 	3100 2400 3100 1900
 Wire Wire Line
@@ -292,6 +293,19 @@ F 1 "DINA4_L" H 900 7600 50  0001 C CNN
 F 2 "" H 900 7600 50  0001 C CNN
 F 3 "" H 900 7600 50  0001 C CNN
 	1    900  7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:DINA4_L #FRAME5
+U 2 0 D3799FD3
+P 7300 7600
+AR Path="/D3799FD3" Ref="#FRAME5"  Part="2" 
+AR Path="/5B870139/D3799FD3" Ref="#FRAME5"  Part="2" 
+F 0 "#FRAME5" H 7300 7600 50  0001 C CNN
+F 1 "DINA4_L" H 7300 7600 50  0001 C CNN
+F 2 "" H 7300 7600 50  0001 C CNN
+F 3 "" H 7300 7600 50  0001 C CNN
+	2    7300 7600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -909,6 +923,8 @@ Text Notes 1200 800  0    59   ~ 0
 Constant Voltage (CV) and Constant Current (CC) mode indicator
 Text Notes 4250 1925 0    42   ~ 0
 +0.275 V
+Text Notes 7375 6475 0    100  ~ 0
+CC/CV indicators, Sense error detection
 Text Notes 4275 2925 0    42   ~ 0
 -2.32 V
 Text Notes 1000 7300 0    59   ~ 0
@@ -922,5 +938,7 @@ Wire Notes Line
 Text Notes 6400 800  0    59   ~ 0
 Remote sense reverse polarity detection
 Wire Notes Line
-	1200 4575 11100 4575
+	1200 4575 6200 4575
+Wire Notes Line
+	6200 4575 11100 4575
 $EndSCHEMATC

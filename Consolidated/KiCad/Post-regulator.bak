@@ -3,15 +3,15 @@ EELAYER 26 0
 EELAYER END
 $Descr User 12017 8518
 encoding utf-8
-Sheet 4 13
-Title "EEZ PSU consolidated"
+Sheet 1 13
+Title ""
 Date ""
-Rev "r5B13a"
+Rev ""
 Comp ""
 Comment1 ""
 Comment2 ""
 Comment3 ""
-Comment4 "CV/CC linear post-regulator, Output enable and \"down-programmer\""
+Comment4 ""
 $EndDescr
 Wire Wire Line
 	4000 4300 3900 4400
@@ -36,6 +36,7 @@ Wire Wire Line
 Wire Wire Line
 	3900 4400 3900 4100
 Connection ~ 2900 4100
+Connection ~ 2200 4400
 Connection ~ 2200 4400
 Connection ~ 2900 4400
 Connection ~ 3900 4400
@@ -65,6 +66,7 @@ Wire Wire Line
 Wire Wire Line
 	4000 5100 3900 5000
 Connection ~ 2900 5300
+Connection ~ 2200 5000
 Connection ~ 2200 5000
 Connection ~ 2900 5000
 Connection ~ 3900 5300
@@ -366,6 +368,7 @@ Connection ~ 10600 900
 Connection ~ 7600 900 
 Connection ~ 4800 900 
 Connection ~ 4800 1200
+Connection ~ 5200 900 
 Wire Wire Line
 	9400 2500 9400 2800
 Wire Wire Line
@@ -447,6 +450,8 @@ OUT-
 Connection ~ 10600 4100
 Text GLabel 10700 4500 0    50   BiDi ~ 0
 OUT-
+Connection ~ 10600 4100
+Connection ~ 10600 4100
 Connection ~ 10600 4300
 Connection ~ 10600 4400
 Connection ~ 10600 4500
@@ -2526,12 +2531,22 @@ Wire Notes Line
 	5400 2900 5400 3500
 Wire Notes Line
 	5400 3500 5000 3500
+Wire Notes Line
+	10300 2200 10300 4300
+Text Notes 11325 7475 0    100  ~ 0
+CV/CC linear post-regulator, Output enable and "down-programmer"
 Text Notes 1300 7100 0    47   ~ 0
 Note 3.1: Q4 is mounted on the external heatsink
 Wire Notes Line
 	10500 4300 10300 4300
 Wire Notes Line
+	5000 4400 5000 7600
+Wire Notes Line
 	5400 750  5400 2875
+Wire Notes Line
+	8175 750  8175 2200
+Wire Notes Line
+	8175 2200 8175 2900
 Wire Notes Line
 	5400 750  8175 750 
 Text Notes 7300 2825 0    59   ~ 0
@@ -2539,11 +2554,15 @@ Down-programmer
 Text Notes 3975 1125 0    42   ~ 0
 See Note 3.1
 Wire Notes Line
+	5000 3500 5000 4000
+Wire Notes Line
 	5000 4000 1100 4000
 Wire Notes Line
 	8175 2200 10300 2200
 Wire Notes Line
 	5000 4400 10300 4400
+Wire Notes Line
+	10300 4400 10300 4300
 Text Notes 1100 7400 0    59   ~ 0
 Licensed under the TAPR Open Hardware License (www.tapr.org/OHL)
 Text Notes 1100 7600 0    59   ~ 0
@@ -2639,6 +2658,26 @@ Text Notes 2250 6025 0    56   ~ 0
 Text Notes 2250 6125 0    56   ~ 0
 24K
 Wire Notes Line
+	1200 5700 1600 5700
+Wire Notes Line
+	1600 5700 2100 5700
+Wire Notes Line
+	2100 5700 2600 5700
+Wire Notes Line
+	2600 5700 2600 5825
+Wire Notes Line
+	2600 5825 2600 6150
+Wire Notes Line
+	2600 6150 2100 6150
+Wire Notes Line
+	2100 6150 1600 6150
+Wire Notes Line
+	1600 6150 1200 6150
+Wire Notes Line
+	1200 6150 1200 5825
+Wire Notes Line
+	1200 5825 1200 5700
+Wire Notes Line
 	1600 6150 1600 5700
 Wire Notes Line
 	2100 6150 2100 5700
@@ -2654,20 +2693,48 @@ Text Notes 1750 6525 0    56   ~ 0
 6K2
 Text Notes 1750 6625 0    56   ~ 0
 4K7
+Wire Notes Line
+	1200 6300 1600 6300
+Wire Notes Line
+	1600 6300 2100 6300
+Wire Notes Line
+	2100 6750 1600 6750
+Wire Notes Line
+	1600 6750 1200 6750
+Wire Notes Line
+	1200 6750 1200 6425
+Wire Notes Line
+	1200 6425 1200 6300
+Wire Notes Line
+	1600 6750 1600 6425
 Text Notes 1275 5800 0    56   ~ 0
 Range
 Text Notes 1275 6400 0    56   ~ 0
 Range
+Wire Notes Line
+	1600 6425 1600 6300
+Wire Notes Line
+	2100 6750 2100 6425
 Text Notes 1750 6725 0    56   ~ 0
 3K9
 Text Notes 1300 6725 0    56   ~ 0
 0-5A
+Wire Notes Line
+	2100 6425 2100 6300
+Wire Notes Line
+	2100 6425 1600 6425
+Wire Notes Line
+	1200 6425 1600 6425
+Wire Notes Line
+	5000 4000 5000 4400
 Text Notes 2325 1950 0    42   ~ 0
 +48 V
 Text Notes 1300 7200 0    47   ~ 0
 Note 3.2: Use power resistors with the lowest possible TCR (± 75 ppm/oC or better)
 Text Notes 9925 6225 0    42   ~ 0
 See Note 3.2
+Text Notes 11325 7625 0    100  ~ 0
+EEZ PSU consolidated r5B13a - Sheet: 3/12
 Text Notes 6525 2850 0    42   ~ 0
 -11.5 V
 Text Notes 6825 850  0    42   ~ 0
@@ -2678,30 +2745,4 @@ Text Notes 7125 1950 0    42   ~ 0
 +16.75 V
 Text Notes 6125 2150 0    42   ~ 0
 -9.7 V
-Wire Notes Line
-	10300 2200 10300 4400
-Wire Notes Line
-	8175 750  8175 2900
-Wire Notes Line
-	5000 3500 5000 7600
-Wire Notes Line
-	1200 5700 2600 5700
-Wire Notes Line
-	2600 5700 2600 6150
-Wire Notes Line
-	1200 6150 2600 6150
-Wire Notes Line
-	1200 5700 1200 6150
-Wire Notes Line
-	1200 6300 2100 6300
-Wire Notes Line
-	1200 6750 2100 6750
-Wire Notes Line
-	1200 6300 1200 6750
-Wire Notes Line
-	1600 6300 1600 6750
-Wire Notes Line
-	2100 6300 2100 6750
-Wire Notes Line
-	1200 6425 2100 6425
 $EndSCHEMATC

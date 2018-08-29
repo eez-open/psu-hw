@@ -3,15 +3,15 @@ EELAYER 26 0
 EELAYER END
 $Descr User 12095 8507
 encoding utf-8
-Sheet 8 13
-Title "EEZ PSU consolidated"
+Sheet 1 13
+Title ""
 Date ""
-Rev "r5B13a"
+Rev ""
 Comp ""
 Comment1 ""
 Comment2 ""
 Comment3 ""
-Comment4 "Ethernet and USB PCB connectors"
+Comment4 ""
 $EndDescr
 Wire Wire Line
 	1800 2600 1600 2600
@@ -525,6 +525,19 @@ F 1 "DINA4_L" H 900 7700 50  0001 C CNN
 F 2 "" H 900 7700 50  0001 C CNN
 F 3 "" H 900 7700 50  0001 C CNN
 	1    900  7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:DINA4_L #FRAME6
+U 2 0 1767A31F
+P 7300 7700
+AR Path="/1767A31F" Ref="#FRAME6"  Part="2" 
+AR Path="/5B870870/1767A31F" Ref="#FRAME6"  Part="2" 
+F 0 "#FRAME6" H 7300 7700 50  0001 C CNN
+F 1 "DINA4_L" H 7300 7700 50  0001 C CNN
+F 2 "" H 7300 7700 50  0001 C CNN
+F 3 "" H 7300 7700 50  0001 C CNN
+	2    7300 7700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1114,6 +1127,8 @@ F 3 "" H 5100 6100 50  0001 C CNN
 $EndComp
 Text Notes 1175 7150 0    42   ~ 0
 Note 7.1: Mount X4 and X8 on the opposite (top) side of the PCB. Use 14 mm (e.g. Bossard B3X14/BN3320) for enclosure with 3 mm rear panel
+Text Notes 7375 6625 0    100  ~ 0
+Ethernet and USB PCB connectors
 Text Notes 7175 5025 0    47   ~ 0
 Data- 2
 Wire Notes Line
@@ -1168,8 +1183,12 @@ Text Notes 1000 7500 0    59   ~ 0
 More info at http://www.envox.hr/eez
 Text Notes 1175 750  0    59   ~ 0
 Ethernet connector with optional surge protection
+Wire Notes Line
+	11100 4500 7000 4500
 Text Notes 1175 4650 0    59   ~ 0
 USB connector with optional isolator and surge protection
+Wire Notes Line
+	7000 4500 1100 4500
 Wire Notes Line
 	7000 800  7000 4500
 Text Notes 7075 850  0    59   ~ 0
@@ -1199,21 +1218,27 @@ Text Notes 3000 5050 0    56   ~ 0
 Text Notes 3000 5150 0    56   ~ 0
 2-3
 Wire Notes Line
+	2200 4825 2800 4825
+Wire Notes Line
+	2800 4825 3325 4825
+Wire Notes Line
+	3325 5200 2800 5200
+Wire Notes Line
+	2800 5200 2200 5200
+Wire Notes Line
+	2200 5200 2200 4950
+Wire Notes Line
+	2200 4950 2200 4825
+Wire Notes Line
 	2800 5200 2800 4825
+Wire Notes Line
+	3325 5200 3325 4950
+Wire Notes Line
+	3325 4950 3325 4825
 Wire Notes Line
 	2200 4950 3325 4950
 Text Notes 2275 4925 0    56   ~ 0
 USB speed
 Text Notes 2400 5150 0    56   ~ 0
 Low
-Wire Notes Line
-	1100 4500 11100 4500
-Wire Notes Line
-	2200 4825 3325 4825
-Wire Notes Line
-	2200 5200 3325 5200
-Wire Notes Line
-	2200 4825 2200 5200
-Wire Notes Line
-	3325 4825 3325 5200
 $EndSCHEMATC

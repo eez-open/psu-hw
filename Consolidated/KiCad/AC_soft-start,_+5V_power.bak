@@ -3,15 +3,15 @@ EELAYER 26 0
 EELAYER END
 $Descr User 12264 8507
 encoding utf-8
-Sheet 7 13
-Title "EEZ PSU consolidated"
+Sheet 1 13
+Title ""
 Date ""
-Rev "r5B13a"
+Rev ""
 Comp ""
 Comment1 ""
 Comment2 ""
-Comment3 "+5V/+12V 5W power supply, fan control"
-Comment4 "AC input protection, in-rush current limiter"
+Comment3 ""
+Comment4 ""
 $EndDescr
 Wire Wire Line
 	3700 5000 3600 5000
@@ -108,6 +108,7 @@ Wire Wire Line
 	3000 4200 2800 4200
 Wire Wire Line
 	3300 4600 3300 4500
+Connection ~ 3600 4500
 Connection ~ 3600 4500
 Connection ~ 3300 4500
 Text GLabel 3600 4500 0    10   BiDi ~ 0
@@ -243,6 +244,7 @@ Connection ~ 3000 2300
 Connection ~ 3200 2300
 Connection ~ 2400 2300
 Connection ~ 9400 3100
+Connection ~ 2400 2300
 Connection ~ 2000 2300
 Wire Wire Line
 	8600 2000 8700 2000
@@ -406,6 +408,19 @@ F 1 "DINA4_L" H 900 7700 50  0001 C CNN
 F 2 "" H 900 7700 50  0001 C CNN
 F 3 "" H 900 7700 50  0001 C CNN
 	1    900  7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:DINA4_L #FRAME3
+U 2 0 5B1AAE12
+P 7300 7700
+AR Path="/5B1AAE12" Ref="#FRAME3"  Part="2" 
+AR Path="/5B870419/5B1AAE12" Ref="#FRAME3"  Part="2" 
+F 0 "#FRAME3" H 7300 7700 50  0001 C CNN
+F 1 "DINA4_L" H 7300 7700 50  0001 C CNN
+F 2 "" H 7300 7700 50  0001 C CNN
+F 3 "" H 7300 7700 50  0001 C CNN
+	2    7300 7700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -788,14 +803,14 @@ $EndComp
 $Comp
 L EEZ_PSU_consolidated_r5B13a-eagle-import:FIDUCIAL_2 FM4
 U 1 0 F73411F7
-P 6800 7750
+P 7100 7500
 AR Path="/F73411F7" Ref="FM4"  Part="1" 
 AR Path="/5B870419/F73411F7" Ref="FM4"  Part="1" 
-F 0 "FM4" H 6800 7750 50  0001 C CNN
-F 1 "FIDUCIAL_2" H 6800 7750 50  0001 C CNN
-F 2 "EEZ PSU consolidated r5B13a:FIDUCIAL_DUAL" H 6800 7750 50  0001 C CNN
-F 3 "" H 6800 7750 50  0001 C CNN
-	1    6800 7750
+F 0 "FM4" H 7100 7500 50  0001 C CNN
+F 1 "FIDUCIAL_2" H 7100 7500 50  0001 C CNN
+F 2 "EEZ PSU consolidated r5B13a:FIDUCIAL_DUAL" H 7100 7500 50  0001 C CNN
+F 3 "" H 7100 7500 50  0001 C CNN
+	1    7100 7500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1344,6 +1359,10 @@ F 3 "" H 9900 3100 50  0001 C CNN
 	3    9900 3100
 	-1   0    0    1   
 $EndComp
+Text Notes 7375 6525 0    100  ~ 0
+AC input protection, in-rush current limiter
+Text Notes 7375 6675 0    100  ~ 0
++5V/+12V 5W power supply, fan control
 Text Notes 1575 1100 0    59   ~ 0
 Line in
 Text Notes 1725 2200 0    59   ~ 0
@@ -1356,12 +1375,18 @@ Text Notes 9625 3050 0    59   ~ 0
 Neutral out
 Text Notes 2475 1975 0    59   ~ 0
 or 2027-47-BLF
+Wire Notes Line
+	1000 3400 4300 3400
 Text Notes 2800 5175 0    73   ~ 0
 10-pin IDC connector X5
 Text Notes 10675 2425 0    47   ~ 0
 Protective earth 1
 Text Notes 10675 2525 0    47   ~ 0
 Neutral out 2
+Wire Notes Line
+	4300 3400 8100 3400
+Wire Notes Line
+	8100 3400 11200 3400
 Wire Notes Line
 	10800 2900 10700 2900
 Wire Notes Line
@@ -1410,6 +1435,26 @@ Text Notes 1850 6425 0    56   ~ 0
 VPP24-210
 Text Notes 2650 6925 0    56   ~ 0
 Farnell: 1004387, TME: SIOV-S20K140
+Wire Notes Line
+	1100 6100 1800 6100
+Wire Notes Line
+	1800 6100 2600 6100
+Wire Notes Line
+	2600 6100 4350 6100
+Wire Notes Line
+	4350 6100 4350 6225
+Wire Notes Line
+	4350 6225 4350 7050
+Wire Notes Line
+	4350 7050 2600 7050
+Wire Notes Line
+	2600 7050 1800 7050
+Wire Notes Line
+	1800 7050 1100 7050
+Wire Notes Line
+	1100 7050 1100 6225
+Wire Notes Line
+	1100 6225 1100 6100
 Wire Notes Line
 	1800 7050 1800 6100
 Wire Notes Line
@@ -1496,14 +1541,4 @@ Wire Notes Line
 	8100 6200 8100 3400
 Text Notes 8875 4875 0    47   ~ 0
 +3.3 V level logic
-Wire Notes Line
-	1000 3400 11200 3400
-Wire Notes Line
-	1100 6100 4350 6100
-Wire Notes Line
-	4350 6100 4350 7050
-Wire Notes Line
-	1100 7050 4350 7050
-Wire Notes Line
-	1100 6100 1100 7050
 $EndSCHEMATC

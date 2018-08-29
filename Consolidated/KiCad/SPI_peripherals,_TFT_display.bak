@@ -3,18 +3,20 @@ EELAYER 26 0
 EELAYER END
 $Descr User 12168 8568
 encoding utf-8
-Sheet 11 13
-Title "EEZ PSU consolidated"
+Sheet 1 13
+Title ""
 Date ""
-Rev "r5B13a"
+Rev ""
 Comp ""
 Comment1 ""
 Comment2 ""
-Comment3 "Buzzer, temperature sensor (NTC)"
-Comment4 "TFT-touchscreen, RTC, EEPROM, Ethernet"
+Comment3 ""
+Comment4 ""
 $EndDescr
 Wire Bus Line
 	7500 5500 7600 5400
+Wire Bus Line
+	7600 5400 7600 5000
 Wire Bus Line
 	7500 5500 6600 5500
 Wire Bus Line
@@ -28,7 +30,13 @@ Wire Bus Line
 Wire Bus Line
 	3500 2900 3600 2800
 Wire Bus Line
+	3600 2800 3600 1600
+Wire Bus Line
 	1200 2900 1300 2800
+Wire Bus Line
+	1300 2800 1300 2000
+Wire Bus Line
+	1900 3000 1900 4600
 Wire Bus Line
 	3500 2900 6400 2900
 Wire Bus Line
@@ -45,12 +53,16 @@ Wire Bus Line
 	7100 3300 7500 3300
 Wire Bus Line
 	7500 3300 7600 3400
+Wire Bus Line
+	7600 3400 7600 4100
 Text Label 7100 3300 0    50   ~ 0
 LCD_DB[0..7]
 Wire Bus Line
 	11200 5000 10600 5000
 Wire Bus Line
 	10600 5000 10500 4900
+Wire Bus Line
+	10500 4900 10500 4200
 Text Label 11200 5000 2    50   ~ 0
 LCD_DB[8..15]
 Wire Wire Line
@@ -884,6 +896,19 @@ F 1 "DINA4_L" H 900 7700 50  0001 C CNN
 F 2 "" H 900 7700 50  0001 C CNN
 F 3 "" H 900 7700 50  0001 C CNN
 	1    900  7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:DINA4_L #FRAME10
+U 2 0 9E827E6D
+P 7300 7700
+AR Path="/9E827E6D" Ref="#FRAME10"  Part="2" 
+AR Path="/5B871692/9E827E6D" Ref="#FRAME10"  Part="2" 
+F 0 "#FRAME10" H 7300 7700 50  0001 C CNN
+F 1 "DINA4_L" H 7300 7700 50  0001 C CNN
+F 2 "" H 7300 7700 50  0001 C CNN
+F 3 "" H 7300 7700 50  0001 C CNN
+	2    7300 7700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2251,12 +2276,24 @@ F 3 "" H 10700 3600 50  0001 C CNN
 	1    10700 3600
 	-1   0    0    1   
 $EndComp
+Text Notes 7375 6525 0    100  ~ 0
+TFT-touchscreen, RTC, EEPROM, Ethernet
 Text Notes 9075 2125 0    42   ~ 0
 e.g. Farnell: 1187100
 Text Notes 9075 2050 0    59   ~ 0
 10K NTC
 Text Notes 9075 2200 0    42   ~ 0
 or TME: NTC-K45-10
+Text Notes 7375 6675 0    100  ~ 0
+Buzzer, temperature sensor (NTC)
+Wire Notes Line
+	1000 2700 3400 2700
+Wire Notes Line
+	3400 2700 6300 2700
+Wire Notes Line
+	6300 2700 6800 2700
+Wire Notes Line
+	8200 2700 11200 2700
 Wire Notes Line
 	8200 2700 8200 700 
 Wire Notes Line
@@ -2287,33 +2324,35 @@ Wire Notes Line
 	6300 5800 6300 2700
 Wire Notes Line
 	6800 2700 6800 700 
-Text Notes 6525 7075 0    47   ~ 0
+Text Notes 6875 7025 0    47   ~ 0
 +3.3V (Output) 8
-Text Notes 6525 6875 0    47   ~ 0
+Text Notes 6875 6825 0    47   ~ 0
 TX+ (Output) 6
 Wire Notes Line
-	6650 7150 6550 7150
+	7000 7100 6900 7100
 Wire Notes Line
-	6550 7150 6550 6350
+	6900 7100 6900 6300
 Wire Notes Line
-	6550 6350 6650 6350
+	6900 6300 7000 6300
 Wire Notes Line
-	6650 6350 6650 7150
+	7000 6300 7000 7100
 Text Notes 6100 6225 0    73   ~ 0
 8-pin connector X18
-Text Notes 6525 6375 0    47   ~ 0
+Text Notes 6875 6325 0    47   ~ 0
 LED Link (Output) 1
-Text Notes 6525 6975 0    47   ~ 0
+Text Notes 6875 6925 0    47   ~ 0
 TX- (Output) 7
-Text Notes 6525 6475 0    47   ~ 0
+Text Notes 6875 6425 0    47   ~ 0
 LED Act (Output) 2
-Text Notes 6525 6675 0    47   ~ 0
+Text Notes 6875 6625 0    47   ~ 0
 RX+ (Input) 4
-Text Notes 6525 6775 0    47   ~ 0
+Text Notes 6875 6725 0    47   ~ 0
 RX- (Input) 5
 Wire Notes Line
+	6800 2700 8200 2700
+Wire Notes Line
 	6300 5800 7300 5800
-Text Notes 6525 6575 0    47   ~ 0
+Text Notes 6875 6525 0    47   ~ 0
 Shield 3
 Text Notes 1100 3200 0    59   ~ 0
 controller
@@ -2325,18 +2364,4 @@ Text Notes 1000 7600 0    59   ~ 0
 Repository: https://github.com/eez-open
 Text Notes 1000 7500 0    59   ~ 0
 More info at http://www.envox.hr/eez
-Wire Notes Line
-	1000 2700 11200 2700
-Wire Bus Line
-	7600 5000 7600 5400
-Wire Bus Line
-	3600 1600 3600 2800
-Wire Bus Line
-	1300 2000 1300 2800
-Wire Bus Line
-	1900 3000 1900 4600
-Wire Bus Line
-	7600 3400 7600 4100
-Wire Bus Line
-	10500 4200 10500 4900
 $EndSCHEMATC

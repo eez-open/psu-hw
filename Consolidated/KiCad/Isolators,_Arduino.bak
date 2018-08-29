@@ -3,30 +3,42 @@ EELAYER 26 0
 EELAYER END
 $Descr User 12095 9097
 encoding utf-8
-Sheet 10 13
-Title "EEZ PSU consolidated"
+Sheet 1 13
+Title ""
 Date ""
-Rev "r5B13a"
+Rev ""
 Comp ""
 Comment1 ""
 Comment2 ""
-Comment3 "post-regulator PCB, Arduino breakout"
-Comment4 "I/O isolators for communication with"
+Comment3 ""
+Comment4 ""
 $EndDescr
+Wire Bus Line
+	1100 1600 1100 7200
 Text Label 1100 1600 1    50   ~ 0
 SCLK,MOSI,MISO,~RESET
+Wire Bus Line
+	5400 2500 5400 2000
 Wire Bus Line
 	5400 2000 5500 1900
 Wire Bus Line
 	5500 1900 7500 1900
+Wire Bus Line
+	7500 1500 7500 1900
+Wire Bus Line
+	7500 1900 7500 2500
 Text Label 5400 2000 0    50   ~ 0
 LCD_DB[8..15]
+Wire Bus Line
+	5400 2800 5400 4300
 Wire Bus Line
 	5400 4300 5500 4400
 Wire Bus Line
 	5500 4400 7400 4400
 Wire Bus Line
 	7400 4400 7500 4300
+Wire Bus Line
+	7500 4300 7500 2800
 Text Label 5500 4400 0    50   ~ 0
 LCD_DB[0..7]
 Wire Wire Line
@@ -369,6 +381,7 @@ Wire Wire Line
 	1900 6000 2100 6000
 Connection ~ 1900 5200
 Connection ~ 1900 6700
+Connection ~ 1900 5200
 Connection ~ 1900 6000
 Text GLabel 1900 5000 0    10   BiDi ~ 0
 +3V3
@@ -997,6 +1010,19 @@ F 1 "DINA4_L" H 900 8300 50  0001 C CNN
 F 2 "" H 900 8300 50  0001 C CNN
 F 3 "" H 900 8300 50  0001 C CNN
 	1    900  8300
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:DINA4_L #FRAME8
+U 2 0 EAD11AF2
+P 7300 8300
+AR Path="/EAD11AF2" Ref="#FRAME8"  Part="2" 
+AR Path="/5B8711C3/EAD11AF2" Ref="#FRAME8"  Part="2" 
+F 0 "#FRAME8" H 7300 8300 50  0001 C CNN
+F 1 "DINA4_L" H 7300 8300 50  0001 C CNN
+F 2 "" H 7300 8300 50  0001 C CNN
+F 3 "" H 7300 8300 50  0001 C CNN
+	2    7300 8300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2026,12 +2052,20 @@ F 3 "" H 9500 6400 50  0001 C CNN
 	1    9500 6400
 	1    0    0    -1  
 $EndComp
+Text Notes 7375 7125 0    100  ~ 0
+I/O isolators for communication with
+Text Notes 7375 7275 0    100  ~ 0
+post-regulator PCB, Arduino breakout
 Wire Notes Line
 	1000 4700 5100 4700
 Text Notes 1200 1500 0    59   ~ 0
 Ch #1 bus isolators
 Text Notes 1200 4800 0    59   ~ 0
 Ch #2 bus isolators
+Wire Notes Line
+	5100 4700 5100 1350
+Wire Notes Line
+	5100 8100 5100 4700
 Text Notes 5200 1500 0    59   ~ 0
 Arduino board breakout
 Text Notes 6650 4775 0    47   ~ 0
@@ -2132,18 +2166,4 @@ Text Notes 5250 8125 0    47   ~ 0
 Note 9.1: Solder SW1 on the PCB's opposite side
 Text Notes 10375 6675 0    42   ~ 0
 Tant.
-Wire Notes Line
-	5100 1350 5100 8100
-Wire Bus Line
-	5400 2000 5400 2500
-Wire Bus Line
-	7500 1500 7500 1900
-Wire Bus Line
-	5400 2800 5400 4300
-Wire Bus Line
-	1100 1600 1100 7200
-Wire Bus Line
-	7500 1900 7500 2500
-Wire Bus Line
-	7500 2800 7500 4300
 $EndSCHEMATC

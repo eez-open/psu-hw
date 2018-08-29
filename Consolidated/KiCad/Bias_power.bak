@@ -3,15 +3,15 @@ EELAYER 26 0
 EELAYER END
 $Descr User 12095 8268
 encoding utf-8
-Sheet 3 13
-Title "EEZ PSU consolidated"
+Sheet 1 13
+Title ""
 Date ""
-Rev "r5B13a"
+Rev ""
 Comp ""
 Comment1 ""
 Comment2 ""
-Comment3 "Powergood signal"
-Comment4 "Bias power supply (+/-5V, +5V, -12V)"
+Comment3 ""
+Comment4 ""
 $EndDescr
 Wire Wire Line
 	6200 4300 6100 4300
@@ -162,6 +162,8 @@ Wire Wire Line
 Wire Wire Line
 	7600 4400 7600 4500
 Wire Wire Line
+	7700 4500 8100 4500
+Wire Wire Line
 	8100 4500 8500 4500
 Wire Wire Line
 	8500 4500 8500 4400
@@ -171,6 +173,8 @@ Wire Wire Line
 	9000 4500 9400 4500
 Wire Wire Line
 	9000 4400 9000 4500
+Wire Wire Line
+	7600 4500 7700 4500
 Connection ~ 8500 4500
 Connection ~ 8100 4500
 Connection ~ 9000 4500
@@ -270,6 +274,19 @@ F 1 "DINA4_L" H 900 7000 50  0001 C CNN
 F 2 "" H 900 7000 50  0001 C CNN
 F 3 "" H 900 7000 50  0001 C CNN
 	1    900  7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:DINA4_L #FRAME7
+U 2 0 2DF7300F
+P 7300 7000
+AR Path="/2DF7300F" Ref="#FRAME7"  Part="2" 
+AR Path="/5B86F281/2DF7300F" Ref="#FRAME7"  Part="2" 
+F 0 "#FRAME7" H 7300 7000 50  0001 C CNN
+F 1 "DINA4_L" H 7300 7000 50  0001 C CNN
+F 2 "" H 7300 7000 50  0001 C CNN
+F 3 "" H 7300 7000 50  0001 C CNN
+	2    7300 7000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -822,6 +839,8 @@ Text Notes 9275 4425 0    42   ~ 0
 -5V
 Text Notes 9250 2875 0    42   ~ 0
 +5V
+Text Notes 7400 5800 0    100  ~ 0
+Bias power supply (+/-5V, +5V, -12V)
 Text Notes 5525 3950 0    42   ~ 0
 approx. -12.5 V
 Text Notes 1000 6700 0    59   ~ 0
@@ -836,6 +855,6 @@ Text Notes 8925 4350 0    42   ~ 0
 Tant.
 Text Notes 9275 1775 0    42   ~ 0
 Tant.
-Wire Wire Line
-	7600 4500 8100 4500
+Text Notes 7400 5950 0    100  ~ 0
+Powergood signal
 $EndSCHEMATC

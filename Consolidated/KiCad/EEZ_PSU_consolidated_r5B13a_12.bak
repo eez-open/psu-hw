@@ -3,15 +3,15 @@ EELAYER 26 0
 EELAYER END
 $Descr User 12119 8493
 encoding utf-8
-Sheet 13 13
-Title "EEZ PSU consolidated"
+Sheet 1 13
+Title ""
 Date ""
-Rev "r5B13a"
+Rev ""
 Comp ""
 Comment1 ""
 Comment2 ""
-Comment3 "Audio amplifier for 3.5\" TFT display, Micro SD card"
-Comment4 "Optional sections: AC input, 20-pin 3.5\" TFT display"
+Comment3 ""
+Comment4 ""
 $EndDescr
 Wire Wire Line
 	8500 5500 8400 5500
@@ -106,6 +106,7 @@ Connection ~ 2900 3200
 Connection ~ 3600 3200
 Connection ~ 2400 2200
 Connection ~ 2400 2500
+Connection ~ 2400 2200
 Connection ~ 2400 2700
 Connection ~ 3900 3200
 Connection ~ 2400 2000
@@ -287,6 +288,7 @@ Wire Wire Line
 	3300 1800 3300 2100
 Wire Wire Line
 	3300 2900 3300 2600
+Connection ~ 4200 2200
 Connection ~ 4200 2200
 Connection ~ 3900 2200
 Connection ~ 3600 2200
@@ -761,6 +763,19 @@ F 1 "DINA4_L" H 900 7700 50  0001 C CNN
 F 2 "" H 900 7700 50  0001 C CNN
 F 3 "" H 900 7700 50  0001 C CNN
 	1    900  7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:DINA4_L #FRAME12
+U 2 0 80CFEFC0
+P 7300 7700
+AR Path="/80CFEFC0" Ref="#FRAME12"  Part="2" 
+AR Path="/5B8722D3/80CFEFC0" Ref="#FRAME12"  Part="2" 
+F 0 "#FRAME12" H 7300 7700 50  0001 C CNN
+F 1 "DINA4_L" H 7300 7700 50  0001 C CNN
+F 2 "" H 7300 7700 50  0001 C CNN
+F 3 "" H 7300 7700 50  0001 C CNN
+	2    7300 7700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1291,12 +1306,22 @@ Text Notes 1200 4000 0    59   ~ 0
 Riverdi 3.5" LCD (optional)
 Wire Notes Line
 	3900 6300 3900 3800
+Wire Notes Line
+	3900 3800 1200 3800
+Wire Notes Line
+	11200 3800 9100 3800
 Text Notes 4100 4000 0    59   ~ 0
 Riverdi 3.5" Audio amplifier (optional)
+Text Notes 7375 6550 0    86   ~ 0
+Optional sections: AC input, 20-pin 3.5" TFT display
+Text Notes 7375 6675 0    86   ~ 0
+Audio amplifier for 3.5" TFT display, Micro SD card
+Wire Notes Line
+	9100 3800 5700 3800
+Wire Notes Line
+	5700 3800 3900 3800
 Wire Notes Line
 	5700 3800 5700 775 
 Text Notes 5900 1000 0    59   ~ 0
 Micro SD card (optional)
-Wire Notes Line
-	1200 3800 11200 3800
 $EndSCHEMATC

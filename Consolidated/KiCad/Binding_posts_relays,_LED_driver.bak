@@ -3,15 +3,15 @@ EELAYER 26 0
 EELAYER END
 $Descr User 12095 8640
 encoding utf-8
-Sheet 9 13
-Title "EEZ PSU consolidated"
+Sheet 1 13
+Title ""
 Date ""
-Rev "r5B13a"
+Rev ""
 Comp ""
 Comment1 ""
 Comment2 ""
-Comment3 "Output terminal protection"
-Comment4 "Remote sensing and outputs interconnector"
+Comment3 ""
+Comment4 ""
 $EndDescr
 Wire Wire Line
 	9300 2700 9400 2700
@@ -377,6 +377,10 @@ Wire Wire Line
 Wire Wire Line
 	1300 6300 1300 6200
 Wire Wire Line
+	1300 6300 1400 6300
+Wire Wire Line
+	1400 6300 1500 6300
+Wire Wire Line
 	1600 7000 1600 7100
 Wire Wire Line
 	1600 7100 1600 7200
@@ -481,6 +485,10 @@ Wire Wire Line
 	9500 2600 9500 1500
 Wire Wire Line
 	1300 5100 1300 5200
+Wire Wire Line
+	1500 5100 1400 5100
+Wire Wire Line
+	1400 5100 1300 5100
 Wire Wire Line
 	1500 5100 1500 5500
 Wire Wire Line
@@ -637,6 +645,10 @@ Wire Wire Line
 	1500 1500 1600 1500
 Wire Wire Line
 	1300 2100 1300 2200
+Wire Wire Line
+	1400 2100 1300 2100
+Wire Wire Line
+	1500 2100 1400 2100
 Wire Wire Line
 	1500 2100 1500 2400
 Wire Wire Line
@@ -859,6 +871,19 @@ F 1 "DINA4_L" H 900 7800 50  0001 C CNN
 F 2 "" H 900 7800 50  0001 C CNN
 F 3 "" H 900 7800 50  0001 C CNN
 	1    900  7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:DINA4_L #FRAME9
+U 2 0 17D06AA2
+P 7300 7800
+AR Path="/17D06AA2" Ref="#FRAME9"  Part="2" 
+AR Path="/5B870BAA/17D06AA2" Ref="#FRAME9"  Part="2" 
+F 0 "#FRAME9" H 7300 7800 50  0001 C CNN
+F 1 "DINA4_L" H 7300 7800 50  0001 C CNN
+F 2 "" H 7300 7800 50  0001 C CNN
+F 3 "" H 7300 7800 50  0001 C CNN
+	2    7300 7800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2026,10 +2051,18 @@ Text Notes 8550 1475 0    59   ~ 0
 Sense1
 Text Notes 10425 5675 0    59   ~ 0
 Sense2
+Text Notes 7375 6600 0    100  ~ 0
+Remote sensing and outputs interconnector
+Text Notes 7375 6800 0    100  ~ 0
+Output terminal protection
 Text Notes 1000 1100 0    59   ~ 0
 Ch#1 Power/Sense
 Text Notes 1025 4200 0    59   ~ 0
 Ch#2 Power/Sense
+Wire Notes Line
+	4900 900  4900 4000
+Wire Notes Line
+	4900 4000 4900 7700
 Wire Notes Line
 	1000 4000 4900 4000
 Text Notes 8350 4450 0    47   ~ 0
@@ -2142,6 +2175,24 @@ Text Notes 5450 7325 0    56   ~ 0
 P4SMAJ48A
 Text Notes 5450 7425 0    56   ~ 0
 P4SMAJ60A
+Wire Notes Line
+	5000 7000 5400 7000
+Wire Notes Line
+	5400 7000 6000 7000
+Wire Notes Line
+	6000 7000 6000 7125
+Wire Notes Line
+	6000 7125 6000 7450
+Wire Notes Line
+	6000 7450 5400 7450
+Wire Notes Line
+	5400 7450 5000 7450
+Wire Notes Line
+	5000 7450 5000 7125
+Wire Notes Line
+	5000 7125 5000 7000
+Wire Notes Line
+	5400 7450 5400 7125
 Text Notes 5075 7100 0    56   ~ 0
 Range
 Text Notes 1800 3025 0    47   ~ 0
@@ -2150,6 +2201,12 @@ Text Notes 1800 6100 0    47   ~ 0
 See Table 1
 Text Notes 5000 6950 0    47   ~ 0
 Table 1
+Wire Notes Line
+	5400 7125 5400 7000
+Wire Notes Line
+	6000 7125 5400 7125
+Wire Notes Line
+	5000 7125 5400 7125
 Wire Notes Line
 	7950 5900 7950 6100
 Wire Notes Line
@@ -2212,24 +2269,4 @@ Text Notes 5050 6325 0    47   ~ 0
 Note 8.2: Solder all LEDs on the PCB's opposite side
 Text Notes 7750 3425 0    47   ~ 0
 Iout=12 mA
-Wire Wire Line
-	1300 6300 1500 6300
-Wire Wire Line
-	1300 5100 1500 5100
-Wire Wire Line
-	1300 2100 1500 2100
-Wire Notes Line
-	4900 900  4900 7700
-Wire Notes Line
-	5000 7000 6000 7000
-Wire Notes Line
-	6000 7000 6000 7450
-Wire Notes Line
-	5000 7450 6000 7450
-Wire Notes Line
-	5000 7000 5000 7450
-Wire Notes Line
-	5400 7000 5400 7450
-Wire Notes Line
-	5000 7125 6000 7125
 $EndSCHEMATC

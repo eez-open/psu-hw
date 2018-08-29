@@ -3,15 +3,15 @@ EELAYER 26 0
 EELAYER END
 $Descr User 12119 8468
 encoding utf-8
-Sheet 12 13
-Title "EEZ PSU consolidated"
+Sheet 1 13
+Title ""
 Date ""
-Rev "r5B13a"
+Rev ""
 Comp ""
 Comment1 ""
 Comment2 ""
-Comment3 "V/F converter for battery NTC, External trigger"
-Comment4 "Reset control, soft-start driver, encoder"
+Comment3 ""
+Comment4 ""
 $EndDescr
 Wire Wire Line
 	8100 1400 7900 1400
@@ -688,6 +688,19 @@ F 1 "DINA4_L" H 900 7600 50  0001 C CNN
 F 2 "" H 900 7600 50  0001 C CNN
 F 3 "" H 900 7600 50  0001 C CNN
 	1    900  7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:DINA4_L #FRAME11
+U 2 0 64815AAA
+P 7300 7600
+AR Path="/64815AAA" Ref="#FRAME11"  Part="2" 
+AR Path="/5B871CD8/64815AAA" Ref="#FRAME11"  Part="2" 
+F 0 "#FRAME11" H 7300 7600 50  0001 C CNN
+F 1 "DINA4_L" H 7300 7600 50  0001 C CNN
+F 2 "" H 7300 7600 50  0001 C CNN
+F 3 "" H 7300 7600 50  0001 C CNN
+	2    7300 7600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1916,6 +1929,18 @@ Text Notes 5425 1775 0    59   ~ 0
 Ch#1 NTC
 Text Notes 5100 800  0    59   ~ 0
 Channel 1 V/F converter for battery NTC (optional)
+Wire Notes Line
+	5000 7500 5000 6400
+Wire Notes Line
+	5000 6400 5000 5900
+Wire Notes Line
+	5000 5900 5000 5100
+Wire Notes Line
+	5000 5100 5000 2600
+Wire Notes Line
+	5000 2600 5000 2100
+Wire Notes Line
+	5000 2100 5000 700 
 Text Notes 5100 2800 0    59   ~ 0
 External trigger protection and level shifter/buffer
 Text Notes 1100 800  0    59   ~ 0
@@ -1929,7 +1954,13 @@ More info at http://www.envox.hr/eez
 Text Notes 1100 2300 0    59   ~ 0
 Power-on reset generator and power control
 Wire Notes Line
+	9000 2600 5000 2600
+Wire Notes Line
 	5000 2100 1000 2100
+Text Notes 7375 6450 0    86   ~ 0
+Reset control, soft-start driver, encoder
+Text Notes 7375 6575 0    86   ~ 0
+V/F converter for battery NTC, External trigger
 Text Notes 5025 3975 0    59   ~ 0
 Input level: +2.5 ... 5.5 V
 Text Notes 1100 6000 0    59   ~ 0
@@ -1940,6 +1971,8 @@ Text Notes 9100 2775 0    59   ~ 0
 Rotary encoder
 Wire Notes Line
 	9000 5100 9000 2600
+Wire Notes Line
+	9000 5100 5000 5100
 Text Notes 5175 5325 0    59   ~ 0
 Opto-isolated digital output
 Text Notes 5175 6625 0    59   ~ 0
@@ -1947,15 +1980,13 @@ DOUT2 driver
 Text Notes 1150 5725 0    47   ~ 0
 Note 11.1: Solder SW2 on the PCB's opposite side
 Wire Notes Line
+	11200 5100 9000 5100
+Wire Notes Line
+	11200 2600 9000 2600
+Wire Notes Line
 	7200 6400 5000 6400
 Text Notes 9100 4875 0    47   ~ 0
 Encoder shaft length: 25 mm
 Text Notes 9100 4975 0    47   ~ 0
 Knob head: A3116068 (OKW), Knob cap: A3216007 (OKW)
-Wire Notes Line
-	5000 2600 11200 2600
-Wire Notes Line
-	5000 5100 11200 5100
-Wire Notes Line
-	5000 700  5000 7500
 $EndSCHEMATC

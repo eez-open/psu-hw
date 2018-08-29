@@ -3,15 +3,15 @@ EELAYER 26 0
 EELAYER END
 $Descr User 12095 8538
 encoding utf-8
-Sheet 2 13
-Title "EEZ PSU consolidated"
+Sheet 1 13
+Title ""
 Date ""
-Rev "r5B13a"
+Rev ""
 Comp ""
 Comment1 ""
 Comment2 ""
 Comment3 ""
-Comment4 "SMPS power pre-regulator with 100% duty cycle"
+Comment4 ""
 $EndDescr
 Wire Wire Line
 	5200 2700 5300 2700
@@ -130,6 +130,7 @@ Wire Wire Line
 Wire Wire Line
 	5700 1400 5800 1400
 Connection ~ 5800 2400
+Connection ~ 5300 2500
 Connection ~ 5300 2500
 Connection ~ 5800 900 
 Text GLabel 10400 900  0    50   BiDi ~ 0
@@ -291,6 +292,7 @@ Connection ~ 5000 6000
 Connection ~ 2900 3000
 Text Label 5200 5200 0    50   ~ 0
 SGND
+Connection ~ 2900 3000
 Connection ~ 4800 4100
 Text Label 2900 4100 0    50   ~ 0
 SGND
@@ -348,6 +350,7 @@ Wire Wire Line
 	8300 3300 8400 3300
 Wire Wire Line
 	8400 3300 8400 3600
+Connection ~ 8700 3600
 Connection ~ 8700 3600
 Connection ~ 8400 3600
 Wire Wire Line
@@ -422,6 +425,7 @@ Wire Wire Line
 Wire Wire Line
 	10000 3600 10500 3600
 Connection ~ 10000 3600
+Connection ~ 10000 3600
 Connection ~ 9300 3600
 Connection ~ 9400 3600
 Text GLabel 10500 3600 0    50   BiDi ~ 0
@@ -455,6 +459,19 @@ F 1 "DINA4_L" H 900 7700 50  0001 C CNN
 F 2 "" H 900 7700 50  0001 C CNN
 F 3 "" H 900 7700 50  0001 C CNN
 	1    900  7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:DINA4_L #FRAME1
+U 2 0 CC96BE8F
+P 7300 7700
+AR Path="/CC96BE8F" Ref="#FRAME1"  Part="2" 
+AR Path="/5B86EEA2/CC96BE8F" Ref="#FRAME1"  Part="2" 
+F 0 "#FRAME1" H 7300 7700 50  0001 C CNN
+F 1 "DINA4_L" H 7300 7700 50  0001 C CNN
+F 2 "" H 7300 7700 50  0001 C CNN
+F 3 "" H 7300 7700 50  0001 C CNN
+	2    7300 7700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1301,6 +1318,8 @@ Text Notes 1000 7600 0    59   ~ 0
 Repository: https://github.com/eez-open
 Text Notes 1000 7500 0    59   ~ 0
 More info at http://www.envox.hr/eez
+Text Notes 7375 6575 0    100  ~ 0
+SMPS power pre-regulator with 100% duty cycle
 Text Notes 7270 4075 0    59   ~ 0
 100u
 Text Notes 5900 3325 0    47   ~ 0

@@ -4,14 +4,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 13
-Title "EEZ PSU consolidated"
+Title ""
 Date ""
-Rev "r5B13a"
+Rev ""
 Comp ""
 Comment1 ""
 Comment2 ""
 Comment3 ""
-Comment4 "Root schematic"
+Comment4 ""
 $EndDescr
 $Sheet
 S 1000 1000 500  150 
@@ -85,12 +85,4 @@ U 5B8722D3
 F0 "EEZ PSU consolidated r5B13a_12" 50
 F1 "EEZ_PSU_consolidated_r5B13a_12.sch" 50
 $EndSheet
-Text Notes 1050 6850 0    59   ~ 0
-Licensed under the TAPR Open Hardware License (www.tapr.org/OHL)
-Text Notes 1050 7050 0    59   ~ 0
-Repository: https://github.com/eez-open
-Text Notes 1050 6950 0    59   ~ 0
-More info at http://www.envox.hr/eez
-Text Notes 7050 5150 0    118  ~ 0
-This is the Root schematic!
 $EndSCHEMATC
