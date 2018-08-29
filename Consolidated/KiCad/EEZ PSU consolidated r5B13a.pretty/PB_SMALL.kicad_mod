@@ -1,0 +1,13 @@
+(module PB_SMALL (layer F.Cu) (tedit 0)
+  (fp_text reference U$9 (at 0 0) (layer F.SilkS) hide
+    (effects (font (size 1.27 1.27) (thickness 0.15)))
+  )
+  (fp_text value "" (at 0 0) (layer F.SilkS) hide
+    (effects (font (size 1.27 1.27) (thickness 0.15)))
+  )
+  (fp_line (start -1.265 1.265) (end 1.265 -1.265) (layer F.SilkS) (width 0.254))
+  (fp_circle (center 0 0) (end 1.778 0) (layer F.SilkS) (width 0.254))
+  (fp_text user Pb (at -1.065 0.646) (layer F.SilkS)
+    (effects (font (size 1.2065 1.2065) (thickness 0.254)) (justify left bottom))
+  )
+)

@@ -1,0 +1,1329 @@
+Info: Processing component “ZD8:/5B870BAA/920AA273:EEZ PSU consolidated r5B13a:DO214AC”.
+
+Info: Processing component “C23:/5B86F281/69B575A3:EEZ PSU consolidated r5B13a:EC1206”.
+
+Info: Processing component “C21:/5B86F281/C8F27F71:EEZ PSU consolidated r5B13a:EC1206”.
+
+Info: Processing component “C130:/5B871692/E7304FE7:EEZ PSU consolidated r5B13a:EC1206”.
+
+Info: Processing component “C57:/5B86FCC4/22FDA0A9:EEZ PSU consolidated r5B13a:EC1206”.
+
+Info: Processing component “IC15:/5B870870/B577E39F:EEZ PSU consolidated r5B13a:DRL5”.
+
+Info: Processing component “ZD14:/5B871CD8/723E3B3D:EEZ PSU consolidated r5B13a:DO214AC”.
+
+Info: Processing component “ZD11:/5B871CD8/7B818DAF:EEZ PSU consolidated r5B13a:DO214AC”.
+
+Info: Processing component “ZD10:/5B870BAA/5F3B6E90:EEZ PSU consolidated r5B13a:DO214AC”.
+
+Info: Processing component “ZD9:/5B870BAA/DA83024E:EEZ PSU consolidated r5B13a:DO214AC”.
+
+Info: Processing component “C105:/5B8711C3/25B9E12B:EEZ PSU consolidated r5B13a:EC1206”.
+
+Info: Processing component “ZD7:/5B870BAA/9FA9C7F8:EEZ PSU consolidated r5B13a:DO214AC”.
+
+Info: Processing component “ZD6:/5B870870/4F60ED90:EEZ PSU consolidated r5B13a:DO214AC”.
+
+Info: Changing symbol “ZD6:/5B870870/4F60ED90” pin “C” net name from “Net-(K_DOUT-PadA2)” to “Net-(K_DOUT1-PadA2)”.
+
+Info: Processing component “ZD12:/5B871CD8/3AE115BD:EEZ PSU consolidated r5B13a:DO214AC”.
+
+Info: Processing component “D17:/5B8711C3/10BF0990:EEZ PSU consolidated r5B13a:DO214AA”.
+
+Info: Processing component “ZD15:/5B8722D3/D3FB81E3:EEZ PSU consolidated r5B13a:DO214AA”.
+
+Info: Processing component “ZD1:/5B86EEA2/376526C0:EEZ PSU consolidated r5B13a:DO214AA”.
+
+Info: Processing component “ZD5:/5B870419/5EA163C9:EEZ PSU consolidated r5B13a:DO201-BIDIR”.
+
+Info: Processing component “ZD4:/5B870419/4BC96379:EEZ PSU consolidated r5B13a:DO201-BIDIR”.
+
+Info: Processing component “FM6:/5B870BAA/17039B8E:EEZ PSU consolidated r5B13a:FIDUCIAL_DUAL”.
+
+Info: Processing component “OK3:/5B870419/E70EF526:EEZ PSU consolidated r5B13a:HCPL-181”.
+
+Info: Processing component “OK6:/5B871CD8/248DC63E:EEZ PSU consolidated r5B13a:HCPL-181”.
+
+Info: Processing component “OK5:/5B871CD8/6FC3A3A4:EEZ PSU consolidated r5B13a:HCPL-181”.
+
+Info: Processing component “Y2:/5B871692/5E2E8076:EEZ PSU consolidated r5B13a:HC-49_4H”.
+
+Info: Processing component “K_S2:/5B870BAA/E1A557B3:EEZ PSU consolidated r5B13a:G6K-2F”.
+
+Info: Processing component “K_S1:/5B870BAA/E2180004:EEZ PSU consolidated r5B13a:G6K-2F”.
+
+Info: Processing component “X20:/5B8722D3/DFA9EBB3:EEZ PSU consolidated r5B13a:FPC-20_ROTATED”.
+
+Info: Processing component “FM4:/5B870419/F73411F7:EEZ PSU consolidated r5B13a:FIDUCIAL_DUAL”.
+
+Info: Processing component “FM5:/5B870BAA/2C358A67:EEZ PSU consolidated r5B13a:FIDUCIAL_DUAL”.
+
+Info: Processing component “OK2:/5B870419/94B9D4CB:EEZ PSU consolidated r5B13a:DIL6-SMD”.
+
+Info: Processing component “FM3:/5B870419/A2DB92E8:EEZ PSU consolidated r5B13a:FIDUCIAL_DUAL”.
+
+Info: Processing component “FM2:/5B86EEA2/8BCA1F73:EEZ PSU consolidated r5B13a:FIDUCIAL_DUAL”.
+
+Info: Processing component “FM1:/5B86EEA2/DCDC82BF:EEZ PSU consolidated r5B13a:FIDUCIAL_DUAL”.
+
+Info: Processing component “F1:/5B871CD8/268E53C9:EEZ PSU consolidated r5B13a:F1210”.
+
+Info: Processing component “C145:/5B8722D3/8E9C6108:EEZ PSU consolidated r5B13a:ECAP7.5_18”.
+
+Info: Processing component “C146:/5B8722D3/AEEEC613:EEZ PSU consolidated r5B13a:ECAP7.5_18”.
+
+Info: Processing component “SW2:/5B871CD8/9E8CEC31:EEZ PSU consolidated r5B13a:EC12E_SW”.
+
+Info: Processing component “C129:/5B871692/49DD5F01:EEZ PSU consolidated r5B13a:EC1206”.
+
+Info: Processing component “C31:/5B86F281/FDB3934F:EEZ PSU consolidated r5B13a:EC1206”.
+
+Info: Processing component “C110:/5B871692/9C377AE7:EEZ PSU consolidated r5B13a:C1210”.
+
+Info: Processing component “C16:/5B86EEA2/020271E7:EEZ PSU consolidated r5B13a:C1210”.
+
+Info: Processing component “C22:/5B86F281/5A436AB8:EEZ PSU consolidated r5B13a:C1210”.
+
+Info: Processing component “C24:/5B86F281/8D4DE143:EEZ PSU consolidated r5B13a:C1210”.
+
+Info: Processing component “C29:/5B86F281/46B0858E:EEZ PSU consolidated r5B13a:C1210”.
+
+Info: Processing component “C30:/5B86F281/EA6B2BE4:EEZ PSU consolidated r5B13a:C1210”.
+
+Info: Processing component “C55:/5B86FCC4/7B3A80DA:EEZ PSU consolidated r5B13a:C1210”.
+
+Info: Processing component “C95:/5B870BAA/BABD5995:EEZ PSU consolidated r5B13a:C1210”.
+
+Info: Processing component “C91:/5B870BAA/20CAF282:EEZ PSU consolidated r5B13a:C1210”.
+
+Info: Processing component “C90:/5B870BAA/773E810E:EEZ PSU consolidated r5B13a:C1210”.
+
+Info: Processing component “C10:/5B86EEA2/3100FCDB:EEZ PSU consolidated r5B13a:C1210”.
+
+Info: Processing component “C88:/5B870BAA/7EF724FA:EEZ PSU consolidated r5B13a:C1210”.
+
+Info: Processing component “C143:/5B8722D3/361B3E2E:EEZ PSU consolidated r5B13a:C1206”.
+
+Info: Processing component “C144:/5B8722D3/9508029C:EEZ PSU consolidated r5B13a:C1206”.
+
+Info: Processing component “C147:/5B8722D3/925137CC:EEZ PSU consolidated r5B13a:C1206”.
+
+Info: Processing component “C148:/5B8722D3/E420C4A9:EEZ PSU consolidated r5B13a:C1206”.
+
+Info: Processing component “C142:/5B8722D3/6DBBFFF5:EEZ PSU consolidated r5B13a:C1206”.
+
+Info: Processing component “C1:/5B86EEA2/12BF0275:EEZ PSU consolidated r5B13a:C1206”.
+
+Info: Processing component “C4:/5B86EEA2/BD10B666:EEZ PSU consolidated r5B13a:C1206”.
+
+Info: Processing component “C8:/5B86EEA2/EA77A757:EEZ PSU consolidated r5B13a:C1206”.
+
+Info: Processing component “C94:/5B870BAA/967BC465:EEZ PSU consolidated r5B13a:CAPAE830X650N”.
+
+Info: Processing component “OK1:/5B870419/02324650:EEZ PSU consolidated r5B13a:DIL6-SMD”.
+
+Info: Processing component “IC10:/5B86FCC4/C438D0CC:EEZ PSU consolidated r5B13a:DGK8-M”.
+
+Info: Processing component “L5:/5B870419/50948D1E:EEZ PSU consolidated r5B13a:DE0704”.
+
+Info: Processing component “C27:/5B86F281/14B3F210:EEZ PSU consolidated r5B13a:C_6032-28R”.
+
+Info: Processing component “RN1:/5B871692/374665EF:EEZ PSU consolidated r5B13a:CAY16”.
+
+Info: Processing component “RN2:/5B871692/0EAF5119:EEZ PSU consolidated r5B13a:CAY16”.
+
+Info: Processing component “C96:/5B870BAA/5E5D6F36:EEZ PSU consolidated r5B13a:CAPAE830X650N”.
+
+Info: Processing component “C3:/5B86EEA2/A7483AD5:EEZ PSU consolidated r5B13a:CAPAE830X650N”.
+
+Info: Processing component “C86:/5B870BAA/21DCFD96:EEZ PSU consolidated r5B13a:CAPAE830X650N”.
+
+Info: Processing component “OK4:/5B870419/502154E6:EEZ PSU consolidated r5B13a:HCPL-181”.
+
+Info: Processing component “C89:/5B870BAA/0CD94EC6:EEZ PSU consolidated r5B13a:CAPAE830X650N”.
+
+Info: Processing component “C13:/5B86EEA2/1C4FC955:EEZ PSU consolidated r5B13a:CAPAE830X1050N”.
+
+Info: Processing component “C78:/5B870419/E4113A87:EEZ PSU consolidated r5B13a:CAPAE660X610N”.
+
+Info: Processing component “C80:/5B870419/EB6B3C9D:EEZ PSU consolidated r5B13a:CAPAE660X610N”.
+
+Info: Processing component “C77:/5B870419/7277BEE9:EEZ PSU consolidated r5B13a:CAPAE660X610N”.
+
+Info: Processing component “C103:/5B8711C3/545840A3:EEZ PSU consolidated r5B13a:CAPAE660X610N”.
+
+Info: Processing component “C93:/5B870BAA/E9C3B98D:EEZ PSU consolidated r5B13a:C1210”.
+
+Info: Processing component “C5:/5B86EEA2/000A48F2:EEZ PSU consolidated r5B13a:C1210”.
+
+Info: Processing component “C6:/5B86EEA2/AFAB1000:EEZ PSU consolidated r5B13a:C1210”.
+
+Info: Processing component “R41:/5B86F516/25335C33:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R27:/5B86F516/D54F13E9:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R28:/5B86F516/DCA88CDA:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R29:/5B86F516/5A394440:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R30:/5B86F516/37144564:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “JP10:/5B870870/04432732:EEZ PSU consolidated r5B13a:ZL303-03P”.
+
+Info: Processing component “R32:/5B86F516/B43988F7:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R34:/5B86F516/580752BB:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R136A1:/5B870BAA/2D5E3D32:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Adding new symbol “R136A1:/5B870BAA/2D5E3D32” footprint “EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R24:/5B86F281/F9A5DEFA:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R177:/5B871CD8/5AB57C08:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R178:/5B871CD8/3A504CB3:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R160:/5B871CD8/75988E61:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R36:/5B86F516/D53C8267:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R38:/5B86F516/4E46F10B:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R42:/5B86F516/F667BDE4:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R40:/5B86F516/F99EA41E:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R37:/5B86F516/9F84A1F3:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R39:/5B86F516/8E96C20E:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R101:/5B870139/CC688F37:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Adding new symbol “R78B1:/5B86FCC4/E8D586BE” footprint “EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R2:/5B86EEA2/910CEFCB:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R3:/5B86EEA2/2A684572:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R5:/5B86EEA2/4AFF4A0D:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R6:/5B86EEA2/C3B56805:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R7:/5B86EEA2/CE756263:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R8:/5B86EEA2/1338A13A:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R10:/5B86EEA2/41718522:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R25:/5B86F281/337EF62C:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “IC13:/5B86FCC4/770BEB2D:EEZ PSU consolidated r5B13a:PW(R-PDSO-G16)”.
+
+Info: Processing component “R100:/5B870139/D029C05C:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R99:/5B870139/6C1B4D68:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R98:/5B870139/937924BB:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R97:/5B870139/F5A6D381:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R96:/5B870139/E227B9CE:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R95:/5B870139/DBF7C3AD:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R94:/5B870139/39937A76:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R93:/5B870139/18C871D4:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R180:/5B86F516/83161B66:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “JP4:/5B871692/193933AB:EEZ PSU consolidated r5B13a:JP3-CUT”.
+
+Info: Processing component “LED_S2:/5B870BAA/B0F5C562:EEZ PSU consolidated r5B13a:LED_0805”.
+
+Info: Processing component “LED_PWR1:/5B870BAA/D94A45ED:EEZ PSU consolidated r5B13a:LED_0805”.
+
+Info: Adding new symbol “LED_PWR1:/5B870BAA/D94A45ED” footprint “EEZ PSU consolidated r5B13a:LED_0805”.
+
+Info: Processing component “LED_O2:/5B870BAA/A9012F9B:EEZ PSU consolidated r5B13a:LED_0805”.
+
+Info: Processing component “LED_S1:/5B870BAA/C17797F5:EEZ PSU consolidated r5B13a:LED_0805”.
+
+Info: Processing component “SP1:/5B871692/F99D3381:EEZ PSU consolidated r5B13a:LD-BZEN-0903”.
+
+Info: Processing component “SP2:/5B8722D3/2E4EEBD6:EEZ PSU consolidated r5B13a:LD-BZEN-0903”.
+
+Info: Processing component “LCD1:/5B871692/FD8AA809:EEZ PSU consolidated r5B13a:LCD_TFT_9341_MIRROR”.
+
+Info: Processing component “X11:/5B870870/5F2C949E:EEZ PSU consolidated r5B13a:KUSBVX-BS1N”.
+
+Info: Processing component “LED_CV1:/5B870BAA/C4F1DEAE:EEZ PSU consolidated r5B13a:LED_0805”.
+
+Info: Processing component “JP3:/5B86FCC4/8182258E:EEZ PSU consolidated r5B13a:JP3-CUT”.
+
+Info: Processing component “JP2:/5B86F516/BAFA783C:EEZ PSU consolidated r5B13a:JP3-CUT”.
+
+Info: Processing component “JP1:/5B86EEA2/0B60073D:EEZ PSU consolidated r5B13a:JP3-CUT”.
+
+Info: Processing component “L4:/5B86EEA2/F9CAFA06:EEZ PSU consolidated r5B13a:IHLP-2020BZ-11”.
+
+Info: Processing component “L3:/5B86EEA2/0B156C27:EEZ PSU consolidated r5B13a:IHLP-2020BZ-11”.
+
+Info: Processing component “X5:/5B870419/F6666F73:EEZ PSU consolidated r5B13a:IDC-10PIN”.
+
+Info: Processing component “X16:/5B8711C3/BB9D6A3E:EEZ PSU consolidated r5B13a:IDC-10PIN”.
+
+Info: Processing component “X8:/5B870870/ABF727A1:EEZ PSU consolidated r5B13a:HEADER_8-PIN”.
+
+Info: Processing component “X18:/5B871692/B97B101F:EEZ PSU consolidated r5B13a:HEADER_8-PIN”.
+
+Info: Processing component “IC1:/5B86EEA2/28002D22:EEZ PSU consolidated r5B13a:LTC_05-08-1666”.
+
+Info: Processing component “J2:/5B870BAA/D83AA60C:EEZ PSU consolidated r5B13a:PCB_TAB-4.8MM”.
+
+Info: Processing component “TR1:/5B870419/F6D25935:EEZ PSU consolidated r5B13a:PCB_ACDC_VTX_5W_DUAL”.
+
+Info: Processing component “C15:/5B86EEA2/707DE72D:EEZ PSU consolidated r5B13a:PANASONIC_F”.
+
+Info: Processing component “ZD13:/5B871CD8/3DFB0441:EEZ PSU consolidated r5B13a:MINIMELF”.
+
+Info: Processing component “X3:/5B870419/3628F368:EEZ PSU consolidated r5B13a:MINIFIT_6659-5”.
+
+Info: Processing component “X1:/5B86EEA2/9DC1DC97:EEZ PSU consolidated r5B13a:MINIFIT_39301039”.
+
+Info: Processing component “X12:/5B870BAA/756A31A6:EEZ PSU consolidated r5B13a:MC000006_MIRROR”.
+
+Info: Processing component “X14:/5B870BAA/E29D80B6:EEZ PSU consolidated r5B13a:MC000006_MIRROR”.
+
+Info: Processing component “SW1:/5B8711C3/5427593F:EEZ PSU consolidated r5B13a:M9040P”.
+
+Info: Processing component “C33:/5B86F516/23146F2A:EEZ PSU consolidated r5B13a:C1206”.
+
+Info: Processing component “LED_PROG2:/5B870BAA/FC8E073F:EEZ PSU consolidated r5B13a:LED_HSMH-C170”.
+
+Info: Processing component “LED_PROG1:/5B870BAA/DC206D80:EEZ PSU consolidated r5B13a:LED_HSMH-C170”.
+
+Info: Processing component “LED_CC2:/5B870BAA/5F9387C2:EEZ PSU consolidated r5B13a:LED_HSMH-C170”.
+
+Info: Processing component “LED_CC1:/5B870BAA/AA4A179D:EEZ PSU consolidated r5B13a:LED_HSMH-C170”.
+
+Info: Processing component “LED_SP1:/5B870BAA/3BFBD0DA:EEZ PSU consolidated r5B13a:LED_HSMH-C170”.
+
+Info: Adding new symbol “LED_SP1:/5B870BAA/3BFBD0DA” footprint “EEZ PSU consolidated r5B13a:LED_HSMH-C170”.
+
+Info: Processing component “LED_O1:/5B870BAA/E6235207:EEZ PSU consolidated r5B13a:LED_0805”.
+
+Info: Processing component “LED_CV2:/5B870BAA/CD1F1A1A:EEZ PSU consolidated r5B13a:LED_0805”.
+
+Info: Processing component “C104:/5B8711C3/148A259C:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C124:/5B871692/1B02BFFC:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C123:/5B871692/0E4D5A9F:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C121:/5B871692/6DA49C0D:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C97:/5B8711C3/7346883D:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C98:/5B8711C3/943EC404:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C99:/5B8711C3/FC3E0017:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C100:/5B8711C3/78FB91F5:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C101:/5B8711C3/907DB711:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C119:/5B871692/BB7E6586:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C125:/5B871692/B74BB10E:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C106:/5B8711C3/B59270D5:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C107:/5B8711C3/E278C145:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C108:/5B871692/9CDF8123:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C117:/5B871692/5771DF73:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C122:/5B871692/476AB021:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “J4:/5B870BAA/FBE157E1:EEZ PSU consolidated r5B13a:BP_5_12”.
+
+Info: Processing component “J6:/5B870BAA/C7D440D3:EEZ PSU consolidated r5B13a:BP_5_12”.
+
+Info: Processing component “J1:/5B870BAA/458172F0:EEZ PSU consolidated r5B13a:BP_5_12”.
+
+Info: Processing component “J3:/5B870BAA/00083527:EEZ PSU consolidated r5B13a:BP_5_12”.
+
+Info: Processing component “C109:/5B871692/382146EA:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C72:/5B870139/D56A278D:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C132:/5B871CD8/AF4866D0:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C81:/5B870870/FEF5F493:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C82:/5B870870/F8A07DF4:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C83:/5B870870/C0A7ABDA:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C84:/5B870870/249F87AB:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C85:/5B870870/00EB8535:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C128:/5B871692/D8CB4E4A:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C127:/5B871692/8D62675D:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “J5:/5B870BAA/7D54D00B:EEZ PSU consolidated r5B13a:BP_5_12”.
+
+Info: Processing component “C9:/5B86EEA2/93F3FA2A:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C49:/5B86F516/F533AE70:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C139:/5B871CD8/7021623C:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C141:/5B871CD8/264A421D:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C154:/5B8722D3/8DD2A69A:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C136:/5B871CD8/5F2803E5:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C20:/5B86F281/12BF572B:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C32:/5B86F516/3554C70B:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C102:/5B8711C3/5504E658:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Removing unused footprint “LED_PWR:/5B870BAA/D94A45ED”.
+
+Info: Removing unused footprint “U$5:”.
+
+Info: Removing unused footprint “U$6:”.
+
+Info: Removing unused footprint “U$7:”.
+
+Info: Removing unused footprint “U$8:”.
+
+Info: Removing unused footprint “U$9:”.
+
+Info: Removing unused footprint “EEZ_SIGNATURE2:”.
+
+Info: Removing unused footprint “MCU:/5B8711C3/38E59275”.
+
+Info: Removing unused footprint “K_SER:/5B870BAA/9978EF33”.
+
+Info: Removing unused footprint “K_PAR:/5B870BAA/DEAF6977”.
+
+Info: Removing unused footprint “U$1:”.
+
+Info: Removing unused footprint “LED_SP:/5B870BAA/3BFBD0DA”.
+
+Info: Removing unused footprint “C104A:/5B870BAA/EA09F549”.
+
+Info: Removing unused footprint “R136A:/5B870BAA/2D5E3D32”.
+
+Info: Removing unused footprint “C109A:/5B870BAA/3C0F6B5D”.
+
+Info: Removing unused footprint “R140A:/5B870BAA/AC78513E”.
+
+Info: Removing unused footprint “K_DOUT:/5B870870/703699AE”.
+
+Info: Removing unused footprint “R65A:/5B86F516/962C63C6”.
+
+Info: Removing unused footprint “R78B:/5B86FCC4/E8D586BE”.
+
+Info: Removing unused footprint “R65B:/5B86F516/43B2D74C”.
+
+Info: Processing component “J7:/5B8722D3/53EFFFD8:EEZ PSU consolidated r5B13a:693072010801”.
+
+Info: Processing component “FB3:/5B86F281/FFBF76DA:EEZ PSU consolidated r5B13a:BEAD0603”.
+
+Info: Processing component “FB4:/5B870870/ABDA1C34:EEZ PSU consolidated r5B13a:BEAD0603”.
+
+Info: Processing component “FB5:/5B870870/1F860F62:EEZ PSU consolidated r5B13a:BEAD0603”.
+
+Info: Processing component “FB6:/5B870870/19FB1623:EEZ PSU consolidated r5B13a:BEAD0603”.
+
+Info: Processing component “FB7:/5B871CD8/7F60FBD0:EEZ PSU consolidated r5B13a:BEAD0603”.
+
+Info: Processing component “FB2:/5B86F281/BFA9910D:EEZ PSU consolidated r5B13a:BEAD0603”.
+
+Info: Processing component “FB1:/5B86F281/BDB48BD5:EEZ PSU consolidated r5B13a:BEAD0603”.
+
+Info: Processing component “MCU1:/5B8711C3/38E59275:EEZ PSU consolidated r5B13a:ARDUINO+ICSP_MIRROR”.
+
+Info: Adding new symbol “MCU1:/5B8711C3/38E59275” footprint “EEZ PSU consolidated r5B13a:ARDUINO+ICSP_MIRROR”.
+
+Info: Processing component “C73:/5B870139/4DA409FC:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “X4:/5B870419/38D8100C:EEZ PSU consolidated r5B13a:22-23-2031”.
+
+Info: Processing component “X17:/5B871692/DD509A91:EEZ PSU consolidated r5B13a:22-23-2021”.
+
+Info: Changing copper zone net name from “VSS” to “GND”.
+Info: Removing unused footprint “EEZ_SIGNATURE:”.
+
+Info: Removing unused footprint “R78A:/5B86FCC4/BF39F499”.
+
+Info: Removing unused footprint “U$4:”.
+
+Info: Removing unused footprint “U$2:”.
+
+Info: Removing unused footprint “U$3:”.
+
+Info: Removing unused footprint “EEZ_SIGNATURE1:”.
+
+Info: Processing component “C131:/5B871692/136A0F4A:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C18:/5B86EEA2/99C619D6:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C19:/5B86EEA2/9B450B35:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C149:/5B8722D3/9E052CF6:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C92:/5B870BAA/3363AE49:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C25:/5B86F281/8D957147:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C87:/5B870BAA/EEC5F00B:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C26:/5B86F281/A0BF2441:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C120:/5B871692/9DDDB525:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C28:/5B86F281/795FF24F:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C151:/5B8722D3/30CD8390:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C140:/5B871CD8/9DF23C2E:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C14:/5B86EEA2/B8E8E18D:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C58:/5B86FCC4/F82BCFBC:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C37:/5B86F516/130E8044:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C34:/5B86F516/937EAE9D:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C36:/5B86F516/6B0E3443:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C64:/5B86FCC4/DB38927D:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C35:/5B86F516/E3413257:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C66:/5B86FCC4/F5063824:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C156:/5B871CD8/99722CA6:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C2:/5B86EEA2/763BB0C5:EEZ PSU consolidated r5B13a:C1206”.
+
+Info: Processing component “C75:/5B870419/9D2E4EBB:EEZ PSU consolidated r5B13a:C102-064X133”.
+
+Info: Processing component “C104A1:/5B870BAA/EA09F549:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Adding new symbol “C104A1:/5B870BAA/EA09F549” footprint “EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C11:/5B86EEA2/5F67C8AF:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C152:/5B8722D3/F74D0BDE:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C118:/5B871692/4747FEF7:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C153:/5B8722D3/1AACB6B6:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C155:/5B8722D3/29C637D0:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C67:/5B86FCC4/2B3649F3:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C7:/5B86EEA2/541178FC:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C150:/5B8722D3/62F2389B:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C109A1:/5B870BAA/3C0F6B5D:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Adding new symbol “C109A1:/5B870BAA/3C0F6B5D” footprint “EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C115:/5B871692/284AEFDC:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C17:/5B86EEA2/9029B192:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C61:/5B86FCC4/548BE353:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C60:/5B86FCC4/7C8BB522:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C12:/5B86EEA2/DDA156A1:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C44:/5B86F516/80C8C850:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C38:/5B86F516/8087CD94:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C53:/5B86F516/B38B1921:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C76:/5B870419/6A422362:EEZ PSU consolidated r5B13a:C075-052X106”.
+
+Info: Processing component “C111:/5B871692/3A464919:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C113:/5B871692/44F75243:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C114:/5B871692/98E95D18:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C126:/5B871692/31BE1853:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C43:/5B86F516/2129E4BB:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C45:/5B86F516/F1D35E7E:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C39:/5B86F516/B736FEA5:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C50:/5B86F516/BBCE79FA:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C51:/5B86F516/B5FA8829:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C54:/5B86FCC4/7AD5D4FB:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C56:/5B86FCC4/5C8639F4:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C134:/5B871CD8/E49F44B8:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C59:/5B86FCC4/8EF9A0BF:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C63:/5B86FCC4/EC4500C0:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C65:/5B86FCC4/E7D5C9F7:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C69:/5B86FCC4/D3FBB675:EEZ PSU consolidated r5B13a:C0603”.
+
+Info: Processing component “C46:/5B86F516/048D8E5C:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C68:/5B86FCC4/E14F816B:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C62:/5B86FCC4/EABAF55D:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C70:/5B870139/8D45B8A5:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C71:/5B870139/3CEB0D3B:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C138:/5B871CD8/2F5FD116:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C74:/5B870139/0498734A:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C133:/5B871CD8/9F22C80D:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C42:/5B86F516/3486AFA6:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C41:/5B86F516/D382C713:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “R31:/5B86F516/139179C0:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “C47:/5B86F516/EAD17618:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C48:/5B86F516/2519B722:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C116:/5B871692/A096F6CF:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C40:/5B86F516/326AD41E:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C52:/5B86F516/849D4C53:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C79:/5B870419/A167EEB6:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C137:/5B871CD8/BBA0131D:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “C135:/5B871CD8/4367AAA9:EEZ PSU consolidated r5B13a:C0805”.
+
+Info: Processing component “ZD2:/5B86F516/B70FD2B4:EEZ PSU consolidated r5B13a:SOD323-W”.
+
+Info: Processing component “IC17:/5B870870/2B3093F6:EEZ PSU consolidated r5B13a:SOIC-16W”.
+
+Info: Processing component “IC23:/5B8711C3/50C5BD01:EEZ PSU consolidated r5B13a:SOIC-16”.
+
+Info: Processing component “IC21:/5B8711C3/5B393C38:EEZ PSU consolidated r5B13a:SOIC-16”.
+
+Info: Processing component “IC20:/5B8711C3/A6F2FB68:EEZ PSU consolidated r5B13a:SOIC-16”.
+
+Info: Processing component “IC19:/5B8711C3/423C60E2:EEZ PSU consolidated r5B13a:SOIC-16”.
+
+Info: Processing component “D14:/5B870BAA/501335DE:EEZ PSU consolidated r5B13a:SOD323-W”.
+
+Info: Processing component “D18:/5B871692/15D816E0:EEZ PSU consolidated r5B13a:SOD323-W”.
+
+Info: Processing component “D15:/5B870BAA/70ACD835:EEZ PSU consolidated r5B13a:SOD323-W”.
+
+Info: Processing component “D12:/5B870870/CF94C26F:EEZ PSU consolidated r5B13a:SOD323-W”.
+
+Info: Processing component “IC7:/5B86F516/51F87B19:EEZ PSU consolidated r5B13a:SOIC127P600X173-8N”.
+
+Info: Processing component “ZD3:/5B86F516/40047A14:EEZ PSU consolidated r5B13a:SOD323-W”.
+
+Info: Processing component “ZD16:/5B86F281/4178B1DA:EEZ PSU consolidated r5B13a:SOD323-W”.
+
+Info: Processing component “ZD17:/5B870870/84E9DBFB:EEZ PSU consolidated r5B13a:SOD323-W”.
+
+Info: Processing component “D10:/5B86F516/F28DB082:EEZ PSU consolidated r5B13a:SOD323-R”.
+
+Info: Processing component “D8:/5B86F516/2D27320D:EEZ PSU consolidated r5B13a:SOD323-R”.
+
+Info: Processing component “D21:/5B871CD8/CDC926C0:EEZ PSU consolidated r5B13a:SOD323-R”.
+
+Info: Processing component “D7:/5B86F516/6865CB0A:EEZ PSU consolidated r5B13a:SOD323-R”.
+
+Info: Processing component “D6:/5B86F516/F4E8650C:EEZ PSU consolidated r5B13a:SOD323-R”.
+
+Info: Processing component “IC16:/5B870870/C0E1BD3A:EEZ PSU consolidated r5B13a:SOP192P292X122-4N”.
+
+Info: Changing symbol “IC29:/0282EACC” pin “7” net name from “VSS” to “GND”.
+
+Info: Processing component “IC24:/5B871692/460000D5:EEZ PSU consolidated r5B13a:SOP65P640X120-14N”.
+
+Info: Processing component “IC34:/5B8722D3/86424953:EEZ PSU consolidated r5B13a:SOP65P490X110-9N”.
+
+Info: Processing component “IC32:/5B871CD8/DC1EE195:EEZ PSU consolidated r5B13a:SOP65P400X130-8N”.
+
+Info: Changing symbol path “IC32:/60E9AF5F” to “/5B871CD8/DC1EE195”.
+
+Info: Changing symbol “IC32:/60E9AF5F” pin “8” net name from “VDD” to “+3V3”.
+
+Info: Changing symbol “IC32:/60E9AF5F” pin “4” net name from “VSS” to “GND”.
+
+Info: Processing component “IC18:/5B870BAA/6EFA9414:EEZ PSU consolidated r5B13a:SOP63P600X175-24N”.
+
+Info: Processing component “IC4:/5B86F281/3C2C53A5:EEZ PSU consolidated r5B13a:SOP50P490X110-17N”.
+
+Info: Processing component “D5:/5B86F516/D1642B09:EEZ PSU consolidated r5B13a:SOD323-R”.
+
+Info: Processing component “IC31:/5B871CD8/E590BB07:EEZ PSU consolidated r5B13a:SOIC127P600X175-8N”.
+
+Info: Processing component “IC9:/5B86FCC4/41F01822:EEZ PSU consolidated r5B13a:SOIC127P600X175-8N”.
+
+Info: Processing component “IC2:/5B86F281/BC34DC86:EEZ PSU consolidated r5B13a:SOIC127P600X175-8N”.
+
+Info: Processing component “IC25:/5B871692/30602457:EEZ PSU consolidated r5B13a:SOIC127P600X175-8N”.
+
+Info: Processing component “IC28:/5B871CD8/77EB61E3:EEZ PSU consolidated r5B13a:SOIC127P600X175-8N”.
+
+Info: Processing component “IC14:/5B870139/AA6C0E53:EEZ PSU consolidated r5B13a:SOIC127P600X175-14N”.
+
+Info: Processing component “IC6:/5B86F516/2214B29C:EEZ PSU consolidated r5B13a:SOIC127P600X173-8N”.
+
+Info: Processing component “IC5:/5B86F516/C057A724:EEZ PSU consolidated r5B13a:SOIC127P600X173-8N”.
+
+Info: Processing component “R65B1:/5B86F516/43B2D74C:EEZ PSU consolidated r5B13a:R2512”.
+
+Info: Processing component “K_SER1:/5B870BAA/9978EF33:EEZ PSU consolidated r5B13a:RT-C_016A5_ROUND”.
+
+Info: Adding new symbol “K_SER1:/5B870BAA/9978EF33” footprint “EEZ PSU consolidated r5B13a:RT-C_016A5_ROUND”.
+
+Info: Processing component “K_PAR1:/5B870BAA/DEAF6977:EEZ PSU consolidated r5B13a:RT-C_016A5_ROUND”.
+
+Info: Adding new symbol “K_PAR1:/5B870BAA/DEAF6977” footprint “EEZ PSU consolidated r5B13a:RT-C_016A5_ROUND”.
+
+Info: Processing component “K_DOUT1:/5B870870/703699AE:EEZ PSU consolidated r5B13a:RT-C_016A5_ROUND”.
+
+Info: Adding new symbol “K_DOUT1:/5B870870/703699AE” footprint “EEZ PSU consolidated r5B13a:RT-C_016A5_ROUND”.
+
+Info: Processing component “L1:/5B86EEA2/ABFF23E9:EEZ PSU consolidated r5B13a:RN112”.
+
+Info: Processing component “X7:/5B870870/9F533755:EEZ PSU consolidated r5B13a:RJ45-VERT”.
+
+Info: Processing component “Y1:/5B871692/7D89E2D8:EEZ PSU consolidated r5B13a:R26_XTAL”.
+
+Info: Processing component “NTC1:/5B86EEA2/655A7CC6:EEZ PSU consolidated r5B13a:R_0204_5+0805”.
+
+Info: Adding new symbol “R65B1:/5B86F516/43B2D74C” footprint “EEZ PSU consolidated r5B13a:R2512”.
+
+Info: Processing component “R105:/5B870419/2BFC61D2:EEZ PSU consolidated r5B13a:R2512”.
+
+Info: Processing component “R104:/5B870419/150225E3:EEZ PSU consolidated r5B13a:R2512”.
+
+Info: Processing component “R111:/5B870419/0D50473B:EEZ PSU consolidated r5B13a:R2512”.
+
+Info: Processing component “R65:/5B86F516/369965EA:EEZ PSU consolidated r5B13a:R2512”.
+
+Info: Processing component “R4:/5B86EEA2/3351D600:EEZ PSU consolidated r5B13a:R2512”.
+
+Info: Processing component “R26:/5B86F516/4668C9E6:EEZ PSU consolidated r5B13a:R2512”.
+
+Info: Processing component “R108:/5B870419/AE52F84A:EEZ PSU consolidated r5B13a:R2512”.
+
+Info: Processing component “R78B1:/5B86FCC4/E8D586BE:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “D4:/5B86F516/7DD77E9D:EEZ PSU consolidated r5B13a:SOD323-R”.
+
+Info: Processing component “D3:/5B86F516/EA1F28D5:EEZ PSU consolidated r5B13a:SOD323-R”.
+
+Info: Processing component “D9:/5B86F516/B81038A9:EEZ PSU consolidated r5B13a:SOD323-R”.
+
+Info: Processing component “D16:/5B870BAA/33277A18:EEZ PSU consolidated r5B13a:SOD323-R”.
+
+Info: Processing component “D13:/5B870BAA/9C4A1539:EEZ PSU consolidated r5B13a:SOD323-R”.
+
+Info: Processing component “D2:/5B86EEA2/753AA296:EEZ PSU consolidated r5B13a:SOD323-R”.
+
+Info: Processing component “D20:/5B871CD8/553A3D11:EEZ PSU consolidated r5B13a:SOD123”.
+
+Info: Processing component “D11:/5B870419/A4285309:EEZ PSU consolidated r5B13a:SOD123”.
+
+Info: Changing symbol “IC29:/0282EACC” pin “14” net name from “VDD” to “+3V3”.
+
+Info: Processing component “SH1:/5B86EEA2/10015477:EEZ PSU consolidated r5B13a:SHORT_NOHOLE”.
+
+Info: Processing component “SH2:/5B86EEA2/5ABD8682:EEZ PSU consolidated r5B13a:SHORT_NOHOLE”.
+
+Info: Processing component “SH3:/5B871692/CD25553D:EEZ PSU consolidated r5B13a:SHORT_NOHOLE”.
+
+Info: Processing component “C112:/5B871692/430E7ECC:EEZ PSU consolidated r5B13a:SG-R20MM”.
+
+Info: Processing component “SAR1:/5B870419/BDD41D1A:EEZ PSU consolidated r5B13a:SAR”.
+
+Info: Processing component “R65A1:/5B86F516/962C63C6:EEZ PSU consolidated r5B13a:R_2512-4WIRE”.
+
+Info: Adding new symbol “R65A1:/5B86F516/962C63C6” footprint “EEZ PSU consolidated r5B13a:R_2512-4WIRE”.
+
+Info: Processing component “R103:/5B870419/065D7068:EEZ PSU consolidated r5B13a:R_0913”.
+
+Info: Processing component “Q14:/5B86F516/474C9E1C:EEZ PSU consolidated r5B13a:TO229P990X239-3N”.
+
+Info: Processing component “Q21:/5B870419/9E148865:EEZ PSU consolidated r5B13a:TOP3S-1”.
+
+Info: Processing component “IC3:/5B86F281/E7B5215D:EEZ PSU consolidated r5B13a:TO254P1524X483-4N”.
+
+Info: Processing component “D22:/5B8722D3/E1EBF7A8:EEZ PSU consolidated r5B13a:TO252”.
+
+Info: Processing component “D1:/5B86EEA2/6183C455:EEZ PSU consolidated r5B13a:TO252”.
+
+Info: Processing component “D23:/5B8722D3/F5BC6505:EEZ PSU consolidated r5B13a:TO252”.
+
+Info: Processing component “D24:/5B8722D3/79C94C35:EEZ PSU consolidated r5B13a:TO252”.
+
+Info: Processing component “D25:/5B8722D3/4F6036A1:EEZ PSU consolidated r5B13a:TO252”.
+
+Info: Processing component “Q4:/5B86F516/F2A595F1:EEZ PSU consolidated r5B13a:TO247BH-CLR”.
+
+Info: Processing component “Q7:/5B86F516/7C787F1D:EEZ PSU consolidated r5B13a:TO229P990X239-3N”.
+
+Info: Processing component “Q22:/5B870419/39112899:EEZ PSU consolidated r5B13a:TOP3S-1”.
+
+Info: Processing component “Q1:/5B86EEA2/34F7D08B:EEZ PSU consolidated r5B13a:TO229P990X239-3N”.
+
+Info: Processing component “X19:/5B8722D3/E00AC1C7:EEZ PSU consolidated r5B13a:TBLOCK5.0_2”.
+
+Info: Processing component “SW3:/5B871CD8/AADFE4DD:EEZ PSU consolidated r5B13a:TACTM-6XN”.
+
+Info: Processing component “X2:/5B86EEA2/EE6A8C1F:EEZ PSU consolidated r5B13a:SSW-113-02-T-D-RA”.
+
+Info: Processing component “X10:/5B870870/65FD905D:EEZ PSU consolidated r5B13a:SSW-105-02-S-S”.
+
+Info: Processing component “X9:/5B870870/E9081463:EEZ PSU consolidated r5B13a:SSW-105-02-S-S”.
+
+Info: Processing component “IC30:/5B871CD8/A7DF8CAF:EEZ PSU consolidated r5B13a:SOT95P280X145-5N”.
+
+Info: Processing component “Q26:/5B870BAA/45FD1AB3:EEZ PSU consolidated r5B13a:SOT95P237X112-3N”.
+
+Info: Changing symbol “VAR4:/5B870870/A5CDC9AD” pin “1” net name from “Net-(K_DOUT-Pad11A)” to “Net-(K_DOUT1-Pad11A)”.
+
+Info: Processing component “JP9:/5B870870/6D2E4931:EEZ PSU consolidated r5B13a:ZL303-03P”.
+
+Info: Processing component “X6:/5B870870/8EB02048:EEZ PSU consolidated r5B13a:WR-TBL_3-PIN”.
+
+Info: Changing symbol “X6:/5B870870/8EB02048” pin “3” net name from “Net-(K_DOUT-Pad12A)” to “Net-(K_DOUT1-Pad12A)”.
+
+Info: Changing symbol “X6:/5B870870/8EB02048” pin “2” net name from “Net-(K_DOUT-Pad11A)” to “Net-(K_DOUT1-Pad11A)”.
+
+Info: Changing symbol “X6:/5B870870/8EB02048” pin “1” net name from “Net-(K_DOUT-Pad14A)” to “Net-(K_DOUT1-Pad14A)”.
+
+Info: Processing component “L2:/5B86EEA2/0840620C:EEZ PSU consolidated r5B13a:WE-HCI_1350_1365”.
+
+Info: Processing component “VAR4:/5B870870/A5CDC9AD:EEZ PSU consolidated r5B13a:VARISTOR_13MM”.
+
+Info: Changing symbol “VAR4:/5B870870/A5CDC9AD” pin “2” net name from “Net-(K_DOUT-Pad12A)” to “Net-(K_DOUT1-Pad12A)”.
+
+Info: Processing component “Q29:/5B870BAA/F121C6CA:EEZ PSU consolidated r5B13a:SOT95P237X112-3N”.
+
+Info: Processing component “VAR3:/5B870870/E3CA4E1E:EEZ PSU consolidated r5B13a:VARISTOR_13MM”.
+
+Info: Changing symbol “VAR3:/5B870870/E3CA4E1E” pin “2” net name from “Net-(K_DOUT-Pad14A)” to “Net-(K_DOUT1-Pad14A)”.
+
+Info: Changing symbol “VAR3:/5B870870/E3CA4E1E” pin “1” net name from “Net-(K_DOUT-Pad11A)” to “Net-(K_DOUT1-Pad11A)”.
+
+Info: Processing component “VAR2:/5B870419/936BA615:EEZ PSU consolidated r5B13a:VARISTOR”.
+
+Info: Processing component “VAR1:/5B870419/E8A8B8EF:EEZ PSU consolidated r5B13a:VARISTOR”.
+
+Info: Processing component “X13:/5B870BAA/89F53A46:EEZ PSU consolidated r5B13a:TSW-113-07-F-D”.
+
+Info: Processing component “X15:/5B870BAA/A188A0E9:EEZ PSU consolidated r5B13a:TSW-113-07-F-D”.
+
+Info: Processing component “IC26:/5B871692/694A8893:EEZ PSU consolidated r5B13a:TQFP48-7X7”.
+
+Info: Processing component “Q25:/5B870870/2176B837:EEZ PSU consolidated r5B13a:SOT103P240X110-3N”.
+
+Info: Processing component “Q10:/5B86F516/8C0DD2A6:EEZ PSU consolidated r5B13a:SOT23-BEC”.
+
+Info: Processing component “D19:/5B871CD8/4E22A259:EEZ PSU consolidated r5B13a:SOT23”.
+
+Info: Processing component “ZD18:/5B86FCC4/2453FF74:EEZ PSU consolidated r5B13a:SOT23”.
+
+Info: Processing component “Q23:/5B870419/C50B955C:EEZ PSU consolidated r5B13a:SOT223”.
+
+Info: Processing component “Q13:/5B86F516/D98636D8:EEZ PSU consolidated r5B13a:SOT223”.
+
+Info: Processing component “IC22:/5B8711C3/7EAF38F5:EEZ PSU consolidated r5B13a:SOT223”.
+
+Info: Processing component “Q3:/5B86EEA2/9A1C1EBA:EEZ PSU consolidated r5B13a:SOT103P240X110-3N”.
+
+Info: Processing component “Q16:/5B86FCC4/B7871434:EEZ PSU consolidated r5B13a:SOT103P240X110-3N”.
+
+Info: Processing component “Q30:/5B871692/DEDA13F4:EEZ PSU consolidated r5B13a:SOT103P240X110-3N”.
+
+Info: Processing component “Q9:/5B86F516/8519C255:EEZ PSU consolidated r5B13a:SOT23-BEC”.
+
+Info: Changing symbol “Q25:/5B870870/2176B837” pin “3” net name from “Net-(K_DOUT-PadA2)” to “Net-(K_DOUT1-PadA2)”.
+
+Info: Processing component “Q33:/5B871CD8/2F939DB1:EEZ PSU consolidated r5B13a:SOT103P240X110-3N”.
+
+Info: Processing component “Q34:/5B86F516/8F8BCDB3:EEZ PSU consolidated r5B13a:SOT103P240X110-3N”.
+
+Info: Processing component “Q24:/5B870419/C1C09424:EEZ PSU consolidated r5B13a:SOT103P240X110-3N”.
+
+Info: Processing component “Q32:/5B871CD8/CA0EE761:EEZ PSU consolidated r5B13a:SOT103P240X110-3N”.
+
+Info: Processing component “IC8:/5B86FCC4/D5CFED59:EEZ PSU consolidated r5B13a:SOP65P780X200-28N”.
+
+Info: Processing component “IC29:/5B871CD8/84F2BA6A:EEZ PSU consolidated r5B13a:SOP65P640X120-14N”.
+
+Info: Changing symbol path “IC29:/0282EACC” to “/5B871CD8/84F2BA6A”.
+
+Info: Processing component “Q6:/5B86F516/EA9AFBF2:EEZ PSU consolidated r5B13a:SOT230P700X180-4N”.
+
+Info: Processing component “Q28:/5B870BAA/806F67F3:EEZ PSU consolidated r5B13a:SOT95P237X112-3N”.
+
+Info: Processing component “Q27:/5B870BAA/9F2D8CC0:EEZ PSU consolidated r5B13a:SOT95P237X112-3N”.
+
+Info: Processing component “Q31:/5B871692/93F5E937:EEZ PSU consolidated r5B13a:SOT95P237X112-3N”.
+
+Info: Processing component “Q15:/5B86FCC4/F0AAECAC:EEZ PSU consolidated r5B13a:SOT95P237X112-3N”.
+
+Info: Processing component “IC12:/5B86FCC4/F20560FD:EEZ PSU consolidated r5B13a:SOT65P210X110-6N”.
+
+Info: Processing component “IC27:/5B871CD8/EAFF84EB:EEZ PSU consolidated r5B13a:SOT65P210X110-6N”.
+
+Info: Processing component “IC33:/5B8722D3/D3E829C8:EEZ PSU consolidated r5B13a:SOT65P210X110-5N”.
+
+Info: Processing component “Q8:/5B86F516/50D432C7:EEZ PSU consolidated r5B13a:SOT230P700X180-4N”.
+
+Info: Processing component “KK1:/5B870419/522E1805:EEZ PSU consolidated r5B13a:SK145”.
+
+Info: Processing component “Q17:/5B870139/9818507B:EEZ PSU consolidated r5B13a:SOT23-BEC”.
+
+Info: Processing component “Q20:/5B870139/B78C73EE:EEZ PSU consolidated r5B13a:SOT23-BEC”.
+
+Info: Processing component “Q19:/5B870139/855B551A:EEZ PSU consolidated r5B13a:SOT23-BEC”.
+
+Info: Processing component “Q18:/5B870139/785D968B:EEZ PSU consolidated r5B13a:SOT23-BEC”.
+
+Info: Processing component “Q2:/5B86EEA2/9695EDA1:EEZ PSU consolidated r5B13a:SOT23-BEC”.
+
+Info: Processing component “Q12:/5B86F516/195F2892:EEZ PSU consolidated r5B13a:SOT23-BEC”.
+
+Info: Processing component “Q5:/5B86F516/19F50B00:EEZ PSU consolidated r5B13a:SOT23-BEC”.
+
+Info: Processing component “Q11:/5B86F516/1560B660:EEZ PSU consolidated r5B13a:SOT23-BEC”.
+
+Info: Processing component “R50:/5B86F516/3B4B6C79:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R144:/5B871692/7C922FFD:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R66:/5B86F516/8A279E00:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R64:/5B86F516/B5625CEF:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R62:/5B86F516/B4940C1B:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R61:/5B86F516/6B7DF1B2:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R60:/5B86F516/E100AED0:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R59:/5B86F516/2813BDD5:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R58:/5B86F516/0C42FBA6:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R14:/5B86EEA2/46E6F5C8:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R141:/5B871692/ED1ABF5C:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R49:/5B86F516/CD91161D:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R48:/5B86F516/D5E3C82A:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R47:/5B86F516/63827C55:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R46:/5B86F516/98A737D5:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R45:/5B86F516/547A97EE:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R35:/5B86F516/DB462318:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R22:/5B86F281/52C74EFB:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R12:/5B86EEA2/0C5252B0:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R112:/5B870419/771C899A:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R154:/5B871CD8/50CBC051:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R155:/5B871CD8/C4F1527B:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R69:/5B86F516/6E2DC1AE:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R68:/5B86F516/C8CF53BD:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R137:/5B871692/A32C8897:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R138:/5B871692/92969460:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R142:/5B871692/DA051C84:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R140:/5B871692/48D9CD0D:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R113:/5B870419/AB2E56E3:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R13:/5B86EEA2/AFD5FB88:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R110:/5B870419/368BEEF4:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R109:/5B870419/284C4C46:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R107:/5B870419/FE7F47EE:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R106:/5B870419/09DA4735:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R56:/5B86F516/08EA6742:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R139:/5B871692/A1B87A46:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R70:/5B86F516/F56CF1CC:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R114:/5B870419/7929686E:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R176:/5B871692/ED3CA2A5:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R159:/5B871CD8/474F5BBE:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R136:/5B871692/76239D8C:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R161:/5B871CD8/2A1AD30E:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R175:/5B8722D3/67612961:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R163:/5B871CD8/6FB8209D:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R164:/5B871CD8/91ACC27C:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R165:/5B871CD8/DD49A7AC:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R166:/5B871CD8/8F3C6DCE:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R169:/5B8722D3/BB16371A:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R158:/5B871CD8/E7E51EA9:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R171:/5B8722D3/2430C287:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R172:/5B8722D3/BCC26C09:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R173:/5B8722D3/330E21E0:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R87:/5B870139/D842D756:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R140A1:/5B870BAA/AC78513E:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Adding new symbol “R140A1:/5B870BAA/AC78513E” footprint “EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R78A1:/5B86FCC4/BF39F499:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Adding new symbol “R78A1:/5B86FCC4/BF39F499” footprint “EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R11:/5B86EEA2/B75FF5DF:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R174:/5B8722D3/782F8705:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R15:/5B86EEA2/18909564:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R16:/5B86EEA2/003E38AE:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R17:/5B86F281/4D5E2BF5:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R18:/5B86F281/A5719578:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R19:/5B86F281/F581E55B:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R20:/5B86F281/932AD490:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R21:/5B86F281/8A536B23:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R179:/5B86F516/7AA312BA:EEZ PSU consolidated r5B13a:R1206”.
+
+Info: Processing component “R23:/5B86F281/ACAAC8E2:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R162:/5B871CD8/41E380BE:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R92:/5B870139/DDA79C74:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R43:/5B86F516/7D2C7E11:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R44:/5B86F516/9BCD6BEF:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R170:/5B8722D3/6C74829D:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R156:/5B871CD8/E51B62CE:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R157:/5B871CD8/2C88BB04:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R91:/5B870139/84C96DEF:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R9:/5B86EEA2/CA4910A9:EEZ PSU consolidated r5B13a:R1206”.
+
+Info: Processing component “R79:/5B86FCC4/559039CA:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R120:/5B870419/67BE43B4:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R119:/5B870419/A39918B3:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R118:/5B870419/B867C28C:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R117:/5B870419/F8E7629F:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R116:/5B870419/EE95BB55:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R115:/5B870419/BDC3FFDA:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R80:/5B86FCC4/EE288D2D:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R122:/5B870419/A6D3298E:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R90:/5B870139/91B5B65E:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R89:/5B870139/3D7A8C6C:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R88:/5B870139/7A2686D0:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R102:/5B870139/F7803C1F:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R86:/5B870139/E6F57E3A:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R85:/5B870139/8D27CAF0:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R145:/5B871692/E5C469B2:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R83:/5B870139/6ECE3EBB:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R133:/5B871692/4C71699D:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R33:/5B86F516/BB8D5F3D:EEZ PSU consolidated r5B13a:R1206”.
+
+Info: Processing component “R128:/5B870BAA/D269139C:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R167:/5B8722D3/8A06AF7F:EEZ PSU consolidated r5B13a:R1206”.
+
+Info: Processing component “R168:/5B8722D3/DCEE4719:EEZ PSU consolidated r5B13a:R1206”.
+
+Info: Processing component “R126:/5B870BAA/AADE52F3:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R81:/5B86FCC4/E3BF75C6:EEZ PSU consolidated r5B13a:R1206”.
+
+Info: Processing component “R143:/5B871692/41CD4099:EEZ PSU consolidated r5B13a:R1206”.
+
+Info: Processing component “R127:/5B870BAA/7D425ACE:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R52:/5B86F516/5471F310:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R129:/5B870BAA/3F9A1414:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R130:/5B870BAA/981B9EDA:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R131:/5B870BAA/9FA0ABB4:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R132:/5B870BAA/68EAA524:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R84:/5B870139/4B2E2211:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R125:/5B870870/5CDF71B1:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R124:/5B870870/89E41538:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R123:/5B870870/C55E9459:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R134:/5B871692/737EAA82:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R153:/5B871CD8/01E624B3:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R57:/5B86F516/7A0D0C5E:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R151:/5B871CD8/D044C37A:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R150:/5B871CD8/A164C48C:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R149:/5B871692/D7375A4C:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R148:/5B871692/6567C5BF:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R147:/5B871692/C24477A8:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R146:/5B871692/36CA376E:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R53:/5B86F516/6899F303:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R54:/5B86F516/8E586949:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R55:/5B86F516/64E2F0E6:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R67:/5B86F516/6B8CEA5C:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R152:/5B871CD8/1E91899A:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R135:/5B871692/23E059D6:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R121:/5B870419/F8C5D3FE:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R76:/5B86FCC4/F3BC3D82:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R74:/5B86FCC4/8818FBDD:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R77:/5B86FCC4/BF5D2A8C:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Changing symbol “R71:/5B86F516/9A46C1B3” pin “1” net name from “Net-(R65A-Pad1S)” to “Net-(R65A1-Pad1S)”.
+
+Info: Processing component “R75:/5B86FCC4/FA17532E:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R63:/5B86F516/961E07BF:EEZ PSU consolidated r5B13a:R1210”.
+
+Info: Processing component “R71:/5B86F516/9A46C1B3:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R72:/5B86F516/FB7CADF6:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R82:/5B870139/833542CF:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R51:/5B86F516/1710EAC5:EEZ PSU consolidated r5B13a:R0805”.
+
+Info: Processing component “R73:/5B86FCC4/85FABE99:EEZ PSU consolidated r5B13a:R0805”.
+
+Remove footprint U$8.
+Reconnect symbol VAR4 pin 1 from net Net-(K_DOUT-Pad11A) to net Net-(K_DOUT1-Pad11A).
+
+Remove footprint U$9.
+Reconnect symbol VAR4 pin 2 from net Net-(K_DOUT-Pad12A) to net Net-(K_DOUT1-Pad12A).
+
+Remove footprint EEZ_SIGNATURE2.
+Add net Net-(K_DOUT1-Pad12A).
+
+Add net Net-(K_DOUT1-Pad11A).
+
+Remove footprint U$7.
+Remove footprint K_PAR.
+Remove footprint U$6.
+Remove footprint R65B.
+Remove footprint U$5.
+Add symbol R78B1, footprint: EEZ PSU consolidated r5B13a:R0805.
+
+Remove footprint U$1.
+Add net Net-(K_DOUT1-Pad14A).
+
+Remove footprint EEZ_SIGNATURE1.
+Reconnect symbol VAR3 pin 2 from net Net-(K_DOUT-Pad14A) to net Net-(K_DOUT1-Pad14A).
+
+Remove footprint LED_SP.
+Reconnect symbol X6 pin 3 from net Net-(K_DOUT-Pad12A) to net Net-(K_DOUT1-Pad12A).
+
+Remove footprint R65A.
+Add net Net-(K_DOUT1-Pad12A).
+
+Remove footprint R136A.
+Reconnect symbol X6 pin 2 from net Net-(K_DOUT-Pad11A) to net Net-(K_DOUT1-Pad11A).
+
+Remove footprint K_DOUT.
+Remove footprint C104A.
+Add net Net-(K_DOUT1-Pad14A).
+
+Remove footprint R140A.
+Remove footprint MCU.
+Remove footprint R78B.
+Reconnect symbol X6 pin 1 from net Net-(K_DOUT-Pad14A) to net Net-(K_DOUT1-Pad14A).
+
+Remove footprint LED_PWR.
+Add symbol R78A1, footprint: EEZ PSU consolidated r5B13a:R0805.
+
+Remove footprint C109A.
+Add symbol R140A1, footprint: EEZ PSU consolidated r5B13a:R0805.
+
+Add net Net-(K_DOUT1-Pad11A).
+
+Remove footprint K_SER.
+Add symbol LED_SP1, footprint: EEZ PSU consolidated r5B13a:LED_HSMH-C170.
+
+Add symbol MCU1, footprint: EEZ PSU consolidated r5B13a:ARDUINO+ICSP_MIRROR.
+
+Add symbol K_DOUT1, footprint: EEZ PSU consolidated r5B13a:RT-C_016A5_ROUND.
+
+Add symbol K_PAR1, footprint: EEZ PSU consolidated r5B13a:RT-C_016A5_ROUND.
+
+Add symbol C104A1, footprint: EEZ PSU consolidated r5B13a:C0805.
+
+Add symbol K_SER1, footprint: EEZ PSU consolidated r5B13a:RT-C_016A5_ROUND.
+
+Add symbol R65A1, footprint: EEZ PSU consolidated r5B13a:R_2512-4WIRE.
+
+Add symbol R136A1, footprint: EEZ PSU consolidated r5B13a:R0805.
+
+Add symbol C109A1, footprint: EEZ PSU consolidated r5B13a:C0805.
+
+Reconnect symbol ZD6 pin C from net Net-(K_DOUT-PadA2) to net Net-(K_DOUT1-PadA2).
+
+Add net Net-(K_DOUT1-PadA2).
+
+Add symbol R65B1, footprint: EEZ PSU consolidated r5B13a:R2512.
+
+Add net Net-(R65A1-Pad1S).
+
+Reconnect symbol R71 pin 1 from net Net-(R65A-Pad1S) to net Net-(R65A1-Pad1S).
+
+Add symbol LED_PWR1, footprint: EEZ PSU consolidated r5B13a:LED_0805.
+
+Add net Net-(K_DOUT1-PadA2).
+
+Reconnect symbol Q25 pin 3 from net Net-(K_DOUT-PadA2) to net Net-(K_DOUT1-PadA2).
+
+Reconnect symbol IC29 pin 14 from net VDD to net +3V3.
+
+Reconnect symbol IC29 pin 7 from net VSS to net GND.
+
+Reconnect symbol IC32 pin 8 from net VDD to net +3V3.
+
+Reconnect symbol IC32 pin 4 from net VSS to net GND.
+
+Remove footprint U$3.
+Remove footprint U$2.
+Add net Net-(K_DOUT1-Pad11A).
+
+Remove footprint U$4.
+Reconnect symbol VAR3 pin 1 from net Net-(K_DOUT-Pad11A) to net Net-(K_DOUT1-Pad11A).
+
+Remove footprint R78A.
+Reconnect copper zone from net “VSS” to net “GND”.
+Remove footprint EEZ_SIGNATURE.
+Warning: Copper zone (net “VDD”) has no pads connected.
+Warning: Copper zone (net “Net-(K_PAR-Pad12B)”) has no pads connected.
+Warning: Copper zone (net “Net-(K_SER-Pad14A)”) has no pads connected.
+Warning: Copper zone (net “Net-(K_PAR-Pad12A)”) has no pads connected.
+Warning: Copper zone (net “VDD”) has no pads connected.
+Warning: Copper zone (net “VSS”) has no pads connected.
+Warning: Copper zone (net “VSS”) has no pads connected.
+Warning: Copper zone (net “VSS”) has no pads connected.
+Warning: Copper zone (net “VSS”) has no pads connected.
+Warning: Copper zone (net “VSS”) has no pads connected.
+Warning: Copper zone (net “VSS”) has no pads connected.
+Warning: Copper zone (net “VSS”) has no pads connected.
+Warning: Copper zone (net “VSS”) has no pads connected.
+Warning: Copper zone (net “VSS”) has no pads connected.
+Warning: Copper zone (net “VSS”) has no pads connected.
