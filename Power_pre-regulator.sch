@@ -1,0 +1,1379 @@
+EESchema Schematic File Version 4
+LIBS:EEZ PSU consolidated r5B13a-cache
+EELAYER 26 0
+EELAYER END
+$Descr User 12095 8538
+encoding utf-8
+Sheet 2 13
+Title "EEZ PSU consolidated"
+Date ""
+Rev "r5B13a"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 "SMPS power pre-regulator with 100% duty cycle"
+$EndDescr
+Wire Wire Line
+	5200 2700 5300 2700
+Text GLabel 5200 2700 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	7000 4400 7100 4300
+Wire Wire Line
+	6900 4300 7100 4300
+Wire Wire Line
+	6900 4200 6900 4300
+Wire Wire Line
+	6600 4300 6900 4300
+Wire Wire Line
+	6600 4300 6600 4000
+Wire Wire Line
+	7000 4800 7000 4400
+Wire Wire Line
+	5800 4100 5800 4200
+Wire Wire Line
+	5800 4200 5800 4300
+Wire Wire Line
+	6600 4300 5800 4300
+Wire Wire Line
+	8000 4300 7200 4300
+Wire Wire Line
+	7200 4300 7100 4300
+Wire Wire Line
+	7200 4100 7200 4300
+Connection ~ 7100 4300
+Connection ~ 6900 4300
+Connection ~ 6600 4300
+Connection ~ 5800 4200
+Connection ~ 7200 4300
+Text GLabel 7000 4400 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	6300 1400 6400 1400
+Wire Wire Line
+	6400 1400 6400 1700
+Wire Wire Line
+	6400 1700 6400 2000
+Wire Wire Line
+	6400 2000 6400 2100
+Wire Wire Line
+	6300 1700 6400 1700
+Wire Wire Line
+	6300 2000 6400 2000
+Connection ~ 6400 1700
+Connection ~ 6400 2000
+Text GLabel 6300 1400 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	3500 3600 3400 3600
+Wire Wire Line
+	3400 3600 3400 3700
+Text GLabel 3500 3600 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	3500 1200 4000 1200
+Wire Wire Line
+	4000 1200 4100 1200
+Wire Wire Line
+	4000 1300 4000 1200
+Connection ~ 4000 1200
+Text GLabel 3500 1200 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	5400 1400 5300 1400
+Wire Wire Line
+	5300 1400 5300 1500
+Text GLabel 5400 1400 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	5800 2400 5800 2000
+Wire Wire Line
+	5800 2000 5800 1700
+Wire Wire Line
+	5800 1700 5800 1400
+Wire Wire Line
+	5800 1400 5800 900 
+Wire Wire Line
+	4800 2500 5300 2500
+Wire Wire Line
+	5300 2500 5500 2500
+Wire Wire Line
+	5500 2500 5500 2300
+Wire Wire Line
+	5500 2300 5700 2300
+Wire Wire Line
+	5700 2300 5800 2400
+Wire Wire Line
+	5200 2400 5300 2400
+Wire Wire Line
+	5300 2400 5300 2500
+Wire Wire Line
+	4900 2700 4800 2700
+Wire Wire Line
+	4800 2700 4800 2500
+Wire Wire Line
+	5800 900  10400 900 
+Wire Wire Line
+	3500 900  3700 900 
+Wire Wire Line
+	3700 900  3700 1300
+Wire Wire Line
+	4700 2500 4800 2500
+Wire Wire Line
+	3700 900  5800 900 
+Wire Wire Line
+	6000 1400 5800 1400
+Wire Wire Line
+	6000 1700 5800 1700
+Wire Wire Line
+	6000 2000 5800 2000
+Wire Wire Line
+	5700 1400 5800 1400
+Connection ~ 5800 2400
+Connection ~ 5300 2500
+Connection ~ 5800 900 
+Text GLabel 10400 900  2    50   BiDi ~ 0
+DC_OUT
+Connection ~ 3700 900 
+Connection ~ 4800 2500
+Connection ~ 5800 1400
+Connection ~ 5800 1700
+Connection ~ 5800 2000
+Wire Wire Line
+	6200 4200 6200 4100
+Wire Wire Line
+	7800 5100 7800 5500
+Wire Wire Line
+	5500 3400 5500 5500
+Wire Wire Line
+	7800 5500 5500 5500
+Wire Wire Line
+	4700 3400 5500 3400
+Wire Wire Line
+	8100 5500 8000 5500
+Wire Wire Line
+	8000 5500 7800 5500
+Wire Wire Line
+	8000 5500 8000 5200
+Wire Wire Line
+	8000 5200 8100 5200
+Connection ~ 7800 5500
+Connection ~ 8000 5500
+Text Label 8050 5200 0    50   ~ 0
+FB
+Wire Wire Line
+	9100 4900 9100 5000
+Wire Wire Line
+	9100 5000 9100 5300
+Wire Wire Line
+	8900 5300 9100 5300
+Wire Wire Line
+	9100 5300 9400 5300
+Wire Wire Line
+	9000 5000 9100 5000
+Wire Wire Line
+	9100 5700 9100 5300
+Connection ~ 9100 5300
+Connection ~ 9100 5000
+Wire Wire Line
+	8700 4900 8700 5000
+Wire Wire Line
+	8700 5000 8700 5100
+Wire Wire Line
+	8800 5000 8700 5000
+Connection ~ 8700 5000
+Wire Wire Line
+	9800 5300 10300 5300
+Text GLabel 10300 5300 2    50   BiDi ~ 0
+OUT+
+Wire Wire Line
+	6600 3600 6900 3600
+Wire Wire Line
+	6600 3700 6600 3600
+Wire Wire Line
+	8700 4500 8700 4400
+Wire Wire Line
+	9100 4500 9100 4400
+Wire Wire Line
+	6900 3600 7200 3600
+Wire Wire Line
+	7200 3600 7800 3600
+Wire Wire Line
+	7800 4400 8700 4400
+Wire Wire Line
+	9100 4400 8700 4400
+Wire Wire Line
+	6900 3900 6900 3600
+Wire Wire Line
+	6400 3600 6600 3600
+Wire Wire Line
+	7800 4700 7800 4400
+Wire Wire Line
+	7800 3600 7900 3600
+Wire Wire Line
+	7800 4400 7800 3600
+Wire Wire Line
+	7900 3300 7800 3300
+Wire Wire Line
+	7800 3300 7800 3600
+Wire Wire Line
+	7200 3800 7200 3600
+Connection ~ 8700 4400
+Connection ~ 6900 3600
+Connection ~ 6600 3600
+Connection ~ 7800 4400
+Connection ~ 7800 3600
+Connection ~ 7200 3600
+Wire Wire Line
+	2000 2400 1800 2400
+Text GLabel 1800 2400 0    50   BiDi ~ 0
+PRE_OE
+Wire Wire Line
+	5000 4300 5200 4300
+Wire Wire Line
+	5000 4700 5000 4300
+Wire Wire Line
+	5200 4400 5200 4300
+Wire Wire Line
+	4700 3500 5000 3500
+Wire Wire Line
+	5000 3500 5000 4300
+Connection ~ 5000 4300
+Wire Wire Line
+	5200 4900 5200 4800
+Wire Wire Line
+	5800 3600 6000 3600
+Wire Wire Line
+	5800 3400 5800 3600
+Wire Wire Line
+	5800 3900 5800 3600
+Wire Wire Line
+	6200 3800 5900 3800
+Wire Wire Line
+	5900 3800 5800 3900
+Connection ~ 5800 3600
+Connection ~ 5800 3900
+Wire Wire Line
+	7800 6000 7000 6000
+Wire Wire Line
+	7000 6000 6400 6000
+Wire Wire Line
+	7800 6000 7800 5900
+Wire Wire Line
+	5000 5000 5000 5200
+Wire Wire Line
+	5000 5200 5200 5200
+Wire Wire Line
+	5000 5200 5000 6000
+Wire Wire Line
+	7000 5000 7000 6000
+Wire Wire Line
+	5000 6000 4800 6000
+Wire Wire Line
+	2900 3000 2900 2800
+Wire Wire Line
+	2900 2800 3100 2800
+Wire Wire Line
+	2900 3000 2900 4100
+Wire Wire Line
+	4800 3600 4800 4100
+Wire Wire Line
+	4800 4100 4800 6000
+Wire Wire Line
+	2400 3000 2900 3000
+Wire Wire Line
+	2900 4100 4800 4100
+Connection ~ 5000 5200
+Connection ~ 7000 6000
+Connection ~ 5000 6000
+Connection ~ 2900 3000
+Text Label 5200 5200 0    50   ~ 0
+SGND
+Connection ~ 4800 4100
+Text Label 2900 4100 0    50   ~ 0
+SGND
+Wire Wire Line
+	5800 2800 5800 3000
+Wire Wire Line
+	5800 2800 5700 2900
+Wire Wire Line
+	5700 2900 4700 2900
+Connection ~ 5800 2800
+Wire Wire Line
+	4700 2400 4900 2400
+Wire Wire Line
+	5100 3100 4700 3100
+Wire Wire Line
+	3300 3000 3500 3000
+Wire Wire Line
+	3400 2800 3500 2800
+Wire Wire Line
+	3500 2600 2300 2600
+Wire Wire Line
+	2300 2600 2300 2900
+Wire Wire Line
+	8500 5500 8600 5500
+Wire Wire Line
+	8600 5500 8700 5500
+Wire Wire Line
+	8500 5200 8600 5200
+Wire Wire Line
+	8600 5200 8600 5500
+Wire Wire Line
+	8800 5700 8600 5700
+Wire Wire Line
+	8600 5700 8600 5500
+Connection ~ 8600 5500
+Wire Wire Line
+	10300 6000 8200 6000
+Wire Wire Line
+	8200 6000 8200 5700
+Text GLabel 10300 6000 2    50   BiDi ~ 0
+~SET_100%
+Wire Wire Line
+	8700 3600 8800 3600
+Wire Wire Line
+	8800 3300 8700 3300
+Wire Wire Line
+	8700 3300 8700 3600
+Wire Wire Line
+	8300 3600 8400 3600
+Wire Wire Line
+	8400 3600 8700 3600
+Wire Wire Line
+	8700 3700 8700 3600
+Wire Wire Line
+	8300 3300 8400 3300
+Wire Wire Line
+	8400 3300 8400 3600
+Connection ~ 8700 3600
+Connection ~ 8400 3600
+Wire Wire Line
+	10000 4300 10000 4100
+Wire Wire Line
+	9400 4000 9400 4300
+Wire Wire Line
+	10000 4300 9400 4300
+Wire Wire Line
+	8700 4000 8700 4300
+Wire Wire Line
+	8200 4300 8700 4300
+Wire Wire Line
+	8700 4300 9400 4300
+Wire Wire Line
+	10000 4300 10625 4300
+Connection ~ 8700 4300
+Connection ~ 9400 4300
+Connection ~ 10000 4300
+Text GLabel 10625 4300 2    50   BiDi ~ 0
+POUT-
+Wire Wire Line
+	2200 3000 1600 3000
+Text Label 1600 3000 0    50   ~ 0
+SYNC
+Wire Wire Line
+	3500 2400 2400 2400
+Wire Wire Line
+	3100 1200 2800 1200
+Wire Wire Line
+	1500 1200 2800 1200
+Text Label 2150 1200 0    50   ~ 0
+DC-
+Connection ~ 2800 1200
+Wire Wire Line
+	1500 900  2800 900 
+Wire Wire Line
+	2800 900  3100 900 
+Connection ~ 2800 900 
+Text Label 2150 900  0    50   ~ 0
+DC+
+Wire Wire Line
+	3200 1700 3700 1700
+Wire Wire Line
+	4000 1600 4000 1700
+Wire Wire Line
+	4000 1700 3700 1700
+Wire Wire Line
+	3700 1600 3700 1700
+Wire Wire Line
+	1500 1700 3200 1700
+Wire Wire Line
+	3200 1700 3200 1900
+Connection ~ 3700 1700
+Text GLabel 1500 1700 2    50   BiDi ~ 0
+EARTH
+Connection ~ 3200 1700
+Wire Wire Line
+	9200 3600 9300 3600
+Wire Wire Line
+	9300 3600 9400 3600
+Wire Wire Line
+	9400 3600 10000 3600
+Wire Wire Line
+	9200 3300 9300 3300
+Wire Wire Line
+	9300 3300 9300 3600
+Wire Wire Line
+	9400 3700 9400 3600
+Wire Wire Line
+	10000 3800 10000 3600
+Wire Wire Line
+	10000 3600 10500 3600
+Connection ~ 10000 3600
+Connection ~ 9300 3600
+Connection ~ 9400 3600
+Text GLabel 10500 3600 2    50   BiDi ~ 0
+PREG_OUT
+Wire Wire Line
+	2800 1900 2400 1900
+Text Label 2400 1900 0    50   ~ 0
+HEATSINK
+Wire Wire Line
+	5500 3100 5600 3100
+Wire Wire Line
+	2000 4900 1400 4900
+Wire Wire Line
+	1400 4900 1400 5000
+Text Label 2000 4900 2    50   ~ 0
+TEMP_NTC
+Wire Wire Line
+	2000 5600 1400 5600
+Wire Wire Line
+	1400 5600 1400 5400
+Text Label 2000 5600 2    50   ~ 0
+MCU_VCC
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:DINA4_L #FRAME1
+U 1 0 CC96BE83
+P 900 7700
+AR Path="/CC96BE83" Ref="#FRAME1"  Part="1" 
+AR Path="/5B86EEA2/CC96BE83" Ref="#FRAME1"  Part="1" 
+F 0 "#FRAME1" H 900 7700 50  0001 C CNN
+F 1 "DINA4_L" H 900 7700 50  0001 C CNN
+F 2 "" H 900 7700 50  0001 C CNN
+F 3 "" H 900 7700 50  0001 C CNN
+	1    900  7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:R-EU_R0805 R13
+U 1 0 AFD5FB88
+P 7800 4900
+AR Path="/AFD5FB88" Ref="R13"  Part="1" 
+AR Path="/5B86EEA2/AFD5FB88" Ref="R13"  Part="1" 
+F 0 "R13" V 7791 4850 59  0000 R BNN
+F 1 "316K" V 7880 4850 59  0000 R BNN
+F 2 "EEZ PSU consolidated r5B13a:R0805" H 7800 4900 50  0001 C CNN
+F 3 "" H 7800 4900 50  0001 C CNN
+	1    7800 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:R-EU_R0805 R16
+U 1 0 003E38AE
+P 7800 5700
+AR Path="/003E38AE" Ref="R16"  Part="1" 
+AR Path="/5B86EEA2/003E38AE" Ref="R16"  Part="1" 
+F 0 "R16" V 7734 5650 59  0000 R TNN
+F 1 "4K7" V 7820 5650 59  0000 R TNN
+F 2 "EEZ PSU consolidated r5B13a:R0805" H 7800 5700 50  0001 C CNN
+F 3 "" H 7800 5700 50  0001 C CNN
+	1    7800 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:C-EUC1210 C6
+U 1 0 AFAB1000
+P 6100 2000
+AR Path="/AFAB1000" Ref="C6"  Part="1" 
+AR Path="/5B86EEA2/AFAB1000" Ref="C6"  Part="1" 
+F 0 "C6" V 6115 1890 59  0000 R TNN
+F 1 "4u7/100V" V 6015 1890 59  0000 R TNN
+F 2 "EEZ PSU consolidated r5B13a:C1210" H 6100 2000 50  0001 C CNN
+F 3 "" H 6100 2000 50  0001 C CNN
+	1    6100 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:C-EUC1210 C10
+U 1 0 3100FCDB
+P 6600 3800
+AR Path="/3100FCDB" Ref="C10"  Part="1" 
+AR Path="/5B86EEA2/3100FCDB" Ref="C10"  Part="1" 
+F 0 "C10" H 6685 3765 59  0000 L BNN
+F 1 "10u" H 6685 3690 59  0000 L BNN
+F 2 "EEZ PSU consolidated r5B13a:C1210" H 6600 3800 50  0001 C CNN
+F 3 "" H 6600 3800 50  0001 C CNN
+	1    6600 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:R-EU_R1206 R9
+U 1 0 CA4910A9
+P 6000 4200
+AR Path="/CA4910A9" Ref="R9"  Part="1" 
+AR Path="/5B86EEA2/CA4910A9" Ref="R9"  Part="1" 
+F 0 "R9" H 5900 4334 59  0000 L BNN
+F 1 "10R" H 5900 4245 59  0000 L BNN
+F 2 "EEZ PSU consolidated r5B13a:R1206" H 6000 4200 50  0001 C CNN
+F 3 "" H 6000 4200 50  0001 C CNN
+	1    6000 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:C-EUC0805 C14
+U 1 0 B8E8E18D
+P 6200 3900
+AR Path="/B8E8E18D" Ref="C14"  Part="1" 
+AR Path="/5B86EEA2/B8E8E18D" Ref="C14"  Part="1" 
+F 0 "C14" H 6285 3865 59  0000 L BNN
+F 1 "470p" H 6285 3790 59  0000 L BNN
+F 2 "EEZ PSU consolidated r5B13a:C0805" H 6200 3900 50  0001 C CNN
+F 3 "" H 6200 3900 50  0001 C CNN
+	1    6200 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:GND #SUPPLY28
+U 1 0 7FF4310D
+P 3400 3800
+AR Path="/7FF4310D" Ref="#SUPPLY28"  Part="1" 
+AR Path="/5B86EEA2/7FF4310D" Ref="#SUPPLY028"  Part="1" 
+F 0 "#SUPPLY028" H 3400 3800 50  0001 C CNN
+F 1 "PGND" H 3275 3650 59  0000 L BNN
+F 2 "" H 3400 3800 50  0001 C CNN
+F 3 "" H 3400 3800 50  0001 C CNN
+	1    3400 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:R-EU_R0805 R15
+U 1 0 18909564
+P 9600 5300
+AR Path="/18909564" Ref="R15"  Part="1" 
+AR Path="/5B86EEA2/18909564" Ref="R15"  Part="1" 
+F 0 "R15" H 9500 5084 59  0000 L BNN
+F 1 "100K" H 9500 5170 59  0000 L BNN
+F 2 "EEZ PSU consolidated r5B13a:R0805" H 9600 5300 50  0001 C CNN
+F 3 "" H 9600 5300 50  0001 C CNN
+	1    9600 5300
+	1    0    0    1   
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:R-EU_R0805 R11
+U 1 0 B75FF5DF
+P 8700 4700
+AR Path="/B75FF5DF" Ref="R11"  Part="1" 
+AR Path="/5B86EEA2/B75FF5DF" Ref="R11"  Part="1" 
+F 0 "R11" V 8691 4650 59  0000 R BNN
+F 1 "10K" V 8780 4650 59  0000 R BNN
+F 2 "EEZ PSU consolidated r5B13a:R0805" H 8700 4700 50  0001 C CNN
+F 3 "" H 8700 4700 50  0001 C CNN
+	1    8700 4700
+	0    -1   1    0   
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:R-EU_R0805 R12
+U 1 0 0C5252B0
+P 9100 4700
+AR Path="/0C5252B0" Ref="R12"  Part="1" 
+AR Path="/5B86EEA2/0C5252B0" Ref="R12"  Part="1" 
+F 0 "R12" V 9034 4650 59  0000 R TNN
+F 1 "100K" V 9120 4650 59  0000 R TNN
+F 2 "EEZ PSU consolidated r5B13a:R0805" H 9100 4700 50  0001 C CNN
+F 3 "" H 9100 4700 50  0001 C CNN
+	1    9100 4700
+	0    -1   1    0   
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:-PNP-SOT23-BEC Q2
+U 1 0 9695EDA1
+P 8800 5300
+AR Path="/9695EDA1" Ref="Q2"  Part="1" 
+AR Path="/5B86EEA2/9695EDA1" Ref="Q2"  Part="1" 
+F 0 "Q2" H 8775 5275 59  0000 R TNN
+F 1 "MMBT5401" H 8775 5175 59  0000 R TNN
+F 2 "EEZ PSU consolidated r5B13a:SOT23-BEC" H 8800 5300 50  0001 C CNN
+F 3 "" H 8800 5300 50  0001 C CNN
+	1    8800 5300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:GND #SUPPLY15
+U 1 0 61C20F05
+P 7100 4400
+AR Path="/61C20F05" Ref="#SUPPLY15"  Part="1" 
+AR Path="/5B86EEA2/61C20F05" Ref="#SUPPLY015"  Part="1" 
+F 0 "#SUPPLY015" H 7100 4400 50  0001 C CNN
+F 1 "PGND" H 7025 4250 59  0000 L BNN
+F 2 "" H 7100 4400 50  0001 C CNN
+F 3 "" H 7100 4400 50  0001 C CNN
+	1    7100 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:C-EUC1210 C16
+U 1 0 020271E7
+P 6900 4000
+AR Path="/020271E7" Ref="C16"  Part="1" 
+AR Path="/5B86EEA2/020271E7" Ref="C16"  Part="1" 
+F 0 "C16" H 6815 4010 59  0000 R TNN
+F 1 "10u" H 6815 3935 59  0000 R TNN
+F 2 "EEZ PSU consolidated r5B13a:C1210" H 6900 4000 50  0001 C CNN
+F 3 "" H 6900 4000 50  0001 C CNN
+	1    6900 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:GND #SUPPLY38
+U 1 0 439F81E9
+P 5300 2800
+AR Path="/439F81E9" Ref="#SUPPLY38"  Part="1" 
+AR Path="/5B86EEA2/439F81E9" Ref="#SUPPLY038"  Part="1" 
+F 0 "#SUPPLY038" H 5300 2800 50  0001 C CNN
+F 1 "PGND" H 5350 2725 59  0000 L BNN
+F 2 "" H 5300 2800 50  0001 C CNN
+F 3 "" H 5300 2800 50  0001 C CNN
+	1    5300 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:C-EUC1210 C5
+U 1 0 000A48F2
+P 6100 1700
+AR Path="/000A48F2" Ref="C5"  Part="1" 
+AR Path="/5B86EEA2/000A48F2" Ref="C5"  Part="1" 
+F 0 "C5" V 6115 1590 59  0000 R TNN
+F 1 "4u7/100V" V 6015 1590 59  0000 R TNN
+F 2 "EEZ PSU consolidated r5B13a:C1210" H 6100 1700 50  0001 C CNN
+F 3 "" H 6100 1700 50  0001 C CNN
+	1    6100 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:SCHOTTKYTO252 D1
+U 1 0 6183C455
+P 5800 4000
+AR Path="/6183C455" Ref="D1"  Part="1" 
+AR Path="/5B86EEA2/6183C455" Ref="D1"  Part="1" 
+F 0 "D1" V 5875 4060 59  0000 L BNN
+F 1 "STPS15H100" V 5785 4060 59  0000 L BNN
+F 2 "EEZ PSU consolidated r5B13a:TO252" H 5800 4000 50  0001 C CNN
+F 3 "" H 5800 4000 50  0001 C CNN
+	1    5800 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:R-EU_R0805 R5
+U 1 0 4AFF4A0D
+P 3100 3000
+AR Path="/4AFF4A0D" Ref="R5"  Part="1" 
+AR Path="/5B86EEA2/4AFF4A0D" Ref="R5"  Part="1" 
+F 0 "R5" H 3150 2941 59  0000 R TNN
+F 1 "47K" H 3150 3130 59  0000 R TNN
+F 2 "EEZ PSU consolidated r5B13a:R0805" H 3100 3000 50  0001 C CNN
+F 3 "" H 3100 3000 50  0001 C CNN
+	1    3100 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:GND #SUPPLY29
+U 1 0 90CC8D06
+P 6400 2200
+AR Path="/90CC8D06" Ref="#SUPPLY29"  Part="1" 
+AR Path="/5B86EEA2/90CC8D06" Ref="#SUPPLY029"  Part="1" 
+F 0 "#SUPPLY029" H 6400 2200 50  0001 C CNN
+F 1 "PGND" H 6475 2150 59  0000 L BNN
+F 2 "" H 6400 2200 50  0001 C CNN
+F 3 "" H 6400 2200 50  0001 C CNN
+	1    6400 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:R-EU_R2512 R4
+U 1 0 3351D600
+P 5800 2600
+AR Path="/3351D600" Ref="R4"  Part="1" 
+AR Path="/5B86EEA2/3351D600" Ref="R4"  Part="1" 
+F 0 "R4" V 5791 2650 59  0000 L BNN
+F 1 "R010/2W" V 5880 2650 59  0000 L BNN
+F 2 "EEZ PSU consolidated r5B13a:R2512" H 5800 2600 50  0001 C CNN
+F 3 "" H 5800 2600 50  0001 C CNN
+	1    5800 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:R-EU_R0805 R10
+U 1 0 41718522
+P 5200 4600
+AR Path="/41718522" Ref="R10"  Part="1" 
+AR Path="/5B86EEA2/41718522" Ref="R10"  Part="1" 
+F 0 "R10" V 5266 4650 59  0000 L BNN
+F 1 "10K" V 5180 4650 59  0000 L BNN
+F 2 "EEZ PSU consolidated r5B13a:R0805" H 5200 4600 50  0001 C CNN
+F 3 "" H 5200 4600 50  0001 C CNN
+	1    5200 4600
+	0    1    -1   0   
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:C-EUC0805 C18
+U 1 0 99C619D6
+P 5200 5000
+AR Path="/99C619D6" Ref="C18"  Part="1" 
+AR Path="/5B86EEA2/99C619D6" Ref="C18"  Part="1" 
+F 0 "C18" H 5115 5035 59  0000 R TNN
+F 1 "4n7" H 5115 4960 59  0000 R TNN
+F 2 "EEZ PSU consolidated r5B13a:C0805" H 5200 5000 50  0001 C CNN
+F 3 "" H 5200 5000 50  0001 C CNN
+	1    5200 5000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:C-EUC0805 C17
+U 1 0 9029B192
+P 5000 4800
+AR Path="/9029B192" Ref="C17"  Part="1" 
+AR Path="/5B86EEA2/9029B192" Ref="C17"  Part="1" 
+F 0 "C17" H 5110 4765 59  0000 L BNN
+F 1 "120p" H 5110 4690 59  0000 L BNN
+F 2 "EEZ PSU consolidated r5B13a:C0805" H 5000 4800 50  0001 C CNN
+F 3 "" H 5000 4800 50  0001 C CNN
+	1    5000 4800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:C-EUC1206 C8
+U 1 0 EA77A757
+P 5000 2700
+AR Path="/EA77A757" Ref="C8"  Part="1" 
+AR Path="/5B86EEA2/EA77A757" Ref="C8"  Part="1" 
+F 0 "C8" V 5015 2615 59  0000 R TNN
+F 1 "1u/100V" V 4915 2615 59  0000 R TNN
+F 2 "EEZ PSU consolidated r5B13a:C1206" H 5000 2700 50  0001 C CNN
+F 3 "" H 5000 2700 50  0001 C CNN
+	1    5000 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:R-EU_R0805 R8
+U 1 0 1338A13A
+P 9000 3300
+AR Path="/1338A13A" Ref="R8"  Part="1" 
+AR Path="/5B86EEA2/1338A13A" Ref="R8"  Part="1" 
+F 0 "R8" H 8925 3359 59  0000 L BNN
+F 1 "100R" H 8875 3170 59  0000 L BNN
+F 2 "EEZ PSU consolidated r5B13a:R0805" H 9000 3300 50  0001 C CNN
+F 3 "" H 9000 3300 50  0001 C CNN
+	1    9000 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:IHLP-2020BZ-11 L4
+U 1 0 F9CAFA06
+P 9000 3600
+AR Path="/F9CAFA06" Ref="L4"  Part="1" 
+AR Path="/5B86EEA2/F9CAFA06" Ref="L4"  Part="1" 
+F 0 "L4" H 8975 3654 59  0000 L BNN
+F 1 "IHLP2020CZER3R3M11" H 8575 3485 59  0000 L BNN
+F 2 "EEZ PSU consolidated r5B13a:IHLP-2020BZ-11" H 9000 3600 50  0001 C CNN
+F 3 "" H 9000 3600 50  0001 C CNN
+	1    9000 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:IHLP-2020BZ-11 L3
+U 1 0 0B156C27
+P 8100 3600
+AR Path="/0B156C27" Ref="L3"  Part="1" 
+AR Path="/5B86EEA2/0B156C27" Ref="L3"  Part="1" 
+F 0 "L3" H 8025 3654 59  0000 L BNN
+F 1 "IHLP2020CZER3R3M11" H 7675 3485 59  0000 L BNN
+F 2 "EEZ PSU consolidated r5B13a:IHLP-2020BZ-11" H 8100 3600 50  0001 C CNN
+F 3 "" H 8100 3600 50  0001 C CNN
+	1    8100 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:SHORTNOHOLE SH2
+U 1 0 5ABD8682
+P 7000 4900
+AR Path="/5ABD8682" Ref="SH2"  Part="1" 
+AR Path="/5B86EEA2/5ABD8682" Ref="SH2"  Part="1" 
+F 0 "SH2" V 7050 4913 59  0000 L BNN
+F 1 "Sgnd to Pgnd short" H 7000 4900 50  0001 C CNN
+F 2 "EEZ PSU consolidated r5B13a:SHORT_NOHOLE" H 7000 4900 50  0001 C CNN
+F 3 "" H 7000 4900 50  0001 C CNN
+	1    7000 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:P-MOSFETDPAK Q1
+U 1 0 34F7D08B
+P 5700 3200
+AR Path="/34F7D08B" Ref="Q1"  Part="1" 
+AR Path="/5B86EEA2/34F7D08B" Ref="Q1"  Part="1" 
+F 0 "Q1" H 5900 3250 59  0000 L BNN
+F 1 "IRFR5305" H 5900 3150 59  0000 L BNN
+F 2 "EEZ PSU consolidated r5B13a:TO229P990X239-3N" H 5700 3200 50  0001 C CNN
+F 3 "" H 5700 3200 50  0001 C CNN
+	1    5700 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:LTC3864 IC1
+U 1 0 28002D22
+P 4100 3000
+AR Path="/28002D22" Ref="IC1"  Part="1" 
+AR Path="/5B86EEA2/28002D22" Ref="IC1"  Part="1" 
+F 0 "IC1" H 3992 3826 69  0000 L BNN
+F 1 "LTC3864EMSE#PBF" H 3595 2077 69  0000 L BNN
+F 2 "EEZ PSU consolidated r5B13a:LTC_05-08-1666" H 4100 3000 50  0001 C CNN
+F 3 "" H 4100 3000 50  0001 C CNN
+	1    4100 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:C-EUC0805 C7
+U 1 0 541178FC
+P 5000 2400
+AR Path="/541178FC" Ref="C7"  Part="1" 
+AR Path="/5B86EEA2/541178FC" Ref="C7"  Part="1" 
+F 0 "C7" V 5015 2315 59  0000 R TNN
+F 1 "470n" V 4915 2315 59  0000 R TNN
+F 2 "EEZ PSU consolidated r5B13a:C0805" H 5000 2400 50  0001 C CNN
+F 3 "" H 5000 2400 50  0001 C CNN
+	1    5000 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:C-EUC0603 C9
+U 1 0 93F3FA2A
+P 3200 2800
+AR Path="/93F3FA2A" Ref="C9"  Part="1" 
+AR Path="/5B86EEA2/93F3FA2A" Ref="C9"  Part="1" 
+F 0 "C9" V 3215 2715 59  0000 R TNN
+F 1 "100n" V 3115 2715 59  0000 R TNN
+F 2 "EEZ PSU consolidated r5B13a:C0603" H 3200 2800 50  0001 C CNN
+F 3 "" H 3200 2800 50  0001 C CNN
+	1    3200 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:2N7002 Q3
+U 1 0 9A1C1EBA
+P 8300 5600
+AR Path="/9A1C1EBA" Ref="Q3"  Part="1" 
+AR Path="/5B86EEA2/9A1C1EBA" Ref="Q3"  Part="1" 
+F 0 "Q3" V 8225 5525 59  0000 L BNN
+F 1 "2N7002" V 8125 5525 59  0000 L BNN
+F 2 "EEZ PSU consolidated r5B13a:SOT103P240X110-3N" H 8300 5600 50  0001 C CNN
+F 3 "" H 8300 5600 50  0001 C CNN
+	1    8300 5600
+	0    1    -1   0   
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:DIODESOD323R D2
+U 1 0 753AA296
+P 8900 5000
+AR Path="/753AA296" Ref="D2"  Part="1" 
+AR Path="/5B86EEA2/753AA296" Ref="D2"  Part="1" 
+F 0 "D2" H 8965 4931 59  0000 R TNN
+F 1 "BAS316" H 9070 5166 59  0000 R TNN
+F 2 "EEZ PSU consolidated r5B13a:SOD323-R" H 8900 5000 50  0001 C CNN
+F 3 "" H 8900 5000 50  0001 C CNN
+	1    8900 5000
+	-1   0    0    1   
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:SHORTNOHOLE SH1
+U 1 0 10015477
+P 8100 4300
+AR Path="/10015477" Ref="SH1"  Part="1" 
+AR Path="/5B86EEA2/10015477" Ref="SH1"  Part="1" 
+F 0 "SH1" H 8188 4275 59  0000 R TNN
+F 1 "Pgnd to Pout- short" H 8100 4300 50  0001 C CNN
+F 2 "EEZ PSU consolidated r5B13a:SHORT_NOHOLE" H 8100 4300 50  0001 C CNN
+F 3 "" H 8100 4300 50  0001 C CNN
+	1    8100 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:R-EU_R0805 R3
+U 1 0 2A684572
+P 2200 2400
+AR Path="/2A684572" Ref="R3"  Part="1" 
+AR Path="/5B86EEA2/2A684572" Ref="R3"  Part="1" 
+F 0 "R3" H 2250 2341 59  0000 R TNN
+F 1 "10K" H 2300 2530 59  0000 R TNN
+F 2 "EEZ PSU consolidated r5B13a:R0805" H 2200 2400 50  0001 C CNN
+F 3 "" H 2200 2400 50  0001 C CNN
+	1    2200 2400
+	-1   0    0    1   
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:EEE--CASE-F C13
+U 1 0 1C4FC955
+P 10000 3800
+AR Path="/1C4FC955" Ref="C13"  Part="1" 
+AR Path="/5B86EEA2/1C4FC955" Ref="C13"  Part="1" 
+F 0 "C13" V 10091 3864 69  0000 L BNN
+F 1 "EEEFK1H470P" V 10200 3874 69  0000 L BNN
+F 2 "EEZ PSU consolidated r5B13a:CAPAE830X1050N" H 10000 3800 50  0001 C CNN
+F 3 "" H 10000 3800 50  0001 C CNN
+	1    10000 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:R-EU_R0805 R14
+U 1 0 46E6F5C8
+P 8300 5200
+AR Path="/46E6F5C8" Ref="R14"  Part="1" 
+AR Path="/5B86EEA2/46E6F5C8" Ref="R14"  Part="1" 
+F 0 "R14" H 8375 5066 59  0000 R TNN
+F 1 "n.c." H 8375 5155 59  0000 R TNN
+F 2 "EEZ PSU consolidated r5B13a:R0805" H 8300 5200 50  0001 C CNN
+F 3 "" H 8300 5200 50  0001 C CNN
+	1    8300 5200
+	-1   0    0    1   
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:C-EUC0805 C19
+U 1 0 9B450B35
+P 8900 5700
+AR Path="/9B450B35" Ref="C19"  Part="1" 
+AR Path="/5B86EEA2/9B450B35" Ref="C19"  Part="1" 
+F 0 "C19" V 8915 5685 59  0000 L TNN
+F 1 "470p" V 8815 5685 59  0000 L TNN
+F 2 "EEZ PSU consolidated r5B13a:C0805" H 8900 5700 50  0001 C CNN
+F 3 "" H 8900 5700 50  0001 C CNN
+	1    8900 5700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:R-EU_R0805 R7
+U 1 0 CE756263
+P 8100 3300
+AR Path="/CE756263" Ref="R7"  Part="1" 
+AR Path="/5B86EEA2/CE756263" Ref="R7"  Part="1" 
+F 0 "R7" H 8025 3359 59  0000 L BNN
+F 1 "100R" H 7975 3170 59  0000 L BNN
+F 2 "EEZ PSU consolidated r5B13a:R0805" H 8100 3300 50  0001 C CNN
+F 3 "" H 8100 3300 50  0001 C CNN
+	1    8100 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:GND #SUPPLY37
+U 1 0 F8EE9000
+P 4100 1300
+AR Path="/F8EE9000" Ref="#SUPPLY37"  Part="1" 
+AR Path="/5B86EEA2/F8EE9000" Ref="#SUPPLY037"  Part="1" 
+F 0 "#SUPPLY037" H 4100 1300 50  0001 C CNN
+F 1 "PGND" H 4175 1275 59  0000 L BNN
+F 2 "" H 4100 1300 50  0001 C CNN
+F 3 "" H 4100 1300 50  0001 C CNN
+	1    4100 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:C-EUC1206 C4
+U 1 0 BD10B666
+P 3700 1500
+AR Path="/BD10B666" Ref="C4"  Part="1" 
+AR Path="/5B86EEA2/BD10B666" Ref="C4"  Part="1" 
+F 0 "C4" H 3615 1390 59  0000 R BNN
+F 1 "4n7/100V" H 3615 1465 59  0000 R BNN
+F 2 "EEZ PSU consolidated r5B13a:C1206" H 3700 1500 50  0001 C CNN
+F 3 "" H 3700 1500 50  0001 C CNN
+	1    3700 1500
+	1    0    0    1   
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:C-EUC1206 C2
+U 1 0 763BB0C5
+P 4000 1400
+AR Path="/763BB0C5" Ref="C2"  Part="1" 
+AR Path="/5B86EEA2/763BB0C5" Ref="C2"  Part="1" 
+F 0 "C2" H 4085 1340 59  0000 L BNN
+F 1 "4n7/100V" H 4085 1265 59  0000 L BNN
+F 2 "EEZ PSU consolidated r5B13a:C1206" H 4000 1400 50  0001 C CNN
+F 3 "" H 4000 1400 50  0001 C CNN
+	1    4000 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:C-EUC1206 C1
+U 1 0 12BF0275
+P 2800 1100
+AR Path="/12BF0275" Ref="C1"  Part="1" 
+AR Path="/5B86EEA2/12BF0275" Ref="C1"  Part="1" 
+F 0 "C1" H 2885 1010 59  0000 L TNN
+F 1 "4n7/100V" H 2885 1110 59  0000 L TNN
+F 2 "EEZ PSU consolidated r5B13a:C1206" H 2800 1100 50  0001 C CNN
+F 3 "" H 2800 1100 50  0001 C CNN
+	1    2800 1100
+	-1   0    0    1   
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:WE-HCI_1350_1365 L2
+U 1 0 0840620C
+P 6200 3600
+AR Path="/0840620C" Ref="L2"  Part="1" 
+AR Path="/5B86EEA2/0840620C" Ref="L2"  Part="1" 
+F 0 "L2" H 6050 3775 59  0000 L BNN
+F 1 "7443551331" H 6050 3700 59  0000 L BNN
+F 2 "EEZ PSU consolidated r5B13a:WE-HCI_1350_1365" H 6200 3600 50  0001 C CNN
+F 3 "" H 6200 3600 50  0001 C CNN
+	1    6200 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:ECAPF C15
+U 1 0 707DE72D
+P 7200 3900
+AR Path="/707DE72D" Ref="C15"  Part="1" 
+AR Path="/5B86EEA2/707DE72D" Ref="C15"  Part="1" 
+F 0 "C15" H 7270 3919 59  0000 L BNN
+F 1 "EEEFK1J101P" H 7270 3819 59  0000 L BNN
+F 2 "EEZ PSU consolidated r5B13a:PANASONIC_F" H 7200 3900 50  0001 C CNN
+F 3 "" H 7200 3900 50  0001 C CNN
+	1    7200 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:FIDUCIAL_2 FM2
+U 1 0 8BCA1F73
+P 7100 7500
+AR Path="/8BCA1F73" Ref="FM2"  Part="1" 
+AR Path="/5B86EEA2/8BCA1F73" Ref="FM2"  Part="1" 
+F 0 "FM2" H 7100 7500 50  0001 C CNN
+F 1 "FIDUCIAL_2" H 7100 7500 50  0001 C CNN
+F 2 "EEZ PSU consolidated r5B13a:FIDUCIAL_DUAL" H 7100 7500 50  0001 C CNN
+F 3 "" H 7100 7500 50  0001 C CNN
+	1    7100 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:FIDUCIAL_2 FM1
+U 1 0 DCDC82BF
+P 6800 7500
+AR Path="/DCDC82BF" Ref="FM1"  Part="1" 
+AR Path="/5B86EEA2/DCDC82BF" Ref="FM1"  Part="1" 
+F 0 "FM1" H 6800 7500 50  0001 C CNN
+F 1 "FIDUCIAL_2" H 6800 7500 50  0001 C CNN
+F 2 "EEZ PSU consolidated r5B13a:FIDUCIAL_DUAL" H 6800 7500 50  0001 C CNN
+F 3 "" H 6800 7500 50  0001 C CNN
+	1    6800 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:C-EUC0805 C11
+U 1 0 5F67C8AF
+P 8700 3800
+AR Path="/5F67C8AF" Ref="C11"  Part="1" 
+AR Path="/5B86EEA2/5F67C8AF" Ref="C11"  Part="1" 
+F 0 "C11" H 8785 3740 59  0000 L BNN
+F 1 "1u" H 8785 3665 59  0000 L BNN
+F 2 "EEZ PSU consolidated r5B13a:C0805" H 8700 3800 50  0001 C CNN
+F 3 "" H 8700 3800 50  0001 C CNN
+	1    8700 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:C-EUC0805 C12
+U 1 0 DDA156A1
+P 9400 3800
+AR Path="/DDA156A1" Ref="C12"  Part="1" 
+AR Path="/5B86EEA2/DDA156A1" Ref="C12"  Part="1" 
+F 0 "C12" H 9315 3810 59  0000 R TNN
+F 1 "n.c." H 9315 3735 59  0000 R TNN
+F 2 "EEZ PSU consolidated r5B13a:C0805" H 9400 3800 50  0001 C CNN
+F 3 "" H 9400 3800 50  0001 C CNN
+	1    9400 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:R-EU_R0805 R2
+U 1 0 910CEFCB
+P 3000 1900
+AR Path="/910CEFCB" Ref="R2"  Part="1" 
+AR Path="/5B86EEA2/910CEFCB" Ref="R2"  Part="1" 
+F 0 "R2" H 2925 1959 59  0000 L BNN
+F 1 "n.c." H 2925 1795 59  0000 L BNN
+F 2 "EEZ PSU consolidated r5B13a:R0805" H 3000 1900 50  0001 C CNN
+F 3 "" H 3000 1900 50  0001 C CNN
+	1    3000 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:R-EU_R0805 R6
+U 1 0 C3B56805
+P 5300 3100
+AR Path="/C3B56805" Ref="R6"  Part="1" 
+AR Path="/5B86EEA2/C3B56805" Ref="R6"  Part="1" 
+F 0 "R6" H 5200 3159 59  0000 L BNN
+F 1 "1R" H 5200 2970 59  0000 L BNN
+F 2 "EEZ PSU consolidated r5B13a:R0805" H 5300 3100 50  0001 C CNN
+F 3 "" H 5300 3100 50  0001 C CNN
+	1    5300 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:SSW-113-02-T-D-RA X2
+U 16 0 EE6A8C1F
+P 1600 3000
+AR Path="/EE6A8C1F" Ref="X2"  Part="16" 
+AR Path="/5B86EEA2/EE6A8C1F" Ref="X2"  Part="16" 
+F 0 "X2" H 1350 3035 59  0000 R TNN
+F 1 "SSW-113-02-T-D-RA" H 1250 3105 59  0001 L BNN
+F 2 "EEZ PSU consolidated r5B13a:SSW-113-02-T-D-RA" H 1600 3000 50  0001 C CNN
+F 3 "" H 1600 3000 50  0001 C CNN
+	16   1600 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:EEE--CASE-E C3
+U 1 0 A7483AD5
+P 6000 1400
+AR Path="/A7483AD5" Ref="C3"  Part="1" 
+AR Path="/5B86EEA2/A7483AD5" Ref="C3"  Part="1" 
+F 0 "C3" H 6215 1425 69  0000 L BNN
+F 1 "50SVPF18M" H 5875 1600 69  0000 L BNN
+F 2 "EEZ PSU consolidated r5B13a:CAPAE830X650N" H 6000 1400 50  0001 C CNN
+F 3 "" H 6000 1400 50  0001 C CNN
+	1    6000 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:P6SMB68A ZD1
+U 1 0 376526C0
+P 5600 1400
+AR Path="/376526C0" Ref="ZD1"  Part="1" 
+AR Path="/5B86EEA2/376526C0" Ref="ZD1"  Part="1" 
+F 0 "ZD1" H 5750 1175 59  0000 R TNN
+F 1 "SMAJ51A" H 5925 1285 59  0000 R TNN
+F 2 "EEZ PSU consolidated r5B13a:DO214AA" H 5600 1400 50  0001 C CNN
+F 3 "" H 5600 1400 50  0001 C CNN
+	1    5600 1400
+	-1   0    0    1   
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:GND #SUPPLY115
+U 1 0 9B347B6D
+P 5300 1600
+AR Path="/9B347B6D" Ref="#SUPPLY115"  Part="1" 
+AR Path="/5B86EEA2/9B347B6D" Ref="#SUPPLY0115"  Part="1" 
+F 0 "#SUPPLY0115" H 5300 1600 50  0001 C CNN
+F 1 "PGND" H 5225 1650 59  0000 R TNN
+F 2 "" H 5300 1600 50  0001 C CNN
+F 3 "" H 5300 1600 50  0001 C CNN
+	1    5300 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:SSW-113-02-T-D-RA X2
+U 13 0 EE6A8C6B
+P 2000 4900
+AR Path="/EE6A8C6B" Ref="X2"  Part="13" 
+AR Path="/5B86EEA2/EE6A8C6B" Ref="X2"  Part="13" 
+F 0 "X2" H 1750 4935 59  0000 R TNN
+F 1 "SSW-113-02-T-D-RA" H 1650 5005 59  0001 L BNN
+F 2 "EEZ PSU consolidated r5B13a:SSW-113-02-T-D-RA" H 2000 4900 50  0001 C CNN
+F 3 "" H 2000 4900 50  0001 C CNN
+	13   2000 4900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:SSW-113-02-T-D-RA X2
+U 15 0 EE6A8C63
+P 2000 5600
+AR Path="/EE6A8C63" Ref="X2"  Part="15" 
+AR Path="/5B86EEA2/EE6A8C63" Ref="X2"  Part="15" 
+F 0 "X2" H 1750 5635 59  0000 R TNN
+F 1 "SSW-113-02-T-D-RA" H 1650 5705 59  0001 L BNN
+F 2 "EEZ PSU consolidated r5B13a:SSW-113-02-T-D-RA" H 2000 5600 50  0001 C CNN
+F 3 "" H 2000 5600 50  0001 C CNN
+	15   2000 5600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:NTC0805 NTC1
+U 1 0 655A7CC6
+P 1400 5200
+AR Path="/655A7CC6" Ref="NTC1"  Part="1" 
+AR Path="/5B86EEA2/655A7CC6" Ref="NTC1"  Part="1" 
+F 0 "NTC1" H 1500 5250 59  0000 L BNN
+F 1 "10K/Beta:3570K" H 1500 5175 59  0000 L BNN
+F 2 "EEZ PSU consolidated r5B13a:R_0204_5+0805" H 1400 5200 50  0001 C CNN
+F 3 "" H 1400 5200 50  0001 C CNN
+	1    1400 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:RN112 L1
+U 1 0 ABFF23E9
+P 3300 900
+AR Path="/ABFF23E9" Ref="L1"  Part="1" 
+AR Path="/5B86EEA2/ABFF23E9" Ref="L1"  Part="1" 
+F 0 "L1" H 3200 979 59  0000 L BNN
+F 1 "RN112-4-02" H 3050 735 59  0001 L BNN
+F 2 "EEZ PSU consolidated r5B13a:RN112" H 3300 900 50  0001 C CNN
+F 3 "" H 3300 900 50  0001 C CNN
+	1    3300 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:RN112 L1
+U 2 0 ABFF23E5
+P 3300 1200
+AR Path="/ABFF23E5" Ref="L1"  Part="2" 
+AR Path="/5B86EEA2/ABFF23E5" Ref="L1"  Part="2" 
+F 0 "L1" H 3200 1079 59  0000 L BNN
+F 1 "RN112-4-02" H 3150 1085 59  0001 L BNN
+F 2 "EEZ PSU consolidated r5B13a:RN112" H 3300 1200 50  0001 C CNN
+F 3 "" H 3300 1200 50  0001 C CNN
+	2    3300 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:MINIFIT_39301039 X1
+U 1 0 9DC1DC97
+P 1500 1200
+AR Path="/9DC1DC97" Ref="X1"  Part="1" 
+AR Path="/5B86EEA2/9DC1DC97" Ref="X1"  Part="1" 
+F 0 "X1" H 1250 1235 59  0000 R TNN
+F 1 "39-30-1039" H 1150 1305 59  0001 L BNN
+F 2 "EEZ PSU consolidated r5B13a:MINIFIT_39301039" H 1500 1200 50  0001 C CNN
+F 3 "" H 1500 1200 50  0001 C CNN
+	1    1500 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:MINIFIT_39301039 X1
+U 2 0 9DC1DC9B
+P 1500 1700
+AR Path="/9DC1DC9B" Ref="X1"  Part="2" 
+AR Path="/5B86EEA2/9DC1DC9B" Ref="X1"  Part="2" 
+F 0 "X1" H 1250 1735 59  0000 R TNN
+F 1 "39-30-1039" H 1050 2580 59  0001 L BNN
+F 2 "EEZ PSU consolidated r5B13a:MINIFIT_39301039" H 1500 1700 50  0001 C CNN
+F 3 "" H 1500 1700 50  0001 C CNN
+	2    1500 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:MINIFIT_39301039 X1
+U 3 0 9DC1DC9F
+P 1500 900
+AR Path="/9DC1DC9F" Ref="X1"  Part="3" 
+AR Path="/5B86EEA2/9DC1DC9F" Ref="X1"  Part="3" 
+F 0 "X1" H 1250 935 59  0000 R TNN
+F 1 "39-30-1039" H 1150 1005 59  0001 L BNN
+F 2 "EEZ PSU consolidated r5B13a:MINIFIT_39301039" H 1500 900 50  0001 C CNN
+F 3 "" H 1500 900 50  0001 C CNN
+	3    1500 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEZ_PSU_consolidated_r5B13a-eagle-import:JP3-CUT JP1
+U 1 0 0B60073D
+P 2300 3000
+AR Path="/0B60073D" Ref="JP1"  Part="1" 
+AR Path="/5B86EEA2/0B60073D" Ref="JP1"  Part="1" 
+F 0 "JP1" V 2250 2925 59  0000 L BNN
+F 1 "JP3-CUT" H 2300 3000 50  0001 C CNN
+F 2 "EEZ PSU consolidated r5B13a:JP3-CUT" H 2300 3000 50  0001 C CNN
+F 3 "" H 2300 3000 50  0001 C CNN
+	1    2300 3000
+	0    1    -1   0   
+$EndComp
+Text Notes 10075 4100 0    59   ~ 0
+47u
+Text Notes 2275 3300 0    47   ~ 0
+Fsw=350kHz (when grounded)
+Text Notes 2900 2775 0    47   ~ 0
+tss=8ms
+Text Notes 1000 7400 0    59   ~ 0
+Licensed under the TAPR Open Hardware License (www.tapr.org/OHL)
+Text Notes 1000 7600 0    59   ~ 0
+Repository: https://github.com/eez-open
+Text Notes 1000 7500 0    59   ~ 0
+More info at http://www.envox.hr/eez
+Text Notes 7270 4075 0    59   ~ 0
+100u
+Text Notes 5900 3325 0    47   ~ 0
+See Note 1.1
+Text Notes 1000 6600 0    59   ~ 0
+Note 1.1: Possible alternative AUIRFR5305, SUD19P06-60, SPD30P06P or other with similar or lower input capacitance
+Text Notes 1000 6700 0    59   ~ 0
+Note 1.2: WE 7447709330, WE 7443551331, Coilcraft MSS1210-333, Coilcraft XAL1510-333, Vishay IHLP4040DZER470M11, etc.
+Text Notes 1000 6800 0    59   ~ 0
+Note 1.3: Use 240K for 30 VAC main transformer
+Text Notes 8100 5325 0    47   ~ 0
+See Note 1.4
+Text Notes 1000 6900 0    59   ~ 0
+Note 1.4: Install 0R only if 100% Duty cycle feature for Low Ripple mode is not needed
+Text Notes 5850 2775 0    47   ~ 0
+See Note 1.5
+Text Notes 1000 7000 0    59   ~ 0
+Note 1.5: Use R020 for 0-3.12 A or R015 for 0-4.16 A range
+Text Notes 1175 1075 0    73   ~ 0
+DC in (max. 60 V)
+Text Notes 1875 2100 2    47   ~ 0
+DC in- 2
+Text Notes 1875 2200 2    47   ~ 0
+DC in+ 3
+Wire Notes Line
+	2000 2200 1900 2200
+Wire Notes Line
+	1900 2200 1900 1900
+Wire Notes Line
+	1900 1900 2000 1900
+Wire Notes Line
+	2000 1900 2000 2200
+Text Notes 1200 1850 0    73   ~ 0
+3-pin connector X1
+Text Notes 1875 2000 2    47   ~ 0
+Earth 1
+Text Notes 5950 3725 0    47   ~ 0
+See also Note 1.2
+Text Notes 7150 5075 0    47   ~ 0
+See also Note 1.3
+Text Notes 6000 1275 0    47   ~ 0
+See Note 1.6
+Text Notes 1000 7100 0    59   ~ 0
+Note 1.6: Replace ZD1 and C3, C5, C6 if Vin is above 50 V
+Text Notes 1350 4625 0    59   ~ 0
+Temperature sensor
+NoConn ~ 3500 3400
+NoConn ~ 2400 1900
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 5CD316C2
+P 6400 6000
+F 0 "#FLG0104" H 6400 6075 50  0001 C CNN
+F 1 "PWR_FLAG" H 6700 6075 50  0000 C CNN
+F 2 "" H 6400 6000 50  0001 C CNN
+F 3 "~" H 6400 6000 50  0001 C CNN
+	1    6400 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 3600 4800 3600
+Connection ~ 6400 6000
+Wire Wire Line
+	6400 6000 5000 6000
+$Comp
+L power:PWR_FLAG #FLG0105
+U 1 1 5CD3E0CD
+P 5500 2300
+F 0 "#FLG0105" H 5500 2375 50  0001 C CNN
+F 1 "PWR_FLAG" H 5500 2474 50  0000 C CNN
+F 2 "" H 5500 2300 50  0001 C CNN
+F 3 "~" H 5500 2300 50  0001 C CNN
+	1    5500 2300
+	1    0    0    -1  
+$EndComp
+Connection ~ 5500 2300
+$EndSCHEMATC
