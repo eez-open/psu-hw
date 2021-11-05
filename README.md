@@ -54,13 +54,13 @@ This is repository for the hardware part of the DIY fully programmable dual chan
 - Incremental encoder with tactile switch as an additional mean of setting output values
 - Usage of easy to find components that could be obtain with just single order from suppliers such as Farnell element14, TMU.eu, DigiKey, Mouser, RS online, etc.
 - Possibility to house at least dual channel version in affordable and compact (2U height) metallic enclosure
-- Comprehensive software support that include [SCPI](http://www.envox.hr/eez/bench-power-supply/psu-scpi-reference-manual/psu-scpi-introduction.html)  remote control, GUI configuration and monitoring and even cross platform (Windows, Linux, OS X) software simulator of the firmware functionality
+- Comprehensive software support that include [SCPI](https://www.envox.eu/bench-power-supply/psu-scpi-reference-manual/)  remote control, GUI configuration and monitoring and even cross platform (Windows, Linux, OS X) software simulator of the firmware functionality
 
 ![Programmable dual channel PSU block diagram](EEZ%20PSU%20block%20diagram%20v5.4.png)
 
 **********************
 
-For more information visit http://www.envox.hr/eez/bench-power-supply/psu-introduction.html
+For more information visit https://www.envox.eu/bench-power-supply/introduction/
 
 **********************
 
